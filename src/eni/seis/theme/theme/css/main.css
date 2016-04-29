@@ -1541,47 +1541,35 @@ ul.pagination-pages {
   font-weight: bolder;
   color: #222;
 }
-.nav-title {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-size: larger;
-  letter-spacing: .02em;
-}
-.nav-list {
+.nav-items {
   padding-left: 0;
   list-style: none;
   margin-bottom: 0;
 }
-.nav-list a {
+.nav-items .nav-items {
+  margin-left: 1.5rem;
+}
+.nav-item > a {
   display: block;
-  padding: 0.4em 0;
-  font-size: smaller;
-  transition: color .1s;
-  color: #245081;
+  padding: 0.4em 0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
-.nav-list a:hover {
-  color: #034ea2;
+.nav-group {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid #d8d8d8;
 }
-.nav-list-inline {
-  padding-left: 0;
-  list-style: none;
+.nav-group-title {
   margin-bottom: 0.5rem;
+  font-weight: normal;
+  color: #748284;
+  font-size: inherit;
 }
-.nav-list-inline:before,
-.nav-list-inline:after {
-  content: "";
-  display: table;
-}
-.nav-list-inline:after {
-  clear: both;
-}
-.nav-list-inline > li {
-  float: left;
-  margin-right: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-.nav-list-inline > li:last-child {
-  margin-right: 0;
+.nav-folder {
+  padding: 1.5rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.3em;
 }
 .event-date {
   float: left;
@@ -1637,15 +1625,10 @@ ul.pagination-pages {
 .container-xl {
   max-width: 30rem;
 }
-#site-header {
-  position: relative;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-}
 #site-footer {
   border-top: 1px solid #d8d8d8;
 }
-.page-header {
+.site-banner {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-repeat: none;
@@ -1654,17 +1637,17 @@ ul.pagination-pages {
   color: #222;
 }
 @media (max-width: 639px) {
-  .page-header {
+  .site-banner {
     background-image: url('../img/bg-header_east-sm.png');
   }
 }
 @media (min-width: 640px) {
-  .page-header {
+  .site-banner {
     background-image: url('../img/bg-header_east-md.png');
   }
 }
 @media (min-width: 640px) {
-  .page-header {
+  .site-banner {
     min-height: 10rem;
     background-image: url('../img/bg-header_east-lg.png');
   }
@@ -1741,6 +1724,13 @@ ul.pagination-pages {
     margin-bottom: 1.5rem;
   }
 }
+#navbar {
+  position: relative;
+  padding-top: 1.6rem;
+  padding-bottom: 1.1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
 .menu-item {
   position: relative;
 }
@@ -1754,6 +1744,10 @@ ul.pagination-pages {
 }
 #navbar-menu-toggle {
   float: right;
+}
+.navbar-credits a,
+.navbar-credits img {
+  vertical-align: bottom;
 }
 @media (min-width: 960px) {
   #navbar-menu-toggle {
@@ -1890,9 +1884,6 @@ ul.pagination-pages {
   line-height: inherit;
   display: inline-block;
 }
-.dropdown {
-  position: absolute;
-}
 .breadcrumbs {
   padding-left: 0;
   list-style: none;
@@ -1918,6 +1909,12 @@ ul.pagination-pages {
   .block-inset {
     margin: 0;
   }
+}
+.admin {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.admin .list-inline {
+  display: inline-block;
 }
 .btn-primary {
   color: #fff;
@@ -1959,5 +1956,12 @@ ul.pagination-pages {
 .navbar-brand strong {
   color: #009245;
   font-weight: inherit;
+}
+.nav-folder {
+  border-color: #009245;
+}
+.page-header {
+  background-color: #009245;
+  color: #fff;
 }
 /*# sourceMappingURL=./source.css.map */
