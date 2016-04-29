@@ -6,7 +6,8 @@
   
   <rules css:if-content="body.section-front-page">
     <replace css:content-children=".documentDescription"
-             css:theme-children=".site-description" />            
+             css:theme-children=".site-description" />
+    <drop css:theme=".page-header" />
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
