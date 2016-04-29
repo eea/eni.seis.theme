@@ -6,6 +6,8 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
 
+  <notheme css:if-content="body.userrole-authenticated" />
+
   <xi:include href="rules/admin.xml" />
 
   <!-- Apply the following rules to standard Plone pages -->
