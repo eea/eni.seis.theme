@@ -1652,6 +1652,10 @@ ul.pagination-pages {
     background-image: url('../img/bg-header_east-lg.png');
   }
 }
+.site-description {
+  max-width: 30rem;
+  font-size: larger;
+}
 .page-body {
   padding-top: 2rem;
   padding-bottom: 2rem;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  
+  <rules css:if-content="body.section-front-page">
+    <replace css:content-children=".documentDescription"
+             css:theme-children=".site-description" />            
+  </rules>
+
+  <!-- Drop banner for all pages except homepage -->
+  <rules css:if-not-content="body.section-front-page">
+    <drop css:theme=".site-banner">
+  </rules>
+
+</rules>
