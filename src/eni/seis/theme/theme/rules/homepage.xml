@@ -11,7 +11,7 @@
 
   <!-- Drop banner for all pages except homepage -->
   <rules css:if-not-content="body.section-front-page">
-    <drop css:theme=".site-banner">
+    <drop css:theme=".site-banner" />
   </rules>
 
 </rules>
