@@ -1,0 +1,139 @@
+html {
+  font-size: @1rem;
+}
+
+body {
+  font-family: @font-family;
+  line-height: @line-height-body;
+  color: @color-body;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: @leading;
+  line-height: @line-height-heading;
+  color: @color-heading;
+  font-weight: @weight-heading;
+  font-family: @font-family-heading;
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+a {
+  text-decoration: none;
+  color: @color-anchor;
+  &:hover,
+  &:focus {
+    color: @color-anchor-hover;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+dl,
+ul,
+ol,
+p {
+  margin-top: 0;
+  margin-bottom: @leading;
+}
+
+ul,
+ol {
+  padding-left: @indent-list;
+}
+
+hr {
+  margin-top: @leading;
+  margin-bottom: @leading;
+  height: 0;
+  border: 0;
+  border-top: 1px solid @color-soft;
+  background: none;
+}
+
+strong, th, dt {
+  font-weight: @weight-strong;
+}
+
+
+// Text sizes
+small,
+.small {
+  font-size: @smaller;
+}
+.large {
+  font-size: @larger;
+}
+
+
+// Lists
+.no-list {
+  .utils > .no-list;
+}
+.list-inline {
+  .utils > .list-inline(0, @em-h-small, baseline);
+}
+.separated-comma {
+  > li::after {
+    content: ',';
+  }
+  > li:last-child::after {
+    content: none;
+  }
+}
+.separated-line {
+  > li {
+    border-right: 1px solid @color-soft;
+  }
+  > li::after {
+    content: '\00a0';
+  }
+  > li:last-child::after {
+    content: none;
+  }
+  > li:last-child {
+    border-right: 0;
+  }
+}
+
+
+// Leading
+.no-leading                  { margin-bottom: 0; }
+.no-leading-before           { margin-top: 0; }
+.leading                     { margin-bottom: @leading; }
+.leading-small               { margin-bottom: @leading-small; }
+.leading-large               { margin-bottom: @leading-large; }
+.leading-xlarge              { margin-bottom: @leading-xlarge; }
+.leading-xxlarge             { margin-bottom: @leading-xxlarge; }
+
+
+// Text transform
+.uppercase                   { text-transform: uppercase; }
+
+// Alignment
+.align-center                { text-align: center; }
+.align-left                  { text-align: left; }
+.align-right                 { text-align: right; }
+.align-justify               { text-align: justify; }
+
+
+// Misc
+.no-br {
+  white-space: nowrap;
+}
+.muted {
+  color: @color-muted;
+}

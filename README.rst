@@ -20,6 +20,26 @@ Install eni.seis.theme by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Development
+-----------
+
+Prerequisites:
+
+- Node.js_
+- latest NPM version: ``sudo npm install npm -g``
+- Grunt and Grunt-cli: ``sudo npm install grunt grunt-cli -g``
+
+Then::
+
+    cd src/eni/seis/theme/theme/
+
+    # install dependencies
+    npm install
+
+    # build files
+    grunt # for development, or
+    grunt production # for production
+
 
 Contribute
 ----------
@@ -48,3 +68,4 @@ Funding
 EEA_ - European Environment Agency (EU)
 
 .. _EEA: http://www.eea.europa.eu/
+.. _Node.js: https://nodejs.org/

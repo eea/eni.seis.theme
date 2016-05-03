@@ -1,0 +1,136 @@
+@page-padding: 2rem;
+@section-padding: 2rem;
+
+// Misc
+.center {
+  .utils > .center;
+}
+
+.clear {
+  .utils > .clear;
+}
+
+
+// Containers
+.container-sm {
+  max-width: @container-sm;
+}
+.container-md {
+  max-width: @container-sm;
+}
+.container-lg {
+  max-width: @container-sm;
+}
+.container-xl {
+  max-width: @container-sm;
+}
+
+
+// Site
+#site-header {
+}
+#site-footer {
+  border-top: 1px solid @color-soft;
+}
+.site-banner {
+  padding-top: @page-padding;
+  padding-bottom: @page-padding;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  color: @color-emphasis;
+  @media @screen-sm-upto {
+    background-image: url('@{path-images}/bg-header_east-sm.png');
+  }
+  @media @screen-sm {
+    background-image: url('@{path-images}/bg-header_east-md.png');
+  }
+  @media @screen-sm {
+    min-height: 10rem;
+    background-image: url('@{path-images}/bg-header_east-lg.png');
+  }
+}
+.site-description {
+  max-width: @container-sm;
+  font-size: @larger;
+}
+
+// Page
+.page-header {
+}
+.page-body {
+  padding-top: @page-padding;
+  padding-bottom: @page-padding;
+}
+.page-footer {
+  padding-top: @page-padding;
+  padding-bottom: @page-padding;
+}
+.page-container {
+  .utils > .center;
+  max-width: 64rem;
+  padding-left: @page-padding;
+  padding-right: @page-padding;
+}
+.page-main,
+.page-aside {
+  box-sizing: border-box;
+}
+@media @screen-md-upto {
+  .page-aside {
+    padding-top: @page-padding;
+    border-top: 1px solid @color-soft;
+  }
+}
+@media @screen-md {
+  .page-main {
+    float: left;
+    width: percentage(9 / 12);
+    padding-right: 3rem;
+  }
+  .page-aside {
+    float: right;
+    width: percentage(3 / 12);
+  }
+}
+
+
+// Section
+.section {
+  padding-top: @section-padding;
+  padding-bottom: @section-padding;
+  border-top: 1px solid @color-soft;
+  
+  &:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+.section-header {
+  margin-bottom: @section-padding;
+}
+.section-title {
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+// Columns
+.columns {
+  column-gap: @grid-gutter;
+  column-rule: 1px solid @color-soft;
+}
+@media @screen-sm {
+  .columns-3 {
+    column-count: 3;
+  }
+}
+.column {
+  -webkit-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  @media @screen-sm-upto {
+    margin-bottom: @leading-large;
+  }
+}

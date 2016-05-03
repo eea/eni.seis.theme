@@ -1,0 +1,43 @@
+.pagination {
+  .utils > .clear;
+  text-align: center;
+}
+
+.pagination-pager {
+
+}
+
+.pagination-next {
+  float: right;
+}
+
+.pagination-prev {
+  float: left;
+}
+
+
+.pagination-pages {
+  ul& { .utils > .no-list; }
+  margin-bottom: 0;
+  li { // to do: replace li selection
+    display: inline-block;
+  }
+  a,
+  span {
+    display: inline-block;
+    min-width: @line-height * 1em;
+    padding: @em-small;
+    border: 1px solid transparent;
+    border-radius: @radius;
+  }
+  span {
+    color: @color-muted;
+    cursor: default;
+  }
+  .active {
+    // border: 1px solid @color-soft;
+    background-color: @color-softer;
+    font-weight: bolder;
+    color: @color-emphasis;
+  }
+}

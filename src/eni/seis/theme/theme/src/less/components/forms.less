@@ -1,0 +1,45 @@
+@form-section-indent: 12rem;
+
+.form-card {
+  border-top: solid transparent;
+  border-top-color: @color-green;
+  .form-section {
+    &:extend(.card-section all);
+    .utils > .clearfix;
+  }
+}
+
+.form-card-error {
+  .animated;
+  border-top-color: @color-red;
+  animation-name: shake;
+}
+
+.form-section-title {
+  font-size: @font-size-h5;
+  font-weight: 400;
+  color: @light-muted!important;
+}
+
+.form-section-help {
+  font-size: smaller;
+  color: @light-muted;
+}
+
+.form-section-side {
+  float: left;
+  width: (@form-section-indent - 2rem);
+  .form-section-title {
+    margin-bottom: (@leading / 2);
+  }
+}
+
+.form-section-body {
+  margin-left: @form-section-indent;
+  > .input,
+  > .input-group {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

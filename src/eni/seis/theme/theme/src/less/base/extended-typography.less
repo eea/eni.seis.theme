@@ -1,0 +1,163 @@
+// Default theme
+:root {
+  // .theme-body(@theme-primary);
+}
+
+// .theme(@theme-primary);
+
+.h1 { &:extend(h1 all); }
+.h2 { &:extend(h2 all); }
+.h3 { &:extend(h3 all); }
+.h4 { &:extend(h4 all); }
+.h5 { &:extend(h5 all); }
+.h6 { &:extend(h6 all); }
+
+h1,
+h2,
+h3 {
+  small {
+    font-size: 50%;
+    vertical-align: middle;
+  }
+}
+
+.heading-separator {
+  text-align: center;
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    border-top: 1px solid;
+    height: 0;
+    vertical-align: middle;
+    width: 4rem;
+    margin: 0 @rem-h;
+  }
+}
+
+.mono {
+  font-family: @font-family-monospace;
+}
+
+.muted {
+  color: @color-muted;
+}
+
+.small {
+  &:extend(small all);
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.large {
+  font-size: @larger;
+}
+
+// .page-title {
+//   font-weight: 400;
+//   font-size: @font-size-h2;
+// }
+
+// Alignment
+.align-left     { text-align: left; }
+.align-center   { text-align: center; }
+.align-right    { text-align: right; }
+.align-justify  { text-align: justify; }
+
+.dl-horizontal {
+  dt, dd {
+    margin-bottom: @rem-v-small;
+  }
+  dd {
+    margin-left: 0;
+    &:after {
+      content: "";
+      display: block;
+      clear: left;
+    }
+  }
+  @media @screen-sm {
+    dt {
+      float: left;
+      width: (@indent-media - @rem-h);
+      clear: left;
+    }
+    dd {
+      margin-left: @indent-media;
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 90%;
+  letter-spacing: .05em;
+}
+
+.list-inline {
+  .utils > .list-inline(@rem-h);
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.no-br {
+  .utils > .no-br;
+}
+
+.no-list {
+  .utils > .no-list;
+}
+
+.text-success {
+  color: @success-color;
+}
+.text-error {
+  color: @error-color;
+}
+.text-warning {
+  color: @warning-color;
+}
+.text-info {
+  color: @info-color;
+}
+
+.hr-inline {
+  display: inline-block;
+  margin: 0 @em-h;
+  width: 0;
+  height: 1.2em;
+  line-height: 1;
+  vertical-align: middle; 
+  border-left: 1px solid;
+}
+
+.a-underline {
+  display: inline-block;
+  border-bottom: 1px dashed;
+  &:hover {
+    border-bottom-style: solid;
+  }
+  &:focus {
+    border-bottom-color: transparent;
+  }
+}
+
+.no-leading {
+  margin-bottom: 0;
+}
+
+.leading-small {
+  margin-bottom: @leading-small;
+}
+
+.leading {
+  margin-bottom: @leading;
+}
+.leading-large {
+  margin-bottom: @leading-large;
+}
+.leading-xlarge {
+  margin-bottom: @leading-xlarge;
+}

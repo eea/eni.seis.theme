@@ -1,0 +1,240 @@
+// Paths
+@path-fonts:                 "../fonts";
+@path-images:                "../img";
+@path-node:                  "../../node_modules";
+@path-bower:                 "../../bower_components";
+
+// Media query breakpoints
+@breakpoint-xs:              360px;
+@breakpoint-sm:              640px;
+@breakpoint-md:              960px;
+@breakpoint-lg:              1360px;
+@breakpoint-xl:              1600px;
+
+
+  //=>
+  @breakpoint-lt-xs:         (@breakpoint-xs - 1px);
+  @breakpoint-lt-sm:         (@breakpoint-sm - 1px);
+  @breakpoint-lt-md:         (@breakpoint-md - 1px);
+  @breakpoint-lt-lg:         (@breakpoint-lg - 1px);
+  @breakpoint-lt-xl:         (@breakpoint-xl - 1px);
+
+  @screen-xs:                ~"(min-width: @{breakpoint-xs})";
+  @screen-xs-max:            ~"(max-width: @{breakpoint-lt-sm})";
+  @screen-xs-upto:           ~"(max-width: @{breakpoint-lt-xs})";
+  @screen-xs-only:           ~"@{screen-xs} and @{screen-xs-max}";
+  @screen-sm:                ~"(min-width: @{breakpoint-sm})";
+  @screen-sm-max:            ~"(max-width: @{breakpoint-lt-md})";
+  @screen-sm-upto:           ~"(max-width: @{breakpoint-lt-sm})";
+  @screen-sm-only:           ~"(min-width: @{breakpoint-sm}) and (max-width: @{breakpoint-lt-md})";
+  @screen-md:                ~"(min-width: @{breakpoint-md})";  
+  @screen-md-max:            ~"(max-width: @{breakpoint-lt-lg})";
+  @screen-md-upto:           ~"(max-width: @{breakpoint-lt-md})";
+  @screen-md-only:           ~"(min-width: @{breakpoint-md}) and (max-width: @{breakpoint-lt-lg})";
+  @screen-lg:                ~"(min-width: @{breakpoint-lg})";
+  @screen-lg-max:            ~"(max-width: @{breakpoint-lt-xl})";
+  @screen-lg-upto:           ~"(max-width: @{breakpoint-lt-lg})";
+  @screen-lg-only:           ~"(min-width: @{breakpoint-lg}) and (max-width: @{breakpoint-lt-xl})";
+  @screen-xl:                ~"(min-width: @{breakpoint-xl})";
+  @screen-hires:             ~"(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx)";
+  
+
+// Metrics
+@rem-v-small:                .2rem;
+@rem-h-small:                .3rem;
+@rem-v:                      .4rem;
+@rem-h:                      .5rem;
+@rem-v-large:                .9rem;
+@rem-h-large:                1.1rem;
+@rem-v-xlarge:               1.4rem;
+@rem-h-xlarge:               1.6rem;
+@rem-v-xxlarge:              1.8rem;
+@rem-h-xxlarge:              2.2rem;
+
+  //=> 
+  @rem-x-small:                ((@rem-v-small + @rem-h-small) / 2);
+  @rem-x:                      ((@rem-v + @rem-h) / 2);
+  @rem-x-large:                ((@rem-v-large + @rem-h-large) / 2);
+  @rem-x-xlarge:               ((@rem-v-xlarge + @rem-h-xlarge) / 2);
+  @rem-x-xxlarge:              ((@rem-v-xxlarge + @rem-h-xxlarge) / 2);
+
+  @rem-small:                  @rem-v-small @rem-h-small;
+  @rem:                        @rem-v @rem-h;
+  @rem-large:                  @rem-v-large @rem-h-large;
+  @rem-xlarge:                 @rem-v-xlarge @rem-h-xlarge;
+  @rem-xxlarge:                @rem-v-xxlarge @rem-h-xxlarge;
+
+  @em-v-small:                 unit(@rem-v-small, em);
+  @em-h-small:                 unit(@rem-h-small, em);
+  @em-x-small:                 unit(@rem-x-small, em);
+  @em-v:                       unit(@rem-v, em);
+  @em-h:                       unit(@rem-h, em);
+  @em-x:                       unit(@rem-x, em);
+  @em-v-large:                 unit(@rem-v-large, em);
+  @em-h-large:                 unit(@rem-h-large, em);
+  @em-x-large:                 unit(@rem-x-large, em);
+  @em-v-xlarge:                unit(@rem-v-xlarge, em);
+  @em-h-xlarge:                unit(@rem-h-xlarge, em);
+  @em-x-xlarge:                unit(@rem-x-xlarge, em);
+  @em-v-xxlarge:               unit(@rem-v-xxlarge, em);
+  @em-h-xxlarge:               unit(@rem-h-xxlarge, em);
+  @em-x-xxlarge:               unit(@rem-x-xxlarge, em);
+
+  @em-small:                   @em-v-small @em-h-small;
+  @em:                         @em-v @em-h;
+  @em-large:                   @em-v-large @em-h-large;
+  @em-xlarge:                  @em-v-xlarge @em-h-xlarge;
+  @em-xxlarge:                 @em-v-xxlarge @em-h-xxlarge;
+
+@radius-small:               .2em;
+@radius:                     .3em;
+@radius-large:               .5em;
+
+@container-sm:               30rem;
+@container-md:               50rem;
+@container-lg:               80rem;
+@container-xl:               auto;
+@layout-inset:               1.5rem;
+
+  //=>
+  @container:                  80rem; // Default container
+
+@1rem:                       15px;
+@reading-width:              40rem; // (60 - (2 * @gutter));
+@gutter-small:               .5rem;
+@gutter:                     @leading;
+@gutter-large:               2rem;
+@gutter-xlarge:              3rem;
+
+
+// Layers
+@z-navbar:                   100;
+@z-dropdowns:                500;
+@z-modals:                   400;
+@z-tooltip:                  600;
+
+
+
+// Typography
+@font-family-sans-serif:     sans-serif;
+@font-family-serif:          serif;
+@font-family-monospace:      monospace;
+  // =>
+  @font-family:                 @font-family-sans-serif;
+  @font-family-condensed:       @font-family-sans-serif;
+  @font-family-heading:         @font-family;
+  
+@font-size-h1:               2rem;
+@font-size-h2:               1.8rem;
+@font-size-h3:               1.6rem;
+@font-size-h4:               1.4rem;
+@font-size-h5:               @larger;
+@font-size-h6:               1em;
+
+@small:                      1rem;
+@smaller:                    smaller;
+@larger:                     larger;
+
+@line-height:                unit(20 / @1rem);
+@line-height-small:          1.2;
+@line-height-body:           @line-height;
+@line-height-heading:        @line-height-small;
+@line-height-large:          1.6;
+@leading-small:              .5rem;
+@leading:                    1rem;
+@leading-large:              1.5rem;
+@leading-xlarge:             2rem;
+@leading-xxlarge:            3rem;
+@indent:                     2rem;
+@indent-media:               8rem;
+@indent-list:                2rem;
+
+@weight-strong:              500; // strong, th, dt
+@weight-label:               500;
+@weight-heading:             600;
+
+  // =>
+  @line-height-rem:            (1rem * @line-height-body);
+  @line-height-em:             (1em * @line-height-body);
+  @btn-height:                 (@line-height-body + 2 * @btn-padding-v);
+  @safe-padding:               ((@line-height-body - 1em) / 2);
+
+
+// Swatches
+@color-navy:                 #1E485D;
+@color-blue:                 #004087;
+@color-lightblue:            #259DEF;
+@color-yellow:               #f4ce62;
+@color-darkyellow:           #f5b400;
+@color-orange:               #EF8152;
+@color-orange-darker:        #cb5411;
+@color-green:                #12724B;
+@color-green-light:          #41B764;
+@color-darkgreen:            #499334;
+@color-teal:                 #0F925E;
+@color-red:                  #e02047;
+@color-orange-text:          #cb5411;
+
+@color-dominant:             #0C6B59;
+@color-secondary:            #333;
+@color-accent:               #61D892;
+
+
+// @color-bg:                   #F7F4ED;
+@color-body:                 #555;
+@color-muted:                #748284;
+@color-emphasis:             #222;
+@color-heading:              #222;
+
+@color-anchor:               #034ea2;
+@color-anchor-hover:         #1679d3;
+
+@color-soft:                 #d8d8d8;
+@color-softer:               #f2f2f2;
+@color-medium:               #ccc;
+@color-hard:                 #aaa;
+@color-harder:               #748284;
+
+
+// States
+@focus-border:               @color-lightblue;
+@focus-color:                #034ea2;
+@focus-bg:                   #034ea2;
+@focus-shadow:               0 0 2px 1px fade(@focus-border, 30%);
+
+@error-border:               #cc162c;
+@error-color:                #cc162c;
+@error-bg:                   #cc162c;
+
+@warning-border:             @color-orange;
+@warning-color:              @color-orange;
+@warning-bg:                 #FFA144; // @color-orange;
+
+@info-border:                akdfga;
+@info-color:                 askdad;
+@info-bg:                    asldk;
+
+@success-border:             @color-green;
+@success-color:              @color-green;
+@success-bg:                 @color-green;
+
+@disabled-border:            @color-soft;
+@disabled-color:             @color-harder;
+@disabled-bg:                @color-softer;
+
+// Inputs
+@input-focus-border:         @color-lightblue;
+
+
+// Buttons
+@btn-weight:                 600;
+@btn-padding-v:              @em-v;
+@btn-padding-h:              @em-h;
+@btn-radius:                 @radius;
+@btn-box-shadow:             0 0 .3em fade(#000, 15%),
+                             0 .1em .2em fade(#000, 20%);
+@btn-box-shadow-hover:       0 0 .3em fade(#000, 15%),
+                             0 0 .2em fade(#000, 30%);
+
+// Grid
+@grid-gutter:                @gutter-large;

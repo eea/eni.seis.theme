@@ -1,0 +1,503 @@
+@input-toggleClass: .selected;
+@input-focusClass: .focus;
+@input-disabledClass: .disabled;
+@input-errorClass: .error;
+@input-loadedClass: .loaded;
+@input-loadingClass: .loading;
+
+
+@input-padding-v: @em-v;
+@input-padding-h: @em-h;
+@input-radius: 4px;
+@input-font-weight: normal;
+@input-border-width: 1px;
+
+
+  // =>
+  @input-padding: @input-padding-v @input-padding-h;
+
+
+
+label {
+  font-weight: @weight-label;
+  color: @color-emphasis;
+  &[for] {
+    cursor: pointer;
+  }
+}
+input,
+textarea,
+select {
+  line-height: inherit;
+}
+
+.label {
+  &:extend(label);
+}
+
+.input-focus(@color) {
+  border-color: @color;
+  box-shadow: 0 0 2px 1px fade(@color, 50%);
+}
+
+@input-hover: {
+  border-color: @focus-border;
+};
+
+@input-focus: {
+  border-color: @focus-border;
+  box-shadow: 0 0 2px 1px fade(@focus-border, 30%);
+};
+
+@input-error: {
+  border-color: @error-border;
+  box-shadow: 0 0 2px 1px fade(@error-border, 30%);
+};
+
+
+// block inputs
+.field-text,
+.field-email,
+.field-tel,
+.field-url,
+.field-select,
+.field-password,
+.field-number,
+.field-textarea {
+
+  display: inline-block;
+  vertical-align: middle;
+
+  > label {
+    float: left;
+    margin-right: @em-h;
+    border-top: 1px solid transparent;
+    padding-top: @em-v;
+  }
+
+  input,
+  select,
+  textarea {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    padding: @em;
+    outline: 0;
+  }
+
+  &.field-block {
+    display: block;
+    label {
+      display: block;
+      float: none;
+      margin: 0;
+    }
+    .input,
+    .input-element {
+      width: 100%;
+    }
+  }
+
+  .input {
+    box-sizing: border-box;
+    display: table;
+    table-layout: auto;
+    border: 1px solid @color-soft;
+    border-radius: @radius;
+    background-color: #fff;
+  }
+
+  .input-element,
+  .input-addon {
+    &:first-child {
+      border-top-left-radius: @radius;
+      border-bottom-left-radius: @radius;
+      border-left: 0; 
+    }
+    &:last-child {
+      border-top-right-radius: @radius;
+      border-bottom-right-radius: @radius;
+      border-right: 0; 
+    }
+  }
+
+  .input-element {
+    display: table-cell;
+    position: relative;
+  }
+
+  .input-addon {
+    display: table-cell;
+    border-left: 1px solid @color-soft;
+    border-right: 1px solid @color-soft;
+    padding: @em;
+    // width: 1%;
+    white-space: nowrap;
+  }
+
+  .input-error-message {
+    display: none;
+    position: absolute;
+    z-index: @z-tooltip;
+    top: 100%;
+    left: 0;
+    max-width: 100%;
+    padding: @em-small;
+    font-size: @smaller;
+    border-radius: 3px;
+    background: @error-bg;
+    color: #fff;
+    line-height: 1;
+    opacity: 0;
+    transition: transform .2s,
+                opacity .2s;
+    transition-delay: .1s;
+
+    &:before {
+      .utils > .triangle(up, @error-bg, 5px);
+      position: absolute;
+      bottom: 100%;
+      left: @em-h;
+    }
+  }
+
+  // States
+  &:hover {
+    .input {
+      @input-hover();
+    }
+  }
+  &@{input-focusClass} {
+    .input {
+      @input-focus();
+    }
+  }
+
+  &@{input-errorClass} {
+    .input {
+      border-color: @error-border;
+    }
+    .input-element {
+      &:after {
+        .icon;
+        content: @icon-warning;
+        position: absolute;
+        top: 50%;
+        right: @em-h;
+        margin-top: -.5em;
+        line-height: 1;
+        font-size: @larger;
+        color: @error-color;
+      }
+    }
+
+    &:hover,
+    &@{input-focusClass} {
+      .input-error-message {
+        display: block;
+        transform: translateY(3px);
+        opacity: 1;
+      }
+    }
+
+    &@{input-focusClass} {
+      .input {
+        @input-error();
+      }
+    }
+  }
+
+  &@{input-disabledClass} {
+    &,
+    &:hover {
+      color: @disabled-color; 
+      .input {
+        box-shadow: none;
+        border-color: @disabled-border;
+        background-color: @disabled-bg;
+      }
+      .addon {
+        border-color: @disabled-border
+      }
+    }
+  }
+}
+
+
+
+// Inline inputs
+.field-radio,
+.field-checkbox {
+  display: inline-block;
+  font-weight: inherit;
+
+  input { .utils > .hide-input; }
+
+  .input {
+    &:before {
+      .utils > .square(1em);
+      .icon;
+      display: inline-block;
+      border: 1px solid @color-soft;
+      border-radius: @radius;
+      background-color: #fff;
+      transition: background .2s,
+                  border-color .2s;
+      content: "\00a0 ";
+      color: #fff;
+      font-size: inherit;
+      text-align: center;
+      line-height: 1;
+      text-rendering: optimizeSpeed;
+    }
+  }
+
+  &:hover {
+    .input:before {
+      @input-hover();
+    }
+  }
+
+  &@{input-focusClass} {
+    .input:before {
+      @input-focus();
+      box-shadow: 0 0 4px 2px fade(@focus-border, 50%);
+    }
+  }
+
+  &@{input-toggleClass} {
+    .input:before {
+      background-color: @success-border;
+      border-color: @success-border;
+    }
+    &:hover,
+    &@{input-focusClass} {
+      .input:before {
+        border-color: @focus-border;
+        background-color: @focus-border;
+      }
+    }
+  }
+  
+  &@{input-disabledClass} {
+    &,
+    &:hover {
+      .input:before {
+        border-color: @disabled-border;
+        background-color: @disabled-bg;
+        color: @disabled-color;
+        box-shadow: none;
+      }
+    }
+    &@{input-toggleClass} {
+      .input:before {
+        border-color: @disabled-color;
+        background-color: @disabled-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.field-checkbox {
+  &@{input-toggleClass} {
+    .input {
+      &:before {
+        content: @icon-checkbox;
+      }
+    }
+  }
+}
+.field-radio {
+  .input {
+    &:before {
+      border-radius: 50%;
+    }
+  }
+  &@{input-toggleClass} {
+    .input {
+      &:before {
+        content: @icon-radio;
+      }
+    }
+  }
+}
+
+.field-group {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: @leading;
+  .field {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 (@leading / 2);
+    margin-bottom: 0;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.field-file {
+
+  .utils > .clearfix;
+
+  input {
+    .utils > .hide-input;
+  }
+
+  label {
+    &:extend(.input.input-text label all);
+  }
+
+
+  .file-preview {
+    .utils > .square(4rem);
+    position: relative;
+    display: inline-block;
+    border: @input-border-width solid @color-soft;
+    border-radius: @input-radius;
+    cursor: pointer;
+
+    .icon {
+      .utils > .center-block;
+      display: block;
+      font-size: 200%;
+    }
+
+    img {
+      .utils > .img-width;
+      display: none;
+    }
+  }
+
+  .placeholder {
+    .utils > .center-xy(@position: absolute);
+  }
+
+
+  .file-name {
+    font-style: italic;
+  }
+
+  &:hover {
+    .file-preview {
+      @input-hover();
+    }
+  }
+
+  &@{input-focusClass} {
+    .file-preview {
+      @input-focus();
+    }
+  }
+
+  &@{input-loadedClass} {
+    &.file-type-image {
+      .placeholder {
+        display: none;
+      }
+      .file-preview {
+        border-color: @success-border;
+        height: auto;
+        img {
+          display: block;
+        }
+      }
+    }
+    // &.file-type-file {
+    //   .placeholder {
+    //     color: @success-color;
+    //   }
+    // }
+  }
+
+  &@{input-errorClass} {
+    .file-name {
+      text-decoration: line-through;
+    }
+    .file-preview {
+      border-color: @error-border;
+    }
+    .placeholder {
+      color: @error-color;
+    }
+    &@{input-focusClass} {
+      .file-preview {
+        @input-error();
+      }
+    }
+  }
+
+  &.field-block {
+    .file-preview {
+      display: block;
+      float: left;
+      margin-right: @rem-h;
+    }
+  }
+
+}
+
+
+.field-block {
+  margin-bottom: @leading;
+}
+
+.field-inline {
+  display: block;
+  margin-bottom: @leading;
+}
+
+.field-select2 {
+  &:extend(.field-select all);
+  
+}
+
+
+.input-error-message {
+  margin-top: @input-padding-v;
+  color: @error-color;
+  // font-size: smaller;
+  &:empty {
+    display: none;
+  }
+}
+
+.required {
+  label {
+    &:after {
+      content: "*";
+      color: @color-red;
+      display: inline-block;
+      margin-left: @em-h-small;
+    }
+  }
+}
+
+
+.label {
+  font-weight: 400;
+  display: inline-block;
+  font-size: @larger;
+  padding: @em-v 0;
+  line-height: @line-height-body * @smaller;
+}
+// replace with display utilities
+.label-block {
+  display: block;
+}
+
+
+
+// .input-tag {
+//   padding: @em-small;
+//   border: 1px solid;
+//   border-radius: @radius;
+// }

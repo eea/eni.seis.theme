@@ -1,0 +1,33 @@
+.utils {
+
+  .triangle(@direction, @color, @size, @display: block) {
+    content: "";
+    display: @display;
+    width: 0;
+    height: 0;
+    border-width: @size;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  .triangle(@direction, @color, @size, @display: block)
+    when (@direction = up) {
+    border-bottom-color: @color;
+  }
+
+  .triangle(@direction, @color, @size, @display: block)
+    when (@direction = right) {
+    border-left-color: @color;
+  }
+
+  .triangle(@direction, @color, @size, @display: block)
+    when (@direction = down) {
+    border-top-color: @color;
+  }
+
+  .triangle(@direction, @color, @size, @display: block)
+    when (@direction = left) {
+    border-right-color: @color;
+  }
+
+}

@@ -1,0 +1,26 @@
+.media {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  text-align: center;
+}
+
+.media-object {
+  display: block;
+  img,
+  svg,
+  object,
+  picture {
+    .utils > .center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.media-caption {
+  margin-top: @leading-small;
+  font-size: @smaller;
+  color: @color-muted;
+}
