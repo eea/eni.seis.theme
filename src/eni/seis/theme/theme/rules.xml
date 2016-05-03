@@ -56,8 +56,8 @@
 
     <!-- PORTAL NAVIGATION -->
     <replace
-      css:content-children="#portal-globalnav"
-      css:theme-children="#navbar"
+      css:content="#portal-globalnav"
+      css:theme="#navbar .navbar-menu"
       />
 
     <!-- LOGIN (FOR ANONYMOUS USERS) -->
@@ -107,7 +107,7 @@
     <!-- FOOTER -->
     <replace
       css:content="#portal-siteactions"
-      css:theme-children="footer"
+      css:theme="#diazo-portal-siteactions"
       />
 
   </rules>
