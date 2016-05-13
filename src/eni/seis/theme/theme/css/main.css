@@ -1683,12 +1683,12 @@ ul.pagination-pages {
 }
 @media (min-width: 960px) {
   .page-main {
-    float: left;
+    float: right;
     width: 75%;
-    padding-right: 3rem;
+    padding-left: 3rem;
   }
   .page-aside {
-    float: right;
+    float: left;
     width: 25%;
   }
 }
@@ -1846,6 +1846,39 @@ ul.pagination-pages {
     padding-right: 0;
   }
 }
+#portal-siteactions {
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 0 -0.15em;
+}
+#portal-siteactions > li {
+  display: inline-block;
+  padding: 0 0.15em;
+  vertical-align: baseline;
+}
+#portal-siteactions > li {
+  border-right: 1px solid #d8d8d8;
+}
+#portal-siteactions > li::after {
+  content: '\00a0';
+}
+#portal-siteactions > li:last-child::after {
+  content: none;
+}
+#portal-siteactions > li:last-child {
+  border-right: 0;
+}
+@media (min-width: 960px) {
+  .section-front-page .page-main {
+    float: left;
+    padding-left: 0;
+    padding-right: 3rem;
+  }
+  .section-front-page .page-aside {
+    float: right;
+  }
+}
 .box {
   margin-left: auto;
   margin-right: auto;
@@ -1904,6 +1937,19 @@ ul.pagination-pages {
 }
 .breadcrumbs > li:last-child::after {
   content: none;
+}
+#portal-breadcrumbs > span {
+  display: inline-block;
+  margin: 0 .2em;
+}
+#portal-breadcrumbs > span::after {
+  content: '\00a0\203A';
+}
+#portal-breadcrumbs > span:last-child::after {
+  content: none;
+}
+.breadcrumbSeparator {
+  display: none;
 }
 .block-inset {
   margin-left: 2rem;

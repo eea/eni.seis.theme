@@ -56,6 +56,22 @@
   }
 }
 
+#portal-breadcrumbs {
+  > span {
+    display: inline-block;
+    margin: 0 .2em;
+  }
+  > span::after {
+    content: '\00a0\203A';
+  }
+  > span:last-child::after {
+    content: none;
+  }
+}
+.breadcrumbSeparator {
+  display: none;
+}
+
 .block-inset {
   margin-left: @indent;
   margin-right: @indent;
@@ -69,5 +85,4 @@
   .list-inline {
     display: inline-block;
   }
-
 }

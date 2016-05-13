@@ -83,8 +83,8 @@
 
     <!-- BREADCRUMBS -->
     <replace
-      css:content-children="div#portal-breadcrumbs"
-      css:theme-children="ol.breadcrumb"
+      css:content="#portal-breadcrumbs"
+      css:theme=".breadcrumbs"
       />
     <drop css:content="span#breadcrumbs-you-are-here" />
 
@@ -98,11 +98,43 @@
       css:content="#plone-contentmenu-workflow .arrowDownAlternative"
       />
 
-    <!-- CONTENT -->
+    <!-- 
+      #viewlet-above-content-title 
+      for portalMessages
+    -->
+
+    <!-- Page header -->
     <replace
-      css:content="#content"
-      css:theme-children="#content"
+      css:content-children=".documentFirstHeading"
+      css:theme-children=".page-title"
       />
+
+    <replace
+      css:content-children=".documentDescription"
+      css:theme-children=".page-description"
+      />
+
+    <!--
+      #viewlet-below-content-title
+      for author, date, history
+    -->
+
+    <!-- 
+      #viewlet-above-content-body
+    -->
+
+    <!-- main content -->
+    <replace
+      css:content-children="#content-core"
+      css:theme-children=".page-main"
+      />
+
+    <!-- 
+      #viewlet-below-content-body
+      #viewlet-below-content
+        .documentActions
+        #socialmedia-viewlet
+    -->
 
     <!-- FOOTER -->
     <replace
