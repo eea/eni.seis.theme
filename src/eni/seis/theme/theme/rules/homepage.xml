@@ -4,15 +4,21 @@
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
-  <rules css:if-content="body.section-front-page, body.template-homepage">
+  <!-- Custom homepage (as view) -->
+  <rules css:if-content="body.template-homepage">
     <replace css:content-children=".documentDescription"
              css:theme-children=".site-description" />
     <drop css:theme=".page-header" />
 
     <!-- [TODO] Fix rule -->
     <replace css:theme-children=".page-main"
-             css:content-children="#events-section" />
+             css:content-children="[data-diazo='events-section']" />
+  </rules>
 
+  <rules css:if-content="body.section-front-page">
+    <replace css:content-children=".documentDescription"
+             css:theme-children=".site-description" />
+    <drop css:theme=".page-header" />
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
