@@ -53,6 +53,15 @@
     </nav>
   </replace>
 
+  <!-- Portlets -->
+  <after css:theme-children=".page-aside">
+    <xsl:for-each css:select="dl.portlet">
+      <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
+        <xsl:copy-of select="."/>
+      </xsl:if>
+    </xsl:for-each>
+  </after>
+
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
