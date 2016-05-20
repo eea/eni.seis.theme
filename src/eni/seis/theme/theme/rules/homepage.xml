@@ -10,7 +10,10 @@
              css:theme-children=".site-description" />
     <drop css:theme=".page-header" />
 
-    <drop css:theme=".page-aside" />
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+    <drop css:theme=".page-aside nav.nav-folder" />
+
     <replace css:theme-children=".page-main"
              css:content-children="[data-diazo='homepage-content']" />
   </rules>
