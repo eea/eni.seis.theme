@@ -93,7 +93,7 @@
     <copy
       attributes="href"
       css:content="#portal-logo"
-      css:theme=".navbar-brand"
+      css:theme=".navbar-brand h1 a"
       />
 
     <!-- PORTAL NAVIGATION -->
