@@ -10,9 +10,9 @@
              css:theme-children=".site-description" />
     <drop css:theme=".page-header" />
 
-    <!-- [TODO] Fix rule -->
+    <drop css:theme=".page-aside" />
     <replace css:theme-children=".page-main"
-             css:content-children="[data-diazo='events-section']" />
+             css:content-children="[data-diazo='homepage-content']" />
   </rules>
 
   <rules css:if-content="body.section-front-page">
