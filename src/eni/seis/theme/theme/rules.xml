@@ -105,6 +105,9 @@
       css:theme=".navbar-brand h1 a"
       />
 
+    <!-- Get website title based on website configuration (Requires website_title_html script. See docs.) -->
+    <replace css:content="h1" css:theme=".navbar-brand h1" href="/website_title_html" method="document" />
+
     <!-- PORTAL NAVIGATION -->
     <replace
       css:content="#portal-globalnav"
