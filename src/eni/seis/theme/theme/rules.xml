@@ -175,10 +175,12 @@
     -->
 
     <!-- main content -->
-    <replace
-      css:content-children="#content-core"
-      css:theme-children=".page-main"
-      />
+    <rules css:if-not-content="body.template-homepage">
+      <replace
+        css:content-children="#content-core"
+        css:theme-children=".page-main"
+        />
+    </rules>
 
     <!-- 
       #viewlet-below-content-body
