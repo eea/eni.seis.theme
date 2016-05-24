@@ -14,8 +14,24 @@
     <drop css:theme=".page-aside .box.leading-large" />
     <drop css:theme=".page-aside nav.nav-folder" />
 
-    <replace css:theme-children=".page-main"
-             css:content-children="[data-diazo='homepage-content']" />
+    <!-- Section: Governance - get content from page -->
+    <replace css:theme="[data-diazo='section-governance']"
+             href="homepage-section-governance-text" method="document"
+             css:content="#content-core" />
+
+    <!-- Section: Workplan - get content from page -->
+    <replace css:theme="[data-diazo='section-workplan']"
+             href="homepage-section-workplan-text" method="document"
+             css:content="#content-core" />
+
+    <!-- Section: Partners - get content from page -->
+    <replace css:theme="[data-diazo='section-partners']"
+             href="homepage-section-partners-text" method="document"
+             css:content="#content-core" />
+
+    <!-- Section: Events - get content from custom homepage template -->
+    <replace css:theme-children="[data-diazo='section-events']"
+             css:content-children="[data-diazo='section-events']" />
   </rules>
 
   <rules css:if-content="body.section-front-page">
