@@ -23,6 +23,12 @@
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
+  <!-- Drop Manage portlets button for anonymous -->
+  <rules css:if-content="body.userrole-anonymous">
+    <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
+  </rules>
+
+
   <!-- Nav -->
   <replace css:theme=".page-aside .nav.nav-folder">
     <nav class="nav nav-folder">
