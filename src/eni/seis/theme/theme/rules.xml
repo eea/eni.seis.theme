@@ -28,6 +28,14 @@
     <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
   </rules>
 
+  <!-- Manage portlets button - fix url -->
+  <rules css:if-content="body.userrole-authenticated">
+    <copy
+      attributes="href"
+      css:content=".managePortletsLink a"
+      css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']"
+      />
+  </rules>
 
   <!-- Nav -->
   <replace css:theme=".page-aside .nav.nav-folder">
