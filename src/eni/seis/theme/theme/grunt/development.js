@@ -8,7 +8,9 @@ module.exports = {
         sourceMapURL: './source.css.map'
       },
       files: {
-        '<%= path.static %>/css/main.css': '<%= path.src %>/less/main.less'
+        '<%= path.static %>/css/main.css': '<%= path.src %>/less/main.less',
+        '<%= path.static %>/css/east.css': '<%= path.src %>/less/theme/east.less',
+        '<%= path.static %>/css/south.css': '<%= path.src %>/less/theme/south.less'
       }
     }
   },

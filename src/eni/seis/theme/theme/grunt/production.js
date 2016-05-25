@@ -6,7 +6,9 @@ module.exports = {
         sourceMap: false
       },
       files: {
-        '<%= path.static %>/css/main.css': '<%= path.src %>/less/main.less'
+        '<%= path.static %>/css/main.css': '<%= path.src %>/less/main.less',
+        '<%= path.static %>/css/east.css': '<%= path.src %>/less/east.less',
+        '<%= path.static %>/css/south.css': '<%= path.src %>/less/south.less'
       }
     }
   },
@@ -22,7 +24,7 @@ module.exports = {
   },
   postcss: {
     production: {
-      src: '<%= path.static %>/css/main.css',
+      src: '<%= path.static %>/css/*.css',
       options: {
         map: false,
         processors: [
