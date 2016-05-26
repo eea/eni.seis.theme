@@ -41,7 +41,7 @@
   <replace css:theme=".page-aside .nav.nav-folder">
     <nav class="nav nav-folder">
       <header class="nav-header">
-        <h4 class="nav-title">Nav</h4>
+        <h4 class="nav-title">Navigation</h4>
       </header>
       <div class="nav-body">
         <xsl:for-each css:select="dl.portlet.portletNavigationTree > dd.portletItem > ul.navTree.navTreeLevel0 > li.navTreeItem">
