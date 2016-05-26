@@ -29,6 +29,10 @@
              href="homepage-section-partners-text" method="document"
              css:content="#content-core" />
 
+    <!-- Section: Countries map - get content homepage template -->
+    <replace css:theme="[data-diazo='section-countries-map']"
+             css:content="[data-diazo='section-countries-map']" />
+
     <!-- Section: Events - get content from custom homepage template -->
     <replace css:theme-children="[data-diazo='section-events']"
              css:content-children="[data-diazo='section-events']" />
