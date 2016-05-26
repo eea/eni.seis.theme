@@ -207,10 +207,15 @@
     -->
 
     <!-- FOOTER -->
-    <replace
-      css:content="#portal-siteactions"
-      css:theme="#diazo-portal-siteactions"
+    <!-- OLD:
+      <replace
+        css:content="#portal-siteactions"
+        css:theme="#diazo-portal-siteactions"
       />
+    -->
+      <replace css:theme="#diazo-portal-siteactions">
+        <p>ENI SEIS 2016</p>
+      </replace>
 
   </rules>
 
