@@ -9,8 +9,8 @@ module.exports = {
       },
       files: {
         '<%= path.static %>/css/main.css': '<%= path.src %>/less/main.less',
-        '<%= path.static %>/css/east.css': '<%= path.src %>/less/theme/east.less',
-        '<%= path.static %>/css/south.css': '<%= path.src %>/less/theme/south.less'
+        '<%= path.static %>/css/east.css': '<%= path.src %>/less/east.less',
+        '<%= path.static %>/css/south.css': '<%= path.src %>/less/south.less'
       }
     }
   },
