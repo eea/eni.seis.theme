@@ -36,11 +36,11 @@
     <!-- Section: Events - get content from custom homepage template -->
     <replace css:theme-children="[data-diazo='section-events']"
              css:content-children="[data-diazo='section-events']" />
-  </rules>
 
-  <rules css:if-content="body.section-front-page">
-    <replace css:content-children=".documentDescription"
-             css:theme-children=".site-description" />
+    <!-- Site description on banner -->
+    <replace css:theme=".site-description"
+             css:content="[data-diazo='site-description']" />
+
     <drop css:theme=".page-header" />
   </rules>
 
