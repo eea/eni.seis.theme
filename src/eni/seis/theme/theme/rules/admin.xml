@@ -4,28 +4,34 @@
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- EDIT BAR (CONTENT VIEWS) -->
-  <replace
-    css:content-children="#content-views"
-    css:theme-children="#contentViews"
-    />
+  <rules css:if-not-content="body.userrole-anonymous">
 
-  <!-- EDIT BAR (DISPLAY) -->
-  <replace
-    css:content-children="#plone-contentmenu-display .actionMenuContent ul"
-    css:theme-children="#contentMenuDisplay"
-    />
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
 
-  <!-- EDIT BAR (ADD NEW) -->
-  <replace
-    css:content-children="#plone-contentmenu-factories .actionMenuContent ul"
-    css:theme-children="#contentMenuAddNew"
-    />
+    <!-- EDIT BAR (CONTENT VIEWS) -->
+    <replace
+      css:content-children="#content-views"
+      css:theme-children="#contentViews"
+      />
 
-  <!-- EDIT BAR (WORKFLOW STATE) -->
-  <replace
-    css:content-children="#plone-contentmenu-workflow .actionMenuContent ul"
-    css:theme-children="#contentMenuWorkflowState"
-    />
+    <!-- EDIT BAR (DISPLAY) -->
+    <replace
+      css:content-children="#plone-contentmenu-display .actionMenuContent ul"
+      css:theme-children="#contentMenuDisplay"
+      />
 
+    <!-- EDIT BAR (ADD NEW) -->
+    <replace
+      css:content-children="#plone-contentmenu-factories .actionMenuContent ul"
+      css:theme-children="#contentMenuAddNew"
+      />
+
+    <!-- EDIT BAR (WORKFLOW STATE) -->
+    <replace
+      css:content-children="#plone-contentmenu-workflow .actionMenuContent ul"
+      css:theme-children="#contentMenuWorkflowState"
+      />
+
+  </rules>
 </rules>
