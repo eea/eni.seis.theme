@@ -219,4 +219,12 @@
 
   </rules>
 
+  <!-- Fix bug: cannot edit pages -->
+  <rules css:if-content="body.template-atct_edit">
+    <replace
+      css:content="#content"
+      css:theme=".page-main"
+    />
+   </rules>
+
 </rules>
