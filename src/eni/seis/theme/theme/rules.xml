@@ -227,4 +227,13 @@
     />
    </rules>
 
+  <!-- Fix bug: cannot access control panel -->
+  <rules css:if-content="body.template-overview-controlpanel">
+    <replace
+      css:content="#content"
+      css:theme=".page-main"
+    />
+   </rules>
+
+
 </rules>
