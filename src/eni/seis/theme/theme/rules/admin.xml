@@ -9,6 +9,10 @@
     <drop css:theme=".page-aside .box.newsletter-box" />
     <drop css:theme=".page-aside .box.leading-large" />
 
+    <!-- Personal menu top-right corner -->
+    <before css:theme-children="#site-header"
+            css:content-children="#portal-personaltools-wrapper" />
+
     <!-- EDIT BAR (CONTENT VIEWS) -->
     <replace
       css:content-children="#content-views"
