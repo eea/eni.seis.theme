@@ -48,8 +48,11 @@
       />
   </rules>
 
-  <!-- Nav -->
-  <replace css:theme=".page-aside .nav.nav-folder">
+  <!-- Navigation -->
+  <drop css:theme=".page-aside .nav.nav-folder"
+        css:if-not-content="dl.portlet.portletNavigationTree" />
+  <replace css:theme=".page-aside .nav.nav-folder"
+           css:if-content="dl.portlet.portletNavigationTree">
     <nav class="nav nav-folder">
       <header class="nav-header">
         <h4 class="nav-title">Navigation</h4>
