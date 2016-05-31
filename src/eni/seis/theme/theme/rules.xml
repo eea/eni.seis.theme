@@ -82,7 +82,12 @@
   <after css:theme-children=".page-aside">
     <xsl:for-each css:select="dl.portlet">
       <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
-        <xsl:copy-of select="."/>
+        <div class="box leading-large {./@class}">
+          <h4>
+            <xsl:value-of select="./dt"/>
+          </h4>
+          <xsl:copy-of select="./dd/node()"/>
+        </div>
       </xsl:if>
     </xsl:for-each>
   </after>
