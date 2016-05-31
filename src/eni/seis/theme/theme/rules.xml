@@ -236,7 +236,7 @@
       css:content="#content"
       css:theme=".page-main"
     />
-   </rules>
+  </rules>
 
   <!-- Fix bug: cannot access control panel -->
   <rules css:if-content="body.template-overview-controlpanel">
@@ -244,7 +244,13 @@
       css:content="#content"
       css:theme=".page-main"
     />
-   </rules>
+  </rules>
 
-
+  <!-- Fix bug: cannot manage portlets -->
+  <rules css:if-content="body.template-manage-portlets">
+    <replace
+      css:content="#portal-columns"
+      css:theme=".page-main"
+    />
+  </rules>
 </rules>
