@@ -29,6 +29,11 @@
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
+  <!-- Drop Editor menu for anonymous -->
+  <rules css:if-content="body.userrole-anonymous">
+    <drop css:theme=".page-header .admin" />
+  </rules>
+
   <!-- Drop Manage portlets button for anonymous -->
   <rules css:if-content="body.userrole-anonymous">
     <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
