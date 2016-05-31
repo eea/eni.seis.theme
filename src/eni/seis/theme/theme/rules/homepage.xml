@@ -8,8 +8,6 @@
   <rules css:if-content="body.template-homepage">
     <replace css:content-children=".documentDescription"
              css:theme-children=".site-description" />
-    <drop css:theme=".page-header" />
-
     <drop css:theme=".page-aside .box.newsletter-box" />
     <drop css:theme=".page-aside .box.leading-large" />
     <drop css:theme=".page-aside nav.nav-folder" />
@@ -41,7 +39,10 @@
     <replace css:theme=".site-description"
              css:content="[data-diazo='site-description']" />
 
-    <drop css:theme=".page-header" />
+    <!-- Admin, drop only for anonymous -->
+    <rules css:if-content="body.userrole-anonymous">
+      <drop css:theme=".page-header" />
+    </rules>
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
