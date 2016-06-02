@@ -29,6 +29,12 @@
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
+  <!-- Not found page -->
+  <rules css:if-content="body.template-default_error_message">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
   <!-- Drop Editor menu for anonymous -->
   <rules css:if-content="body.userrole-anonymous">
     <drop css:theme=".page-header .admin" />
