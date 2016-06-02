@@ -40,11 +40,6 @@
     <drop css:theme=".page-header .admin" />
   </rules>
 
-  <!-- Drop Manage portlets button for anonymous -->
-  <rules css:if-content="body.userrole-anonymous">
-    <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
-  </rules>
-
   <!-- Login link for anonymous - top-right -->
   <rules css:if-content="body.userrole-anonymous">
     <before css:theme-children="#site-header">
@@ -54,13 +49,18 @@
     </before>
   </rules>
 
-  <!-- Manage portlets button - fix url -->
-  <rules css:if-content="body.userrole-authenticated">
+  <!-- Manage portlets button if here -->
+  <rules css:if-content=".managePortletsLink">
     <copy
       attributes="href"
       css:content=".managePortletsLink a"
       css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']"
       />
+  </rules>
+
+  <!-- Drop Manage portlets button if not here -->
+  <rules css:if-not-content=".managePortletsLink">
+    <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
   </rules>
 
   <!-- Navigation -->
