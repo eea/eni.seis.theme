@@ -267,6 +267,14 @@
     />
   </rules>
 
+  <!-- Fix bug: cannot access content rules -->
+  <rules css:if-content="body.template-rules-controlpanel">
+    <replace
+      css:content="#content"
+      css:theme=".page-main"
+    />
+  </rules>
+
   <!-- Fix bug: cannot manage portlets -->
   <rules css:if-content="body.template-manage-portlets">
     <replace
