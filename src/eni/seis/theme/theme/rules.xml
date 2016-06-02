@@ -39,6 +39,15 @@
     <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
   </rules>
 
+  <!-- Login link for anonymous - top-right -->
+  <rules css:if-content="body.userrole-anonymous">
+    <before css:theme-children="#site-header">
+      <xsl:for-each css:select="#portal-personaltools #personaltools-login">
+        <a class="login-link" href="{./@href}">Log in</a>
+      </xsl:for-each>
+    </before>
+  </rules>
+
   <!-- Manage portlets button - fix url -->
   <rules css:if-content="body.userrole-authenticated">
     <copy
@@ -228,6 +237,16 @@
     <!-- FOOTER -->
     <replace css:theme="#diazo-portal-siteactions">
       <p>ENI SEIS 2016</p>
+
+      <!-- Login link for anonymous - footer -->
+      <rules css:if-content="body.userrole-anonymous">
+        <before css:theme-children="#site-header">
+          <xsl:for-each css:select="#portal-personaltools #personaltools-login">
+            <a class="login-link" href="{./@href}">Log in</a>
+          </xsl:for-each>
+        </before>
+      </rules>
+
     </replace>
 
   </rules>
