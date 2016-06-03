@@ -294,12 +294,24 @@
       <path class="east-country country" d="M1259.31,652.84l-0.49.44,0.16,1.09,0.8,0.2,0.76-.44,0.09-.87-0.67-.39Zm26.88,36.91,1.58-.09,0.68-.6-2-2-1.71-1.34-1.42-.91-0.37-.54-0.06-.38,0.21-.46,2-1.11,0.07-1-0.31-1.13-3.73-1.67-2.53.62-2.61-1.87-1.71-1.45-2.1-1.55-1.8-.85-1.88-1.94-2.09-1.36-1.9,0-0.7.3-0.23-1.48h0l0-.31,0,0.31,1.84,0.56,1,0.65,3.08,0,0.55-.36,0.18-.86,0.49-1.26,0.52-1.86-0.3-1.56-5.36-2.52-4-2.32-3-3.05-2.11-2.79-0.08-.94,0.36-.88,3.48-2.56,0.16-.66-0.15-.45-1.57-1.31-1.94-1.35-0.69-1-1.16-.5-2.08,0-3.88-1.65-0.8-.16-0.22-.33,0.13-.33,2.49-.67-0.12-.55-0.9-.73-1.54-.53-1.54-1.32-0.65-1.18-0.5.35-3.49.47,0,0.28,0.93,0.74-0.12.23-6,.08-1.92.45-5.41-.58-1.71.26-1.42.55-3.55.62-2.41.73-3.16.38-3.31,0-1.11.22,0.5,1.11,1.57,1.57,1.75,1,1,1,1.91,3.55,0.85,2,0.06,1.89-0.71,1.94-1.8,2.42,0.67,1,0.67,1.34,0,1,1.95,3.11,1,1.93-0.52.45-0.29.62,2.94,1.49,3.45,1.25,1.42,0.24,3.69-.57,2.41-.12,2.57-1,3.91,2.88L1246,675l0.91,1.15,2.1-.42,3.42-1.23,1.06,0.6,1.23,1.24,0.67,1.06,0.37,2,0.48,0.32,1.66-.66,0.89,0.8,1.48,1,2.47,0.95,3.16-1.48,1.62-.38,1.38,0,0.81,0.46,0.48,1.54v1.9l-0.24,1,0.81,0.76,3,1.83,1.29,1-0.31,1.77,2.66,4.33,0.92,1.69,1.1,2.08,1.25,0.24,3.08-1.18,3.81,0.16-0.43-2.45-0.2-1.94-0.47-1.12-1.83-1.53-0.12-.66,0.38-.41Zm-38.75-46.44-0.42.3-0.76-.3-0.32-.67,0-.7,0.69-.17,0.61,0.2,0.26,0.63v0.7Z"/>
     </a>
     <g id="eni-seis-east-label">
-      <text class="country-label" transform="translate(916.72 426.12)">Ukraine</text>
-      <text class="country-label" transform="translate(841.21 483.65)">Moldova</text>
-      <text class="country-label" transform="translate(1175.71 616.26)">Georgia</text>
-      <text class="country-label" transform="translate(822.37 323.12)">Belarus</text>
-      <text class="country-label" transform="translate(1256.28 652.84)">Azerbaijan</text>
-      <text class="country-label" transform="translate(1205.59 669.29)">Armenia</text>
+      <a xlink:href="http://eni-seis.eionet.europa.eu/east/partners/countries/ukraine" title="Ukraine">
+        <text class="country-label" transform="translate(916.72 426.12)">Ukraine</text>
+      </a>
+      <a xlink:href="http://eni-seis.eionet.europa.eu/east/partners/countries/moldova" title="Moldova">
+        <text class="country-label" transform="translate(841.21 483.65)">Moldova</text>
+      </a>
+      <a xlink:href="http://eni-seis.eionet.europa.eu/east/partners/countries/georgia" title="Georgia">
+        <text class="country-label" transform="translate(1175.71 616.26)">Georgia</text>
+      </a>
+      <a xlink:href="http://eni-seis.eionet.europa.eu/east/partners/countries/belarus" title="Belarus">
+        <text class="country-label" transform="translate(822.37 323.12)">Belarus</text>
+      </a>
+      <a xlink:href="http://eni-seis.eionet.europa.eu/east/partners/countries/azerbaijan" title="Azerbaijan">
+        <text class="country-label" transform="translate(1256.28 652.84)">Azerbaijan</text>
+      </a>
+      <a xlink:href="http://eni-seis.eionet.europa.eu/east/partners/countries/armenia" title="Armenia">
+        <text class="country-label" transform="translate(1205.59 669.29)">Armenia</text>
+      </a>
     </g>
   </g>
 </svg>
