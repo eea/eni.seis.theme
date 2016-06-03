@@ -13,20 +13,18 @@
     <before css:theme-children="#site-header"
             css:content-children="#portal-personaltools-wrapper" />
 
-    <rules css-if-content="#edit-bar">
+    <rules css:if-content="#edit-bar">
       <replace css:theme-children=".admin">
-        <div class=".admin">
-          <div class="page-container">
-            <xsl:for-each css:select="#edit-bar">
-              <xsl:copy-of select="./*"/>
-            </xsl:for-each>
-          </div>
+        <div class="page-container">
+          <xsl:for-each css:select="#edit-bar">
+            <xsl:copy-of select="./*"/>
+          </xsl:for-each>
         </div>
       </replace>
     </rules>
 
-    <rules css-if-not-content="#edit-bar">
-      <drop css:theme-children=".admin" />
+    <rules css:if-not-content="#edit-bar">
+      <drop css:theme=".admin" />
     </rules>
 
   </rules>

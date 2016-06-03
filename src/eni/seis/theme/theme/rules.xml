@@ -37,7 +37,7 @@
 
   <!-- Drop Editor menu for anonymous -->
   <rules css:if-content="body.userrole-anonymous">
-    <drop css:theme=".page-header .admin" />
+    <drop css:theme="div.admin" />
   </rules>
 
   <!-- Login link for anonymous - top-right -->
