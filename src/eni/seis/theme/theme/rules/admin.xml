@@ -16,9 +16,11 @@
     <rules css-if-content="#edit-bar">
       <replace css:theme-children=".admin">
         <div class=".admin">
-          <xsl:for-each css:select="#edit-bar">
-            <xsl:copy-of select="./*"/>
-          </xsl:for-each>
+          <div class="page-container">
+            <xsl:for-each css:select="#edit-bar">
+              <xsl:copy-of select="./*"/>
+            </xsl:for-each>
+          </div>
         </div>
       </replace>
     </rules>
