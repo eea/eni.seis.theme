@@ -288,4 +288,10 @@
       css:theme=".page-main"
     />
   </rules>
+
+  <!-- Fix south.css and east.css to be after main.css -->
+  <after css:theme-children="head"
+         css:content="link[href*='south.css']" />
+  <after css:theme-children="head"
+         css:content="link[href*='east.css']" />
 </rules>
