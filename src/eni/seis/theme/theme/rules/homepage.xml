@@ -39,10 +39,7 @@
     <replace css:theme=".site-description"
              css:content="[data-diazo='site-description']" />
 
-    <!-- Admin, drop only for anonymous -->
-    <rules css:if-content="body.userrole-anonymous">
-      <drop css:theme=".page-header" />
-    </rules>
+    <drop css:theme=".page-header" />
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
