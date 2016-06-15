@@ -241,19 +241,13 @@
     -->
 
     <!-- FOOTER -->
-    <replace css:theme="#diazo-portal-siteactions">
-      <p>ENI SEIS 2016
-
-        <!-- Login link for anonymous - footer -->
-        <rules css:if-content="body.userrole-anonymous">
-          <before css:theme-children="#site-header">
-            <xsl:for-each css:select="#portal-personaltools #personaltools-login">
-              <a class="login-link" href="{./@href}">Log in</a>
-            </xsl:for-each>
-          </before>
-        </rules>
-
-      </p>
+    <replace css:theme="span[data-diazo=login-link]">
+      <!-- Login link for anonymous - footer -->
+      <rules css:if-content="body.userrole-anonymous">
+        <xsl:for-each css:select="#portal-personaltools #personaltools-login">
+          <a class="login-link" href="{./@href}">Log in</a>
+        </xsl:for-each>
+      </rules>
     </replace>
   </rules>
 
