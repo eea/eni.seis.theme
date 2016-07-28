@@ -288,4 +288,12 @@
          css:content="link[href*='south.css']" />
   <after css:theme-children="head"
          css:content="link[href*='east.css']" />
+
+  <!-- Events calendar -->
+  <rules css:if-content="body.template-solgemafullcalendar_view">
+    <replace
+      css:content-children="#content"
+      css:theme=".page-main"
+    />
+  </rules>
 </rules>
