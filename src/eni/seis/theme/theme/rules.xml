@@ -295,5 +295,8 @@
       css:content-children="#content"
       css:theme=".page-main"
     />
+
+    <drop css:theme=".page-aside" />
+    <drop css:theme=".page-aside" />
   </rules>
 </rules>
