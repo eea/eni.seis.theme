@@ -299,4 +299,16 @@
     <drop css:theme=".page-aside" />
     <drop css:theme=".page-aside" />
   </rules>
+
+  <!-- Events calendar properties -->
+  <rules css:if-content="body.template-solgemafullcalendar_properties">
+    <replace
+      css:content-children="#content"
+      css:theme=".page-main"
+    />
+
+    <drop css:theme=".page-aside" />
+    <drop css:theme=".page-aside" />
+  </rules>
+
 </rules>
