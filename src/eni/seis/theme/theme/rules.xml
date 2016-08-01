@@ -243,7 +243,7 @@
     -->
 
     <!-- FOOTER -->
-    <replace css:theme="span[data-diazo=login-link]">
+    <replace css:theme="span[data-diazo='login-link']">
       <!-- Login link for anonymous - footer -->
       <rules css:if-content="body.userrole-anonymous">
         <xsl:for-each css:select="#portal-personaltools #personaltools-login">
