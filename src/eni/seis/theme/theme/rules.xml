@@ -210,11 +210,13 @@
       css:content-children=".documentFirstHeading"
       css:theme-children=".page-title"
       />
+    <drop css:content=".documentFirstHeading" />
 
     <replace
       css:content-children=".documentDescription"
       css:theme-children=".page-description"
       />
+    <drop css:content=".documentDescription" />
 
     <!--
       #viewlet-below-content-title
