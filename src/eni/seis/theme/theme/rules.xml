@@ -313,4 +313,7 @@
     <drop css:theme=".page-aside" />
   </rules>
 
+  <!-- Remove theme demo content in small column for all pages -->
+  <drop css:theme=".page-aside .box.newsletter-box" />
+  <drop css:theme=".page-aside .box.leading-large" />
 </rules>
