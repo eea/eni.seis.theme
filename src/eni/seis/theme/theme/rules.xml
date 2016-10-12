@@ -66,49 +66,54 @@
   <!-- Navigation -->
   <drop css:theme=".page-aside .nav.nav-folder"
         css:if-not-content="dl.portlet.portletNavigationTree" />
-  <replace css:theme=".page-aside .nav.nav-folder"
-           css:if-content="dl.portlet.portletNavigationTree">
-    <nav class="nav nav-folder">
-      <header class="nav-header">
-        <h4 class="nav-title">Navigation</h4>
-      </header>
-      <div class="nav-body">
-        <xsl:for-each css:select="dl.portlet.portletNavigationTree > dd.portletItem > ul.navTree.navTreeLevel0 > li.navTreeItem">
-          <xsl:value-of select="li"/>
-          <div class="nav-group">
-            <ul class="nav-items">
-              <li class="nav-item">
-                <xsl:copy-of select="a"/>
-                <xsl:for-each select="./ul">
-                  <ul class="nav-items">
-                    <xsl:for-each select="./li">
-                      <li class="nav-item">
-                        <xsl:copy-of select="a"/>
-                      </li>
-                    </xsl:for-each>
-                  </ul>
-                </xsl:for-each>
-              </li>
-            </ul>
-          </div>
-        </xsl:for-each>
-      </div>
-    </nav>
-  </replace>
+
+  <rules css:if-not-content=".template-atct_edit">  <!-- Hidden in Edit pages -->
+    <replace css:theme=".page-aside .nav.nav-folder"
+             css:if-content="dl.portlet.portletNavigationTree">
+      <nav class="nav nav-folder">
+        <header class="nav-header">
+          <h4 class="nav-title">Navigation</h4>
+        </header>
+        <div class="nav-body">
+          <xsl:for-each css:select="dl.portlet.portletNavigationTree > dd.portletItem > ul.navTree.navTreeLevel0 > li.navTreeItem">
+            <xsl:value-of select="li"/>
+            <div class="nav-group">
+              <ul class="nav-items">
+                <li class="nav-item">
+                  <xsl:copy-of select="a"/>
+                  <xsl:for-each select="./ul">
+                    <ul class="nav-items">
+                      <xsl:for-each select="./li">
+                        <li class="nav-item">
+                          <xsl:copy-of select="a"/>
+                        </li>
+                      </xsl:for-each>
+                    </ul>
+                  </xsl:for-each>
+                </li>
+              </ul>
+            </div>
+          </xsl:for-each>
+        </div>
+      </nav>
+    </replace>
+  </rules>
 
   <!-- Portlets -->
-  <after css:theme-children=".page-aside">
-    <xsl:for-each css:select="dl.portlet">
-      <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
-        <div class="box leading-large {./@class}">
-          <h4>
-            <xsl:value-of select="./dt"/>
-          </h4>
-          <xsl:copy-of select="./dd/node()"/>
-        </div>
-      </xsl:if>
-    </xsl:for-each>
-  </after>
+  <rules css:if-not-content=".template-atct_edit">  <!-- Hidden in Edit pages -->
+    <after css:theme-children=".page-aside">
+      <xsl:for-each css:select="dl.portlet">
+        <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
+          <div class="box leading-large {./@class}">
+            <h4>
+              <xsl:value-of select="./dt"/>
+            </h4>
+            <xsl:copy-of select="./dd/node()"/>
+          </div>
+        </xsl:if>
+      </xsl:for-each>
+    </after>
+  </rules>
 
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
@@ -253,12 +258,14 @@
     </replace>
   </rules>
 
-  <!-- Fix bug: cannot edit pages -->
   <rules css:if-content="body.template-atct_edit">
+    <!-- Fix bug: cannot edit pages -->
     <replace
       css:content="#content"
       css:theme=".page-main"
     />
+
+    <drop css:theme=".page-aside" />
   </rules>
 
   <!-- Fix bug: cannot access control panel -->
