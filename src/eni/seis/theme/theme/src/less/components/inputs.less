@@ -31,6 +31,11 @@ select {
   line-height: inherit;
 }
 
+textarea {
+  width: 100%;
+  min-height: 100px;
+}
+
 .label {
   &:extend(label);
 }
@@ -113,12 +118,12 @@ select {
     &:first-child {
       border-top-left-radius: @radius;
       border-bottom-left-radius: @radius;
-      border-left: 0; 
+      border-left: 0;
     }
     &:last-child {
       border-top-right-radius: @radius;
       border-bottom-right-radius: @radius;
-      border-right: 0; 
+      border-right: 0;
     }
   }
 
@@ -211,7 +216,7 @@ select {
   &@{input-disabledClass} {
     &,
     &:hover {
-      color: @disabled-color; 
+      color: @disabled-color;
       .input {
         box-shadow: none;
         border-color: @disabled-border;
@@ -279,7 +284,7 @@ select {
       }
     }
   }
-  
+
   &@{input-disabledClass} {
     &,
     &:hover {
@@ -457,7 +462,7 @@ select {
 
 .field-select2 {
   &:extend(.field-select all);
-  
+
 }
 
 
