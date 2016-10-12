@@ -1,3 +1,4 @@
 <object name="portal_css">
-  <stylesheet title="" id="base.css" authenticated="True" />
+  <stylesheet title="" id="base.css" />
 </object>
+
