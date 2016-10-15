@@ -148,7 +148,7 @@
     <!-- Copy script tags from Plone head to end of body -->
     <after
       css:content="html head script"
-      css:theme-children="html head"
+      css:theme-children="html body"
       />
 
     <!-- LOGO -->
