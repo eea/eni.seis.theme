@@ -14,9 +14,7 @@
             css:content-children="#portal-personaltools-wrapper" />
 
     <rules css:if-content="#edit-bar">
-      <rules css:if-content="#edit-bar">
         <replace css:theme="#edit-bar" css:content="#edit-bar" />
-      </rules>
     </rules>
 
     <rules css:if-not-content="#edit-bar">

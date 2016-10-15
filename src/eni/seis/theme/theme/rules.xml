@@ -67,7 +67,7 @@
   <drop css:theme=".page-aside .nav.nav-folder"
         css:if-not-content="dl.portlet.portletNavigationTree" />
 
-  <rules css:if-not-content=".template-atct_edit">  <!-- Hidden in Edit pages -->
+  <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
     <replace css:theme=".page-aside .nav.nav-folder"
              css:if-content="dl.portlet.portletNavigationTree">
       <nav class="nav nav-folder">
@@ -100,7 +100,7 @@
   </rules>
 
   <!-- Portlets -->
-  <rules css:if-not-content=".template-atct_edit">  <!-- Hidden in Edit pages -->
+  <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
@@ -148,7 +148,7 @@
     <!-- Copy script tags from Plone head to end of body -->
     <after
       css:content="html head script"
-      css:theme-children="html body"
+      css:theme-children="html head"
       />
 
     <!-- LOGO -->
@@ -205,8 +205,8 @@
       css:content="#plone-contentmenu-workflow .arrowDownAlternative"
       />
 
-    <!-- 
-      #viewlet-above-content-title 
+    <!--
+      #viewlet-above-content-title
       for portalMessages
     -->
 
@@ -228,7 +228,7 @@
       for author, date, history
     -->
 
-    <!-- 
+    <!--
       #viewlet-above-content-body
     -->
 
@@ -240,7 +240,7 @@
         />
     </rules>
 
-    <!-- 
+    <!--
       #viewlet-below-content-body
       #viewlet-below-content
         .documentActions
@@ -258,7 +258,7 @@
     </replace>
   </rules>
 
-  <rules css:if-content="body.template-atct_edit">
+  <rules css:if-content="body.template-atct_edit, .template-edit">
     <!-- Fix bug: cannot edit pages -->
     <replace
       css:content="#content"
