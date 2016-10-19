@@ -151,6 +151,13 @@
       css:theme-children="html body"
       />
 
+    <!-- move content scripts below body so that we have jQuery present -->
+    <after
+      css:content="#content script"
+      css:theme-children="html body"
+    />
+    <drop css:content="#content script" />
+
     <!-- LOGO -->
     <copy
       attributes="href"
