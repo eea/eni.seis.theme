@@ -1,44 +1,414 @@
 @import (reference) "main.less";
-
 @color-green: #009245;
 @color-accent: #009245;
-
 .btn-primary {
-  .btn-variant(#fff, #009245, #009245);
+    .btn-variant(#fff, #009245, #009245);
 }
 
 .newsletter-box {
-  border-color: @color-accent;
+    border-color: @color-accent;
 }
 
 .navbar-brand {
-  color: @color-emphasis;
-  h1, a {
-    color: inherit;
-  }
-  strong {
-    color: @color-accent;
-    font-weight: inherit;
-  }
+    color: @color-emphasis;
+    h1,
+    a {
+        color: inherit;
+    }
+    strong {
+        color: @color-accent;
+        font-weight: inherit;
+    }
 }
 
 .nav-folder {
-  border-color: @color-accent;
+    border-color: @color-accent;
 }
 
 .page-header {
-  background-color: @color-accent;
-  color: #fff;
-
-  a {
-    color: inherit!important;
-  }
+    background-color: @color-accent;
+    color: #fff;
+    a {
+        color: inherit!important;
+    }
 }
 
 .page-title {
-  color: inherit;
+    color: inherit;
 }
 
 .admin {
-  background-color: darken(@color-accent, 5%);
+    // background-color: darken(@color-accent, 5%);
+    // background: #75ad0a;
+}
+
+.btn-primary {
+    border-color: #009245;
+    color: #fff;
+    background-color: #009245
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #009245
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    position: relative;
+}
+
+.btn-primary[disabled],
+.btn-primary.disabled,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:active,
+.btn-primary.disabled:active {
+    color: rgba(255, 255, 255, 0.5);
+    background: #0f8346;
+    box-shadow: none
+}
+
+.newsletter-box {
+    border-color: #009245
+}
+
+.navbar-brand {
+    color: #222
+}
+
+.navbar-brand h1,
+.navbar-brand a {
+    color: inherit
+}
+
+.navbar-brand strong {
+    color: #009245;
+    font-weight: inherit
+}
+
+.nav-folder {
+    border-color: #009245
+}
+
+.page-header {
+    background-color: #009245;
+    color: #fff
+}
+
+.page-header a {
+    color: inherit !important
+}
+
+.page-title {
+    color: inherit
+}
+
+
+
+/* Fix menu backround */
+
+#portal-globalnav ul.submenu>li>a {
+    background: transparent !important;
+}
+
+
+/* Fix sub menu problem with white text on white background */
+
+.page-header a span.subMenuTitle {
+    color: initial;
+}
+
+
+/* Fix state published label to be visible on green editor bar */
+
+.admin span.state-published {
+    color: #8CDA8C !important;
+}
+
+
+/* Login link top-right */
+
+#site-header .login-link {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+
+/* Login link footer */
+
+#site-footer .login-link {
+    float: right;
+}
+
+
+/* Float right for second list of admin bar menu */
+
+.admin .list-inline:not(#contentViews) {
+    float: right;
+}
+
+
+.section {
+    a {
+        color: @color-green;
+    }
+}
+
+/* Fix right portlets */
+
+
+
+
+aside.page-aside .box.leading-large .portletItemDetails {
+    font-size: 63%;
+    margin-left: 0;
+    padding-bottom: 1rem;
+}
+
+aside.page-aside .box.leading-large a:nth-last-of-type(1) {
+    border: 1px solid @color-green;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+    color: @color-portlet;
+}
+
+aside.page-aside .box.leading-large.portletEvents a:before {
+    content: "\f133";
+    font-family: FontAwesome;
+    color: #007939;
+}
+
+aside.page-aside .box.leading-large.portletEvents a:nth-last-of-type(1):before {
+    content: "\f073";
+    font-family: FontAwesome;
+}
+
+aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
+    background-color: #eee;
+    color: black;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear, color 500ms linear;
+}
+
+.site-banner .page-container .site-description {
+    font-size: x-large;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.admin .page-container {
+    // max-width: 100%;
+    // padding: 0;
+}
+
+.admin .page-container #edit-bar {
+    border-style: solid solid solid solid;
+    border-radius: 0!important;
+}
+
+.admin .page-container #edit-bar #contentActionMenus {
+    float: none;
+}
+
+.admin .page-container #edit-bar #content-views a {
+    border-radius: 3px;
+}
+
+#site-header .actionMenu.activated {
+    background-color: #75ad0a;
+    border-radius: 0;
+    box-shadow: 0px 2px 1px #aaa;
+}
+
+#site-header .actionMenu.activated .actionMenuHeader {
+    padding-left: 1.6rem;
+}
+
+#site-header .actionMenu .actionMenuContent {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #75ad0a;
+    box-shadow: 0px 2px 1px #aaa;
+}
+
+#site-header .actionMenu .actionMenuContent a {
+    color: white;
+}
+
+#site-header .actionMenu.activated .actionMenuHeader a {
+    color: white;
+}
+
+.actionMenu .actionMenuContent ul {
+    padding-left: 0;
+}
+
+@media (max-width: 959px) {
+    .page-container #navbar-toggle {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.navbar-credits a:nth-last-child(1) img {
+    height: 43px;
+}
+
+#site-footer .page-container p {
+    display: inline-block;
+}
+
+#site-footer .page-container .navbar-credits {
+    position: relative;
+    float: right;
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+.fc-event-inner {
+    color: white;
+}
+
+.nav-folder {
+    margin-bottom: 2rem;
+}
+
+ul.configlets li {
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    white-space: nowrap;
+}
+
+ul.configlets {
+    padding: 0;
+}
+
+.navbar-credits a {
+    padding-right: 5px;
+}
+
+.page-main li {
+    display: list-item;
+    list-style: initial;
+}
+
+.page-main ol li {
+    list-style-type: decimal;
+}
+
+.page-main .list-inline li {
+    display: inline;
+    list-style: none;
+}
+
+a.btn.btn-default[data-diazo='manage-portlets'] {
+    margin-bottom: 2rem;
+}
+
+.box.leading-large.portlet.portletEvents a.tile:nth-last-of-type(1) {
+    margin-bottom: 0.3rem !important;
+    display: inline-block;
+}
+
+#portal-globalnav ul.submenu {
+    z-index: 2;
+}
+
+nav.nav.nav-folder a>span {
+    position: relative;
+    top: -8px;
+}
+
+section#countries-map-section object {
+    width: 100%;
+}
+
+@media (max-width: 625px) {
+    .navbar-credits a {
+        display: block;
+        float: left;
+        padding: 5px;
+    }
+    #site-footer .page-container .navbar-credits {
+        float: left;
+    }
+    .navbar-credits small {
+        display: inline-block;
+        float: left;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+.page-main div {
+    box-sizing: border-box;
+}
+
+.page-main * {
+    box-sizing: border-box;
+}
+
+aside .nav-group {
+    padding: 0;
+}
+
+// @media (min-width: 960px) {
+// .page-main {
+// padding: 1rem;
+// }
+// .nav.nav-folder {
+//     position: fixed;
+//     right: 1vw;
+//     border-left: 2px solid #009245!important;
+//     border-top: none;
+//     border-right: none;
+//     border-bottom:none;
+//     border-radius: 0;
+//     padding: 0;
+// }
+// .nav-group { border: none;}
+// .page-container {
+//     margin-left: 0rem;
+// }
+// .template-homepage .page-container {
+// margin-left: auto!important;
+// }
+// #navbar .page-container,
+// #site-footer .page-container {
+// max-width: 100%;
+// }
+// .box {
+// border: none;
+// }
+// .template-folder_listing .page-main {
+// border-left: 1px solid #009245;
+// border-collapse: collapse;
+// }
+// .template-folder_listing .page-aside {
+// border-right: 1px solid #009245;
+// border-collapse: collapse;
+// margin-left: 1px;
+// margin-right: -1px;
+// }
+// }
+#edit-bar {
+    font-size: .9rem;
+}
+
+.btn-default {
+    border-color: @color-green;
 }

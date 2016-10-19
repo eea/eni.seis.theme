@@ -148,7 +148,7 @@
     <!-- Copy script tags from Plone head to end of body -->
     <after
       css:content="html head script"
-      css:theme-children="html head"
+      css:theme-children="html body"
       />
 
     <!-- LOGO -->
@@ -216,12 +216,7 @@
       css:theme-children=".page-title"
       />
     <drop css:content=".documentFirstHeading" />
-
-    <replace
-      css:content-children=".documentDescription"
-      css:theme-children=".page-description"
-      />
-    <drop css:content=".documentDescription" />
+    <drop css:theme=".page-description" />
 
     <!--
       #viewlet-below-content-title
@@ -234,10 +229,16 @@
 
     <!-- main content -->
     <rules css:if-not-content="body.template-homepage">
+      <copy
+        attributes="id"
+        css:content="#content"
+        css:theme=".page-main"
+      />
       <replace
-        css:content-children="#content-core"
+        css:content-children="#content"
         css:theme-children=".page-main"
-        />
+      />
+
     </rules>
 
     <!--
@@ -260,28 +261,18 @@
 
   <rules css:if-content="body.template-atct_edit, .template-edit">
     <!-- Fix bug: cannot edit pages -->
-    <replace
-      css:content="#content"
-      css:theme=".page-main"
-    />
-
     <drop css:theme=".page-aside" />
-  </rules>
+    <drop css:theme=".page-main" attributes="class" />
 
-  <!-- Fix bug: cannot access control panel -->
-  <rules css:if-content="body.template-overview-controlpanel">
-    <replace
-      css:content="#content"
-      css:theme=".page-main"
-    />
   </rules>
 
   <!-- Fix bug: cannot access content rules -->
-  <rules css:if-content="body.template-rules-controlpanel">
-    <replace
-      css:content="#content"
-      css:theme=".page-main"
-    />
+  <rules css:if-content=".template-rules-controlpanel, .template-manage-elements">
+    <!-- rules pages needs jquery within head or jquery script needs
+         to be moved to the bottom -->
+    <after css:theme-children="html body"
+           css:content="script[src*='manage-contentrule']" />
+    <drop css:content="script[src*='manage-contentrule']" />
   </rules>
 
   <!-- Fix bug: cannot manage portlets -->
@@ -300,23 +291,11 @@
 
   <!-- Events calendar -->
   <rules css:if-content="body.template-solgemafullcalendar_view">
-    <replace
-      css:content-children="#content"
-      css:theme=".page-main"
-    />
-
-    <drop css:theme=".page-aside" />
     <drop css:theme=".page-aside" />
   </rules>
 
   <!-- Events calendar properties -->
   <rules css:if-content="body.template-solgemafullcalendar_properties">
-    <replace
-      css:content-children="#content"
-      css:theme=".page-main"
-    />
-
-    <drop css:theme=".page-aside" />
     <drop css:theme=".page-aside" />
   </rules>
 

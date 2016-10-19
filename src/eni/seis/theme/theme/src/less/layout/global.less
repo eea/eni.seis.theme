@@ -11,6 +11,10 @@
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
 // Containers
 .container-sm {
   max-width: @container-sm;
@@ -86,12 +90,12 @@
 }
 @media @screen-md {
   .page-main {
-    float: right;
+    float: left;
     width: percentage(9 / 12);
     padding-left: 3rem;
   }
   .page-aside {
-    float: left;
+    float: right;
     width: percentage(3 / 12);
   }
 }
@@ -101,7 +105,7 @@
 .section {
   padding-top: @section-padding;
   padding-bottom: @section-padding;
-  border-top: 1px solid @color-soft;
+  // border-top: 1px solid @color-soft;
   
   &:first-child {
     border-top: 0;
@@ -114,14 +118,12 @@
 .section-title {
   display: inline-block;
   margin: 0;
-  text-transform: uppercase;
 }
 
 
 // Columns
 .columns {
   column-gap: @grid-gutter;
-  column-rule: 1px solid @color-soft;
 }
 @media @screen-sm {
   .columns-3 {
@@ -136,3 +138,77 @@
     margin-bottom: @leading-large;
   }
 }
+
+@media (min-width: 1441px) {
+    .page-container {
+        max-width: 65vw;
+    }
+}
+
+.section-body {
+  margin-left: 6rem;
+}
+
+.page-aside h4 {
+  padding-bottom: .5rem;
+  color:@color-portlet-title;
+  border-bottom:solid @color-portlet;
+}
+.page-aside p {
+  color:@color-portlet;
+  margin-bottom: 2rem;
+}
+.page-aside a {
+  color:@color-portlet-title!important;
+}
+
+
+#content {
+  font-size: inherit;
+  margin: auto;
+}
+
+
+
+aside.page-aside div,
+aside.page-aside nav,
+aside.page-aside > a {
+    box-sizing: border-box;
+    margin-left: .5rem;
+}
+
+aside.page-aside {
+    padding: 1rem;
+}
+.page-aside nav.nav.nav-folder {
+    width: 100%;
+}
+
+
+aside.page-aside .box.leading-large {
+}
+
+aside.page-aside .box.leading-large {
+}
+
+.icons-on .contenttype-folder {
+    background: none!important;
+    padding: 0;
+}
+
+.icons-on .contenttype-folder span:before {
+    content: "\f114";
+    font-family: FontAwesome;
+    margin-right: .5rem;
+}
+
+.contenttype-folder.url:before {
+    content: "\f114";
+    font-family: FontAwesome;
+    margin-right: .5rem;
+}
+
+.page-aside .nav-header {
+    margin-right: 9rem;
+}
+

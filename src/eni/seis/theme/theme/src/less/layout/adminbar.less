@@ -1,7 +1,37 @@
 .admin {
-  color: #fff;
-  a {
-    color: inherit;
+
+
+  @media (max-width: 568px)
+  {
+  	display: none;
+  }
+
+
+  #edit-bar {
+  	color:black;
+  	background: white;
+  	border-color: white!important;
+  	*{
+  		background: white;
+  		border-color: white!important;
+  	}
+  	a {
+  		color: inherit!important;
+  	}
+  }
+
+  #contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+  	background: white;
+  	color: black;
+  }
+  ul {
+    padding: 0;
+  }
+  ul:first-of-type{
+    li:first-of-type {
+      a{
+        padding-left:0;
+      }
+    }
   }
 }
-

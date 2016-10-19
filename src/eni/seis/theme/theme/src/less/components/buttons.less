@@ -36,18 +36,47 @@
 }
 
 .btn {
+  color:@color-secondary;
   vertical-align: middle;
   display: inline-block;
   padding: @btn-padding;
-  border: 1px solid transparent;
+  border: 1px solid #eee;
   border-radius: @btn-radius;
   background: transparent;
-  font-weight: @btn-weight;
   text-align: center;
   transition: background .1s,
               color .1s;
 }
 
-.btn-default {
-  .btn-variant(@color-body, #fff, @color-soft);
+.btn-east:hover {
+color: red;
 }
+
+.btn-south:hover {
+color: red;
+}
+
+.btn-default {
+    border: 1px solid;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+}
+
+.btn-east, .btn-south {
+border: none!important;
+}
+
+.btn-east {
+  color: @color-green;
+}
+
+.btn-south {
+  color: @color-orange;
+}
+
+.btn-east:before,
+.btn-south:before {
+  content:'> ';
+}
+

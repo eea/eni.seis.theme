@@ -2,51 +2,50 @@
   <defs>
     <style>
       .background-fill {
-        fill: #cfeaf3;
+        fill: transparent;
       }
-      .background-grid {
-        fill: none;
-        stroke: #68cbe1;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 3px;
+      
+      .east-country:hover {
+       fill: #828C36;
       }
 
       .country {
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 3px;
+        stroke-width: 2px;
         fill-rule: evenodd;
+      }
+
+      .east-country {
+        fill: rgb(70,172,102);
+        stroke: #eee;
+      }
+      .east-country:hover {
+        fill: red;
       }
 
       .south-country,
       .other-country {
-        fill: #fff3da;
-        stroke: #c6ac7d;
-      }
-
-      .east-country {
-        fill: #6b7427;
-        stroke: #565b13;
-      }
-      .east-country:hover {
-        fill: #828C36;
+        fill: rgba(168,166,193,0.5);
+        stroke: #eee;
       }
 
       .eu-country {
-        fill: #218dd6;
-        stroke: #296791;
+        fill: rgb(97,147,248);
+        stroke: #eee;
       }
 
       .eu-country-alt {
-        fill: #64bded;
-        stroke: #296791;
+        fill: rgb(97,147,248);
+        stroke: #eee;
       }
+
 
       .country-label {
         pointer-events: none;
         font-size: 20px;
         font-family: Arial, sans-serif;
+        color: white;
       }
 
       #eni-seis-east-label .country-label {

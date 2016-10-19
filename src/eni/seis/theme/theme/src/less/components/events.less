@@ -32,3 +32,49 @@
     overflow: hidden;
   }
 }
+
+
+.eventDetails {
+  float: none!important;
+  margin: 0 0 1em 0!important;
+  display: inline-block;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+}
+
+.event #parent-fieldname-text {
+       padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 1px #eee, -1px -1px 1px #eee;
+
+    @media (max-width: 960px) {
+      margin-right: 0;
+      max-width: 100%;
+    }
+}
+
+.event {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+@media (max-width:960px) {
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    padding: .3rem;
+    list-style: none!important;
+  }
+
+}

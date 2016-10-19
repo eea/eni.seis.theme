@@ -1,12 +1,98 @@
 .template-homepage {
-  @media @screen-md {  
-    .page-main {
-      float: left;
-      padding-left: 0;
-      padding-right: 3rem;
+    @media @screen-md {
+        .page-main {
+            float: left;
+            padding-left: 0;
+            padding-right: 3rem;
+        }
+        .page-aside {
+            float: right;
+        }
     }
-    .page-aside {
-      float: right;
+
+    .lp-title {
+        height: auto!important;
     }
+    @media (min-width: 1441px) {
+        .lp-content {
+            max-width: 85vw!important;
+        }
+    }
+    @media (max-width: 1441px) {
+        .lp-content {
+            max-width: 75rem!important;
+        }
+    }
+    .lp-content {
+        box-shadow: 10px 10px 55px #eee, -10px -10px 55px #eee;
+    }
+    .lp-title {
+        margin-top: 0;
+    }
+    p {
+        color: fade(#31456e, 75%);
+    }
+
+.page-aside {
+  p {
+    color: rgb(161,162,178);
   }
+}
+
+    #plone-contentmenu-display {
+        display: none;
+    }
+    .section-partners-wrapper {
+        background: rgb(239, 248, 252);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .section-body {
+            margin-left: 0!important;
+        }
+        section {
+            padding-bottom: 0;
+        }
+        section:first-of-type {
+            width: 23%;
+            float: left;
+            margin-left: 7%;
+            margin-top: 1rem;
+            margin-right: 1%;
+        }
+        section:last-of-type {
+            width: 60%;
+            float: right;
+            padding: 0;
+        }
+
+        @media (max-width: 1441px) {
+           flex-direction: column;
+          section:last-of-type {
+            width: 100%!important;
+          }
+             section:first-of-type{
+            width: auto!important;
+            float: none!important;
+          }
+        }
+        @media (max-width: 960px) {
+          section {
+            margin: 0;
+          }
+        }
+
+    }
+    .header-more {
+        float: left;
+    }
+    .background-fill {
+        fill: transparent!important;
+    }
+    #countries-map-section {
+        .section-body {
+            // margin-left: -43px!important;
+        }
+    }
 }
