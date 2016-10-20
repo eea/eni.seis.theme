@@ -1,6 +1,10 @@
 @page-padding: 2rem;
 @section-padding: 2rem;
 
+:before {
+    font-family: FontAwesome;
+}
+
 // Misc
 .center {
   .utils > .center;
@@ -63,6 +67,13 @@
 .page-header {
   padding-top: @page-padding;
   padding-bottom: @page-padding;
+    background-color: white;
+    color: @color-blue;
+    text-align: center;
+    .page-container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 }
 .page-body {
   padding-top: @page-padding;
@@ -92,7 +103,8 @@
   .page-main {
     float: left;
     width: percentage(9 / 12);
-    padding-left: 3rem;
+    padding: 3rem;
+    padding-left: 0;
   }
   .page-aside {
     float: right;
@@ -168,7 +180,11 @@
   margin: auto;
 }
 
-
+#content-core {
+  span {
+    color: @color-text;
+  }
+}
 
 aside.page-aside div,
 aside.page-aside nav,
@@ -208,7 +224,46 @@ aside.page-aside .box.leading-large {
     margin-right: .5rem;
 }
 
-.page-aside .nav-header {
-    margin-right: 9rem;
+#portal-breadcrumbs {
+    font-size: inherit;
+    margin-bottom: 0!important;
+    margin-left: 0!important;
+    display: inline-block;
+        border-top: 2px solid #eee;
+    padding-top: 1rem;
+    span:last-of-type {
+      *{
+             color: @color-orange;
+      }
+ 
+    }
 }
 
+#content .pullquote {
+      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > span {
+      width: 70%;
+      border-top: solid @color-portlet;
+      border-bottom: solid @color-portlet;
+    }
+}
+
+.login-wrapper {
+  float: right;
+  a {
+    padding: 1rem;
+  }
+}
+.login-link:before {
+content: "\f007";
+padding-right: .5rem;
+}
+
+#site-footer {
+  .newsletter-box {
+    
+  }
+}

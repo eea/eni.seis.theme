@@ -6,48 +6,49 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
 
-  <!-- <notheme css:if-not-content="body.userrole-anonymous" /> -->
+  <!-- <notheme css:if-not-content=".userrole-anonymous" /> -->
 
   <xi:include href="rules/admin.xml" />
   <xi:include href="rules/homepage.xml" />
 
   <!-- Folder view -->
-  <rules css:if-content="body.template-folder_listing.portaltype-folder">
+  <rules css:if-content=".template-folder_listing.portaltype-folder">
     <drop css:theme=".page-aside .box.newsletter-box" />
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
   <!-- Document view, simple page view -->
-  <rules css:if-content="body.template-document_view.portaltype-document">
+  <rules css:if-content=".template-document_view.portaltype-document">
     <drop css:theme=".page-aside .box.newsletter-box" />
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
   <!-- Login page -->
-  <rules css:if-content="body.template-login_form">
+  <rules css:if-content=".template-login_form">
     <drop css:theme=".page-aside .box.newsletter-box" />
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
   <!-- Not found page -->
-  <rules css:if-content="body.template-default_error_message">
+  <rules css:if-content=".template-default_error_message">
     <drop css:theme=".page-aside .box.newsletter-box" />
     <drop css:theme=".page-aside .box.leading-large" />
   </rules>
 
   <!-- Drop Editor menu for anonymous -->
-  <rules css:if-content="body.userrole-anonymous">
+  <rules css:if-content=".userrole-anonymous">
     <drop css:theme="div.admin" />
   </rules>
 
   <!-- Login link for anonymous - top-right -->
-  <rules css:if-content="body.userrole-anonymous">
+  <rules css:if-content=".userrole-anonymous">
     <before css:theme-children="#site-header">
       <xsl:for-each css:select="#portal-personaltools #personaltools-login">
         <a class="login-link" href="{./@href}">Log in</a>
       </xsl:for-each>
     </before>
   </rules>
+
 
   <!-- Manage portlets button if here -->
   <rules css:if-content=".managePortletsLink">
@@ -115,6 +116,22 @@
     </after>
   </rules>
 
+<!-- moved newsletter to site footer -->
+    <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
+    <after css:theme-children="#site-footer .page-container">
+      <xsl:for-each css:select="dl.portlet">
+        <xsl:if test="contains(./@class, 'portlet-static-newsletter')">
+          <div class="box leading-large {./@class}">
+            <h4>
+              <xsl:value-of select="./dt"/>
+            </h4>
+            <xsl:copy-of select="./dd/node()"/>
+          </div>
+        </xsl:if>
+      </xsl:for-each>
+    </after>
+  </rules>
+
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
@@ -150,6 +167,13 @@
       css:content="html head script"
       css:theme-children="html body"
       />
+
+    <!-- move content scripts below body so that we have jquery present -->
+    <after
+      css:content="#content script"
+      css:theme-children="html body"
+    />
+    <drop css:content="#content script" />
 
     <!-- LOGO -->
     <copy
@@ -228,7 +252,7 @@
     -->
 
     <!-- main content -->
-    <rules css:if-not-content="body.template-homepage">
+    <rules css:if-not-content=".template-homepage">
       <copy
         attributes="id"
         css:content="#content"
@@ -251,7 +275,7 @@
     <!-- FOOTER -->
     <replace css:theme="span[data-diazo='login-link']">
       <!-- Login link for anonymous - footer -->
-      <rules css:if-content="body.userrole-anonymous">
+      <rules css:if-content=".userrole-anonymous">
         <xsl:for-each css:select="#portal-personaltools #personaltools-login">
           <a class="login-link" href="{./@href}">Log in</a>
         </xsl:for-each>
@@ -259,7 +283,7 @@
     </replace>
   </rules>
 
-  <rules css:if-content="body.template-atct_edit, .template-edit">
+  <rules css:if-content=".template-atct_edit, .template-edit">
     <!-- Fix bug: cannot edit pages -->
     <drop css:theme=".page-aside" />
     <drop css:theme=".page-main" attributes="class" />
@@ -276,7 +300,7 @@
   </rules>
 
   <!-- Fix bug: cannot manage portlets -->
-  <rules css:if-content="body.template-manage-portlets">
+  <rules css:if-content=".template-manage-portlets">
     <replace
       css:content="#portal-columns"
       css:theme=".page-main"
@@ -290,12 +314,12 @@
          css:content="link[href*='east.css']" />
 
   <!-- Events calendar -->
-  <rules css:if-content="body.template-solgemafullcalendar_view">
+  <rules css:if-content=".template-solgemafullcalendar_view">
     <drop css:theme=".page-aside" />
   </rules>
 
   <!-- Events calendar properties -->
-  <rules css:if-content="body.template-solgemafullcalendar_properties">
+  <rules css:if-content=".template-solgemafullcalendar_properties">
     <drop css:theme=".page-aside" />
   </rules>
 

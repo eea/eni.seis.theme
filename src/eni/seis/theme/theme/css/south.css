@@ -41,10 +41,6 @@
 .nav-folder {
   border-color: #F7931E;
 }
-.page-header {
-  background-color: #F7931E;
-  color: #fff;
-}
 .page-header a {
   color: inherit!important;
 }
@@ -94,10 +90,6 @@
 .nav-folder {
   border-color: #F7931E;
 }
-.page-header {
-  background-color: #F7931E;
-  color: #fff;
-}
 .page-header a {
   color: inherit !important;
 }
@@ -126,9 +118,6 @@
   z-index: 1;
 }
 /* Login link footer */
-#site-footer .login-link {
-  float: right;
-}
 /* Float right for second list of admin bar menu */
 .admin .list-inline:not(#contentViews) {
   float: right;
