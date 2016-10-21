@@ -24,26 +24,6 @@
   background: #0f8346;
   box-shadow: none;
 }
-.newsletter-box {
-  border-color: #F7931E;
-}
-.navbar-brand {
-  color: #222;
-}
-.navbar-brand h1,
-.navbar-brand a {
-  color: inherit;
-}
-.navbar-brand strong {
-  color: #F7931E;
-  font-weight: inherit;
-}
-.nav-folder {
-  border-color: #F7931E;
-}
-.page-header a {
-  color: inherit!important;
-}
 .page-title {
   color: inherit;
 }
@@ -73,98 +53,15 @@
   background: #0f8346;
   box-shadow: none;
 }
-.newsletter-box {
-  border-color: #F7931E;
-}
-.navbar-brand {
-  color: #222;
-}
-.navbar-brand h1,
-.navbar-brand a {
-  color: inherit;
-}
-.navbar-brand strong {
-  color: #F7931E;
-  font-weight: inherit;
-}
-.nav-folder {
-  border-color: #F7931E;
-}
-.page-header a {
-  color: inherit !important;
-}
-.page-title {
-  color: inherit;
-}
-/* Fixes added later: */
-/* Fix menu backround */
-#portal-globalnav ul.submenu > li > a {
-  background: transparent !important;
-}
-/* Fix sub menu problem with white text on white background */
-.page-header a span.subMenuTitle {
-  color: initial;
-}
 /* Fix border color in submenu items */
 #portal-globalnav ul.submenu > li > a:hover {
   box-shadow: inset 3px 0 0 #F7931E !important;
 }
-/* Login link top-right */
-#site-header .login-link {
-  float: right;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 1;
-}
-/* Login link footer */
-/* Float right for second list of admin bar menu */
-.admin .list-inline:not(#contentViews) {
-  float: right;
-}
-/* Fix map to show South countries */
-.site-banner {
-  background-position: bottom;
-}
 .section a {
-  color: #ff7c29;
-}
-/* Fix right portlets */
-aside.page-aside .box.leading-large .portletItemDetails {
-  font-size: 63%;
-  margin-left: 0;
-  padding-bottom: 1rem;
+  color: #ff8228 !important;
 }
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-  margin-top: 1rem;
-  padding: .5rem 0;
-  color: #ff7c29;
-}
-aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
-  content: "> ";
-}
-aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
-  background-color: #eee;
-  color: black;
-  -webkit-transition: background-color 500ms linear;
-  -moz-transition: background-color 500ms linear;
-  -o-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear, color 500ms linear;
-}
-.site-banner .page-container .site-description {
-  font-size: x-large;
-  text-shadow: 1px 1px 1px #fff;
-}
-.admin .page-container #edit-bar {
-  border-style: solid solid solid solid;
-  border-radius: 0!important;
-}
-.admin .page-container #edit-bar #contentActionMenus {
-  float: none;
-}
-.admin .page-container #edit-bar #content-views a {
-  border-radius: 3px;
+  color: #ff8228 !important;
 }
 #site-header .actionMenu.activated {
   background-color: #f38709;
@@ -179,75 +76,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
   padding-right: 0;
   background-color: #f38709;
   box-shadow: 0px 2px 1px #aaa;
-}
-#site-header .actionMenu .actionMenuContent a {
-  color: white;
-}
-#site-header .actionMenu.activated .actionMenuHeader a {
-  color: white;
-}
-.actionMenu .actionMenuContent ul {
-  padding-left: 0;
-}
-@media (max-width: 959px) {
-  .page-container #navbar-toggle {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-}
-.navbar-credits a:nth-last-child(1) img {
-  height: 43px;
-}
-.fc-event-inner {
-  color: white;
-}
-.nav-folder {
-  margin-bottom: 2rem;
-}
-ul.configlets li {
-  display: inline-block;
-  padding: 1rem;
-  width: 100%;
-  white-space: nowrap;
-}
-ul.configlets {
-  padding: 0;
-}
-.navbar-credits a {
-  padding-right: 5px;
-}
-.page-main li {
-  display: list-item;
-  list-style: initial;
-}
-.page-main ol li {
-  list-style-type: decimal;
-}
-.page-main .list-inline li {
-  display: inline;
-  list-style: none;
-}
-@media (min-width: 960px) {
-  .page-main {
-    padding-left: 4rem;
-  }
-}
-a.btn.btn-default[data-diazo='manage-portlets'] {
-  margin-bottom: 2rem;
-}
-.box.leading-large.portlet.portletEvents a.tile:nth-last-of-type(1) {
-  margin-bottom: 0.3rem !important;
-  display: block;
-}
-#portal-globalnav ul.submenu {
-  z-index: 2;
-}
-nav.nav.nav-folder a > span {
-  position: relative;
-  top: -8px;
-}
-section#countries-map-section object {
-  width: 100%;
 }
 .btn-default {
   border-color: #ff7c29;
@@ -267,7 +95,7 @@ section#countries-map-section object {
     background: #ff8228 !important;
   }
   #portal-globalnav > li:hover > a {
-    color: white!important;
+    color: white !important;
   }
   #portal-globalnav .selected .plain {
     color: #ff8228 !important;
