@@ -27,6 +27,9 @@
     box-shadow: none
 }
 
+.navbar-brand strong {
+    color: @color-brand-east
+}
 
 /* Fix state published label to be visible on green editor bar */
 .admin span.state-published {
@@ -99,4 +102,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
             }
         }
     }
+}
+
+    @media @screen-md-upto {
+#portal-globalnav > li > a {
+    color: @color-brand-east;
+}
 }

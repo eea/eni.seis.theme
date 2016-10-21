@@ -1,7 +1,7 @@
 @import (reference) "main.less";
 @color-yellow: #F7931E;
 @color-accent: #F7931E;
-@color-brand-south: #ff8228 !important;
+@color-brand-south: #ff8228;
 
 .btn-primary {
     .btn-variant(#fff, #009245, #009245);
@@ -38,7 +38,9 @@
 }
 
 
-
+.navbar-brand strong {
+    color: @color-brand-south
+}
 
 
 .section {
@@ -117,4 +119,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
             }
         }
     }
+}
+    @media @screen-md-upto {
+#portal-globalnav > li > a{
+    color: @color-brand-south;
+}
 }

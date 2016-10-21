@@ -57,11 +57,14 @@
 #portal-globalnav ul.submenu > li > a:hover {
   box-shadow: inset 3px 0 0 #F7931E !important;
 }
+.navbar-brand strong {
+  color: #ff8228;
+}
 .section a {
-  color: #ff8228 !important;
+  color: #ff8228;
 }
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-  color: #ff8228 !important;
+  color: #ff8228;
 }
 #site-header .actionMenu.activated {
   background-color: #f38709;
@@ -88,17 +91,22 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
-    border-top: solid #ff8228 !important;
+    border-top: solid #ff8228;
     left: -1px !important;
   }
   #portal-globalnav > li:hover {
-    background: #ff8228 !important;
+    background: #ff8228;
   }
   #portal-globalnav > li:hover > a {
     color: white !important;
   }
   #portal-globalnav .selected .plain {
-    color: #ff8228 !important;
+    color: #ff8228;
+  }
+}
+@media (max-width: 959px) {
+  #portal-globalnav > li > a {
+    color: #ff8228;
   }
 }
 /*# sourceMappingURL=./source.css.map */

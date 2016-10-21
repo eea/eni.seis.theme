@@ -53,6 +53,9 @@
   background: #0f8346;
   box-shadow: none;
 }
+.navbar-brand strong {
+  color: #009245;
+}
 /* Fix state published label to be visible on green editor bar */
 .admin span.state-published {
   color: #8CDA8C !important;
@@ -98,6 +101,11 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     color: white !important;
   }
   #portal-globalnav .selected .plain {
+    color: #009245;
+  }
+}
+@media (max-width: 959px) {
+  #portal-globalnav > li > a {
     color: #009245;
   }
 }
