@@ -258,4 +258,19 @@ section#countries-map-section object {
 #site-footer .portlet a {
   border-color: #ff7c29 !important;
 }
+@media (min-width: 960px) {
+  #portal-globalnav ul.submenu {
+    border-top: solid #ff8228 !important;
+    left: -1px !important;
+  }
+  #portal-globalnav > li:hover {
+    background: #ff8228 !important;
+  }
+  #portal-globalnav > li:hover > a {
+    color: white!important;
+  }
+  #portal-globalnav .selected .plain {
+    color: #ff8228 !important;
+  }
+}
 /*# sourceMappingURL=./source.css.map */

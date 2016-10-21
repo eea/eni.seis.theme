@@ -45,10 +45,13 @@
 
 @media @screen-md {
     .navbar-brand {
+        max-width: 551px;
         margin-bottom: @leading;
         h1 {
             width: 100%;
             overflow: hidden;
+            margin-bottom: 0;
+            font-size: 2.5rem;
         }
     }
     #navbar-toggle {
@@ -78,12 +81,14 @@
 }
 
 #portal-globalnav {
+    max-width: 551px;
     margin: 0;
     padding: 0;
     background: transparent;
-    font-size: inherit;
+    font-size: 1rem;
     display: inline-block;
     margin-top: .5rem;
+    border-top: solid #eee;
 }
 
 #portal-globalnav li {}
@@ -160,26 +165,26 @@
         }
     }
     @media @screen-md {
+
+
         > li {
             border: 1px solid transparent;
-            border-radius: @radius;
+            // border-radius: @radius;
+            margin-left: 1.5rem;
             > a {
                 padding: @em;
-                color: @color-blue!important;
+                color: @color-blue;
                 background: transparent!important;
+                font-weight: 600;
             }
         }
         .plain {
-            color: @color-emphasis;
             &:hover {
-                color: @color-green!important;
             }
         }
         .selected {
             .plain {
-                color: @color-green!important;
                 &:hover {
-                    color: @color-green!important;
                 }
             }
         }
@@ -213,8 +218,17 @@
 
 .navbar-body > ul {
     > li:first-of-type {
+        margin-left: 0!important;
         a {
             padding-left: 0!important;
         }
     }
+}
+
+.site-eni-south .east-subtitle {
+    display: none;
+}
+
+.site-eni-east .south-subtitle {
+    display: none;
 }

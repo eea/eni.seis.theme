@@ -1,6 +1,7 @@
 @import (reference) "main.less";
 @color-yellow: #F7931E;
 @color-accent: #F7931E;
+@color-brand-south:#ff8228!important;
 .btn-primary {
     .btn-variant(#fff, #009245, #009245);
 }
@@ -92,9 +93,7 @@
     border-color: #F7931E
 }
 
-.page-header {
-
-}
+.page-header {}
 
 .page-header a {
     color: inherit !important
@@ -165,9 +164,9 @@
         color: @color-orange;
     }
 }
+
+
 /* Fix right portlets */
-
-
 
 aside.page-aside .box.leading-large .portletItemDetails {
     font-size: 63%;
@@ -180,16 +179,16 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     padding: .5rem 0;
     color: @color-orange;
 }
+
 aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
     content: "> "
 }
+
 // aside.page-aside .box.leading-large.portletEvents a:before {
 //     content: "\f133";
 //     font-family: FontAwesome;
 //     color: #f38709;
 // }
-
-
 aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
     background-color: #eee;
     color: black;
@@ -263,8 +262,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
     height: 43px;
 }
 
-
-
 .fc-event-inner {
     color: white;
 }
@@ -283,7 +280,6 @@ ul.configlets li {
 ul.configlets {
     padding: 0;
 }
-
 
 .navbar-credits a {
     padding-right: 5px;
@@ -308,7 +304,6 @@ ul.configlets {
         padding-left: 4rem;
     }
 }
-
 
 a.btn.btn-default[data-diazo='manage-portlets'] {
     margin-bottom: 2rem;
@@ -336,19 +331,38 @@ section#countries-map-section object {
     border-color: @color-orange;
 }
 
-
-
-
-
-    .login-link:before {
-        color: @color-orange;
-    }
+.login-link:before {
+    color: @color-orange;
+}
 
 #site-footer {
-        .portlet {
+    .portlet {
         a {
-            border-color:@color-orange!important;
+            border-color: @color-orange!important;
         }
     }
 }
 
+#portal-globalnav {
+ @media @screen-md {
+
+        ul.submenu {
+            border-top: solid @color-brand-south;
+            left: -1px!important;
+        }
+
+                > li:hover {
+            background: @color-brand-south;
+            > a {
+                color: white!important;
+            }
+        }
+          .selected {
+            .plain {
+                color: @color-brand-south;
+                &:hover {
+                }
+            }
+        }
+}
+}

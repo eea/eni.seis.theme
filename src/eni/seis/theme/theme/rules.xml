@@ -42,7 +42,7 @@
 
   <!-- Login link for anonymous - top-right -->
   <rules css:if-content=".userrole-anonymous">
-    <before css:theme-children="#site-header">
+    <before css:theme-children="#site-header #navbar .page-container">
       <xsl:for-each css:select="#portal-personaltools #personaltools-login">
         <a class="login-link" href="{./@href}">Log in</a>
       </xsl:for-each>

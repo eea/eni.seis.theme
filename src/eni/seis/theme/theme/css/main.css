@@ -372,11 +372,11 @@ optgroup {
   font-style: italic;
 }
 html {
-  font-size: 13.5px;
+  font-size: 14px;
 }
 body {
   font-family: 'Fira Sans', sans-serif;
-  line-height: 1.48148148;
+  line-height: 1.42857143;
   color: #555;
 }
 h1,
@@ -1528,7 +1528,7 @@ ul.pagination-pages {
 .pagination-pages a,
 .pagination-pages span {
   display: inline-block;
-  min-width: 1.48148148em;
+  min-width: 1.42857143em;
   padding: 0.2em 0.3em;
   border: 1px solid transparent;
   border-radius: 0.3em;
@@ -2238,11 +2238,14 @@ aside.page-aside {
 }
 @media (min-width: 960px) {
   .navbar-brand {
+    max-width: 551px;
     margin-bottom: 1rem;
   }
   .navbar-brand h1 {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 0;
+    font-size: 2.5rem;
   }
   #navbar-toggle {
     display: none;
@@ -2276,12 +2279,14 @@ aside.page-aside {
   }
 }
 #portal-globalnav {
+  max-width: 551px;
   margin: 0;
   padding: 0;
   background: transparent;
-  font-size: inherit;
+  font-size: 1rem;
   display: inline-block;
   margin-top: .5rem;
+  border-top: solid #eee;
 }
 #portal-globalnav li a {
   border: 0;
@@ -2345,24 +2350,13 @@ aside.page-aside {
 @media (min-width: 960px) {
   #portal-globalnav > li {
     border: 1px solid transparent;
-    border-radius: 0.3em;
+    margin-left: 1.5rem;
   }
   #portal-globalnav > li > a {
     padding: 0.4em 0.5em;
-    color: #31456e !important;
+    color: #31456e;
     background: transparent!important;
-  }
-  #portal-globalnav .plain {
-    color: #222;
-  }
-  #portal-globalnav .plain:hover {
-    color: #009245 !important;
-  }
-  #portal-globalnav .selected .plain {
-    color: #009245 !important;
-  }
-  #portal-globalnav .selected .plain:hover {
-    color: #009245 !important;
+    font-weight: 600;
   }
   #portal-globalnav ul.submenu {
     background: #fff!important;
@@ -2386,8 +2380,17 @@ aside.page-aside {
 .submenu.navTree.navTreeLevel1:hover ul {
   display: block;
 }
+.navbar-body > ul > li:first-of-type {
+  margin-left: 0!important;
+}
 .navbar-body > ul > li:first-of-type a {
   padding-left: 0!important;
+}
+.site-eni-south .east-subtitle {
+  display: none;
+}
+.site-eni-east .south-subtitle {
+  display: none;
 }
 #site-footer {
   font-size: .8rem;
@@ -2713,6 +2716,10 @@ aside.page-aside {
 }
 .site-banner .lp-title {
   margin-bottom: 1rem;
+  text-align: left;
+}
+.site-banner .lp-title .section-body {
+  margin-left: 0!important;
 }
 @media (max-width: 960px) {
   .site-banner .lp-right-side {
@@ -2768,9 +2775,9 @@ aside.page-aside {
   display: none;
 }
 .template-homepage .section-partners-wrapper {
+  display: none;
   background: #eff8fc;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }

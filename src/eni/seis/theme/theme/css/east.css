@@ -265,4 +265,19 @@ aside .nav-group {
 #site-footer .portlet a {
   border-color: #009245 !important;
 }
+@media (min-width: 960px) {
+  #portal-globalnav ul.submenu {
+    border-top: solid #009245;
+    left: -1px !important;
+  }
+  #portal-globalnav > li:hover {
+    background: #009245;
+  }
+  #portal-globalnav > li:hover > a {
+    color: white!important;
+  }
+  #portal-globalnav .selected .plain {
+    color: #009245;
+  }
+}
 /*# sourceMappingURL=./source.css.map */
