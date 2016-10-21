@@ -176,23 +176,19 @@ aside.page-aside .box.leading-large .portletItemDetails {
 }
 
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-    border: 1px solid @color-orange;
     margin-top: 1rem;
-    padding: .5rem 2rem;
-    border-radius: 5rem;
-    color: @color-portlet;
+    padding: .5rem 0;
+    color: @color-orange;
 }
+aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
+    content: "> "
+}
+// aside.page-aside .box.leading-large.portletEvents a:before {
+//     content: "\f133";
+//     font-family: FontAwesome;
+//     color: #f38709;
+// }
 
-aside.page-aside .box.leading-large.portletEvents a:before {
-    content: "\f133";
-    font-family: FontAwesome;
-    color: #f38709;
-}
-
-aside.page-aside .box.leading-large.portletEvents a:nth-last-of-type(1):before {
-    content: "\f073";
-    font-family: FontAwesome;
-}
 
 aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
     background-color: #eee;
@@ -267,16 +263,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
     height: 43px;
 }
 
-#site-footer .page-container p {
-    display: inline-block;
-}
 
-#site-footer .page-container .navbar-credits {
-    position: relative;
-    float: right;
-    display: inline-block;
-    padding-bottom: 1em;
-}
 
 .fc-event-inner {
     color: white;
@@ -329,7 +316,7 @@ a.btn.btn-default[data-diazo='manage-portlets'] {
 
 .box.leading-large.portlet.portletEvents a.tile:nth-last-of-type(1) {
     margin-bottom: 0.3rem !important;
-    display: inline-block;
+    display: block;
 }
 
 #portal-globalnav ul.submenu {
@@ -347,5 +334,21 @@ section#countries-map-section object {
 
 .btn-default {
     border-color: @color-orange;
+}
+
+
+
+
+
+    .login-link:before {
+        color: @color-orange;
+    }
+
+#site-footer {
+        .portlet {
+        a {
+            border-color:@color-orange!important;
+        }
+    }
 }
 

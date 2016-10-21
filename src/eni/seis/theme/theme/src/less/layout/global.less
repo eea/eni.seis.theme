@@ -70,6 +70,7 @@
     background-color: white;
     color: @color-blue;
     text-align: center;
+      // background: rgb(0,170,225);
     .page-container {
       display: flex;
       flex-direction: column-reverse;
@@ -164,14 +165,25 @@
 .page-aside h4 {
   padding-bottom: .5rem;
   color:@color-portlet-title;
-  border-bottom:solid @color-portlet;
+  position: relative;
 }
+
+.page-aside h4:after {
+    content: "";
+    border-bottom: solid #a1a2b2;
+    width: 50%;
+    display: block;
+    margin: .3rem auto;
+    position: absolute;
+}
+
+
 .page-aside p {
   color:@color-portlet;
   margin-bottom: 2rem;
 }
 .page-aside a {
-  color:@color-portlet-title!important;
+  color:@color-portlet-title;
 }
 
 
@@ -240,30 +252,67 @@ aside.page-aside .box.leading-large {
 }
 
 #content .pullquote {
+  letter-spacing: 0!important;
+  float: none;
+  position: relative;
       width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    span {
+      color: @color-portlet;
+      font-weight: 400;
+      position: relative;
+    }
     > span {
       width: 70%;
-      border-top: solid @color-portlet;
-      border-bottom: solid @color-portlet;
     }
+
+    > span:after {
+ content: "";
+  border-bottom: solid @color-portlet;
+  width:30%;
+  display:block;
+  margin:1rem auto;
+    }
+      > span:before {
+ content: "";
+  border-top:solid @color-portlet;
+  width:30%;
+  display:block;
+  margin:1rem auto;
+    }
+
+   > span > span > span:before{
+        position: absolute;
+  right: 103%;
+  top:0;
+  content: "\f10e";
+  color: @color-portlet;
+  font-size: 1.5em;
+    }
+
+
 }
 
-.login-wrapper {
-  float: right;
-  a {
-    padding: 1rem;
+
+
+#content-core {
+  p {
+    margin-left: 6rem;
   }
-}
-.login-link:before {
-content: "\f007";
-padding-right: .5rem;
+
+
 }
 
-#site-footer {
-  .newsletter-box {
-    
-  }
+
+.portletItemDetails {
+  color:@color-portlet;
+}
+.page-aside {
+.icons-on .contenttype-document, .icons-on .contenttype-event, .icons-on .contenttype-folder, .icons-on .contenttype-link, .icons-on .contenttype-news-item, .icons-on .contenttype-plone-site, .icons-on .contenttype-collection, .icons-on .contenttype-topic, .icons-on #plone-contentmenu-factories .contenttype-file, .icons-on #plone-contentmenu-factories .contenttype-image {
+  display: block!important;
+}
 }

@@ -163,33 +163,21 @@ aside.page-aside .box.leading-large .portletItemDetails {
 }
 
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-    border: 1px solid @color-green;
     margin-top: 1rem;
-    padding: .5rem 2rem;
-    border-radius: 5rem;
-    color: @color-portlet;
+    padding: .5rem 0;
+    color: @color-green;
+    &before {
+        content:'> '
+    }
 }
 
-aside.page-aside .box.leading-large.portletEvents a:before {
-    content: "\f133";
-    font-family: FontAwesome;
-    color: #007939;
-}
+// aside.page-aside .box.leading-large.portletEvents a:before {
+//     content: "\f133";
+//     font-family: FontAwesome;
+//     color: #007939;
+// }
 
-aside.page-aside .box.leading-large.portletEvents a:nth-last-of-type(1):before {
-    content: "\f073";
-    font-family: FontAwesome;
-}
 
-aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
-    background-color: #eee;
-    color: black;
-    -webkit-transition: background-color 500ms linear;
-    -moz-transition: background-color 500ms linear;
-    -o-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear, color 500ms linear;
-}
 
 .site-banner .page-container .site-description {
     font-size: x-large;
@@ -254,16 +242,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
     height: 43px;
 }
 
-#site-footer .page-container p {
-    display: inline-block;
-}
-
-#site-footer .page-container .navbar-credits {
-    position: relative;
-    float: right;
-    display: inline-block;
-    padding-bottom: 1em;
-}
 
 .fc-event-inner {
     color: white;
@@ -308,7 +286,10 @@ a.btn.btn-default[data-diazo='manage-portlets'] {
 
 .box.leading-large.portlet.portletEvents a.tile:nth-last-of-type(1) {
     margin-bottom: 0.3rem !important;
-    display: inline-block;
+    display: block;
+}
+aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
+    content: "> "
 }
 
 #portal-globalnav ul.submenu {
@@ -329,9 +310,6 @@ section#countries-map-section object {
         display: block;
         float: left;
         padding: 5px;
-    }
-    #site-footer .page-container .navbar-credits {
-        float: left;
     }
     .navbar-credits small {
         display: inline-block;
@@ -402,3 +380,20 @@ aside .nav-group {
 .btn-default {
     border-color: @color-green;
 }
+
+
+
+
+    .login-link:before {
+        color: @color-green;
+    }
+
+
+#site-footer {
+        .portlet {
+        a {
+            border-color:@color-green!important;
+        }
+    }
+}
+

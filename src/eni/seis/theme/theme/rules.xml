@@ -118,7 +118,7 @@
 
 <!-- moved newsletter to site footer -->
     <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
-    <after css:theme-children="#site-footer .page-container">
+    <after css:theme-children="#site-footer .page-container .newsletter-box-footer">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="contains(./@class, 'portlet-static-newsletter')">
           <div class="box leading-large {./@class}">
