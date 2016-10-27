@@ -11,29 +11,6 @@
   <xi:include href="rules/admin.xml" />
   <xi:include href="rules/homepage.xml" />
 
-  <!-- Folder view -->
-  <rules css:if-content=".template-folder_listing.portaltype-folder">
-    <drop css:theme=".page-aside .box.newsletter-box" />
-    <drop css:theme=".page-aside .box.leading-large" />
-  </rules>
-
-  <!-- Document view, simple page view -->
-  <rules css:if-content=".template-document_view.portaltype-document">
-    <drop css:theme=".page-aside .box.newsletter-box" />
-    <drop css:theme=".page-aside .box.leading-large" />
-  </rules>
-
-  <!-- Login page -->
-  <rules css:if-content=".template-login_form">
-    <drop css:theme=".page-aside .box.newsletter-box" />
-    <drop css:theme=".page-aside .box.leading-large" />
-  </rules>
-
-  <!-- Not found page -->
-  <rules css:if-content=".template-default_error_message">
-    <drop css:theme=".page-aside .box.newsletter-box" />
-    <drop css:theme=".page-aside .box.leading-large" />
-  </rules>
 
   <!-- Drop Editor menu for anonymous -->
   <rules css:if-content=".userrole-anonymous">
@@ -105,6 +82,7 @@
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
+          <xsl:if test="not('.template-homepage') and not(contains(./@class, 'portlet-static-newsletter'))">
           <div class="box leading-large {./@class}">
             <h4>
               <xsl:value-of select="./dt"/>
@@ -112,8 +90,11 @@
             <xsl:copy-of select="./dd/node()"/>
           </div>
         </xsl:if>
+        </xsl:if>
       </xsl:for-each>
     </after>
+      
+   
   </rules>
 
 <!-- moved newsletter to site footer -->
@@ -131,6 +112,13 @@
       </xsl:for-each>
     </after>
   </rules>
+
+
+
+      <before css:theme-children=".above-content"
+            css:content-children="#documentFirstHeading" />
+
+
 
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
@@ -179,11 +167,11 @@
     <copy
       attributes="href"
       css:content="#portal-logo"
-      css:theme=".navbar-brand h1 a"
+      css:theme=".navbar-title a"
       />
 
     <!-- Get website title based on website configuration (Requires website_title_html script. See docs.) -->
-    <replace css:content="h1" css:theme=".navbar-brand h1" href="/website_title_html" method="document" />
+    <replace css:content=".east" css:theme=".navbar-title" href="/website_title_html" method="document" />
 
     <!-- PORTAL NAVIGATION -->
     <replace
@@ -217,7 +205,7 @@
       css:content="#portal-breadcrumbs"
       css:theme=".breadcrumbs"
       />
-    <drop css:content="span#breadcrumbs-you-are-here" />
+    <!--<drop css:content="span#breadcrumbs-you-are-here" />-->
 
     <!-- copy current workflow state into the -->
     <replace
@@ -235,11 +223,12 @@
     -->
 
     <!-- Page header -->
-    <replace
-      css:content-children=".documentFirstHeading"
-      css:theme-children=".page-title"
-      />
-    <drop css:content=".documentFirstHeading" />
+    <!--<replace-->
+    <!--  css:content-children=".documentFirstHeading"-->
+    <!--  css:theme-children=".page-title"-->
+    <!--  />-->
+    <!--<drop css:content=".documentFirstHeading" />-->
+    <drop css:theme=".page-title" />
     <drop css:theme=".page-description" />
 
     <!--
@@ -287,7 +276,6 @@
     <!-- Fix bug: cannot edit pages -->
     <drop css:theme=".page-aside" />
     <drop css:theme=".page-main" attributes="class" />
-
   </rules>
 
   <!-- Fix bug: cannot access content rules -->
@@ -325,5 +313,6 @@
 
   <!-- Remove theme demo content in small column for all pages -->
   <drop css:theme=".page-aside .box.newsletter-box" />
+   <drop css:theme=".page-aside .box.portlet-static-newsletter" />
   <drop css:theme=".page-aside .box.leading-large" />
 </rules>

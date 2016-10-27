@@ -1,7 +1,7 @@
 #navbar {
     position: relative;
-    // padding-top: @rem-h-large;
     padding-bottom: @rem-h-large;
+    padding-top: @rem-h-large;
     background-color: #fff;
     font-family: 'Fira Sans Condensed', sans-serif;
     .page-container {
@@ -21,7 +21,9 @@
 }
 
 .navbar-credits {
+    @media (min-width: 1390px) {
     float: right;
+}
     small,
     a {
         display: inline-block;
@@ -32,15 +34,46 @@
     }
 }
 
+@media (min-width: 1390px) { 
+ .navbar-brand p {
+            max-width: 517px;
+            margin-left: 0!important;
+            margin-right: 0!important;
+    }
+    }
+
 .navbar-brand {
-    max-width: 551px;
     margin-bottom: @leading;
+}
+
+@media (min-width:960px ) and (max-width: 1390px)  {
+      #navbar .navbar-credits {
+       margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    border: 1px solid #eee;
+    }
+
+       .navbar-body {
+        max-width: 100%!important;
+    }
+    #navbar .page-container {
+        text-align: center;
+    }
+
+    .navbar-brand p {
+            max-width: 517px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 @media @screen-md {
     .navbar-body {
         position: relative;
         max-width: 551px;
+        margin-bottom: 1rem;
     }
     #portal-globalnav {
         max-width: 551px;
@@ -52,17 +85,16 @@
         margin-top: .5rem;
         border-top: solid #eee;
     }
-    #navbar .navbar-credits {
-        float: right;
-        position: absolute;
-        right: 0;
-    }
+  
     .navbar-brand {
-        h1 {
-            width: 100%;
-            overflow: hidden;
-            margin-bottom: 0;
-            font-size: 2.5rem;
+        .navbar-title {
+             width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+   font-family: 'Fira Sans', sans-serif;
         }
     }
     #navbar-toggle {
@@ -95,10 +127,14 @@
     }
     #navbar-toggle {
        
-        //here
+        display: block;
+    border: none;
+    padding: 2rem;
+    margin-top: 0;
 
     }
     .navbar-body {
+        display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.2rem;
@@ -111,21 +147,26 @@
         bottom: 0;
         left: 0;
         right: 0;
-        display: none;
+        transform: translate3d(-100%,0,0);
         overflow: auto;
+        transition: transform .2s;
         li {
             display: block;
         }
         #portal-globalnav {
+            height: 100vh;
             margin: auto;
             width: 100%;
             background: white;
+            a {
+                border-radius: 0!important;
+            }
             > li {
                 font-size: 2rem;
             }
         }
         .open & {
-            display: flex;
+                 transform: translate3d(0,0,0);
         }
         .selected {
             > a {
@@ -206,6 +247,9 @@
             border: 1px solid transparent;
             // border-radius: @radius;
             margin-left: 1.5rem;
+            > .submenu {
+                left: -1px!important;
+            }
             > a {
                 padding: @em;
                 color: @color-blue;
@@ -243,6 +287,12 @@
     }
 }
 
+.submenu.navTree {
+    left: 168px!important;
+    top: -37px;
+}
+
+
 .submenu.navTree.navTreeLevel1:hover {
     ul {
         display: block;
@@ -253,7 +303,7 @@
     > li:first-of-type {
         margin-left: 0!important;
         a {
-            padding-left: 0!important;
+
         }
     }
 }
@@ -278,7 +328,7 @@
 
 .navbar-brand {
     color: @color-emphasis;
-    h1,
+    .navbar-title,
     a {
         color: inherit;
     }
@@ -291,7 +341,7 @@
     color: #222
 }
 
-.navbar-brand h1,
+.navbar-brand .navbar-title,
 .navbar-brand a {
     color: inherit
 }
@@ -362,12 +412,13 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 }
 
 .navbar-close {
-      display: none;
     position: absolute;
     top: 0;
-    right: 3rem;
+    right: 1rem;
+    border: none;
     @media @screen-md {
-      
+        display: none;
     }
 }
 
+#portal-globalnav > li:nth-child(1n+6) { display: none }

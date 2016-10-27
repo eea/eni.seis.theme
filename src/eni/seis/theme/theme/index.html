@@ -13,7 +13,8 @@
 
 <body>
     <header id="site-header">
-      <button id="navbar-toggle" class="btn btn-default" type="button" data-toggle="dropdown" data-target="#navbar">Menu</button>
+      <button id="navbar-toggle" class="btn btn-default" type="button" data-toggle="dropdown" data-target="#navbar"><i class="fa fa-bars" aria-hidden="true"></i>
+</button>
         <div id="navbar">
             <div class="admin">
                 <div class="page-container">
@@ -22,7 +23,7 @@
             </div>
             <div class="page-container">
                 <div class="navbar-brand">
-                    <h1 class="no-leading"><a href="">ENI SEIS II <strong>South</strong></a></h1>
+                    <div class="no-leading navbar-title"><a href="">ENI SEIS II <strong>South</strong></a></div>
                     <p class="no-leading"> Implementation of the Shared Enviromental Information System (SEIS) principles and practices in the ENP <span class="south-subtitle">South</span><span class="east-subtitle">East</span> region </p>
                 </div>
               
@@ -56,7 +57,9 @@
                     </div>
                 </div>
                 <div class="lp-right-side">
-                    <img class="lp-map" src="http://i.imgur.com/qsemBUZ.png" />
+                    <img style="display: none;" class="lp-map" src="http://i.imgur.com/qsemBUZ.png" />
+                    <section class="section" data-diazo="section-countries-map">
+                    </section>
                 </div>
             </div>
         </div>
@@ -66,11 +69,6 @@
             <header class="page-header">
                 <div class="page-container">
                     <div>
-                        <ul class="breadcrumbs">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Folder</a></li>
-                            <li><strong>This page</strong></li>
-                        </ul>
                     </div>
                     <h1 class="page-title">Page title</h1>
                     <p class="page-description">Page description</p>
@@ -78,6 +76,13 @@
             </header>
             <div class="page-body">
                 <div class="page-container clear">
+                    <div class="above-content">
+                        <ul class="breadcrumbs">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Folder</a></li>
+                            <li><strong>This page</strong></li>
+                        </ul>
+                    </div>
                     <main class="page-main">
                         <section class="section" data-diazo="section-governance">
                             <header class="section-header">
@@ -297,12 +302,6 @@
                                 Manage portlets
                             </a>
                     </aside>
-                    <div class="section-partners-wrapper">
-                        <section class="section" data-diazo="section-partners">
-                        </section>
-                        <section class="section" data-diazo="section-countries-map">
-                        </section>
-                    </div>
                 </div>
             </div>
             <footer class="page-footer">

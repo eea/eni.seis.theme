@@ -1,22 +1,37 @@
 .site-banner {
-    background: white;
-    //  display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
+    @media @screen-md {
+        &:before {
+            content: '';
+            background: rgba(255, 255, 255, 1);
+            width: 100%;
+            height: 30%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    @media @screen-md-upto {
+        background: white!important;
+        margin-bottom: 0!important;
+    }
     z-index: 1;
     position: relative;
     @media @screen-md {
-    .lp-content {
-        height: auto;
-        margin: auto;
+        .lp-content {
+            margin: auto;
+            margin-top: 4rem;
+        }
+        .lp-right-side {
+            padding: 0;
+            .section {
+                max-height: auto;
+                max-width: 100%;
+                padding: 0!important;
+            }
+            .section-body {
+                margin: 0!important;
+            }
+        }
     }
-    .lp-map {
-    max-height: auto; 
-    max-width: 100%;
-}
-
-}
     .lp-title {
         margin-bottom: 1rem;
         text-align: left;
@@ -38,22 +53,22 @@
     }
 }
 
- @media @screen-md-upto {
-        .template-homepage .lp-content {
-            max-width: 100vw;
-            width: 100vw;
-            min-height: 220px;
-            box-shadow: none!important;
-    		background: none;
-    		max-height: 45vh;
-        }
-        .lp-left-side{
-        	display: none;
-        }
-        .lp-right-side {
-        	width: 100%;
-        }
+@media @screen-md-upto {
+    .template-homepage .lp-content {
+        max-width: 100vw;
+        width: 100vw;
+        min-height: 220px;
+        box-shadow: none!important;
+        background: none;
+        max-height: 45vh;
     }
+    .lp-left-side {
+        display: none;
+    }
+    .lp-right-side {
+        width: auto;
+    }
+}
 
 
 /* Login link top-right */
@@ -61,8 +76,11 @@
 #site-header .login-link {
     float: right;
     position: absolute;
-    right: 10px;
+    right: 3rem;
     top: 10px;
+    @media @screen-md-upto {
+     top: -82px;
+    }
     z-index: 1;
 }
 
@@ -112,4 +130,11 @@ ul.configlets {
     padding-right: 5px;
 }
 
+// #site-header {
+//     .page-container {
+//         @media @screen-md {
+//             max-width: 83vw;
+//         }
+//     }
+// }
 

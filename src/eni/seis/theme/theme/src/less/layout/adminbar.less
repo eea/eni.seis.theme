@@ -1,5 +1,8 @@
 .admin {
-
+   * {
+      box-sizing: content-box!important;
+    }
+  box-sizing: content-box!important;
   background: #75ad0a;
 
   @media (max-width: 568px)
@@ -7,21 +10,27 @@
   	display: none;
   }
   #edit-bar {
-    min-height: 2.5em!important;
+    dl,ul,ol,p {
+      margin-bottom: 0!important;
+    }
+    font-size: 1rem;
   }
-}
+
+  
 
 
-.admin .page-container #edit-bar {
-    border-style: solid solid solid solid;
-    border-radius: 0 !important;
-}
-.admin .page-container #edit-bar #contentActionMenus {
-    float: none;
-}
-.admin .page-container #edit-bar #content-views a {
-    border-radius: 3px;
-}
+
+//Remove comments to make the admin bar white
+// .admin .page-container #edit-bar {
+//     border-style: solid solid solid solid;
+//     border-radius: 0 !important;
+// }
+// .admin .page-container #edit-bar #contentActionMenus {
+//     float: none;
+// }
+// .admin .page-container #edit-bar #content-views a {
+//     border-radius: 3px;
+// }
 //   #edit-bar {
 //   	color:black;
 //   	background: white;
@@ -49,4 +58,18 @@
 //       }
 //     }
 //   }
-// }
+}
+
+ .template-homepage {
+    .admin {
+      position: absolute;
+      top:0;
+      width: 100%;
+    }
+    #edit-bar {
+      margin-bottom: 0!important;
+    }
+    #navbar {
+      padding-top: 35px;
+    }
+  }

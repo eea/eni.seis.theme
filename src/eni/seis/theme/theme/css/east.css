@@ -1,3 +1,7 @@
+@media (min-width: 640px) {
+}
+@media (min-width: 640px) {
+}
 .btn-primary {
   border-color: #009245;
   color: #fff;
@@ -92,7 +96,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
     border-top: solid #009245;
-    left: -1px !important;
   }
   #portal-globalnav > li:hover {
     background: #009245;
