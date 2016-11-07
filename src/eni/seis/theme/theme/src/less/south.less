@@ -2,6 +2,7 @@
 @color-yellow: #F7931E;
 @color-accent: #F7931E;
 @color-brand-south: #ff8228;
+@color-brand-south-dark: darken(@color-brand-south, 10%);
 
 .btn-primary {
     .btn-variant(#fff, #009245, #009245);
@@ -123,4 +124,94 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #portal-globalnav > li > a{
     color: @color-brand-south;
 }
+}
+
+//visited link colors
+
+// .page-body {
+//     a:visited {
+//         color: #205c90!important;
+//     }
+// }
+
+// .template-homepage {
+//     .page-body {
+//         .page-main {
+//             a:visited {
+//                 color: darken(@color-brand-south, 10%)!important;
+//             }
+//         }
+//         .page-aside {
+//             a:visited {
+//                 color: @color-portlet!important;
+//             }
+//         }
+//     }
+// }
+
+
+
+.admin {
+    background: @color-brand-south;
+    .admin .page-container #edit-bar {
+    border-style: solid solid solid solid;
+    border-radius: 0 !important;
+}
+
+#contentActionMenus dl.actionMenu.activated dd a:hover, #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+    background: inherit!important;
+}
+.admin .page-container #edit-bar #contentActionMenus {
+    float: none;
+}
+.admin .page-container #edit-bar #content-views a {
+    border-radius: 3px;
+}
+  #edit-bar {
+        color: white;
+     background: @color-brand-south;
+     border-color: @color-brand-south!important;
+     *{
+         background: @color-brand-south;
+         border-color: @color-brand-south!important;
+     }
+     a {
+         color: inherit!important;
+     }
+     .contentViews#content-views {
+     a:hover {
+        color: @color-brand-south!important;
+     }
+ }
+
+     .selected {
+        a {
+            color: @color-brand-south!important;
+        }
+     }
+  }
+
+
+  #contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+     background: @color-brand-south;
+        color: white;
+  }
+  ul {
+    padding: 0;
+  }
+  ul:first-of-type{
+    li:first-of-type {
+      a{
+        padding-left:0;
+      }
+    }
+  }
+}
+
+.page-header {
+    border-color: @color-brand-south!important;
+}
+
+.south-subtitle {
+  display: none!important;
 }

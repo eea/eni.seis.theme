@@ -1,6 +1,4 @@
-@media (min-width: 640px) {
-}
-@media (min-width: 640px) {
+@media (max-width: 959px) {
 }
 .btn-primary {
   border-color: #009245;
@@ -111,5 +109,57 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   #portal-globalnav > li > a {
     color: #ff8228;
   }
+}
+.admin {
+  background: #ff8228;
+}
+.admin .admin .page-container #edit-bar {
+  border-style: solid solid solid solid;
+  border-radius: 0 !important;
+}
+.admin #contentActionMenus dl.actionMenu.activated dd a:hover,
+.admin #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+  background: inherit!important;
+}
+.admin .admin .page-container #edit-bar #contentActionMenus {
+  float: none;
+}
+.admin .admin .page-container #edit-bar #content-views a {
+  border-radius: 3px;
+}
+.admin #edit-bar {
+  color: white;
+  background: #ff8228;
+  border-color: #ff8228 !important;
+}
+.admin #edit-bar * {
+  background: #ff8228;
+  border-color: #ff8228 !important;
+}
+.admin #edit-bar a {
+  color: inherit!important;
+}
+.admin #edit-bar .contentViews#content-views a:hover {
+  color: #ff8228 !important;
+}
+.admin #edit-bar .selected a {
+  color: #ff8228 !important;
+}
+.admin #contentActionMenus dl.actionMenu a,
+.admin #contentActionMenus dl.actionMenu.activated dd {
+  background: #ff8228;
+  color: white;
+}
+.admin ul {
+  padding: 0;
+}
+.admin ul:first-of-type li:first-of-type a {
+  padding-left: 0;
+}
+.page-header {
+  border-color: #ff8228 !important;
+}
+.south-subtitle {
+  display: none!important;
 }
 /*# sourceMappingURL=./source.css.map */

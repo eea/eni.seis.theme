@@ -78,18 +78,23 @@
   </rules>
 
   <!-- Portlets -->
+  <!-- do not copy newsletter portlet within diazo template if we are not within homepage -->
   <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
+ 
+    <rules css:if-not-content=".template-homepage">
+       <drop css:content=".portlet-static-newsletter"  />
+    </rules>
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
-          <xsl:if test="not('.template-homepage') and not(contains(./@class, 'portlet-static-newsletter'))">
+         
           <div class="box leading-large {./@class}">
             <h4>
               <xsl:value-of select="./dt"/>
             </h4>
             <xsl:copy-of select="./dd/node()"/>
           </div>
-        </xsl:if>
+    
         </xsl:if>
       </xsl:for-each>
     </after>
@@ -98,7 +103,7 @@
   </rules>
 
 <!-- moved newsletter to site footer -->
-    <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
+<!--     <rules css:if-not-content=".template-atct_edit, .template-edit">  
     <after css:theme-children="#site-footer .page-container .newsletter-box-footer">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="contains(./@class, 'portlet-static-newsletter')">
@@ -111,7 +116,7 @@
         </xsl:if>
       </xsl:for-each>
     </after>
-  </rules>
+  </rules> -->
 
 
 
@@ -252,6 +257,18 @@
         css:theme-children=".page-main"
       />
 
+    </rules>
+    
+    <!-- Make page-main full width when no right column --> 
+    <rules css:if-not-content=".template-manage-portlets, .template-homepage">
+    <rules if="not($have_right_portlets)">  
+        <drop css:theme="aside" />
+         <replace css:theme=".page-main"  method="raw">
+          <div class="page-main page-main-full" id="content">
+               <xsl:apply-templates css:select="#content > *" />
+          </div>  
+         </replace>
+    </rules>
     </rules>
 
     <!--

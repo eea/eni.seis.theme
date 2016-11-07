@@ -1,6 +1,4 @@
-@media (min-width: 640px) {
-}
-@media (min-width: 640px) {
+@media (max-width: 959px) {
 }
 .btn-primary {
   border-color: #009245;
@@ -111,5 +109,8 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   #portal-globalnav > li > a {
     color: #009245;
   }
+}
+.south-subtitle {
+  display: none;
 }
 /*# sourceMappingURL=./source.css.map */

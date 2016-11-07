@@ -4,6 +4,7 @@
     font-family: FontAwesome;
 }
 
+
 // Misc
 .center {
     .utils > .center;
@@ -48,17 +49,9 @@
     background-size: cover;
     background-position: center;
     color: @color-emphasis;
-    @media @screen-sm-upto {
         background-image: url('@{path-images}/homepage-background.jpg');
-    }
-    @media @screen-sm {
-        // background-image: url('@{path-images}/bg-header_east-md.png');
-        background-image: url('@{path-images}/homepage-background.jpg');
-    }
     @media @screen-sm {
         min-height: 10rem;
-        // background-image: url('@{path-images}/bg-header_east-lg.png');
-        background-image: url('@{path-images}/homepage-background.jpg');
     }
 }
 
@@ -81,9 +74,23 @@
     }
 }
 
+.userrole-anonymous {
+    #content-core {
+        dt {
+             padding-bottom: 1rem;
+
+        }
+    }
+}
+
+#content-core {
+        margin-top: 1rem;
+}
+
 .page-body {
     padding-top: @page-padding;
     padding-bottom: @page-padding;
+    padding-right: @page-padding;
 }
 
 .page-footer {
@@ -124,6 +131,10 @@
         width: percentage(9 / 12);
         padding:1rem;
         padding-left: 0;
+    }
+    .page-main.page-main-full {
+        float:none;
+        width: 100%;
     }
     .page-aside {
         float: right;
@@ -214,6 +225,9 @@
 #content {
     font-size: inherit;
     margin: auto;
+    table {
+        width: 100%;
+    }
 }
 
 #content-core {
@@ -261,7 +275,7 @@ aside.page-aside .box.leading-large {}
 .contenttype-eea-meeting {
     background: none!important;
     padding: 0;
-    margin-left: -20px!important;
+    padding-left: 0px!important;
 }
 }
 
@@ -349,8 +363,6 @@ a.contenttype-eea-meeting:before {
     margin-bottom: 0!important;
     margin-left: 0!important;
     display: inline-block;
-    border-top: 2px solid #eee;
-    padding-top: 1rem;
     span:last-of-type {
         * {
             color: @color-orange;
@@ -518,10 +530,6 @@ span + .error {
     border-top: 5px solid #75ad0a;
 }
 
-.page-aside .portlet-static-newsletter {
-    display: none;
-}
-
 @media @screen-md-upto {
     .lp-content::before {
         display: none!important;
@@ -565,4 +573,8 @@ span + .error {
 .documentByLine {
     font-size: 9px;
     display: block;
+}
+
+.icons-on .contenttype-document, .icons-on .contenttype-event, .icons-on .contenttype-folder, .icons-on .contenttype-link, .icons-on .contenttype-news-item, .icons-on .contenttype-plone-site, .icons-on .contenttype-collection, .icons-on .contenttype-topic, .icons-on #plone-contentmenu-factories .contenttype-file, .icons-on #plone-contentmenu-factories .contenttype-image{
+    padding-left: 0!important;
 }

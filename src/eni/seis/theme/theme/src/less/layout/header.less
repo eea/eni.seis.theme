@@ -1,3 +1,6 @@
+body {
+    display: none;
+}
 .site-banner {
     @media @screen-md {
         &:before {
@@ -10,8 +13,11 @@
         }
     }
     @media @screen-md-upto {
-        background: white!important;
+        // background: white!important;
         margin-bottom: 0!important;
+        .lp-content {
+            display: none;
+        }
     }
     z-index: 1;
     position: relative;
@@ -51,6 +57,14 @@
             }
         }
     }
+}
+
+.lp-left-side {
+    z-index: 3!important;
+    .lp-title {
+    background: rgba(255,255,255, 0.7);
+    padding: 1rem;
+}
 }
 
 @media @screen-md-upto {
@@ -137,4 +151,5 @@ ul.configlets {
 //         }
 //     }
 // }
+
 

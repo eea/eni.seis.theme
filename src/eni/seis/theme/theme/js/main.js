@@ -1,169 +1,3 @@
-/* ========================================================================
- * Bootstrap: dropdown.js v3.3.6
- * http://getbootstrap.com/javascript/#dropdowns
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // DROPDOWN CLASS DEFINITION
-  // =========================
-
-  var backdrop = '.dropdown-backdrop'
-  var toggle   = '[data-toggle="dropdown"]'
-  var Dropdown = function (element) {
-    $(element).on('click.bs.dropdown', this.toggle)
-  }
-
-  Dropdown.VERSION = '3.3.6'
-
-  function getParent($this) {
-    var selector = $this.attr('data-target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && /#[A-Za-z]/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    var $parent = selector && $(selector)
-
-    return $parent && $parent.length ? $parent : $this.parent()
-  }
-
-  function clearMenus(e) {
-    if (e && e.which === 3) return
-    $(backdrop).remove()
-    $(toggle).each(function () {
-      var $this         = $(this)
-      var $parent       = getParent($this)
-      var relatedTarget = { relatedTarget: this }
-
-      if (!$parent.hasClass('open')) return
-
-      if (e && e.type == 'click' && /input|textarea/i.test(e.target.tagName) && $.contains($parent[0], e.target)) return
-
-      $parent.trigger(e = $.Event('hide.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this.attr('aria-expanded', 'false')
-      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
-    })
-  }
-
-  Dropdown.prototype.toggle = function (e) {
-    var $this = $(this)
-
-    if ($this.is('.disabled, :disabled')) return
-
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
-
-    clearMenus()
-
-    if (!isActive) {
-      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we use a backdrop because click events don't delegate
-        $(document.createElement('div'))
-          .addClass('dropdown-backdrop')
-          .insertAfter($(this))
-          .on('click', clearMenus)
-      }
-
-      var relatedTarget = { relatedTarget: this }
-      $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this
-        .trigger('focus')
-        .attr('aria-expanded', 'true')
-
-      $parent
-        .toggleClass('open')
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
-    }
-
-    return false
-  }
-
-  Dropdown.prototype.keydown = function (e) {
-    if (!/(38|40|27|32)/.test(e.which) || /input|textarea/i.test(e.target.tagName)) return
-
-    var $this = $(this)
-
-    e.preventDefault()
-    e.stopPropagation()
-
-    if ($this.is('.disabled, :disabled')) return
-
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
-
-    if (!isActive && e.which != 27 || isActive && e.which == 27) {
-      if (e.which == 27) $parent.find(toggle).trigger('focus')
-      return $this.trigger('click')
-    }
-
-    var desc = ' li:not(.disabled):visible a'
-    var $items = $parent.find('.dropdown-menu' + desc)
-
-    if (!$items.length) return
-
-    var index = $items.index(e.target)
-
-    if (e.which == 38 && index > 0)                 index--         // up
-    if (e.which == 40 && index < $items.length - 1) index++         // down
-    if (!~index)                                    index = 0
-
-    $items.eq(index).trigger('focus')
-  }
-
-
-  // DROPDOWN PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.dropdown')
-
-      if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
-      if (typeof option == 'string') data[option].call($this)
-    })
-  }
-
-  var old = $.fn.dropdown
-
-  $.fn.dropdown             = Plugin
-  $.fn.dropdown.Constructor = Dropdown
-
-
-  // DROPDOWN NO CONFLICT
-  // ====================
-
-  $.fn.dropdown.noConflict = function () {
-    $.fn.dropdown = old
-    return this
-  }
-
-
-  // APPLY TO STANDARD DROPDOWN ELEMENTS
-  // ===================================
-
-  $(document)
-    .on('click.bs.dropdown.data-api', clearMenus)
-    .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
-    .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
-    .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
-    .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
-
-}(jQuery);
-
 /*! Hammer.JS - v2.0.8 - 2016-04-23
  * http://hammerjs.github.io/
  *
@@ -2807,11 +2641,25 @@ if (typeof define === 'function' && define.amd) {
 }
 
 })(window, document, 'Hammer');
-$(document).ready(function() {
+function isElementInViewport (el) {
 
-    if ($('table').hasClass('listing')) {
-        $('table').removeClass('listing').addClass('table table-responsive table-hover');
+    //special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
     }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+
+
+$(document).ready(function() {
 
 
     (function($) {
@@ -2824,17 +2672,47 @@ $(document).ready(function() {
         };
     })(jQuery);
 
-    $body_container = $('.page-body .page-container');
-    $('.documentFirstHeading').moveTo($body_container);
-    $('.above-content').moveTo($body_container);
+    function loadData1(callback) {
+        $('.navbar-body').append("<button class='btn btn-default navbar-close' type='button'>X</button>");
+        if ($('body').hasClass('template-homepage')) {
+            $('.template-homepage .admin').moveTo($('body'));
+        } else {
+            $body_container = $('.page-body .page-container');
+            $('.documentFirstHeading').moveTo($body_container);
+            $('.above-content').moveTo($body_container);
+        }
+
+        if (callback && typeof callback == "function") {
+            callback();
+        }
+    }
+
+    loadData1(function() {
+        function loadData(callback) {
+            $('body')
+                .css('display', 'block')
+                .velocity({
+                    translateZ: "0",
+                    opacity: [0, 'easeIn']
+                }, 0);
+
+
+            if (callback && typeof callback == "function") {
+                callback();
+            }
+        }
+        loadData(function() {
+            $('body').velocity('reverse', 600);
+        });
+    });
 
 
     $('#portal-globalnav > li > a').addClass('no-events');
 
-    $('.navbar-body').append("<button class='btn btn-default navbar-close' type='button'>X</button>");
 
     $('#navbar-toggle').click(function() {
         $('body').addClass('no-ovf');
+        $('#navbar').addClass('open');
     });
 
 
@@ -2847,32 +2725,73 @@ $(document).ready(function() {
         $('#portal-globalnav > li > a').not($(this)).addClass('no-events');
     });
 
+    var map_overlay = document.querySelector('.map-overlay');
+    map_overlay.addEventListener('click', function(){
+          this.classList.add('hidden');
+    });
+
+    function onVisibilityChange(el, callback) {
+    var old_visible;
+    return function () {
+        var visible = isElementInViewport(el);
+        if (visible == false) {
+            if (typeof callback == 'function') {
+                callback();
+            }
+        }
+    }
+}
+
+var handler = onVisibilityChange(map_overlay, function() {
+              map_overlay.classList.remove('hidden');
+});
+ 
+
+if (window.addEventListener) {
+    addEventListener('DOMContentLoaded', handler, false); 
+    addEventListener('load', handler, false); 
+    addEventListener('scroll', handler, false); 
+    addEventListener('resize', handler, false); 
+} else if (window.attachEvent)  {
+    attachEvent('onDOMContentLoaded', handler); // IE9+ :(
+    attachEvent('onload', handler);
+    attachEvent('onscroll', handler);
+    attachEvent('onresize', handler);
+}
+
+
+    var $activeMenuItem;
 
     $('#portal-globalnav > li > a').on('touchstart', function(e) {
         if ($(this).hasClass('no-events')) {
             e.preventDefault();
             $(this).removeClass('no-events');
-            $(this).parent().parent().find('.submenu').animate({ height: "hide" });
-            $(this).parent().find('.submenu').first().animate({ height: "toggle" });
+            if ($activeMenuItem)
+                $activeMenuItem.animate({ height: "hide" });
+            $activeMenuItem = $(this).parent().find('.submenu');
+            $activeMenuItem.animate({ height: "toggle" });
         }
     });
+    if ($('table').hasClass('listing')) {
+        $('table').removeClass('listing').addClass('table table-responsive table-hover');
+    }
 
 
-if (window.matchMedia("(max-width: 960px)").matches) {
-    var navbar = document.querySelector('body');
+    if (window.matchMedia("(max-width: 960px)").matches) {
+        var navbar = document.querySelector('body');
 
-    var hammertime = new Hammer(navbar);
-    hammertime.on('swiperight', function() {
-        console.log('right');
-        $('#navbar').addClass('open');
-        $('body').addClass('no-ovf');
-    });
+        var hammertime = new Hammer(navbar);
+        hammertime.on('swiperight', function() {
+            console.log('right');
+            $('#navbar').addClass('open');
+            $('body').addClass('no-ovf');
+        });
 
-    hammertime.on('swipeleft', function() {
-        console.log('left');
-        $('#navbar').removeClass('open');
-        $('body').removeClass('no-ovf');
-    });
-}
+        hammertime.on('swipeleft', function() {
+            console.log('left');
+            $('#navbar').removeClass('open');
+            $('body').removeClass('no-ovf');
+        });
+    }
 
 });
