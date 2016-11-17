@@ -19,7 +19,7 @@
 
   <!-- Login link for anonymous - top-right -->
   <rules css:if-content=".userrole-anonymous">
-    <before css:theme-children="#site-header #navbar .page-container">
+    <before css:theme-children="#site-header #navbar .header-container">
       <xsl:for-each css:select="#portal-personaltools #personaltools-login">
         <a class="login-link" href="{./@href}">Log in</a>
       </xsl:for-each>
@@ -260,7 +260,7 @@
     </rules>
     
     <!-- Make page-main full width when no right column --> 
-    <rules css:if-not-content=".template-manage-portlets, .template-homepage">
+   <!--  <rules css:if-not-content=".template-manage-portlets, .template-homepage">
     <rules if="not($have_right_portlets)">  
         <drop css:theme="aside" />
          <replace css:theme=".page-main"  method="raw">
@@ -269,7 +269,7 @@
           </div>  
          </replace>
     </rules>
-    </rules>
+    </rules> -->
 
     <!--
       #viewlet-below-content-body

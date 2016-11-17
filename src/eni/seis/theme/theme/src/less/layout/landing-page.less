@@ -28,21 +28,10 @@
 }
 
 .lp-content {
-    background-image: url('http://i.imgur.com/vM0rwbZ.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // background: white;
-    box-shadow: 2px 2px 4px #ddd, -2px -2px 4px #ddd;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
     position: relative;
-    @media (max-width: 960px) {
-        flex-direction: column;
-        margin: auto;
-    }
 }
 
 
@@ -150,7 +139,7 @@
 }
 
 .lp-content::before {
-    content: '';
+    // content: '';
     position: absolute;
     top: 0;
     left: 0;
