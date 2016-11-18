@@ -2279,7 +2279,7 @@ body {
   }
 }
 .template-homepage #site-header {
-  background-position: center;
+  background-position: 100% -225%;
 }
 #site-footer {
   border-top: 1px solid #d8d8d8;
@@ -3285,7 +3285,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 }
 .lp-content {
   overflow: hidden;
-  height: 400px;
   width: 100%;
   position: relative;
 }
@@ -3390,10 +3389,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
   background: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
-.lp-map {
-  max-height: 65vh;
-  max-width: 100%;
-}
 body.template-homepage {
   display: none;
 }
@@ -3409,7 +3404,7 @@ body.template-homepage {
   .site-banner .lp-content {
     margin: auto;
     z-index: 1;
-    max-height: 500px;
+    height: 600px;
     overflow: hidden;
   }
   .site-banner .lp-content .embed-container {
@@ -3481,41 +3476,15 @@ ul.configlets {
 }
 @media (min-width: 960px) {
   .template-homepage #navbar {
-    margin-bottom: 200px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
   }
   .template-homepage .header-container {
-    margin-bottom: -200px;
     width: 85%!important;
     padding: 0!important;
   }
 }
-.template-homepage .navbar-container,
-.template-homepage .brand-container {
-  background: white!important;
-  padding: 1rem;
-}
-.template-homepage .brand-container {
-  overflow: hidden;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-.template-homepage .navbar-container {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-.template-homepage .header-container {
-  position: relative;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-}
 .template-homepage #navbar {
-  background: rgba(255, 255, 255, 0.2);
-}
-.template-homepage #navbar .page-container {
-  padding: 2rem 1rem;
-  background: white;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.7);
 }
 .template-homepage .above-content {
   display: none;
@@ -3533,15 +3502,8 @@ ul.configlets {
 .template-homepage .lp-title {
   height: auto!important;
 }
-@media (min-width: 1441px) {
-  .template-homepage .lp-content {
-    max-width: 85vw!important;
-  }
-}
-@media (max-width: 1441px) {
-  .template-homepage .lp-content {
-    max-width: 90rem!important;
-  }
+.template-homepage .lp-content {
+  box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.2), 0px -2px 15px rgba(0, 0, 0, 0.2);
 }
 .template-homepage .lp-title {
   margin-top: 0;
