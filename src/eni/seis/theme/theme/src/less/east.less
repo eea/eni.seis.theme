@@ -124,25 +124,45 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     display: none;
 }
 
-//visited link color
+.tab-content {
+  thead {
+    background: @color-brand-east;
+    color: white;
+  }
+}
 
-// .page-body {
-//     a:visited {
-//         color: #205c90!important;
-//     }
-// }
+.nav > li > a:hover,
+.nav > li > a:focus {
+ background: transparent!important;
+ color: white!important;
+}
 
-// .template-homepage {
-//     .page-body {
-//         .page-main {
-//             a:visited {
-//                 color: darken(@color-brand-east, 10%)!important;
-//             }
-//         }
-//         .page-aside {
-//             a:visited {
-//                 color: @color-portlet!important;
-//             }
-//         }
-//     }
-// }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus { 
+    color: @color-brand-east!important;
+    background: transparent!important;
+
+    }
+
+
+    .nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: @color-brand-east!important;
+}
+
+
+.tab-pane {
+  table {
+    tbody {
+      tr {
+        td:first-of-type {
+          color: @color-brand-east!important;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

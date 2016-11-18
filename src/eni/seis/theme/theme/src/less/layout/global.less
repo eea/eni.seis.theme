@@ -46,17 +46,34 @@ body {
 
 .header-container {
     .utils > .center;
-    width: 85%;
+    width: 70%;
     max-width: 1250px;
         position: relative;
+        padding: 0 1rem;
+@media (min-width: 960px) and (max-width: 1390px) {
+    width: 85%;    
 }
+}
+
 
 .login-link {
     position: absolute;
     right: 1rem;
     bottom: -50px;
+    @media @screen-md-upto {
+        bottom: -36px;
+    }
     background: rgba(255,255,255,0.8);
     padding: 0 1rem;
+}
+
+
+#site-footer {
+    .login-link {
+        position: relative;
+        background: none;
+        bottom: 0;
+    }
 }
 
 // Site
@@ -135,7 +152,7 @@ body {
 
 .page-container {
     .utils > .center;
-    max-width: 60%;
+    width: 70%;
     padding-left: @page-padding;
     padding-right: @page-padding;
 }
@@ -218,7 +235,7 @@ body {
 
 @media (min-width: 1441px) {
     .page-container {
-        max-width: 60%;
+        max-width: 70%;
     }
 }
 
