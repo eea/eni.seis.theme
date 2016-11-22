@@ -137,4 +137,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: #009245 !important;
   font-weight: 600;
 }
+.userrole-anonymous #navbar {
+  border-bottom-color: #009245;
+}
 /*# sourceMappingURL=./source.css.map */
