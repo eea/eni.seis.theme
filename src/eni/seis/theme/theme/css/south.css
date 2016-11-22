@@ -198,4 +198,29 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .tab-pane th {
   vertical-align: middle;
 }
+.homepage-news thead th {
+  background-color: #F7931E;
+  color: #fff;
+}
+.homepage-news tbody tr {
+  border-top-color: #F7931E;
+}
+.homepage-news tbody td:first-child {
+  color: #F7931E;
+}
+.homepage-news a {
+  color: #F7931E;
+}
+.aow-national-work-plans {
+  background: url('../img/img-south-national-work-plans.jpg');
+}
+.aow-indicators-and-assessment {
+  background: url('../img/img-south-indicators-and-assessment.jpg');
+}
+.aow-data-and-statistic {
+  background: url('../img/img-south-data-and-statistic.jpg');
+}
+.aow-data-management-and-infrastructures {
+  background: url('../img/img-south-data-management-and-infrastructures.jpg');
+}
 /*# sourceMappingURL=./source.css.map */

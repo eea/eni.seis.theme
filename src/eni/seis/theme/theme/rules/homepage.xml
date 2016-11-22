@@ -30,6 +30,11 @@
     <!-- Section: Countries map - get content homepage template -->
     <replace css:theme="[data-diazo='section-countries-map']"
              css:content="[data-diazo='section-countries-map']" />
+
+    <!-- Section: Areas of Work - get content homepage template -->
+    <replace css:theme="[data-diazo='section-areas-of-work']"
+             css:content="[data-diazo='section-areas-of-work']" />
+
              
     <!-- Section: Events - get content from custom homepage template -->
     <drop css:theme-children="[data-diazo='section-events']" />

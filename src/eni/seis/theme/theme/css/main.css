@@ -3626,6 +3626,32 @@ ul.configlets {
 .homepage-news a {
   color: #31456e;
 }
+.aow {
+  background-size: cover;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 150px;
+  text-decoration: none;
+}
+.list-areas-of-work {
+  padding-left: 0;
+  list-style: none;
+}
+.list-areas-of-work:before,
+.list-areas-of-work:after {
+  content: "";
+  display: table;
+}
+.list-areas-of-work:after {
+  clear: both;
+}
+@media (min-width: 960px) {
+  .list-areas-of-work > li {
+    float: left;
+    width: 25%;
+    min-width: 180px;
+  }
+}
 .box {
   margin-left: auto;
   margin-right: auto;
