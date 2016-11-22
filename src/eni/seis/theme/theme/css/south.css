@@ -68,6 +68,9 @@
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: #ff8228;
 }
+#site-header {
+  background: url('../img/bg-header-south.jpg') center top;
+}
 #site-header .actionMenu.activated {
   background-color: #f38709;
   border-radius: 0;

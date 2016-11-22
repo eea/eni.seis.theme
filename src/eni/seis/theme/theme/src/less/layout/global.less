@@ -8,6 +8,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #f2f2f2;
 }
 
 #site-body {
@@ -42,6 +43,13 @@ body {
 
 .container-xl {
     max-width: @container-sm;
+}
+
+.site-container {
+    .utils > .center;
+    max-width: 1200px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
 }
 
 .header-container {
@@ -152,7 +160,6 @@ body {
 
 .page-container {
     .utils > .center;
-    width: 70%;
     padding-left: @page-padding;
     padding-right: @page-padding;
 }
@@ -166,9 +173,6 @@ body {
     .page-aside {
         padding-top: @page-padding;
         border-top: 1px solid @color-soft;
-    }
-    .page-container {
-        max-width: 100%;
     }
 }
 
@@ -230,12 +234,6 @@ body {
     break-inside: avoid;
     @media @screen-sm-upto {
         margin-bottom: @leading-large;
-    }
-}
-
-@media (min-width: 1441px) {
-    .page-container {
-        max-width: 70%;
     }
 }
 

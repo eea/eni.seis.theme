@@ -58,6 +58,9 @@
 .navbar-brand strong {
   color: #009245;
 }
+#site-header {
+  background: url('../img/bg-header-east.jpg') center top;
+}
 /* Fix state published label to be visible on green editor bar */
 .admin span.state-published {
   color: #8CDA8C !important;
