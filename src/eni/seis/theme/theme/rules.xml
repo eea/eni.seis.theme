@@ -41,6 +41,10 @@
     <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
   </rules>
 
+  <!-- Drop UNEP-MAP if site east -->
+  <drop css:theme=".navbar-credits > a:nth-child(3)"
+        css:if-content=".site-east" />
+
   <!-- Navigation -->
   <drop css:theme=".page-aside .nav.nav-folder"
         css:if-not-content="dl.portlet.portletNavigationTree" />
