@@ -3,4 +3,4 @@ node_modules/
 ._DS_Store
 ._.DS_Store
 *.ai
-
+sftp-config.json
