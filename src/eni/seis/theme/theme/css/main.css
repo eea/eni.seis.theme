@@ -3621,16 +3621,23 @@ ul.configlets {
 .homepage-news a {
   color: #31456e;
 }
+.section-areas-of-work .section-body {
+  margin-left: 0;
+}
 .aow {
+  display: block;
+  padding-top: 4rem;
   background-size: cover;
   border-radius: 0.3em;
-  color: #fff;
+  color: #fff!important;
   height: 150px;
   text-decoration: none;
+  text-shadow: 0 1px 10px black;
 }
 .list-areas-of-work {
   padding-left: 0;
   list-style: none;
+  margin: -1rem;
 }
 .list-areas-of-work:before,
 .list-areas-of-work:after {
@@ -3640,11 +3647,18 @@ ul.configlets {
 .list-areas-of-work:after {
   clear: both;
 }
-@media (min-width: 960px) {
-  .list-areas-of-work > li {
-    float: left;
-    width: 25%;
-    min-width: 180px;
+.list-areas-of-work li {
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  float: left;
+  width: 25%;
+  min-width: 180px;
+}
+@media (max-width: 959px) {
+  .list-areas-of-work li {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 .box {

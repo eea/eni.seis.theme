@@ -157,15 +157,15 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: #009245;
 }
 .aow-environmental-reporting {
-  background: url('../img/img-east-environmental-reporting.jpg');
+  background-image: url('../img/img-east-environmental-reporting.jpg');
 }
 .aow-data-management-and-infrastructure {
-  background: url('../img/img-east-data-management-and-infrastructure.jpg');
+  background-image: url('../img/img-east-data-management-and-infrastructure.jpg');
 }
 .aow-assessment {
-  background: url('../img/img-east-assessment.jpg');
+  background-image: url('../img/img-east-assessment.jpg');
 }
 .aow-communication-and-visibility {
-  background: url('../img/img-east-communication-and-visibility.jpg');
+  background-image: url('../img/img-east-communication-and-visibility.jpg');
 }
 /*# sourceMappingURL=./source.css.map */
