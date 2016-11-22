@@ -3603,6 +3603,29 @@ ul.configlets {
   z-index: 10;
   position: relative;
 }
+.homepage-news {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+.homepage-news th,
+.homepage-news td {
+  padding: 0.4em 0.5em;
+}
+.homepage-news thead th {
+  background-color: #31456e;
+  color: #fff;
+}
+.homepage-news tbody tr {
+  border-top: 1px solid #31456e;
+}
+.homepage-news tbody td:first-child {
+  color: #31456e;
+  font-weight: bold;
+}
+.homepage-news a {
+  color: #31456e;
+}
 .box {
   margin-left: auto;
   margin-right: auto;

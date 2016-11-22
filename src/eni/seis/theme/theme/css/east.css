@@ -143,4 +143,17 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .userrole-anonymous #navbar {
   border-bottom-color: #009245;
 }
+.homepage-news thead th {
+  background-color: #009245;
+  color: #fff;
+}
+.homepage-news tbody tr {
+  border-top-color: #009245;
+}
+.homepage-news tbody td:first-child {
+  color: #009245;
+}
+.homepage-news a {
+  color: #009245;
+}
 /*# sourceMappingURL=./source.css.map */
