@@ -2204,9 +2204,6 @@ table th[class*="col-"] {
   font-family: FontAwesome;
 }
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
   background-color: #f2f2f2;
 }
 #site-body {
@@ -2717,6 +2714,7 @@ span + .error {
 @media (min-width: 1390px) {
   .navbar-credits {
     float: right;
+    clear: right;
   }
 }
 .navbar-credits small,
@@ -2743,9 +2741,6 @@ span + .error {
   }
   .navbar-body {
     max-width: 100%!important;
-  }
-  #navbar .page-container {
-    max-width: 80%;
   }
   #portal-globalnav > li > a {
     padding: .2rem;
