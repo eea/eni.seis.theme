@@ -42,7 +42,7 @@
   </rules>
 
   <!-- Drop UNEP-MAP if site east -->
-  <drop css:theme=".navbar-credits > a:nth-child(3)"
+  <drop css:theme=".navbar-credits [data-diazo='navbar-unepmap']"
         css:if-content=".site-east" />
 
   <!-- Navigation -->
