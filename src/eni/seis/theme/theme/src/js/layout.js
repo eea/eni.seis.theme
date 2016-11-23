@@ -18,13 +18,6 @@ $(document).ready(function() {
 
     function loadData1(callback) {
         navbar_body.innerHTML += "<button class='btn btn-default navbar-close' type='button'>X</button>";
-
-        if (body.classList.contains('template-homepage')) {
-            if (homepage_admin) {
-                body.insertBefore(homepage_admin, header);
-            }
-        } 
-
         if (callback && typeof callback == "function") {
             callback();
         }
