@@ -65,7 +65,6 @@ body {
     #site-header & {
         float: right;
     }
-    background: rgba(255,255,255,0.8);
     padding: 0 1rem;
 }
 
@@ -137,10 +136,6 @@ body {
     padding-right: @page-padding;
 }
 
-.page-footer {
-    padding-top: @page-padding;
-    padding-bottom: @page-padding;
-}
 
 .template-homepage {
     .page-footer {
@@ -510,10 +505,6 @@ a.btn.btn-default[data-diazo='manage-portlets'] {
     margin-bottom: 2rem;
 }
 
-.box.leading-large.portlet.portletEvents a.tile:nth-last-of-type(1) {
-    margin-bottom: 0.3rem !important;
-    display: block;
-}
 
 #portal-globalnav ul.submenu {
     z-index: 2;
@@ -613,4 +604,23 @@ span + .error {
 
 .no-events {
     pointer-events: none;
+}
+
+
+
+.event.summary.details {
+    float: none!important;
+}
+
+legend {
+    .fa {
+    font-size: 1.3em!important;
+    padding: 1rem;
+    }
+    .fa:before {
+        margin-right: .5rem;
+    }
+    .level-national {
+        padding-left: 0;
+    }
 }

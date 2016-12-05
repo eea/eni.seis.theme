@@ -1,4 +1,4 @@
- @import (reference) "main.less";
+  @import (reference) "main.less";
 @color-green: #009245;
 @color-accent: #009245;
 @color-brand-east: #009245;
@@ -164,13 +164,8 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 
 .tab-pane {
   table {
-    tbody {
-      tr {
-        td:first-of-type {
-          color: @color-brand-east!important;
-          font-weight: 600;
-        }
-      }
+    th {
+        vertical-align: middle;
     }
   }
 }
@@ -210,4 +205,20 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 .aow-communication-and-visibility {
     background-image: url('../img/img-east-communication-and-visibility.jpg');
+}
+
+
+.level-national {
+    color:@color-brand-east;
+}
+
+.level-regional {
+    color: #205c90;
+}
+
+.event-title {
+    color: @color-brand-east;
+}
+.site-banner {
+        border-top: solid @color-brand-east;
 }

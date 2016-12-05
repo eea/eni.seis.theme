@@ -199,6 +199,7 @@
     display: block;
     padding: .5rem;
     padding-top: 4rem;
+    font-size: large;
     background-size: cover;
     border-radius: @radius;
     color: #fff!important;
@@ -213,14 +214,15 @@
     .utils > .clear;
     margin: -1rem;
     li {
-        display: block;
-        list-style: none;
-        box-sizing: border-box;
-        padding: 1rem;
-        text-align: center;
-        float: left;
-        width: 25%;
-        min-width: 180px;
+    position: relative;
+    display: block;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    float: left;
+    width: 50%;
+    min-width: 180px;
     }
 
     @media @screen-xs-max {
@@ -229,4 +231,21 @@
             margin-bottom: @leading;
         }
     }
+}
+
+.list-areas-of-work a:after {
+    content: '';
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 32%;
+    bottom: 40%;
+    right: 0;
+    border-radius: 5px;
+    left: 0;
+    right: 10%;
+}
+
+.list-areas-of-work li:nth-child(odd) a:after {
+    left: 10%;
+    right: 0;
 }

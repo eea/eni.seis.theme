@@ -75,8 +75,19 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     background-image: url('../img/bg-header-south.jpg');
 }
 
+
+@media @screen-md {
+
 .template-homepage #site-header {
-    background-position: 100% 96%;
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 1500%!important;
+}
+}
+
+#site-header {
+    background-position: 100%;
+    background-size: cover;
 }
 
 .template-homepage #navbar {
@@ -260,16 +271,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 
 .tab-pane {
-    table {
-        tbody {
-            tr {
-                td:first-of-type {
-                    color: @color-brand-south!important;
-                    font-weight: 600;
-                }
-            }
-        }
-    }
+
     th {
         vertical-align: middle;
     }
@@ -309,4 +311,21 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 
 .aow-data-management-and-infrastructure {
     background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
+}
+
+
+.level-national {
+    color: @color-brand-south;
+}
+
+.level-regional {
+    color: #205c90;
+}
+
+.event-title {
+    color: @color-brand-south;
+}
+
+.site-banner {
+        border-top: solid @color-brand-south;
 }

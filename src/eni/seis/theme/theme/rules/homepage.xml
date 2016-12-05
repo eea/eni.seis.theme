@@ -35,7 +35,9 @@
    <!--  <replace css:theme="[data-diazo='section-areas-of-work']"
              css:content="[data-diazo='section-areas-of-work']" /> -->
 
-             
+    <replace css:theme="[data-diazo='news-homepage']"
+             css:content="[data-diazo='news-homepage']" />
+
     <!-- Section: Events - get content from custom homepage template -->
     <drop css:theme-children="[data-diazo='section-events']" />
 

@@ -139,9 +139,8 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .nav-pills > li.active > a:focus {
   background: #009245 !important;
 }
-.tab-pane table tbody tr td:first-of-type {
-  color: #009245 !important;
-  font-weight: 600;
+.tab-pane table th {
+  vertical-align: middle;
 }
 .userrole-anonymous #navbar {
   border-bottom-color: #009245;
@@ -170,5 +169,17 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 .aow-communication-and-visibility {
   background-image: url('../img/img-east-communication-and-visibility.jpg');
+}
+.level-national {
+  color: #009245;
+}
+.level-regional {
+  color: #205c90;
+}
+.event-title {
+  color: #009245;
+}
+.site-banner {
+  border-top: solid #009245;
 }
 /*# sourceMappingURL=./source.css.map */

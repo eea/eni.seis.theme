@@ -171,7 +171,7 @@ if (typeof jQuery === 'undefined') {
 
   $(document)
     .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
-    .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
+    // .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
 
 }(jQuery);
 /*! Hammer.JS - v2.0.8 - 2016-04-23
@@ -2886,7 +2886,17 @@ $(document).ready(function() {
     }
 
 
-  
+
+var project_events = document.getElementById('project-events');
+if (project_events) {
+var legend = document.createElement("legend"); 
+  project_events.appendChild(legend);
+  legend.innerHTML = '<i class="fa fa-circle level-national" aria-hidden="true">National Event</i><i class="fa fa-circle level-regional" aria-hidden="true">Regional Event</i><i class="fa fa-circle other" aria-hidden="true">Other Event</i>';
+  $('.tab-content').prepend(legend);
+}
+
+
+
 
     //jquery 
     if (window.matchMedia("(max-width: 960px)").matches) {

@@ -11,6 +11,29 @@
   <xi:include href="rules/admin.xml" />
   <xi:include href="rules/homepage.xml" />
 
+  <!-- Folder view -->
+  <rules css:if-content=".template-folder_listing.portaltype-folder">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Document view, simple page view -->
+  <rules css:if-content=".template-document_view.portaltype-document">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Login page -->
+  <rules css:if-content=".template-login_form">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Not found page -->
+  <rules css:if-content=".template-default_error_message">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
 
   <!-- Drop Editor menu for anonymous -->
   <rules css:if-content=".userrole-anonymous">
@@ -27,6 +50,7 @@
   </rules>
 
 
+
   <!-- Manage portlets button if here -->
   <rules css:if-content=".managePortletsLink">
     <copy
@@ -36,14 +60,20 @@
       />
   </rules>
 
+  <rules css:if-content=".managePortletsFallback">
+    <copy
+      attributes="href"
+      css:content=".managePortletsFallback a"
+      css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']"
+      />
+  </rules>
+ 
   <!-- Drop Manage portlets button if not here -->
   <rules css:if-not-content=".managePortletsLink">
-    <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
+    <rules css:if-not-content=".managePortletsFallback">
+      <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
+    </rules>
   </rules>
-
-  <!-- Drop UNEP-MAP if site east -->
-  <drop css:theme=".navbar-credits [data-diazo='navbar-unepmap']"
-        css:if-content=".site-east" />
 
   <!-- Navigation -->
   <drop css:theme=".page-aside .nav.nav-folder"
@@ -82,51 +112,23 @@
   </rules>
 
   <!-- Portlets -->
-  <!-- do not copy newsletter portlet within diazo template if we are not within homepage -->
   <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
- 
-    <rules css:if-not-content=".template-homepage">
-       <drop css:content=".portlet-static-newsletter"  />
-    </rules>
+   <drop css:content="#portal-column-one .portlet-static-newsletter" /> 
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
-         
           <div class="box leading-large {./@class}">
             <h4>
               <xsl:value-of select="./dt"/>
             </h4>
             <xsl:copy-of select="./dd/node()"/>
           </div>
-    
         </xsl:if>
       </xsl:for-each>
     </after>
       
    
   </rules>
-
-<!-- moved newsletter to site footer -->
-<!--     <rules css:if-not-content=".template-atct_edit, .template-edit">  
-    <after css:theme-children="#site-footer .page-container .newsletter-box-footer">
-      <xsl:for-each css:select="dl.portlet">
-        <xsl:if test="contains(./@class, 'portlet-static-newsletter')">
-          <div class="box leading-large {./@class}">
-            <h4>
-              <xsl:value-of select="./dt"/>
-            </h4>
-            <xsl:copy-of select="./dd/node()"/>
-          </div>
-        </xsl:if>
-      </xsl:for-each>
-    </after>
-  </rules> -->
-
-
-
-      <before css:theme-children=".above-content"
-            css:content-children="#documentFirstHeading" />
-
 
 
   <!-- Apply the following rules to standard Plone pages -->
@@ -176,7 +178,7 @@
     <copy
       attributes="href"
       css:content="#portal-logo"
-      css:theme=".navbar-title a"
+      css:theme=".navbar-brand h1 a"
       />
 
     <!-- Get website title based on website configuration (Requires website_title_html script. See docs.) -->
@@ -237,10 +239,9 @@
     <!--  css:theme-children=".page-title"-->
     <!--  />-->
     <!--<drop css:content=".documentFirstHeading" />-->
-    <drop css:theme=".page-title" />
-    <drop css:theme=".page-description" />
+    <!--<drop css:theme=".page-description" />-->
 
-    <!--
+    <!--East region
       #viewlet-below-content-title
       for author, date, history
     -->
@@ -262,20 +263,26 @@
       />
 
     </rules>
-    
-    <!-- Make page-main full width when no right column --> 
-   <!--  <rules css:if-not-content=".template-manage-portlets, .template-homepage">
+
+    <!-- Make page-main full width when no right column -->
+    <rules css:if-not-content=".template-manage-portlets">
     <rules if="not($have_right_portlets)">  
-        <drop css:theme="aside" />
          <replace css:theme=".page-main"  method="raw">
           <div class="page-main page-main-full" id="content">
                <xsl:apply-templates css:select="#content > *" />
           </div>  
          </replace>
     </rules>
-    </rules> -->
+    </rules>
+
 
     <!--
+    
+    <xsl:copy>
+            <xsl:attribute name="class">page-main page-main-full</xsl:attribute>
+            <xsl:copy-of select="@*" />
+            <xsl:apply-templates />
+        </xsl:copy>
       #viewlet-below-content-body
       #viewlet-below-content
         .documentActions
@@ -297,6 +304,7 @@
     <!-- Fix bug: cannot edit pages -->
     <drop css:theme=".page-aside" />
     <drop css:theme=".page-main" attributes="class" />
+
   </rules>
 
   <!-- Fix bug: cannot access content rules -->
