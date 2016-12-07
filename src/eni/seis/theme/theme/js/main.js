@@ -2886,18 +2886,6 @@ $(document).ready(function() {
     }
 
 
-
-var project_events = document.getElementById('project-events');
-if (project_events) {
-var legend = document.createElement("legend"); 
-  project_events.appendChild(legend);
-  legend.innerHTML = '<i class="fa fa-circle level-national" aria-hidden="true">National Event</i><i class="fa fa-circle level-regional" aria-hidden="true">Regional Event</i><i class="fa fa-circle other" aria-hidden="true">Other Event</i>';
-  $('.tab-content').prepend(legend);
-}
-
-
-
-
     //jquery 
     if (window.matchMedia("(max-width: 960px)").matches) {
         $('#portal-globalnav > li > a').addClass('no-events');
