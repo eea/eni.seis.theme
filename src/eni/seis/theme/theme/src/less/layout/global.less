@@ -66,6 +66,13 @@ body {
         float: right;
     }
     padding: 0 1rem;
+    transform:translateY(-10px);
+}
+
+#site-header .login-link {
+    @media @screen-md-upto {
+            margin-top: 1rem;
+    }
 }
 
 
@@ -74,6 +81,9 @@ body {
         position: relative;
         background: none;
         bottom: 0;
+        @media @screen-md-upto {
+            float: none!important;
+        }
     }
 }
 
@@ -624,3 +634,5 @@ legend {
         padding-left: 0;
     }
 }
+
+

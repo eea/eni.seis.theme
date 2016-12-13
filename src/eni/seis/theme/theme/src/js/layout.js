@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
 
     var navbar_body = document.querySelector('.navbar-body');
@@ -14,7 +11,10 @@ $(document).ready(function() {
     var mobile_menu_item = document.querySelector('#portal-globalnav > li > a');
     var navbar = document.querySelector('#navbar');
     var navbar_toggle = document.querySelector('#navbar-toggle');
-    var table = document.querySelector('table');
+    var table = document.querySelectorAll('table');
+    var geolocation_wrapper = document.querySelector('.geolocation_wrapper');
+    var event_vcard = document.querySelector('.eventDetails.vcard');
+
 
     function loadData1(callback) {
         navbar_body.innerHTML += "<button class='btn btn-default navbar-close' type='button'>X</button>";
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     loadData1(function() {
         function loadData(callback) {
-            if (body.classList.contains('template-homepage')) { 
+            if (body.classList.contains('template-homepage')) {
                 $('body')
                     .css('display', 'block')
                     .velocity({
@@ -39,9 +39,9 @@ $(document).ready(function() {
             }
         }
         loadData(function() {
-          if (body.classList.contains('template-homepage')){
+            if (body.classList.contains('template-homepage')) {
                 $('body').velocity('reverse', 600);
-          }
+            }
         });
     })
 
@@ -67,14 +67,21 @@ $(document).ready(function() {
     }
 
 
+    //remove aside if it has no children
+    var page_aside = document.querySelector('aside.page-aside');
 
-var project_events = document.getElementById('project-events');
-if (project_events) {
-var legend = document.createElement("legend"); 
-  project_events.appendChild(legend);
-  legend.innerHTML = '<i class="fa fa-circle level-national" aria-hidden="true">National Event</i><i class="fa fa-circle level-regional" aria-hidden="true">Regional Event</i><i class="fa fa-circle other" aria-hidden="true">Other Event</i>';
-  $('.tab-content').prepend(legend);
-}
+    if (page_aside) {
+        if (page_aside.children.length == 0) {
+            page_aside.parentNode.removeChild(page_aside);
+        }
+    }
+
+
+    if (geolocation_wrapper) {
+        var geolocation_wrapper_height = geolocation_wrapper.clientHeight;
+        console.log(geolocation_wrapper_height);
+        event_vcard.style.height = geolocation_wrapper_height + "px";
+    }
 
 
 
@@ -101,11 +108,17 @@ var legend = document.createElement("legend");
     });
     //jquery-end
 
+
+
     if (table) {
-        if (table.classList.contains('listing')) {
-            table.classList.add('table', 'table-responsive', 'table-hover');
-            table.classList.remove('listing');
-        }
+
+        Array.prototype.forEach.call(table, function(el, i) {
+            if (el.classList.contains('listing')) {
+                el.classList.add('table', 'table-responsive', 'table-hover');
+                el.classList.remove('listing');
+            }
+        });
+
     }
 
 

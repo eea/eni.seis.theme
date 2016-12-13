@@ -91,6 +91,7 @@
         width:auto;
         margin: 0;
         padding: 0;
+        z-index: 99999999;
         background: transparent;
         font-size: 1rem;
         display: inline-block;
@@ -138,10 +139,13 @@
         vertical-align: middle;
     }
     #navbar-toggle {
-        display: block;
-        border: none;
-        padding: 2rem;
-        margin-top: 0;
+    display: block;
+    border: none;
+    padding: 2rem;
+    position: relative;
+    float: left;
+    z-index: 100;
+    margin-top: 0;
     }
     .navbar-body {
         display: flex;
@@ -180,7 +184,6 @@
         }
         .selected {
             > a {
-                color: white!important;
             }
         }
     }

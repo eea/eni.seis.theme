@@ -79,8 +79,11 @@
     position: relative;
 }
 .lp-disclaimer {
+    @media @screen-md-upto {
+        display: none;
+    }
     position: absolute;
-    bottom: .5em;
+    top: .5em;
     right: .5em;
     max-width: 80%;
     color: #a1a2b2;
