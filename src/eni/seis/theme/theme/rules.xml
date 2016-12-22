@@ -67,7 +67,7 @@
       css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']"
       />
   </rules>
- 
+
   <!-- Drop Manage portlets button if not here -->
   <rules css:if-not-content=".managePortletsLink">
     <rules css:if-not-content=".managePortletsFallback">
@@ -113,7 +113,7 @@
 
   <!-- Portlets -->
   <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
-   <drop css:content="#portal-column-one .portlet-static-newsletter" /> 
+   <drop css:content="#portal-column-one .portlet-static-newsletter" />
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
@@ -126,8 +126,8 @@
         </xsl:if>
       </xsl:for-each>
     </after>
-      
-   
+
+
   </rules>
 
 
@@ -261,23 +261,23 @@
         css:content-children="#content"
         css:theme-children=".page-main"
       />
-
+      <before css:theme=".page-main" css:content=".portalMessage" method="raw" />
     </rules>
 
     <!-- Make page-main full width when no right column -->
     <rules css:if-not-content=".template-manage-portlets">
-    <rules if="not($have_right_portlets)">  
+    <rules if="not($have_right_portlets)">
          <replace css:theme=".page-main"  method="raw">
           <div class="page-main page-main-full" id="content">
                <xsl:apply-templates css:select="#content > *" />
-          </div>  
+          </div>
          </replace>
     </rules>
     </rules>
 
 
     <!--
-    
+
     <xsl:copy>
             <xsl:attribute name="class">page-main page-main-full</xsl:attribute>
             <xsl:copy-of select="@*" />
