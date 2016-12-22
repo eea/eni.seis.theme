@@ -49,8 +49,6 @@
     </before>
   </rules>
 
-
-
   <!-- Manage portlets button if here -->
   <rules css:if-content=".managePortletsLink">
     <copy
@@ -74,6 +72,23 @@
       <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
     </rules>
   </rules>
+
+  <!-- Drop Manage portlets on Events and EEA Meetings -->
+  <rules css:if-content=".portaltype-event">
+    <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
+  </rules>
+  <rules css:if-content=".portaltype-eea-meeting">
+    <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
+  </rules>
+
+  <!-- Drop all portlets on meetings section -->
+  <rules css:if-content=".subsection-events-project-related-events">
+    <drop css:theme=".page-aside" />
+  </rules>
+  <rules css:if-content=".template-eea-meeting"> <!-- This is the add eea meeting template -->
+    <drop css:theme=".page-aside" />
+  </rules>
+
 
   <!-- Navigation -->
   <drop css:theme=".page-aside .nav.nav-folder"
@@ -113,7 +128,6 @@
 
   <!-- Portlets -->
   <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
-   <drop css:content="#portal-column-one .portlet-static-newsletter" />
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
         <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
@@ -126,8 +140,6 @@
         </xsl:if>
       </xsl:for-each>
     </after>
-
-
   </rules>
 
 
@@ -171,6 +183,7 @@
     <after
       css:content="#content script"
       css:theme-children="html body"
+      method="raw"
     />
     <drop css:content="#content script" />
 
@@ -181,8 +194,9 @@
       css:theme=".navbar-brand h1 a"
       />
 
-    <!-- Get website title based on website configuration (Requires website_title_html script. See docs.) -->
-    <replace css:content=".east" css:theme=".navbar-title" href="/website_title_html" method="document" />
+    <!-- Get website title and description  based on website configuration (Requires website_title_html script. See docs.) -->
+    <replace css:content=".south" css:theme=".navbar-title" href="/website_title_html" method="document" />
+    <replace css:content="p" css:theme=".navbar-brand .no-leading" href="/site_subtitle" method="document" />
 
     <!-- PORTAL NAVIGATION -->
     <replace
@@ -241,7 +255,7 @@
     <!--<drop css:content=".documentFirstHeading" />-->
     <!--<drop css:theme=".page-description" />-->
 
-    <!--East region
+    <!--
       #viewlet-below-content-title
       for author, date, history
     -->
@@ -261,28 +275,9 @@
         css:content-children="#content"
         css:theme-children=".page-main"
       />
-      <before css:theme=".page-main" css:content=".portalMessage" method="raw" />
     </rules>
-
-    <!-- Make page-main full width when no right column -->
-    <rules css:if-not-content=".template-manage-portlets">
-    <rules if="not($have_right_portlets)">
-         <replace css:theme=".page-main"  method="raw">
-          <div class="page-main page-main-full" id="content">
-               <xsl:apply-templates css:select="#content > *" />
-          </div>
-         </replace>
-    </rules>
-    </rules>
-
 
     <!--
-
-    <xsl:copy>
-            <xsl:attribute name="class">page-main page-main-full</xsl:attribute>
-            <xsl:copy-of select="@*" />
-            <xsl:apply-templates />
-        </xsl:copy>
       #viewlet-below-content-body
       #viewlet-below-content
         .documentActions
@@ -324,6 +319,17 @@
     />
   </rules>
 
+  <!-- Make page-main full width when no right column -->
+  <rules css:if-not-content=".template-manage-portlets">
+  <rules if="not($have_right_portlets)">
+       <replace css:theme=".page-main"  method="raw">
+        <div class="page-main page-main-full" id="content">
+             <xsl:apply-templates css:select="#content > *" />
+        </div>
+       </replace>
+  </rules>
+  </rules>
+
   <!-- Fix south.css and east.css to be after main.css -->
   <after css:theme-children="head"
          css:content="link[href*='south.css']" />
@@ -335,6 +341,10 @@
     <drop css:theme=".page-aside" />
   </rules>
 
+  <rules css:if-content=".template-eni_events_listing">
+    <drop css:theme=".page-aside" />
+  </rules>
+
   <!-- Events calendar properties -->
   <rules css:if-content=".template-solgemafullcalendar_properties">
     <drop css:theme=".page-aside" />
@@ -342,6 +352,5 @@
 
   <!-- Remove theme demo content in small column for all pages -->
   <drop css:theme=".page-aside .box.newsletter-box" />
-   <drop css:theme=".page-aside .box.portlet-static-newsletter" />
   <drop css:theme=".page-aside .box.leading-large" />
 </rules>
