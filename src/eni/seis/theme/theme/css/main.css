@@ -3604,7 +3604,7 @@ body.template-homepage {
 }
 ul.configlets li {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.3rem;
   width: 100%;
   white-space: nowrap;
 }
