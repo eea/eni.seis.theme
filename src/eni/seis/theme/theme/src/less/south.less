@@ -83,7 +83,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .template-homepage #site-header {
      background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100% 1500%!important;
+    background-position: 100% 127%!important;
 }
 }
 
@@ -113,10 +113,17 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     box-shadow: 0px 2px 1px #aaa;
 }
 
+
 .btn-default {
-    border-color: @color-orange;
+    border-color: @color-brand-south;
 }
 
+.btn-default:hover {
+    background: @color-brand-south;
+    color: white;
+
+    box-shadow: 1px 1px 3px #949494;
+}
 .login-link:before {
     color: @color-orange;
 }
@@ -288,10 +295,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     }
     tbody {
         tr {
-            border-top-color: @color-accent;
+            border-top-color: @color-brand-south;
         }
         td:first-child {
-            color: @color-accent;
+            color: inherit;
         }
     }
     a {
@@ -330,4 +337,12 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 
 .site-banner {
         border-top: solid @color-brand-south;
+}
+
+
+
+#breadcrumbs-current {
+
+            color: @color-brand-south;
+    
 }

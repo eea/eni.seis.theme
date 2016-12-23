@@ -40,43 +40,110 @@
 
 .eventDetails {
     @media @screen-md {
-        display: flex;
-        align-items: center;
-        float: left;
-        width: 38%!important;
+            display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+
     }
     float: none;
     margin: 0 0 1em 0!important;
     display: inline-block;
     @media (max-width: 960px) {
-        width: 100%;
+        width: 100%!important;
     }
+}
+
+.event-left-column {
+    @media @screen-md {
+        float: left;
+        width: 40%;
+    }
+}
+
+
+.scrollmenu {
+    position: absolute;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid #eee;
+        top: 20%;
+}
+
+.scrollmenu#left {
+left: -8px;
+}
+
+.scrollmenu#right {
+right: -8px;
+}
+
+
+.event-icons {
+    position: relative;
+}
+
+.event-menu-item {
+    display: inline-block;
+    margin-top: 15px;
+
+
+    img {
+        width: 30%;
+    }
+    span {
+        white-space: nowrap;
+        float: left;
+        paddgin: .5rem;
+    }
+    a {
+        display: flex;
+        justify-conent: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.event-menu {
+    margin-left: 1rem;
+    position: relative;
+        margin-bottom: 2rem;
 }
 
 .eventDetails.vcard {
     font-size: larger;
-    border-color: transparent!important;
-    border: none!important;
-    table {
+        overflow: auto;
         border-radius: 6px;
-        overflow: hidden;
         box-shadow: 1px 1px 7px #c1c1c1;
         border-color: #CCCCCC;
         border-style: solid;
-        border-width: 0.08em;
+        border-width: 1px;
+
+        @media @screen-md { 
+            float: left;
+    width: 40%!important;
+     border-right: none!important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+table {
+        margin-top: .5rem;
+        tr:first-of-type td,
+         tr:first-of-type th {
+            border-color: transparent!important;
+        }
     }
 }
 
 .event #parent-fieldname-text {
     padding: 1rem;
     margin-bottom: 2rem;
-    box-shadow: 1px 1px 1px #eee, -1px -1px 1px #eee;
+    // box-shadow: 1px 1px 1px #eee, -1px -1px 1px #eee;
     clear: both;
-    box-shadow: 1px 1px 7px #c1c1c1;
-    border-radius: 6px;
+    // box-shadow: 1px 1px 7px #c1c1c1;
+    // border-radius: 6px;
     @media (max-width: 960px) {
         margin-right: 0;
-        max-width: 100%;
+        max-width: 100%!important;
     }
 }
 
@@ -93,11 +160,25 @@
 }
 
 .geolocation_wrapper {
-    box-shadow: 1px 1px 7px #c1c1c1;
+    // box-shadow: 1px 1px 7px #c1c1c1;
     border-radius: 6px;
+    overflow: hidden;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #CCCCCC;
+    border-left: none;
+    box-shadow: 1px 1px 7px #c1c1c1;
     @media @screen-md {
         width: 60%;
         float: right;
         margin-bottom: 1rem;
     }
+}
+
+#formfield-form-widgets-IGeolocatable-geolocation {
+     overflow: auto;
+}
+
+.geolocation_wrapper.edit {
+    width: 100%;
 }

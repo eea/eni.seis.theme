@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+
+
+
+function detectIE() {
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf('MSIE ');
+  if (msie > 0) {
+    // IE 10 or older => return version number
+    return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+  }
+
+  var trident = ua.indexOf('Trident/');
+  if (trident > 0) {
+    // IE 11 => return version number
+    var rv = ua.indexOf('rv:');
+    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+  }
+
+  var edge = ua.indexOf('Edge/');
+  if (edge > 0) {
+    // Edge (IE 12+) => return version number
+    return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+  }
+
+  // other browser
+  return false;
+}
+
+
+
     var navbar_body = document.querySelector('.navbar-body');
     var body = document.querySelector('body');
     var homepage_admin = document.querySelector('.template-homepage .admin');
@@ -14,6 +44,23 @@ $(document).ready(function() {
     var table = document.querySelectorAll('table');
     var geolocation_wrapper = document.querySelector('.geolocation_wrapper');
     var event_vcard = document.querySelector('.eventDetails.vcard');
+    var site_container = document.querySelector('.site-container');
+    var page_body = document.getElementById('site-body');
+
+    // Get IE or Edge browser version
+var version = detectIE();
+
+if (version === false) {
+console.log('notie');
+
+} else if (version >= 12) {
+console.log('>=12');
+} else {
+ site_container.style.display = "block";
+ page_body.style.height="80vh";
+}
+
+
 
 
     function loadData1(callback) {
@@ -77,13 +124,20 @@ $(document).ready(function() {
     }
 
 
-    if (geolocation_wrapper) {
+    if (geolocation_wrapper&&event_vcard) {
         var geolocation_wrapper_height = geolocation_wrapper.clientHeight;
-        console.log(geolocation_wrapper_height);
-        event_vcard.style.height = geolocation_wrapper_height + "px";
+        event_vcard.style.height = geolocation_wrapper_height + 2 + "px";
     }
 
 
+
+
+   $("#left").click(function(){
+        $(".event-menu").animate({scrollLeft: "-="+100});
+    });
+    $("#right").click(function(){
+        $(".event-menu").animate({scrollLeft: "+="+100});
+    });  
 
 
     //jquery 

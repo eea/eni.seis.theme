@@ -47,6 +47,10 @@ body {
     max-width: 1200px;
     border: 1px solid #d0d0d0;
     background-color: #fff;
+    display: flex;
+    -ms-flex: 1 0 auto;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .header-container {
@@ -395,11 +399,7 @@ a.contenttype-eea-meeting:before {
     margin-bottom: 0!important;
     margin-left: 0!important;
     display: inline-block;
-    span:last-of-type {
-        * {
-            color: @color-orange;
-        }
-    }
+
 }
 
 #content .pullquote {
@@ -633,6 +633,11 @@ legend {
     .level-national {
         padding-left: 0;
     }
+}
+
+
+ a:hover {
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 

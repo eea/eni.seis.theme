@@ -90,7 +90,13 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 
 .btn-default {
-    border-color: @color-green;
+    border-color: @color-brand-east;
+}
+
+.btn-default:hover {
+    background: @color-brand-east;
+    color: white;
+    box-shadow: 1px 1px 3px #949494;
 }
 
 .login-link:before {
@@ -186,10 +192,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     }
     tbody {
         tr {
-            border-top-color: @color-accent;
+            border-top-color: @color-brand-east;
         }
         td:first-child {
-            color: @color-accent;
+            color: inherit;
         }
     }
     a {
@@ -224,4 +230,17 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 .site-banner {
         border-top: solid @color-brand-east;
+}
+
+
+
+#breadcrumbs-current {
+
+            color: @color-brand-east;
+    
+}
+
+
+#portal-globalnav ul.submenu>li>a:hover {
+        box-shadow: inset 3px 0 0 @color-brand-east;
 }
