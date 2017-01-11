@@ -67,6 +67,6 @@
 .icons-on #plone-contentmenu-factories .contenttype-image {
     line-height: 2em;
     display: inline-block;
-    *display: block;
+    display: block;
     padding-left: 20px !important;
 }
