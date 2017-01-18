@@ -42,8 +42,6 @@ function detectIE() {
     var navbar = document.querySelector('#navbar');
     var navbar_toggle = document.querySelector('#navbar-toggle');
     var table = document.querySelectorAll('table');
-    var geolocation_wrapper = document.querySelector('.geolocation_wrapper');
-    var event_vcard = document.querySelector('.eventDetails.vcard');
     var site_container = document.querySelector('.site-container');
     var page_body = document.getElementById('site-body');
 
@@ -124,23 +122,15 @@ console.log('>=12');
     }
 
 
-    if (geolocation_wrapper&&event_vcard) {
-        var geolocation_wrapper_height = geolocation_wrapper.clientHeight;
-        event_vcard.style.height = geolocation_wrapper_height + 2 + "px";
-    }
-
-
-
-
    $("#left").click(function(){
         $(".event-menu").animate({scrollLeft: "-="+100});
     });
     $("#right").click(function(){
         $(".event-menu").animate({scrollLeft: "+="+100});
-    });  
+    });
 
 
-    //jquery 
+    //jquery
     if (window.matchMedia("(max-width: 960px)").matches) {
         $('#portal-globalnav > li > a').addClass('no-events');
         $('#portal-globalnav > li').on('touchstart', function(e) {

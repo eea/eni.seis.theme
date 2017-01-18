@@ -40,7 +40,7 @@ setup(
     install_requires=[
         'plone.api',
         'setuptools',
-        'webcouturier.dropdownmenu',
+        'webcouturier.dropdownmenu==2.3.1',
     ],
     extras_require={
         'test': [
