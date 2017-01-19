@@ -49,13 +49,11 @@ function detectIE() {
 var version = detectIE();
 
 if (version === false) {
-console.log('notie');
 
 } else if (version >= 12) {
 console.log('>=12');
 } else {
  site_container.style.display = "block";
- page_body.style.height="80vh";
 }
 
 

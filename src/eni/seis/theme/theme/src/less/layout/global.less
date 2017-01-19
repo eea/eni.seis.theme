@@ -57,13 +57,12 @@ body {
     .utils > .center;
     width: 70%;
     max-width: 1250px;
-        position: relative;
-        padding: 0 1rem;
-@media (min-width: 960px) and (max-width: 1390px) {
-    width: 85%;    
+    position: relative;
+    padding: 0 1rem;
+    @media (min-width: 960px) and (max-width: 1390px) {
+        width: 85%;
+    }
 }
-}
-
 
 .login-link {
     #site-header & {
@@ -75,10 +74,9 @@ body {
 
 #site-header .login-link {
     @media @screen-md-upto {
-            margin-top: 1rem;
+        margin-top: 1rem;
     }
 }
-
 
 #site-footer {
     .login-link {
@@ -92,13 +90,6 @@ body {
 }
 
 // Site
-#site-header {
-        background-position: 100% 100%;
-    @media @screen-md-upto {
-        background-repeat: no-repeat;
-        background-position: 100% 100%!important;
-    }
-}
 
 
 #site-footer {
@@ -149,7 +140,6 @@ body {
     padding-bottom: @page-padding;
     padding-right: @page-padding;
 }
-
 
 .template-homepage {
     .page-footer {
@@ -399,7 +389,6 @@ a.contenttype-eea-meeting:before {
     margin-bottom: 0!important;
     margin-left: 0!important;
     display: inline-block;
-
 }
 
 #content .pullquote {
@@ -515,7 +504,6 @@ a.btn.btn-default[data-diazo='manage-portlets'] {
     margin-bottom: 2rem;
 }
 
-
 #portal-globalnav ul.submenu {
     z-index: 2;
 }
@@ -616,16 +604,14 @@ span + .error {
     pointer-events: none;
 }
 
-
-
 .event.summary.details {
     float: none!important;
 }
 
 legend {
     .fa {
-    font-size: 1.3em!important;
-    padding: 1rem;
+        font-size: 1.3em!important;
+        padding: 1rem;
     }
     .fa:before {
         margin-right: .5rem;
@@ -635,9 +621,22 @@ legend {
     }
 }
 
-
- a:hover {
+a:hover {
     text-shadow: 1px 1px 1px #ccc;
 }
 
+.newsImageContainer img {
+    min-width: 300px;
+    height: auto;
+}
 
+.discreet span {
+    color: white!important;
+}
+
+
+.portletEvents > div:nth-child(n+7) {
+
+    display: none;
+
+}

@@ -1,44 +1,30 @@
-// :not(.template-homepage) {
-//   #site-footer {
-//     background: white;
-//       a {
-//     color: black!important;
-//   }
-//   h4 {
-//     color: black!important;
-//   }
-//   }
- 
-// }
-
 #site-footer {
-background-image: url('@{path-images}/footer.png');
+    background-image: url('@{path-images}/footer.png');
     font-size: .8rem;
-  // background: rgb(37,47,65);
-  a {
-    color: white;
-  }
-    .footer-content-wrapper{
+    a {
+        color: white;
+    }
+    .footer-content-wrapper {
         display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
         .contact {
             display: flex;
             justify-content: center;
             flex-direction: column;
             h4 {
-              display: table;
+                display: table;
             }
         }
     }
-        h4 {
-            padding-bottom: .5rem;
-            color: @color-portlet;
-            font-weight: 400;
-            border-bottom: solid #a1a2b2;
-            display: inline-block;
-        }
+    h4 {
+        padding-bottom: .5rem;
+        color: @color-portlet;
+        font-weight: 400;
+        border-bottom: solid #a1a2b2;
+        display: inline-block;
+    }
     padding: 2rem 0;
     color: @color-portlet;
     h2,
@@ -49,7 +35,7 @@ background-image: url('@{path-images}/footer.png');
         color: inherit;
     }
     h1 {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
     .portlet {
         a {
@@ -75,10 +61,9 @@ background-image: url('@{path-images}/footer.png');
     .box {
         max-width: 23rem;
     }
-
     .navbar-brand {
-      margin: 0;
-      margin-bottom: 1rem;
+        margin: 0;
+        margin-bottom: 1rem;
     }
 }
 
@@ -156,11 +141,11 @@ background-image: url('@{path-images}/footer.png');
 @media @screen-md-upto {
     #site-footer {
         .box {
-            margin:0 !important;
+            margin: 0 !important;
         }
-    .footer-content-wrapper {
-        flex-direction: column;
-    }
+        .footer-content-wrapper {
+            flex-direction: column;
+        }
     }
 }
 

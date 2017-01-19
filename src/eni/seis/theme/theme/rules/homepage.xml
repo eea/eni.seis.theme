@@ -31,6 +31,10 @@
     <replace css:theme="[data-diazo='section-countries-map']"
              css:content="[data-diazo='section-countries-map']" />
 
+    <replace css:theme="[data-diazo='project-description']"
+             href="project-description" method="document"
+             css:content="#content-core" />
+
     <!-- Section: Areas of Work - get content homepage template -->
    <!--  <replace css:theme="[data-diazo='section-areas-of-work']"
              css:content="[data-diazo='section-areas-of-work']" /> -->

@@ -64,27 +64,16 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     color: @color-brand-south;
 }
 
-// aside.page-aside .box.leading-large a:nth-last-of-type(1):hover {
-//     background-color: #eee;
-//     color: black;
-//     -webkit-transition: background-color 500ms linear;
-//     -moz-transition: background-color 500ms linear;
-//     -o-transition: background-color 500ms linear;
-//     -ms-transition: background-color 500ms linear;
-//     transition: background-color 500ms linear, color 500ms linear;
-// }
 #site-header {
     background-image: url('../img/bg-header-south.jpg');
 }
 
-
 @media @screen-md {
-
-.template-homepage #site-header {
-     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 127%!important;
-}
+    .template-homepage #site-header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 127%!important;
+    }
 }
 
 #site-header {
@@ -113,7 +102,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     box-shadow: 0px 2px 1px #aaa;
 }
 
-
 .btn-default {
     border-color: @color-brand-south;
 }
@@ -121,9 +109,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .btn-default:hover {
     background: @color-brand-south;
     color: white;
-
     box-shadow: 1px 1px 3px #949494;
 }
+
 .login-link:before {
     color: @color-orange;
 }
@@ -162,26 +150,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     }
 }
 
-//visited link colors
-// .page-body {
-//     a:visited {
-//         color: #205c90!important;
-//     }
-// }
-// .template-homepage {
-//     .page-body {
-//         .page-main {
-//             a:visited {
-//                 color: darken(@color-brand-south, 10%)!important;
-//             }
-//         }
-//         .page-aside {
-//             a:visited {
-//                 color: @color-portlet!important;
-//             }
-//         }
-//     }
-// }
 .admin {
     background: @color-brand-south;
     .admin .page-container #edit-bar {
@@ -280,7 +248,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 
 .tab-pane {
-
     th {
         vertical-align: middle;
     }
@@ -322,7 +289,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
 }
 
-
 .level-national {
     color: @color-brand-south;
 }
@@ -336,13 +302,39 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 
 .site-banner {
-        border-top: solid @color-brand-south;
+    border-top: solid @color-brand-south;
+}
+
+#breadcrumbs-current {
+    color: @color-brand-south;
 }
 
 
 
-#breadcrumbs-current {
 
-            color: @color-brand-south;
-    
+.project-description {
+    @media @screen-md-upto {
+        width: 100%;
+        margin: 0;
+        display: none;
+    }
+    width: 37%;
+    position: absolute;
+    padding: 2rem;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    p {
+        margin-top: 7rem;
+        font-size: 22px;
+        // color: #505050!important;
+    }
+}
+
+
+#site-header {
+    @media @screen-md-upto {
+        background-repeat: no-repeat;
+        background-position: 100% 100%!important;
+    }
 }
