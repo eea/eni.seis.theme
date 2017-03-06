@@ -15,10 +15,6 @@
                       text python:context.CookedBody(stx_level=2);
                       len_text python:len(text.strip())">
 
-        <!-- ADDED -->
-        <h1 id="insitu-long-title" tal:content="context/long_title|nothing">Long title</h1>
-        <!-- ADDED -->
-
         <div class="newsImageContainer"
              tal:condition="context/getImage|nothing">
             <a href="#"
