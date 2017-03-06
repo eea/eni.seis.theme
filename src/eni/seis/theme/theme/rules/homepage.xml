@@ -28,6 +28,11 @@
              href="homepage-section-partners-text" method="document"
              css:content="section" />
 
+    <!-- Section: Partners - get content from page -->
+    <replace css:theme="[data-diazo='eni-aow-slider']"
+             href="homepage-section-aow-slider" method="document"
+             css:content-children="#content-core" />
+
     <!-- Section: Events - get content from custom homepage template -->
     <drop css:theme-children="[data-diazo='section-events']" />
 
