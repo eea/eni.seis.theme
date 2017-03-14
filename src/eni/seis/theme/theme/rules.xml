@@ -346,4 +346,7 @@
   <drop css:theme=".page-aside .box.newsletter-box" />
    <drop css:theme=".page-aside .box.portlet-static-newsletter" />
   <drop css:theme=".page-aside .box.leading-large" />
+
+  <!-- Google Analytics -->
+  <after theme-children="/html/body" content="//*[@id='portal-footer-wrapper']/div/script" />
 </rules>
