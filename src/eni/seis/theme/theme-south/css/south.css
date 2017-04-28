@@ -70,9 +70,6 @@
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: #ff6b01;
 }
-#site-header {
-  background-image: url('../img/bg-header-south.jpg');
-}
 @media (min-width: 960px) {
   .template-homepage #site-header {
     background-size: cover;

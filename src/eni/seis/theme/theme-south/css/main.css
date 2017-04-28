@@ -2339,7 +2339,7 @@ table th[class*="col-"] {
   font-family: FontAwesome;
 }
 body {
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
 }
 #site-body {
   flex: 1;
@@ -2375,7 +2375,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  border: 1px solid #d0d0d0;
+  border: none;
   background-color: #fff;
   display: flex;
   -ms-flex: 1 0 auto;
@@ -2416,9 +2416,6 @@ body {
   #site-footer .login-link {
     float: none!important;
   }
-}
-#site-footer {
-  border-top: 1px solid #d8d8d8;
 }
 .site-description {
   max-width: 30rem;
@@ -3204,10 +3201,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
   margin-left: .5rem;
 }
 #site-footer {
-  background-image: url('../img/footer.png');
   font-size: .8rem;
   padding: 2rem 0;
-  color: #a1a2b2;
+  color: #FFFFFF;
+  background: #737373;
 }
 #site-footer a {
   color: white;
@@ -3624,9 +3621,6 @@ ul.configlets {
   opacity: 1;
 }
 @media (min-width: 960px) {
-  .template-homepage #navbar {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
-  }
   .template-homepage .header-container {
     width: 85%!important;
     padding: 0!important;
