@@ -1761,7 +1761,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: #08a8dc;
 }
 table col[class*="col-"] {
   position: static;
@@ -2375,7 +2375,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  border: none;
   background-color: #fff;
   display: flex;
   -ms-flex: 1 0 auto;
@@ -2416,6 +2415,9 @@ body {
   #site-footer .login-link {
     float: none!important;
   }
+}
+#site-footer {
+  border-top: 1px solid #d8d8d8;
 }
 .site-description {
   max-width: 30rem;
@@ -3202,9 +3204,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 }
 #site-footer {
   font-size: .8rem;
+  background: #737373;
   padding: 2rem 0;
   color: #FFFFFF;
-  background: #737373;
 }
 #site-footer a {
   color: white;
@@ -3621,6 +3623,9 @@ ul.configlets {
   opacity: 1;
 }
 @media (min-width: 960px) {
+  .template-homepage #navbar {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
+  }
   .template-homepage .header-container {
     width: 85%!important;
     padding: 0!important;

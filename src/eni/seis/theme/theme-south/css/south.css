@@ -195,7 +195,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  background: transparent!important;
+  background: #ff6b01 !important;
   color: white!important;
 }
 .nav-tabs > li.active > a,
@@ -237,12 +237,15 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .aow-data-management-and-infrastructure {
   background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
 }
+/* [TODO] Fix color legend
 .level-national {
-  color: #ff6b01;
+    color: @color-brand-south;
 }
+
 .level-regional {
-  color: #205c90;
+    color: #205c90;
 }
+*/
 .event-title {
   color: #ff6b01;
 }
