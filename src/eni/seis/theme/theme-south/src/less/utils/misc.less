@@ -1,0 +1,46 @@
+.utils {
+
+  .hide-visually {
+    width: 0.1px!important;
+    height: 0.1px!important;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .no-last-bottom {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .no-btn {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+  }
+
+  .size(@width, @height) {
+    width: @width;
+    height: @height;
+  }
+
+  .square(@width, @height: @width) {
+    .utils > .size(@width, @height);
+  }
+
+  .img-height(@height: 100%, @display: block) {
+    display: @display;
+    width: auto;
+    height: @height;
+  }
+
+  .img-width(@width: 100%, @display: block) {
+    display: @display;
+    width: @width;
+    height: auto;
+  }
+
+}

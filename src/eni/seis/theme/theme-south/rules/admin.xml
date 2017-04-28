@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <rules css:if-not-content="body.userrole-anonymous">
+
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+
+    <!-- Personal menu top-right corner -->
+    <before css:theme-children="#site-header"
+            css:content-children="#portal-personaltools-wrapper" />
+
+    <rules css:if-content="#edit-bar">
+        <replace css:theme="#edit-bar" css:content="#edit-bar" />
+    </rules>
+
+    <rules css:if-not-content="#edit-bar">
+      <drop css:theme=".admin" />
+    </rules>
+
+  </rules>
+</rules>

@@ -1,0 +1,340 @@
+@import (reference) "main.less";
+@color-yellow: #F7931E;
+@color-accent: #F7931E;
+@color-brand-south: #ff8228;
+@color-brand-south-dark: darken(@color-brand-south, 10%);
+.btn-primary {
+    .btn-variant(#fff, #009245, #009245);
+}
+
+.page-title {
+    color: inherit;
+}
+
+.btn-primary {
+    border-color: #009245;
+    color: #fff;
+    background-color: #009245
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #009245
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    position: relative
+}
+
+.btn-primary[disabled],
+.btn-primary.disabled,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:active,
+.btn-primary.disabled:active {
+    color: rgba(255, 255, 255, 0.5);
+    background: #0f8346;
+    box-shadow: none
+}
+
+
+/* Fix border color in submenu items */
+
+#portal-globalnav ul.submenu>li>a:hover {
+    box-shadow: inset 3px 0 0 #F7931E !important;
+}
+
+.navbar-brand strong,
+.footer-brand strong {
+    color: @color-brand-south;
+    font-weight: 600;
+}
+
+.section {
+    a {
+        color: @color-brand-south;
+    }
+}
+
+aside.page-aside .box.leading-large a:nth-last-of-type(1) {
+    color: @color-brand-south;
+}
+
+#site-header {
+    background-image: url('../img/bg-header-south.jpg');
+}
+
+@media @screen-md {
+    .template-homepage #site-header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 127%!important;
+    }
+}
+
+#site-header {
+    background-position: 100%;
+    background-size: cover;
+}
+
+.template-homepage #navbar {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#site-header .actionMenu.activated {
+    background-color: #f38709;
+    border-radius: 0;
+    box-shadow: 0px 2px 1px #aaa;
+}
+
+#site-header .actionMenu.activated .actionMenuHeader {
+    padding-left: 1.6rem;
+}
+
+#site-header .actionMenu .actionMenuContent {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f38709;
+    box-shadow: 0px 2px 1px #aaa;
+}
+
+.btn-default {
+    border-color: @color-brand-south;
+}
+
+.btn-default:hover {
+    background: @color-brand-south;
+    color: white;
+    box-shadow: 1px 1px 3px #949494;
+}
+
+.login-link:before {
+    color: @color-orange;
+}
+
+#site-footer {
+    .portlet {
+        a {
+            border-color: @color-orange !important;
+        }
+    }
+}
+
+#portal-globalnav {
+    @media @screen-md {
+        ul.submenu {
+            border-top: solid @color-brand-south;
+        }
+        > li:hover {
+            background: @color-brand-south;
+            > a {
+                color: white !important;
+            }
+        }
+        .selected {
+            .plain {
+                color: @color-brand-south;
+                &:hover {}
+            }
+        }
+    }
+}
+
+@media @screen-md-upto {
+    #portal-globalnav > li > a {
+        color: @color-brand-south;
+    }
+}
+
+.admin {
+    background: @color-brand-south;
+    .admin .page-container #edit-bar {
+        border-style: solid solid solid solid;
+        border-radius: 0 !important;
+    }
+    #contentActionMenus dl.actionMenu.activated dd a:hover,
+    #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+        background: inherit!important;
+    }
+    .admin .page-container #edit-bar #contentActionMenus {
+        float: none;
+    }
+    .admin .page-container #edit-bar #content-views a {
+        border-radius: 3px;
+    }
+    #edit-bar {
+        color: white;
+        background: @color-brand-south;
+        border-color: @color-brand-south!important;
+        * {
+            background: @color-brand-south;
+            border-color: @color-brand-south!important;
+        }
+        a {
+            color: inherit!important;
+        }
+        .contentViews#content-views {
+            a:hover {
+                color: @color-brand-south!important;
+            }
+        }
+        .selected {
+            a {
+                color: @color-brand-south!important;
+            }
+        }
+    }
+    #contentActionMenus dl.actionMenu a,
+    #contentActionMenus dl.actionMenu.activated dd {
+        background: @color-brand-south;
+        color: white;
+    }
+    ul {
+        padding: 0;
+    }
+    ul:first-of-type {
+        li:first-of-type {
+            a {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.page-header {
+    border-color: @color-brand-south!important;
+}
+
+.south-subtitle {
+    display: none!important;
+}
+
+#site-header {
+    background-position: 100% 10%;
+}
+
+.userrole-anonymous #navbar {
+    border-bottom-color: @color-accent;
+}
+
+.tab-content {
+    thead {
+        background: @color-brand-south;
+        color: white;
+    }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background: transparent!important;
+    color: white!important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: @color-brand-south!important;
+    background: transparent!important;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    background: @color-brand-south!important;
+}
+
+.tab-pane {
+    th {
+        vertical-align: middle;
+    }
+}
+
+.homepage-news {
+    thead {
+        th {
+            background-color: @color-accent;
+            color: #fff;
+        }
+    }
+    tbody {
+        tr {
+            border-top-color: @color-brand-south;
+        }
+        td:first-child {
+            color: inherit;
+        }
+    }
+    a {
+        color: @color-accent;
+    }
+}
+
+.aow-national-work-plans {
+    background-image: url('../img/img-south-national-work-plans.jpg');
+}
+
+.aow-indicators-and-assessment {
+    background-image: url('../img/img-south-indicators-and-assessment.jpg');
+}
+
+.aow-data-and-statistic {
+    background-image: url('../img/img-south-data-and-statistics.jpg');
+}
+
+.aow-data-management-and-infrastructure {
+    background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
+}
+
+.level-national {
+    color: @color-brand-south;
+}
+
+.level-regional {
+    color: #205c90;
+}
+
+.event-title {
+    color: @color-brand-south;
+}
+
+.site-banner {
+    border-top: solid @color-brand-south;
+}
+
+#breadcrumbs-current {
+    color: @color-brand-south;
+}
+
+
+
+
+.project-description {
+    @media @screen-md-upto {
+        width: 100%;
+        margin: 0;
+        display: none;
+    }
+    width: 37%;
+    position: absolute;
+    padding: 2rem;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    p {
+        margin-top: 7rem;
+        font-size: 22px;
+        // color: #505050!important;
+    }
+}
+
+
+#site-header {
+    @media @screen-md-upto {
+        background-repeat: no-repeat;
+        background-position: 100% 100%!important;
+    }
+}
