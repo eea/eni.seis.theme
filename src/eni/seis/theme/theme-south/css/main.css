@@ -1334,7 +1334,7 @@ small,
   }
 }
 .btn {
-  color: #333;
+  color: #737373;
   vertical-align: middle;
   display: inline-block;
   padding: 0.4em 0.5em;
@@ -1365,7 +1365,7 @@ small,
   color: #009245;
 }
 .btn-south {
-  color: #ff7c29;
+  color: #ff6b01;
 }
 .btn-east:before,
 .btn-south:before {
@@ -2699,7 +2699,7 @@ a.contenttype-eea-meeting:before {
   display: block!important;
 }
 .newsletter-box {
-  border-color: #61D892;
+  border-color: #08a8dc;
 }
 /* Float right for second list of admin bar menu */
 .admin .list-inline:not(#contentViews) {
@@ -3112,7 +3112,7 @@ a:hover {
   display: none;
 }
 .nav-folder {
-  border-color: #61D892;
+  border-color: #08a8dc;
 }
 .page-header {
   display: none;
@@ -3872,10 +3872,10 @@ ul.configlets {
   text-align: center;
 }
 .newsletter-form input:hover {
-  border-bottom-color: #259DEF;
+  border-bottom-color: #08a8dc;
 }
 .newsletter-form input:focus {
-  border-bottom-color: #259DEF;
+  border-bottom-color: #08a8dc;
   background-color: #fff;
 }
 .newsletter-form button {

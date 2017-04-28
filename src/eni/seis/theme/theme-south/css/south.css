@@ -61,14 +61,14 @@
 }
 .navbar-brand strong,
 .footer-brand strong {
-  color: #ff8228;
+  color: #ff6b01;
   font-weight: 600;
 }
 .section a {
-  color: #ff8228;
+  color: #ff6b01;
 }
 aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-  color: #ff8228;
+  color: #ff6b01;
 }
 #site-header {
   background-image: url('../img/bg-header-south.jpg');
@@ -102,40 +102,40 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   box-shadow: 0px 2px 1px #aaa;
 }
 .btn-default {
-  border-color: #ff8228;
+  border-color: #ff6b01;
 }
 .btn-default:hover {
-  background: #ff8228;
+  background: #ff6b01;
   color: white;
   box-shadow: 1px 1px 3px #949494;
 }
 .login-link:before {
-  color: #ff7c29;
+  color: #ff6b01;
 }
 #site-footer .portlet a {
-  border-color: #ff7c29 !important;
+  border-color: #ff6b01 !important;
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
-    border-top: solid #ff8228;
+    border-top: solid #ff6b01;
   }
   #portal-globalnav > li:hover {
-    background: #ff8228;
+    background: #ff6b01;
   }
   #portal-globalnav > li:hover > a {
     color: white !important;
   }
   #portal-globalnav .selected .plain {
-    color: #ff8228;
+    color: #ff6b01;
   }
 }
 @media (max-width: 959px) {
   #portal-globalnav > li > a {
-    color: #ff8228;
+    color: #ff6b01;
   }
 }
 .admin {
-  background: #ff8228;
+  background: #ff6b01;
 }
 .admin .admin .page-container #edit-bar {
   border-style: solid solid solid solid;
@@ -153,25 +153,25 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 .admin #edit-bar {
   color: white;
-  background: #ff8228;
-  border-color: #ff8228 !important;
+  background: #ff6b01;
+  border-color: #ff6b01 !important;
 }
 .admin #edit-bar * {
-  background: #ff8228;
-  border-color: #ff8228 !important;
+  background: #ff6b01;
+  border-color: #ff6b01 !important;
 }
 .admin #edit-bar a {
   color: inherit!important;
 }
 .admin #edit-bar .contentViews#content-views a:hover {
-  color: #ff8228 !important;
+  color: #ff6b01 !important;
 }
 .admin #edit-bar .selected a {
-  color: #ff8228 !important;
+  color: #ff6b01 !important;
 }
 .admin #contentActionMenus dl.actionMenu a,
 .admin #contentActionMenus dl.actionMenu.activated dd {
-  background: #ff8228;
+  background: #ff6b01;
   color: white;
 }
 .admin ul {
@@ -181,7 +181,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   padding-left: 0;
 }
 .page-header {
-  border-color: #ff8228 !important;
+  border-color: #ff6b01 !important;
 }
 .south-subtitle {
   display: none!important;
@@ -190,10 +190,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   background-position: 100% 10%;
 }
 .userrole-anonymous #navbar {
-  border-bottom-color: #F7931E;
+  border-bottom-color: #08a8dc;
 }
 .tab-content thead {
-  background: #ff8228;
+  background: #ff6b01;
   color: white;
 }
 .nav > li > a:hover,
@@ -204,29 +204,29 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #ff8228 !important;
+  color: #ff6b01 !important;
   background: transparent!important;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background: #ff8228 !important;
+  background: #ff6b01 !important;
 }
 .tab-pane th {
   vertical-align: middle;
 }
 .homepage-news thead th {
-  background-color: #F7931E;
+  background-color: #08a8dc;
   color: #fff;
 }
 .homepage-news tbody tr {
-  border-top-color: #ff8228;
+  border-top-color: #ff6b01;
 }
 .homepage-news tbody td:first-child {
   color: inherit;
 }
 .homepage-news a {
-  color: #F7931E;
+  color: #08a8dc;
 }
 .aow-national-work-plans {
   background-image: url('../img/img-south-national-work-plans.jpg');
@@ -241,19 +241,19 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
 }
 .level-national {
-  color: #ff8228;
+  color: #ff6b01;
 }
 .level-regional {
   color: #205c90;
 }
 .event-title {
-  color: #ff8228;
+  color: #ff6b01;
 }
 .site-banner {
-  border-top: solid #ff8228;
+  border-top: solid #ff6b01;
 }
 #breadcrumbs-current {
-  color: #ff8228;
+  color: #ff6b01;
 }
 .project-description {
   width: 37%;
