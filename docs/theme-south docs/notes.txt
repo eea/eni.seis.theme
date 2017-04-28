@@ -1,0 +1,9 @@
+WORK
+    eni.seis.theme/src/eni/seis/theme/theme-south
+        $ npm install
+        $ node_modules/.bin/grunt
+
+INSTALL
+    /south/portal_css/manage_cssForm
+        Add ++theme++eni.seis.theme.south/css/south.css
+        render: link
