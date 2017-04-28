@@ -1994,7 +1994,7 @@ table th[class*="col-"] {
   margin-right: 2px;
   line-height: 1.42857143;
   border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0;
   border-bottom: transparent!important;
 }
 .nav-tabs > li > a:hover {
@@ -2753,6 +2753,7 @@ span + .error {
 }
 .documentFirstHeading {
   margin: 1rem 0!important;
+  text-align: center;
 }
 .page-header {
   background-image: url('../img/folder-background.png');

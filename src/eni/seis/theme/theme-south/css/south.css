@@ -255,6 +255,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #breadcrumbs-current {
   color: #ff6b01;
 }
+.documentFirstHeading {
+  color: #ff6b01;
+  border-bottom: 3px solid #08a8dc;
+}
 .project-description {
   width: 37%;
   position: absolute;
