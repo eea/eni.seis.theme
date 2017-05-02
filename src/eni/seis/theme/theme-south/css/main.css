@@ -3365,7 +3365,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 .site-title-footer {
   font-size: 1.5rem;
   font-weight: 600;
-  color: white;
+  color: #222222;
 }
 .admin {
   box-sizing: content-box !important;

@@ -293,13 +293,13 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 #site-footer .col-left {
   padding-top: 20px;
-  background: #ededed;
+  background: linear-gradient(60deg, transparent 310px, #737373 50px);
   min-height: 200px;
   color: #222222;
 }
 #site-footer .col-middle {
   padding-top: 20px;
-  background: #222222;
+  background: linear-gradient(-120deg, transparent 100px, #737373 50px);
   min-height: 200px;
   color: #FFFFFF;
 }
