@@ -49,8 +49,6 @@
     </before>
   </rules>
 
-
-
   <!-- Manage portlets button if here -->
   <rules css:if-content=".managePortletsLink">
     <copy
@@ -112,7 +110,7 @@
   </rules>
 
   <!-- Portlets -->
-  <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
+  <rules css:if-not-content=".template-atct_edit, .template-edit, .no-portlets">  <!-- Hidden in Edit pages -->
    <drop css:content="#portal-column-one .portlet-static-newsletter" />
     <after css:theme-children=".page-aside">
       <xsl:for-each css:select="dl.portlet">
@@ -126,9 +124,9 @@
         </xsl:if>
       </xsl:for-each>
     </after>
-
-
   </rules>
+
+  <drop css:if-content=".no-portlets" css:theme="aside.page-aside" />
 
 
   <!-- Apply the following rules to standard Plone pages -->
@@ -349,4 +347,6 @@
 
   <!-- Google Analytics -->
   <after theme-children="/html/body" content="//*[@id='portal-footer-wrapper']/div/script" />
+
+
 </rules>
