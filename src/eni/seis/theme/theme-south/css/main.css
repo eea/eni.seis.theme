@@ -1988,18 +1988,14 @@ table th[class*="col-"] {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 3px solid #ff6b01;
 }
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-  margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 0;
-  border-bottom: transparent!important;
 }
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #dddddd;
@@ -2815,6 +2811,11 @@ span + .error {
 }
 .event.summary.details {
   float: none!important;
+}
+legend {
+  float: right;
+  position: relative;
+  top: -65px;
 }
 legend .fa {
   font-size: 1.3em!important;
