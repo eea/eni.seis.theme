@@ -186,10 +186,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #site-header {
   background-position: 100% 10%;
 }
-.tab-content thead {
-  background: #ff6b01;
-  color: white;
-}
 .nav > li > a:hover,
 .nav > li > a:focus {
   background: #ff6b01 !important;

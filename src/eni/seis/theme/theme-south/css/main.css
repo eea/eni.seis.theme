@@ -1586,6 +1586,9 @@ dl.actionMenu {
 .nav li {
   list-style: none!important;
 }
+.nav-tabs {
+  text-transform: uppercase;
+}
 .nav-tabs li {
   margin-bottom: 0!important;
 }
@@ -1762,6 +1765,7 @@ th {
 }
 .table-hover > tbody > tr:hover {
   background-color: #08a8dc;
+  color: #FFFFFF;
 }
 table col[class*="col-"] {
   position: static;
@@ -2821,9 +2825,6 @@ legend .fa:before {
 }
 legend .level-national {
   padding-left: 0;
-}
-a:hover {
-  text-shadow: 1px 1px 1px #ccc;
 }
 .newsImageContainer img {
   min-width: 300px;
