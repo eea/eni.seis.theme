@@ -110,14 +110,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     color: @color-orange;
 }
 
-#site-footer {
-    .portlet {
-        a {
-            border-color: @color-orange !important;
-        }
-    }
-}
-
 #portal-globalnav {
     @media @screen-md {
         ul.submenu {
@@ -336,5 +328,40 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     @media @screen-md-upto {
         background-repeat: no-repeat;
         background-position: 100% 100%!important;
+    }
+}
+
+#site-footer {
+    color: #FFFFFF;
+    .container-fluid {
+        background: -webkit-linear-gradient(left, @color-gray-light, @color-gray-light 50%, @color-brand-south 50%, @color-brand-south);
+        min-height: 200px;
+        color: #FFFFFF;
+    }
+    .col-left {
+        padding-top: 20px;
+        background: @color-gray-light;
+        min-height: 200px;
+        color: @color-gray-dark;
+    }
+    .col-middle {
+        padding-top: 20px;
+        background: @color-gray-dark;
+        min-height: 200px;
+        color: #FFFFFF;
+    }
+    .col-right {
+        padding-top: 20px;
+        background: @color-brand-south;
+        min-height: 200px;
+        color: #FFFFFF;
+    }
+}
+
+#site-footer {
+    .portlet {
+        a {
+            border-color: @color-orange !important;
+        }
     }
 }

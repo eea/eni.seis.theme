@@ -2416,9 +2416,6 @@ body {
     float: none!important;
   }
 }
-#site-footer {
-  border-top: 1px solid #d8d8d8;
-}
 .site-description {
   max-width: 30rem;
   font-size: larger;
@@ -3209,11 +3206,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 #site-footer {
   font-size: .8rem;
   background: #737373;
-  padding: 2rem 0;
   color: #FFFFFF;
-}
-#site-footer a {
-  color: white;
 }
 #site-footer .footer-content-wrapper {
   display: flex;

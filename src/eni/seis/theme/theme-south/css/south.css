@@ -109,9 +109,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .login-link:before {
   color: #ff6b01;
 }
-#site-footer .portlet a {
-  border-color: #ff6b01 !important;
-}
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
     border-top: solid #ff6b01;
@@ -285,5 +282,34 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     background-repeat: no-repeat;
     background-position: 100% 100%!important;
   }
+}
+#site-footer {
+  color: #FFFFFF;
+}
+#site-footer .container-fluid {
+  background: -webkit-linear-gradient(left, #ededed, #ededed 50%, #ff6b01 50%, #ff6b01);
+  min-height: 200px;
+  color: #FFFFFF;
+}
+#site-footer .col-left {
+  padding-top: 20px;
+  background: #ededed;
+  min-height: 200px;
+  color: #222222;
+}
+#site-footer .col-middle {
+  padding-top: 20px;
+  background: #222222;
+  min-height: 200px;
+  color: #FFFFFF;
+}
+#site-footer .col-right {
+  padding-top: 20px;
+  background: #ff6b01;
+  min-height: 200px;
+  color: #FFFFFF;
+}
+#site-footer .portlet a {
+  border-color: #ff6b01 !important;
 }
 /*# sourceMappingURL=./source.css.map */
