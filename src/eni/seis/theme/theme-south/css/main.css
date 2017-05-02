@@ -2846,9 +2846,6 @@ a:hover {
 #navbar .page-container {
   position: relative;
 }
-.userrole-anonymous #navbar {
-  border-bottom: 3px solid #75ad0a;
-}
 .userrole-anonymous .above-content {
   margin-top: -1rem;
 }
@@ -3624,9 +3621,6 @@ ul.configlets {
   opacity: 1;
 }
 @media (min-width: 960px) {
-  .template-homepage #navbar {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
-  }
   .template-homepage .header-container {
     width: 85%!important;
     padding: 0!important;

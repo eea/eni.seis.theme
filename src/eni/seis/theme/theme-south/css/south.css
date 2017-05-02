@@ -186,9 +186,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #site-header {
   background-position: 100% 10%;
 }
-.userrole-anonymous #navbar {
-  border-bottom-color: #08a8dc;
-}
 .tab-content thead {
   background: #ff6b01;
   color: white;
@@ -237,15 +234,12 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .aow-data-management-and-infrastructure {
   background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
 }
-/* [TODO] Fix color legend
 .level-national {
-    color: @color-brand-south;
+  color: #ff6b01;
 }
-
 .level-regional {
-    color: #205c90;
+  color: #08a8dc;
 }
-*/
 .event-title {
   color: #ff6b01;
 }
