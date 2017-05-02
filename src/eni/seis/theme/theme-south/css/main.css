@@ -2546,6 +2546,9 @@ body {
 #content table {
   width: 100%;
 }
+#content-core {
+  text-align: initial;
+}
 #content-core span {
   color: rgba(49, 69, 110, 0.75);
 }
