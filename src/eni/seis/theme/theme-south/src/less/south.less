@@ -341,16 +341,23 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     .col-left {
         padding-top: 20px;
         padding-bottom: 20px;
-        background: linear-gradient(60deg, transparent 310px, @color-secondary 50px);
         min-height: 230px;
         color: @color-gray-dark;
     }
     .col-middle {
         padding-top: 20px;
         padding-bottom: 20px;
-        background: linear-gradient(-120deg, transparent 130px, @color-secondary 50px);
         min-height: 230px;
         color: #FFFFFF;
+
+
+        background: @color-gray-light; /* Old browsers */
+        background: -moz-linear-gradient(45deg, @color-gray-light 0%, @color-gray-light 31%, @color-gray-light 32%, @color-gray 32%, @color-gray 60%, @color-brand-south 60%, @color-brand-south 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, @color-gray-light 0%,@color-gray-light 31%,@color-gray-light 32%,@color-gray 32%,@color-gray 60%,@color-brand-south 60%,@color-brand-south 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, @color-gray-light 0%,@color-gray-light 31%,@color-gray-light 32%,@color-gray 32%,@color-gray 60%,@color-brand-south 60%,@color-brand-south 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-gray-light', endColorstr='@color-brand-south',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
     }
     .col-right {
         padding-top: 20px;

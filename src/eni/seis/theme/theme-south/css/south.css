@@ -294,16 +294,24 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #site-footer .col-left {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: linear-gradient(60deg, transparent 310px, #737373 50px);
   min-height: 230px;
   color: #222222;
 }
 #site-footer .col-middle {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: linear-gradient(-120deg, transparent 130px, #737373 50px);
   min-height: 230px;
   color: #FFFFFF;
+  background: #ededed;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ededed 0%, #ededed 31%, #ededed 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ededed 0%, #ededed 31%, #ededed 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ededed 0%, #ededed 31%, #ededed 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-light', endColorstr='@color-brand-south', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 #site-footer .col-right {
   padding-top: 20px;
