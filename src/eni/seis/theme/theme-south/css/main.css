@@ -2541,6 +2541,7 @@ body {
 #content {
   font-size: inherit;
   margin: auto;
+  text-align: center;
 }
 #content table {
   width: 100%;

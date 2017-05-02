@@ -256,6 +256,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .documentFirstHeading {
   color: #ff6b01;
   border-bottom: 3px solid #08a8dc;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 .project-description {
   width: 37%;
