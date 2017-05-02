@@ -288,25 +288,28 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 #site-footer .container-fluid {
   background: -webkit-linear-gradient(left, #ededed, #ededed 50%, #ff6b01 50%, #ff6b01);
-  min-height: 200px;
+  min-height: 230px;
   color: #FFFFFF;
 }
 #site-footer .col-left {
   padding-top: 20px;
+  padding-bottom: 20px;
   background: linear-gradient(60deg, transparent 310px, #737373 50px);
-  min-height: 200px;
+  min-height: 230px;
   color: #222222;
 }
 #site-footer .col-middle {
   padding-top: 20px;
-  background: linear-gradient(-120deg, transparent 100px, #737373 50px);
-  min-height: 200px;
+  padding-bottom: 20px;
+  background: linear-gradient(-120deg, transparent 130px, #737373 50px);
+  min-height: 230px;
   color: #FFFFFF;
 }
 #site-footer .col-right {
   padding-top: 20px;
+  padding-bottom: 20px;
   background: #ff6b01;
-  min-height: 200px;
+  min-height: 230px;
   color: #FFFFFF;
 }
 #site-footer .portlet a {
