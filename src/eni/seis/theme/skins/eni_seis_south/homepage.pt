@@ -1,0 +1,18 @@
+<html metal:use-macro="here/main_template/macros/master">
+  <metal:content fill-slot="body">
+
+  <main class="page-main" data-diazo="homepage-content">
+
+  <!-- Moved on banner by diazo rule -->
+  <p class="site-description" data-diazo="site-description" tal:content="context/description"></p>
+
+  <section class="section" data-diazo="news-homepage">
+    <tal:content tal:define="folderContents context/communication/newsletter/getFolderNews" >
+      <tal:news metal:use-macro="here/news_tabular_view/macros/listing">
+      </tal:news>
+    </tal:content>
+  </section>
+
+  </main>
+  </metal:content>
+</html>
