@@ -385,13 +385,34 @@ body.template-country_view {
 
         .country-subsection-listing {
             div {
-                padding-bottom: 40px;
+                padding-bottom: 50px;
+                ul {
+                    li {
+                        padding: 5px 3px 5px 3px;
+                        list-style: none;
+                        border-bottom: 1px solid @color-gray-light;
+                        a {
+                            color: @color-gray-dark !important;
+                        }
+                        a:hover {
+                            background: @color-gray-light;
+                        }
+                    }
+                    li:hover {
+                        background: @color-gray-light;
+                    }
+                    li:last-of-type {
+                        border-bottom: none;
+                    }
+                    margin-left: 0 !important;
+                }
             }
 
-            div > a {
+            a.more-items {
                 border-top: 1px solid @color-accent;
                 color: @color-brand-south !important;
                 padding-left: 10px;
+                padding-top: 5px;
                 text-transform: uppercase;
             }
 

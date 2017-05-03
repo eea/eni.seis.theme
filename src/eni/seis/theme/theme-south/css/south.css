@@ -330,12 +330,33 @@ body.template-country_view .tab-content .container {
   overflow: auto;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
-body.template-country_view .tab-content .container .country-subsection-listing div > a {
+body.template-country_view .tab-content .container .country-subsection-listing div ul {
+  margin-left: 0 !important;
+}
+body.template-country_view .tab-content .container .country-subsection-listing div ul li {
+  padding: 5px 3px 5px 3px;
+  list-style: none;
+  border-bottom: 1px solid #ededed;
+}
+body.template-country_view .tab-content .container .country-subsection-listing div ul li a {
+  color: #222222 !important;
+}
+body.template-country_view .tab-content .container .country-subsection-listing div ul li a:hover {
+  background: #ededed;
+}
+body.template-country_view .tab-content .container .country-subsection-listing div ul li:hover {
+  background: #ededed;
+}
+body.template-country_view .tab-content .container .country-subsection-listing div ul li:last-of-type {
+  border-bottom: none;
+}
+body.template-country_view .tab-content .container .country-subsection-listing a.more-items {
   border-top: 1px solid #08a8dc;
   color: #ff6b01 !important;
   padding-left: 10px;
+  padding-top: 5px;
   text-transform: uppercase;
 }
 body.template-country_view .tab-content .container .country-subsection-listing h4 {
