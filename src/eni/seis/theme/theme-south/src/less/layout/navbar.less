@@ -1,4 +1,5 @@
 #navbar {
+    text-align: center;
     position: relative;
     padding-bottom: @rem-h-large;
     padding-top: @rem-h-large;
@@ -7,6 +8,13 @@
     font-family: 'Fira Sans Condensed', sans-serif;
     .page-container {
         position: relative;
+    }
+}
+
+.above-content {
+    text-align: center;
+    #portal-breadcrumbs {
+        text-transform: uppercase;
     }
 }
 
@@ -47,7 +55,6 @@
 
 @media (min-width: 1390px) {
     .navbar-brand p {
-        max-width: 517px;
         margin-left: 0!important;
         margin-right: 0!important;
     }
@@ -73,9 +80,6 @@
     #portal-globalnav > li {
         margin-left: .5rem!important;
     }
-    .navbar-brand p {
-        max-width: 517px;
-    }
 }
 
 @media @screen-md {
@@ -93,7 +97,6 @@
         font-size: 1rem;
         display: inline-block;
         margin-top: .5rem;
-        border-top: solid #31456e;
     }
     .navbar-brand {
         // display: inline-block;

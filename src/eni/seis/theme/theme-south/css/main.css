@@ -2836,6 +2836,7 @@ legend .level-national {
   display: none;
 }
 #navbar {
+  text-align: center;
   position: relative;
   padding-bottom: 1.1rem;
   padding-top: 1.1rem;
@@ -2845,6 +2846,12 @@ legend .level-national {
 }
 #navbar .page-container {
   position: relative;
+}
+.above-content {
+  text-align: center;
+}
+.above-content #portal-breadcrumbs {
+  text-transform: uppercase;
 }
 .userrole-anonymous .above-content {
   margin-top: -1rem;
@@ -2875,7 +2882,6 @@ legend .level-national {
 }
 @media (min-width: 1390px) {
   .navbar-brand p {
-    max-width: 517px;
     margin-left: 0!important;
     margin-right: 0!important;
   }
@@ -2899,9 +2905,6 @@ legend .level-national {
   #portal-globalnav > li {
     margin-left: .5rem!important;
   }
-  .navbar-brand p {
-    max-width: 517px;
-  }
 }
 @media (min-width: 960px) {
   .navbar-body {
@@ -2918,7 +2921,6 @@ legend .level-national {
     font-size: 1rem;
     display: inline-block;
     margin-top: .5rem;
-    border-top: solid #31456e;
   }
   .navbar-brand .navbar-title {
     width: 100%;
@@ -3560,6 +3562,9 @@ body.template-homepage {
 }
 #site-header .actionMenu.activated {
   z-index: 99;
+}
+#site-header .navbar-brand {
+  text-align: center;
 }
 .actionMenu .actionMenuContent ul {
   padding-left: 0;
