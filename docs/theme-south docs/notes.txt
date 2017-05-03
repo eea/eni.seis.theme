@@ -7,3 +7,16 @@ INSTALL
     /south/portal_css/manage_cssForm
         Add ++theme++eni.seis.theme.south/css/south.css
         render: link
+
+    /portal_setup/manage_main
+        Advanced Import
+            profile eni.seis.theme:default
+            import "skins tool"
+    /portal_skins/manage_main
+        add eni_seis_south as layer under custom
+    Not sure:
+        /portal_skins/manage_addProduct/CMFCore/manage_addDirectoryViewForm
+            eni.seis.theme:skins/eni_seis_south
+    /portal_skins/manage_propertiesForm
+        Sunburst Theme
+            add eni_seis_south as layer under custom (then first Save button)
