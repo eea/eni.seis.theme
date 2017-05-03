@@ -50,6 +50,8 @@
     <drop css:theme=".page-aside nav.nav-folder" />
     <drop css:theme=".breadcrumbs" />
 
+    <!-- <drop css:attributes="class" css:content=".aow&#45;slider" /> -->
+
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
