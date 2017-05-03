@@ -186,7 +186,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 body:not(.template-country_view) .nav > li > a:hover,
 body:not(.template-country_view) .nav > li > a:focus {
   background: #ff6b01 !important;
-  color: white!important;
+  color: white !important;
 }
 body:not(.template-country_view) .nav-tabs > li > a {
   color: #ff6b01 !important;
@@ -196,23 +196,35 @@ body:not(.template-country_view) .nav-tabs > li > a {
 body:not(.template-country_view) .nav-tabs {
   border-bottom: 3px solid #ff6b01;
 }
-body.template-country_view .nav.nav-tabs ul li a {
-  background: #FFFFFF !important;
-}
-body.template-country_view .nav.nav-tabs ul li:hover a {
-  background: #FFFFFF !important;
-}
-body.template-country_view .nav.nav-tabs ul li.active a {
-  background: #FFFFFF !important;
-}
-body.template-country_view .nav.nav-tabs ul li.active:hover a {
-  background: #FFFFFF !important;
-}
-body.not(.template-country_view) .nav-tabs > li.active > a,
-body.not(.template-country_view) .nav-tabs > li.active > a:hover,
-body.not(.template-country_view) .nav-tabs > li.active > a:focus {
+body:not(.template-country_view) .nav-tabs > li.active > a,
+body:not(.template-country_view) .nav-tabs > li.active > a:hover,
+body:not(.template-country_view) .nav-tabs > li.active > a:focus {
   color: #FFFFFF !important;
   background: #ff6b01 !important;
+}
+body.template-country_view .nav > li {
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+body.template-country_view .nav > li > a:hover,
+body.template-country_view .nav > li > a:focus {
+  background: #08a8dc !important;
+  color: white !important;
+}
+body.template-country_view .nav-tabs > li > a {
+  color: #222222 !important;
+  border: 1px solid #ededed !important;
+  border-radius: 0;
+}
+body.template-country_view .nav-tabs {
+  border-bottom: 1px solid #ededed;
+}
+body.template-country_view .nav-tabs > li.active > a,
+body.template-country_view .nav-tabs > li.active > a:hover,
+body.template-country_view .nav-tabs > li.active > a:focus {
+  color: #ff6b01 !important;
+  background: #FBFBFB !important;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -341,7 +353,11 @@ body.not(.template-country_view) .nav-tabs > li.active > a:focus {
 body.template-country_view .tab-content .container {
   padding: 20px 10px 20px 10px;
   background-color: #FBFBFB;
-  border: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+  top: -14px;
   overflow: auto;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div {

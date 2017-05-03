@@ -206,8 +206,8 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 body:not(.template-country_view) {
     .nav > li > a:hover,
     .nav > li > a:focus {
-        background: @color-brand-south!important;
-        color: white!important;
+        background: @color-brand-south !important;
+        color: white !important;
     }
     .nav-tabs > li > a {
         color: @color-brand-south !important;
@@ -217,28 +217,40 @@ body:not(.template-country_view) {
     .nav-tabs {
         border-bottom: 3px solid #ff6b01;
     }
-}
-
-body.template-country_view .nav.nav-tabs {
-    ul li a {
-        background: #FFFFFF !important;
-    }
-    ul li:hover a {
-        background: #FFFFFF !important;
-    }
-    ul li.active a {
-        background: #FFFFFF !important;
-    }
-    ul li.active:hover a {
-        background: #FFFFFF !important;
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+        color: #FFFFFF !important;
+        background: @color-brand-south !important;
     }
 }
 
-body.not(.template-country_view) .nav-tabs > li.active > a,
-body.not(.template-country_view) .nav-tabs > li.active > a:hover,
-body.not(.template-country_view) .nav-tabs > li.active > a:focus {
-    color: #FFFFFF !important;
-    background: @color-brand-south!important;
+body.template-country_view {
+    .nav > li {
+        margin-right: 10px;
+        position: relative;
+        top: 1px;
+    }
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background: @color-accent !important;
+        color: white !important;
+    }
+    .nav-tabs > li > a {
+        color: @color-gray-dark !important;
+        border: 1px solid #ededed !important;
+        border-radius: 0;
+    }
+    .nav-tabs {
+        border-bottom: 1px solid @color-gray-light;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+        color: @color-brand-south !important;
+        background: @color-gray-lighter !important;
+    }
 }
 
 .nav-pills > li.active > a,
@@ -399,7 +411,11 @@ body.template-country_view {
     .tab-content .container {
         padding: 20px 10px 20px 10px;
         background-color: @color-gray-lighter;
-        border: 1px solid @color-gray-light;;
+        border-left: 1px solid @color-gray-light;
+        border-right: 1px solid @color-gray-light;
+        border-bottom: 1px solid @color-gray-light;
+        position: relative;
+        top: -14px;
         overflow: auto;
 
         .country-subsection-listing {
