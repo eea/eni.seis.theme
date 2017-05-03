@@ -32,8 +32,8 @@
 
 .navbar-credits {
     @media (min-width: 1390px) {
-        float: right;
-        clear: right;
+        float: left;
+        clear: left;
     }
     small,
     a {
@@ -55,11 +55,14 @@
 
 .navbar-brand {
     margin-bottom: @leading;
+    .navbar-title strong {
+      color: @color-orange;
+    }
 }
 
 @media (min-width:960px) and (max-width: 1390px) {
     #navbar .navbar-credits {
-        float: right;
+        float: left;
     }
     .navbar-body {
         max-width: 100%!important;
@@ -93,7 +96,7 @@
         border-top: solid #31456e;
     }
     .navbar-brand {
-        display: inline-block;
+        // display: inline-block;
         .navbar-title {
             width: 100%;
             overflow: hidden;
@@ -390,15 +393,15 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
         padding: 5px;
     }
     .navbar-credits small {
-        display: inline-block;
-        float: left;
+        // display: inline-block;
+        // float: left;
         padding: 5px;
     }
 }
 
 @media (min-width:960px) and (max-width: 1600px) {
     #navbar .navbar-credits small {
-        display: block;
+        // display: block;
     }
     br {
         display: none;

@@ -180,7 +180,7 @@
       />
 
     <!-- Get website title based on website configuration (Requires website_title_html script. See docs.) -->
-    <replace css:content=".east" css:theme=".navbar-title" href="/website_title_html" method="document" />
+    <!-- <replace css:content=".east" css:theme=".navbar&#45;title" href="/website_title_html" method="document" /> -->
 
     <!-- PORTAL NAVIGATION -->
     <replace

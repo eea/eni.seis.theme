@@ -2864,8 +2864,8 @@ legend .level-national {
 }
 @media (min-width: 1390px) {
   .navbar-credits {
-    float: right;
-    clear: right;
+    float: left;
+    clear: left;
   }
 }
 .navbar-credits small,
@@ -2886,9 +2886,12 @@ legend .level-national {
 .navbar-brand {
   margin-bottom: 1rem;
 }
+.navbar-brand .navbar-title strong {
+  color: #ff6b01;
+}
 @media (min-width: 960px) and (max-width: 1390px) {
   #navbar .navbar-credits {
-    float: right;
+    float: left;
   }
   .navbar-body {
     max-width: 100%!important;
@@ -2919,9 +2922,6 @@ legend .level-national {
     display: inline-block;
     margin-top: .5rem;
     border-top: solid #31456e;
-  }
-  .navbar-brand {
-    display: inline-block;
   }
   .navbar-brand .navbar-title {
     width: 100%;
@@ -3170,15 +3170,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
     padding: 5px;
   }
   .navbar-credits small {
-    display: inline-block;
-    float: left;
     padding: 5px;
   }
 }
 @media (min-width: 960px) and (max-width: 1600px) {
-  #navbar .navbar-credits small {
-    display: block;
-  }
   br {
     display: none;
   }

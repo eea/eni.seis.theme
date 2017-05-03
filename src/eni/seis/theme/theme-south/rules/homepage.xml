@@ -3,15 +3,23 @@
   xmlns="http://namespaces.plone.org/diazo"
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  
+
   <!-- Custom homepage (as view) -->
   <rules css:if-content="body.template-homepage">
+
     <replace css:content-children=".documentDescription"
              css:theme-children=".site-description" />
-    <drop css:theme=".page-aside .box.newsletter-box" />
-    <drop css:theme=".page-aside .box.leading-large" />
-    <drop css:theme=".page-aside nav.nav-folder" />
-    <drop css:theme=".breadcrumbs" />
+
+    <!-- Site description on banner -->
+    <replace css:theme=".site-description"
+             css:content="[data-diazo='site-description']" />
+
+    <replace css:theme="[data-diazo='project-description']"
+             href="project-description" method="document"
+             css:content="#content-core" />
+
+    <replace css:theme="[data-diazo='news-homepage']"
+             css:content="[data-diazo='news-homepage']" />
 
     <!-- Section: Governance - get content from page -->
     <replace css:theme="[data-diazo='section-governance']"
@@ -36,18 +44,12 @@
     <!-- Section: Events - get content from custom homepage template -->
     <drop css:theme-children="[data-diazo='section-events']" />
 
-    <replace css:theme="[data-diazo='news-homepage']"
-             css:content="[data-diazo='news-homepage']" />
-
-    <replace css:theme="[data-diazo='project-description']"
-             href="project-description" method="document"
-             css:content="#content-core" />
-
-    <!-- Site description on banner -->
-    <replace css:theme=".site-description"
-             css:content="[data-diazo='site-description']" />
-
     <drop css:theme=".page-header" />
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+    <drop css:theme=".page-aside nav.nav-folder" />
+    <drop css:theme=".breadcrumbs" />
+
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
