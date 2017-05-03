@@ -203,21 +203,40 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     background-position: 100% 10%;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-    background: @color-brand-south!important;
-    color: white!important;
+body:not(.template-country_view) {
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background: @color-brand-south!important;
+        color: white!important;
+    }
+    .nav-tabs > li > a {
+        color: @color-brand-south !important;
+        border: 1px solid #ededed !important;
+        border-radius: 0;
+    }
+    .nav-tabs {
+        border-bottom: 3px solid #ff6b01;
+    }
 }
 
-.nav-tabs > li > a {
-    color: @color-brand-south !important;
-    border: 1px solid #ededed !important;
-    border-radius: 0;
+body.template-country_view .nav.nav-tabs {
+    ul li a {
+        background: #FFFFFF !important;
+    }
+    ul li:hover a {
+        background: #FFFFFF !important;
+    }
+    ul li.active a {
+        background: #FFFFFF !important;
+    }
+    ul li.active:hover a {
+        background: #FFFFFF !important;
+    }
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+body.not(.template-country_view) .nav-tabs > li.active > a,
+body.not(.template-country_view) .nav-tabs > li.active > a:hover,
+body.not(.template-country_view) .nav-tabs > li.active > a:focus {
     color: #FFFFFF !important;
     background: @color-brand-south!important;
 }
