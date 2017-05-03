@@ -427,6 +427,21 @@ body.template-country_view {
             margin-top: 10px !important;
             font-size: 1.2rem;
 
+            div:before {
+                content:url('http://i.imgur.com/i2Aakch.png');  // [TODO] Somehow the /image of item must be here
+                float: left;
+                margin-right: 10px;
+            }
+
+            div:first-of-type {
+                border-top: none;
+            }
+
+            div {
+                padding-top: 20px;
+                border-top: 1px solid @color-gray-light;
+            }
+
             .portletItemDetails {
                 margin-left: 0px;
                 text-transform: uppercase;
@@ -459,11 +474,15 @@ body.template-country_view {
                 padding-bottom: 50px;
                 ul {
                     li {
+                        .fa {
+                            color: @color-gray-light2;
+                        }
                         padding: 5px 3px 5px 3px;
                         list-style: none;
                         border-bottom: 1px solid @color-gray-light;
                         a {
                             color: @color-gray-dark !important;
+                            font-weight: 500;
                         }
                         a:hover {
                             background: @color-gray-light;
