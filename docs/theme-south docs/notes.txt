@@ -20,3 +20,6 @@ INSTALL
     /portal_skins/manage_propertiesForm
         Sunburst Theme
             add eni_seis_south as layer under custom (then first Save button)
+
+    /portal_skins/custom/manage_main
+        delete old homepage page template
