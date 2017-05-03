@@ -352,6 +352,30 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 #site-footer .portlet a {
   border-color: #ff6b01 !important;
 }
+body.template-country_view .country-left-column .box.leading-large.portlet dt {
+  background: #FFFFFF;
+  text-transform: uppercase;
+  color: #08a8dc;
+  border-bottom: 3px solid #08a8dc;
+  font-size: 1.2rem;
+  padding: 0px 10px 0px 0px !important;
+  display: inline-block;
+  margin-top: 20px !important;
+}
+body.template-country_view .country-left-column .box.leading-large.portlet dd {
+  margin-top: 10px !important;
+  font-size: 1.2rem;
+}
+body.template-country_view .country-left-column .box.leading-large.portlet dd .portletItemDetails {
+  margin-left: 0px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+body.template-country_view .country-left-column a {
+  color: #ff6b01 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
 body.template-country_view .tab-content .container {
   padding: 20px 10px 20px 10px;
   background-color: #FBFBFB;
@@ -361,6 +385,9 @@ body.template-country_view .tab-content .container {
   position: relative;
   top: -14px;
   overflow: auto;
+}
+body.template-country_view .tab-content .container img {
+  width: 100%;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div {
   padding-bottom: 50px;
