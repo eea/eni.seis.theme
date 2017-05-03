@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> partials/header }}
+  </head>
+
+<body>
+  <div class="site-container">
+
+    {{> partials/headernav }}
+
+    <!-- Site body -->
+    <div id="site-body">
+      <div class="page">
+        <header class="page-header">
+          <div class="page-container">
+          </div>
+        </header>
+        <div class="admin">
+          <div class="page-container">
+            <div id="edit-bar">Plone admin bar</div>
+          </div>
+        </div>
+
+        <div class="page-body">
+          <div class="page-container clear">
+            <div class="above-content">
+              <ul class="breadcrumbs">
+                <li><a href="">Home</a></li>
+                <li><a href="">Folder</a></li>
+                <li><strong>This page</strong></li>
+              </ul>
+            </div>
+
+            <main class="page-main">
+              <!-- Images slider - Areas of work -->
+              <!-- Moved in page /homepage-section-aow-slider -->
+              <div data-diazo="eni-aow-slider">Replaced by page content</div>
+            </main>
+
+            <aside class="page-aside">
+              <div class="box newsletter-box leading-large"></div>
+
+              <div class="box leading-large">
+                <h4>Leaflet</h4>
+                <div class="media">
+                    <img src="" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <a href="">Download</a>
+              </div>
+
+              <div class="box leading-large">
+                <h4>Links</h4>
+                <ul>
+                  <li><a href="#">Lorem ipsum</a></li>
+                  <li><a href="#">Conserctur adipskcul</a></li>
+                  <li><a href="#">Lorem ipsum</a></li>
+                  <li><a href="#">Conserctur adip</a></li>
+                </ul>
+              </div>
+
+              <nav class="nav nav-folder">
+                <header class="nav-header">
+                  <h4 class="nav-title">Nav</h4>
+                </header>
+                <div class="nav-body">
+                  <div class="nav-group">
+                    <h5 class="nav-group-title">Navgroup title</h5>
+                    <ul class="nav-items">
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="nav-group">
+                    <h5 class="nav-group-title">Navgroup title</h5>
+                    <ul class="nav-items">
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                        <ul class="nav-items">
+                          <li class="nav-item">
+                            <a href="">Nav item</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="">Nav item</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="">Nav item</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="">Nav item</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <a href="../@@manage-portlets" class="btn btn-default" data-diazo="manage-portlets">
+                Manage portlets
+              </a>
+            </aside>
+
+            <div class="section-partners-wrapper">
+              <section class="section" data-diazo="section-partners"></section>
+              <section class="section" data-diazo="section-countries-map"></section>
+            </div>
+          </div>
+        </div>
+
+        <footer class="page-footer"></footer>
+      </div>
+    </div><!-- Site body -->
+
+<!--     <footer id="site-footer">
+      <div class="page-container">
+        <div class="footer-brand">
+          <div class="site-title-footer no-leading">ENI SEIS II <strong>East</strong></div>
+        </div>
+        <div class="footer-content-wrapper">
+          <div class="contact">
+            <h4> Contact details </h4>
+            <a href="http://www.eea.europa.eu/" target="_blank">
+              European Environment Agency (EEA)
+            </a>
+            <span>Kongens Nytorv 6</span>
+            <span>1050 Copenhagen K, Denmark</span><br />
+            <span>Phone: +45 3336 7100</span><br>
+            <small>2016 ENI SEIS II. All rights reserved<small>
+          </div>
+
+          <div class="box newsletter-box-footer">
+            <div class="box leading-large portlet portletStaticText portlet-static-newsletter">
+              <h4>Newsletter</h4>
+              <p>Subscribe to our newsletter to be up to date with the project implementation.</p>
+              <p><a href="https://confirmsubscription.com/h/d/E382DF620E205C3D">Subscribe</a></p>
+              <span class="portletBottomLeft"></span>
+              <span class="portletBottomRight"></span>
+            </div>
+          </div>
+
+          <div class="login-wrapper">
+            <a href="http://www.eea.europa.eu/legal/">Legal notice</a>
+            <span data-diazo="login-link"></span>
+            <div class="navbar-credits">
+              <small> This project is funded by the European Union </small>
+              <a href="http://www.europa.eu/" title="European Union">
+                <img src="./img/logo-eu.png" alt="European Union logo" />
+              </a>
+              <a href="http://www.eea.europa.eu" title="European Environment Agency">
+                <img src="./img/eea-logo.png" alt="European Environment Agency logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div> -->
+
+  </div>
+
+  {{>partials/footer}}
+  {{>partials/bottomjs}}
+
+</body>
+
+</html>
+
