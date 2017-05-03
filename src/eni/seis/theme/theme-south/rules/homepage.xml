@@ -7,56 +7,64 @@
   <!-- Custom homepage (as view) -->
   <rules css:if-content="body.template-homepage">
 
-    <replace css:content-children=".documentDescription"
-             css:theme-children=".site-description" />
+    <xsl:comment>
 
-    <!-- Site description on banner -->
-    <replace css:theme=".site-description"
-             css:content="[data-diazo='site-description']" />
+      Not valid?
+      <replace css:content-children=".documentDescription"
+        css:theme-children=".site-description" />
 
+      <!-- Site description on banner -->
+      <replace css:theme=".site-description"
+        css:content="[data-diazo='site-description']" />
+
+    </xsl:comment>
+
+
+    <!-- Text over the map -->
     <replace css:theme="[data-diazo='project-description']"
-             href="project-description" method="document"
-             css:content="#content-core" />
+      href="project-description" method="document"
+      css:content="#content-core" />
 
-    <replace css:theme="[data-diazo='news-homepage']"
-             css:content="[data-diazo='news-homepage']" />
+    <replace css:theme="[data-diazo='news-homepage']" css:content="[data-diazo='news-homepage']" method="raw" />
 
-    <!-- Section: Governance - get content from page -->
-    <replace css:theme="[data-diazo='section-governance']"
-             href="homepage-section-governance-text" method="document"
-             css:content="section" />
-
-    <!-- Section: Workplan - get content from page -->
-    <replace css:theme="[data-diazo='section-workplan']"
-             href="homepage-section-workplan-text" method="document"
-             css:content="section" />
-
-    <!-- Section: Partners - get content from page -->
-    <replace css:theme="[data-diazo='section-partners']"
-             href="homepage-section-partners-text" method="document"
-             css:content="section" />
-
-    <!-- Section: Aow slider - get content from page -->
-    <replace css:theme="[data-diazo='eni-aow-slider']"
-             href="homepage-section-aow-slider" method="document"
-             css:content-children="#content-core" />
-
-    <!-- Section: Events - get content from custom homepage template -->
-    <drop css:theme-children="[data-diazo='section-events']" />
-
-    <drop css:theme=".page-header" />
-    <drop css:theme=".page-aside .box.newsletter-box" />
-    <drop css:theme=".page-aside .box.leading-large" />
-    <drop css:theme=".page-aside nav.nav-folder" />
-    <drop css:theme=".breadcrumbs" />
+    <!--  -->
+    <!-- <!&#45;&#45; Section: Governance &#45; get content from page &#45;&#45;> -->
+    <!-- <replace css:theme="[data&#45;diazo='section&#45;governance']" -->
+      <!--          href="homepage&#45;section&#45;governance&#45;text" method="document" -->
+      <!--          css:content="section" /> -->
+    <!--  -->
+    <!-- <!&#45;&#45; Section: Workplan &#45; get content from page &#45;&#45;> -->
+    <!-- <replace css:theme="[data&#45;diazo='section&#45;workplan']" -->
+      <!--          href="homepage&#45;section&#45;workplan&#45;text" method="document" -->
+      <!--          css:content="section" /> -->
+    <!--  -->
+    <!-- <!&#45;&#45; Section: Partners &#45; get content from page &#45;&#45;> -->
+    <!-- <replace css:theme="[data&#45;diazo='section&#45;partners']" -->
+      <!--          href="homepage&#45;section&#45;partners&#45;text" method="document" -->
+      <!--          css:content="section" /> -->
+    <!--  -->
+    <!-- <!&#45;&#45; Section: Aow slider &#45; get content from page &#45;&#45;> -->
+    <!-- <replace css:theme="[data&#45;diazo='eni&#45;aow&#45;slider']" -->
+      <!--          href="homepage&#45;section&#45;aow&#45;slider" method="document" -->
+      <!--          css:content&#45;children="#content&#45;core" /> -->
+    <!--  -->
+    <!-- <!&#45;&#45; Section: Events &#45; get content from custom homepage template &#45;&#45;> -->
+    <!-- <drop css:theme&#45;children="[data&#45;diazo='section&#45;events']" /> -->
+    <!--  -->
+    <!-- <drop css:theme=".page&#45;header" /> -->
+    <!-- <drop css:theme=".page&#45;aside .box.newsletter&#45;box" /> -->
+    <!-- <drop css:theme=".page&#45;aside .box.leading&#45;large" /> -->
+    <!-- <drop css:theme=".page&#45;aside nav.nav&#45;folder" /> -->
+    <!-- <drop css:theme=".breadcrumbs" /> -->
 
     <!-- <drop css:attributes="class" css:content=".aow&#45;slider" /> -->
 
+    <drop css:theme=".page-aside" />
   </rules>
 
   <!-- Drop banner for all pages except homepage -->
-  <rules css:if-not-content="body.section-front-page, body.template-homepage">
-    <drop css:theme=".site-banner" />
-  </rules>
+  <!-- <rules css:if&#45;not&#45;content="body.section&#45;front&#45;page, body.template&#45;homepage"> -->
+    <!--   <drop css:theme=".site&#45;banner" /> -->
+    <!-- </rules> -->
 
 </rules>

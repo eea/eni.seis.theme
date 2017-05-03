@@ -49,6 +49,13 @@ module.exports = {
       options: {
         nospawn: true
       }
+    },
+    templates: {
+      files: ['<%= path.static %>/mockup/**/*.hbs'],
+      tasks: ['template:dev'],
+      options: {
+        nospawn: true
+      }
     }
   }
 }
