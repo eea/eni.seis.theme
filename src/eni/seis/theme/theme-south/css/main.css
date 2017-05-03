@@ -3915,7 +3915,7 @@ ul.configlets {
 .radioscrolllist .list {
   padding: .5rem;
 }
-#content-core .nav-tabs a:hover {
+#content-core body:not(.template-country_view).nav-tabs a:hover {
   color: inherit!important;
 }
 /*# sourceMappingURL=./source.css.map */

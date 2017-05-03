@@ -216,6 +216,8 @@ body.template-country_view .nav-tabs > li > a {
   color: #222222 !important;
   border: 1px solid #ededed !important;
   border-radius: 0;
+  text-transform: none;
+  font-weight: 500;
 }
 body.template-country_view .nav-tabs {
   border-bottom: 1px solid #ededed;
