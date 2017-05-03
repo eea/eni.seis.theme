@@ -183,19 +183,34 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #site-header {
   background-position: 100% 10%;
 }
-.nav > li > a:hover,
-.nav > li > a:focus {
+body:not(.template-country_view) .nav > li > a:hover,
+body:not(.template-country_view) .nav > li > a:focus {
   background: #ff6b01 !important;
   color: white!important;
 }
-.nav-tabs > li > a {
+body:not(.template-country_view) .nav-tabs > li > a {
   color: #ff6b01 !important;
   border: 1px solid #ededed !important;
   border-radius: 0;
 }
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+body:not(.template-country_view) .nav-tabs {
+  border-bottom: 3px solid #ff6b01;
+}
+body.template-country_view .nav.nav-tabs ul li a {
+  background: #FFFFFF !important;
+}
+body.template-country_view .nav.nav-tabs ul li:hover a {
+  background: #FFFFFF !important;
+}
+body.template-country_view .nav.nav-tabs ul li.active a {
+  background: #FFFFFF !important;
+}
+body.template-country_view .nav.nav-tabs ul li.active:hover a {
+  background: #FFFFFF !important;
+}
+body.not(.template-country_view) .nav-tabs > li.active > a,
+body.not(.template-country_view) .nav-tabs > li.active > a:hover,
+body.not(.template-country_view) .nav-tabs > li.active > a:focus {
   color: #FFFFFF !important;
   background: #ff6b01 !important;
 }
