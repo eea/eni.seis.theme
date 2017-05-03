@@ -383,28 +383,23 @@ body.template-country_view {
         border: 1px solid @color-gray-light;;
         overflow: auto;
 
-        .country-left-column {
+        .country-subsection-listing {
+            div {
+                padding-bottom: 40px;
+            }
 
-        }
-        .country-right-column {
+            div > a {
+                border-top: 1px solid @color-accent;
+                color: @color-brand-south !important;
+                padding-left: 10px;
+                text-transform: uppercase;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                color: @color-accent;
+                border-bottom: 3px solid @color-accent;
+            }
         }
     }
 }
-
-/* WIP country_view
-html
-  body.template-country_view
-    .tab-content
-      .container
-        .row
-          .country-left-column
-          .countru-right-column
-            ul.nav.nav-tabs
-              li.active
-            div.tab-content
-              .row
-                .country-subsection-listing
-                  .h4
-                    ul
-                    a
-*/
