@@ -306,9 +306,12 @@
 
   <script src="./js/main.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script>
-    if (window.matchMedia("(max-width: 764px)").matches) { var jq = jQuery.noConflict(); jq(document).ready(function(){ jq('.aow-slider').slick({ dots: false, infinite: true, easing: 'easeOutQuint', slidesToShow: 1, slidesToScroll: 1, autoplay: true, arrows: false }); }) } else { var jq = jQuery.noConflict(); jq(document).ready(function(){ jq('.aow-slider').slick({ dots: false, infinite: true, easing: 'easeOutQuint', slidesToShow: 3, slidesToScroll: 1, autoplay: true, arrows: false }); }) }
-  </script>
+  <div tal:replace="nothing">
+<!--     <script> -->
+aow frontpage slider
+<!-- if (window.matchMedia("(max&#45;width: 764px)").matches) { var jq = jQuery.noConflict(); jq(document).ready(function(){ jq('.aow&#45;slider').slick({ dots: false, infinite: true, easing: 'easeOutQuint', slidesToShow: 1, slidesToScroll: 1, autoplay: true, arrows: false }); }) } else { var jq = jQuery.noConflict(); jq(document).ready(function(){ jq('.aow&#45;slider').slick({ dots: false, infinite: true, easing: 'easeOutQuint', slidesToShow: 3, slidesToScroll: 1, autoplay: true, arrows: false }); }) } -->
+<!--     </script> -->
+  </div>
 </body>
 
 </html>
