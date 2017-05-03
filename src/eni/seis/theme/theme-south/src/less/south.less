@@ -334,7 +334,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #site-footer {
     color: #FFFFFF;
     .container-fluid {
-        background: -webkit-linear-gradient(left, @color-gray-light, @color-gray-light 50%, @color-brand-south 50%, @color-brand-south);
+        background: -webkit-linear-gradient(left, @color-gray-lighter, @color-gray-lighter 50%, @color-brand-south 50%, @color-brand-south);
         min-height: 230px;
         color: #FFFFFF;
     }
@@ -351,11 +351,11 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
         color: #FFFFFF;
 
 
-        background: @color-gray-light; /* Old browsers */
-        background: -moz-linear-gradient(45deg, @color-gray-light 0%, @color-gray-light 31%, @color-gray-light 32%, @color-gray 32%, @color-gray 60%, @color-brand-south 60%, @color-brand-south 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(45deg, @color-gray-light 0%,@color-gray-light 31%,@color-gray-light 32%,@color-gray 32%,@color-gray 60%,@color-brand-south 60%,@color-brand-south 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(45deg, @color-gray-light 0%,@color-gray-light 31%,@color-gray-light 32%,@color-gray 32%,@color-gray 60%,@color-brand-south 60%,@color-brand-south 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-gray-light', endColorstr='@color-brand-south',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background: @color-gray-lighter; /* Old browsers */
+        background: -moz-linear-gradient(45deg, @color-gray-lighter 0%, @color-gray-lighter 31%, @color-gray-lighter 32%, @color-gray 32%, @color-gray 60%, @color-brand-south 60%, @color-brand-south 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, @color-gray-lighter 0%,@color-gray-lighter 31%,@color-gray-lighter 32%,@color-gray 32%,@color-gray 60%,@color-brand-south 60%,@color-brand-south 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, @color-gray-lighter 0%,@color-gray-lighter 31%,@color-gray-lighter 32%,@color-gray 32%,@color-gray 60%,@color-brand-south 60%,@color-brand-south 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-gray-lighter', endColorstr='@color-brand-south',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
     }
@@ -377,26 +377,34 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 }
 
 body.template-country_view {
-    .country-left-column {
+    .tab-content .container {
+        padding: 20px 10px 20px 10px;
+        background-color: @color-gray-lighter;
+        border: 1px solid @color-gray-light;;
+        overflow: auto;
 
-    }
-    .country-right-column {
-        background-color: @color-gray-light;
+        .country-left-column {
+
+        }
+        .country-right-column {
+        }
     }
 }
 
 /* WIP country_view
 html
   body.template-country_view
-    .row
-      .country-left-column
-      .countru-right-column
-        ul.nav.nav-tabs
-          li.active
-        div.tab-content
-          .row
-            .country-subsection-listing
-              .h4
-                ul
-                a
+    .tab-content
+      .container
+        .row
+          .country-left-column
+          .countru-right-column
+            ul.nav.nav-tabs
+              li.active
+            div.tab-content
+              .row
+                .country-subsection-listing
+                  .h4
+                    ul
+                    a
 */

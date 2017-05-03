@@ -287,7 +287,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: #FFFFFF;
 }
 #site-footer .container-fluid {
-  background: -webkit-linear-gradient(left, #ededed, #ededed 50%, #ff6b01 50%, #ff6b01);
+  background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
   min-height: 230px;
   color: #FFFFFF;
 }
@@ -302,15 +302,15 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   padding-bottom: 20px;
   min-height: 230px;
   color: #FFFFFF;
-  background: #ededed;
+  background: #FBFBFB;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #ededed 0%, #ededed 31%, #ededed 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
+  background: -moz-linear-gradient(45deg, #FBFBFB 0%, #FBFBFB 31%, #FBFBFB 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #ededed 0%, #ededed 31%, #ededed 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
+  background: -webkit-linear-gradient(45deg, #FBFBFB 0%, #FBFBFB 31%, #FBFBFB 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #ededed 0%, #ededed 31%, #ededed 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
+  background: linear-gradient(45deg, #FBFBFB 0%, #FBFBFB 31%, #FBFBFB 32%, #737373 32%, #737373 60%, #ff6b01 60%, #ff6b01 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-light', endColorstr='@color-brand-south', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-lighter', endColorstr='@color-brand-south', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 #site-footer .col-right {
@@ -323,22 +323,27 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 #site-footer .portlet a {
   border-color: #ff6b01 !important;
 }
-body.template-country_view .country-right-column {
-  background-color: #ededed;
+body.template-country_view .tab-content .container {
+  padding: 20px 10px 20px 10px;
+  background-color: #FBFBFB;
+  border: 1px solid #ededed;
+  overflow: auto;
 }
 /* WIP country_view
 html
   body.template-country_view
-    .row
-      .country-left-column
-      .countru-right-column
-        ul.nav.nav-tabs
-          li.active
-        div.tab-content
-          .row
-            .country-subsection-listing
-              .h4
-                ul
-                a
+    .tab-content
+      .container
+        .row
+          .country-left-column
+          .countru-right-column
+            ul.nav.nav-tabs
+              li.active
+            div.tab-content
+              .row
+                .country-subsection-listing
+                  .h4
+                    ul
+                    a
 */
 /*# sourceMappingURL=./source.css.map */
