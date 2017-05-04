@@ -546,10 +546,6 @@ small,
   padding-right: 1rem;
   max-width: 1200px;
 }
-.row {
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
 .row:before,
 .row:after {
   content: "";

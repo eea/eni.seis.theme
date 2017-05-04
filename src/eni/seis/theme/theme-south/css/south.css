@@ -399,9 +399,12 @@ body.template-country_view .tab-content .container .country-subsection-listing d
 }
 body.template-country_view .tab-content .container .country-subsection-listing div ul {
   margin-left: 0 !important;
+  padding-left: 0;
+  position: relative;
+  right: -24px;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div ul li {
-  padding: 5px 3px 5px 3px;
+  padding: 10px 5px 10px 5px;
   list-style: none;
   border-bottom: 1px solid #ededed;
 }
