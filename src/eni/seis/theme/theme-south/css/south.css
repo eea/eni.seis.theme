@@ -412,6 +412,7 @@ body.template-country_view .tab-content .container .country-subsection-listing d
   width: 120%;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div ul li {
+  margin-bottom: 0px !important;
   padding: 10px 5px 10px 5px;
   list-style: none;
   border-bottom: 1px solid #ededed;
