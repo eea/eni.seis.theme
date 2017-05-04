@@ -1,0 +1,31 @@
+<metal:macro define-macro="portlet">
+
+<tal:def tal:define="
+vocab context/event_countries_vocab;
+events python: [b.getObject() for b in context.portal_catalog.searchResults(portal_type=['Event', 'eea.meeting'], review_state='published', sort_on='start', sort_order='reverse')];
+events python: [ev for ev in events if vocab[context.Title()] in (ev.countries or [])];
+">
+
+<dl class="box leading-large portlet portletEvents" tal:condition="events">
+  <dt>Events</dt>
+  <dd>
+    <div tal:repeat="event events">
+
+      <a href="" tal:attributes="href event/absolute_url" class="tile" title="" >
+        <img tal:attributes="src python:event.getLeadImagePath('thumb', 'event-fallback.png')" />
+      </a>
+
+      <a tal:attributes="href event/absolute_url" class="tile" title="" tal:content="event/Title" />
+
+      <span class="portletItemDetails">
+        <span tal:replace="python:event.get_event_dates(event=event)" />
+        <span tal:replace="python:event.get_event_year(event=event)" />
+        <span class="location"> —
+          <span tal:replace="event/location" />
+        </span>
+      </span>
+    </div>
+  </dd>
+</dl>
+</tal:def>
+</metal:macro>

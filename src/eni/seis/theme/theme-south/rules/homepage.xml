@@ -17,6 +17,9 @@
     <replace css:theme="[data-diazo='homepage-section-governance-text']" css:content="[data-diazo='homepage-section-governance-text']" />
     <replace css:theme="[data-diazo='homepage-section-partners-text']" css:content="[data-diazo='homepage-section-partners-text']" />
 
+    <replace css:theme="[data-diazo='frontpage-news']" css:content="[data-diazo='frontpage-news']" />
+    <replace css:theme="[data-diazo='frontpage-events']" css:content="[data-diazo='frontpage-events']" />
+
     <drop css:theme=".page-aside" />
   </rules>
 
