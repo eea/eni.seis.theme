@@ -380,7 +380,14 @@ body {
   color: #555;
 }
 h1,
-.h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #31456e;
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
 h2,
 .h2,
 h3,
