@@ -1,0 +1,17 @@
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n" name="portal_actions" meta_type="Plone Actions Tool">
+
+  <object name="user" meta_type="CMF Action Category">
+    <object name="sections-edit" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Edit Site Theme Text</property>
+      <property name="description" i18n:translate=""/>
+      <property name="url_expr">
+        string:${globals_view/navigationRootUrl}/special_sections_edit
+      </property>
+      <property name="permissions">
+        <element value="Manage portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+
+</object>
