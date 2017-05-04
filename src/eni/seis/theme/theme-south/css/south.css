@@ -64,6 +64,9 @@
   color: #ff6b01;
   font-weight: 600;
 }
+.navbar-brand p {
+  color: #737373;
+}
 .section a {
   color: #ff6b01;
 }
@@ -442,5 +445,8 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   text-transform: uppercase;
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
+}
+.text-accent {
+  color: #08a8dc;
 }
 /*# sourceMappingURL=./source.css.map */
