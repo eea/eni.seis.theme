@@ -25,3 +25,12 @@ INSTALL
         delete old homepage page template
 
     get rid of customs: portlet_* in portal_skins/custom
+
+    add content lead image behavior for event:
+        site setup > dexterity content types > meeting > behaviours
+        /dexterity-types/eea.meeting/@@behaviors
+            lead image
+
+TODO
+- Add "event-fallback.png" in skin
+- Event - National, Regional. Add Other.
