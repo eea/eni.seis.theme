@@ -1,18 +1,27 @@
 <html metal:use-macro="here/main_template/macros/master">
   <metal:content fill-slot="body">
 
-  <main class="page-main" data-diazo="homepage-content">
+    <main class="page-main" data-diazo="homepage-content">
 
-  <!-- Moved on banner by diazo rule -->
-  <p class="site-description" data-diazo="site-description" tal:content="context/description"></p>
+      <!-- Moved on banner by diazo rule -->
+      <p class="site-description" data-diazo="site-description" tal:content="context/description"></p>
 
-  <section class="section" data-diazo="news-homepage">
-    <tal:content tal:define="folderContents context/communication/newsletter/getFolderNews" >
-      <tal:news metal:use-macro="here/news_tabular_view/macros/listing">
-      </tal:news>
-    </tal:content>
-  </section>
+      <section class="section" data-diazo="news-homepage">
+        <tal:content tal:define="folderContents context/communication/newsletter/getFolderNews">
+          <tal:news metal:use-macro="here/news_tabular_view/macros/listing"></tal:news>
+        </tal:content>
+      </section>
 
-  </main>
+      <tal:rep repeat="name python: ['homepage-areas-of-work', 'project-description']">
+      <section class="section"
+               data-diazo="..."
+               tal:define="text python: context.getDocText(name)"
+               tal:attributes="data-diazo name"
+               tal:content="structure text"
+               >
+      </section>
+      </tal:rep>
+
+    </main>
   </metal:content>
 </html>

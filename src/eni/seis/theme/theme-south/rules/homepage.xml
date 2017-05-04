@@ -9,25 +9,9 @@
 
     <theme href="frontpage.html" />
 
-    <xsl:comment>
-
-      Not valid?
-      <replace css:content-children=".documentDescription"
-        css:theme-children=".site-description" />
-
-      <!-- Site description on banner -->
-      <replace css:theme=".site-description"
-        css:content="[data-diazo='site-description']" />
-
-    </xsl:comment>
-
-
     <!-- Text over the map -->
-    <replace css:theme="[data-diazo='project-description']"
-      href="project-description" method="document"
-      css:content="#content-core" />
-
-    <replace css:theme="[data-diazo='news-homepage']" css:content="[data-diazo='news-homepage']" method="raw" />
+    <replace css:theme="[data-diazo='project-description']" css:content="[data-diazo='project-description']" />
+    <replace css:theme="[data-diazo='homepage-areas-of-work']" css:content="[data-diazo='homepage-areas-of-work']" />
 
     <!--  -->
     <!-- <!&#45;&#45; Section: Governance &#45; get content from page &#45;&#45;> -->
@@ -63,5 +47,19 @@
 
     <drop css:theme=".page-aside" />
   </rules>
+
+    <xsl:comment>
+
+      Not valid?
+      <replace css:content-children=".documentDescription"
+        css:theme-children=".site-description" />
+
+      <!-- Site description on banner -->
+      <replace css:theme=".site-description"
+        css:content="[data-diazo='site-description']" />
+
+      <replace css:theme="[data-diazo='news-homepage']" css:content="[data-diazo='news-homepage']" method="raw" />
+
+    </xsl:comment>
 
 </rules>
