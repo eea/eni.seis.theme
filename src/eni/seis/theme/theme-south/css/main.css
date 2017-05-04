@@ -3087,6 +3087,9 @@ legend .level-national {
     text-shadow: 1px 1px 1px #eee;
   }
 }
+ul.submenu {
+  text-align: initial;
+}
 .submenu.navTree {
   left: 168px!important;
   top: -37px;
@@ -3209,7 +3212,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 #site-footer h3 {
   padding-bottom: .5rem;
   padding-right: 10px;
-  color: #a1a2b2;
+  color: #FFFFFF;
   font-weight: 600;
   border-bottom: solid #FFFFFF;
   display: inline-block;
@@ -3233,6 +3236,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 }
 #site-footer .portlet p {
   font-size: initial;
+  color: #FFFFFF;
 }
 #site-footer .navbar-credits {
   padding-top: 50px;

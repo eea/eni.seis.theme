@@ -458,6 +458,8 @@ body.template-atct_edit #content > div:first-of-type {
 }
 #site-header .login-link {
   color: #222222;
+  position: relative;
+  top: 10px;
 }
 @media (max-width: 959px) {
   #site-header .login-link {
