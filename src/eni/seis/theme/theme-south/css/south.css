@@ -64,6 +64,9 @@
   color: #ff6b01;
   font-weight: 600;
 }
+.navbar-brand p {
+  color: #737373;
+}
 .section a {
   color: #ff6b01;
 }
@@ -276,13 +279,20 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .site-banner {
   border-top: solid #ff6b01;
 }
+#site-footer .contact a {
+  font-weight: 500;
+  color: #222222;
+}
+#site-footer .contact a:hover {
+  color: #ff6b01;
+}
 #portal-breadcrumbs a {
   color: #222222;
 }
 #portal-breadcrumbs a:hover {
   color: #ff6b01;
 }
-#portal-breadcrumbs #breadcrumbs-current {
+#breadcrumbs-current {
   color: #ff6b01;
 }
 .documentFirstHeading {
@@ -326,7 +336,7 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 }
 #site-footer .container-fluid {
   background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
-  min-height: 230px;
+  min-height: 250px;
   color: #FFFFFF;
 }
 #site-footer .col-left {
@@ -338,14 +348,14 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 #site-footer .col-middle {
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 230px;
+  min-height: 250px;
   color: #FFFFFF;
 }
 #site-footer .col-right {
   padding-top: 20px;
   padding-bottom: 20px;
   background: #ff6b01;
-  min-height: 230px;
+  min-height: 250px;
   color: #FFFFFF;
 }
 #site-footer .portlet a {
@@ -406,10 +416,10 @@ body.template-country_view .tab-content .container .country-subsection-listing d
 body.template-country_view .tab-content .container .country-subsection-listing div ul {
   margin-left: 0 !important;
   padding-left: 0;
-  position: relative;
-  right: -24px;
+  width: 120%;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div ul li {
+  margin-bottom: 0px !important;
   padding: 10px 5px 10px 5px;
   list-style: none;
   border-bottom: 1px solid #ededed;
@@ -442,5 +452,8 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   text-transform: uppercase;
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
+}
+.text-accent {
+  color: #08a8dc;
 }
 /*# sourceMappingURL=./source.css.map */

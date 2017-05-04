@@ -52,6 +52,10 @@
     font-weight: 600;
 }
 
+.navbar-brand p {
+    color: @color-gray;
+}
+
 .section {
     a {
         color: @color-brand-south;
@@ -323,6 +327,16 @@ body.template-country_view {
     border-top: solid @color-brand-south;
 }
 
+#site-footer .contact {
+    a {
+        font-weight: 500;
+        color: @color-gray-dark;
+    }
+    a:hover {
+        color: @color-brand-south;
+    }
+}
+
 #portal-breadcrumbs {
     a {
         color: @color-gray-dark;
@@ -330,9 +344,9 @@ body.template-country_view {
     a:hover {
         color: @color-brand-south;
     }
-    #breadcrumbs-current {
-        color: @color-brand-south;
-    }
+}
+#breadcrumbs-current {
+    color: @color-brand-south;
 }
 
 .documentFirstHeading {
@@ -379,7 +393,7 @@ body.template-country_view {
     color: #FFFFFF;
     .container-fluid {
         background: -webkit-linear-gradient(left, @color-gray-lighter, @color-gray-lighter 50%, @color-brand-south 50%, @color-brand-south);
-        min-height: 230px;
+        min-height: 250px;
         color: #FFFFFF;
     }
     .col-left {
@@ -391,14 +405,14 @@ body.template-country_view {
     .col-middle {
         padding-top: 20px;
         padding-bottom: 20px;
-        min-height: 230px;
+        min-height: 250px;
         color: #FFFFFF;
     }
     .col-right {
         padding-top: 20px;
         padding-bottom: 20px;
         background: @color-brand-south;
-        min-height: 230px;
+        min-height: 250px;
         color: #FFFFFF;
     }
     .portlet {
@@ -474,10 +488,10 @@ body.template-country_view {
                 ul {
                     margin-left: 0 !important;
                     padding-left: 0;
-                    position: relative;
-                    right: -24px;
+                    width: 120%;
 
                     li {
+                        margin-bottom: 0px !important;
                         .fa {
                             color: @color-gray-light2;
                             margin-right: 5px;
@@ -517,4 +531,8 @@ body.template-country_view {
             }
         }
     }
+}
+
+.text-accent {
+    color: @color-accent;
 }

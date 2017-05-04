@@ -3240,6 +3240,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
   margin-top: 1rem;
   float: none;
 }
+#site-footer .navbar-credits img {
+  max-height: 50px;
+}
 #site-footer .navbar-credits small {
   display: block;
   clear: both;

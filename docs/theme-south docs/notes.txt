@@ -23,3 +23,5 @@ INSTALL
 
     /portal_skins/custom/manage_main
         delete old homepage page template
+
+    get rid of customs: portlet_* in portal_skins/custom
