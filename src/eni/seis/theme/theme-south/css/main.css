@@ -2889,6 +2889,26 @@ legend .level-national {
 .navbar-brand .navbar-title strong {
   color: #ff6b01;
 }
+.navbar-body {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.navbar-body #portal-globalnav {
+  margin-top: 0px;
+}
+.navbar-body #portal-globalnav li > a {
+  padding: 0.4em 0.9em 0.5em 0.9em;
+}
+.navbar-body #portal-globalnav li .submenu li a {
+  background: #08a8dc !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+.navbar-body #portal-globalnav li .submenu li a:hover {
+  background: #FFFFFF !important;
+  color: #ff6b01 !important;
+  font-weight: 600;
+}
 @media (min-width: 960px) and (max-width: 1390px) {
   #navbar .navbar-credits {
     float: left;

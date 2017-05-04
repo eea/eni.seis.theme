@@ -70,6 +70,30 @@
     }
 }
 
+.navbar-body {
+    #portal-globalnav {
+        li > a {
+            padding: 0.4em 0.9em 0.5em 0.9em;
+        }
+        margin-top: 0px;
+
+        li .submenu {
+            li a {
+                background: @color-accent !important;
+                color: #FFFFFF !important;
+                font-weight: 600;
+            }
+            li a:hover {
+                background: #FFFFFF !important;
+                color: #ff6b01 !important;
+                font-weight: 600;
+            }
+        }
+    }
+    border-top: 1px solid @color-gray-light;
+    border-bottom: 1px solid @color-gray-light;
+}
+
 @media (min-width:960px) and (max-width: 1390px) {
     #navbar .navbar-credits {
         float: left;
