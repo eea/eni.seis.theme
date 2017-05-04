@@ -279,13 +279,20 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .site-banner {
   border-top: solid #ff6b01;
 }
+#site-footer .contact a {
+  font-weight: 500;
+  color: #222222;
+}
+#site-footer .contact a:hover {
+  color: #ff6b01;
+}
 #portal-breadcrumbs a {
   color: #222222;
 }
 #portal-breadcrumbs a:hover {
   color: #ff6b01;
 }
-#portal-breadcrumbs #breadcrumbs-current {
+#breadcrumbs-current {
   color: #ff6b01;
 }
 .documentFirstHeading {
@@ -329,7 +336,7 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 }
 #site-footer .container-fluid {
   background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
-  min-height: 230px;
+  min-height: 250px;
   color: #FFFFFF;
 }
 #site-footer .col-left {
@@ -341,14 +348,14 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 #site-footer .col-middle {
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 230px;
+  min-height: 250px;
   color: #FFFFFF;
 }
 #site-footer .col-right {
   padding-top: 20px;
   padding-bottom: 20px;
   background: #ff6b01;
-  min-height: 230px;
+  min-height: 250px;
   color: #FFFFFF;
 }
 #site-footer .portlet a {
