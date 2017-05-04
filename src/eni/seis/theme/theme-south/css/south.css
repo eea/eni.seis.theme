@@ -338,6 +338,7 @@ body.template-country_view .nav-tabs > li.active > a:focus {
   background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
   min-height: 250px;
   color: #FFFFFF;
+  overflow: auto;
 }
 #site-footer .col-left {
   padding-top: 20px;
