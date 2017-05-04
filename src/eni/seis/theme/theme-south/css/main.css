@@ -384,7 +384,7 @@ h1,
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.2;
-  color: #31456e;
+  color: #222222;
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
 }
@@ -401,7 +401,7 @@ h6,
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.2;
-  color: #31456e;
+  color: #222222;
   font-weight: 600;
   font-family: 'Fira Sans', sans-serif;
 }
@@ -3418,7 +3418,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 .lp-main h1,
 .lp-main h2,
 .lp-main a {
-  color: #31456e;
+  color: #222222;
 }
 .lp-main #site-footer {
   border: none;
@@ -3509,7 +3509,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
   background: white!important;
 }
 .lp-links li:first-of-type:hover a {
-  color: #31456e!important;
+  color: #222222!important;
 }
 .lp-links li:first-of-type:hover span {
   color: #F7931E!important;
@@ -3518,7 +3518,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
   background: white!important;
 }
 .lp-links li:last-of-type:hover a {
-  color: #31456e!important;
+  color: #222222!important;
 }
 .lp-links li:last-of-type:hover a span {
   color: #009245!important;
@@ -3665,7 +3665,7 @@ ul.configlets {
   margin-top: 0;
 }
 .template-homepage p {
-  color: rgba(49, 69, 110, 0.75);
+  color: rgba(34, 34, 34, 0.75);
 }
 .template-homepage .page-aside p {
   color: #a1a2b2;
@@ -3773,14 +3773,14 @@ ul.configlets {
   padding: 0.4em 0.5em;
 }
 .homepage-news thead th {
-  background-color: #31456e;
+  background-color: #222222;
   color: #fff;
 }
 .homepage-news tbody tr {
-  border-top: 1px solid #31456e;
+  border-top: 1px solid #222222;
 }
 .homepage-news a {
-  color: #31456e;
+  color: #222222;
 }
 [data-diazo="section-areas-of-work"] .section-body {
   margin-left: 0;

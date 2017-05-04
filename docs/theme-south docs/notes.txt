@@ -24,9 +24,10 @@ INSTALL
             add eni_seis_south as layer under custom (then first Save button)
 
     /portal_skins/custom/manage_main
-        delete old homepage page template
+        get rid of customs: portlet_* in portal_skins/custom
+                            south-custom.css
+                            homepage.pt
 
-    get rid of customs: portlet_* in portal_skins/custom
 
     add content lead image behavior for event:
         site setup > dexterity content types > meeting > behaviours
