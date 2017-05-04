@@ -2394,11 +2394,6 @@ body {
 #site-header .login-link {
   float: right;
 }
-@media (max-width: 959px) {
-  #site-header .login-link {
-    margin-top: 1rem;
-  }
-}
 #site-footer .login-link {
   position: relative;
   background: none;
@@ -2857,6 +2852,9 @@ legend .level-national {
   display: inline-block;
   padding: 0.4em 0.5em;
 }
+.navbar-credits {
+  margin-bottom: 40px;
+}
 @media (min-width: 1390px) {
   .navbar-credits {
     float: left;
@@ -2870,6 +2868,7 @@ legend .level-national {
 }
 .navbar-credits img {
   display: block;
+  max-height: 35px;
 }
 @media (min-width: 1390px) {
   .navbar-brand p {

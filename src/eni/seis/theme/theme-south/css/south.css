@@ -109,9 +109,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: white;
   box-shadow: 1px 1px 3px #949494;
 }
-.login-link:before {
-  color: #ff6b01;
-}
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
     border-top: solid #ff6b01;
@@ -458,5 +455,16 @@ body.template-atct_edit #content {
 }
 body.template-atct_edit #content > div:first-of-type {
   text-align: center;
+}
+#site-header .login-link {
+  color: #222222;
+}
+@media (max-width: 959px) {
+  #site-header .login-link {
+    margin-top: 1rem;
+  }
+}
+#site-header .login-link:hover {
+  color: #ff6b01 !important;
 }
 /*# sourceMappingURL=./source.css.map */

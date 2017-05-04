@@ -110,10 +110,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     box-shadow: 1px 1px 3px #949494;
 }
 
-.login-link:before {
-    color: @color-orange;
-}
-
 #portal-globalnav {
     @media @screen-md {
         ul.submenu {
@@ -537,4 +533,15 @@ body.template-atct_edit #content {
 }
 body.template-atct_edit #content > div:first-of-type {
     text-align: center;
+}
+
+#site-header .login-link {
+    color: @color-gray-dark;
+    @media @screen-md-upto {
+        margin-top: 1rem;
+    }
+}
+
+#site-header .login-link:hover {
+    color: @color-brand-south !important;
 }
