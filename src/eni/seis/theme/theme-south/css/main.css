@@ -2419,7 +2419,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: white;
-  color: #31456e;
+  color: #222222;
   text-align: center;
 }
 .page-header .page-container {
@@ -3070,7 +3070,7 @@ legend .level-national {
   }
   #portal-globalnav > li > a {
     padding: 0.4em 0.5em;
-    color: #31456e;
+    color: #222222;
     background: transparent!important;
     font-weight: 600;
   }
