@@ -453,4 +453,10 @@ body.template-country_view .tab-content .container .country-subsection-listing h
 .text-accent {
   color: #08a8dc;
 }
+body.template-atct_edit #content {
+  text-align: initial;
+}
+body.template-atct_edit #content > div:first-of-type {
+  text-align: center;
+}
 /*# sourceMappingURL=./source.css.map */
