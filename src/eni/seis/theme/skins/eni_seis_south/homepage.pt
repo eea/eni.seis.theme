@@ -34,6 +34,7 @@
       ]">
       <section class="section"
                data-diazo="..."
+               tal:attributes="data-diazo name"
                tal:define="text python:context.restrictedTraverse(name)()"
                tal:content="structure text"
                tal:on-error="string: Error in ${name}"
