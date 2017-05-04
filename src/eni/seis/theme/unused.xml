@@ -1,0 +1,101 @@
+
+
+    <replace css:content-children=".documentDescription"
+             css:theme-children=".site-description" />
+
+    <!-- Site description on banner -->
+    <replace css:theme=".site-description"
+             css:content="[data-diazo='site-description']" />
+
+    <replace css:theme="[data-diazo='project-description']"
+             href="project-description" method="document"
+             css:content="#content-core" />
+
+    <replace css:theme="[data-diazo='news-homepage']"
+             css:content="[data-diazo='news-homepage']" />
+
+    <!-- Section: Governance - get content from page -->
+    <replace css:theme="[data-diazo='section-governance']"
+             href="homepage-section-governance-text" method="document"
+             css:content="section" />
+
+    <!-- Section: Workplan - get content from page -->
+    <replace css:theme="[data-diazo='section-workplan']"
+             href="homepage-section-workplan-text" method="document"
+             css:content="section" />
+
+    <!-- Section: Partners - get content from page -->
+    <replace css:theme="[data-diazo='section-partners']"
+             href="homepage-section-partners-text" method="document"
+             css:content="section" />
+
+    <!-- Section: Aow slider - get content from page -->
+    <replace css:theme="[data-diazo='eni-aow-slider']"
+             href="homepage-section-aow-slider" method="document"
+             css:content-children="#content-core" />
+
+    <!-- Section: Events - get content from custom homepage template -->
+    <drop css:theme-children="[data-diazo='section-events']" />
+
+    <drop css:theme=".page-header" />
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+    <drop css:theme=".page-aside nav.nav-folder" />
+    <drop css:theme=".breadcrumbs" />
+
+
+
+<!--     <footer id="site-footer">
+      <div class="page-container">
+        <div class="footer-brand">
+          <div class="site-title-footer no-leading">ENI SEIS II <strong>East</strong></div>
+        </div>
+        <div class="footer-content-wrapper">
+          <div class="contact">
+            <h4> Contact details </h4>
+            <a href="http://www.eea.europa.eu/" target="_blank">
+              European Environment Agency (EEA)
+            </a>
+            <span>Kongens Nytorv 6</span>
+            <span>1050 Copenhagen K, Denmark</span><br />
+            <span>Phone: +45 3336 7100</span><br>
+            <small>2016 ENI SEIS II. All rights reserved<small>
+          </div>
+
+          <div class="box newsletter-box-footer">
+            <div class="box leading-large portlet portletStaticText portlet-static-newsletter">
+              <h4>Newsletter</h4>
+              <p>Subscribe to our newsletter to be up to date with the project implementation.</p>
+              <p><a href="https://confirmsubscription.com/h/d/E382DF620E205C3D">Subscribe</a></p>
+              <span class="portletBottomLeft"></span>
+              <span class="portletBottomRight"></span>
+            </div>
+          </div>
+
+          <div class="login-wrapper">
+            <a href="http://www.eea.europa.eu/legal/">Legal notice</a>
+            <span data-diazo="login-link"></span>
+            <div class="navbar-credits">
+              <small> This project is funded by the European Union </small>
+              <a href="http://www.europa.eu/" title="European Union">
+                <img src="./img/logo-eu.png" alt="European Union logo" />
+              </a>
+              <a href="http://www.eea.europa.eu" title="European Environment Agency">
+                <img src="./img/eea-logo.png" alt="European Environment Agency logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div> -->
+
+
+<!-- <section data&#45;diazo="section&#45;governance">governance here</section> -->
+<!-- <section data&#45;diazo="section&#45;workplan">workplan here</section> -->
+<!-- <section data&#45;diazo="section&#45;partners"></section> -->
+<!-- <section data&#45;diazo="section&#45;eni&#45;aow&#45;slider"></section> -->
+<!-- <section data&#45;diazo="section&#45;events"></section> -->
+<!-- <section data&#45;diazo="project&#45;description"></section> -->
+<!--  -->
+

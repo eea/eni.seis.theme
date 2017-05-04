@@ -7,6 +7,8 @@
   <!-- Custom homepage (as view) -->
   <rules css:if-content="body.template-homepage">
 
+    <theme href="mockup/frontpage.html" />
+
     <xsl:comment>
 
       Not valid?

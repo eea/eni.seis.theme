@@ -132,7 +132,7 @@
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
-    <theme href="index.html" />
+    <theme href="mockup/page.html" />
 
     <!-- Replace title with Plone's page title  -->
     <replace
@@ -347,6 +347,5 @@
 
   <!-- Google Analytics -->
   <after theme-children="/html/body" content="//*[@id='portal-footer-wrapper']/div/script" />
-
 
 </rules>
