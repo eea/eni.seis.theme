@@ -1,5 +1,5 @@
 <dl class="box leading-large portlet portletEvents"
-    tal:define="events_path python: 'communication/events';
+    tal:define="events_path python: '/south/communication/events';
                 events_folder python: context.restrictedTraverse(events_path);
                 events python: events_folder.getFolderContents(
                   full_objects=True,
@@ -8,7 +8,7 @@
                                  'portal_type':['Event', 'EEA Meeting']}
                  )[:4]">
 
-  <dt>Events</dt>
+  <dt>Upcoming Events</dt>
   <dd>
     <div tal:repeat="event events">
 
@@ -27,6 +27,9 @@
           <span tal:replace="event/location">Bucharest</span>
         </span>
       </span>
+    </div>
+    <div>
+      <a href="" tal:attributes="href events_path">More events</a>
     </div>
   </dd>
 </dl>
