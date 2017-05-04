@@ -323,8 +323,16 @@ body.template-country_view {
     border-top: solid @color-brand-south;
 }
 
-#breadcrumbs-current {
-    color: @color-brand-south;
+#portal-breadcrumbs {
+    a {
+        color: @color-gray-dark;
+    }
+    a:hover {
+        color: @color-brand-south;
+    }
+    #breadcrumbs-current {
+        color: @color-brand-south;
+    }
 }
 
 .documentFirstHeading {
@@ -464,11 +472,17 @@ body.template-country_view {
             div {
                 padding-bottom: 50px;
                 ul {
+                    margin-left: 0 !important;
+                    padding-left: 0;
+                    position: relative;
+                    right: -24px;
+
                     li {
                         .fa {
                             color: @color-gray-light2;
+                            margin-right: 5px;
                         }
-                        padding: 5px 3px 5px 3px;
+                        padding: 10px 5px 10px 5px;
                         list-style: none;
                         border-bottom: 1px solid @color-gray-light;
                         a {
@@ -485,7 +499,6 @@ body.template-country_view {
                     li:last-of-type {
                         border-bottom: none;
                     }
-                    margin-left: 0 !important;
                 }
             }
 
