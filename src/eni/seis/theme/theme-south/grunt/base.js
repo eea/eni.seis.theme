@@ -12,7 +12,7 @@ module.exports = {
           expand: true,     // Enable dynamic expansion.
           cwd: 'mockup/',      // Src matches are relative to this path.
           src: '*.hbs', // Actual pattern(s) to match.
-          dest: 'mockup/',   // Destination path prefix.
+          dest: './',   // Destination path prefix.
           ext: '.html'  // Dest filepaths will have this extension.
         }
       ]

@@ -7,7 +7,7 @@
   <!-- Custom homepage (as view) -->
   <rules css:if-content="body.template-homepage">
 
-    <theme href="mockup/frontpage.html" />
+    <theme href="frontpage.html" />
 
     <xsl:comment>
 

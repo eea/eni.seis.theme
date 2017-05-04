@@ -132,7 +132,7 @@
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
-    <theme href="mockup/page.html" />
+    <theme href="page.html" />
 
     <!-- Drop banner for all pages except homepage -->
     <rules css:if-not-content="body.section-front-page, body.template-homepage">
