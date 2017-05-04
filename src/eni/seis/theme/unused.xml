@@ -99,3 +99,16 @@
 <!-- <section data&#45;diazo="project&#45;description"></section> -->
 <!--  -->
 
+    <xsl:comment>
+
+      Not valid?
+      <replace css:content-children=".documentDescription"
+        css:theme-children=".site-description" />
+
+      <!-- Site description on banner -->
+      <replace css:theme=".site-description"
+        css:content="[data-diazo='site-description']" />
+
+      <replace css:theme="[data-diazo='news-homepage']" css:content="[data-diazo='news-homepage']" method="raw" />
+
+    </xsl:comment>

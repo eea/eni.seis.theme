@@ -7,8 +7,8 @@
     <li><a href="/south/homepage-areas-of-work/edit">Areas of work</a></li>
     <li><a href="/south/project-description/edit">Project Description</a></li>
     <li><a href="/south/homepage-section-governance-text/edit">Governance text</a></li>
+    <li><a href="/south/homepage-section-partners-text">Countries section text</a></li>
   </ul>
 
   </metal:content>
 </html>
-
