@@ -12,6 +12,8 @@ INSTALL
         Advanced Import
             profile eni.seis.theme:default
             import "skins tool"
+            import "Action providers"
+
     /portal_skins/manage_main
         add eni_seis_south as layer under custom
     Not sure:
