@@ -64,9 +64,4 @@
     <drop css:theme=".page-aside" />
   </rules>
 
-  <!-- Drop banner for all pages except homepage -->
-  <!-- <rules css:if&#45;not&#45;content="body.section&#45;front&#45;page, body.template&#45;homepage"> -->
-    <!--   <drop css:theme=".site&#45;banner" /> -->
-    <!-- </rules> -->
-
 </rules>

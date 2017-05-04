@@ -134,6 +134,11 @@
 
     <theme href="mockup/page.html" />
 
+    <!-- Drop banner for all pages except homepage -->
+    <rules css:if-not-content="body.section-front-page, body.template-homepage">
+      <drop css:theme=".site-banner" />
+    </rules>
+
     <!-- Replace title with Plone's page title  -->
     <replace
       css:content="html head title"
