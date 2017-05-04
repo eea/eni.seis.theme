@@ -332,7 +332,7 @@ body.template-country_view .nav-tabs > li.active > a:focus {
   color: #FFFFFF;
 }
 #site-footer .row.footer-content-wrapper {
-  background: linear-gradient(60deg, #fbfbfb 0%, #fbfbfb 25%, #737373 25%, #737373 69%, #ff6b01 69%, #ff6b01 100%);
+  background: linear-gradient(60deg, #fbfbfb 0%, #fbfbfb 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
 }
 #site-footer .container-fluid {
   background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
@@ -355,12 +355,8 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 #site-footer .col-right {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #ff6b01;
   min-height: 250px;
   color: #FFFFFF;
-}
-#site-footer .portlet a {
-  border-color: #ff6b01 !important;
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;
