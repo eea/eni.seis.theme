@@ -1,11 +1,13 @@
 <metal:macro define-macro="portlet">
   <tal:def tal:define="
+    newsletterpath python:'/south/communication/newsletter';
     news python: [b.getObject() for b in context.portal_catalog.searchResults(
-        portal_type=['News Item'],
-        review_state='published',
-        sort_on='effective',
-        sort_order='descending',
-        path='/south/communication/newsletter')
+          portal_type=['News Item'],
+          review_state='published',
+          sort_on='effective',
+          sort_order='descending',
+          path=newsletterpath,
+        )
         ][:9];
         toLocalizedTime nocall: context/@@plone/toLocalizedTime;
     ">
@@ -13,6 +15,7 @@
     <dl class="box leading-large portlet portletEvents" tal:condition="news">
       <dt>News</dt>
       <dd tal:define="firstn python: news[0]">
+
         <div>
           <a href="" tal:attributes="href firstn/absolute_url" class="tile">
             <img tal:attributes="src python:firstn.getLeadImagePath('mini', 'newsitem-fallback.png')" />
@@ -24,14 +27,13 @@
         </div>
 
         <div tal:repeat="ni python:news[1:]">
-
           <a tal:attributes="href ni/absolute_url" class="tile" tal:content="ni/Title">
             news item
           </a>
-          <span class="portletItemDetails location">
-            Published: <tal:block tal:content="python:toLocalizedTime(ni.effective(),long_format=0)" />
-          </span>
+        </div>
 
+        <div>
+          <a href="" tal:attributes="href newsletterpath">More news</a>
         </div>
       </dd>
     </dl>
