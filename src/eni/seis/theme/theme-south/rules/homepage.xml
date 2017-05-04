@@ -11,55 +11,13 @@
 
     <!-- Text over the map -->
     <replace css:theme="[data-diazo='project-description']" css:content="[data-diazo='project-description']" />
+
+    Various sections in frontpage
     <replace css:theme="[data-diazo='homepage-areas-of-work']" css:content="[data-diazo='homepage-areas-of-work']" />
-
-    <!--  -->
-    <!-- <!&#45;&#45; Section: Governance &#45; get content from page &#45;&#45;> -->
-    <!-- <replace css:theme="[data&#45;diazo='section&#45;governance']" -->
-      <!--          href="homepage&#45;section&#45;governance&#45;text" method="document" -->
-      <!--          css:content="section" /> -->
-    <!--  -->
-    <!-- <!&#45;&#45; Section: Workplan &#45; get content from page &#45;&#45;> -->
-    <!-- <replace css:theme="[data&#45;diazo='section&#45;workplan']" -->
-      <!--          href="homepage&#45;section&#45;workplan&#45;text" method="document" -->
-      <!--          css:content="section" /> -->
-    <!--  -->
-    <!-- <!&#45;&#45; Section: Partners &#45; get content from page &#45;&#45;> -->
-    <!-- <replace css:theme="[data&#45;diazo='section&#45;partners']" -->
-      <!--          href="homepage&#45;section&#45;partners&#45;text" method="document" -->
-      <!--          css:content="section" /> -->
-    <!--  -->
-    <!-- <!&#45;&#45; Section: Aow slider &#45; get content from page &#45;&#45;> -->
-    <!-- <replace css:theme="[data&#45;diazo='eni&#45;aow&#45;slider']" -->
-      <!--          href="homepage&#45;section&#45;aow&#45;slider" method="document" -->
-      <!--          css:content&#45;children="#content&#45;core" /> -->
-    <!--  -->
-    <!-- <!&#45;&#45; Section: Events &#45; get content from custom homepage template &#45;&#45;> -->
-    <!-- <drop css:theme&#45;children="[data&#45;diazo='section&#45;events']" /> -->
-    <!--  -->
-    <!-- <drop css:theme=".page&#45;header" /> -->
-    <!-- <drop css:theme=".page&#45;aside .box.newsletter&#45;box" /> -->
-    <!-- <drop css:theme=".page&#45;aside .box.leading&#45;large" /> -->
-    <!-- <drop css:theme=".page&#45;aside nav.nav&#45;folder" /> -->
-    <!-- <drop css:theme=".breadcrumbs" /> -->
-
-    <!-- <drop css:attributes="class" css:content=".aow&#45;slider" /> -->
+    <replace css:theme="[data-diazo='homepage-section-governance-text']" css:content="[data-diazo='homepage-section-governance-text']" />
+    <replace css:theme="[data-diazo='homepage-section-partners-text']" css:content="[data-diazo='homepage-section-partners-text']" />
 
     <drop css:theme=".page-aside" />
   </rules>
-
-    <xsl:comment>
-
-      Not valid?
-      <replace css:content-children=".documentDescription"
-        css:theme-children=".site-description" />
-
-      <!-- Site description on banner -->
-      <replace css:theme=".site-description"
-        css:content="[data-diazo='site-description']" />
-
-      <replace css:theme="[data-diazo='news-homepage']" css:content="[data-diazo='news-homepage']" method="raw" />
-
-    </xsl:comment>
 
 </rules>
