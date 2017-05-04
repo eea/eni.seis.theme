@@ -110,10 +110,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
     box-shadow: 1px 1px 3px #949494;
 }
 
-.login-link:before {
-    color: @color-orange;
-}
-
 #portal-globalnav {
     @media @screen-md {
         ul.submenu {
@@ -388,7 +384,7 @@ body.template-country_view {
 
 #site-footer {
     .row.footer-content-wrapper {
-        background: linear-gradient(60deg, #fbfbfb 0%,#fbfbfb 25%,#737373 25%,#737373 69%,#ff6b01 69%,#ff6b01 100%);
+        background: linear-gradient(60deg, #fbfbfb 0%,#fbfbfb 28%,#737373 28%,#737373 67%,#ff6b01 67%,#ff6b01 100%);
     }
     color: #FFFFFF;
     .container-fluid {
@@ -412,14 +408,8 @@ body.template-country_view {
     .col-right {
         padding-top: 20px;
         padding-bottom: 20px;
-        background: @color-brand-south;
         min-height: 250px;
         color: #FFFFFF;
-    }
-    .portlet {
-        a {
-            border-color: @color-orange !important;
-        }
     }
 }
 
@@ -536,4 +526,22 @@ body.template-country_view {
 
 .text-accent {
     color: @color-accent;
+}
+
+body.template-atct_edit #content {
+    text-align: initial;
+}
+body.template-atct_edit #content > div:first-of-type {
+    text-align: center;
+}
+
+#site-header .login-link {
+    color: @color-gray-dark;
+    @media @screen-md-upto {
+        margin-top: 1rem;
+    }
+}
+
+#site-header .login-link:hover {
+    color: @color-brand-south !important;
 }
