@@ -4,9 +4,14 @@ WORK
         $ node_modules/.bin/grunt
 
 INSTALL
+    in Site Setup - Theming
+        deactivate old theme (active one)
+        activate: eni.seis.theme.south - Eni South Theme
+
     /south/portal_css/manage_cssForm
         Add ++theme++eni.seis.theme.south/css/south.css
         render: link
+        uncheck merge, cache
 
     /portal_setup/manage_main
         Advanced Import
