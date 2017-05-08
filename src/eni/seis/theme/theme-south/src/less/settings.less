@@ -27,7 +27,7 @@
   @screen-sm-max:            ~"(max-width: @{breakpoint-lt-md})";
   @screen-sm-upto:           ~"(max-width: @{breakpoint-lt-sm})";
   @screen-sm-only:           ~"(min-width: @{breakpoint-sm}) and (max-width: @{breakpoint-lt-md})";
-  @screen-md:                ~"(min-width: @{breakpoint-md})";  
+  @screen-md:                ~"(min-width: @{breakpoint-md})";
   @screen-md-max:            ~"(max-width: @{breakpoint-lt-lg})";
   @screen-md-upto:           ~"(max-width: @{breakpoint-lt-md})";
   @screen-md-only:           ~"(min-width: @{breakpoint-md}) and (max-width: @{breakpoint-lt-lg})";
@@ -37,7 +37,7 @@
   @screen-lg-only:           ~"(min-width: @{breakpoint-lg}) and (max-width: @{breakpoint-lt-xl})";
   @screen-xl:                ~"(min-width: @{breakpoint-xl})";
   @screen-hires:             ~"(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx)";
-  
+
 
 // Metrics
 @rem-v-small:                .2rem;
@@ -51,7 +51,7 @@
 @rem-v-xxlarge:              1.8rem;
 @rem-h-xxlarge:              2.2rem;
 
-  //=> 
+  //=>
   @rem-x-small:                ((@rem-v-small + @rem-h-small) / 2);
   @rem-x:                      ((@rem-v + @rem-h) / 2);
   @rem-x-large:                ((@rem-v-large + @rem-h-large) / 2);
@@ -123,7 +123,7 @@
   @font-family:                 @font-family-sans-serif;
   @font-family-condensed:       @font-family-sans-serif;
   @font-family-heading:         @font-family;
-  
+
 @font-size-h1:               3rem;
 @font-size-h2:               1.8rem;
 @font-size-h3:               1.4rem;
@@ -175,7 +175,7 @@
 @color-red:                  #e02047;
 @color-orange-text:          #cb5411;
 @color-portlet:              #a1a2b2;
-@color-portlet-title:        darken(#a1a2b2,20%); 
+@color-portlet-title:        darken(#a1a2b2,20%);
 @color-text:                 rgba(49, 69, 110, 0.75);
 
 @color-dominant:             #ff6b01;
@@ -254,3 +254,7 @@
 
 // Grid
 @grid-gutter:                @gutter-large;
+
+
+@color-brand-south: #ff6b01;
+@color-brand-south-dark: darken(@color-brand-south, 10%);

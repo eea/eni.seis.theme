@@ -3690,6 +3690,9 @@ ul.configlets {
 .template-homepage .page-aside p {
   color: #a1a2b2;
 }
+.template-homepage .page-main {
+  width: 100%;
+}
 .template-homepage .portlet p {
   color: #a1a2b2;
 }
@@ -3802,26 +3805,6 @@ ul.configlets {
 .homepage-news a {
   color: #222222;
 }
-[data-diazo="section-areas-of-work"] .section-body {
-  margin-left: 0;
-}
-.aow {
-  display: block;
-  padding: .5rem;
-  padding-top: 4rem;
-  font-size: large;
-  background-size: cover;
-  border-radius: 0.3em;
-  color: #fff!important;
-  height: 150px;
-  text-decoration: none;
-  text-shadow: 0 1px 10px black;
-}
-.list-areas-of-work {
-  padding-left: 0;
-  list-style: none;
-  margin: -1rem;
-}
 .list-areas-of-work:before,
 .list-areas-of-work:after {
   content: "";
@@ -3832,35 +3815,12 @@ ul.configlets {
 }
 .list-areas-of-work li {
   position: relative;
-  display: block;
-  list-style: none;
-  box-sizing: border-box;
-  padding: 1rem;
-  text-align: center;
   float: left;
-  width: 50%;
-  min-width: 180px;
-}
-@media (max-width: 639px) {
-  .list-areas-of-work li {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
-.list-areas-of-work a:after {
-  content: '';
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  top: 32%;
-  bottom: 40%;
-  right: 0;
-  border-radius: 5px;
-  left: 0;
-  right: 10%;
-}
-.list-areas-of-work li:nth-child(odd) a:after {
-  left: 10%;
-  right: 0;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  list-style: none;
+  padding: 1rem;
 }
 @media (max-width: 959px) {
   .homepage-news thead {
@@ -3869,6 +3829,116 @@ ul.configlets {
   .homepage-news td {
     display: block;
   }
+}
+.section-frontpage-news {
+  margin-top: 4em;
+}
+.section-frontpage-news:before,
+.section-frontpage-news:after {
+  content: "";
+  display: table;
+}
+.section-frontpage-news:after {
+  clear: both;
+}
+.section-frontpage-news h4 {
+  color: #08a8dc;
+  text-transform: uppercase;
+  padding-right: 1em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #08a8dc;
+  display: inline-block;
+}
+.section-frontpage-news a {
+  color: #ff6b01;
+}
+.section-frontpage-news .left {
+  background-color: #ff6b01;
+  color: white;
+  padding: 1em;
+}
+.section-frontpage-news .left .read_more {
+  color: white;
+  font-weight: 600;
+}
+.section-frontpage-news .left .img img {
+  width: 100%;
+}
+.section-frontpage-news .left .title {
+  display: block;
+  color: white;
+  padding: 2em 0 1em 0;
+  font-size: 130%;
+  font-weight: 600;
+}
+.section-frontpage-news .right .tile {
+  margin-bottom: 0.8em;
+  font-size: 120%;
+}
+.section-frontpage-news .right .more {
+  margin-top: 2em;
+  text-align: right;
+}
+.section-frontpage-news .right .more a {
+  color: #ff6b01;
+  padding: 0.8em;
+  border-top: 1px solid #08a8dc;
+  text-transform: uppercase;
+}
+.section-frontpage-news .right .more a:after {
+  content: "\2192";
+}
+.section-frontpage-events {
+  margin-top: 4em;
+  text-align: left !important;
+}
+.section-frontpage-events:before,
+.section-frontpage-events:after {
+  content: "";
+  display: table;
+}
+.section-frontpage-events:after {
+  clear: both;
+}
+.section-frontpage-events h4 {
+  color: #08a8dc;
+  text-transform: uppercase;
+  padding-right: 1em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #08a8dc;
+  display: inline-block;
+}
+.section-frontpage-events .tile {
+  padding: 1em;
+}
+.section-frontpage-events .tile:hover {
+  background-color: #08a8dc;
+  color: White !important;
+}
+.section-frontpage-events .tile .tile-img {
+  display: block;
+}
+.section-frontpage-events .tile .tile-title {
+  color: #ff6b01;
+  font-size: 120%;
+}
+.section-frontpage-events .tile .tile-footer {
+  font-size: 80%;
+  color: #737373;
+  text-transform: uppercase;
+}
+.section-frontpage-events .more {
+  margin-top: 2em;
+  text-align: right;
+}
+.section-frontpage-events .more a {
+  color: #ff6b01;
+  padding: 0.8em;
+  border-top: 1px solid #08a8dc;
+  text-transform: uppercase;
+}
+.section-frontpage-events .more a:after {
+  content: "\2192";
 }
 .box {
   margin-left: auto;
