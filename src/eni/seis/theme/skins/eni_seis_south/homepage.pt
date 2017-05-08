@@ -6,11 +6,11 @@
       <!-- Moved on banner by diazo rule -->
       <p class="site-description" data-diazo="site-description" tal:content="context/description"></p>
 
-      <section class="section" data-diazo="news-homepage">
+      <div class="section" data-diazo="news-homepage" class="news-homepage">
         <tal:content tal:define="folderContents context/communication/newsletter/getFolderNews">
           <tal:news metal:use-macro="here/news_tabular_view/macros/listing"></tal:news>
         </tal:content>
-      </section>
+      </div>
 
       <tal:rep repeat="name python: [
       'homepage-areas-of-work',
@@ -18,28 +18,28 @@
       'homepage-section-governance-text',
       'homepage-section-partners-text',
       ]">
-      <section class="section"
-               data-diazo="..."
-               tal:define="text python: context.getDocText(name)"
-               tal:attributes="data-diazo name"
-               tal:content="structure text"
-               tal:on-error="string: Error in ${name}"
-               >
-      </section>
+      <div class="section"
+           data-diazo="..."
+           tal:define="text python: context.getDocText(name)"
+           tal:attributes="data-diazo name; class string:section-${name};"
+           tal:content="structure text"
+           tal:on-error="string: Error in ${name}"
+           >
+      </div>
       </tal:rep>
 
       <tal:rep repeat="name python: [
       'frontpage-events',
       'frontpage-news',
       ]">
-      <section class="section"
-               data-diazo="..."
-               tal:attributes="data-diazo name"
-               tal:define="text python:context.restrictedTraverse(name)()"
-               tal:content="structure text"
-               tal:on-error="string: Error in ${name}"
-               >
-      </section>
+      <div class="section"
+           data-diazo="..."
+           tal:attributes="data-diazo name; class string:section-${name};"
+           tal:define="text python:context.restrictedTraverse(name)()"
+           tal:content="structure text"
+           tal:on-error="string: Error in ${name}"
+           >
+      </div>
       </tal:rep>
 
     </main>

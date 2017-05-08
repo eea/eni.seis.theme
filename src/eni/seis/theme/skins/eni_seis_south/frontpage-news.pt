@@ -1,41 +1,51 @@
-<metal:macro define-macro="portlet">
-  <tal:def tal:define="
-    newsletterpath python:'/south/communication/newsletter';
-    news python: [b.getObject() for b in context.portal_catalog.searchResults(
-          portal_type=['News Item'],
-          review_state='published',
-          sort_on='effective',
-          sort_order='descending',
-          path=newsletterpath,
-        )
-        ][:9];
-        toLocalizedTime nocall: context/@@plone/toLocalizedTime;
-    ">
+<div
+  tal:define="
+  newsletterpath python:'/south/communication/newsletter';
+  news python: [b.getObject() for b in context.portal_catalog.searchResults(
+  portal_type=['News Item'],
+  review_state='published',
+  sort_on='effective',
+  sort_order='descending',
+  path=newsletterpath,
+  )
+  ][:9];
+  toLocalizedTime nocall: context/@@plone/toLocalizedTime;
+  ">
 
-    <dl class="box leading-large portlet portletEvents" tal:condition="news">
-      <dt>News</dt>
-      <dd tal:define="firstn python: news[0]">
+  <tal:cond tal:condition="news">
+  <h4>News</h4>
+  <div class="row" tal:define="firstn python: news[0]">
 
-        <div>
-          <a href="" tal:attributes="href firstn/absolute_url" class="tile">
-            <img tal:attributes="src python:firstn.getLeadImagePath('mini', 'newsitem-fallback.png')" />
-          </a>
-          <a href="" tal:attributes="href firstn/absolute_url" class="tile" tal:content="firstn/Title">
-            An event related to ENI-SEIS East
-          </a>
-          <div tal:content="firstn/Description">Description here</div>
-        </div>
+    <div class="left col-xs-12 col-md-5">
+      <a href="" tal:attributes="href firstn/absolute_url" class="img">
+        <img tal:attributes="src python:firstn.getLeadImagePath('preview', 'newsitem-fallback.png')" />
+      </a>
+      <a href="" tal:attributes="href firstn/absolute_url" class="title" tal:content="firstn/Title">
+        An event related to ENI-SEIS East
+      </a>
 
-        <div tal:repeat="ni python:news[1:]">
-          <a tal:attributes="href ni/absolute_url" class="tile" tal:content="ni/Title">
-            news item
-          </a>
-        </div>
+      <div class='description'>
+        <span tal:content="firstn/Description">
+          Description here
+        </span>&hellip;
+        <a href="" tal:attributes="href firstn/absolute_url" class="read_more" >
+          Read more
+        </a>
+      </div>
+    </div>
 
-        <div>
-          <a href="" tal:attributes="href newsletterpath">More news</a>
-        </div>
-      </dd>
-    </dl>
-  </tal:def>
-</metal:macro>
+    <div class="right col-xs-12 col-md-7">
+      <div tal:repeat="ni python:news[1:]" class="tile" >
+        <a tal:attributes="href ni/absolute_url" tal:content="ni/Title">
+          news item
+        </a>
+      </div>
+      <div class="more">
+        <a href="" tal:attributes="href newsletterpath">More news</a>
+      </div>
+    </div>
+
+  </div>
+  </tal:cond>
+
+</div>
