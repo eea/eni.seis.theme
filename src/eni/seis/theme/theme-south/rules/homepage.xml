@@ -13,7 +13,9 @@
     <replace css:theme="[data-diazo='project-description']" css:content="[data-diazo='project-description']" />
 
     Various sections in frontpage
-    <replace css:theme="[data-diazo='homepage-areas-of-work']" css:content="[data-diazo='homepage-areas-of-work']" />
+
+    <replace css:theme="[data-diazo='homepage-section-aow-slider']" css:content="[data-diazo='homepage-section-aow-slider']" />
+    <!-- <replace css:theme="[data&#45;diazo='homepage&#45;areas&#45;of&#45;work']" css:content="[data&#45;diazo='homepage&#45;areas&#45;of&#45;work']" /> -->
     <replace css:theme="[data-diazo='homepage-section-governance-text']" css:content="[data-diazo='homepage-section-governance-text']" />
     <replace css:theme="[data-diazo='homepage-section-partners-text']" css:content="[data-diazo='homepage-section-partners-text']" />
 
