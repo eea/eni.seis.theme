@@ -5,10 +5,13 @@
   </head>
 
 <body>
-  <div class="site-container">
-
+  <!-- Header -->
+  <div class="container">
     {{> partials/headernav }}
+  </div><!-- Header -->
 
+  <!-- Edit bar -->
+  <div class="container">
     <div id="site-body">
       <div class="page">
         <header class="page-header">
@@ -20,43 +23,43 @@
             <div id="edit-bar">Plone admin bar</div>
           </div>
         </div>
-
-        <div class="page-body">
-          <div class="page-container clear">
-
-            <div class="above-content">
-              <ul class="breadcrumbs">
-                <li><a href="">Home</a></li>
-                <li><a href="">Folder</a></li>
-                <li><strong>This page</strong></li>
-              </ul>
-            </div>
-
-            <main class="page-main"></main>
-
-            <aside class="page-aside">
-
-              {{> partials/pageaside }}
-              {{> partials/treenav }}
-
-              <a href="../@@manage-portlets" class="btn btn-default" data-diazo="manage-portlets">
-                Manage portlets
-              </a>
-
-            </aside>
-
-            <div class="section-partners-wrapper">
-              <section class="section" data-diazo="section-partners"></section>
-              <section class="section" data-diazo="section-countries-map"></section>
-            </div>
-
-          </div>
-        </div>
-
-        <footer class="page-footer"></footer>
       </div>
     </div>
+  </div>
+  <!-- Edit bar -->
 
+  <div class="container site-container">
+    <div class="page-body">
+      <div class="page-container clear">
+
+        <div class="above-content">
+          <ul class="breadcrumbs">
+            <li><a href="">Home</a></li>
+            <li><a href="">Folder</a></li>
+            <li><strong>This page</strong></li>
+          </ul>
+        </div>
+
+        <main class="page-main"></main>
+
+        <aside class="page-aside">
+
+          {{> partials/pageaside }}
+          {{> partials/treenav }}
+
+          <a href="../@@manage-portlets" class="btn btn-default" data-diazo="manage-portlets">
+            Manage portlets
+          </a>
+
+        </aside>
+
+        <div class="section-partners-wrapper">
+          <section class="section" data-diazo="section-partners"></section>
+          <section class="section" data-diazo="section-countries-map"></section>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   {{>partials/footer}}

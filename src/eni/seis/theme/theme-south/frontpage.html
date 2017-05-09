@@ -20,8 +20,8 @@
   </head>
 
 <body>
-  <div class="site-container">
-
+  <!-- Header -->
+  <div class="container">
     <header id="site-header">
     
       <button id="navbar-toggle" class="btn btn-default" type="button" data-toggle="dropdown" data-target="#navbar">
@@ -81,7 +81,10 @@
       </div>
     
     </header>
+  </div><!-- Header -->
 
+  <!-- Edit bar -->
+  <div class="container">
     <div id="site-body">
       <div class="page">
         <header class="page-header">
@@ -93,38 +96,67 @@
             <div id="edit-bar">Plone admin bar</div>
           </div>
         </div>
-
-        <div class="page-body">
-          <div class="page-container clear">
-            <div class="above-content">
-              <ul class="breadcrumbs">
-                <li><a href="">Home</a></li>
-                <li><a href="">Folder</a></li>
-                <li><strong>This page</strong></li>
-              </ul>
-            </div>
-
-            <main class="page-main">
-              <div data-diazo="eni-aow-slider">eni aow slider</div>
-              <div data-diazo="homepage-areas-of-work">areas of work</div>
-              <div data-diazo="homepage-section-governance-text">global objective text</div>
-              <div data-diazo="homepage-section-partners-text">countries section</div>
-
-              <div data-diazo="frontpage-news">news section</div>
-              <div data-diazo="frontpage-events">news events</div>
-
-            </main>
-
-            <div class="section-partners-wrapper">
-              <section class="section" data-diazo="section-partners"></section>
-              <section class="section" data-diazo="section-countries-map"></section>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
   </div>
+  <!-- Edit bar -->
+
+  <!-- Areas of work -->
+  <div class="container">
+    <div data-diazo="homepage-areas-of-work">areas of work</div>
+  </div><!-- Areas of work -->
+
+  <!-- Objectives -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <h3><i class="fa fa-globe"></i> The Global Objective</h3>
+        <p>Contribute to reduced marine pollution</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+        <h3><i class="fa fa-globe"></i> The Specific Objective</h3>
+        <p>Improve the availability and access to relevant environmental information to the benefit of effective and knlowledge-based policy-making in the ENP South region.</p>
+      </div>
+    </div>
+  </div><!-- Objectives -->
+
+  <!-- Countries -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Countries</h3>
+        <p>
+          <a href="#">Algeria</a>,
+          <a href="#">Egipt</a>,
+          <a href="#">Israel</a>,
+          <a href="#">Jordan</a>,
+          <a href="#">Lebanon</a>,
+          <a href="#">Libya</a>,
+          <a href="#">Morocco</a>,
+          <a href="#">Palestine</a> and
+          <a href="#">Tunisia</a>
+        </p>
+      </div>
+    </div>
+  </div><!-- Countries -->
+
+  <!-- News -->
+  <div class="container">
+    <div data-diazo="frontpage-news">news section</div>
+  </div><!-- News -->
+
+  <!-- Upcoming events -->
+  <div class="container">
+    <div data-diazo="frontpage-events">events section</div>
+  </div><!-- Upcoming events -->
+
+<!--
+<div data-diazo="eni-aow-slider">eni aow slider</div>
+<div data-diazo="homepage-section-governance-text">global objective text</div>
+<div data-diazo="homepage-section-partners-text">countries section</div>
+<section class="section" data-diazo="section-partners"></section>
+<section class="section" data-diazo="section-countries-map"></section>
+-->
 
     <!-- Site footer -->
     <footer id="site-footer">
