@@ -3668,6 +3668,18 @@ ul.configlets {
 .homepage-section-aow-slider {
   margin: 4em 0;
 }
+.homepage-section-aow-slider .areas-title {
+  width: 100%;
+  text-align: center;
+}
+.homepage-section-aow-slider .areas-title h3 {
+  text-transform: uppercase;
+  color: #08a8dc;
+  border-bottom: 3px solid #08a8dc;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .homepage-section-aow-slider:before,
 .homepage-section-aow-slider:after {
   content: "";
