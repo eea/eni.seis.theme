@@ -2415,9 +2415,6 @@ body {
 #content-core {
   text-align: initial;
 }
-#content-core span {
-  color: rgba(49, 69, 110, 0.75);
-}
 #content-core dd {
   margin: 0;
 }
