@@ -3684,13 +3684,8 @@ ul.configlets {
 .homepage-news a {
   color: #222222;
 }
-.section-homepage-section-aow-slider .aow-slider-south:before,
-.section-homepage-section-aow-slider .aow-slider-south:after {
-  content: "";
-  display: table;
-}
-.section-homepage-section-aow-slider .aow-slider-south:after {
-  clear: both;
+.homepage-section-aow-slider .aow-slide img {
+  width: 100%;
 }
 @media (max-width: 959px) {
   .homepage-news thead {
