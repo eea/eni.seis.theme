@@ -3592,7 +3592,7 @@ ul.configlets {
 .template-homepage .lp-content {
   border-bottom: 1px solid #d0d0d0;
   padding-left: 30%;
-  padding-right: 20%;
+  padding-right: 10%;
   background: #ff6b01;
 }
 .template-homepage .lp-content:before {
@@ -3602,9 +3602,20 @@ ul.configlets {
   background: #ff6b01;
   height: 100%;
   bottom: 100%;
-  width: 45%;
+  width: 47%;
   content: '';
   left: 0;
+}
+.template-homepage .lp-content:after {
+  content: '';
+  position: absolute;
+  right: -20%;
+  top: 0px;
+  width: 30%;
+  height: 100%;
+  border-top: 500px solid #ff6b01;
+  clear: both;
+  transform: skew(30deg);
 }
 .template-homepage .lp-title {
   margin-top: 0;
