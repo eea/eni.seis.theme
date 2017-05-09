@@ -3970,6 +3970,30 @@ ul.configlets {
   padding-right: 10px;
   margin-bottom: 30px;
 }
+.section-frontpage-countries {
+  min-height: 250px;
+  text-align: center;
+}
+.section-frontpage-countries h3 {
+  color: #08a8dc;
+  display: inline-block;
+  padding: 20px 10px 0px 10px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #08a8dc;
+}
+.section-frontpage-countries p {
+  color: #08a8dc;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.section-frontpage-countries p a {
+  color: #08a8dc;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.section-frontpage-countries p a:hover {
+  color: #ff6b01;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
