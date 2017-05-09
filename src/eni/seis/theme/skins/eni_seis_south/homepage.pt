@@ -12,11 +12,12 @@
         </tal:content>
       </div>
 
+      <!-- 'homepage&#45;section&#45;partners&#45;text', -->
+      <!-- 'homepage&#45;section&#45;governance&#45;text', -->
+
       <tal:rep repeat="name python: [
       'homepage-section-aow-slider',
       'project-description',
-      'homepage-section-governance-text',
-      'homepage-section-partners-text',
       ]">
       <div class="section"
            data-diazo="..."

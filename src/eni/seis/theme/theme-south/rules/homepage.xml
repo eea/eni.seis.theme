@@ -26,11 +26,12 @@
     <replace css:theme="[data-diazo='homepage-section-aow-slider']">
       <div class="container">
         <div class="homepage-section-aow-slider row">
+          <h3>Areas of work</h3>
           <xsl:for-each css:select="[data-diazo='homepage-section-aow-slider'] .aow-slide">
             <xsl:variable name="tile" select="."></xsl:variable>
             <div class="col-md-3 col-xs-12 col-sm-6">
               <div class="aow-slide">
-                <a href="{./a[@href]}" >
+                <a href="{./a/@href}" >
                   <xsl:apply-templates select="./img" />
                   <xsl:apply-templates select="./a/*" />
                 </a>
