@@ -178,7 +178,22 @@
 @import (reference) "../css/main.css";
 
 .homepage-section-aow-slider {
+  .utils > .clear;
   .aow-slide {
+    padding: 1em;
+    border: 1px solid @color-accent;
+    &:hover {
+      background-color: @color-accent;
+      color: white !important;
+    }
+    a {
+      font-size: 120%;
+      text-align: center;
+      line-height: 4em;
+      font-weight: 500;
+      color: black;
+      display: inline-block;
+    }
     img {
       width: 100%;
     }

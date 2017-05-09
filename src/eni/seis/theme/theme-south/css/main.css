@@ -3684,6 +3684,30 @@ ul.configlets {
 .homepage-news a {
   color: #222222;
 }
+.homepage-section-aow-slider:before,
+.homepage-section-aow-slider:after {
+  content: "";
+  display: table;
+}
+.homepage-section-aow-slider:after {
+  clear: both;
+}
+.homepage-section-aow-slider .aow-slide {
+  padding: 1em;
+  border: 1px solid #08a8dc;
+}
+.homepage-section-aow-slider .aow-slide:hover {
+  background-color: #08a8dc;
+  color: white !important;
+}
+.homepage-section-aow-slider .aow-slide a {
+  font-size: 120%;
+  text-align: center;
+  line-height: 4em;
+  font-weight: 500;
+  color: black;
+  display: inline-block;
+}
 .homepage-section-aow-slider .aow-slide img {
   width: 100%;
 }
