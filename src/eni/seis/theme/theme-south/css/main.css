@@ -3559,6 +3559,9 @@ ul.configlets {
 }
 .template-homepage .lp-content {
   border-bottom: 1px solid #d0d0d0;
+  padding-left: 40%;
+  padding-right: 20%;
+  background: #ff6b01;
 }
 .template-homepage .lp-title {
   margin-top: 0;
