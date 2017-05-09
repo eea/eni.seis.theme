@@ -2778,6 +2778,20 @@ legend .level-national {
 .navbar-body #portal-globalnav li > a {
   padding: 0.4em 0.9em 0.5em 0.9em;
 }
+.navbar-body #portal-globalnav li:first-of-type:before {
+  border: none;
+}
+.navbar-body #portal-globalnav li:before {
+  content: '';
+  border-left: 1px solid #ededed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -1px;
+  transform: skew(-30deg);
+  z-index: -1;
+}
 .navbar-body #portal-globalnav li:after {
   content: '';
   display: none;
