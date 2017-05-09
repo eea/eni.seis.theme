@@ -77,7 +77,30 @@
         }
         margin-top: 0px;
 
+        li:after {
+            content: '';
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: skew( -30deg);
+            z-index: -1;
+            background-color: @color-brand-south;
+        }
+
+        li:hover {
+            background: transparent;
+        }
+
+        li:hover::after {
+            display: block;
+        }
+
         li .submenu {
+            margin-left: -9px;
+
             li a {
                 background: @color-accent !important;
                 color: #FFFFFF !important;

@@ -2778,6 +2778,27 @@ legend .level-national {
 .navbar-body #portal-globalnav li > a {
   padding: 0.4em 0.9em 0.5em 0.9em;
 }
+.navbar-body #portal-globalnav li:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: skew(-30deg);
+  z-index: -1;
+  background-color: #ff6b01;
+}
+.navbar-body #portal-globalnav li:hover {
+  background: transparent;
+}
+.navbar-body #portal-globalnav li:hover::after {
+  display: block;
+}
+.navbar-body #portal-globalnav li .submenu {
+  margin-left: -9px;
+}
 .navbar-body #portal-globalnav li .submenu li a {
   background: #08a8dc !important;
   color: #FFFFFF !important;
