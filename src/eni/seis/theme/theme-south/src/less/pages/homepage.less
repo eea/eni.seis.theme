@@ -31,10 +31,22 @@
   }
   .lp-content {
     border-bottom: 1px solid #d0d0d0;
-    padding-left: 40%;
+    padding-left: 30%;
     padding-right: 20%;
     background: @color-brand-south;
   }
+  .lp-content:before {
+    transform-origin: right bottom;
+    transform: skew(30deg);
+    position: absolute;
+    background: @color-brand-south;
+    height: 100%;
+    bottom: 100%;
+    width: 45%;
+    content: '';
+    left: 0;
+  }
+
   .lp-title {
     margin-top: 0;
   }

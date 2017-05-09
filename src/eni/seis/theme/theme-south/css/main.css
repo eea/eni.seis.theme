@@ -3591,9 +3591,20 @@ ul.configlets {
 }
 .template-homepage .lp-content {
   border-bottom: 1px solid #d0d0d0;
-  padding-left: 40%;
+  padding-left: 30%;
   padding-right: 20%;
   background: #ff6b01;
+}
+.template-homepage .lp-content:before {
+  transform-origin: right bottom;
+  transform: skew(30deg);
+  position: absolute;
+  background: #ff6b01;
+  height: 100%;
+  bottom: 100%;
+  width: 45%;
+  content: '';
+  left: 0;
 }
 .template-homepage .lp-title {
   margin-top: 0;
