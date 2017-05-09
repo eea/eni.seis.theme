@@ -215,20 +215,32 @@ body.template-country_view div.icon {
   top: -15px;
 }
 body.template-country_view div.icon-air {
-  background: url(++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+  background-image: url(++theme++eni.seis.theme.south/img/countries_air_normal.svg);
   background-size: 50px auto;
+}
+body.template-country_view li:not(.active) a.icon-air:hover div.icon-air {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_air_hover.svg);
 }
 body.template-country_view div.icon-water {
-  background: url(++theme++eni.seis.theme.south/img/countries_water_normal.svg);
+  background-image: url(++theme++eni.seis.theme.south/img/countries_water_normal.svg);
   background-size: 50px auto;
+}
+body.template-country_view li:not(.active) a.icon-water:hover div.icon-water {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_water_hover.svg);
 }
 body.template-country_view div.icon-land {
-  background: url(++theme++eni.seis.theme.south/img/countries_land_normal.svg);
+  background-image: url(++theme++eni.seis.theme.south/img/countries_land_normal.svg);
   background-size: 50px auto;
 }
+body.template-country_view li:not(.active) a.icon-land:hover div.icon-land {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_land_hover.svg);
+}
 body.template-country_view div.icon-waste {
-  background: url(++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
+  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
   background-size: 50px auto;
+}
+body.template-country_view li:not(.active) a.icon-waste:hover div.icon-waste {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_hover.svg);
 }
 body.template-country_view .nav > li > a:hover,
 body.template-country_view .nav > li > a:focus {
