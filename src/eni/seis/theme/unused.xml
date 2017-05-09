@@ -112,3 +112,40 @@
       <replace css:theme="[data-diazo='news-homepage']" css:content="[data-diazo='news-homepage']" method="raw" />
 
     </xsl:comment>
+
+// .homepage-news {
+//   table-layout: auto;
+//   border-collapse: collapse;
+//   width: 100%;
+//   th,
+//   td {
+//     padding: @em;
+//   }
+//   thead {
+//     th {
+//       background-color: #222222;
+//       color: #fff;
+//     }
+//   }
+//   tbody {
+//     tr {
+//       border-top: 1px solid #222222;
+//     }
+//     td:first-child {}
+//   }
+//   a {
+//     color: #222222;
+//   }
+// }
+// .homepage-news {
+//   @media @screen-md-upto {
+//     thead {
+//       display: none;
+//     }
+//     td {
+//       display: block;
+//     }
+//   }
+// }
+//
+
