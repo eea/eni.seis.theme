@@ -3506,10 +3506,12 @@ ul.configlets {
 }
 .lp-disclaimer {
   position: absolute;
-  top: .5em;
-  right: .5em;
+  background: #FBFBFB;
+  padding: 2px;
+  top: 95%;
+  right: 22%;
   max-width: 80%;
-  color: #a1a2b2;
+  color: #222222;
   opacity: .8;
   z-index: 100;
 }
