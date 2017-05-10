@@ -39,6 +39,14 @@ INSTALL
         /dexterity-types/eea.meeting/@@behaviors
             lead image
 
+
+    In /project-description/edit update the text:
+
+<h3>Contribute to <b>reduced</b><h3>
+<h3 class="reverse">Marine polution</h3>
+
+<p>ENI SEIS II <b>South</b> Support Mechanism project aims to contribute to the <b>reduction of the marine pollution in the Mediterranean</b> by developing a <b>Shared Environmental Information System</b> (SEIS) supporting the regular production and <b>sharing</b> of quality assessed environmental <b>data, indicators and information</b>.</p>
+
 TODO
 - Add "event-fallback.png" in skin
 - Event - National, Regional. Add Other.

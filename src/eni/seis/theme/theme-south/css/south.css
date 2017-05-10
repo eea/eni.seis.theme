@@ -308,9 +308,6 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .event-title {
   color: #ff6b01;
 }
-.site-banner {
-  border-top: solid #ff6b01;
-}
 #site-footer .contact a {
   font-weight: 500;
   color: #222222;
@@ -334,25 +331,6 @@ body.template-country_view .nav-tabs > li.active > a:focus {
   padding-right: 50px;
   padding-bottom: 10px;
   display: inline-block;
-}
-.project-description {
-  width: 37%;
-  position: absolute;
-  padding: 2rem;
-  left: 0;
-  z-index: 2;
-  height: 100%;
-}
-@media (max-width: 959px) {
-  .project-description {
-    width: 100%;
-    margin: 0;
-    display: none;
-  }
-}
-.project-description p {
-  margin-top: 7rem;
-  font-size: 22px;
 }
 @media (max-width: 959px) {
   #site-header {
