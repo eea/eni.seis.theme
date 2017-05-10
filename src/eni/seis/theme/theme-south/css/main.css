@@ -2185,7 +2185,7 @@ table th[class*="col-"] {
   border-right: 1px solid #aaa;
 }
 .field {
-  background: #FBFBFB;
+  background: #F5F5F5;
 }
 .ploneSkin .mceIframeContainer {
   background: white;
@@ -3179,15 +3179,15 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 }
 @media (min-width: 1360px) {
   #site-footer .container-fluid {
-    background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
+    background: -webkit-linear-gradient(left, #F5F5F5, #F5F5F5 50%, #ff6b01 50%, #ff6b01);
   }
   #site-footer .row.footer-content-wrapper {
-    background: linear-gradient(60deg, #FBFBFB 0%, #FBFBFB 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
+    background: linear-gradient(60deg, #F5F5F5 0%, #F5F5F5 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
   }
 }
 @media (max-width: 1359px) {
   #site-footer .col-left {
-    background: #FBFBFB;
+    background: #F5F5F5;
   }
   #site-footer .col-middle {
     background: #737373;
@@ -3524,7 +3524,7 @@ ul.configlets {
 }
 .template-homepage .site-banner .lp-disclaimer {
   position: absolute;
-  background: #FBFBFB;
+  background: #F5F5F5;
   padding: 2px;
   top: 95%;
   right: 22%;
@@ -3850,11 +3850,11 @@ ul.configlets {
     padding: 5% 10% 10% 10% !important;
   }
   .section-frontpage-objectives .specific {
-    background: #FBFBFB !important;
+    background: #F5F5F5 !important;
   }
 }
 .section-frontpage-objectives {
-  background: linear-gradient(60deg, #ff6b01 0%, #ff6b01 45%, #FBFBFB 45%, #FBFBFB 100%);
+  background: linear-gradient(60deg, #ff6b01 0%, #ff6b01 45%, #F5F5F5 45%, #F5F5F5 100%);
   min-height: 200px;
 }
 .section-frontpage-objectives .global {

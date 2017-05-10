@@ -277,7 +277,7 @@ body.template-country_view .nav-tabs > li.active > a,
 body.template-country_view .nav-tabs > li.active > a:hover,
 body.template-country_view .nav-tabs > li.active > a:focus {
   color: #ff6b01 !important;
-  background: #FBFBFB !important;
+  background: #F5F5F5 !important;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -396,7 +396,7 @@ body.template-country_view .country-left-column a {
 }
 body.template-country_view .tab-content .container {
   padding: 20px 10px 20px 10px;
-  background-color: #FBFBFB;
+  background-color: #F5F5F5;
   border-left: 1px solid #ededed;
   border-right: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
