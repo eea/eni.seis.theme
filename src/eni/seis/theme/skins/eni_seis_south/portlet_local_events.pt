@@ -1,5 +1,5 @@
 <metal:macro define-macro="portlet">
-  tal:def tal:define="events context/getLocalEvents">
+  <tal:def tal:define="events context/getLocalEvents">
     <dl class="box leading-large portlet portletEvents" tal:condition="events">
       <dt>Local Events</dt>
       <dd>
