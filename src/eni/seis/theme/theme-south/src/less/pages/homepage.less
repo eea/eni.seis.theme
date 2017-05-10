@@ -254,19 +254,29 @@
   }
   text-align: left !important;
   .tile {
+    min-height: 365px;
     padding: 1em;
     &:hover {
       background-color: @color-accent;
-      color: White !important;
+      color: white !important;
+    }
+    &:hover a,
+    &:hover div {
+      color: #FFFFFF;
     }
     .tile-img {
       display: block;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     .tile-title {
       color: @color-brand-south;
       font-size: 120%;
     }
     .tile-footer {
+      margin-top: 10px;
       font-size: 80%;
       color: @color-gray;
       text-transform: uppercase;
@@ -301,7 +311,7 @@
       color: #FFFFFF;
       border-bottom: 3px solid #FFFFFF;
       display: inline-block;
-      padding-right: 10px;
+      padding-right: 1em;
       margin-bottom: 30px;
     }
     padding: 5% 10% 10% 30%;
@@ -314,7 +324,7 @@
       color: @color-brand-south;
       border-bottom: 3px solid @color-accent;
       display: inline-block;
-      padding-right: 10px;
+      padding-right: 1em;
       margin-bottom: 30px;
     }
     padding: 5% 30% 10% 10%;

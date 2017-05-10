@@ -329,9 +329,7 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .documentFirstHeading {
   color: #ff6b01;
   border-bottom: 3px solid #08a8dc;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 10px;
+  padding: 2em 1em 0.2em 1em;
   display: inline-block;
 }
 @media (max-width: 959px) {
@@ -357,18 +355,13 @@ body.template-country_view .country-left-column .box.leading-large.portlet dt {
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
   font-size: 1.2rem;
-  padding: 0px 10px 0px 0px !important;
+  padding: 0em 1em 0em 0em !important;
   display: inline-block;
   margin-top: 20px !important;
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dd {
   margin-top: 10px !important;
   font-size: 1.2rem;
-}
-body.template-country_view .country-left-column .box.leading-large.portlet dd div:before {
-  content: url('http://i.imgur.com/i2Aakch.png');
-  float: left;
-  margin-right: 10px;
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dd .row:first-of-type {
   border-top: none;
