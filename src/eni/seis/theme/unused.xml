@@ -234,9 +234,3 @@
 //     font-size: .9rem;
 //   }
 // }
-//
-// .login-link:before {
-//   content: "\f007";
-//   padding-right: .5rem;
-// }
-
