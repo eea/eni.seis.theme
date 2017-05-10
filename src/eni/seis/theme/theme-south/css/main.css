@@ -3780,6 +3780,10 @@ ul.configlets {
 .section-frontpage-events .tile .tile-img {
   display: block;
 }
+.section-frontpage-events .tile .tile-img img {
+  width: 100%;
+  height: auto;
+}
 .section-frontpage-events .tile .tile-title {
   color: #ff6b01;
   font-size: 120%;
