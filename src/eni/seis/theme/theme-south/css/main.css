@@ -2192,8 +2192,7 @@ table th[class*="col-"] {
   border: 1px solid #aaa!important;
 }
 .field {
-  padding: 1.5rem;
-  border-radius: .5rem;
+  padding: 1rem;
 }
 .field label {
   font-size: 1.1rem;
@@ -2257,7 +2256,7 @@ body {
   background-color: #fff;
   display: flex;
   -ms-flex: 1 0 auto;
-  min-height: 100vh;
+  min-height: 70vh;
   flex-direction: column;
 }
 .header-container {
@@ -2274,7 +2273,6 @@ body {
   }
 }
 .login-link {
-  padding: 0 1rem;
   transform: translateY(-10px);
 }
 #site-header .login-link {

@@ -297,11 +297,9 @@
     <!-- FOOTER -->
     <replace css:theme="span[data-diazo='login-link']">
       <!-- Login link for anonymous - footer -->
-      <rules css:if-content=".userrole-anonymous">
-        <xsl:for-each css:select="#portal-personaltools #personaltools-login">
-          <a class="login-link" href="{./@href}">Log in</a>
-        </xsl:for-each>
-      </rules>
+      <xsl:for-each css:select="#portal-personaltools #personaltools-login">
+        | <a class="login-link" href="{./@href}">Log in</a>
+      </xsl:for-each>
     </replace>
   </rules>
 

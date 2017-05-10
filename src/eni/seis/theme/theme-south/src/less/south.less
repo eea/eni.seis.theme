@@ -1,6 +1,14 @@
 @import (reference) "main.less";
 @import (reference) "components/grid.less";
 
+#content a,
+#content a:visited,
+#content a:link,
+dl.portlet a:link
+{
+  color: @color-brand-south;
+  border-bottom: none;
+}
 
 .btn-primary {
   .btn-variant(#fff, #009245, #009245);
@@ -40,6 +48,15 @@
   box-shadow: none
 }
 
+input[type='submit'] {
+  background: @color-brand-south !important;
+  color: #FFFFFF;
+  padding: 0.2em 0.5em;
+  border: none;
+  &:hover {
+    background: @color-accent !important;
+  }
+}
 
 /* Fix border color in submenu items */
 

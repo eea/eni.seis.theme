@@ -1,5 +1,12 @@
 @media (min-width: 1360px) {
 }
+#content a,
+#content a:visited,
+#content a:link,
+dl.portlet a:link {
+  color: #ff6b01;
+  border-bottom: none;
+}
 .btn-primary {
   border-color: #009245;
   color: #fff;
@@ -54,6 +61,15 @@
   color: rgba(255, 255, 255, 0.5);
   background: #0f8346;
   box-shadow: none;
+}
+input[type='submit'] {
+  background: #ff6b01 !important;
+  color: #FFFFFF;
+  padding: 0.2em 0.5em;
+  border: none;
+}
+input[type='submit']:hover {
+  background: #08a8dc !important;
 }
 /* Fix border color in submenu items */
 #portal-globalnav ul.submenu > li > a:hover {
