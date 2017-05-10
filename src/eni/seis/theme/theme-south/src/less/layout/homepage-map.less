@@ -2,6 +2,10 @@
   .site-banner {
     position: relative;
 
+    @media @screen-md-upto {
+      display: none;
+    }
+
     // ?? Explain .embed-container styling
     .embed-container {
       position: relative;
@@ -60,9 +64,6 @@
     }
 
     .lp-disclaimer {
-      @media @screen-md-upto {
-        display: none;
-      }
       position: absolute;
       background: @color-gray-lighter;
       padding: 2px;
@@ -75,11 +76,6 @@
       &:hover {
         opacity: 1;
       }
-    }
-
-
-    @media @screen-md-upto {
-      margin-bottom: 0!important;
     }
 
     .lp-content {
@@ -97,16 +93,6 @@
           overflow: hidden;
         }
       }
-      @media @screen-md-upto {
-        display: none;
-        // max-width: 100vw;
-        // width: 100vw;
-        // min-height: 220px;
-        // box-shadow: none!important;
-        // background: none;
-        // max-height: 45vh;
-      }
-
       @media @screen-lg {
         &:before {
           transform-origin: right bottom;
@@ -132,7 +118,5 @@
         }
       }
     }
-
   }
-
 }
