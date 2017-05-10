@@ -3462,6 +3462,18 @@ ul.configlets {
 .container-fluid.header-top {
   background: #F5F5F5 !important;
   padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.container-fluid.header-top #site-header-top img {
+  height: 30px;
+}
+.container-fluid.header-top #site-header-top .login-link {
+  color: #222222;
+  position: relative;
+  top: 14px;
+}
+.container-fluid.header-top #site-header-top .login-link:hover {
+  color: #ff6b01 !important;
 }
 .template-homepage .site-banner {
   position: relative;
