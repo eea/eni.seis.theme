@@ -459,17 +459,17 @@ body.template-atct_edit #content {
 body.template-atct_edit #content > div:first-of-type {
   text-align: center;
 }
-#site-header .login-link {
+#site-header-top .login-link {
   color: #222222;
   position: relative;
-  top: 10px;
+  top: 18px;
 }
 @media (max-width: 959px) {
-  #site-header .login-link {
+  #site-header-top .login-link {
     margin-top: 1rem;
   }
 }
-#site-header .login-link:hover {
+#site-header-top .login-link:hover {
   color: #ff6b01 !important;
 }
 /*# sourceMappingURL=./source.css.map */

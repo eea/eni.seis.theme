@@ -2295,7 +2295,7 @@ body {
 .login-link {
   transform: translateY(-10px);
 }
-#site-header .login-link {
+#site-header-top .login-link {
   float: right;
 }
 #site-footer .login-link {
@@ -3425,7 +3425,7 @@ body.template-homepage {
 #site-header .navbar-brand {
   text-align: center;
 }
-#site-header .login-link:before {
+#site-header-top .login-link:before {
   content: "\f007";
   padding-right: .5rem;
 }
@@ -3458,6 +3458,10 @@ ul.configlets {
 }
 .navbar-credits a {
   padding-right: 5px;
+}
+.container-fluid.header-top {
+  background: #F5F5F5 !important;
+  padding: 0.5rem;
 }
 .template-homepage .site-banner {
   position: relative;
