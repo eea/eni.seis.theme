@@ -404,6 +404,14 @@ body.template-country_view {
 body.template-country_view {
 
   .country-left-column {
+    img {
+      width: 100%;
+    }
+
+    .portlet {
+      .utils > .clear;
+    }
+
     .box.leading-large.portlet dt {
       background: #FFFFFF;
       text-transform: uppercase;
@@ -425,11 +433,11 @@ body.template-country_view {
         margin-right: 10px;
       }
 
-      div:first-of-type {
+      .row:first-of-type {
         border-top: none;
       }
 
-      div {
+      .row {
         padding-top: 20px;
         border-top: 1px solid @color-gray-light;
       }
@@ -535,4 +543,3 @@ body.template-atct_edit #content > div:first-of-type {
 #site-header .login-link:hover {
   color: @color-brand-south !important;
 }
-

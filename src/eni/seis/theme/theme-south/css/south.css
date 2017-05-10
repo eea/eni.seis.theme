@@ -340,6 +340,17 @@ body.template-country_view .nav-tabs > li.active > a:focus {
     background-position: 100% 100%!important;
   }
 }
+body.template-country_view .country-left-column img {
+  width: 100%;
+}
+body.template-country_view .country-left-column .portlet:before,
+body.template-country_view .country-left-column .portlet:after {
+  content: "";
+  display: table;
+}
+body.template-country_view .country-left-column .portlet:after {
+  clear: both;
+}
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;
   text-transform: uppercase;
@@ -359,10 +370,10 @@ body.template-country_view .country-left-column .box.leading-large.portlet dd di
   float: left;
   margin-right: 10px;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dd div:first-of-type {
+body.template-country_view .country-left-column .box.leading-large.portlet dd .row:first-of-type {
   border-top: none;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dd div {
+body.template-country_view .country-left-column .box.leading-large.portlet dd .row {
   padding-top: 20px;
   border-top: 1px solid #ededed;
 }
