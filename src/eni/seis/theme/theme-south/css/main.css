@@ -3548,29 +3548,35 @@ ul.configlets {
   position: relative;
 }
 .site-banner .project-description {
-  width: 30%;
+  width: 27%;
   position: absolute;
   padding: 2rem;
   left: 0;
   z-index: 2;
   height: 100%;
   margin-left: 10%;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .site-banner .project-description h3 {
   text-transform: uppercase;
   color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 .site-banner .project-description h3.reverse {
+  position: relative;
+  left: -8px;
   background: #FFFFFF;
   color: #ff6b01;
   display: inline-block;
-  padding: 20px 10px 20px 10px;
+  padding: 5px 8px 3px 8px;
+  font-weight: 500;
 }
 .site-banner .project-description p {
   padding-top: 20px;
   color: #FFFFFF;
-  font-size: 0.5 rem;
+  font-size: 1rem;
 }
 .lp-disclaimer {
   position: absolute;
