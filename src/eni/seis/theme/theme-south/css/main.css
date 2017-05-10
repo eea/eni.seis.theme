@@ -3444,6 +3444,21 @@ ul.configlets {
 .template-homepage .site-banner {
   position: relative;
 }
+.template-homepage .site-banner .embed-container {
+  position: relative;
+  padding-bottom: 80%;
+  height: 0;
+  width: 100%;
+}
+.template-homepage .site-banner .embed-container iframe,
+.template-homepage .site-banner .embed-container object,
+.template-homepage .site-banner .embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .template-homepage .site-banner .project-description {
   width: 27%;
   position: absolute;

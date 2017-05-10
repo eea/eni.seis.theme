@@ -2,6 +2,23 @@
   .site-banner {
     position: relative;
 
+    // ?? Explain .embed-container styling
+    .embed-container {
+      position: relative;
+      padding-bottom: 80%;
+      height: 0;
+      width: 100%
+    }
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     .project-description {
       @media @screen-lg-upto {
          margin: 0;
