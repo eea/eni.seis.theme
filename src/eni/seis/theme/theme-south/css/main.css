@@ -3440,6 +3440,10 @@ body.template-homepage {
 #site-header .navbar-brand {
   text-align: center;
 }
+#site-header .login-link:before {
+  content: "\f007";
+  padding-right: .5rem;
+}
 .actionMenu .actionMenuContent ul {
   padding-left: 0;
 }
