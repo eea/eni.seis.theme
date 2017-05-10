@@ -3866,7 +3866,7 @@ ul.configlets {
   color: #FFFFFF;
   border-bottom: 3px solid #FFFFFF;
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 1em;
   margin-bottom: 30px;
 }
 .section-frontpage-objectives .specific {
@@ -3879,7 +3879,7 @@ ul.configlets {
   color: #ff6b01;
   border-bottom: 3px solid #08a8dc;
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 1em;
   margin-bottom: 30px;
 }
 .section-frontpage-countries {
