@@ -50,3 +50,4 @@ INSTALL
 TODO
 - Add "event-fallback.png" in skin
 - Event - National, Regional. Add Other.
+- Replace homepage_objectives_global.svg and ..._specific.svg with vectorial ones.

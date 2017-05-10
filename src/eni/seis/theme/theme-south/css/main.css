@@ -3838,6 +3838,18 @@ ul.configlets {
 .section-frontpage-events .more a:after {
   content: "\2192";
 }
+@media (max-width: 959px) {
+  .section-frontpage-objectives {
+    background: #FFFFFF !important;
+  }
+  .section-frontpage-objectives .global {
+    background: #ff6b01 !important;
+    padding: 5% 10% 10% 10% !important;
+  }
+  .section-frontpage-objectives .specific {
+    background: #FBFBFB !important;
+  }
+}
 .section-frontpage-objectives {
   background: linear-gradient(60deg, #ff6b01 0%, #ff6b01 45%, #FBFBFB 45%, #FBFBFB 100%);
   min-height: 200px;
