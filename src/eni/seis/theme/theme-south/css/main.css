@@ -2185,7 +2185,7 @@ table th[class*="col-"] {
   border-right: 1px solid #aaa;
 }
 .field {
-  background: #f2f2f2;
+  background: #FBFBFB;
 }
 .ploneSkin .mceIframeContainer {
   background: white;
@@ -2212,6 +2212,26 @@ table th[class*="col-"] {
 }
 .mceStatusbar.mceFirst.mceLast a {
   border: none!important;
+}
+#content ul.formTabs {
+  background-color: #ededed;
+  border-color: #ededed;
+  border-radius: 0;
+}
+#content ul.formTabs li.formTab a,
+#content ul.formTabs li.formTab a.selected {
+  font-weight: 500;
+  border-radius: 0 !important;
+}
+#content ul.formTabs li.formTab a:active,
+#content ul.formTabs li.formTab a.selected:active,
+#content ul.formTabs li.formTab a:hover,
+#content ul.formTabs li.formTab a.selected:hover {
+  border-radius: 0 !important;
+}
+body.template-atct_edit .label,
+body.template-atct_edit label {
+  font-weight: 500;
 }
 :before {
   font-family: FontAwesome;
