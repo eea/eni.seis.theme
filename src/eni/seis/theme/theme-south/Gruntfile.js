@@ -23,7 +23,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig(config);
 
-
   // Tasks
   grunt.registerTask('development', [
     'template:dev',
