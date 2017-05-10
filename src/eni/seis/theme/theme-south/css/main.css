@@ -3547,6 +3547,31 @@ ul.configlets {
 .site-banner {
   position: relative;
 }
+.site-banner .project-description {
+  width: 30%;
+  position: absolute;
+  padding: 2rem;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.site-banner .project-description h3 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.site-banner .project-description h3.reverse {
+  background: #FFFFFF;
+  color: #ff6b01;
+  display: inline-block;
+  padding: 20px 10px 20px 10px;
+}
+.site-banner .project-description p {
+  padding-top: 20px;
+  color: #FFFFFF;
+  font-size: 0.5 rem;
+}
 .lp-disclaimer {
   position: absolute;
   top: .5em;

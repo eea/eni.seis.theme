@@ -92,6 +92,36 @@
 
   .site-banner {
     position: relative;
+    .project-description {
+      //@media @screen-md-upto {
+      //  width: 100%;
+      //  margin: 0;
+      //  display: none;
+      //}
+      width: 30%;
+      position: absolute;
+      padding: 2rem;
+      left: 0;
+      z-index: 2;
+      height: 100%;
+      margin-left: 10%;
+      margin-top: 30px;
+      h3 {
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      h3.reverse {
+        background: #FFFFFF;
+        color: @color-brand-south;
+        display: inline-block;
+        padding: 20px 10px 20px 10px;
+      }
+      p {
+        padding-top: 20px;
+        color: #FFFFFF;
+        font-size: 0.5 rem;
+      }
+    }
   }
 
   .lp-disclaimer {
