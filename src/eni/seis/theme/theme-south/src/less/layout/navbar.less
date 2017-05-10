@@ -9,6 +9,25 @@
   .page-container {
     position: relative;
   }
+
+  .navbar-credits {
+    margin-bottom: 40px;
+
+    @media (min-width: 1390px) {
+      float: left;
+      clear: left;
+    }
+    small,
+    a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      display: block;
+      max-height: 35px;
+    }
+  }
+
 }
 
 .above-content {
@@ -38,24 +57,6 @@
   &:focus {}
 }
 
-.navbar-credits {
-  margin-bottom: 40px;
-
-  @media (min-width: 1390px) {
-    float: left;
-    clear: left;
-  }
-  small,
-  a {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  img {
-    display: block;
-    max-height: 35px;
-  }
-}
-
 @media (min-width: 1390px) {
   .navbar-brand p {
     margin-left: 0!important;
@@ -66,7 +67,7 @@
 .navbar-brand {
   margin-bottom: @leading;
   .navbar-title strong {
-   color: @color-orange;
+    color: @color-orange;
   }
 }
 
@@ -190,14 +191,14 @@
 @media @screen-md-upto {
   #navbar {
     text-align: center;
-  }
-  .navbar-credits {
-    display: none;
-    overflow: auto;
-    z-index: 1000;
-    position: relative;
-    margin-bottom: 1rem;
-    float: none;
+    .navbar-credits {
+      display: none;
+      overflow: auto;
+      z-index: 1000;
+      position: relative;
+      margin-bottom: 1rem;
+      float: none;
+    }
   }
   .navbar-brand {
     display: inline-block;
