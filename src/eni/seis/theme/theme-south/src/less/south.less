@@ -401,9 +401,17 @@ body.template-country_view {
   }
 }
 
+.portlet {
+  .utils > .clear;
+  img {
+    width: 100%;
+  }
+}
+
 body.template-country_view {
 
   .country-left-column {
+
     .box.leading-large.portlet dt {
       background: #FFFFFF;
       text-transform: uppercase;
@@ -425,11 +433,11 @@ body.template-country_view {
         margin-right: 10px;
       }
 
-      div:first-of-type {
+      .row:first-of-type {
         border-top: none;
       }
 
-      div {
+      .row {
         padding-top: 20px;
         border-top: 1px solid @color-gray-light;
       }

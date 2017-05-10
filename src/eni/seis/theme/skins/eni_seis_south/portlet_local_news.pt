@@ -1,0 +1,31 @@
+<metal:macro define-macro="portlet">
+
+  <tal:def tal:define="news context/getLocalNews;
+    toLocalizedTime nocall: context/@@plone/toLocalizedTime; ">
+
+    <dl class="box leading-large portlet portletNews">
+      <dt>Country news</dt>
+      <dd>
+        <div tal:repeat="ni news">
+
+          <div class="col-xs-3">
+            <a href="" tal:attributes="href ni/absolute_url" title="" >
+              <img tal:attributes="src python:ni.getLeadImagePath('thumb', 'newsitem-fallback.png')" />
+            </a>
+          </div>
+
+          <div class="col-xs-9">
+            <a tal:attributes="href ni/absolute_url" title="" tal:content="ni/Title">Title</a>
+
+            <span
+              class="portletItemDetails location"
+              tal:content="python:toLocalizedTime(ni.effective(),long_format=0)">
+              Date
+            </span>
+          </div>
+
+        </div>
+      </dd>
+    </dl>
+  </tal:def>
+</metal:macro>
