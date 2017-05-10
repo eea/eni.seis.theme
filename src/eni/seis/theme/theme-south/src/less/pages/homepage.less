@@ -254,10 +254,15 @@
   }
   text-align: left !important;
   .tile {
+    min-height: 365px;
     padding: 1em;
     &:hover {
       background-color: @color-accent;
-      color: White !important;
+      color: white !important;
+    }
+    &:hover a,
+    &:hover div {
+      color: #FFFFFF;
     }
     .tile-img {
       display: block;
@@ -271,6 +276,7 @@
       font-size: 120%;
     }
     .tile-footer {
+      margin-top: 10px;
       font-size: 80%;
       color: @color-gray;
       text-transform: uppercase;

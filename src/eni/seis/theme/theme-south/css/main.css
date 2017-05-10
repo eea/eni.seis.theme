@@ -3771,11 +3771,16 @@ ul.configlets {
   display: inline-block;
 }
 .section-frontpage-events .tile {
+  min-height: 365px;
   padding: 1em;
 }
 .section-frontpage-events .tile:hover {
   background-color: #08a8dc;
-  color: White !important;
+  color: white !important;
+}
+.section-frontpage-events .tile:hover a,
+.section-frontpage-events .tile:hover div {
+  color: #FFFFFF;
 }
 .section-frontpage-events .tile .tile-img {
   display: block;
@@ -3789,6 +3794,7 @@ ul.configlets {
   font-size: 120%;
 }
 .section-frontpage-events .tile .tile-footer {
+  margin-top: 10px;
   font-size: 80%;
   color: #737373;
   text-transform: uppercase;
