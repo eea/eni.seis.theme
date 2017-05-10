@@ -3194,7 +3194,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 @media (min-width: 1360px) {
   #site-footer .navbar-credits {
     padding-top: 50px;
-    padding-left: 90px;
   }
 }
 #site-footer .navbar-credits img {
