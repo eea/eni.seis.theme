@@ -16,7 +16,7 @@
   <h4>News</h4>
   <div class="row" tal:define="firstn python: news[0]">
 
-    <div class="left col-xs-12 col-md-5">
+    <div class="left col-xs-12 col-sm-6 col-md-5">
       <a href="" tal:attributes="href firstn/absolute_url" class="img">
         <img tal:attributes="src python:firstn.getLeadImagePath('preview', 'newsitem-fallback.png')" />
       </a>
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="right col-xs-12 col-md-7">
+    <div class="right col-xs-12 col-sm-6 col-md-7">
       <div tal:repeat="ni python:news[1:]" class="tile" >
         <a tal:attributes="href ni/absolute_url" tal:content="ni/Title">
           news item
