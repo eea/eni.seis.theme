@@ -340,16 +340,16 @@ body.template-country_view .nav-tabs > li.active > a:focus {
     background-position: 100% 100%!important;
   }
 }
-body.template-country_view .country-left-column img {
-  width: 100%;
-}
-body.template-country_view .country-left-column .portlet:before,
-body.template-country_view .country-left-column .portlet:after {
+.portlet:before,
+.portlet:after {
   content: "";
   display: table;
 }
-body.template-country_view .country-left-column .portlet:after {
+.portlet:after {
   clear: both;
+}
+.portlet img {
+  width: 100%;
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;

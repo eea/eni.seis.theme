@@ -2314,7 +2314,6 @@ body {
 .page-body {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-right: 2rem;
 }
 .template-homepage .page-footer {
   padding: 0!important;
@@ -2322,8 +2321,6 @@ body {
 .page-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .page-main,
 .page-aside {
@@ -2339,7 +2336,6 @@ body {
   .page-main {
     float: left;
     width: 75%;
-    padding: 1rem;
     padding-left: 0;
   }
   .page-main.page-main-full {
@@ -2427,7 +2423,7 @@ aside.page-aside .nav-item {
   display: block;
 }
 aside.page-aside {
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 .page-aside nav.nav.nav-folder {
   width: 100%;
