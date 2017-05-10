@@ -1,3 +1,5 @@
+@import "layout/homepage-map.less";
+
 .template-homepage {
   @media @screen-md {
     .header-container {
@@ -21,41 +23,7 @@
       float: right;
     }
   }
-  .lp-title {
-    height: auto!important;
-  }
-  .lp-content {
-    border-bottom: 1px solid #d0d0d0;
-    padding-left: 30%;
-    padding-right: 10%;
-    background: @color-brand-south;
-  }
-  .lp-content:before {
-    transform-origin: right bottom;
-    transform: skew(30deg);
-    position: absolute;
-    background: @color-brand-south;
-    height: 100%;
-    bottom: 100%;
-    width: 47%;
-    content: '';
-    left: 0;
-  }
-  .lp-content:after {
-    content: '';
-    position: absolute;
-    right: -20%;
-    top: 0px;
-    width: 30%;
-    height: 100%;
-    border-top: 500px solid @color-brand-south;
-    clear: both;
-    transform: skew(30deg);
-  }
 
-  .lp-title {
-    margin-top: 0;
-  }
   p {
     color: fade(#222222, 75%);
   }
@@ -123,42 +91,42 @@
   }
 }
 
-.map-overlay {
-  position: absolute;
-  font-size: 1.5rem;
-  display: none!important;
-  align-items: center;
-  justify-content: flex-end;
-  z-index: 1;
-  background: rgba(70, 70, 70, 0.3);
-  height: 100%;
-  width: 200%;
-  right: 0;
-  span {
-    width: 50%;
-    margin-right: 1rem;
-    color: rgba(0, 0, 0, 0.4);
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  &.hidden {
-    z-index: 0;
-  }
-}
-
-.map-overlay:after {
-  content: 'click to remove overlay';
-  position: absolute;
-  bottom: 0;
-  right: 15%;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 600;
-  opacity: 0.8;
-}
+// .map-overlay {
+//   position: absolute;
+//   font-size: 1.5rem;
+//   display: none!important;
+//   align-items: center;
+//   justify-content: flex-end;
+//   z-index: 1;
+//   background: rgba(70, 70, 70, 0.3);
+//   height: 100%;
+//   width: 200%;
+//   right: 0;
+//   span {
+//     width: 50%;
+//     margin-right: 1rem;
+//     color: rgba(0, 0, 0, 0.4);
+//     font-size: 2rem;
+//     color: rgba(255, 255, 255, 0.7);
+//     text-transform: uppercase;
+//     font-weight: 600;
+//     cursor: pointer;
+//   }
+//   &.hidden {
+//     z-index: 0;
+//   }
+// }
+//
+// .map-overlay:after {
+//   content: 'click to remove overlay';
+//   position: absolute;
+//   bottom: 0;
+//   right: 15%;
+//   color: white;
+//   text-transform: uppercase;
+//   font-weight: 600;
+//   opacity: 0.8;
+// }
 
 .brand-container {
   z-index: 10;
