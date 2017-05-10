@@ -3761,6 +3761,9 @@ ul.configlets {
 }
 .section-frontpage-news .right .more a:after {
   content: "\2192";
+  position: relative;
+  left: 10px;
+  top: -1px;
 }
 .section-frontpage-events {
   margin: 4em 0;
@@ -3824,6 +3827,9 @@ ul.configlets {
 }
 .section-frontpage-events .more a:after {
   content: "\2192";
+  position: relative;
+  left: 10px;
+  top: -1px;
 }
 @media (max-width: 959px) {
   .section-frontpage-objectives {
