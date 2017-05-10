@@ -360,36 +360,6 @@ body.template-country_view .nav-tabs > li.active > a:focus {
     background-position: 100% 100%!important;
   }
 }
-#site-footer {
-  color: #FFFFFF;
-}
-#site-footer .row.footer-content-wrapper {
-  background: linear-gradient(60deg, #fbfbfb 0%, #fbfbfb 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
-}
-#site-footer .container-fluid {
-  background: -webkit-linear-gradient(left, #FBFBFB, #FBFBFB 50%, #ff6b01 50%, #ff6b01);
-  min-height: 250px;
-  color: #FFFFFF;
-  overflow: auto;
-}
-#site-footer .col-left {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-height: 230px;
-  color: #222222;
-}
-#site-footer .col-middle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-height: 250px;
-  color: #FFFFFF;
-}
-#site-footer .col-right {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-height: 250px;
-  color: #FFFFFF;
-}
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;
   text-transform: uppercase;
