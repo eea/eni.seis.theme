@@ -2274,7 +2274,6 @@ body {
   }
 }
 .login-link {
-  padding: 0 1rem;
   transform: translateY(-10px);
 }
 #site-header .login-link {
