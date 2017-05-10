@@ -1,11 +1,5 @@
 <metal:macro define-macro="portlet">
-
-  <tal:def tal:define="
-    vocab context/event_countries_vocab;
-    events python: [b.getObject() for b in context.portal_catalog.searchResults(portal_type=['Event', 'eea.meeting'], review_state='published', sort_on='start', sort_order='reverse')];
-    events python: [ev for ev in events if vocab[context.Title()] in (ev.countries or [])];
-    ">
-
+  tal:def tal:define="events context/getLocalEvents">
     <dl class="box leading-large portlet portletEvents" tal:condition="events">
       <dt>Local Events</dt>
       <dd>
