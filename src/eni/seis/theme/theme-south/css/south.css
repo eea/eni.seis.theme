@@ -488,4 +488,17 @@ body.template-country_view .country-right-column .container {
   position: relative;
   top: -34px;
 }
+div.managePortletsLink {
+  border-radius: 0;
+  background: #FFFFFF;
+  width: 40%;
+  float: left;
+  border: 2px solid #ff6b01;
+}
+div.managePortletsLink:hover {
+  background: #ff6b01;
+}
+div.managePortletsLink:hover a {
+  color: #FFFFFF !important;
+}
 /*# sourceMappingURL=./source.css.map */
