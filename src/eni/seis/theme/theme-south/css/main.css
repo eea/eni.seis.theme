@@ -2468,7 +2468,7 @@ body {
   width: 100%;
 }
 #content-core {
-  text-align: initial;
+  text-align: left;
 }
 #content-core dd {
   margin: 0;
@@ -3075,7 +3075,7 @@ legend .level-national {
   }
 }
 ul.submenu {
-  text-align: initial;
+  text-align: left;
 }
 .submenu.navTree {
   left: 168px!important;

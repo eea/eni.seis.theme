@@ -481,7 +481,7 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   color: #08a8dc;
 }
 body.template-atct_edit #content {
-  text-align: initial;
+  text-align: left;
 }
 body.template-atct_edit #content > div:first-of-type {
   text-align: center;
