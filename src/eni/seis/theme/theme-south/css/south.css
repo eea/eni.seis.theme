@@ -467,6 +467,11 @@ body.template-country_view .tab-content .container .country-subsection-listing a
   padding-top: 5px;
   text-transform: uppercase;
 }
+body.template-country_view .tab-content .container .country-subsection-listing a.more-items:after {
+  content: "\2192";
+  position: relative;
+  top: -1px;
+}
 body.template-country_view .tab-content .container .country-subsection-listing h4 {
   text-transform: uppercase;
   color: #08a8dc;
