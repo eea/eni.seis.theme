@@ -258,6 +258,7 @@
 
 .section-frontpage-objectives {
   justify-content: center;
+  // align-items: baseline;
   background: none;
 
   @media @screen-md {
@@ -273,15 +274,34 @@
     padding: 5em 0;
   }
 
+  .splitter {
+    @media @screen-xs-max {
+      display: none;
+    }
+    @media @screen-sm {
+      display: block;
+      width: 0%;
+    }
+    @media @screen-md {
+      width: 10em;
+    }
+  }
+
   .global {
-    padding-right: 10%;
-    @media @screen-xs {
-      padding: 1em;
+    .wrapper {
+      padding: 0 1em;
+      width: 22em;
+      display: inline-block;
+    }
+    @media @screen-xs-max {
+      // padding: 1em;
       background: @color-brand-south;
     }
     @media @screen-sm {
       background: none;
-      padding: 2em 5% 2em 1em;
+      // padding: 2em 5% 2em 1em;
+      width: 30em;
+      text-align: right;
     }
     p {
       color: #FFFFFF;
@@ -295,16 +315,18 @@
     }
   }
   .specific {
-    padding-left: 5%;
-    @media @screen-xs {
-      padding: 2em 1em;
+    .wrapper {
+      padding: 0 1em;
+    }
+    @media @screen-xs-max {
       background: @color-gray-lighter;
       max-width: 100%;
     }
     @media @screen-sm {
       background: none;
-      padding: 2em 1em 2em 10%;
-      max-width: 30em;
+      width: 30em;
+      text-align: left;
+      margin-left: 0rem;
     }
     p {
       color: @color-gray-dark;
