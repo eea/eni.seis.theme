@@ -360,8 +360,15 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .documentFirstHeading {
   color: #ff6b01;
   border-bottom: 3px solid #08a8dc;
-  padding: 2em 1em 0.2em 1em;
+  padding: 0em 1em 0.2em 1em;
   display: inline-block;
+  text-align: center;
+}
+.documentByLine {
+  margin-bottom: 4em;
+}
+body.userrole-anonymous .documentFirstHeading {
+  margin-bottom: 1em;
 }
 @media (max-width: 959px) {
   #site-header {

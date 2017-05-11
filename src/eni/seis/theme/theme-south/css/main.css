@@ -2670,10 +2670,6 @@ aside .nav-group {
 span + .error {
   display: none;
 }
-.documentFirstHeading {
-  margin: 1rem 0!important;
-  text-align: center;
-}
 .page-header {
   background-image: url('../img/folder-background.png');
   min-height: 10em;
