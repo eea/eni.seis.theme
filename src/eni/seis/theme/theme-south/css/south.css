@@ -3,9 +3,19 @@
 #content a,
 #content a:visited,
 #content a:link,
-dl.portlet a:link {
+dl.portlet a:link,
+div.more a,
+.section-frontpage-news .right .more a {
   color: #ff6b01;
   border-bottom: none;
+}
+#content a:hover,
+#content a:visited:hover,
+#content a:link:hover,
+dl.portlet a:link:hover,
+div.more a:hover,
+.section-frontpage-news .right .more a:hover {
+  color: #08a8dc;
 }
 .btn-primary {
   border-color: #009245;

@@ -4,10 +4,15 @@
 #content a,
 #content a:visited,
 #content a:link,
-dl.portlet a:link
+dl.portlet a:link,
+div.more a,
+.section-frontpage-news .right .more a
 {
   color: @color-brand-south;
   border-bottom: none;
+  &:hover {
+    color: @color-accent;
+  }
 }
 
 .btn-primary {
