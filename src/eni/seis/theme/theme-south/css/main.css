@@ -1578,25 +1578,42 @@ ul.pagination-pages {
 dl.actionMenu {
   z-index: 1000;
 }
-#portal-personaltools.actionMenu {
+#site-header #portal-personaltools.actionMenu {
   position: absolute;
   right: 0;
+  border-radius: 0;
 }
-#site-header .actionMenu.activated {
+#site-header #portal-personaltools.actionMenu.deactivated .actionMenuHeader a {
+  color: #222222 !important;
+}
+#site-header #portal-personaltools.actionMenu.deactivated .actionMenuHeader a:hover {
+  color: #ff6b01 !important;
+}
+#site-header #portal-personaltools.actionMenu.activated {
   background-color: #ff6b01;
   border-radius: 0;
   box-shadow: none;
 }
-#site-header .actionMenu .actionMenuHeader {
-  padding-left: 1.6rem;
+#site-header #portal-personaltools.actionMenu.activated .actionMenuHeader a {
+  color: white;
 }
-#site-header .actionMenu .actionMenuContent {
+#site-header #portal-personaltools.actionMenu.activated dd {
+  border-radius: 0;
+  padding-bottom: 0px 0px;
+}
+#site-header #portal-personaltools.actionMenu.activated dd ul {
+  margin-bottom: 0px;
+}
+#site-header #portal-personaltools.actionMenu .actionMenuHeader {
+  padding-left: 0;
+}
+#site-header #portal-personaltools.actionMenu .actionMenuContent {
   padding-left: 0;
   padding-right: 0;
   background-color: #ff6b01;
   box-shadow: none;
 }
-#site-header .actionMenu .actionMenuContent a:hover {
+#site-header #portal-personaltools.actionMenu .actionMenuContent a:hover {
   background: #FFFFFF;
   color: #ff6b01;
 }
@@ -3441,9 +3458,6 @@ body.template-homepage {
   display: none;
 }
 #site-header .actionMenu .actionMenuContent a {
-  color: white;
-}
-#site-header .actionMenu.activated .actionMenuHeader a {
   color: white;
 }
 #site-header .actionMenu.activated {

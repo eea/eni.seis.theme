@@ -35,19 +35,37 @@ dl.actionMenu {
   z-index: 1000;
 }
 
-#portal-personaltools.actionMenu {
+#site-header #portal-personaltools.actionMenu {
   position: absolute;
   right: 0;
-}
+  border-radius: 0;
 
-#site-header .actionMenu {
-    &.activated {
+  &.deactivated {
+    .actionMenuHeader a {
+      color: @color-gray-dark !important;
+      &:hover {
+        color: @color-brand-south !important;
+      }
+    }
+  }
+
+  &.activated {
     background-color: @color-brand-south;
     border-radius: 0;
     box-shadow: none;
+    .actionMenuHeader a {
+      color: white;
+    }
+    dd {
+      border-radius: 0;
+      padding-bottom: 0px 0px;
+      ul {
+        margin-bottom: 0px;
+      }
+    }
   }
   .actionMenuHeader {
-    padding-left: 1.6rem;
+    padding-left: 0;
   }
   .actionMenuContent {
     padding-left: 0;
@@ -60,7 +78,6 @@ dl.actionMenu {
     }
   }
 }
-
 
 .nav {
   list-style-type: none!important;
