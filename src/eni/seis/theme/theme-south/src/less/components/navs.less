@@ -50,6 +50,7 @@ dl.actionMenu {
   }
 
   &.activated {
+    z-index: 99;
     background-color: @color-brand-south;
     border-radius: 0;
     box-shadow: none;
@@ -76,6 +77,12 @@ dl.actionMenu {
       background: #FFFFFF;
       color: @color-brand-south;
     }
+    ul {
+      padding-left: 0;
+    }
+  }
+  a {
+    color: #FFFFFF;
   }
 }
 

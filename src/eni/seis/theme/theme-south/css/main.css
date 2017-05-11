@@ -1590,6 +1590,7 @@ dl.actionMenu {
   color: #ff6b01 !important;
 }
 #site-header #portal-personaltools.actionMenu.activated {
+  z-index: 99;
   background-color: #ff6b01;
   border-radius: 0;
   box-shadow: none;
@@ -1616,6 +1617,12 @@ dl.actionMenu {
 #site-header #portal-personaltools.actionMenu .actionMenuContent a:hover {
   background: #FFFFFF;
   color: #ff6b01;
+}
+#site-header #portal-personaltools.actionMenu .actionMenuContent ul {
+  padding-left: 0;
+}
+#site-header #portal-personaltools.actionMenu a {
+  color: #FFFFFF;
 }
 .nav {
   list-style-type: none!important;
@@ -3457,21 +3464,12 @@ body.template-homepage .navbar-body {
 body.template-homepage {
   display: none;
 }
-#site-header .actionMenu .actionMenuContent a {
-  color: white;
-}
-#site-header .actionMenu.activated {
-  z-index: 99;
-}
 #site-header .navbar-brand {
   text-align: center;
 }
 #site-header-top .login-link:before {
   content: "\f007";
   padding-right: .5rem;
-}
-.actionMenu .actionMenuContent ul {
-  padding-left: 0;
 }
 @media (max-width: 959px) {
   .page-container #navbar-toggle {
