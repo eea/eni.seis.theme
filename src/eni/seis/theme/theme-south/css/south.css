@@ -284,8 +284,12 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .nav-pills > li.active > a:focus {
   background: #ff6b01 !important;
 }
-.table-hover > tbody > tr.level-national:hover {
+#related-events .table-hover > tbody > tr.level-national:hover {
   background-color: #ff6b01;
+}
+#related-events .table-hover > tbody > tr:hover {
+  background-color: #08a8dc;
+  color: #FFFFFF;
 }
 .tab-pane th {
   vertical-align: middle;
