@@ -486,4 +486,8 @@ body.template-atct_edit #content > div:first-of-type {
 body.template-news_listing_view .table-hover a:hover {
   color: #ff6b01 !important;
 }
+body.template-country_view .country-right-column .container {
+  position: relative;
+  top: -34px;
+}
 /*# sourceMappingURL=./source.css.map */
