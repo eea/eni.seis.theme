@@ -1355,10 +1355,10 @@ small,
   color: red;
 }
 .btn-default {
-  border: 1px solid;
+  border: 2px solid;
   margin-top: 1rem;
   padding: .5rem 2rem;
-  border-radius: 5rem;
+  border-radius: 0;
 }
 .btn-east,
 .btn-south {
@@ -1582,6 +1582,24 @@ dl.actionMenu {
   position: absolute;
   right: 0;
 }
+#site-header .actionMenu.activated {
+  background-color: #ff6b01;
+  border-radius: 0;
+  box-shadow: none;
+}
+#site-header .actionMenu .actionMenuHeader {
+  padding-left: 1.6rem;
+}
+#site-header .actionMenu .actionMenuContent {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #ff6b01;
+  box-shadow: none;
+}
+#site-header .actionMenu .actionMenuContent a:hover {
+  background: #FFFFFF;
+  color: #ff6b01;
+}
 .nav {
   list-style-type: none!important;
   margin-left: 0!important;
@@ -1767,8 +1785,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #08a8dc;
-  color: #FFFFFF;
+  background-color: #F5F5F5;
 }
 table col[class*="col-"] {
   position: static;
@@ -3255,6 +3272,10 @@ body.template-homepage .navbar-body {
   border-radius: 0 !important;
   text-transform: uppercase;
   color: #FFFFFF !important;
+}
+#site-footer .portlet.box .btn-subscribe:hover {
+  background: #FFFFFF !important;
+  color: #ff6b01 !important;
 }
 .admin {
   box-sizing: content-box !important;

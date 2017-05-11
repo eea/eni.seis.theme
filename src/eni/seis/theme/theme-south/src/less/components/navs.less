@@ -40,6 +40,27 @@ dl.actionMenu {
   right: 0;
 }
 
+#site-header .actionMenu {
+    &.activated {
+    background-color: @color-brand-south;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .actionMenuHeader {
+    padding-left: 1.6rem;
+  }
+  .actionMenuContent {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: @color-brand-south;
+    box-shadow: none;
+    a:hover {
+      background: #FFFFFF;
+      color: @color-brand-south;
+    }
+  }
+}
+
 
 .nav {
   list-style-type: none!important;

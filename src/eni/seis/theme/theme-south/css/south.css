@@ -7,9 +7,19 @@
 #content a,
 #content a:visited,
 #content a:link,
-dl.portlet a:link {
+dl.portlet a:link,
+div.more a,
+.section-frontpage-news .right .more a {
   color: #ff6b01;
   border-bottom: none;
+}
+#content a:hover,
+#content a:visited:hover,
+#content a:link:hover,
+dl.portlet a:link:hover,
+div.more a:hover,
+.section-frontpage-news .right .more a:hover {
+  color: #08a8dc;
 }
 .btn-primary {
   border-color: #009245;
@@ -107,27 +117,13 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .template-homepage #navbar {
   background: rgba(255, 255, 255, 0.8);
 }
-#site-header .actionMenu.activated {
-  background-color: #f38709;
-  border-radius: 0;
-  box-shadow: 0px 2px 1px #aaa;
-}
-#site-header .actionMenu.activated .actionMenuHeader {
-  padding-left: 1.6rem;
-}
-#site-header .actionMenu .actionMenuContent {
-  padding-left: 0;
-  padding-right: 0;
-  background-color: #f38709;
-  box-shadow: 0px 2px 1px #aaa;
-}
 .btn-default {
   border-color: #ff6b01;
 }
 .btn-default:hover {
   background: #ff6b01;
   color: white;
-  box-shadow: 1px 1px 3px #949494;
+  box-shadow: none;
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
@@ -288,8 +284,12 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .nav-pills > li.active > a:focus {
   background: #ff6b01 !important;
 }
-.table-hover > tbody > tr.level-national:hover {
+#related-events .table-hover > tbody > tr.level-national:hover {
   background-color: #ff6b01;
+}
+#related-events .table-hover > tbody > tr:hover {
+  background-color: #08a8dc;
+  color: #FFFFFF;
 }
 .tab-pane th {
   vertical-align: middle;
