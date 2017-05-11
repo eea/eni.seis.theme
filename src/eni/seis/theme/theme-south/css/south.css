@@ -9,7 +9,9 @@
 #content a:link,
 dl.portlet a:link,
 div.more a,
-.section-frontpage-news .right .more a {
+.section-frontpage-news .right .more a,
+aside.page-aside .box.leading-large a:nth-last-of-type(1),
+.section a {
   color: #ff6b01;
   border-bottom: none;
 }
@@ -18,7 +20,9 @@ div.more a,
 #content a:link:hover,
 dl.portlet a:link:hover,
 div.more a:hover,
-.section-frontpage-news .right .more a:hover {
+.section-frontpage-news .right .more a:hover,
+aside.page-aside .box.leading-large a:nth-last-of-type(1):hover,
+.section a:hover {
   color: #08a8dc;
 }
 .btn-primary {
@@ -97,12 +101,6 @@ input[type='submit']:hover {
 .navbar-brand p {
   color: #737373;
 }
-.section a {
-  color: #ff6b01;
-}
-aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-  color: #ff6b01;
-}
 @media (min-width: 960px) {
   .template-homepage #site-header {
     background-size: cover;
@@ -147,21 +145,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .admin {
   background: #ff6b01;
 }
-.admin .admin .page-container #edit-bar {
+.admin #edit-bar {
   border-style: solid solid solid solid;
   border-radius: 0 !important;
-}
-.admin #contentActionMenus dl.actionMenu.activated dd a:hover,
-.admin #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
-  background: inherit!important;
-}
-.admin .admin .page-container #edit-bar #contentActionMenus {
-  float: none;
-}
-.admin .admin .page-container #edit-bar #content-views a {
-  border-radius: 3px;
-}
-.admin #edit-bar {
   color: white;
   background: #ff6b01;
   border-color: #ff6b01 !important;
@@ -177,6 +163,32 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
   color: #ff6b01 !important;
 }
 .admin #edit-bar .selected a {
+  color: #ff6b01 !important;
+}
+.admin #edit-bar #contentActionMenus {
+  float: none;
+}
+.admin #edit-bar #contentActionMenus .actionMenuContent ul li a:hover {
+  background: #FFFFFF !important;
+}
+.admin #edit-bar #contentActionMenus .actionMenuContent ul li a:hover span {
+  color: #ff6b01;
+  background: #FFFFFF;
+}
+.admin #edit-bar #contentActionMenus .actionMenuContent ul li a span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.admin #edit-bar #content-views a {
+  border-radius: 0px;
+}
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd a:hover,
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+  background: #FFFFFF;
+}
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd a:hover span,
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected span {
+  background: #FFFFFF;
   color: #ff6b01 !important;
 }
 .admin #contentActionMenus dl.actionMenu a,

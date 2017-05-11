@@ -6,8 +6,9 @@
 #content a:link,
 dl.portlet a:link,
 div.more a,
-.section-frontpage-news .right .more a
-{
+.section-frontpage-news .right .more a,
+aside.page-aside .box.leading-large a:nth-last-of-type(1),
+.section a {
   color: @color-brand-south;
   border-bottom: none;
   &:hover {
@@ -79,16 +80,6 @@ input[type='submit'] {
   color: @color-gray;
 }
 
-.section {
-  a {
-    color: @color-brand-south;
-  }
-}
-
-aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-  color: @color-brand-south;
-}
-
 @media @screen-md {
   .template-homepage #site-header {
     background-size: cover;
@@ -144,21 +135,10 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 
 .admin {
   background: @color-brand-south;
-  .admin .page-container #edit-bar {
+
+  #edit-bar {
     border-style: solid solid solid solid;
     border-radius: 0 !important;
-  }
-  #contentActionMenus dl.actionMenu.activated dd a:hover,
-  #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
-    background: inherit!important;
-  }
-  .admin .page-container #edit-bar #contentActionMenus {
-    float: none;
-  }
-  .admin .page-container #edit-bar #content-views a {
-    border-radius: 3px;
-  }
-  #edit-bar {
     color: white;
     background: @color-brand-south;
     border-color: @color-brand-south!important;
@@ -179,7 +159,35 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
         color: @color-brand-south!important;
       }
     }
+    #contentActionMenus {
+      float: none;
+      .actionMenuContent ul li a {
+        &:hover {
+          background: #FFFFFF !important;
+          span {
+            color: @color-brand-south;
+            background: #FFFFFF;
+          }
+        }
+        span {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+    #content-views a {
+      border-radius: 0px;
+    }
+    #contentActionMenus dl.actionMenu.activated dd a:hover,
+    #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+      background: #FFFFFF;
+      span {
+        background: #FFFFFF;
+        color: @color-brand-south !important;
+      }
+    }
   }
+
   #contentActionMenus dl.actionMenu a,
   #contentActionMenus dl.actionMenu.activated dd {
     background: @color-brand-south;

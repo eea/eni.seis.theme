@@ -2554,9 +2554,6 @@ a.contenttype-eea-meeting:before {
   content: '';
   display: none;
 }
-#contentActionMenus dl.actionMenu.activated dd {
-  padding-left: 20px;
-}
 #portal-breadcrumbs {
   font-size: inherit;
   margin-bottom: 0!important;
