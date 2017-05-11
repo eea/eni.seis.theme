@@ -1,5 +1,9 @@
 @media (min-width: 1360px) {
 }
+@media (max-width: 639px) {
+}
+@media (min-width: 640px) {
+}
 #content a,
 #content a:visited,
 #content a:link,

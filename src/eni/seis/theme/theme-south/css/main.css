@@ -3884,19 +3884,37 @@ ul.configlets {
 .section-frontpage-objectives div {
   padding: 5em 0;
 }
-.section-frontpage-objectives .global {
-  padding-right: 10%;
+@media (max-width: 639px) {
+  .section-frontpage-objectives .splitter {
+    display: none;
+  }
 }
-@media (min-width: 360px) {
+@media (min-width: 640px) {
+  .section-frontpage-objectives .splitter {
+    display: block;
+    width: 0%;
+  }
+}
+@media (min-width: 960px) {
+  .section-frontpage-objectives .splitter {
+    width: 10em;
+  }
+}
+.section-frontpage-objectives .global .wrapper {
+  padding: 0 1em;
+  width: 22em;
+  display: inline-block;
+}
+@media (max-width: 639px) {
   .section-frontpage-objectives .global {
-    padding: 1em;
     background: #ff6b01;
   }
 }
 @media (min-width: 640px) {
   .section-frontpage-objectives .global {
     background: none;
-    padding: 2em 5% 2em 1em;
+    width: 30em;
+    text-align: right;
   }
 }
 .section-frontpage-objectives .global p {
@@ -3909,12 +3927,11 @@ ul.configlets {
   padding-right: 1em;
   margin-bottom: 30px;
 }
-.section-frontpage-objectives .specific {
-  padding-left: 5%;
+.section-frontpage-objectives .specific .wrapper {
+  padding: 0 1em;
 }
-@media (min-width: 360px) {
+@media (max-width: 639px) {
   .section-frontpage-objectives .specific {
-    padding: 2em 1em;
     background: #F5F5F5;
     max-width: 100%;
   }
@@ -3922,8 +3939,9 @@ ul.configlets {
 @media (min-width: 640px) {
   .section-frontpage-objectives .specific {
     background: none;
-    padding: 2em 1em 2em 10%;
-    max-width: 30em;
+    width: 30em;
+    text-align: left;
+    margin-left: 0rem;
   }
 }
 .section-frontpage-objectives .specific p {
