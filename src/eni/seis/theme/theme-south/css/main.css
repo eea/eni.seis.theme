@@ -3093,6 +3093,15 @@ ul.submenu {
 .nav-folder {
   border-color: #08a8dc;
 }
+.nav-folder .nav-body {
+  margin-left: .5rem;
+}
+.nav-folder .nav-body .nav-item a {
+  color: #222222 !important;
+}
+.nav-folder .nav-body .nav-item a:hover {
+  color: #ff6b01 !important;
+}
 .page-header {
   display: none;
 }
@@ -3173,9 +3182,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 }
 #portal-globalnav > li:nth-child(1n+9) {
   display: none;
-}
-.nav-body {
-  margin-left: .5rem;
 }
 body.template-homepage .container-fluid#navbar {
   padding-bottom: 0;

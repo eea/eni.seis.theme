@@ -391,6 +391,15 @@ ul.submenu {
 
 .nav-folder {
   border-color: @color-accent;
+  .nav-body {
+    margin-left: .5rem;
+    .nav-item a {
+      color: @color-gray-dark !important;
+      &:hover {
+        color: @color-brand-south !important;
+      }
+    }
+  }
 }
 
 .page-header {
@@ -497,10 +506,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):before {
 
 #portal-globalnav > li:nth-child(1n+9) {
   display: none
-}
-
-.nav-body {
-  margin-left: .5rem;
 }
 
 body.template-homepage {
