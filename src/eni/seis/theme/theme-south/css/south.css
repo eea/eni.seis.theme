@@ -486,6 +486,7 @@ body.template-news_listing_view .table-hover a:hover {
 }
 body.template-country_view .country-right-column .container {
   position: relative;
+  overflow-x: hidden;
   top: -34px;
 }
 div.managePortletsLink {
