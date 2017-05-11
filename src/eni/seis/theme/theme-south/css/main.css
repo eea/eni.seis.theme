@@ -1582,6 +1582,24 @@ dl.actionMenu {
   position: absolute;
   right: 0;
 }
+#site-header .actionMenu.activated {
+  background-color: #ff6b01;
+  border-radius: 0;
+  box-shadow: none;
+}
+#site-header .actionMenu .actionMenuHeader {
+  padding-left: 1.6rem;
+}
+#site-header .actionMenu .actionMenuContent {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #ff6b01;
+  box-shadow: none;
+}
+#site-header .actionMenu .actionMenuContent a:hover {
+  background: #FFFFFF;
+  color: #ff6b01;
+}
 .nav {
   list-style-type: none!important;
   margin-left: 0!important;

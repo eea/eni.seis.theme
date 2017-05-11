@@ -113,20 +113,6 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1) {
 .template-homepage #navbar {
   background: rgba(255, 255, 255, 0.8);
 }
-#site-header .actionMenu.activated {
-  background-color: #f38709;
-  border-radius: 0;
-  box-shadow: 0px 2px 1px #aaa;
-}
-#site-header .actionMenu.activated .actionMenuHeader {
-  padding-left: 1.6rem;
-}
-#site-header .actionMenu .actionMenuContent {
-  padding-left: 0;
-  padding-right: 0;
-  background-color: #f38709;
-  box-shadow: 0px 2px 1px #aaa;
-}
 .btn-default {
   border-color: #ff6b01;
 }
