@@ -3318,7 +3318,6 @@ body.template-homepage .navbar-body {
 .admin #edit-bar ol,
 .admin #edit-bar p {
   margin-bottom: 0!important;
-  margin-top: -1px;
 }
 .admin .contentViews#content-views > li > a {
   border-radius: 0;

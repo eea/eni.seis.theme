@@ -195,6 +195,7 @@ input[type='submit']:hover {
 .admin #contentActionMenus dl.actionMenu.activated dd {
   background: #ff6b01;
   color: white;
+  border-radius: 0px;
 }
 .admin ul {
   padding: 0;
