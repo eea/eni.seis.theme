@@ -483,4 +483,7 @@ body.template-atct_edit #content {
 body.template-atct_edit #content > div:first-of-type {
   text-align: center;
 }
+body.template-news_listing_view .table-hover a:hover {
+  color: #ff6b01 !important;
+}
 /*# sourceMappingURL=./source.css.map */
