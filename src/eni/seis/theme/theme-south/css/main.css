@@ -1355,10 +1355,10 @@ small,
   color: red;
 }
 .btn-default {
-  border: 1px solid;
+  border: 2px solid;
   margin-top: 1rem;
   padding: .5rem 2rem;
-  border-radius: 5rem;
+  border-radius: 0;
 }
 .btn-east,
 .btn-south {
@@ -3255,6 +3255,10 @@ body.template-homepage .navbar-body {
   border-radius: 0 !important;
   text-transform: uppercase;
   color: #FFFFFF !important;
+}
+#site-footer .portlet.box .btn-subscribe:hover {
+  background: #FFFFFF !important;
+  color: #ff6b01 !important;
 }
 .admin {
   box-sizing: content-box !important;
