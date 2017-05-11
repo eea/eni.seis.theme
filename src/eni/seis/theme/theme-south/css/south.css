@@ -414,7 +414,6 @@ body.template-country_view .country-left-column .box.leading-large.portlet dd .p
   margin-bottom: 20px;
 }
 body.template-country_view .country-left-column a {
-  color: #ff6b01 !important;
   text-decoration: none !important;
   border-bottom: none !important;
 }
@@ -464,7 +463,6 @@ body.template-country_view .tab-content .container .country-subsection-listing d
 }
 body.template-country_view .tab-content .container .country-subsection-listing a.more-items {
   border-top: 1px solid #08a8dc;
-  color: #ff6b01 !important;
   padding-left: 10px;
   padding-top: 5px;
   text-transform: uppercase;
