@@ -3225,7 +3225,17 @@ body.template-homepage .navbar-body {
 }
 @media (min-width: 1360px) {
   #site-footer .container-fluid {
-    background: -webkit-linear-gradient(left, #F5F5F5, #F5F5F5 50%, #ff6b01 50%, #ff6b01);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-gray-lighter+50,6e7774+50,6e7774+50,6e7774+51,6e7774+51,@color-brand-south+51 */
+    background: #F5F5F5;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #F5F5F5 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #F5F5F5 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #F5F5F5 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-lighter', endColorstr='@color-brand-south', GradientType=1);
+    /* IE6-9 */
   }
   #site-footer .row.footer-content-wrapper {
     background: linear-gradient(60deg, #F5F5F5 0%, #F5F5F5 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);

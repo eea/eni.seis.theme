@@ -37,10 +37,15 @@
 
   @media @screen-lg {
     .container-fluid {
-      background: -webkit-linear-gradient(left, @color-gray-lighter, @color-gray-lighter 50%, @color-brand-south 50%, @color-brand-south);
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-gray-lighter+50,6e7774+50,6e7774+50,6e7774+51,6e7774+51,@color-brand-south+51 */
+      background: @color-gray-lighter; /* Old browsers */
+      background: -moz-linear-gradient(left,  @color-gray-lighter 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, @color-brand-south 51%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  @color-gray-lighter 50%,#6e7774 50%,#6e7774 50%,#6e7774 51%,#6e7774 51%,@color-brand-south 51%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  @color-gray-lighter 50%,#6e7774 50%,#6e7774 50%,#6e7774 51%,#6e7774 51%,@color-brand-south 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-gray-lighter', endColorstr='@color-brand-south',GradientType=1 ); /* IE6-9 */
     }
     .row.footer-content-wrapper {
-      // background: linear-gradient(60deg, #fbfbfb 0%,#fbfbfb 28%,#737373 28%,#737373 67%,#ff6b01 67%,#ff6b01 100%);
+      // background: linear-gradient(60deg, #fbfbfb 0%,#fbfbfb 28%,#737373 28%,#737373 67%,@color-brand-south 67%,@color-brand-south 100%);
       background: linear-gradient(60deg, @color-gray-lighter 0%, @color-gray-lighter 28%, @color-secondary 28%, @color-secondary 67%, @color-brand-south 67%, @color-brand-south 100%);
     }
   }
