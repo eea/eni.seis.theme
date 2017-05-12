@@ -115,13 +115,25 @@ input[type='submit']:hover {
 .template-homepage #navbar {
   background: rgba(255, 255, 255, 0.8);
 }
+.btn.event-register,
 .btn-default {
   border-color: #ff6b01;
 }
+.btn.event-register:hover,
 .btn-default:hover {
   background: #ff6b01;
   color: white;
   box-shadow: none;
+}
+.btn.event-register {
+  text-transform: uppercase;
+  color: #222222 !important;
+  border-radius: 0;
+  border-bottom: 2px solid #ff6b01 !important;
+  border: 2px solid #ff6b01;
+}
+.btn.event-register:hover {
+  color: #FFFFFF !important;
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {

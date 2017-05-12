@@ -97,14 +97,25 @@ input[type='submit'] {
   background: rgba(255, 255, 255, 0.8);
 }
 
+.btn.event-register,
 .btn-default {
   border-color: @color-brand-south;
+  &:hover {
+    background: @color-brand-south;
+    color: white;
+    box-shadow: none;
+  }
 }
 
-.btn-default:hover {
-  background: @color-brand-south;
-  color: white;
-  box-shadow: none;
+.btn.event-register {
+  text-transform: uppercase;
+  color: @color-gray-dark !important;
+  border-radius: 0;
+  border-bottom: 2px solid @color-brand-south !important;
+  border: 2px solid @color-brand-south;
+  &:hover {
+    color: #FFFFFF !important;
+  }
 }
 
 #portal-globalnav {
