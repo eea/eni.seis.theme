@@ -297,6 +297,13 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .nav-pills > li.active > a:focus {
   background: #ff6b01 !important;
 }
+#related-events .table-hover {
+  position: relative;
+  top: -20px;
+}
+#related-events .table-hover > thead {
+  display: none;
+}
 #related-events .table-hover > tbody > tr.level-national:hover {
   background-color: #ff6b01;
 }
