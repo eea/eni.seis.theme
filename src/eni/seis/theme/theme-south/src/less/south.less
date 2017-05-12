@@ -99,6 +99,7 @@ input[type='submit'] {
 
 .btn.event-register,
 .register-form button,
+a.back-button,
 .btn-default {
   border-color: @color-brand-south;
   &:hover {
@@ -108,12 +109,13 @@ input[type='submit'] {
   }
 }
 
+.meeting-items a.btn-default,
+a.back-button,
 .btn.event-register {
-  text-transform: uppercase;
-  color: @color-gray-dark !important;
+  color: @color-gray !important;
   border-radius: 0;
   border-bottom: 2px solid @color-brand-south !important;
-  border: 2px solid @color-brand-south;
+  border: 2px solid @color-brand-south !important;
   &:hover {
     color: #FFFFFF !important;
   }
@@ -126,6 +128,7 @@ input[type='submit'] {
 }
 
 .register-form button {
+  color: @color-gray;
   border-radius: 0 !important;
   border: 2px solid @color-brand-south;
   margin-right: 10px;
