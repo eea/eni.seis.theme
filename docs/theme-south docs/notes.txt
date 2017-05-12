@@ -51,7 +51,8 @@ INSTALL
     Available view methods: add: country_view
     Then for each country select Display - country_view
 
+    /south/portal_skins/manage_propertiesForm
+        In Sunburst Theme move eni_seis_south after custom
+
 TODO
-- Add "event-fallback.png" in skin
 - Event - National, Regional. Add Other.
-- Replace homepage_objectives_global.svg and ..._specific.svg with vectorial ones.
