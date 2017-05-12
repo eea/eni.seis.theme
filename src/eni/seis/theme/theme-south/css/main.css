@@ -2340,6 +2340,7 @@ body {
   float: right;
 }
 #site-footer .login-link {
+  text-transform: uppercase;
   position: relative;
   background: none;
   bottom: 0;
