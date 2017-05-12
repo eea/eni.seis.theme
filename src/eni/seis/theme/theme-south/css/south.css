@@ -413,7 +413,7 @@ body.userrole-anonymous .documentFirstHeading {
   clear: both;
 }
 .portlet img {
-  width: 100%;
+  max-width: 100%;
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;
