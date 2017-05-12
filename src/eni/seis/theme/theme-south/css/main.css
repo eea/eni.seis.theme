@@ -2808,7 +2808,7 @@ span + .error {
   margin-top: 0px;
 }
 .navbar-body #portal-globalnav li > a {
-  padding: 0.4em 0.9em 0.5em 0.9em;
+  padding: 0.7em 0.9em 0.7em 0.9em;
 }
 .navbar-body #portal-globalnav li:first-of-type:before {
   border: none;
@@ -2846,7 +2846,7 @@ span + .error {
 }
 @media (min-width: 960px) {
   .navbar-body #portal-globalnav li .submenu {
-    margin-left: -9px;
+    margin-left: -10px;
   }
 }
 .navbar-body #portal-globalnav li .submenu li a {
