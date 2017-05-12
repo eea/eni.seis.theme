@@ -94,6 +94,7 @@ input[type='submit'] {
 .btn.event-register,
 .register-form button,
 a.back-button,
+.btn-default.edit-text,
 .btn-default {
   border-color: @color-brand-south;
   &:hover {
@@ -105,6 +106,7 @@ a.back-button,
 
 .meeting-items a.btn-default,
 a.back-button,
+.btn-default.edit-text,
 .btn.event-register {
   color: @color-gray !important;
   border-radius: 0;
@@ -118,6 +120,16 @@ a.back-button,
 a.back-button {
   position: relative;
   top: -5px;
+}
+
+.btn-default.edit-text {
+  margin-bottom: 5px;
+}
+
+body.template-country_view.userrole-anonymous {
+  .btn-default.edit-text {
+    display: none;
+  }
 }
 
 .register-form-fields {

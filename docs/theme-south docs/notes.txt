@@ -56,5 +56,6 @@ INSTALL
 
 TODO
 - Event - National, Regional. Add Other.
-- Meeting view: change lead image position (better under the title)
+- Meeting view: change lead image position (better under the title) - it's display none now
 - /register KeyError: 'first_name' - check this (redo upgrade step?)
+- country view news and events: add more link (need?: country news page, country events page - or link to all news / events?)

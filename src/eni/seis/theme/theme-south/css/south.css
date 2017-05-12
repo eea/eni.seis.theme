@@ -114,12 +114,14 @@ input[type='submit']:hover {
 .btn.event-register,
 .register-form button,
 a.back-button,
+.btn-default.edit-text,
 .btn-default {
   border-color: #ff6b01;
 }
 .btn.event-register:hover,
 .register-form button:hover,
 a.back-button:hover,
+.btn-default.edit-text:hover,
 .btn-default:hover {
   background: #ff6b01;
   color: white;
@@ -127,6 +129,7 @@ a.back-button:hover,
 }
 .meeting-items a.btn-default,
 a.back-button,
+.btn-default.edit-text,
 .btn.event-register {
   color: #737373 !important;
   border-radius: 0;
@@ -135,12 +138,19 @@ a.back-button,
 }
 .meeting-items a.btn-default:hover,
 a.back-button:hover,
+.btn-default.edit-text:hover,
 .btn.event-register:hover {
   color: #FFFFFF !important;
 }
 a.back-button {
   position: relative;
   top: -5px;
+}
+.btn-default.edit-text {
+  margin-bottom: 5px;
+}
+body.template-country_view.userrole-anonymous .btn-default.edit-text {
+  display: none;
 }
 .register-form-fields label {
   font-weight: 500;
