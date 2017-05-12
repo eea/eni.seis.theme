@@ -2728,21 +2728,6 @@ span + .error {
 .event.summary.details {
   float: none!important;
 }
-legend {
-  float: right;
-  position: relative;
-  top: -65px;
-}
-legend .fa {
-  font-size: 1.3em!important;
-  padding: 1rem;
-}
-legend .fa:before {
-  margin-right: .5rem;
-}
-legend .level-national {
-  padding-left: 0;
-}
 .newsImageContainer img {
   min-width: 300px;
   height: auto;

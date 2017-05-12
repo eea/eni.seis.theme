@@ -353,11 +353,6 @@ body.template-country_view {
 }
 
 #related-events {
-  .table-hover {
-    position: relative;
-    top: -20px;
-  }
-
   .table-hover > thead {
     display: none;
   }
@@ -456,6 +451,38 @@ body.template-country_view {
 .event-title {
   color: @color-brand-south;
 }
+
+legend {
+  float: right;
+  position: relative;
+  top: -55px;
+
+  .fa.fa-circle.level-regional,
+  .fa.fa-circle.level-national,
+  .fa.fa-circle.other {
+    font-size: 2em;
+  }
+
+  span.level-national,
+  span.level-regional {
+    margin-right: 20px;
+  }
+
+  span.level-national span,
+  span.level-regional span,
+  span.other span {
+    position: relative;
+    top: -4px;
+  }
+
+  .fa:before {
+    margin-right: .5rem;
+  }
+  .level-national {
+    padding-left: 0;
+  }
+}
+
 
 #site-footer .contact {
   a {

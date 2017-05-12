@@ -329,10 +329,6 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 .nav-pills > li.active > a:focus {
   background: #ff6b01 !important;
 }
-#related-events .table-hover {
-  position: relative;
-  top: -20px;
-}
 #related-events .table-hover > thead {
   display: none;
 }
@@ -400,6 +396,32 @@ body.template-country_view .nav-tabs > li.active > a:focus {
 }
 .event-title {
   color: #ff6b01;
+}
+legend {
+  float: right;
+  position: relative;
+  top: -55px;
+}
+legend .fa.fa-circle.level-regional,
+legend .fa.fa-circle.level-national,
+legend .fa.fa-circle.other {
+  font-size: 2em;
+}
+legend span.level-national,
+legend span.level-regional {
+  margin-right: 20px;
+}
+legend span.level-national span,
+legend span.level-regional span,
+legend span.other span {
+  position: relative;
+  top: -4px;
+}
+legend .fa:before {
+  margin-right: .5rem;
+}
+legend .level-national {
+  padding-left: 0;
 }
 #site-footer .contact a {
   font-weight: 500;
