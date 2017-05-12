@@ -3511,6 +3511,7 @@ ul.configlets {
   padding-right: 5px;
 }
 .container-fluid.header-top {
+  overflow: overlay;
   background: #F5F5F5 !important;
   padding: 0.5rem;
   margin-bottom: 4rem;
