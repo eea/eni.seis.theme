@@ -311,6 +311,27 @@ body.template-country_view .nav-tabs > li.active > a:focus {
   background-color: #08a8dc;
   color: #FFFFFF;
 }
+#project-related-events .table-hover thead {
+  display: none;
+}
+#project-related-events .table-hover th {
+  color: #222222 !important;
+}
+#project-related-events .table-hover tr:hover {
+  background: #08a8dc;
+}
+#project-related-events .table-hover tr:hover td.event-summary {
+  color: #FFFFFF !important;
+}
+#project-related-events .table-hover tr:hover td a {
+  color: #FFFFFF !important;
+}
+#project-related-events .table-hover tr td a {
+  color: #ff6b01 !important;
+}
+#project-related-events .table-hover td.event-link {
+  min-width: 140px;
+}
 .tab-pane th {
   vertical-align: middle;
 }

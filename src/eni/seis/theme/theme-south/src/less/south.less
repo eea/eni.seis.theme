@@ -339,6 +339,38 @@ body.template-country_view {
   }
 }
 
+#project-related-events {
+  .table-hover {
+    thead {
+      display: none;
+    }
+
+    th {
+      color: @color-gray-dark !important;
+    }
+
+    tr {
+      &:hover {
+        background: @color-accent;
+        td.event-summary {
+          color: #FFFFFF !important;
+        }
+        td a {
+          color: #FFFFFF !important;
+        }
+      }
+
+      td a {
+        color: @color-brand-south !important;
+      }
+    }
+
+    td.event-link {
+      min-width: 140px;
+    }
+  }
+}
+
 .tab-pane {
   th {
     vertical-align: middle;
