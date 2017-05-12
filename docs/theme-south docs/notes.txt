@@ -56,3 +56,4 @@ INSTALL
 
 TODO
 - Event - National, Regional. Add Other.
+- Meeting view: change lead image position (better under the title)

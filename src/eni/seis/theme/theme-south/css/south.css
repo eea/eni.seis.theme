@@ -535,4 +535,7 @@ div.managePortletsLink:hover {
 div.managePortletsLink:hover a {
   color: #FFFFFF !important;
 }
+#viewlet-above-content-title .leadImage {
+  display: none;
+}
 /*# sourceMappingURL=./source.css.map */
