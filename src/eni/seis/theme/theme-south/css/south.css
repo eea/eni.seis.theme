@@ -588,4 +588,7 @@ div.managePortletsLink:hover a {
 #viewlet-above-content-title .leadImage {
   display: none;
 }
+.template-homepage.userrole-authenticated #edit-bar {
+  margin-top: 4rem;
+}
 /*# sourceMappingURL=./source.css.map */
