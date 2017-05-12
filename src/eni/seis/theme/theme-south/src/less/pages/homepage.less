@@ -306,12 +306,19 @@
     p {
       color: #FFFFFF;
     }
+    img {
+      margin-bottom: 3px;
+    }
     h3 {
       color: #FFFFFF;
       border-bottom: 3px solid #FFFFFF;
       display: inline-block;
       padding-right: 1em;
       margin-bottom: 30px;
+      span {
+        position: relative;
+        bottom: -0.5em;
+      }
     }
   }
   .specific {
@@ -331,32 +338,21 @@
     p {
       color: @color-gray-dark;
     }
+    img {
+      margin-bottom: 3px;
+    }
     h3 {
       color: @color-brand-south;
       border-bottom: 3px solid @color-accent;
       display: inline-block;
       padding-right: 1em;
       margin-bottom: 30px;
+      span {
+        position: relative;
+        bottom: -0.5em;
+      }
     }
   }
-
-  // min-height: 200px;
-  //
-  //
-  // .global {
-  //   padding: 5% 10% 10% 30%;
-  //   @media @screen-md-upto {
-  //     background: @color-brand-south !important;
-  //     padding: 5% 10% 10% 10% !important;
-  //   }
-  // }
-  //
-  // .specific {
-  //   padding: 5% 30% 10% 10%;
-  //   @media @screen-md-upto {
-  //     background: @color-gray-lighter !important;
-  //   }
-  // }
 }
 
 .section-frontpage-countries {

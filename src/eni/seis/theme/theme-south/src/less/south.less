@@ -347,16 +347,20 @@ body.template-country_view {
 }
 
 #related-events {
-  .table-hover > thead {
-    display: none;
-  }
+  .table-hover {
+    > thead {
+      display: none;
+    }
 
-  .table-hover > tbody > tr.level-national:hover {
-    background-color: @color-brand-south;
-  }
-  .table-hover > tbody > tr:hover {
-    background-color: @color-accent;
-    color: #FFFFFF;
+    > tbody {
+      > tr.level-national:hover {
+        background-color: @color-brand-south;
+      }
+      > tr:hover {
+        background-color: @color-accent;
+        color: #FFFFFF;
+      }
+    }
   }
 }
 

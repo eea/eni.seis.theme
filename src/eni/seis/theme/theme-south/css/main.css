@@ -3951,12 +3951,19 @@ ul.configlets {
 .section-frontpage-objectives .global p {
   color: #FFFFFF;
 }
+.section-frontpage-objectives .global img {
+  margin-bottom: 3px;
+}
 .section-frontpage-objectives .global h3 {
   color: #FFFFFF;
   border-bottom: 3px solid #FFFFFF;
   display: inline-block;
   padding-right: 1em;
   margin-bottom: 30px;
+}
+.section-frontpage-objectives .global h3 span {
+  position: relative;
+  bottom: -0.5em;
 }
 .section-frontpage-objectives .specific .wrapper {
   padding: 0 1em;
@@ -3978,12 +3985,19 @@ ul.configlets {
 .section-frontpage-objectives .specific p {
   color: #222222;
 }
+.section-frontpage-objectives .specific img {
+  margin-bottom: 3px;
+}
 .section-frontpage-objectives .specific h3 {
   color: #ff6b01;
   border-bottom: 3px solid #08a8dc;
   display: inline-block;
   padding-right: 1em;
   margin-bottom: 30px;
+}
+.section-frontpage-objectives .specific h3 span {
+  position: relative;
+  bottom: -0.5em;
 }
 .section-frontpage-countries {
   margin: 4em 0;
