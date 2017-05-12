@@ -116,10 +116,12 @@ input[type='submit']:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 .btn.event-register,
+.register-form button,
 .btn-default {
   border-color: #ff6b01;
 }
 .btn.event-register:hover,
+.register-form button:hover,
 .btn-default:hover {
   background: #ff6b01;
   color: white;
@@ -134,6 +136,14 @@ input[type='submit']:hover {
 }
 .btn.event-register:hover {
   color: #FFFFFF !important;
+}
+.register-form-fields label {
+  font-weight: 500;
+}
+.register-form button {
+  border-radius: 0 !important;
+  border: 2px solid #ff6b01;
+  margin-right: 10px;
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
