@@ -1600,7 +1600,7 @@ dl.actionMenu {
 }
 #site-header #portal-personaltools.actionMenu.activated dd {
   border-radius: 0;
-  padding-bottom: 0px 0px;
+  padding: 8px 4px;
 }
 #site-header #portal-personaltools.actionMenu.activated dd ul {
   margin-bottom: 0px;
