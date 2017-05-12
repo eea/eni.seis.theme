@@ -2827,28 +2827,30 @@ legend .level-national {
 .navbar-body #portal-globalnav li:first-of-type:before {
   border: none;
 }
-.navbar-body #portal-globalnav li:before {
-  content: '';
-  border-left: 1px solid #ededed;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: -1px;
-  transform: skew(-30deg);
-  z-index: -1;
-}
-.navbar-body #portal-globalnav li:after {
-  content: '';
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: skew(-30deg);
-  z-index: -1;
-  background-color: #ff6b01;
+@media (min-width: 960px) {
+  .navbar-body #portal-globalnav li:before {
+    content: '';
+    border-left: 1px solid #ededed;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -1px;
+    transform: skew(-30deg);
+    z-index: -1;
+  }
+  .navbar-body #portal-globalnav li:after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: skew(-30deg);
+    z-index: -1;
+    background-color: #ff6b01;
+  }
 }
 .navbar-body #portal-globalnav li:hover {
   background: transparent;
@@ -2856,8 +2858,10 @@ legend .level-national {
 .navbar-body #portal-globalnav li:hover::after {
   display: block;
 }
-.navbar-body #portal-globalnav li .submenu {
-  margin-left: -9px;
+@media (min-width: 960px) {
+  .navbar-body #portal-globalnav li .submenu {
+    margin-left: -9px;
+  }
 }
 .navbar-body #portal-globalnav li .submenu li a {
   background: #08a8dc !important;
