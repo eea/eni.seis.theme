@@ -89,10 +89,6 @@ input[type='submit'] {
 input[type='submit']:hover {
   background: #08a8dc !important;
 }
-/* Fix border color in submenu items */
-#portal-globalnav ul.submenu > li > a:hover {
-  box-shadow: inset 3px 0 0 #F7931E !important;
-}
 .navbar-brand strong,
 .footer-brand strong {
   color: #ff6b01;
@@ -157,7 +153,7 @@ a.back-button {
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
-    border-top: solid #ff6b01;
+    border-top: solid #FFFFFF;
   }
   #portal-globalnav > li:hover {
     background: #ff6b01;
