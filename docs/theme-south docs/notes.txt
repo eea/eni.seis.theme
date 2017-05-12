@@ -47,6 +47,10 @@ INSTALL
 
 <p>ENI SEIS II <b>South</b> Support Mechanism project aims to contribute to the <b>reduction of the marine pollution in the Mediterranean</b> by developing a <b>Shared Environmental Information System</b> (SEIS) supporting the regular production and <b>sharing</b> of quality assessed environmental <b>data, indicators and information</b>.</p>
 
+    /south/portal_types/Folder/manage_propertiesForm
+    Available view methods: add: country_view
+    Then for each country select Display - country_view
+
 TODO
 - Add "event-fallback.png" in skin
 - Event - National, Regional. Add Other.
