@@ -4053,35 +4053,56 @@ body.template-data_and_statistics .data-left-column .knowledge-resources ul {
 body.template-data_and_statistics .data-left-column .knowledge-resources ul li {
   list-style: none;
 }
+body.template-data_and_statistics .data-right-column div.data.row {
+  margin-bottom: 20px;
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item {
+  padding: 20px;
+  border: 1px solid #08a8dc;
+  background: #FFFFFF;
+  text-align: center;
+  display: block;
+  min-height: 200px;
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item span {
+  width: 100%;
+}
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img {
   height: 50px;
-  width: 50px;
+  width: 100%;
   float: left;
-  background-size: 50px auto;
+  background-size: 100px auto;
+  background-repeat: no-repeat;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_water_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_waste_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_normal.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item {
+  background: #08a8dc !important;
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img {
+  background-repeat: no-repeat;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_water_hover.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_waste_hover.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_hover.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_hover.svg);
 }
 .box {
   margin-left: auto;
