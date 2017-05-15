@@ -54,6 +54,30 @@ INSTALL
     /south/portal_skins/manage_propertiesForm
         In Sunburst Theme move eni_seis_south after custom
 
+Country view table example (add it to country/edit body text):
+<table class="table table-hover table-condensed">
+<thead>
+  <tr>
+    <th>NAME</th>
+    <th>ORGANISATION</th>
+    <th>POSITION</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Ms Amina Benzekri</td>
+    <td>Ministere des Ressources en Lorem Ipsum/td>
+    <td>Directrice generale lorem ipsum dolor sit amet</td>
+  </tr>
+  <tr>
+    <td>Mrs Fathia Ghemmaz</td>
+    <td>Office National des Statistics (ONS)</td>
+    <td>Chef d'Etudes a la Direction des Statistiques regionales, Agricoles et de la Cartographie</td>
+  </tr>
+</tbody>
+</table>
+<a href="#" class="more-items pull-right">Read more</a>
+
 TODO
 - Event - National, Regional. Add Other.
 - Meeting view: change lead image position (better under the title) - it's display none now
