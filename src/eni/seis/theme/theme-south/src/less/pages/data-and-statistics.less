@@ -1,8 +1,56 @@
 body.template-data_and_statistics {
   .data-left-column {
-    background-color: red !important;
+    border-right: 1px solid @color-gray-lighter;
   }
   .data-right-column {
-    background-color: blue !important;
+    div.data.row {
+      a.data-link {
+        div.data-item {
+          span {
+          }
+
+          div.data-img {
+            height: 50px;
+            width: 50px;
+            float: left;
+            background-size: 50px auto;
+
+            &.icon-water {
+              background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+            }
+            &.icon-waste {
+              background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+            }
+            &.icon-industrial-emissions {
+              background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+            }
+            &.icon-cross-cutting-issues {
+              background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+            }
+          }
+        }
+        &:hover {
+          div.data-item {
+            span {
+            }
+
+            div.data-img {
+              &.icon-water {
+                background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+              }
+              &.icon-waste {
+                background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+              }
+              &.icon-industrial-emissions {
+                background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+              }
+              &.icon-cross-cutting-issues {
+                background-image: url(./../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

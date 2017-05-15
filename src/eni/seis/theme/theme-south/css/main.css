@@ -4034,10 +4034,37 @@ ul.configlets {
   color: #ff6b01;
 }
 body.template-data_and_statistics .data-left-column {
-  background-color: red !important;
+  border-right: 1px solid #F5F5F5;
 }
-body.template-data_and_statistics .data-right-column {
-  background-color: blue !important;
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img {
+  height: 50px;
+  width: 50px;
+  float: left;
+  background-size: 50px auto;
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-water {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-waste {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-industrial-emissions {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-cross-cutting-issues {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-water {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-waste {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-industrial-emissions {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+}
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
+  background-image: url(../++theme++eni.seis.theme.south/img/countries_air_hover.svg);
 }
 .box {
   margin-left: auto;
