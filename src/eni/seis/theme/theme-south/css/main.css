@@ -4053,25 +4053,36 @@ body.template-data_and_statistics .data-left-column .knowledge-resources ul {
 body.template-data_and_statistics .data-left-column .knowledge-resources ul li {
   list-style: none;
 }
+@media (max-width: 959px) {
+  body.template-data_and_statistics .data-right-column {
+    margin-top: 4rem;
+  }
+}
 body.template-data_and_statistics .data-right-column div.data.row {
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item {
-  padding: 20px;
+  padding: 2em;
   border: 1px solid #08a8dc;
   background: #FFFFFF;
   text-align: center;
   display: block;
-  min-height: 200px;
+  min-height: 260px;
+  width: 100%;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item span {
   width: 100%;
+  color: #ff6b01;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img {
-  height: 50px;
+  margin-top: 2em;
+  border-top: 1px solid #08a8dc;
+  height: 150px;
   width: 100%;
-  float: left;
-  background-size: 100px auto;
+  background-position-x: center;
+  background-size: auto 150px;
   background-repeat: no-repeat;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-water {
@@ -4089,7 +4100,11 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link di
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item {
   background: #08a8dc !important;
 }
+body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item span {
+  color: #FFFFFF;
+}
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img {
+  border-top: 1px solid #FFFFFF;
   background-repeat: no-repeat;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-water {

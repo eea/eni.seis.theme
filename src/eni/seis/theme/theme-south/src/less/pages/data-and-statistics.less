@@ -27,27 +27,37 @@ body.template-data_and_statistics {
   }
 
   .data-right-column {
+    @media @screen-md-upto {
+      margin-top: 4rem;
+    }
+
     div.data.row {
-      margin-bottom: 20px;
+      margin-bottom: 2em;
 
       a.data-link {
         div.data-item {
-          padding: 20px;
+          padding: 2em;
           border: 1px solid @color-accent;
           background: #FFFFFF;
           text-align: center;
           display: block;
-          min-height: 200px;
+          min-height: 260px;
+          width: 100%;
 
           span {
             width: 100%;
+            color: @color-brand-south;
+            font-size: 1.3em;
+            font-weight: 500;
           }
 
           div.data-img {
-            height: 50px;
+            margin-top: 2em;
+            border-top: 1px solid @color-accent;
+            height: 150px;
             width: 100%;
-            float: left;
-            background-size: 100px auto;
+            background-position-x: center;
+            background-size: auto 150px;
             background-repeat: no-repeat;
 
             &.icon-water {
@@ -68,9 +78,11 @@ body.template-data_and_statistics {
           div.data-item {
             background: @color-accent !important;
             span {
+              color: #FFFFFF;
             }
 
             div.data-img {
+              border-top: 1px solid #FFFFFF;
               background-repeat: no-repeat;
 
               &.icon-water {
