@@ -4036,22 +4036,65 @@ ul.configlets {
 body.template-data_and_statistics .data-left-column {
   border-right: 1px solid #ededed;
 }
-body.template-data_and_statistics .data-left-column h4 {
+@media (min-width: 960px) {
+  body.template-data_and_statistics .data-left-column {
+    padding-right: 2em;
+  }
+}
+body.template-data_and_statistics .data-left-column h3 {
   text-transform: uppercase;
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
   display: inline-block;
   padding-right: 1em;
 }
+body.template-data_and_statistics .data-left-column .news .news-item {
+  overflow: auto;
+  background: #ff6b01;
+  padding: 2em;
+  color: #FFFFFF;
+}
+body.template-data_and_statistics .data-left-column .news .news-item a.img img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+body.template-data_and_statistics .data-left-column .news .news-item h3 {
+  text-transform: initial;
+  font-weight: 500;
+  border: none;
+}
+body.template-data_and_statistics .data-left-column .news .news-item h3 a {
+  color: #FFFFFF !important;
+}
+body.template-data_and_statistics .data-left-column .news .news-item div.description {
+  margin-bottom: 2em;
+}
+body.template-data_and_statistics .data-left-column .news .news-item div.description span {
+  color: #FFFFFF;
+}
+body.template-data_and_statistics .data-left-column .news .news-item div.description a.read-more {
+  color: #FFFFFF !important;
+  font-weight: 500;
+}
+body.template-data_and_statistics .data-left-column .news .news-item a.more-news {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF;
+}
 body.template-data_and_statistics .data-left-column .knowledge-resources {
   padding-top: 4rem;
 }
 body.template-data_and_statistics .data-left-column .knowledge-resources ul {
+  margin-left: 0 !important;
   list-style-type: none;
   list-style: none;
 }
 body.template-data_and_statistics .data-left-column .knowledge-resources ul li {
   list-style: none;
+}
+@media (min-width: 960px) {
+  body.template-data_and_statistics .data-right-column {
+    padding-top: 40px;
+  }
 }
 @media (max-width: 959px) {
   body.template-data_and_statistics .data-right-column {
