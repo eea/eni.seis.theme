@@ -4090,6 +4090,7 @@ body.template-data_and_statistics .data-left-column .knowledge-resources ul {
 }
 body.template-data_and_statistics .data-left-column .knowledge-resources ul li {
   list-style: none;
+  padding: 0.5em 0 0.5em 0;
 }
 @media (min-width: 960px) {
   body.template-data_and_statistics .data-right-column {
