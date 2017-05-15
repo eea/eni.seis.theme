@@ -577,6 +577,13 @@ body.template-atct_edit #content > div:first-of-type {
 body.template-news_listing_view .table-hover a:hover {
   color: #ff6b01 !important;
 }
+body.template-country_view .country-left-column table.table-hover th {
+  color: #222222;
+  font-size: 0.9em;
+}
+body.template-country_view .country-left-column table.table-hover td {
+  font-size: 0.9em;
+}
 body.template-country_view .country-right-column .container {
   position: relative;
   overflow-x: hidden;
