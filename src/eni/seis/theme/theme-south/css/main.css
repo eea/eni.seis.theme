@@ -4034,7 +4034,24 @@ ul.configlets {
   color: #ff6b01;
 }
 body.template-data_and_statistics .data-left-column {
-  border-right: 1px solid #F5F5F5;
+  border-right: 1px solid #ededed;
+}
+body.template-data_and_statistics .data-left-column h4 {
+  text-transform: uppercase;
+  color: #08a8dc;
+  border-bottom: 3px solid #08a8dc;
+  display: inline-block;
+  padding-right: 1em;
+}
+body.template-data_and_statistics .data-left-column .knowledge-resources {
+  padding-top: 4rem;
+}
+body.template-data_and_statistics .data-left-column .knowledge-resources ul {
+  list-style-type: none;
+  list-style: none;
+}
+body.template-data_and_statistics .data-left-column .knowledge-resources ul li {
+  list-style: none;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img {
   height: 50px;
