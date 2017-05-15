@@ -4033,6 +4033,12 @@ ul.configlets {
 .section-frontpage-countries p a:hover {
   color: #ff6b01;
 }
+body.template-data_and_statistics .data-left-column {
+  background-color: red !important;
+}
+body.template-data_and_statistics .data-right-column {
+  background-color: blue !important;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
