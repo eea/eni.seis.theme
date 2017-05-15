@@ -549,21 +549,21 @@ body.template-country_view .tab-content .container .country-subsection-listing d
 body.template-country_view .tab-content .container .country-subsection-listing div ul li:last-of-type {
   border-bottom: none;
 }
-body.template-country_view .tab-content .container .country-subsection-listing a.more-items {
+body.template-country_view .tab-content .container .country-subsection-listing h4 {
+  text-transform: uppercase;
+  color: #08a8dc;
+  border-bottom: 3px solid #08a8dc;
+}
+a.more-items {
   border-top: 1px solid #08a8dc;
   padding-left: 10px;
   padding-top: 5px;
   text-transform: uppercase;
 }
-body.template-country_view .tab-content .container .country-subsection-listing a.more-items:after {
+a.more-items:after {
   content: "\2192";
   position: relative;
   top: -1px;
-}
-body.template-country_view .tab-content .container .country-subsection-listing h4 {
-  text-transform: uppercase;
-  color: #08a8dc;
-  border-bottom: 3px solid #08a8dc;
 }
 .text-accent {
   color: #08a8dc;
