@@ -468,4 +468,13 @@ dl.portalMessage dt,
 div > .admonition-title {
   font-weight: 500;
 }
+div.pagination.listingBar a {
+  background: #FFFFFF;
+  color: #ff6b01;
+  border: none;
+}
+div.pagination.listingBar a:hover {
+  background: #FFFFFF;
+  color: #08a8dc;
+}
 /*# sourceMappingURL=./source.css.map */
