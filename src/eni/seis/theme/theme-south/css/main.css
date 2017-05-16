@@ -1809,7 +1809,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #F5F5F5;
+  background-color: #F8F8F8;
 }
 table col[class*="col-"] {
   position: static;
@@ -2226,7 +2226,7 @@ table th[class*="col-"] {
   border-right: 1px solid #aaa;
 }
 .field {
-  background: #F5F5F5;
+  background: #F8F8F8;
 }
 .ploneSkin .mceIframeContainer {
   background: white;
@@ -3216,24 +3216,24 @@ body.template-homepage .navbar-body {
 @media (min-width: 1360px) {
   #site-footer .container-fluid {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-gray-lighter+50,6e7774+50,6e7774+50,6e7774+51,6e7774+51,@color-brand-south+51 */
-    background: #F5F5F5;
+    background: #F8F8F8;
     /* Old browsers */
-    background: -moz-linear-gradient(left, #F5F5F5 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    background: -moz-linear-gradient(left, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #F5F5F5 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    background: -webkit-linear-gradient(left, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #F5F5F5 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    background: linear-gradient(to right, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-lighter', endColorstr='@color-brand-south', GradientType=1);
     /* IE6-9 */
   }
   #site-footer .row.footer-content-wrapper {
-    background: linear-gradient(60deg, #F5F5F5 0%, #F5F5F5 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
+    background: linear-gradient(60deg, #F8F8F8 0%, #F8F8F8 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
   }
 }
 @media (max-width: 1359px) {
   #site-footer .col-left {
-    background: #F5F5F5;
+    background: #F8F8F8;
   }
   #site-footer .col-middle {
     background: #737373;
@@ -3498,7 +3498,7 @@ ul.configlets {
 }
 .container-fluid.header-top {
   overflow: overlay;
-  background: #F5F5F5 !important;
+  background: #F8F8F8 !important;
   padding: 0.5rem;
   margin-bottom: 4rem;
 }
@@ -3578,7 +3578,7 @@ ul.configlets {
 }
 .template-homepage .site-banner .lp-disclaimer {
   position: absolute;
-  background: #F5F5F5;
+  background: #F8F8F8;
   padding: 2px;
   top: 95%;
   right: 22%;
@@ -3904,13 +3904,13 @@ ul.configlets {
 }
 @media (min-width: 960px) {
   .section-frontpage-objectives {
-    background: linear-gradient(60deg, #ff6b01 0%, #ff6b01 50%, #F5F5F5 50%, #F5F5F5 100%) !important;
+    background: linear-gradient(60deg, #ff6b01 0%, #ff6b01 50%, #F8F8F8 50%, #F8F8F8 100%) !important;
   }
 }
 @media (min-width: 640px) {
   .section-frontpage-objectives {
     display: flex;
-    background: linear-gradient(90deg, #ff6b01 0%, #ff6b01 50%, #F5F5F5 50%, #F5F5F5 100%);
+    background: linear-gradient(90deg, #ff6b01 0%, #ff6b01 50%, #F8F8F8 50%, #F8F8F8 100%);
   }
 }
 .section-frontpage-objectives div {
@@ -3971,7 +3971,7 @@ ul.configlets {
 }
 @media (max-width: 639px) {
   .section-frontpage-objectives .specific {
-    background: #F5F5F5;
+    background: #F8F8F8;
     max-width: 100%;
   }
 }
@@ -4264,11 +4264,11 @@ body.template-country_view .nav-tabs > li.active > a,
 body.template-country_view .nav-tabs > li.active > a:hover,
 body.template-country_view .nav-tabs > li.active > a:focus {
   color: #ff6b01 !important;
-  background: #F5F5F5 !important;
+  background: #F8F8F8 !important;
 }
 body.template-country_view .tab-content .container {
   padding: 20px 10px 20px 10px;
-  background-color: #F5F5F5;
+  background-color: #F8F8F8;
   border-left: 1px solid #ededed;
   border-right: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
