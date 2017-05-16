@@ -266,6 +266,10 @@ body:not(.template-country_view) .nav-tabs > li.active > a:focus {
   color: #FFFFFF !important;
   background: #ff6b01 !important;
 }
+body:not(.template-country_view) .nav > li.active > a,
+body:not(.template-country_view) .nav > li > a:hover {
+  border-bottom-color: #ff6b01 !important;
+}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
