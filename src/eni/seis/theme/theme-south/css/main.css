@@ -3813,9 +3813,15 @@ ul.configlets {
   color: white;
   padding: 1em;
 }
+.section-frontpage-news .left a:hover {
+  color: #222222;
+}
 .section-frontpage-news .left .read_more {
   color: white;
   font-weight: 600;
+}
+.section-frontpage-news .left .read_more:hover {
+  color: #222222;
 }
 .section-frontpage-news .left .img img {
   width: 100%;
