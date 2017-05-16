@@ -3797,6 +3797,9 @@ ul.configlets {
 .section-frontpage-news a {
   color: #ff6b01;
 }
+.section-frontpage-news a:hover {
+  color: #08a8dc;
+}
 .section-frontpage-news .left {
   background-color: #ff6b01;
   color: white;
