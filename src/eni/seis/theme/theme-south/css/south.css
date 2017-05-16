@@ -459,4 +459,9 @@ div.managePortletsLink:hover a {
 .template-homepage.userrole-authenticated #edit-bar {
   margin-top: 4rem;
 }
+#content-views li.selected a,
+#content li.formTab a.selected,
+#content-core li.formTab a.selected {
+  font-weight: 500;
+}
 /*# sourceMappingURL=./source.css.map */
