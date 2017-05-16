@@ -3770,6 +3770,10 @@ ul.configlets {
 .homepage-section-aow-slider .aow-slide img {
   width: 100%;
 }
+.container-fluid.news-container {
+  padding-top: 1em;
+  background: #F8F8F8;
+}
 .section-frontpage-news {
   margin: 4em 0;
 }
@@ -4002,7 +4006,6 @@ ul.configlets {
 }
 .section-frontpage-countries {
   margin: 4em 0;
-  min-height: 200px;
   text-align: center;
 }
 .section-frontpage-countries:before,
