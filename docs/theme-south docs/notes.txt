@@ -83,3 +83,4 @@ TODO
 - Meeting view: change lead image position (better under the title) - it's display none now
 - /register KeyError: 'first_name' - check this (redo upgrade step?)
 - country view news and events: add more link (need?: country news page, country events page - or link to all news / events?)
+- in events table listings it seems we don't have pagination when there are a lot of items. Implement it and add styles for pagination.
