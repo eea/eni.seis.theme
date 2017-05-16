@@ -1,0 +1,198 @@
+body.template-country_view {
+  .country-left-column {
+    table.table-hover {
+      th {
+        color: @color-gray-dark;
+        font-size: 0.9em;
+      }
+      td {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .country-right-column {
+    .container {
+      position: relative;
+      overflow-x: hidden;
+      top: -34px !important;
+    }
+  }
+}
+
+body.template-country_view.userrole-anonymous {
+  .btn-default.edit-text {
+    display: none;
+  }
+}
+
+body.template-country_view {
+  .nav > li {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+  }
+
+  div.icon {
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    top: -15px;
+  }
+
+  div.icon-air {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+    background-size: 50px auto;
+  }
+
+  li:not(.active) a.icon-air:hover div.icon-air {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+  }
+
+  div.icon-water {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_water_normal.svg);
+    background-size: 50px auto;
+  }
+
+  li:not(.active) a.icon-water:hover div.icon-water {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_water_hover.svg);
+  }
+
+  div.icon-land {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_land_normal.svg);
+    background-size: 50px auto;
+  }
+
+  li:not(.active) a.icon-land:hover div.icon-land {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_land_hover.svg);
+  }
+
+  div.icon-waste {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
+    background-size: 50px auto;
+  }
+
+  li:not(.active) a.icon-waste:hover div.icon-waste {
+    background-image: url(./++theme++eni.seis.theme.south/img/countries_waste_hover.svg);
+  }
+
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background: @color-accent !important;
+    color: white !important;
+  }
+  .nav-tabs > li > a {
+    color: @color-gray-dark !important;
+    border: 1px solid #ededed !important;
+    border-radius: 0;
+    text-transform: none;
+    font-weight: 500;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid @color-gray-light;
+  }
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    color: @color-brand-south !important;
+    background: @color-gray-lighter !important;
+  }
+}
+
+body.template-country_view {
+
+  .country-left-column {
+
+    .box.leading-large.portlet dt {
+      background: #FFFFFF;
+      text-transform: uppercase;
+      color: @color-accent;
+      border-bottom: 3px solid @color-accent;
+      font-size: 1.2rem;
+      padding: 0em 1em 0em 0em !important;
+      display: inline-block;
+      margin-top: 20px !important;
+    }
+
+    .box.leading-large.portlet dd {
+      margin-top: 10px !important;
+      font-size: 1.2rem;
+
+      .row:first-of-type {
+        border-top: none;
+      }
+
+      .row {
+        padding-top: 20px;
+        border-top: 1px solid @color-gray-light;
+      }
+
+      .portletItemDetails {
+        margin-left: 0px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+    }
+
+    a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+  }
+
+  .tab-content .container {
+    padding: 20px 10px 20px 10px;
+    background-color: @color-gray-lighter;
+    border-left: 1px solid @color-gray-light;
+    border-right: 1px solid @color-gray-light;
+    border-bottom: 1px solid @color-gray-light;
+    position: relative;
+    top: -14px;
+    overflow: auto;
+
+    img {
+      width: 100%;
+    }
+    .country-subsection-listing {
+      div {
+        padding-bottom: 50px;
+        ul {
+          margin-left: 0 !important;
+          padding-left: 0;
+          width: 120%;
+
+          li {
+            margin-bottom: 0px !important;
+            .fa {
+              color: @color-gray-light2;
+              margin-right: 5px;
+            }
+            padding: 10px 5px 10px 5px;
+            list-style: none;
+            border-bottom: 1px solid @color-gray-light;
+            a {
+              color: @color-gray-dark !important;
+              font-weight: 500;
+            }
+            a:hover {
+              background: @color-gray-light;
+            }
+          }
+          li:hover {
+            background: @color-gray-light;
+          }
+          li:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+
+      h4 {
+        text-transform: uppercase;
+        color: @color-accent;
+        border-bottom: 3px solid @color-accent;
+      }
+    }
+  }
+}
