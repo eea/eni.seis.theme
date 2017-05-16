@@ -4163,82 +4163,6 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link:ho
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
   background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_hover.svg);
 }
-body.template-country_view .country-left-column table.table-hover th {
-  color: #222222;
-  font-size: 0.9em;
-}
-body.template-country_view .country-left-column table.table-hover td {
-  font-size: 0.9em;
-}
-body.template-country_view .country-right-column .container {
-  position: relative;
-  overflow-x: hidden;
-  top: -34px !important;
-}
-body.template-country_view.userrole-anonymous .btn-default.edit-text {
-  display: none;
-}
-body.template-country_view .nav > li {
-  margin-right: 10px;
-  position: relative;
-  top: 1px;
-}
-body.template-country_view div.icon {
-  height: 50px;
-  width: 50px;
-  float: left;
-  position: relative;
-  top: -15px;
-}
-body.template-country_view div.icon-air {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_air_normal.svg);
-  background-size: 50px auto;
-}
-body.template-country_view li:not(.active) a.icon-air:hover div.icon-air {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_air_hover.svg);
-}
-body.template-country_view div.icon-water {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_water_normal.svg);
-  background-size: 50px auto;
-}
-body.template-country_view li:not(.active) a.icon-water:hover div.icon-water {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_water_hover.svg);
-}
-body.template-country_view div.icon-land {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_land_normal.svg);
-  background-size: 50px auto;
-}
-body.template-country_view li:not(.active) a.icon-land:hover div.icon-land {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_land_hover.svg);
-}
-body.template-country_view div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
-  background-size: 50px auto;
-}
-body.template-country_view li:not(.active) a.icon-waste:hover div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_hover.svg);
-}
-body.template-country_view .nav > li > a:hover,
-body.template-country_view .nav > li > a:focus {
-  background: #08a8dc !important;
-  color: white !important;
-}
-body.template-country_view .nav-tabs > li > a {
-  color: #222222 !important;
-  border: 1px solid #ededed !important;
-  border-radius: 0;
-  text-transform: none;
-  font-weight: 500;
-}
-body.template-country_view .nav-tabs {
-  border-bottom: 1px solid #ededed;
-}
-body.template-country_view .nav-tabs > li.active > a,
-body.template-country_view .nav-tabs > li.active > a:hover,
-body.template-country_view .nav-tabs > li.active > a:focus {
-  color: #ff6b01 !important;
-  background: #F5F5F5 !important;
-}
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;
   text-transform: uppercase;
@@ -4268,6 +4192,79 @@ body.template-country_view .country-left-column .box.leading-large.portlet dd .p
 body.template-country_view .country-left-column a {
   text-decoration: none !important;
   border-bottom: none !important;
+}
+body.template-country_view .country-left-column table.table-hover th {
+  color: #222222;
+  font-size: 0.9em;
+}
+body.template-country_view .country-left-column table.table-hover td {
+  font-size: 0.9em;
+}
+body.template-country_view .country-right-column .container {
+  position: relative;
+  overflow-x: hidden !important;
+  top: -34px !important;
+}
+body.template-country_view.userrole-anonymous .btn-default.edit-text {
+  display: none;
+}
+body.template-country_view .nav > li {
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+body.template-country_view div.icon {
+  height: 50px;
+  width: 50px;
+  float: left;
+  position: relative;
+  top: -15px;
+  background-size: 50px auto;
+}
+body.template-country_view div.icon-air {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+}
+body.template-country_view li:not(.active) a.icon-air:hover div.icon-air {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+}
+body.template-country_view div.icon-water {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_water_normal.svg);
+}
+body.template-country_view li:not(.active) a.icon-water:hover div.icon-water {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_water_hover.svg);
+}
+body.template-country_view div.icon-land {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_land_normal.svg);
+}
+body.template-country_view li:not(.active) a.icon-land:hover div.icon-land {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_land_hover.svg);
+}
+body.template-country_view div.icon-waste {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
+}
+body.template-country_view li:not(.active) a.icon-waste:hover div.icon-waste {
+  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_hover.svg);
+}
+body.template-country_view .nav > li > a:hover,
+body.template-country_view .nav > li > a:focus {
+  background: #08a8dc !important;
+  color: white !important;
+}
+body.template-country_view .nav-tabs > li > a {
+  color: #222222 !important;
+  border: 1px solid #ededed !important;
+  border-radius: 0;
+  text-transform: none;
+  font-weight: 500;
+}
+body.template-country_view .nav-tabs {
+  border-bottom: 1px solid #ededed;
+}
+body.template-country_view .nav-tabs > li.active > a,
+body.template-country_view .nav-tabs > li.active > a:hover,
+body.template-country_view .nav-tabs > li.active > a:focus {
+  color: #ff6b01 !important;
+  background: #F5F5F5 !important;
 }
 body.template-country_view .tab-content .container {
   padding: 20px 10px 20px 10px;
