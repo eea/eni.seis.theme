@@ -3297,6 +3297,17 @@ body.template-homepage .navbar-body {
   background: #FFFFFF !important;
   color: #ff6b01 !important;
 }
+@media (min-width: 640px) and (max-width: 1360px) {
+  .row.footer-content-wrapper {
+    overflow: hidden;
+  }
+  .row.footer-content-wrapper .col-left,
+  .row.footer-content-wrapper .col-middle,
+  .row.footer-content-wrapper .col-right {
+    margin-bottom: -99999px !important;
+    padding-bottom: 99999px !important;
+  }
+}
 .admin {
   box-sizing: content-box !important;
   background: #75ad0a;

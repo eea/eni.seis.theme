@@ -129,3 +129,14 @@
     }
   }
 }
+
+// Fix same height cols in footer (http://stackoverflow.com/a/19695851/1929820)
+@media (min-width:640px) and (max-width: 1360px) {
+  .row.footer-content-wrapper {
+    overflow: hidden;
+    .col-left, .col-middle, .col-right {
+      margin-bottom: -99999px !important;
+      padding-bottom: 99999px !important;
+    }
+  }
+}
