@@ -414,12 +414,14 @@ body.userrole-anonymous .documentFirstHeading {
 a.more-items {
   border-top: 1px solid #08a8dc;
   padding-left: 10px;
+  padding-right: 0.5em;
   padding-top: 5px;
   text-transform: uppercase;
 }
 a.more-items:after {
   content: "\2192";
   position: relative;
+  left: 0.5em;
   top: -1px;
 }
 .text-accent {
