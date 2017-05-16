@@ -464,4 +464,8 @@ div.managePortletsLink:hover a {
 #content-core li.formTab a.selected {
   font-weight: 500;
 }
+dl.portalMessage dt,
+div > .admonition-title {
+  font-weight: 500;
+}
 /*# sourceMappingURL=./source.css.map */
