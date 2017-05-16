@@ -2869,9 +2869,6 @@ span + .error {
   #portal-globalnav > li > a {
     padding: .2rem;
   }
-  #portal-globalnav > li {
-    margin-left: .5rem!important;
-  }
 }
 @media (min-width: 960px) {
   .navbar-body {
