@@ -4047,14 +4047,12 @@ ul.configlets {
 .section-frontpage-countries p a:hover {
   color: #ff6b01;
 }
+body.template-data_and_statistics .data-left-column {
+  border-right: 1px solid #ededed;
+}
 @media (min-width: 960px) {
   body.template-data_and_statistics .data-left-column {
     padding-right: 2em;
-  }
-}
-@media (max-width: (min-width: 960px)) {
-  body.template-data_and_statistics .data-left-column {
-    border-right: 1px solid red;
   }
 }
 body.template-data_and_statistics .data-left-column h3 {
@@ -4108,12 +4106,14 @@ body.template-data_and_statistics .data-left-column .knowledge-resources ul li {
   list-style: none;
   padding: 0.5em 0 0.5em 0;
 }
-body.template-data_and_statistics .data-right-column {
-  margin-top: 4rem;
-}
 @media (min-width: 960px) {
   body.template-data_and_statistics .data-right-column {
     padding-top: 40px;
+  }
+}
+@media (max-width: 959px) {
+  body.template-data_and_statistics .data-right-column {
+    margin-top: 4rem;
   }
 }
 body.template-data_and_statistics .data-right-column div.data.row {

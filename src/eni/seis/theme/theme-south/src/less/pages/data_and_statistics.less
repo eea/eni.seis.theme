@@ -3,9 +3,8 @@ body.template-data_and_statistics {
     @media @screen-md {
       padding-right: 2em;
     }
-    @media (max-width: @screen-md) {
-      border-right: 1px solid red;
-    }
+
+    border-right: 1px solid @color-gray-light;
 
     h3 {
       text-transform: uppercase;
@@ -74,7 +73,9 @@ body.template-data_and_statistics {
       padding-top: 40px;
     }
 
-    margin-top: 4rem;
+    @media @screen-md-upto {
+      margin-top: 4rem;
+    }
 
     div.data.row {
       margin-bottom: 2em;
