@@ -477,4 +477,11 @@ div.pagination.listingBar a:hover {
   background: #FFFFFF;
   color: #08a8dc;
 }
+dl.portalMessage.info {
+  border-color: #08a8dc;
+  background-color: #FFFFFF;
+}
+dl.portalMessage.info dt {
+  background-color: #08a8dc;
+}
 /*# sourceMappingURL=./source.css.map */
