@@ -4053,6 +4053,11 @@ ul.configlets {
 .section-frontpage-countries p a:hover {
   color: #ff6b01;
 }
+body.template-data_and_statistics #parent-fieldname-description {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 body.template-data_and_statistics .data-left-column {
   border-right: 1px solid #ededed;
 }
