@@ -487,4 +487,7 @@ dl.portalMessage.info dt {
 label {
   font-weight: 500;
 }
+.template-eni_events_listing a.btn.btn-default[data-diazo='manage-portlets'] {
+  float: right;
+}
 /*# sourceMappingURL=./source.css.map */
