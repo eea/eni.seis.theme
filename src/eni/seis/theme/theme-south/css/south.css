@@ -268,7 +268,7 @@ body:not(.template-country_view) .nav-tabs > li.active > a:focus {
 }
 body:not(.template-country_view) .nav > li.active > a,
 body:not(.template-country_view) .nav > li > a:hover {
-  border-bottom-color: #ff6b01 !important;
+  border-color: #ff6b01 !important;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
