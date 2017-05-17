@@ -4099,6 +4099,9 @@ body.template-data_and_statistics .data-left-column .news .news-item div.descrip
   color: #FFFFFF !important;
   font-weight: 500;
 }
+body.template-data_and_statistics .data-left-column .news .news-item div.description a.read-more:hover {
+  color: #222222 !important;
+}
 body.template-data_and_statistics .data-left-column .news .news-item a.more-news {
   color: #FFFFFF !important;
   border-color: #FFFFFF;
