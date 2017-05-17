@@ -3888,6 +3888,7 @@ ul.configlets {
 }
 .section-frontpage-events .tile .tile-img {
   display: block;
+  margin-bottom: 1em;
 }
 .section-frontpage-events .tile .tile-img img {
   width: 100%;
