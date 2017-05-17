@@ -484,4 +484,7 @@ dl.portalMessage.info {
 dl.portalMessage.info dt {
   background-color: #08a8dc;
 }
+label {
+  font-weight: 500;
+}
 /*# sourceMappingURL=./source.css.map */
