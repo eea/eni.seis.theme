@@ -4204,6 +4204,9 @@ body.template-country_view h1.documentFirstHeading {
   padding-left: 0px;
   text-transform: uppercase;
 }
+body.template-country_view .country-left-column .portletNews {
+  margin-top: 4rem;
+}
 body.template-country_view .country-left-column .box.leading-large.portlet dt {
   background: #FFFFFF;
   text-transform: uppercase;
@@ -4216,7 +4219,7 @@ body.template-country_view .country-left-column .box.leading-large.portlet dt {
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dd {
   margin-top: 10px !important;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 body.template-country_view .country-left-column .box.leading-large.portlet dd .row:first-of-type {
   border-top: none;
