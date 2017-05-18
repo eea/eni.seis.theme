@@ -4060,11 +4060,15 @@ body.template-data_and_statistics #parent-fieldname-description {
   margin-bottom: 4rem;
 }
 body.template-data_and_statistics .data-left-column {
+  padding-right: 0;
+}
+body.template-data_and_statistics .data-left-column .border-right {
   border-right: 1px solid #ededed;
+  overflow: auto;
 }
 @media (min-width: 960px) {
-  body.template-data_and_statistics .data-left-column {
-    padding-right: 2em;
+  body.template-data_and_statistics .data-left-column .border-right {
+    padding-right: 1em;
   }
 }
 body.template-data_and_statistics .data-left-column h3 {
@@ -4077,7 +4081,7 @@ body.template-data_and_statistics .data-left-column h3 {
 body.template-data_and_statistics .data-left-column .news .news-item {
   overflow: auto;
   background: #ff6b01;
-  padding: 2em;
+  padding: 1em;
   color: #FFFFFF;
 }
 body.template-data_and_statistics .data-left-column .news .news-item a.img img {

@@ -6,12 +6,17 @@ body.template-data_and_statistics {
     margin-bottom: 4rem;
   }
 
-  .data-left-column {
-    @media @screen-md {
-      padding-right: 2em;
-    }
 
-    border-right: 1px solid @color-gray-light;
+  .data-left-column {
+    padding-right: 0;
+
+    .border-right {
+      border-right: 1px solid @color-gray-light;
+      overflow: auto;
+      @media @screen-md {
+        padding-right: 1em;
+      }
+    }
 
     h3 {
       text-transform: uppercase;
@@ -25,7 +30,7 @@ body.template-data_and_statistics {
       .news-item {
         overflow: auto;
         background: @color-brand-south;
-        padding: 2em;
+        padding: 1em;
         color: #FFFFFF;
 
         a.img {
