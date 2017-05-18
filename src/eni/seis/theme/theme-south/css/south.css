@@ -484,6 +484,16 @@ dl.portalMessage.info {
 dl.portalMessage.info dt {
   background-color: #08a8dc;
 }
+dl.portalMessage.error {
+  border-color: #e02047;
+  background-color: #FFFFFF;
+}
+dl.portalMessage.error dt {
+  background-color: #e02047;
+}
+dl.portalMessage.error dd {
+  background: #FFFFFF;
+}
 label {
   font-weight: 500;
 }
