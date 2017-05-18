@@ -1,10 +1,17 @@
 body.template-login_form,
 body.template-login_failed {
   #login-form {
-    width: 50%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 4rem;
+
+    @media @screen-md {
+      width: 50%;
+    }
+
+    @media @screen-md-max {
+      width: 100%;
+    }
 
     .field {
       width: 90%;

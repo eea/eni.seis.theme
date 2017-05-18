@@ -4367,10 +4367,21 @@ body.template-country_view .tab-content .container .country-subsection-listing h
 }
 body.template-login_form #login-form,
 body.template-login_failed #login-form {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 4rem;
+}
+@media (min-width: 960px) {
+  body.template-login_form #login-form,
+  body.template-login_failed #login-form {
+    width: 50%;
+  }
+}
+@media (max-width: 1359px) {
+  body.template-login_form #login-form,
+  body.template-login_failed #login-form {
+    width: 100%;
+  }
 }
 body.template-login_form #login-form .field,
 body.template-login_failed #login-form .field {
