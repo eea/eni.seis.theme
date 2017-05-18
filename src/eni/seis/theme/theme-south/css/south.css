@@ -506,6 +506,7 @@ label {
 }
 a.btn.btn-default[data-diazo='manage-portlets'] {
   float: right;
+  width: 100%;
 }
 :focus {
   outline: none;
