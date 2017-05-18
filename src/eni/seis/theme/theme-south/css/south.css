@@ -510,4 +510,7 @@ a.btn.btn-default[data-diazo='manage-portlets'] {
 :focus {
   outline: none;
 }
+.table.display-email > thead > tr > th {
+  border-bottom: 1px solid #222222 !important;
+}
 /*# sourceMappingURL=./source.css.map */
