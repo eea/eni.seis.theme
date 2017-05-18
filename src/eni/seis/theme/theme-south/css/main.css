@@ -4365,6 +4365,29 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
 }
+body.template-login_form #login-form,
+body.template-login_failed #login-form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+body.template-login_form #login-form .field,
+body.template-login_failed #login-form .field {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #ededed;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+body.template-login_form #login-form .formControls input[type='submit'],
+body.template-login_failed #login-form .formControls input[type='submit'] {
+  margin-top: 1em;
+  width: 90%;
+  margin-left: 0;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
