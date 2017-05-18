@@ -4383,6 +4383,10 @@ body.template-login_failed #login-form {
     width: 100%;
   }
 }
+body.template-login_form #login-form label,
+body.template-login_failed #login-form label {
+  width: 7em;
+}
 body.template-login_form #login-form .field,
 body.template-login_failed #login-form .field {
   width: 90%;
