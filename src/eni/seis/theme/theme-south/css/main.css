@@ -3113,6 +3113,11 @@ ul.submenu {
 .navbar-brand a {
   color: inherit;
 }
+@media (max-width: 1359px) {
+  .navbar-brand .navbar-title {
+    font-size: 2em;
+  }
+}
 .navbar-brand strong {
   font-weight: inherit;
 }
