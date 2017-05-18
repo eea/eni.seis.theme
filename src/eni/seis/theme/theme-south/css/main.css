@@ -4200,6 +4200,9 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link:ho
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
   background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_hover.svg);
 }
+body.template-country_view .documentByLine {
+  margin-bottom: 0 !important;
+}
 body.template-country_view h1.documentFirstHeading {
   padding-left: 0px;
   text-transform: uppercase;
@@ -4238,7 +4241,7 @@ body.template-country_view .country-left-column .box.leading-large.portlet dd .p
 }
 body.template-country_view .country-left-column a {
   text-decoration: none !important;
-  border-bottom: none !important;
+  border-bottom: none;
 }
 body.template-country_view .country-left-column table.table-hover th {
   color: #222222;
