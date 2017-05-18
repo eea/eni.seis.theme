@@ -149,7 +149,10 @@ a.back-button {
 .btn-default.edit-text {
   margin-bottom: 5px;
 }
-.register-form-fields label {
+.register-form-fields label,
+body.template-eea-meeting label,
+.register-form-fields .label,
+body.template-eea-meeting .label {
   font-weight: 500;
 }
 .register-form button {
