@@ -4365,6 +4365,10 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
 }
+body.template-login_form .portalMessage,
+body.template-login_failed .portalMessage {
+  margin-bottom: 3em;
+}
 body.template-login_form #login-form,
 body.template-login_failed #login-form {
   margin: 0 auto;
