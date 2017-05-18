@@ -164,4 +164,11 @@ $(document).ready(function() {
     $("h1.documentFirstHeading").prependTo(".country-left-column");
   }
 
+  $(".documentFirstHeading").each(
+    function() {
+      if($(this).text().length == 0) {
+        $(this).hide();
+      }
+    }
+  );
 });
