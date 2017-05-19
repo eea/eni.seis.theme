@@ -3327,6 +3327,7 @@ body.template-homepage .navbar-body {
   }
 }
 .admin #edit-bar {
+  padding-top: 0;
   font-size: 1rem;
 }
 .admin #edit-bar dl,
