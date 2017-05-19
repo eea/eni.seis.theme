@@ -156,7 +156,8 @@ body.template-eea-meeting .label {
   font-weight: 500;
 }
 label,
-.label {
+.label,
+#content dt {
   font-weight: 500;
 }
 .register-form button {
