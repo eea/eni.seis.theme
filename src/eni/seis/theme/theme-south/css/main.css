@@ -2550,6 +2550,9 @@ a.contenttype-eea-meeting:before {
   content: "\f133";
   margin-right: .5rem;
 }
+dt span.summary img {
+  display: none;
+}
 .page-aside a:before,
 .admin .actionMenu a:before {
   content: '';
