@@ -3321,7 +3321,7 @@ body.template-homepage .navbar-body {
 .admin * {
   box-sizing: content-box !important;
 }
-@media (max-width: 568px) {
+@media (max-width: 1359px) {
   .admin {
     display: none;
   }
