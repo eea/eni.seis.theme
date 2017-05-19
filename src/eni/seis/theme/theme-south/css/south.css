@@ -4,6 +4,9 @@
 }
 @media (min-width: 640px) {
 }
+a {
+  cursor: pointer;
+}
 #content a,
 #content a:visited,
 #content a:link,
