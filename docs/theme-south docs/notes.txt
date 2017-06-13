@@ -78,6 +78,9 @@ Country view table example (add it to country/edit body text):
 </table>
 <a href="#" class="more-items pull-right">Read more</a>
 
+/south/@@dropdown-controlpanel
+  Depth of dropdown menus: 1
+
 TODO
 - Event - National, Regional. Add Other.
 - Meeting view: change lead image position (better under the title) - it's display none now
