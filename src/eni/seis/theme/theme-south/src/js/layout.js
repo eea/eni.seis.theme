@@ -48,7 +48,7 @@ $(document).ready(function() {
   } else if (version >= 12) {
     console.log('>=12');
   } else {
-    site_container.style.display = "block";
+    // site_container.style.display = "block"; [TODO] Need it?
   }
 
   function loadData1(callback) {
