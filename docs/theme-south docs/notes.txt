@@ -129,6 +129,11 @@ Add it in (Body Text = long_description):
           </a>
         </div>
 
+/south/portal_types/Folder/manage_propertiesForm
+  Available view methods: add: data_and_statistics
+  Then for Data and statistics folder select Display - data_and_statistics
+
+
 TODO
 - Event - National, Regional. Add Other.
 - Meeting view: change lead image position (better under the title) - it's display none now
