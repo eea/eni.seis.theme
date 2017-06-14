@@ -81,6 +81,13 @@ Country view table example (add it to country/edit body text):
 /south/@@dropdown-controlpanel
   Depth of dropdown menus: 1
 
+Fix broken map in eea.meeting view:
+/south/portal_css/manage_cssForm
+  Uncheck Merging and Caching for
+     ++resource++plone.formwidget.geolocation/libs.css
+     ++resource++plone.formwidget.geolocation/maps.css
+  then Save
+
 TODO
 - Event - National, Regional. Add Other.
 - Meeting view: change lead image position (better under the title) - it's display none now
