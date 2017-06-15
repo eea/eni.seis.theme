@@ -521,4 +521,10 @@ a.btn.btn-default[data-diazo='manage-portlets'] {
 body.template-news_listing_view table.table-responsive.table-hover h3 {
   font-weight: 500;
 }
+.box.portlet.portletEvents img {
+  float: left;
+  width: 50px;
+  margin-right: 5px;
+  height: auto;
+}
 /*# sourceMappingURL=./source.css.map */
