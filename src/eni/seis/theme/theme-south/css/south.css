@@ -304,6 +304,7 @@ body:not(.template-country_view) .nav > li > a:hover {
 }
 #project-related-events .table-hover tr:hover {
   background: #08a8dc;
+  color: #FFFFFF;
 }
 #project-related-events .table-hover tr:hover td.event-summary {
   color: #FFFFFF !important;
