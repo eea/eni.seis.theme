@@ -3483,10 +3483,6 @@ body.template-homepage {
 #site-header .navbar-brand {
   text-align: center;
 }
-#site-header-top .login-link:before {
-  content: "\f007";
-  padding-right: .5rem;
-}
 @media (max-width: 959px) {
   .page-container #navbar-toggle {
     display: block;
@@ -3521,7 +3517,8 @@ ul.configlets {
   margin-bottom: 4rem;
 }
 .container-fluid.header-top #site-header-top img {
-  height: 30px;
+  height: 109px;
+  margin-right: 10px;
 }
 .container-fluid.header-top #site-header-top .login-link {
   color: #222222;
@@ -3530,6 +3527,10 @@ ul.configlets {
 }
 .container-fluid.header-top #site-header-top .login-link:hover {
   color: #ff6b01 !important;
+}
+.container-fluid.header-top #site-header-top .login-link:before {
+  content: "\f007";
+  padding-right: .5rem;
 }
 .template-homepage .site-banner {
   position: relative;
