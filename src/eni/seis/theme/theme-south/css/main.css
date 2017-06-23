@@ -3325,9 +3325,6 @@ body.template-homepage .navbar-body {
   box-sizing: content-box !important;
 }
 @media (max-width: 1359px) {
-  .admin {
-    display: none;
-  }
 }
 .admin #edit-bar {
   padding-top: 0;
