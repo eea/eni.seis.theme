@@ -1,17 +1,11 @@
 <div
   tal:define="events_path python: '/south/communication/events';
-  events_folder python: context.restrictedTraverse(events_path);
-  events python: events_folder.getFolderContents(
-  full_objects=True,
-  contentFilter={'sort_on': 'start',
-  'path': {'query': '', 'depth': -1},
-  'portal_type':['Event', 'EEA Meeting']}
-  )[:4]">
+  events python:context.restrictedTraverse('/south/get_upcoming_events')">
 
   <h4>Upcoming Events</h4>
 
   <div class="row">
-    <div tal:repeat="event events" class="tile col-xs-6 col-md-3">
+    <div tal:repeat="event python:events" class="tile col-xs-6 col-md-3">
 
       <a href="" tal:attributes="href event/absolute_url"
         class="tile-img" title="">
