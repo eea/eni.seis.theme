@@ -1,0 +1,148 @@
+WORK
+    eni.seis.theme/src/eni/seis/theme/theme-east
+        $ npm install
+        $ node_modules/.bin/grunt
+
+INSTALL
+    in Site Setup - Theming
+        deactivate old theme (active one)
+        activate: eni.seis.theme.south - Eni South Theme
+
+    /south/portal_css/manage_cssForm
+        Add ++theme++eni.seis.theme.south/css/south.css
+        render: link
+        uncheck merge, cache
+
+    /portal_setup/manage_main
+        Advanced Import
+            profile eni.seis.theme:default
+            import "skins tool"
+            import "Action providers"
+
+    /portal_skins/manage_main
+        add eni_seis_south as layer under custom
+    Not sure:
+        /portal_skins/manage_addProduct/CMFCore/manage_addDirectoryViewForm
+            eni.seis.theme:skins/eni_seis_south
+    /portal_skins/manage_propertiesForm
+        Sunburst Theme
+            add eni_seis_south as layer under custom (then first Save button)
+
+    /portal_skins/custom/manage_main
+        get rid of customs: portlet_* in portal_skins/custom
+                            south-custom.css
+                            homepage.pt
+
+
+    add content lead image behavior for event:
+        site setup > dexterity content types > meeting > behaviours
+        /dexterity-types/eea.meeting/@@behaviors
+            lead image
+
+
+    In /project-description/edit update the text:
+
+<h3>Contribute to <b>reduced</b><h3>
+<h3 class="reverse">Marine polution</h3>
+
+<p>ENI SEIS II <b>South</b> Support Mechanism project aims to contribute to the <b>reduction of the marine pollution in the Mediterranean</b> by developing a <b>Shared Environmental Information System</b> (SEIS) supporting the regular production and <b>sharing</b> of quality assessed environmental <b>data, indicators and information</b>.</p>
+
+    /south/portal_types/Folder/manage_propertiesForm
+    Available view methods: add: country_view
+    Then for each country select Display - country_view
+
+    /south/portal_skins/manage_propertiesForm
+        In Sunburst Theme move eni_seis_south after custom
+
+Country view table example (add it to country/edit body text):
+<table class="table table-hover table-condensed">
+<thead>
+  <tr>
+    <th>NAME</th>
+    <th>ORGANISATION</th>
+    <th>POSITION</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Ms Amina Benzekri</td>
+    <td>Ministere des Ressources en Lorem Ipsum/td>
+    <td>Directrice generale lorem ipsum dolor sit amet</td>
+  </tr>
+  <tr>
+    <td>Mrs Fathia Ghemmaz</td>
+    <td>Office National des Statistics (ONS)</td>
+    <td>Chef d'Etudes a la Direction des Statistiques regionales, Agricoles et de la Cartographie</td>
+  </tr>
+</tbody>
+</table>
+<a href="#" class="more-items pull-right">Read more</a>
+
+/south/@@dropdown-controlpanel
+  Depth of dropdown menus: 1
+
+Fix broken map in eea.meeting view:
+/south/portal_css/manage_cssForm
+  Uncheck Merging and Caching for
+     ++resource++plone.formwidget.geolocation/libs.css
+     ++resource++plone.formwidget.geolocation/maps.css
+  then Save
+
+Example of right column content for Data and statistics.
+Add it in (Body Text = long_description):
+      <div class="data row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <a href="" class="data-link">
+            <div class="data-item">
+              <span>Water</span>
+              <div class="data-img icon-water"></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <a href="" class="data-link">
+            <div class="data-item">
+              <span>Waste</span>
+              <div class="data-img icon-waste"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="data row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <a href="" class="data-link">
+            <div class="data-item">
+              <span>Industrial Emissions</span>
+              <div class="data-img icon-industrial-emissions"></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <a href="" class="data-link">
+            <div class="data-item">
+              <span>Cross-cutting Issues</span>
+              <div class="data-img icon-cross-cutting-issues"></div>
+            </div>
+          </a>
+        </div>
+
+/south/portal_types/Folder/manage_propertiesForm
+  Available view methods: add: data_and_statistics
+  Then for Data and statistics folder select Display - data_and_statistics
+
+In site setup - theming:
+we have a copy with modifications:
+eni.seis.theme.south.latest (active)
+in portal_css we have http://eni-seis.eionet.europa.eu/south/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-south-latest/css/south.css
+If you change to the original theme (eni.seis.theme.south Eni South Theme) you
+will disable this css and activate again:
+++theme++eni.seis.theme.south/css/south.css
+
+TODO
+- Event - National, Regional. Add Other.
+- Meeting view: change lead image position (better under the title) - it's display none now
+- /register KeyError: 'first_name' - check this (redo upgrade step?)
+- in events table listings it seems we don't have pagination when there are a lot of items. Implement it and add styles for pagination.
