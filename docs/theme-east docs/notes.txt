@@ -6,10 +6,10 @@ WORK
 INSTALL
     in Site Setup - Theming
         deactivate old theme (active one)
-        activate: eni.seis.theme.south - Eni South Theme
+        activate: eni.seis.theme.east - Eni East Theme
 
-    /south/portal_css/manage_cssForm
-        Add ++theme++eni.seis.theme.south/css/south.css
+    /east/portal_css/manage_cssForm
+        Add ++theme++eni.seis.theme.east/css/east.css
         render: link
         uncheck merge, cache
 
@@ -20,17 +20,17 @@ INSTALL
             import "Action providers"
 
     /portal_skins/manage_main
-        add eni_seis_south as layer under custom
+        add eni_seis_east as layer under custom
     Not sure:
         /portal_skins/manage_addProduct/CMFCore/manage_addDirectoryViewForm
-            eni.seis.theme:skins/eni_seis_south
+            eni.seis.theme:skins/eni_seis_east
     /portal_skins/manage_propertiesForm
         Sunburst Theme
-            add eni_seis_south as layer under custom (then first Save button)
+            add eni_seis_east as layer under custom (then first Save button)
 
     /portal_skins/custom/manage_main
         get rid of customs: portlet_* in portal_skins/custom
-                            south-custom.css
+                            east-custom.css
                             homepage.pt
 
 
@@ -45,14 +45,14 @@ INSTALL
 <h3>Contribute to <b>reduced</b><h3>
 <h3 class="reverse">Marine polution</h3>
 
-<p>ENI SEIS II <b>South</b> Support Mechanism project aims to contribute to the <b>reduction of the marine pollution in the Mediterranean</b> by developing a <b>Shared Environmental Information System</b> (SEIS) supporting the regular production and <b>sharing</b> of quality assessed environmental <b>data, indicators and information</b>.</p>
+<p>ENI SEIS II <b>East</b> Support Mechanism project aims to contribute to the <b>reduction of the marine pollution in the Mediterranean</b> by developing a <b>Shared Environmental Information System</b> (SEIS) supporting the regular production and <b>sharing</b> of quality assessed environmental <b>data, indicators and information</b>.</p>
 
-    /south/portal_types/Folder/manage_propertiesForm
+    /east/portal_types/Folder/manage_propertiesForm
     Available view methods: add: country_view
     Then for each country select Display - country_view
 
-    /south/portal_skins/manage_propertiesForm
-        In Sunburst Theme move eni_seis_south after custom
+    /east/portal_skins/manage_propertiesForm
+        In Sunburst Theme move eni_seis_east after custom
 
 Country view table example (add it to country/edit body text):
 <table class="table table-hover table-condensed">
@@ -78,11 +78,11 @@ Country view table example (add it to country/edit body text):
 </table>
 <a href="#" class="more-items pull-right">Read more</a>
 
-/south/@@dropdown-controlpanel
+/east/@@dropdown-controlpanel
   Depth of dropdown menus: 1
 
 Fix broken map in eea.meeting view:
-/south/portal_css/manage_cssForm
+/east/portal_css/manage_cssForm
   Uncheck Merging and Caching for
      ++resource++plone.formwidget.geolocation/libs.css
      ++resource++plone.formwidget.geolocation/maps.css
@@ -129,17 +129,17 @@ Add it in (Body Text = long_description):
           </a>
         </div>
 
-/south/portal_types/Folder/manage_propertiesForm
+/east/portal_types/Folder/manage_propertiesForm
   Available view methods: add: data_and_statistics
   Then for Data and statistics folder select Display - data_and_statistics
 
 In site setup - theming:
 we have a copy with modifications:
-eni.seis.theme.south.latest (active)
-in portal_css we have http://eni-seis.eionet.europa.eu/south/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-south-latest/css/south.css
-If you change to the original theme (eni.seis.theme.south Eni South Theme) you
+eni.seis.theme.east.latest (active)
+in portal_css we have http://eni-seis.eionet.europa.eu/east/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-east-latest/css/east.css
+If you change to the original theme (eni.seis.theme.east Eni East Theme) you
 will disable this css and activate again:
-++theme++eni.seis.theme.south/css/south.css
+++theme++eni.seis.theme.east/css/east.css
 
 TODO
 - Event - National, Regional. Add Other.
