@@ -1,0 +1,34 @@
+<metal:macro define-macro="portlet">
+
+<dl class="box leading-large portlet portletEvents"
+    tal:define="events_path python: '/south/communication/events';
+                events_folder python: context.restrictedTraverse(events_path);
+                events python: context.getFolderContents(
+                full_objects=True,
+                contentFilter={'sort_on': 'start',
+                'path': {'query':'', 'depth':-1},
+                'portal_type':['Event', 'EEA Meeting']})[:4]">
+
+  <dt>Events</dt>
+  <dd>
+    <div tal:repeat="event events">
+
+      <a href="" tal:attributes="href event/absolute_url" class="tile" title="">
+        <img tal:attributes="src python:event.getLeadImagePath('thumb', 'event-fallback.png')" />
+      </a>
+
+      <a href="" tal:attributes="href event/absolute_url" class="tile" title="" tal:content="event/Title">
+        An event related to ENI-SEIS East
+      </a>
+
+      <span class="portletItemDetails">
+        <span tal:replace="python:event.get_event_dates(event=event)" />
+        <span tal:replace="python:event.get_event_year(event=event)" />
+        <span class="location"> —
+          <span tal:replace="event/location">Bucharest</span>
+        </span>
+      </span>
+    </div>
+  </dd>
+</dl>
+</metal:macro>

@@ -4,6 +4,10 @@
   <object name="eni_seis_south" meta_type="Filesystem Directory View"
     directory="eni.seis.theme:skins/eni_seis_south" />
 
+  <object name="eni_seis_east" meta_type="Filesystem Directory View"
+    directory="eni.seis.theme:skins/eni_seis_east" />
+
+
   <!-- <skin&#45;path name="*"> -->
     <!--     <layer name="eni_seis" insert&#45;after="custom" /> -->
     <!-- </skin&#45;path> -->

@@ -1,0 +1,36 @@
+<div
+  tal:define="events_path python: '/south/communication/events';
+  events python:context.restrictedTraverse('/south/get_upcoming_events')()[:4]">
+
+  <h4>Upcoming Events</h4>
+
+  <div class="row">
+    <div tal:repeat="event python:events" class="tile col-xs-6 col-md-3">
+
+      <a href="" tal:attributes="href event/absolute_url"
+        class="tile-img" title="">
+        <img tal:attributes="src python:event.getLeadImagePath('mini', 'event-fallback.png')" />
+      </a>
+
+      <a href="" tal:attributes="href event/absolute_url"
+        class="tile-title" title="" tal:content="event/Title">
+        An event related to ENI-SEIS East
+      </a>
+
+      <div class="tile-footer">
+        <span tal:replace="python:event.get_event_dates(event=event)" ></span>
+        <span tal:replace="python:event.get_event_year(event=event)" ></span>
+        <span class="location"> —
+          <span tal:replace="event/location">Bucharest</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="more">
+        <a href="" tal:attributes="href events_path">More events</a>
+      </div>
+    </div>
+  </div>
+</div>

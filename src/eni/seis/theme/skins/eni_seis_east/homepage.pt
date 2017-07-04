@@ -1,0 +1,48 @@
+<html metal:use-macro="here/main_template/macros/master">
+  <metal:content fill-slot="body">
+
+    <main class="page-main" data-diazo="homepage-content">
+
+      <!-- Moved on banner by diazo rule -->
+      <p class="site-description" data-diazo="site-description" tal:content="context/description"></p>
+
+      <div class="section" data-diazo="news-homepage" class="news-homepage">
+        <tal:content tal:define="folderContents context/communication/newsletter/getFolderNews">
+          <tal:news metal:use-macro="here/news_tabular_view/macros/listing"></tal:news>
+        </tal:content>
+      </div>
+
+      <!-- 'homepage&#45;section&#45;partners&#45;text', -->
+      <!-- 'homepage&#45;section&#45;governance&#45;text', -->
+
+      <tal:rep repeat="name python: [
+      'homepage-section-aow-slider',
+      'project-description',
+      ]">
+      <div class="section"
+           data-diazo="..."
+           tal:define="text python: context.getDocText(name)"
+           tal:attributes="data-diazo name; class string:section-${name};"
+           tal:content="structure text"
+           tal:on-error="string: Error in ${name}"
+           >
+      </div>
+      </tal:rep>
+
+      <tal:rep repeat="name python: [
+      'frontpage-events',
+      'frontpage-news',
+      ]">
+      <div class="section"
+           data-diazo="..."
+           tal:attributes="data-diazo name; class string:section-${name};"
+           tal:define="text python:context.restrictedTraverse(name)()"
+           tal:content="structure text"
+           tal:on-error="string: Error in ${name}"
+           >
+      </div>
+      </tal:rep>
+
+    </main>
+  </metal:content>
+</html>

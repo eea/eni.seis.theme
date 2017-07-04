@@ -1,0 +1,52 @@
+<div
+  tal:define="
+  newsletterpath python:'/south/communication/newsletter';
+  news python: [b.getObject() for b in context.portal_catalog.searchResults(
+  portal_type=['News Item'],
+  review_state='published',
+  sort_on='effective',
+  sort_order='descending',
+  path=newsletterpath,
+  )
+  ][:9];
+  toLocalizedTime nocall: context/@@plone/toLocalizedTime;
+  ">
+
+  <tal:cond tal:condition="news">
+  <h4>News</h4>
+  <div class="row" tal:define="
+      newsletter_title python:'Check out our latest Project Newsletter!';
+      newsletter_url python:'http://eni-seis.eionet.europa.eu/south/communication';
+    ">
+
+    <div class="left col-xs-12 col-sm-6 col-md-5">
+      <a href="" tal:attributes="href python:newsletter_url" class="img">
+        <img tal:attributes="src python:'newsitem-fallback.png'" />
+      </a>
+      <a href="" tal:attributes="href python:newsletter_url" class="title"
+         tal:content="newsletter_title">
+        Newsletter
+      </a>
+
+      <div class='description'>
+        <a href="" tal:attributes="href newsletter_url" class="read_more" >
+          Read more
+        </a>
+      </div>
+    </div>
+
+    <div class="right col-xs-12 col-sm-6 col-md-7">
+      <div tal:repeat="ni python:news" class="tile" >
+        <a tal:attributes="href ni/absolute_url" tal:content="ni/Title">
+          news item
+        </a>
+      </div>
+      <div class="more">
+        <a href="" tal:attributes="href newsletterpath">More news</a>
+      </div>
+    </div>
+
+  </div>
+  </tal:cond>
+
+</div>

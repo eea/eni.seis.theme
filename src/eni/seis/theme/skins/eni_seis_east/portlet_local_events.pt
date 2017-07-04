@@ -1,0 +1,31 @@
+<metal:macro define-macro="portlet">
+  <tal:def tal:define="events context/getLocalEvents">
+    <dl class="box leading-large portlet portletEvents" tal:condition="events">
+      <dt>Local Events</dt>
+      <dd>
+        <div tal:repeat="event events" class="row">
+
+          <div class="col-xs-3">
+            <a href="" tal:attributes="href event/absolute_url" class="tile" title="" >
+              <img tal:attributes="src python:event.getLeadImagePath('thumb', 'event-fallback.png')" />
+            </a>
+          </div>
+
+          <div class="col-xs-9">
+            <a tal:attributes="href event/absolute_url"
+              class="tile" title="" tal:content="event/Title">Title</a>
+
+            <span class="portletItemDetails">
+              <span tal:replace="python:event.get_event_dates(event=event)" ></span>
+              <span tal:replace="python:event.get_event_year(event=event)" ></span>
+              <span class="location"> —
+                <span tal:replace="event/location" >Location</span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <a href="http://eni-seis.eionet.europa.eu/south/communication/events" class="pull-right more-items">More events</a>
+      </dd>
+    </dl>
+  </tal:def>
+</metal:macro>
