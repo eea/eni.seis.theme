@@ -27,6 +27,12 @@
       name="eni.seis.theme.south"
       />
 
+    <plone:static
+      directory="theme-east"
+      type="theme"
+      name="eni.seis.theme.east"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="eni.seis.theme"
