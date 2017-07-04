@@ -1,0 +1,136 @@
+.utils {
+
+  .overlay(@top: 0, @right: @top, @bottom: @top, @left: @right, @position: absolute) {
+    position: @position;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute) {
+    position: @position;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = top) {
+    top: @offset-1;
+    left: @offset-2;
+    right: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = top-left) {
+    top: @offset-1;
+    left: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = right) {
+    right: @offset-1;
+    top: @offset-2;
+    bottom: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = top-right) {
+    top: @offset-1;
+    right: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = bottom) {
+    bottom: @offset-1;
+    left: @offset-2;
+    right: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = bottom-left) {
+    bottom: @offset-1;
+    left: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = left) {
+    left: @offset-1;
+    top: @offset-2;
+    bottom: @offset-2;
+  }
+
+  .inner(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = bottom-right) {
+    bottom: @offset-1;
+    right: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute) {
+    position: @position;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = top) {
+    bottom: 100%;
+    margin-bottom: @offset-1;
+    left: @offset-2;
+    right: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = right) {
+    left: 100%;
+    margin-left: @offset-1;
+    top: @offset-2;
+    bottom: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = bottom) {
+    top: 100%;
+    margin-top: @offset-1;
+    left: @offset-2;
+    right: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = left) {
+    right: 100%;
+    margin-right: @offset-1;
+    top: @offset-2;
+    bottom: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = top-left) {
+    bottom: 100%;
+    right: 100%;
+    margin-bottom: @offset-1;
+    margin-right: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = top-right) {
+    bottom: 100%;
+    left: 100%;
+    margin-bottom: @offset-1;
+    margin-left: @offset-2;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = bottom-left) {
+    top: 100%;
+    right: 100%;
+    margin-right: @offset-2;
+    margin-top: @offset-1;
+  }
+
+  .outer(@pos, @offset-1: 0, @offset-2: @offset-1, @position: absolute)
+   when (@pos = bottom-right) {
+    top: 100%;
+    left: 100%;
+    margin-left: @offset-2;
+    margin-top: @offset-1;
+  }
+
+}
+

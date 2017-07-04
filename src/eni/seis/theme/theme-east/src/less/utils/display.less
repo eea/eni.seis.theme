@@ -1,0 +1,37 @@
+.utils {
+  .display(@type: all, @prefix: ~"", @suffix: ~"") when (@type = all) {
+    .@{prefix}block@{suffix} {
+      display: block;
+    }
+    .@{prefix}inline-block@{suffix} {
+      display: inline-block;
+    }
+    .@{prefix}inline@{suffix} {
+      display: inline;
+    }
+  }
+
+  .display(@type: all, @prefix: ~"", @suffix: ~"") when (@type = block) {
+    .@{prefix}block@{suffix} {
+      display: block;
+    }
+  }
+
+  .display(@type: all, @prefix: ~"", @suffix: ~"") when (@type = inline-block) {
+    .@{prefix}inline-block@{suffix} {
+      display: inline-block;
+    }
+  }
+
+  .display(@type: all, @prefix: ~"", @suffix: ~"") when (@type = inline) {
+    .@{prefix}inline@{suffix} {
+      display: inline;
+    }
+  }
+
+  .hidden(@prefix: ~"", @suffix: ~"") {
+    .@{prefix}hidden@{suffix} {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.template-homepage {
+  .site-banner {
+    position: relative;
+
+    @media @screen-md-upto {
+      display: none;
+    }
+
+    // ?? Explain .embed-container styling
+    .embed-container {
+      position: relative;
+      padding-bottom: 80%;
+      height: 0;
+      width: 100%
+    }
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-description {
+      @media @screen-lg-upto {
+         margin: 0;
+      }
+      width: 27%;
+      position: absolute;
+      padding: 2rem;
+      left: 0;
+      z-index: 2;
+      margin-left: 10%;
+      margin-top: 100px;
+      h3 {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      h3.reverse {
+        position: relative;
+        left: -8px;
+        background: #FFFFFF;
+        color: @color-brand-south;
+        display: inline-block;
+        padding: 5px 8px 3px 8px;
+        font-weight: 500;
+      }
+      p {
+        padding-top: 20px;
+        color: #FFFFFF;
+        font-size: 1rem;
+      }
+    }
+
+    .lp-title {
+      height: auto!important;
+      margin-top: 0;
+    }
+
+    .lp-disclaimer {
+      position: absolute;
+      background: @color-gray-lighter;
+      padding: 2px;
+      top: 95%;
+      right: 22%;
+      max-width: 80%;
+      color: @color-gray-dark;
+      opacity: .8;
+      z-index: 100;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .lp-content {
+      border-bottom: 1px solid #d0d0d0;
+      padding-left: 30%;
+      padding-right: 10%;
+      background: @color-brand-south;
+      @media @screen-md {
+        margin: auto;
+        z-index: 1;
+        height: 450px;
+        overflow: hidden;
+        .embed-container {
+          border-radius: 5px;
+          overflow: hidden;
+        }
+      }
+      @media @screen-lg {
+        &:before {
+          transform-origin: right bottom;
+          transform: skew(30deg);
+          position: absolute;
+          background: @color-brand-south;
+          height: 100%;
+          bottom: 100%;
+          width: 47%;
+          content: '';
+          left: 0;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          right: -20%;
+          top: 0px;
+          width: 30%;
+          height: 100%;
+          border-top: 500px solid @color-brand-south;
+          clear: both;
+          transform: skew(30deg);
+        }
+      }
+    }
+  }
+}

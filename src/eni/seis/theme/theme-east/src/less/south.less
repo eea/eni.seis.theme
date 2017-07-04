@@ -1,0 +1,611 @@
+@import (reference) "main.less";
+@import (reference) "components/grid.less";
+
+a {
+  cursor: pointer;
+}
+
+#content a,
+#content a:visited,
+#content a:link,
+dl.portlet a:link,
+div.more a,
+.section-frontpage-news .right .more a,
+aside.page-aside .box.leading-large a:nth-last-of-type(1),
+.section a {
+  color: @color-brand-south;
+  border-bottom: none;
+  &:hover {
+    color: @color-accent;
+  }
+}
+
+.btn-primary {
+  .btn-variant(#fff, #009245, #009245);
+}
+
+.page-title {
+  color: inherit;
+}
+
+.btn-primary {
+  border-color: #009245;
+  color: #fff;
+  background-color: #009245
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #009245
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  position: relative;
+}
+
+.btn-primary[disabled],
+.btn-primary.disabled,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:active,
+.btn-primary.disabled:active {
+  color: rgba(255, 255, 255, 0.5);
+  background: #0f8346;
+  box-shadow: none;
+}
+
+input[type='submit'] {
+  background: @color-brand-south !important;
+  color: #FFFFFF;
+  padding: 0.2em 0.5em;
+  border: none;
+  &:hover {
+    background: @color-accent !important;
+  }
+}
+
+.navbar-brand strong,
+.footer-brand strong {
+  color: @color-brand-south;
+  font-weight: 600;
+}
+
+.navbar-brand p {
+  color: @color-gray;
+}
+
+@media @screen-md {
+  .template-homepage #site-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 127%!important;
+  }
+}
+
+#site-header {
+  background-position: 100%;
+  background-size: cover;
+}
+
+.template-homepage #navbar {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.btn.event-register,
+.register-form button,
+a.back-button,
+.btn-default.edit-text,
+.btn-default {
+  border-color: @color-brand-south;
+  &:hover {
+    background: @color-brand-south;
+    color: white;
+    box-shadow: none;
+  }
+}
+
+.meeting-items a.btn-default,
+a.back-button,
+.btn-default.edit-text,
+.btn.event-register {
+  color: @color-gray !important;
+  border-radius: 0;
+  border-bottom: 2px solid @color-brand-south !important;
+  border: 2px solid @color-brand-south !important;
+  &:hover {
+    color: #FFFFFF !important;
+  }
+}
+
+a.back-button {
+  position: relative;
+  top: -5px;
+}
+
+.btn-default.edit-text {
+  margin-bottom: 5px;
+}
+
+.register-form-fields,
+body.template-eea-meeting {
+  label,
+  .label {
+    font-weight: 500;
+  }
+}
+
+label, .label,
+#content dt {
+  font-weight: 500;
+}
+
+.register-form button {
+  color: @color-gray;
+  border-radius: 0 !important;
+  border: 2px solid @color-brand-south;
+  margin-right: 10px;
+}
+
+#portal-globalnav {
+  @media @screen-md {
+    ul.submenu {
+      border-top: solid #FFFFFF;
+    }
+    > li:hover {
+      background: @color-brand-south;
+      > a {
+        color: white !important;
+      }
+    }
+    .selected {
+      .plain {
+        color: @color-brand-south;
+        &:hover {}
+      }
+    }
+  }
+}
+
+@media @screen-md-upto {
+  #portal-globalnav > li > a {
+    color: @color-brand-south;
+  }
+}
+
+.admin {
+  background: @color-brand-south;
+
+  #edit-bar {
+    border-style: solid solid solid solid;
+    border-radius: 0 !important;
+    color: white;
+    background: @color-brand-south;
+    border-color: @color-brand-south!important;
+    * {
+      background: @color-brand-south;
+      border-color: @color-brand-south!important;
+    }
+    a {
+      color: inherit!important;
+    }
+    .contentViews#content-views {
+      a:hover {
+        color: @color-brand-south!important;
+      }
+    }
+    .selected {
+      a {
+        color: @color-brand-south!important;
+      }
+    }
+    #contentActionMenus {
+      float: none;
+      .actionMenuContent ul li a {
+        &:hover {
+          background: #FFFFFF !important;
+          span {
+            color: @color-brand-south;
+            background: #FFFFFF;
+          }
+        }
+        span {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+    #content-views a {
+      border-radius: 0px;
+    }
+    #contentActionMenus dl.actionMenu.activated dd a:hover,
+    #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+      background: #FFFFFF;
+      span {
+        background: #FFFFFF;
+        color: @color-brand-south !important;
+      }
+    }
+  }
+
+  #contentActionMenus dl.actionMenu a,
+  #contentActionMenus dl.actionMenu.activated dd {
+    background: @color-brand-south;
+    color: white;
+    border-radius: 0px;
+  }
+  ul {
+    padding: 0;
+  }
+  ul:first-of-type {
+    li:first-of-type {
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.page-header {
+  border-color: @color-brand-south!important;
+}
+
+.south-subtitle {
+  display: none!important;
+}
+
+#site-header {
+  background-position: 100% 10%;
+}
+
+body:not(.template-country_view) {
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background: @color-brand-south !important;
+    color: white !important;
+  }
+  .nav-tabs > li > a {
+    color: @color-brand-south !important;
+    border: 1px solid #ededed !important;
+    border-radius: 0;
+  }
+  .nav-tabs {
+    border-bottom: 3px solid #ff6b01;
+  }
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    color: #FFFFFF !important;
+    background: @color-brand-south !important;
+  }
+
+  .nav > li.active > a,
+  .nav > li > a:hover {
+    border-color: @color-brand-south !important;
+  }
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: @color-brand-south!important;
+}
+
+#related-events {
+  .table-hover {
+    > thead {
+      display: none;
+    }
+
+    > tbody {
+      > tr.level-national:hover {
+        background-color: @color-brand-south;
+      }
+      > tr:hover {
+        background-color: @color-accent;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+#project-related-events {
+  .table-hover {
+    thead {
+      display: none;
+    }
+
+    th {
+      color: @color-gray-dark !important;
+    }
+
+    tr {
+      &:hover {
+        background: @color-accent;
+        color: #FFFFFF;
+        td.event-summary {
+          color: #FFFFFF !important;
+        }
+        td a {
+          color: #FFFFFF !important;
+        }
+      }
+
+      td a {
+        color: @color-brand-south !important;
+      }
+    }
+
+    td.event-link {
+      min-width: 140px;
+    }
+  }
+}
+
+.tab-pane {
+  th {
+    vertical-align: middle;
+  }
+}
+
+.homepage-news {
+  thead {
+    th {
+      background-color: @color-accent;
+      color: #fff;
+    }
+  }
+  tbody {
+    tr {
+      border-top-color: @color-brand-south;
+    }
+    td:first-child {
+      color: inherit;
+    }
+  }
+  a {
+    color: @color-accent;
+  }
+}
+
+.aow-national-work-plans {
+  background-image: url('../img/img-south-national-work-plans.jpg');
+}
+
+.aow-indicators-and-assessment {
+  background-image: url('../img/img-south-indicators-and-assessment.jpg');
+}
+
+.aow-data-and-statistic {
+  background-image: url('../img/img-south-data-and-statistics.jpg');
+}
+
+.aow-data-management-and-infrastructure {
+  background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
+}
+
+.level-national {
+  color: @color-brand-south;
+}
+
+.level-regional {
+  color: @color-accent;
+}
+
+.event-title {
+  color: @color-brand-south;
+}
+
+legend {
+  float: right;
+  position: relative;
+  top: -55px;
+
+  .fa.fa-circle.level-regional,
+  .fa.fa-circle.level-national,
+  .fa.fa-circle.other {
+    font-size: 2em;
+  }
+
+  span.level-national,
+  span.level-regional {
+    margin-right: 20px;
+  }
+
+  span.level-national span,
+  span.level-regional span,
+  span.other span {
+    position: relative;
+    top: -4px;
+  }
+
+  .fa:before {
+    margin-right: .5rem;
+  }
+  .level-national {
+    padding-left: 0;
+  }
+}
+
+
+#site-footer .contact {
+  a {
+    font-weight: 500;
+    color: @color-gray-dark;
+  }
+  a:hover {
+    color: @color-brand-south;
+  }
+}
+
+#portal-breadcrumbs {
+  a {
+    color: @color-gray-dark;
+  }
+  a:hover {
+    color: @color-brand-south;
+  }
+}
+#breadcrumbs-current {
+  color: @color-brand-south;
+}
+
+.documentFirstHeading {
+  color: @color-dominant;
+  border-bottom: 3px solid @color-accent;
+  padding: 0em 1em 0.2em 1em;
+  display: inline-block;
+  text-align: center;
+}
+
+.documentByLine {
+  margin-bottom: 4em;
+}
+
+body.userrole-anonymous {
+  .documentFirstHeading {
+    margin-bottom: 1em;
+  }
+}
+
+#site-header {
+  @media @screen-md-upto {
+    background-repeat: no-repeat;
+    background-position: 100% 100%!important;
+  }
+}
+
+.portlet {
+  .utils > .clear;
+  img {
+    max-width: 100%;
+  }
+}
+
+a.more-items {
+  border-top: 1px solid @color-accent;
+  padding-left: 10px;
+  padding-right: 0.5em;
+  padding-top: 5px;
+  text-transform: uppercase;
+  &:after {
+    content: "\2192";
+    position: relative;
+    left: 0.5em;
+    top: -1px;
+  }
+}
+
+.text-accent {
+  color: @color-accent;
+}
+
+body.template-atct_edit #content {
+  text-align: left;
+}
+body.template-atct_edit #content > div:first-of-type {
+  text-align: center;
+}
+
+body.template-news_listing_view {
+  .table-hover a:hover {
+    color: @color-brand-south !important;
+  }
+}
+
+div.managePortletsLink {
+  border-radius: 0;
+  background: #FFFFFF;
+  width: 40%;
+  float: left;
+
+  border: 2px solid @color-brand-south;
+  &:hover {
+    background: @color-brand-south;
+    a {
+      color: #FFFFFF !important;
+    }
+  }
+}
+
+#viewlet-above-content-title .leadImage {
+  display: none; // Hide lead image on meeting view (wrong place before title)
+}
+
+.template-homepage.userrole-authenticated #edit-bar {
+  margin-top: 4rem;
+}
+
+#content-views li.selected a, #content li.formTab a.selected, #content-core li.formTab a.selected {
+  font-weight: 500;
+}
+
+dl.portalMessage dt, div > .admonition-title {
+  font-weight: 500;
+}
+
+div.pagination.listingBar {
+  a {
+    background: #FFFFFF;
+    color: @color-brand-south;
+    border: none;
+    &:hover {
+      background: #FFFFFF;
+      color: @color-accent;
+    }
+  }
+}
+
+dl.portalMessage.info {
+  border-color: @color-accent;
+  background-color: #FFFFFF;
+  dt {
+    background-color: @color-accent;
+  }
+}
+
+dl.portalMessage.error {
+  border-color: @color-red;
+  background-color: #FFFFFF;
+  dt {
+    background-color: @color-red;
+  }
+  dd {
+    background: #FFFFFF;
+  }
+}
+
+label {
+  font-weight: 500;
+}
+
+a.btn.btn-default[data-diazo='manage-portlets'] {
+  float: right;
+  width: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+.table.display-email > thead > tr > th {
+  border-bottom: 1px solid @color-gray-dark !important;
+}
+
+body.template-news_listing_view {
+  table.table-responsive.table-hover {
+    h3 {
+      font-weight: 500;
+    }
+  }
+}
+
+aside.page-aside .box.portlet.portletEvents img {
+  float: left;
+  width: 50px;
+  margin-right: 5px;
+  height: auto;
+}

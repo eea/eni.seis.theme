@@ -1,0 +1,33 @@
+.admin {
+  * {
+    box-sizing: content-box!important;
+  }
+  box-sizing: content-box!important;
+  background: #75ad0a;
+  @media @screen-md-max {
+    //display: none; [TODO] Need it?
+  }
+  #edit-bar {
+    padding-top: 0;
+    dl,
+    ul,
+    ol,
+    p {
+      margin-bottom: 0!important;
+    }
+    font-size: 1rem;
+  }
+  .contentViews#content-views {
+    >li {
+      >a {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.template-homepage {
+  #edit-bar {
+    margin-bottom: 0!important;
+  }
+}

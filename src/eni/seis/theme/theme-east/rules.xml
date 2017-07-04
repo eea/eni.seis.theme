@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+  <!-- <notheme css:if-not-content=".userrole-anonymous" /> -->
+
+  <xi:include href="rules/admin.xml" />
+  <xi:include href="rules/homepage.xml" />
+
+  <!-- Folder view -->
+  <rules css:if-content=".template-folder_listing.portaltype-folder">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Document view, simple page view -->
+  <rules css:if-content=".template-document_view.portaltype-document">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Login page -->
+  <rules css:if-content=".template-login_form">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Not found page -->
+  <rules css:if-content=".template-default_error_message">
+    <drop css:theme=".page-aside .box.newsletter-box" />
+    <drop css:theme=".page-aside .box.leading-large" />
+  </rules>
+
+  <!-- Drop Editor menu for anonymous -->
+  <rules css:if-content=".userrole-anonymous">
+    <drop css:theme="div.admin" />
+  </rules>
+
+  <!-- Login link for anonymous - top-right -->
+  <rules css:if-content=".userrole-anonymous">
+    <before css:theme-children="#site-header-top .page-container">
+      <xsl:for-each css:select="#portal-personaltools #personaltools-login">
+        <a class="login-link" href="{./@href}">Log in</a>
+      </xsl:for-each>
+    </before>
+  </rules>
+
+  <!-- Manage portlets button if here -->
+  <rules css:if-content=".managePortletsLink">
+    <copy
+      attributes="href"
+      css:content=".managePortletsLink a"
+      css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']"
+      />
+  </rules>
+
+  <rules css:if-content=".managePortletsFallback">
+    <copy
+      attributes="href"
+      css:content=".managePortletsFallback a"
+      css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']"
+      />
+  </rules>
+
+  <!-- Drop Manage portlets button if not here -->
+  <rules css:if-not-content=".managePortletsLink">
+    <rules css:if-not-content=".managePortletsFallback">
+      <drop css:theme=".page-aside .btn.btn-default[data-diazo='manage-portlets']" />
+    </rules>
+  </rules>
+
+  <!-- Navigation -->
+  <drop css:theme=".page-aside .nav.nav-folder"
+        css:if-not-content="dl.portlet.portletNavigationTree" />
+
+  <rules css:if-not-content=".template-atct_edit, .template-edit">  <!-- Hidden in Edit pages -->
+    <replace css:theme=".page-aside .nav.nav-folder"
+             css:if-content="dl.portlet.portletNavigationTree">
+      <nav class="nav nav-folder">
+        <header class="nav-header">
+          <h4 class="nav-title">Navigation</h4>
+        </header>
+        <div class="nav-body">
+          <xsl:for-each css:select="dl.portlet.portletNavigationTree > dd.portletItem > ul.navTree.navTreeLevel0 > li.navTreeItem">
+            <xsl:value-of select="li"/>
+            <div class="nav-group">
+              <ul class="nav-items">
+                <li class="nav-item">
+                  <xsl:copy-of select="a"/>
+                  <xsl:for-each select="./ul">
+                    <ul class="nav-items">
+                      <xsl:for-each select="./li">
+                        <li class="nav-item">
+                          <xsl:copy-of select="a"/>
+                        </li>
+                      </xsl:for-each>
+                    </ul>
+                  </xsl:for-each>
+                </li>
+              </ul>
+            </div>
+          </xsl:for-each>
+        </div>
+      </nav>
+    </replace>
+  </rules>
+
+  <!-- Portlets -->
+  <rules css:if-not-content=".template-atct_edit, .template-edit, .no-portlets">  <!-- Hidden in Edit pages -->
+   <drop css:content="#portal-column-one .portlet-static-newsletter" />
+    <after css:theme-children=".page-aside">
+      <xsl:for-each css:select="dl.portlet">
+        <xsl:if test="not(contains(./@class, 'portletNavigationTree'))">
+          <div class="box leading-large {./@class}">
+            <h4>
+              <xsl:value-of select="./dt"/>
+            </h4>
+            <xsl:copy-of select="./dd/node()"/>
+          </div>
+        </xsl:if>
+      </xsl:for-each>
+    </after>
+  </rules>
+
+  <drop css:if-content=".no-portlets" css:theme="aside.page-aside" />
+
+
+  <!-- Apply the following rules to standard Plone pages -->
+  <rules css:if-content="#visual-portal-wrapper">
+
+    <theme href="page.html" />
+
+    <!-- Drop banner for all pages except homepage -->
+    <rules css:if-not-content="body.section-front-page, body.template-homepage">
+      <drop css:theme=".site-banner" />
+    </rules>
+
+    <!-- Replace title with Plone's page title  -->
+    <replace
+      css:content="html head title"
+      css:theme="html head title"
+      />
+
+    <!-- Copy base tag from Plone -->
+    <before
+      css:content="html head base"
+      css:theme-children="html head"
+      />
+
+    <!-- Copy link, style, meta tags from Plone head -->
+    <before
+      content="/html/head/link | /html/head/style | /html/head/meta"
+      css:theme-children="html head"
+      />
+
+    <!-- merge classes from Plone body with theme body -->
+    <merge
+      attributes="class"
+      css:content="body"
+      css:theme="body"
+      />
+
+    <!-- Copy script tags from Plone head to end of body -->
+    <after
+      css:content="html head script"
+      css:theme-children="html body"
+      />
+
+    <!-- move content scripts below body so that we have jquery present -->
+    <after
+      css:content="#content script"
+      css:theme-children="html body"
+    />
+    <drop css:content="#content script" />
+
+    <!-- LOGO -->
+    <copy
+      attributes="href"
+      css:content="#portal-logo"
+      css:theme=".navbar-brand h1 a"
+      />
+
+    <!-- Get website title based on website configuration (Requires website_title_html script. See docs.) -->
+    <!-- <replace css:content=".east" css:theme=".navbar&#45;title" href="/website_title_html" method="document" /> -->
+
+    <!-- PORTAL NAVIGATION -->
+    <replace
+      css:content="#portal-globalnav"
+      css:theme="#navbar .navbar-menu"
+      />
+
+    <!-- LOGIN (FOR ANONYMOUS USERS) -->
+    <replace
+      if-content="//li[@id='anon-personalbar']"
+      css:content="#personaltools-login"
+      css:theme=".dropdown-toggle"
+      />
+
+    <!-- USER NAME (FOR LOGGED-IN USERS) -->
+    <replace
+      if-content="not(//li[@id='anon-personalbar'])"
+      content="//a[@id='user-name']/text()"
+      css:theme="#user-name"
+      />
+
+    <!-- USER ACTIONS (FOR LOGGED-IN USERS) -->
+    <replace
+      if-content="not(//li[@id='anon-personalbar'])"
+      css:content-children="#portal-personaltools .actionMenuContent ul"
+      css:theme-children="#action-menu-content"
+      />
+
+    <!-- BREADCRUMBS -->
+    <replace
+      css:content="#portal-breadcrumbs"
+      css:theme=".breadcrumbs"
+      />
+    <!--<drop css:content="span#breadcrumbs-you-are-here" />-->
+
+    <!-- copy current workflow state into the -->
+    <replace
+      css:content="#plone-contentmenu-workflow .actionMenuHeader a span"
+      css:theme="#currentWorkflowState"
+      />
+    <!-- drop Plone dropdown arrow -->
+    <drop
+      css:content="#plone-contentmenu-workflow .arrowDownAlternative"
+      />
+
+    <after css:theme=".above-content" css:content=".portalMessage" />
+
+    <!--
+      #viewlet-above-content-title
+      for portalMessages
+    -->
+
+    <!-- Page header -->
+    <!--<replace-->
+    <!--  css:content-children=".documentFirstHeading"-->
+    <!--  css:theme-children=".page-title"-->
+    <!--  />-->
+    <!--<drop css:content=".documentFirstHeading" />-->
+    <!--<drop css:theme=".page-description" />-->
+
+    <!--East region
+      #viewlet-below-content-title
+      for author, date, history
+    -->
+
+    <!--
+      #viewlet-above-content-body
+    -->
+
+    <!-- main content -->
+    <rules css:if-not-content=".template-homepage">
+      <copy
+        attributes="id"
+        css:content="#content"
+        css:theme=".page-main"
+      />
+      <replace
+        css:content-children="#content"
+        css:theme-children=".page-main"
+      />
+
+    </rules>
+
+    <!-- Make page-main full width when no right column -->
+    <rules css:if-not-content=".template-manage-portlets">
+    <rules if="not($have_right_portlets)">
+         <replace css:theme=".page-main"  method="raw">
+          <div class="page-main page-main-full" id="content">
+               <xsl:apply-templates css:select="#content > *" />
+          </div>
+         </replace>
+    </rules>
+    </rules>
+
+
+    <!--
+
+    <xsl:copy>
+            <xsl:attribute name="class">page-main page-main-full</xsl:attribute>
+            <xsl:copy-of select="@*" />
+            <xsl:apply-templates />
+        </xsl:copy>
+      #viewlet-below-content-body
+      #viewlet-below-content
+        .documentActions
+        #socialmedia-viewlet
+    -->
+
+    <!-- FOOTER -->
+    <replace css:theme="span[data-diazo='login-link']">
+      <!-- Login link for anonymous - footer -->
+      <xsl:for-each css:select="#portal-personaltools #personaltools-login">
+        | <a class="login-link" href="{./@href}">Log in</a>
+      </xsl:for-each>
+    </replace>
+  </rules>
+
+  <rules css:if-content=".template-atct_edit, .template-edit">
+    <!-- Fix bug: cannot edit pages -->
+    <drop css:theme=".page-aside" />
+    <drop css:theme=".page-main" attributes="class" />
+
+  </rules>
+
+  <!-- Fix bug: cannot access content rules -->
+  <rules css:if-content=".template-rules-controlpanel, .template-manage-elements">
+    <!-- rules pages needs jquery within head or jquery script needs
+         to be moved to the bottom -->
+    <after css:theme-children="html body"
+           css:content="script[src*='manage-contentrule']" />
+    <drop css:content="script[src*='manage-contentrule']" />
+  </rules>
+
+  <!-- Fix bug: cannot manage portlets -->
+  <rules css:if-content=".template-manage-portlets">
+    <replace
+      css:content="#portal-columns"
+      css:theme=".page-main"
+    />
+  </rules>
+
+  <!-- Fix south.css and east.css to be after main.css -->
+  <after css:theme-children="head"
+         css:content="link[href*='south.css']" />
+  <after css:theme-children="head"
+         css:content="link[href*='east.css']" />
+
+  <!-- Events calendar -->
+  <rules css:if-content=".template-solgemafullcalendar_view">
+    <drop css:theme=".page-aside" />
+  </rules>
+
+  <!-- Events calendar properties -->
+  <rules css:if-content=".template-solgemafullcalendar_properties">
+    <drop css:theme=".page-aside" />
+  </rules>
+
+  <!-- Remove theme demo content in small column for all pages -->
+  <drop css:theme=".page-aside .box.newsletter-box" />
+   <drop css:theme=".page-aside .box.portlet-static-newsletter" />
+  <drop css:theme=".page-aside .box.leading-large" />
+
+  <!-- Google Analytics -->
+  <after theme-children="/html/body" content="//*[@id='portal-footer-wrapper']/div/script" />
+
+</rules>

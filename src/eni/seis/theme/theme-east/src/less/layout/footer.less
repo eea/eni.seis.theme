@@ -1,0 +1,142 @@
+#site-footer {
+  color: #FFFFFF;
+  font-size: .8rem;
+  background: @color-secondary;
+
+  @media @screen-md-upto {
+    .box {
+      margin: 0 !important;
+    }
+    .footer-content-wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .container-fluid {
+    background: white;
+    min-height: 250px;
+    color: #FFFFFF;
+    overflow: auto;
+  }
+
+  .col-left {
+    padding: 2em 1em;
+    min-height: 230px;
+    color: @color-body;
+  }
+  .col-middle {
+    padding: 2em 1em;
+    min-height: 250px;
+    color: #FFFFFF;
+  }
+  .col-right {
+    padding: 2em 1em;
+    min-height: 250px;
+    color: #FFFFFF;
+  }
+
+  @media @screen-lg {
+    .container-fluid {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-gray-lighter+50,6e7774+50,6e7774+50,6e7774+51,6e7774+51,@color-brand-south+51 */
+      background: @color-gray-lighter; /* Old browsers */
+      background: -moz-linear-gradient(left,  @color-gray-lighter 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, @color-brand-south 51%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  @color-gray-lighter 50%,#6e7774 50%,#6e7774 50%,#6e7774 51%,#6e7774 51%,@color-brand-south 51%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  @color-gray-lighter 50%,#6e7774 50%,#6e7774 50%,#6e7774 51%,#6e7774 51%,@color-brand-south 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-gray-lighter', endColorstr='@color-brand-south',GradientType=1 ); /* IE6-9 */
+    }
+    .row.footer-content-wrapper {
+      // background: linear-gradient(60deg, #fbfbfb 0%,#fbfbfb 28%,#737373 28%,#737373 67%,@color-brand-south 67%,@color-brand-south 100%);
+      background: linear-gradient(60deg, @color-gray-lighter 0%, @color-gray-lighter 28%, @color-secondary 28%, @color-secondary 67%, @color-brand-south 67%, @color-brand-south 100%);
+    }
+  }
+
+  @media @screen-lg-upto {
+    .col-left {
+      background: @color-gray-lighter;
+    }
+    .col-middle {
+      background: @color-secondary;
+    }
+    .col-right {
+      background: @color-brand-south;
+    }
+  }
+
+  // left column
+  .site-title-footer {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: @color-gray-dark;
+  }
+
+  // credits in middle column
+  .navbar-credits {
+
+    margin-top: 1rem;
+    float: none;
+    text-align: center;
+
+    @media @screen-lg {
+      padding-top: 50px;
+      // padding-left: 90px;
+    }
+
+    img {
+      max-height: 50px;
+    }
+    small {
+      display: block;
+      clear: both;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  // the newsletter portlet in the right column
+  .portlet.box {
+    max-width: 23rem;
+    h3 {
+      padding-bottom: .5rem;
+      padding-right: 10px;
+      color: #FFFFFF;
+      font-weight: 600;
+      border-bottom: solid #FFFFFF;
+      display: inline-block;
+    }
+    a {
+      margin-top: 1rem;
+      border: 1px solid #009245;
+      margin-top: 1rem;
+      padding: .5rem 2rem;
+      border-radius: 5rem;
+      color: #a1a2b2;
+    }
+    p {
+      font-size: initial;
+      color: #FFFFFF;
+    }
+    .btn-subscribe {
+      background: transparent !important;
+      border: 2px solid #FFFFFF !important;
+      border-radius: 0 !important;
+      text-transform: uppercase;
+      color: #FFFFFF !important;
+      &:hover {
+        background: #FFFFFF !important;
+        color: @color-brand-south !important;
+      }
+    }
+  }
+}
+
+// Fix same height cols in footer (http://stackoverflow.com/a/19695851/1929820)
+@media (min-width:640px) and (max-width: 1360px) {
+  .row.footer-content-wrapper {
+    overflow: hidden;
+    .col-left, .col-middle, .col-right {
+      margin-bottom: -99999px !important;
+      padding-bottom: 99999px !important;
+    }
+  }
+}

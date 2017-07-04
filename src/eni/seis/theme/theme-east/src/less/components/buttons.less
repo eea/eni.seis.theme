@@ -1,0 +1,81 @@
+@btn-padding-v: .2em;
+@btn-padding-h: .3em;
+@btn-padding: @btn-padding-v @btn-padding-h;
+@btn-radius: .2em;
+@btn-weight: 500;
+@btn-border-width: 1px;
+@btn-min-width: 5rem;
+
+.btn-variant(@color, @bg-1, @bg-2) {
+  border-color: @bg-2;
+  color: @color;
+  background-color: @bg-1;
+
+  &:hover,
+  &:focus {
+    color: @color;
+    background-color: @bg-1;
+  }
+
+  &:active,
+  &.active {
+    position: relative;
+  }
+
+  &[disabled],
+  &.disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: fade(@color, 50%);
+      background: desaturate(@bg-1, 20%);
+      box-shadow: none;
+    }
+  }
+}
+
+.btn {
+  color:@color-secondary;
+  vertical-align: middle;
+  display: inline-block;
+  padding: @btn-padding;
+  border: 1px solid #eee;
+  border-radius: @btn-radius;
+  background: transparent;
+  text-align: center;
+  transition: background .1s,
+              color .1s;
+}
+
+.btn-east:hover {
+  color: red;
+}
+
+.btn-south:hover {
+  color: red;
+}
+
+.btn-default {
+  border: 2px solid;
+  margin-top: 1rem;
+  padding: .5rem 2rem;
+  border-radius: 0;
+}
+
+.btn-east, .btn-south {
+  border: none!important;
+}
+
+.btn-east {
+  color: @color-green;
+}
+
+.btn-south {
+  color: @color-orange;
+}
+
+.btn-east:before,
+.btn-south:before {
+  content:'> ';
+}

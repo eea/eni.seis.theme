@@ -1,0 +1,43 @@
+.utils {
+
+  .embed-font(@family, @file, @weight: normal, @style: normal, @path: ".") {
+    @font-face {
+      font-family: @family;
+      src: url('@{path}/@{file}.woff2') format('woff2');
+      font-weight: @weight;
+      font-style: @style;
+    }
+  }
+
+  .no-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .line(@n: 1, @text-overflow: ellipsis) when (@n = 1) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: @text-overflow;
+  }
+
+  .line(@n: 1, @l: @line-height-body, @h: max-height) when (@n > 1) {
+    @{h}: (@n * @l * 1em);
+    overflow: hidden;
+  }
+
+  .no-br {
+    white-space: nowrap;
+  }
+
+  .list-inline(@gutter-v: .2em, @gutter-h: @gutter-v, @vertical-align: top) {
+    .utils > .no-list;
+    display: inline-block;
+    margin: (-@gutter-v / 2) (-@gutter-h / 2);
+    > li {
+      display: inline-block;
+      padding: (@gutter-v / 2) (@gutter-h / 2);
+      vertical-align: @vertical-align;
+    }
+  }
+
+}

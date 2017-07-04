@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> partials/head }}
+  </head>
+
+<body>
+  <!-- Header -->
+  {{> partials/header }}
+  {{> partials/navbar }}
+  {{> partials/sitebanner }}
+
+  {{> partials/editbar }}
+
+  <div class="container site-container">
+    <div class="page-body">
+      <div class="page-container clear">
+
+        <div class="above-content">
+          <ul class="breadcrumbs">
+            <li><a href="">Home</a></li>
+            <li><a href="">Folder</a></li>
+            <li><strong>This page</strong></li>
+          </ul>
+        </div>
+
+        <main class="page-main"></main>
+
+        <aside class="page-aside">
+
+          {{> partials/pageaside }}
+          {{> partials/treenav }}
+
+          <a href="../@@manage-portlets" class="btn btn-default" data-diazo="manage-portlets">
+            Manage portlets
+          </a>
+
+        </aside>
+
+        <div class="section-partners-wrapper">
+          <section class="section" data-diazo="section-partners"></section>
+          <section class="section" data-diazo="section-countries-map"></section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {{>partials/footer}}
+  {{>partials/bottomjs}}
+
+</body>
+</html>

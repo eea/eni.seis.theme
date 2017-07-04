@@ -1,0 +1,147 @@
+.lp-main {
+  background: #eee;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1,
+  h2,
+  a {
+    color: #222222;
+  }
+  #site-footer {
+    border: none;
+    text-align: center;
+    .footer-credits {}
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.landing-page * {
+  box-sizing: border-box;
+}
+
+.lp-content {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.lp-left-side {
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lp-right-side {
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .lp-left-side {
+    width: 100%;
+  }
+}
+
+.lp-title {
+    margin-top: 7rem;
+  width: 34vw;
+  height: calc(50vh-7rem);
+  max-width: 500px;
+  @media(max-width: 960px) {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    @media (max-width: 960px) {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 560px) {
+        font-size: .8rem;
+    }
+    font-size: 1.7rem;
+  }
+}
+
+.lp-links {
+  li {
+    display: inline-block;
+    margin: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  a {
+    font-size: 1.5rem;
+    color: white;
+    @media (max-width: 560px) {
+      font-size: 1rem!important;
+    }
+  }
+  li:first-of-type {
+    background: #009245;
+   
+  }
+  li:last-of-type {
+    background: #F7931E;
+  
+  }
+  li:first-of-type:hover {
+      background: white!important;
+      a {
+      color: #222222!important;
+    }
+    span {
+      color: #F7931E!important;
+    }
+  }
+  li:last-of-type:hover {
+     background: white!important;
+     a {
+      color: #222222!important;
+
+
+      span {
+      
+      color: #009245!important;
+    }
+
+
+    }
+    
+  }
+}
+
+.lp-left-side,
+.lp-right-side {
+  z-index: 2;
+  position: relative;
+  margin: auto;
+}
+
+.lp-content::before {
+  // content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+

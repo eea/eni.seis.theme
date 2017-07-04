@@ -1,0 +1,178 @@
+body.template-data_and_statistics {
+  .page-main {
+      width: 100%;
+  }
+
+  #parent-fieldname-description {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 4rem;
+  }
+
+
+  .data-left-column {
+    padding-right: 0;
+
+    .border-right {
+      border-right: 1px solid @color-gray-light;
+      overflow: auto;
+      @media @screen-md {
+        padding-right: 1em;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: @color-accent;
+      border-bottom: 3px solid #08a8dc;
+      display: inline-block;
+      padding-right: 1em;
+    }
+
+    .news {
+      .news-item {
+        overflow: auto;
+        background: @color-brand-south;
+        padding: 1em;
+        color: #FFFFFF;
+
+        a.img {
+          img {
+            width: 100%;
+            margin-bottom: 2em;
+          }
+        }
+        h3 {
+          text-transform: initial;
+          font-weight: 500;
+          border: none;
+          a {
+            color: #FFFFFF !important;
+            &:hover {
+              color: @color-gray-dark !important;
+            }
+          }
+        }
+        div.description {
+          span {
+            color: #FFFFFF;
+          }
+          a.read-more {
+            color: #FFFFFF !important;
+            font-weight: 500;
+            &:hover {
+              color: @color-gray-dark !important;
+            }
+          }
+          margin-bottom: 2em;
+        }
+
+        a.more-news {
+          color: #FFFFFF !important;
+          border-color: #FFFFFF;
+          &:hover {
+            color: @color-gray-dark !important;
+            border-color: @color-gray-dark !important;
+          }
+        }
+      }
+    }
+
+    .knowledge-resources {
+      padding-top: 4rem;
+
+      ul {
+        margin-left: 0 !important;
+        list-style-type: none;
+        list-style: none;
+        li {
+          list-style: none;
+          padding: 0.5em 0 0.5em 0;
+        }
+      }
+    }
+  }
+
+  .data-right-column {
+    @media @screen-md {
+      padding-top: 40px;
+    }
+
+    @media @screen-md-upto {
+      margin-top: 4rem;
+    }
+
+    div.data.row {
+      margin-bottom: 2em;
+
+      a.data-link {
+        div.data-item {
+          padding: 2em;
+          border: 1px solid @color-accent;
+          background: #FFFFFF;
+          text-align: center;
+          display: block;
+          min-height: 260px;
+          width: 100%;
+
+          span {
+            width: 100%;
+            color: @color-brand-south;
+            font-size: 1.3em;
+            font-weight: 500;
+          }
+
+          div.data-img {
+            margin-top: 2em;
+            border-top: 1px solid @color-accent;
+            height: 150px;
+            width: 100%;
+            background-position-x: center;
+            background-size: auto 150px;
+            background-repeat: no-repeat;
+
+            &.icon-water {
+              background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_water_normal.svg);
+            }
+            &.icon-waste {
+              background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_waste_normal.svg);
+            }
+            &.icon-industrial-emissions {
+              background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_normal.svg);
+            }
+            &.icon-cross-cutting-issues {
+              background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_normal.svg);
+            }
+          }
+        }
+        &:hover {
+          div.data-item {
+            background: @color-accent !important;
+            span {
+              color: #FFFFFF;
+            }
+
+            div.data-img {
+              border-top: 1px solid #FFFFFF;
+              background-repeat: no-repeat;
+
+              &.icon-water {
+                background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_water_hover.svg);
+              }
+              &.icon-waste {
+                background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_waste_hover.svg);
+              }
+              &.icon-industrial-emissions {
+                background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_hover.svg);
+              }
+              &.icon-cross-cutting-issues {
+                background-image: url(./../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_hover.svg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

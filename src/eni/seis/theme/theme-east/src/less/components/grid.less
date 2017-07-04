@@ -1,0 +1,92 @@
+.container {
+  .utils > .center;
+  padding-left: @grid-gutter / 2;
+  padding-right: @grid-gutter / 2;
+  max-width: 1200px;
+}
+
+.row {
+  .utils > .clear;
+}
+
+.make-column() {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  padding-left: @grid-gutter / 2;
+  padding-right: @grid-gutter / 2;
+}
+
+
+.make-columns(@prefix, @screen) {
+
+  .@{prefix}-1,
+  .@{prefix}-2,
+  .@{prefix}-3,
+  .@{prefix}-4,
+  .@{prefix}-5,
+  .@{prefix}-6,
+  .@{prefix}-7,
+  .@{prefix}-8,
+  .@{prefix}-9,
+  .@{prefix}-10,
+  .@{prefix}-11,
+  .@{prefix}-12 { .make-column; }
+
+  @media @screen {
+    .@{prefix}-1 { width: percentage(1 / 12); }
+    .@{prefix}-2 { width: percentage(2 / 12); }
+    .@{prefix}-3 { width: percentage(3 / 12); }
+    .@{prefix}-4 { width: percentage(4 / 12); }
+    .@{prefix}-5 { width: percentage(5 / 12); }
+    .@{prefix}-6 { width: percentage(6 / 12); }
+    .@{prefix}-7 { width: percentage(7 / 12); }
+    .@{prefix}-8 { width: percentage(8 / 12); }
+    .@{prefix}-9 { width: percentage(9 / 12); }
+    .@{prefix}-10 { width: percentage(10 / 12); }
+    .@{prefix}-11 { width: percentage(11 / 12); }
+    .@{prefix}-12 { width: 100%; }
+
+    .@{prefix}-push-1 { left: percentage(1 / 12); }
+    .@{prefix}-push-2 { left: percentage(2 / 12); }
+    .@{prefix}-push-3 { left: percentage(3 / 12); }
+    .@{prefix}-push-4 { left: percentage(4 / 12); }
+    .@{prefix}-push-5 { left: percentage(5 / 12); }
+    .@{prefix}-push-6 { left: percentage(6 / 12); }
+    .@{prefix}-push-7 { left: percentage(7 / 12); }
+    .@{prefix}-push-8 { left: percentage(8 / 12); }
+    .@{prefix}-push-9 { left: percentage(9 / 12); }
+    .@{prefix}-push-10 { left: percentage(10 / 12); }
+    .@{prefix}-push-11 { left: percentage(11 / 12); }
+
+    .@{prefix}-pull-1 { left: -(percentage(1 / 12)); }
+    .@{prefix}-pull-2 { left: -(percentage(2 / 12)); }
+    .@{prefix}-pull-3 { left: -(percentage(3 / 12)); }
+    .@{prefix}-pull-4 { left: -(percentage(4 / 12)); }
+    .@{prefix}-pull-5 { left: -(percentage(5 / 12)); }
+    .@{prefix}-pull-6 { left: -(percentage(6 / 12)); }
+    .@{prefix}-pull-7 { left: -(percentage(7 / 12)); }
+    .@{prefix}-pull-8 { left: -(percentage(8 / 12)); }
+    .@{prefix}-pull-9 { left: -(percentage(9 / 12)); }
+    .@{prefix}-pull-10 { left: -(percentage(10 / 12)); }
+    .@{prefix}-pull-11 { left: -(percentage(11 / 12)); }
+
+    .@{prefix}-offset-1 { margin-left: percentage(1 / 12); }
+    .@{prefix}-offset-2 { margin-left: percentage(2 / 12); }
+    .@{prefix}-offset-3 { margin-left: percentage(3 / 12); }
+    .@{prefix}-offset-4 { margin-left: percentage(4 / 12); }
+    .@{prefix}-offset-5 { margin-left: percentage(5 / 12); }
+    .@{prefix}-offset-6 { margin-left: percentage(6 / 12); }
+    .@{prefix}-offset-7 { margin-left: percentage(7 / 12); }
+    .@{prefix}-offset-8 { margin-left: percentage(8 / 12); }
+    .@{prefix}-offset-9 { margin-left: percentage(9 / 12); }
+    .@{prefix}-offset-10 { margin-left: percentage(10 / 12); }
+    .@{prefix}-offset-11 { margin-left: percentage(11 / 12); }
+  }
+}
+
+.make-columns(col-xs, @screen-xs);
+.make-columns(col-sm, @screen-sm);
+.make-columns(col-md, @screen-md);
+.make-columns(col-lg, @screen-lg);
+.make-columns(col-xl, @screen-xl);

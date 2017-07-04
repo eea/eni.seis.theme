@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Custom homepage (as view) -->
+  <rules css:if-content="body.template-homepage">
+
+    <theme href="frontpage.html" />
+
+    <!-- Text over the map -->
+    <replace css:theme="[data-diazo='project-description']" css:content="[data-diazo='project-description']" />
+
+    Various sections in frontpage
+
+    <!-- <replace css:theme="[data&#45;diazo='homepage&#45;areas&#45;of&#45;work']" css:content="[data&#45;diazo='homepage&#45;areas&#45;of&#45;work']" /> -->
+    <replace css:theme="[data-diazo='homepage-section-governance-text']" css:content="[data-diazo='homepage-section-governance-text']" />
+    <replace css:theme="[data-diazo='homepage-section-partners-text']" css:content="[data-diazo='homepage-section-partners-text']" />
+
+    <replace css:theme="[data-diazo='frontpage-news']" css:content="[data-diazo='frontpage-news']" />
+    <replace css:theme="[data-diazo='frontpage-events']" css:content="[data-diazo='frontpage-events']" />
+
+    <drop css:theme=".page-aside" />
+
+    <replace css:theme="[data-diazo='homepage-section-aow-slider']">
+      <div class="container">
+        <div class="homepage-section-aow-slider row">
+          <div class="areas-title">
+            <h3>Areas of work</h3>
+          </div>
+          <xsl:for-each css:select="[data-diazo='homepage-section-aow-slider'] .aow-slide">
+            <xsl:variable name="tile" select="."></xsl:variable>
+            <div class="col-md-3 col-xs-12 col-sm-6">
+              <div class="aow-slide">
+                <a href="{./a/@href}" >
+                  <xsl:apply-templates select="./img" />
+                  <xsl:apply-templates select="./a/*" />
+                </a>
+              </div>
+            </div>
+          </xsl:for-each>
+        </div>
+      </div>
+    </replace>
+
+  </rules>
+
+</rules>
