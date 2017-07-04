@@ -6,6 +6,30 @@
 }
 @media (min-width: 640px) {
 }
+a {
+  cursor: pointer;
+}
+#content a,
+#content a:visited,
+#content a:link,
+dl.portlet a:link,
+div.more a,
+.section-frontpage-news .right .more a,
+aside.page-aside .box.leading-large a:nth-last-of-type(1),
+.section a {
+  color: #ff6b01;
+  border-bottom: none;
+}
+#content a:hover,
+#content a:visited:hover,
+#content a:link:hover,
+dl.portlet a:link:hover,
+div.more a:hover,
+.section-frontpage-news .right .more a:hover,
+aside.page-aside .box.leading-large a:nth-last-of-type(1):hover,
+.section a:hover {
+  color: #08a8dc;
+}
 .btn-primary {
   border-color: #009245;
   color: #fff;
@@ -61,170 +85,449 @@
   background: #0f8346;
   box-shadow: none;
 }
+input[type='submit'] {
+  background: #ff6b01 !important;
+  color: #FFFFFF;
+  padding: 0.2em 0.5em;
+  border: none;
+}
+input[type='submit']:hover {
+  background: #08a8dc !important;
+}
 .navbar-brand strong,
 .footer-brand strong {
-  color: #009245;
+  color: #ff6b01;
   font-weight: 600;
 }
+.navbar-brand p {
+  color: #737373;
+}
+@media (min-width: 960px) {
+  .template-homepage #site-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 127%!important;
+  }
+}
 #site-header {
-  background-image: url('../img/bg-header-east2.jpg') !important;
+  background-position: 100%;
+  background-size: cover;
 }
-.template-homepage #site-header {
-  background-position: 100% 5%;
+.template-homepage #navbar {
+  background: rgba(255, 255, 255, 0.8);
 }
-/* Fix state published label to be visible on green editor bar */
-.admin span.state-published {
-  color: #8CDA8C !important;
-}
-.section a {
-  color: #009245;
-}
-aside.page-aside .box.leading-large a:nth-last-of-type(1) {
-  color: #009245;
-}
-#site-header .actionMenu.activated {
-  background-color: #75ad0a;
-  border-radius: 0;
-  box-shadow: 0px 2px 1px #aaa;
-}
-#site-header .actionMenu.activated .actionMenuHeader {
-  padding-left: 1.6rem;
-}
-#site-header .actionMenu .actionMenuContent {
-  padding-left: 0;
-  padding-right: 0;
-  background-color: #75ad0a;
-  box-shadow: 0px 2px 1px #aaa;
-}
+.btn.event-register,
+.register-form button,
+a.back-button,
+.btn-default.edit-text,
 .btn-default {
-  border-color: #009245;
+  border-color: #ff6b01;
 }
+.btn.event-register:hover,
+.register-form button:hover,
+a.back-button:hover,
+.btn-default.edit-text:hover,
 .btn-default:hover {
-  background: #009245;
+  background: #ff6b01;
   color: white;
-  box-shadow: 1px 1px 3px #949494;
+  box-shadow: none;
 }
-.login-link:before {
-  color: #009245;
+.meeting-items a.btn-default,
+a.back-button,
+.btn-default.edit-text,
+.btn.event-register {
+  color: #737373 !important;
+  border-radius: 0;
+  border-bottom: 2px solid #ff6b01 !important;
+  border: 2px solid #ff6b01 !important;
 }
-#site-footer .portlet a {
-  border-color: #009245 !important;
+.meeting-items a.btn-default:hover,
+a.back-button:hover,
+.btn-default.edit-text:hover,
+.btn.event-register:hover {
+  color: #FFFFFF !important;
+}
+a.back-button {
+  position: relative;
+  top: -5px;
+}
+.btn-default.edit-text {
+  margin-bottom: 5px;
+}
+.register-form-fields label,
+body.template-eea-meeting label,
+.register-form-fields .label,
+body.template-eea-meeting .label {
+  font-weight: 500;
+}
+label,
+.label,
+#content dt {
+  font-weight: 500;
+}
+.register-form button {
+  color: #737373;
+  border-radius: 0 !important;
+  border: 2px solid #ff6b01;
+  margin-right: 10px;
 }
 @media (min-width: 960px) {
   #portal-globalnav ul.submenu {
-    border-top: solid #009245;
+    border-top: solid #FFFFFF;
   }
   #portal-globalnav > li:hover {
-    background: #009245;
+    background: #ff6b01;
   }
   #portal-globalnav > li:hover > a {
     color: white !important;
   }
   #portal-globalnav .selected .plain {
-    color: #009245;
+    color: #ff6b01;
   }
 }
 @media (max-width: 959px) {
   #portal-globalnav > li > a {
-    color: #009245;
+    color: #ff6b01;
   }
 }
-.south-subtitle {
-  display: none;
+.admin {
+  background: #ff6b01;
 }
-.tab-content thead {
-  background: #009245;
+.admin #edit-bar {
+  border-style: solid solid solid solid;
+  border-radius: 0 !important;
   color: white;
+  background: #ff6b01;
+  border-color: #ff6b01 !important;
 }
-.nav > li > a:hover,
-.nav > li > a:focus {
-  background: transparent!important;
-  color: white!important;
+.admin #edit-bar * {
+  background: #ff6b01;
+  border-color: #ff6b01 !important;
 }
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #009245 !important;
-  background: transparent!important;
+.admin #edit-bar a {
+  color: inherit!important;
+}
+.admin #edit-bar .contentViews#content-views a:hover {
+  color: #ff6b01 !important;
+}
+.admin #edit-bar .selected a {
+  color: #ff6b01 !important;
+}
+.admin #edit-bar #contentActionMenus {
+  float: none;
+}
+.admin #edit-bar #contentActionMenus .actionMenuContent ul li a:hover {
+  background: #FFFFFF !important;
+}
+.admin #edit-bar #contentActionMenus .actionMenuContent ul li a:hover span {
+  color: #ff6b01;
+  background: #FFFFFF;
+}
+.admin #edit-bar #contentActionMenus .actionMenuContent ul li a span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.admin #edit-bar #content-views a {
+  border-radius: 0px;
+}
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd a:hover,
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+  background: #FFFFFF;
+}
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd a:hover span,
+.admin #edit-bar #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected span {
+  background: #FFFFFF;
+  color: #ff6b01 !important;
+}
+.admin #contentActionMenus dl.actionMenu a,
+.admin #contentActionMenus dl.actionMenu.activated dd {
+  background: #ff6b01;
+  color: white;
+  border-radius: 0px;
+}
+.admin ul {
+  padding: 0;
+}
+.admin ul:first-of-type li:first-of-type a {
+  padding-left: 0;
+}
+.page-header {
+  border-color: #ff6b01 !important;
+}
+.south-subtitle {
+  display: none!important;
+}
+#site-header {
+  background-position: 100% 10%;
+}
+body:not(.template-country_view) .nav > li > a:hover,
+body:not(.template-country_view) .nav > li > a:focus {
+  background: #ff6b01 !important;
+  color: white !important;
+}
+body:not(.template-country_view) .nav-tabs > li > a {
+  color: #ff6b01 !important;
+  border: 1px solid #ededed !important;
+  border-radius: 0;
+}
+body:not(.template-country_view) .nav-tabs {
+  border-bottom: 3px solid #ff6b01;
+}
+body:not(.template-country_view) .nav-tabs > li.active > a,
+body:not(.template-country_view) .nav-tabs > li.active > a:hover,
+body:not(.template-country_view) .nav-tabs > li.active > a:focus {
+  color: #FFFFFF !important;
+  background: #ff6b01 !important;
+}
+body:not(.template-country_view) .nav > li.active > a,
+body:not(.template-country_view) .nav > li > a:hover {
+  border-color: #ff6b01 !important;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background: #009245 !important;
+  background: #ff6b01 !important;
 }
-.tab-pane table th {
+#related-events .table-hover > thead {
+  display: none;
+}
+#related-events .table-hover > tbody > tr.level-national:hover {
+  background-color: #ff6b01;
+}
+#related-events .table-hover > tbody > tr:hover {
+  background-color: #08a8dc;
+  color: #FFFFFF;
+}
+#project-related-events .table-hover thead {
+  display: none;
+}
+#project-related-events .table-hover th {
+  color: #222222 !important;
+}
+#project-related-events .table-hover tr:hover {
+  background: #08a8dc;
+  color: #FFFFFF;
+}
+#project-related-events .table-hover tr:hover td.event-summary {
+  color: #FFFFFF !important;
+}
+#project-related-events .table-hover tr:hover td a {
+  color: #FFFFFF !important;
+}
+#project-related-events .table-hover tr td a {
+  color: #ff6b01 !important;
+}
+#project-related-events .table-hover td.event-link {
+  min-width: 140px;
+}
+.tab-pane th {
   vertical-align: middle;
 }
-.userrole-anonymous #navbar {
-  border-bottom-color: #009245;
-}
 .homepage-news thead th {
-  background-color: #009245;
+  background-color: #08a8dc;
   color: #fff;
 }
 .homepage-news tbody tr {
-  border-top-color: #009245;
+  border-top-color: #ff6b01;
 }
 .homepage-news tbody td:first-child {
   color: inherit;
 }
 .homepage-news a {
-  color: #009245;
+  color: #08a8dc;
 }
-.aow-environmental-reporting {
-  background-image: url('../img/img-east-environmental-reporting.jpg');
+.aow-national-work-plans {
+  background-image: url('../img/img-south-national-work-plans.jpg');
+}
+.aow-indicators-and-assessment {
+  background-image: url('../img/img-south-indicators-and-assessment.jpg');
+}
+.aow-data-and-statistic {
+  background-image: url('../img/img-south-data-and-statistics.jpg');
 }
 .aow-data-management-and-infrastructure {
-  background-image: url('../img/img-east-data-management-and-infrastructure.jpg');
-}
-.aow-assessment {
-  background-image: url('../img/img-east-assessment.jpg');
-}
-.aow-communication-and-visibility {
-  background-image: url('../img/img-east-communication-and-visibility.jpg');
+  background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
 }
 .level-national {
-  color: #009245;
+  color: #ff6b01;
 }
 .level-regional {
-  color: #205c90;
+  color: #08a8dc;
 }
 .event-title {
-  color: #009245;
+  color: #ff6b01;
 }
-.site-banner {
-  border-top: solid #009245;
+legend {
+  float: right;
+  position: relative;
+  top: -55px;
+}
+legend .fa.fa-circle.level-regional,
+legend .fa.fa-circle.level-national,
+legend .fa.fa-circle.other {
+  font-size: 2em;
+}
+legend span.level-national,
+legend span.level-regional {
+  margin-right: 20px;
+}
+legend span.level-national span,
+legend span.level-regional span,
+legend span.other span {
+  position: relative;
+  top: -4px;
+}
+legend .fa:before {
+  margin-right: .5rem;
+}
+legend .level-national {
+  padding-left: 0;
+}
+#site-footer .contact a {
+  font-weight: 500;
+  color: #222222;
+}
+#site-footer .contact a:hover {
+  color: #ff6b01;
+}
+#portal-breadcrumbs a {
+  color: #222222;
+}
+#portal-breadcrumbs a:hover {
+  color: #ff6b01;
 }
 #breadcrumbs-current {
-  color: #009245;
+  color: #ff6b01;
 }
-#portal-globalnav ul.submenu > li > a:hover {
-  box-shadow: inset 3px 0 0 #009245;
+.documentFirstHeading {
+  color: #ff6b01;
+  border-bottom: 3px solid #08a8dc;
+  padding: 0em 1em 0.2em 1em;
+  display: inline-block;
+  text-align: center;
 }
-.project-description {
-  width: 37%;
-  position: absolute;
-  padding: 2rem;
-  left: 0;
-  z-index: 2;
-  height: 100%;
+.documentByLine {
+  margin-bottom: 4em;
 }
-@media (max-width: 959px) {
-  .project-description {
-    width: 100%;
-    margin: 0;
-    font-size: 1rem;
-    display: none;
-  }
-}
-.project-description p {
-  margin-top: 7rem;
-  font-size: 22px;
+body.userrole-anonymous .documentFirstHeading {
+  margin-bottom: 1em;
 }
 @media (max-width: 959px) {
   #site-header {
     background-repeat: no-repeat;
-    background-position: 100% 20%!important;
+    background-position: 100% 100%!important;
   }
+}
+.portlet:before,
+.portlet:after {
+  content: "";
+  display: table;
+}
+.portlet:after {
+  clear: both;
+}
+.portlet img {
+  max-width: 100%;
+}
+a.more-items {
+  border-top: 1px solid #08a8dc;
+  padding-left: 10px;
+  padding-right: 0.5em;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+a.more-items:after {
+  content: "\2192";
+  position: relative;
+  left: 0.5em;
+  top: -1px;
+}
+.text-accent {
+  color: #08a8dc;
+}
+body.template-atct_edit #content {
+  text-align: left;
+}
+body.template-atct_edit #content > div:first-of-type {
+  text-align: center;
+}
+body.template-news_listing_view .table-hover a:hover {
+  color: #ff6b01 !important;
+}
+div.managePortletsLink {
+  border-radius: 0;
+  background: #FFFFFF;
+  width: 40%;
+  float: left;
+  border: 2px solid #ff6b01;
+}
+div.managePortletsLink:hover {
+  background: #ff6b01;
+}
+div.managePortletsLink:hover a {
+  color: #FFFFFF !important;
+}
+#viewlet-above-content-title .leadImage {
+  display: none;
+}
+.template-homepage.userrole-authenticated #edit-bar {
+  margin-top: 4rem;
+}
+#content-views li.selected a,
+#content li.formTab a.selected,
+#content-core li.formTab a.selected {
+  font-weight: 500;
+}
+dl.portalMessage dt,
+div > .admonition-title {
+  font-weight: 500;
+}
+div.pagination.listingBar a {
+  background: #FFFFFF;
+  color: #ff6b01;
+  border: none;
+}
+div.pagination.listingBar a:hover {
+  background: #FFFFFF;
+  color: #08a8dc;
+}
+dl.portalMessage.info {
+  border-color: #08a8dc;
+  background-color: #FFFFFF;
+}
+dl.portalMessage.info dt {
+  background-color: #08a8dc;
+}
+dl.portalMessage.error {
+  border-color: #e02047;
+  background-color: #FFFFFF;
+}
+dl.portalMessage.error dt {
+  background-color: #e02047;
+}
+dl.portalMessage.error dd {
+  background: #FFFFFF;
+}
+label {
+  font-weight: 500;
+}
+a.btn.btn-default[data-diazo='manage-portlets'] {
+  float: right;
+  width: 100%;
+}
+:focus {
+  outline: none;
+}
+.table.display-email > thead > tr > th {
+  border-bottom: 1px solid #222222 !important;
+}
+body.template-news_listing_view table.table-responsive.table-hover h3 {
+  font-weight: 500;
+}
+aside.page-aside .box.portlet.portletEvents img {
+  float: left;
+  width: 50px;
+  margin-right: 5px;
+  height: auto;
 }
 /*# sourceMappingURL=./source.css.map */

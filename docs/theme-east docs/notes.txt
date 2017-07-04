@@ -140,9 +140,3 @@ in portal_css we have http://eni-seis.eionet.europa.eu/east/portal_css/Sunburst%
 If you change to the original theme (eni.seis.theme.east Eni East Theme) you
 will disable this css and activate again:
 ++theme++eni.seis.theme.east/css/east.css
-
-TODO
-- Event - National, Regional. Add Other.
-- Meeting view: change lead image position (better under the title) - it's display none now
-- /register KeyError: 'first_name' - check this (redo upgrade step?)
-- in events table listings it seems we don't have pagination when there are a lot of items. Implement it and add styles for pagination.
