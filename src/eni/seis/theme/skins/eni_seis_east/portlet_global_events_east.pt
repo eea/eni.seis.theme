@@ -1,7 +1,7 @@
 <metal:macro define-macro="portlet">
 
 <dl class="box leading-large portlet portletEvents"
-    tal:define="events_path python: '/south/communication/events';
+    tal:define="events_path python: '/east/communication/events';
                 events_folder python: context.restrictedTraverse(events_path);
                 events python: context.getFolderContents(
                 full_objects=True,

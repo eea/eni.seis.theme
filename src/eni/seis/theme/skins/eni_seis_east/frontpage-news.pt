@@ -1,6 +1,6 @@
 <div
   tal:define="
-  newsletterpath python:'/south/communication/newsletter';
+  newsletterpath python:'/east/communication/newsletter';
   news python: [b.getObject() for b in context.portal_catalog.searchResults(
   portal_type=['News Item'],
   review_state='published',
@@ -16,7 +16,7 @@
   <h4>News</h4>
   <div class="row" tal:define="
       newsletter_title python:'Check out our latest Project Newsletter!';
-      newsletter_url python:'http://eni-seis.eionet.europa.eu/south/communication';
+      newsletter_url python:'http://eni-seis.eionet.europa.eu/east/communication';
     ">
 
     <div class="left col-xs-12 col-sm-6 col-md-5">

@@ -1,6 +1,6 @@
 <div
-  tal:define="events_path python: '/south/communication/events';
-  events python:context.restrictedTraverse('/south/get_upcoming_events')()[:4]">
+  tal:define="events_path python: '/east/communication/events';
+  events python:context.restrictedTraverse('/east/get_upcoming_events')()[:4]">
 
   <h4>Upcoming Events</h4>
 
