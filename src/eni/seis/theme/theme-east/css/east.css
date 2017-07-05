@@ -28,7 +28,7 @@ div.more a:hover,
 .section-frontpage-news .right .more a:hover,
 aside.page-aside .box.leading-large a:nth-last-of-type(1):hover,
 .section a:hover {
-  color: #08a8dc;
+  color: #1f87e8;
 }
 .btn-primary {
   border-color: #009245;
@@ -92,7 +92,7 @@ input[type='submit'] {
   border: none;
 }
 input[type='submit']:hover {
-  background: #08a8dc !important;
+  background: #1f87e8 !important;
 }
 .navbar-brand strong,
 .footer-brand strong {
@@ -295,7 +295,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   background-color: #ff6b01;
 }
 #related-events .table-hover > tbody > tr:hover {
-  background-color: #08a8dc;
+  background-color: #1f87e8;
   color: #FFFFFF;
 }
 #project-related-events .table-hover thead {
@@ -305,7 +305,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: #222222 !important;
 }
 #project-related-events .table-hover tr:hover {
-  background: #08a8dc;
+  background: #1f87e8;
   color: #FFFFFF;
 }
 #project-related-events .table-hover tr:hover td.event-summary {
@@ -324,7 +324,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   vertical-align: middle;
 }
 .homepage-news thead th {
-  background-color: #08a8dc;
+  background-color: #1f87e8;
   color: #fff;
 }
 .homepage-news tbody tr {
@@ -334,7 +334,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: inherit;
 }
 .homepage-news a {
-  color: #08a8dc;
+  color: #1f87e8;
 }
 .aow-national-work-plans {
   background-image: url('../img/img-south-national-work-plans.jpg');
@@ -352,7 +352,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: #ff6b01;
 }
 .level-regional {
-  color: #08a8dc;
+  color: #1f87e8;
 }
 .event-title {
   color: #ff6b01;
@@ -400,8 +400,8 @@ legend .level-national {
   color: #ff6b01;
 }
 .documentFirstHeading {
-  color: #ff6b01;
-  border-bottom: 3px solid #08a8dc;
+  color: #009345;
+  border-bottom: 3px solid #1f87e8;
   padding: 0em 1em 0.2em 1em;
   display: inline-block;
   text-align: center;
@@ -430,7 +430,7 @@ body.userrole-anonymous .documentFirstHeading {
   max-width: 100%;
 }
 a.more-items {
-  border-top: 1px solid #08a8dc;
+  border-top: 1px solid #1f87e8;
   padding-left: 10px;
   padding-right: 0.5em;
   padding-top: 5px;
@@ -443,7 +443,7 @@ a.more-items:after {
   top: -1px;
 }
 .text-accent {
-  color: #08a8dc;
+  color: #1f87e8;
 }
 body.template-atct_edit #content {
   text-align: left;
@@ -489,14 +489,14 @@ div.pagination.listingBar a {
 }
 div.pagination.listingBar a:hover {
   background: #FFFFFF;
-  color: #08a8dc;
+  color: #1f87e8;
 }
 dl.portalMessage.info {
-  border-color: #08a8dc;
+  border-color: #1f87e8;
   background-color: #FFFFFF;
 }
 dl.portalMessage.info dt {
-  background-color: #08a8dc;
+  background-color: #1f87e8;
 }
 dl.portalMessage.error {
   border-color: #e02047;
