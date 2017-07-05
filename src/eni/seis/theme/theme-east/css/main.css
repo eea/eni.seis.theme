@@ -1587,11 +1587,11 @@ dl.actionMenu {
   color: #222222 !important;
 }
 #site-header #portal-personaltools.actionMenu.deactivated .actionMenuHeader a:hover {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 #site-header #portal-personaltools.actionMenu.activated {
   z-index: 99;
-  background-color: #ff6b01;
+  background-color: #009345;
   border-radius: 0;
   box-shadow: none;
 }
@@ -1611,12 +1611,12 @@ dl.actionMenu {
 #site-header #portal-personaltools.actionMenu .actionMenuContent {
   padding-left: 0;
   padding-right: 0;
-  background-color: #ff6b01;
+  background-color: #009345;
   box-shadow: none;
 }
 #site-header #portal-personaltools.actionMenu .actionMenuContent a:hover {
   background: #FFFFFF;
-  color: #ff6b01;
+  color: #009345;
 }
 #site-header #portal-personaltools.actionMenu .actionMenuContent ul {
   padding-left: 0;
@@ -2839,7 +2839,7 @@ span + .error {
     left: 0;
     transform: skew(-30deg);
     z-index: -1;
-    background-color: #ff6b01;
+    background-color: #009345;
   }
 }
 .navbar-body #portal-globalnav li:hover {
@@ -3075,10 +3075,10 @@ ul.submenu {
 .submenu.navTree.navTreeLevel1:hover ul {
   display: block;
 }
-.site-eni-south .east-subtitle {
+.site-eni-east .east-subtitle {
   display: none;
 }
-.site-eni-east .south-subtitle {
+.site-eni-east .east-subtitle {
   display: none;
 }
 .nav-folder {
@@ -3091,7 +3091,7 @@ ul.submenu {
   color: #222222 !important;
 }
 .nav-folder .nav-body .nav-item a:hover {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 .page-header {
   display: none;
@@ -3221,20 +3221,20 @@ body.template-homepage .navbar-body {
 }
 @media (min-width: 1360px) {
   #site-footer .container-fluid {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-gray-lighter+50,6e7774+50,6e7774+50,6e7774+51,6e7774+51,@color-brand-south+51 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/@color-gray-lighter+50,6e7774+50,6e7774+50,6e7774+51,6e7774+51,@color-brand-east+51 */
     background: #F8F8F8;
     /* Old browsers */
-    background: -moz-linear-gradient(left, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    background: -moz-linear-gradient(left, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #009345 51%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    background: -webkit-linear-gradient(left, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #009345 51%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #ff6b01 51%);
+    background: linear-gradient(to right, #F8F8F8 50%, #6e7774 50%, #6e7774 50%, #6e7774 51%, #6e7774 51%, #009345 51%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-lighter', endColorstr='@color-brand-south', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-gray-lighter', endColorstr='@color-brand-east', GradientType=1);
     /* IE6-9 */
   }
   #site-footer .row.footer-content-wrapper {
-    background: linear-gradient(60deg, #F8F8F8 0%, #F8F8F8 28%, #737373 28%, #737373 67%, #ff6b01 67%, #ff6b01 100%);
+    background: linear-gradient(60deg, #F8F8F8 0%, #F8F8F8 28%, #737373 28%, #737373 67%, #009345 67%, #009345 100%);
   }
 }
 @media (max-width: 1359px) {
@@ -3245,7 +3245,7 @@ body.template-homepage .navbar-body {
     background: #737373;
   }
   #site-footer .col-right {
-    background: #ff6b01;
+    background: #009345;
   }
 }
 #site-footer .site-title-footer {
@@ -3304,7 +3304,7 @@ body.template-homepage .navbar-body {
 }
 #site-footer .portlet.box .btn-subscribe:hover {
   background: #FFFFFF !important;
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 @media (min-width: 640px) and (max-width: 1360px) {
   .row.footer-content-wrapper {
@@ -3523,7 +3523,7 @@ ul.configlets {
   top: 14px;
 }
 .container-fluid.header-top #site-header-top .login-link:hover {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 .container-fluid.header-top #site-header-top .login-link:before {
   content: "\f007";
@@ -3577,7 +3577,7 @@ ul.configlets {
   position: relative;
   left: -8px;
   background: #FFFFFF;
-  color: #ff6b01;
+  color: #009345;
   display: inline-block;
   padding: 5px 8px 3px 8px;
   font-weight: 500;
@@ -3609,7 +3609,7 @@ ul.configlets {
   border-bottom: 1px solid #d0d0d0;
   padding-left: 30%;
   padding-right: 10%;
-  background: #ff6b01;
+  background: #009345;
 }
 @media (min-width: 960px) {
   .template-homepage .site-banner .lp-content {
@@ -3628,7 +3628,7 @@ ul.configlets {
     transform-origin: right bottom;
     transform: skew(30deg);
     position: absolute;
-    background: #ff6b01;
+    background: #009345;
     height: 100%;
     bottom: 100%;
     width: 47%;
@@ -3642,7 +3642,7 @@ ul.configlets {
     top: 0px;
     width: 30%;
     height: 100%;
-    border-top: 500px solid #ff6b01;
+    border-top: 500px solid #009345;
     clear: both;
     transform: skew(30deg);
   }
@@ -3810,13 +3810,13 @@ ul.configlets {
   display: inline-block;
 }
 .section-frontpage-news a {
-  color: #ff6b01;
+  color: #009345;
 }
 .section-frontpage-news a:hover {
   color: #1f87e8;
 }
 .section-frontpage-news .left {
-  background-color: #ff6b01;
+  background-color: #009345;
   color: white;
   padding: 1em;
 }
@@ -3849,7 +3849,7 @@ ul.configlets {
   text-align: right;
 }
 .section-frontpage-news .right .more a {
-  color: #ff6b01;
+  color: #009345;
   padding: 0.8em;
   border-top: 1px solid #1f87e8;
   text-transform: uppercase;
@@ -3902,7 +3902,7 @@ ul.configlets {
   height: auto;
 }
 .section-frontpage-events .tile .tile-title {
-  color: #ff6b01;
+  color: #009345;
   font-size: 120%;
 }
 .section-frontpage-events .tile .tile-footer {
@@ -3916,7 +3916,7 @@ ul.configlets {
   text-align: right;
 }
 .section-frontpage-events .more a {
-  color: #ff6b01;
+  color: #009345;
   padding: 0.8em;
   border-top: 1px solid #1f87e8;
   text-transform: uppercase;
@@ -3933,13 +3933,13 @@ ul.configlets {
 }
 @media (min-width: 960px) {
   .section-frontpage-objectives {
-    background: linear-gradient(60deg, #ff6b01 0%, #ff6b01 50%, #F8F8F8 50%, #F8F8F8 100%) !important;
+    background: linear-gradient(60deg, #009345 0%, #009345 50%, #F8F8F8 50%, #F8F8F8 100%) !important;
   }
 }
 @media (min-width: 640px) {
   .section-frontpage-objectives {
     display: flex;
-    background: linear-gradient(90deg, #ff6b01 0%, #ff6b01 50%, #F8F8F8 50%, #F8F8F8 100%);
+    background: linear-gradient(90deg, #009345 0%, #009345 50%, #F8F8F8 50%, #F8F8F8 100%);
   }
 }
 .section-frontpage-objectives div {
@@ -3968,7 +3968,7 @@ ul.configlets {
 }
 @media (max-width: 639px) {
   .section-frontpage-objectives .global {
-    background: #ff6b01;
+    background: #009345;
   }
 }
 @media (min-width: 640px) {
@@ -4019,7 +4019,7 @@ ul.configlets {
   margin-bottom: 3px;
 }
 .section-frontpage-objectives .specific h3 {
-  color: #ff6b01;
+  color: #009345;
   border-bottom: 3px solid #1f87e8;
   display: inline-block;
   padding-right: 1em;
@@ -4059,7 +4059,7 @@ ul.configlets {
   font-size: 24px;
 }
 .section-frontpage-countries p a:hover {
-  color: #ff6b01;
+  color: #009345;
 }
 body.template-data_and_statistics .page-main {
   width: 100%;
@@ -4091,7 +4091,7 @@ body.template-data_and_statistics .data-left-column h3 {
 }
 body.template-data_and_statistics .data-left-column .news .news-item {
   overflow: auto;
-  background: #ff6b01;
+  background: #009345;
   padding: 1em;
   color: #FFFFFF;
 }
@@ -4167,7 +4167,7 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link di
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item span {
   width: 100%;
-  color: #ff6b01;
+  color: #009345;
   font-size: 1.3em;
   font-weight: 500;
 }
@@ -4181,16 +4181,16 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link di
   background-repeat: no-repeat;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_water_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_water_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_waste_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_waste_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_industrial_emissions_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_normal.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_cross-cutting_issues_normal.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item {
   background: #1f87e8 !important;
@@ -4203,16 +4203,16 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link:ho
   background-repeat: no-repeat;
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_water_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_water_hover.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_waste_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_waste_hover.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_industrial_emissions_hover.svg);
 }
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_hover.svg);
+  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_cross-cutting_issues_hover.svg);
 }
 body.template-country_view .documentByLine {
   margin-bottom: 0 !important;
@@ -4286,28 +4286,28 @@ body.template-country_view div.icon {
   background-size: 50px auto;
 }
 body.template-country_view div.icon-air {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_air_normal.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_air_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-air:hover div.icon-air {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_air_hover.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_air_hover.svg);
 }
 body.template-country_view div.icon-water {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_water_normal.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_water_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-water:hover div.icon-water {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_water_hover.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_water_hover.svg);
 }
 body.template-country_view div.icon-land {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_land_normal.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_land_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-land:hover div.icon-land {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_land_hover.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_land_hover.svg);
 }
 body.template-country_view div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_waste_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-waste:hover div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_hover.svg);
+  background-image: url(++theme++eni.seis.theme.east/img/countries_waste_hover.svg);
 }
 body.template-country_view .nav > li > a:hover,
 body.template-country_view .nav > li > a:focus {
@@ -4327,7 +4327,7 @@ body.template-country_view .nav-tabs {
 body.template-country_view .nav-tabs > li.active > a,
 body.template-country_view .nav-tabs > li.active > a:hover,
 body.template-country_view .nav-tabs > li.active > a:focus {
-  color: #ff6b01 !important;
+  color: #009345 !important;
   background: #F8F8F8 !important;
 }
 body.template-country_view .tab-content .container {

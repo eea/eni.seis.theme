@@ -17,7 +17,7 @@ div.more a,
 .section-frontpage-news .right .more a,
 aside.page-aside .box.leading-large a:nth-last-of-type(1),
 .section a {
-  color: #ff6b01;
+  color: #009345;
   border-bottom: none;
 }
 #content a:hover,
@@ -86,7 +86,7 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover,
   box-shadow: none;
 }
 input[type='submit'] {
-  background: #ff6b01 !important;
+  background: #009345 !important;
   color: #FFFFFF;
   padding: 0.2em 0.5em;
   border: none;
@@ -96,7 +96,7 @@ input[type='submit']:hover {
 }
 .navbar-brand strong,
 .footer-brand strong {
-  color: #ff6b01;
+  color: #009345;
   font-weight: 600;
 }
 .navbar-brand p {
@@ -121,14 +121,14 @@ input[type='submit']:hover {
 a.back-button,
 .btn-default.edit-text,
 .btn-default {
-  border-color: #ff6b01;
+  border-color: #009345;
 }
 .btn.event-register:hover,
 .register-form button:hover,
 a.back-button:hover,
 .btn-default.edit-text:hover,
 .btn-default:hover {
-  background: #ff6b01;
+  background: #009345;
   color: white;
   box-shadow: none;
 }
@@ -138,8 +138,8 @@ a.back-button,
 .btn.event-register {
   color: #737373 !important;
   border-radius: 0;
-  border-bottom: 2px solid #ff6b01 !important;
-  border: 2px solid #ff6b01 !important;
+  border-bottom: 2px solid #009345 !important;
+  border: 2px solid #009345 !important;
 }
 .meeting-items a.btn-default:hover,
 a.back-button:hover,
@@ -168,7 +168,7 @@ label,
 .register-form button {
   color: #737373;
   border-radius: 0 !important;
-  border: 2px solid #ff6b01;
+  border: 2px solid #009345;
   margin-right: 10px;
 }
 @media (min-width: 960px) {
@@ -176,42 +176,42 @@ label,
     border-top: solid #FFFFFF;
   }
   #portal-globalnav > li:hover {
-    background: #ff6b01;
+    background: #009345;
   }
   #portal-globalnav > li:hover > a {
     color: white !important;
   }
   #portal-globalnav .selected .plain {
-    color: #ff6b01;
+    color: #009345;
   }
 }
 @media (max-width: 959px) {
   #portal-globalnav > li > a {
-    color: #ff6b01;
+    color: #009345;
   }
 }
 .admin {
-  background: #ff6b01;
+  background: #009345;
 }
 .admin #edit-bar {
   border-style: solid solid solid solid;
   border-radius: 0 !important;
   color: white;
-  background: #ff6b01;
-  border-color: #ff6b01 !important;
+  background: #009345;
+  border-color: #009345 !important;
 }
 .admin #edit-bar * {
-  background: #ff6b01;
-  border-color: #ff6b01 !important;
+  background: #009345;
+  border-color: #009345 !important;
 }
 .admin #edit-bar a {
   color: inherit!important;
 }
 .admin #edit-bar .contentViews#content-views a:hover {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 .admin #edit-bar .selected a {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 .admin #edit-bar #contentActionMenus {
   float: none;
@@ -220,7 +220,7 @@ label,
   background: #FFFFFF !important;
 }
 .admin #edit-bar #contentActionMenus .actionMenuContent ul li a:hover span {
-  color: #ff6b01;
+  color: #009345;
   background: #FFFFFF;
 }
 .admin #edit-bar #contentActionMenus .actionMenuContent ul li a span {
@@ -237,11 +237,11 @@ label,
 .admin #edit-bar #contentActionMenus dl.actionMenu.activated dd a:hover span,
 .admin #edit-bar #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected span {
   background: #FFFFFF;
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 .admin #contentActionMenus dl.actionMenu a,
 .admin #contentActionMenus dl.actionMenu.activated dd {
-  background: #ff6b01;
+  background: #009345;
   color: white;
   border-radius: 0px;
 }
@@ -252,9 +252,9 @@ label,
   padding-left: 0;
 }
 .page-header {
-  border-color: #ff6b01 !important;
+  border-color: #009345 !important;
 }
-.south-subtitle {
+.east-subtitle {
   display: none!important;
 }
 #site-header {
@@ -262,11 +262,11 @@ label,
 }
 body:not(.template-country_view) .nav > li > a:hover,
 body:not(.template-country_view) .nav > li > a:focus {
-  background: #ff6b01 !important;
+  background: #009345 !important;
   color: white !important;
 }
 body:not(.template-country_view) .nav-tabs > li > a {
-  color: #ff6b01 !important;
+  color: #009345 !important;
   border: 1px solid #ededed !important;
   border-radius: 0;
 }
@@ -277,22 +277,22 @@ body:not(.template-country_view) .nav-tabs > li.active > a,
 body:not(.template-country_view) .nav-tabs > li.active > a:hover,
 body:not(.template-country_view) .nav-tabs > li.active > a:focus {
   color: #FFFFFF !important;
-  background: #ff6b01 !important;
+  background: #009345 !important;
 }
 body:not(.template-country_view) .nav > li.active > a,
 body:not(.template-country_view) .nav > li > a:hover {
-  border-color: #ff6b01 !important;
+  border-color: #009345 !important;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background: #ff6b01 !important;
+  background: #009345 !important;
 }
 #related-events .table-hover > thead {
   display: none;
 }
 #related-events .table-hover > tbody > tr.level-national:hover {
-  background-color: #ff6b01;
+  background-color: #009345;
 }
 #related-events .table-hover > tbody > tr:hover {
   background-color: #1f87e8;
@@ -315,7 +315,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: #FFFFFF !important;
 }
 #project-related-events .table-hover tr td a {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 #project-related-events .table-hover td.event-link {
   min-width: 140px;
@@ -328,7 +328,7 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: #fff;
 }
 .homepage-news tbody tr {
-  border-top-color: #ff6b01;
+  border-top-color: #009345;
 }
 .homepage-news tbody td:first-child {
   color: inherit;
@@ -337,25 +337,25 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: #1f87e8;
 }
 .aow-national-work-plans {
-  background-image: url('../img/img-south-national-work-plans.jpg');
+  background-image: url('../img/img-east-national-work-plans.jpg');
 }
 .aow-indicators-and-assessment {
-  background-image: url('../img/img-south-indicators-and-assessment.jpg');
+  background-image: url('../img/img-east-indicators-and-assessment.jpg');
 }
 .aow-data-and-statistic {
-  background-image: url('../img/img-south-data-and-statistics.jpg');
+  background-image: url('../img/img-east-data-and-statistics.jpg');
 }
 .aow-data-management-and-infrastructure {
-  background-image: url('../img/img-south-data-management-and-infrastructure.jpg');
+  background-image: url('../img/img-east-data-management-and-infrastructure.jpg');
 }
 .level-national {
-  color: #ff6b01;
+  color: #009345;
 }
 .level-regional {
   color: #1f87e8;
 }
 .event-title {
-  color: #ff6b01;
+  color: #009345;
 }
 legend {
   float: right;
@@ -388,16 +388,16 @@ legend .level-national {
   color: #222222;
 }
 #site-footer .contact a:hover {
-  color: #ff6b01;
+  color: #009345;
 }
 #portal-breadcrumbs a {
   color: #222222;
 }
 #portal-breadcrumbs a:hover {
-  color: #ff6b01;
+  color: #009345;
 }
 #breadcrumbs-current {
-  color: #ff6b01;
+  color: #009345;
 }
 .documentFirstHeading {
   color: #009345;
@@ -452,17 +452,17 @@ body.template-atct_edit #content > div:first-of-type {
   text-align: center;
 }
 body.template-news_listing_view .table-hover a:hover {
-  color: #ff6b01 !important;
+  color: #009345 !important;
 }
 div.managePortletsLink {
   border-radius: 0;
   background: #FFFFFF;
   width: 40%;
   float: left;
-  border: 2px solid #ff6b01;
+  border: 2px solid #009345;
 }
 div.managePortletsLink:hover {
-  background: #ff6b01;
+  background: #009345;
 }
 div.managePortletsLink:hover a {
   color: #FFFFFF !important;
@@ -484,7 +484,7 @@ div > .admonition-title {
 }
 div.pagination.listingBar a {
   background: #FFFFFF;
-  color: #ff6b01;
+  color: #009345;
   border: none;
 }
 div.pagination.listingBar a:hover {
