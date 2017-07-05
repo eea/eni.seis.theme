@@ -5,7 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,400,500');
 html {
   font-family: sans-serif;
   /* 1 */
@@ -4059,7 +4059,8 @@ ul.configlets {
 .section-frontpage-countries p a {
   color: #1f87e8;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 40px;
+  font-weight: 200;
 }
 .section-frontpage-countries p a:hover {
   color: #009345;
