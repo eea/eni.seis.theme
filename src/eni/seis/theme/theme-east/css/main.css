@@ -3968,7 +3968,6 @@ ul.configlets {
 }
 .section-frontpage-objectives .global .wrapper {
   padding: 0 1em;
-  width: 22em;
   display: inline-block;
 }
 @media (max-width: 639px) {
@@ -3980,7 +3979,6 @@ ul.configlets {
   .section-frontpage-objectives .global {
     background: none;
     width: 30em;
-    text-align: right;
   }
 }
 .section-frontpage-objectives .global p {
