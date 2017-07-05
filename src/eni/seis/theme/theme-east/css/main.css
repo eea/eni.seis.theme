@@ -2802,7 +2802,7 @@ span + .error {
   margin-bottom: 1rem;
 }
 .navbar-brand .navbar-title strong {
-  color: #ff6b01;
+  color: #009345;
 }
 .navbar-body {
   border-top: 1px solid #ededed;
@@ -2860,7 +2860,7 @@ span + .error {
 }
 .navbar-body #portal-globalnav li .submenu li a:hover {
   background: #FFFFFF !important;
-  color: #ff6b01 !important;
+  color: #009345 !important;
   font-weight: 600;
 }
 @media (min-width: 960px) and (max-width: 1390px) {
@@ -3184,6 +3184,9 @@ body.template-homepage .container-fluid#navbar {
 }
 body.template-homepage .navbar-body {
   margin-bottom: 0;
+}
+#portal-globalnav ul.submenu > li > a:hover {
+  box-shadow: none !important;
 }
 #site-footer {
   color: #FFFFFF;
@@ -3531,6 +3534,7 @@ ul.configlets {
 }
 .template-homepage .site-banner {
   position: relative;
+  border-top: none;
 }
 @media (max-width: 959px) {
   .template-homepage .site-banner {

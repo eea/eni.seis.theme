@@ -271,7 +271,7 @@ body:not(.template-country_view) .nav-tabs > li > a {
   border-radius: 0;
 }
 body:not(.template-country_view) .nav-tabs {
-  border-bottom: 3px solid #ff6b01;
+  border-bottom: 3px solid #009345;
 }
 body:not(.template-country_view) .nav-tabs > li.active > a,
 body:not(.template-country_view) .nav-tabs > li.active > a:hover,
