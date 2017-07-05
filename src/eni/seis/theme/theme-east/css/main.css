@@ -3792,7 +3792,7 @@ ul.configlets {
 }
 .container-fluid.news-container {
   padding-top: 1em;
-  background: #F8F8F8;
+  background: #FFFFFF;
 }
 .section-frontpage-news {
   margin: 4em 0;
@@ -4034,6 +4034,8 @@ ul.configlets {
 }
 .section-frontpage-countries {
   margin: 4em 0;
+  padding: 5rem 5rem;
+  background-color: #F8F8F8;
   text-align: center;
 }
 .section-frontpage-countries:before,
