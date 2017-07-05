@@ -41,11 +41,15 @@ INSTALL
 
 
     In /project-description/edit update the text:
+OLD:
+<p>The objective of the ENI SEIS II East project support is to continue implementing <b> Shared Environmental Information System </b>(SEIS) principles and practices in the six <b>Eastern partnership</b> countries.</p>
 
-<h3>Contribute to <b>reduced</b><h3>
-<h3 class="reverse">Marine polution</h3>
-
-<p>ENI SEIS II <b>East</b> Support Mechanism project aims to contribute to the <b>reduction of the marine pollution in the Mediterranean</b> by developing a <b>Shared Environmental Information System</b> (SEIS) supporting the regular production and <b>sharing</b> of quality assessed environmental <b>data, indicators and information</b>.</p>
+NEW:
+<h3>Implementation of the<h3>
+<h3 class="reverse">principles and practices</h3>
+<h3>of the shared<h3>
+<h3>environmental information<h3>
+<h3>system (SEIS)<h3>
 
     /east/portal_types/Folder/manage_propertiesForm
     Available view methods: add: country_view
