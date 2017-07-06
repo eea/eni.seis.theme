@@ -311,7 +311,7 @@ body:not(.template-country_view) {
   }
 }
 
-#project-related-events {
+#project-related-events, #project-events {
   .table-hover {
     thead {
       display: none;
@@ -330,11 +330,13 @@ body:not(.template-country_view) {
         }
         td a {
           color: #FFFFFF !important;
+          text-decoration: none;
         }
       }
 
       td a {
-        color: @color-brand-east !important;
+        color: @color-brand-east;
+        text-decoration: none;
       }
     }
 
