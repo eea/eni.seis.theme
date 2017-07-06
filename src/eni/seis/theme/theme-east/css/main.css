@@ -3257,6 +3257,7 @@ body.template-homepage .navbar-body {
   color: #222222;
 }
 #site-footer .navbar-credits {
+  padding-left: 60px;
   margin-top: 1rem;
   float: none;
   text-align: center;
@@ -3274,7 +3275,7 @@ body.template-homepage .navbar-body {
   clear: both;
   text-align: center;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 #site-footer .portlet.box {
   max-width: 23rem;
