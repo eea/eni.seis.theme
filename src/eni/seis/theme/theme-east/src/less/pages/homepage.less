@@ -152,15 +152,18 @@
   .fp-section();
   .aow-slide {
     padding: 1em;
-    border: 1px solid @color-accent;
-    &:hover {
-      background-color: @color-accent;
+    &:hover .img-circle-cropper {
+      background-color: #FFFFFF;
+      border: 5px solid #FFFFFF;
+      box-shadow: 0 0 0 3px @color-accent;
     }
     &:hover a {
-      color: white;
+      color: @color-accent;
     }
 
     .img-circle-cropper {
+      border: 5px solid #FFFFFF;
+      box-shadow: 0 0 0 3px #FFFFFF;
       margin: 0 auto;
       width: 200px;
       height: 200px;

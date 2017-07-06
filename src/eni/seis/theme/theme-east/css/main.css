@@ -3773,15 +3773,18 @@ ul.configlets {
 }
 .homepage-section-aow-slider .aow-slide {
   padding: 1em;
-  border: 1px solid #1f87e8;
 }
-.homepage-section-aow-slider .aow-slide:hover {
-  background-color: #1f87e8;
+.homepage-section-aow-slider .aow-slide:hover .img-circle-cropper {
+  background-color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 0 3px #1f87e8;
 }
 .homepage-section-aow-slider .aow-slide:hover a {
-  color: white;
+  color: #1f87e8;
 }
 .homepage-section-aow-slider .aow-slide .img-circle-cropper {
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 0 3px #FFFFFF;
   margin: 0 auto;
   width: 200px;
   height: 200px;
