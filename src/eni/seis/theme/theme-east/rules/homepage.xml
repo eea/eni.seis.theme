@@ -34,8 +34,12 @@
             <div class="col-md-3 col-xs-12 col-sm-6">
               <div class="aow-slide">
                 <a href="{./a/@href}" >
-                  <xsl:apply-templates select="./img" />
-                  <xsl:apply-templates select="./a/*" />
+                  <div class="img-circle-cropper">
+                    <xsl:apply-templates select="./img" />
+                  </div>
+                  <div class="text">
+                    <xsl:apply-templates select="./a/*" />
+                  </div>
                 </a>
               </div>
             </div>
