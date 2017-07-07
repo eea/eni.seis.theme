@@ -4304,6 +4304,15 @@ body.template-communication_and_visibility #parent-fieldname-description {
   padding-right: 15px;
   margin-bottom: 4rem;
 }
+body.template-communication_and_visibility .section-frontpage-news div.left a {
+  color: #FFFFFF !important;
+}
+body.template-communication_and_visibility .section-frontpage-news div.left a:hover {
+  color: black !important;
+}
+body.template-communication_and_visibility .section-frontpage-events .tile:hover > a {
+  color: #FFFFFF !important;
+}
 body.template-communication_and_visibility .row.no-portlets h3 {
   text-transform: uppercase;
   color: #1f87e8;
