@@ -4292,6 +4292,37 @@ body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li {
   list-style: none;
   padding: 0.5em 0 0.5em 0;
 }
+body.template-communication_and_visibility .page-main {
+  width: 100%;
+}
+body.template-communication_and_visibility .data-section-aow-slider.row {
+  background: #F8F8F8;
+}
+body.template-communication_and_visibility #parent-fieldname-description {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 4rem;
+}
+body.template-communication_and_visibility .row.no-portlets h3 {
+  text-transform: uppercase;
+  color: #1f87e8;
+  border-bottom: 3px solid #08a8dc;
+  display: inline-block;
+  padding-right: 1em;
+}
+body.template-communication_and_visibility .row.no-portlets .knowledge-resources {
+  padding-top: 4rem;
+}
+body.template-communication_and_visibility .row.no-portlets .knowledge-resources ul {
+  margin-left: 0 !important;
+  list-style-type: none;
+  list-style: none;
+}
+body.template-communication_and_visibility .row.no-portlets .knowledge-resources ul li {
+  list-style: none;
+  padding: 0.5em 0 0.5em 0;
+}
 body.template-country_view .documentByLine {
   margin-bottom: 0 !important;
 }
