@@ -3746,13 +3746,16 @@ ul.configlets {
   z-index: 10;
   position: relative;
 }
+.data-section-aow-slider,
 .homepage-section-aow-slider {
   margin: 4em 0;
 }
+.data-section-aow-slider .areas-title,
 .homepage-section-aow-slider .areas-title {
   width: 100%;
   text-align: center;
 }
+.data-section-aow-slider .areas-title h3,
 .homepage-section-aow-slider .areas-title h3 {
   text-transform: uppercase;
   color: #1f87e8;
@@ -3760,28 +3763,36 @@ ul.configlets {
   display: inline-block;
   padding: 0em 1em 0.2em 1em;
 }
+.data-section-aow-slider div.col-md-3,
 .homepage-section-aow-slider div.col-md-3 {
   padding-top: 1rem;
 }
+.data-section-aow-slider:before,
 .homepage-section-aow-slider:before,
+.data-section-aow-slider:after,
 .homepage-section-aow-slider:after {
   content: "";
   display: table;
 }
+.data-section-aow-slider:after,
 .homepage-section-aow-slider:after {
   clear: both;
 }
+.data-section-aow-slider .aow-slide,
 .homepage-section-aow-slider .aow-slide {
   padding: 1em;
 }
+.data-section-aow-slider .aow-slide:hover .img-circle-cropper,
 .homepage-section-aow-slider .aow-slide:hover .img-circle-cropper {
   background-color: #FFFFFF;
   border: 5px solid #FFFFFF;
   box-shadow: 0 0 0 3px #1f87e8;
 }
+.data-section-aow-slider .aow-slide:hover a,
 .homepage-section-aow-slider .aow-slide:hover a {
-  color: #1f87e8;
+  color: #1f87e8 !important;
 }
+.data-section-aow-slider .aow-slide .img-circle-cropper,
 .homepage-section-aow-slider .aow-slide .img-circle-cropper {
   border: 5px solid #FFFFFF;
   box-shadow: 0 0 0 3px #FFFFFF;
@@ -3796,23 +3807,27 @@ ul.configlets {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
+.data-section-aow-slider .aow-slide .img-circle-cropper img,
 .homepage-section-aow-slider .aow-slide .img-circle-cropper img {
   display: inline;
   margin: 0 auto;
   height: 100%;
   width: auto;
 }
+.data-section-aow-slider .aow-slide a,
 .homepage-section-aow-slider .aow-slide a {
   font-size: 110%;
   font-weight: 500;
-  color: black;
+  color: black !important;
 }
+.data-section-aow-slider .aow-slide a span,
 .homepage-section-aow-slider .aow-slide a span {
   text-align: center;
   display: block;
   padding-top: 1em;
   height: 4em;
 }
+.data-section-aow-slider .aow-slide img,
 .homepage-section-aow-slider .aow-slide img {
   width: 100%;
 }
