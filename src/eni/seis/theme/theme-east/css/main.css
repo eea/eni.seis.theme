@@ -4113,6 +4113,16 @@ ul.configlets {
 .section-frontpage-countries p a:hover {
   color: #009345;
 }
+@media (max-width: 959px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  .hidden-xs {
+    display: none;
+  }
+}
 body.template-data_and_statistics .page-main {
   width: 100%;
 }
