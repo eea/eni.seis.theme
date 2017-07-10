@@ -4316,6 +4316,15 @@ body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li {
   list-style: none;
   padding: 0.5em 0 0.5em 0;
 }
+body.template-communication_and_visibility .jquery-move-me {
+  overflow: overlay;
+  margin-bottom: 1rem;
+}
+body.template-communication_and_visibility .container-fluid.moved-events {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #F8F8F8;
+}
 body.template-communication_and_visibility .page-main {
   width: 100%;
 }
@@ -4337,6 +4346,10 @@ body.template-communication_and_visibility .section-frontpage-news div.left a:ho
 body.template-communication_and_visibility .section-frontpage-events {
   margin: 0;
 }
+body.template-communication_and_visibility .section-frontpage-events .tile {
+  position: relative;
+  left: -1rem;
+}
 body.template-communication_and_visibility .section-frontpage-events .tile:hover > a {
   color: #FFFFFF !important;
 }
@@ -4346,6 +4359,12 @@ body.template-communication_and_visibility .row.no-portlets h3 {
   border-bottom: 3px solid #08a8dc;
   display: inline-block;
   padding-right: 1em;
+}
+body.template-communication_and_visibility .row.no-portlets a {
+  color: #009345;
+}
+body.template-communication_and_visibility .row.no-portlets a:hover {
+  color: #1f87e8 !important;
 }
 body.template-communication_and_visibility .row.no-portlets .knowledge-resources {
   padding-top: 4rem;
@@ -4361,10 +4380,14 @@ body.template-communication_and_visibility .row.no-portlets .knowledge-resources
   list-style: none;
 }
 body.template-communication_and_visibility .row.no-portlets .knowledge-resources ul li {
+  display: block;
   list-style: none;
   padding: 0.5em 0 0.5em 0;
   color: #009345;
   font-size: 120%;
+}
+body.template-communication_and_visibility .row.no-portlets .knowledge-resources ul li a {
+  color: #009345;
 }
 body.template-country_view .documentByLine {
   margin-bottom: 0 !important;

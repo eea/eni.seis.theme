@@ -164,6 +164,15 @@ $(document).ready(function() {
     $("h1.documentFirstHeading").prependTo(".country-left-column");
   }
 
+  if($(body).hasClass("template-communication_and_visibility")) {
+    // Communication and visibility:
+    // Solution to have container-fluid instead of container, bg color gray
+    $(".site-container").after("<div class='container-fluid moved-events'><div class='container'></div></div>");
+    $(".section-frontpage-events").appendTo('.container-fluid.moved-events .container');
+    $(".container-fluid.moved-events").after("<div class='site-container moved-sections'><div class='row no-portlets'></div></div>");
+    $(".jquery-move-me").appendTo('.site-container.moved-sections .row');
+  }
+
   $(".documentFirstHeading").each(
     function() {
       if($(this).text().length == 0) {
