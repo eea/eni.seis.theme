@@ -3840,6 +3840,15 @@ ul.configlets {
   padding-top: 1em;
   background: #FFFFFF;
 }
+.eni-section-title {
+  font-size: 1.4rem;
+  color: #1f87e8;
+  text-transform: uppercase;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  border-bottom: 3px solid #1f87e8;
+  display: inline-block;
+}
 .section-frontpage-news {
   margin: 4em 0;
 }
