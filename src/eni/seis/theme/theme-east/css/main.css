@@ -3795,6 +3795,7 @@ ul.configlets {
 .data-section-aow-slider .aow-slide .text,
 .homepage-section-aow-slider .aow-slide .text {
   width: 160px;
+  margin: 0 auto;
 }
 .data-section-aow-slider .aow-slide .img-circle-cropper,
 .homepage-section-aow-slider .aow-slide .img-circle-cropper {
