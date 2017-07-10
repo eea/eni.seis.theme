@@ -3792,13 +3792,17 @@ ul.configlets {
 .homepage-section-aow-slider .aow-slide:hover a {
   color: #1f87e8 !important;
 }
+.data-section-aow-slider .aow-slide .text,
+.homepage-section-aow-slider .aow-slide .text {
+  width: 160px;
+}
 .data-section-aow-slider .aow-slide .img-circle-cropper,
 .homepage-section-aow-slider .aow-slide .img-circle-cropper {
   border: 5px solid #FFFFFF;
   box-shadow: 0 0 0 3px #FFFFFF;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   position: relative;
   overflow: hidden;
   -webkit-border-radius: 50%;
