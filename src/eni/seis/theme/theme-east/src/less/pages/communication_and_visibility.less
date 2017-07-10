@@ -26,6 +26,7 @@ body.template-communication_and_visibility {
   }
 
   .section-frontpage-events {
+    margin: 0;
     .tile:hover > a {
       color: #FFFFFF !important;
     }
@@ -42,14 +43,22 @@ body.template-communication_and_visibility {
 
     .knowledge-resources {
       padding-top: 4rem;
+      clear: both;
+
+      .row .col-lg-12 {
+        padding-left: 1px;
+      }
 
       ul {
         margin-left: 0 !important;
+        padding-left: 0;
         list-style-type: none;
         list-style: none;
         li {
           list-style: none;
           padding: 0.5em 0 0.5em 0;
+          color: @color-brand-east;
+          font-size: 120%;
         }
       }
     }

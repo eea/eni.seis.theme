@@ -4334,6 +4334,9 @@ body.template-communication_and_visibility .section-frontpage-news div.left a {
 body.template-communication_and_visibility .section-frontpage-news div.left a:hover {
   color: black !important;
 }
+body.template-communication_and_visibility .section-frontpage-events {
+  margin: 0;
+}
 body.template-communication_and_visibility .section-frontpage-events .tile:hover > a {
   color: #FFFFFF !important;
 }
@@ -4346,15 +4349,22 @@ body.template-communication_and_visibility .row.no-portlets h3 {
 }
 body.template-communication_and_visibility .row.no-portlets .knowledge-resources {
   padding-top: 4rem;
+  clear: both;
+}
+body.template-communication_and_visibility .row.no-portlets .knowledge-resources .row .col-lg-12 {
+  padding-left: 1px;
 }
 body.template-communication_and_visibility .row.no-portlets .knowledge-resources ul {
   margin-left: 0 !important;
+  padding-left: 0;
   list-style-type: none;
   list-style: none;
 }
 body.template-communication_and_visibility .row.no-portlets .knowledge-resources ul li {
   list-style: none;
   padding: 0.5em 0 0.5em 0;
+  color: #009345;
+  font-size: 120%;
 }
 body.template-country_view .documentByLine {
   margin-bottom: 0 !important;
