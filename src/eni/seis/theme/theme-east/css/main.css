@@ -4631,6 +4631,51 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
   width: 90%;
   margin-left: 0;
 }
+body.template-indicators_and_assessments .page-main {
+  width: 100%;
+}
+body.template-indicators_and_assessments #parent-fieldname-description {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 4rem;
+}
+body.template-indicators_and_assessments .row.no-portlets h3 {
+  text-transform: uppercase;
+  color: #1f87e8;
+  border-bottom: 3px solid #08a8dc;
+  display: inline-block;
+  padding-right: 1em;
+}
+body.template-indicators_and_assessments .row.no-portlets a {
+  color: #009345;
+}
+body.template-indicators_and_assessments .row.no-portlets a:hover {
+  color: #1f87e8 !important;
+}
+body.template-indicators_and_assessments .row.no-portlets .knowledge-resources {
+  padding-top: 4rem;
+  clear: both;
+}
+body.template-indicators_and_assessments .row.no-portlets .knowledge-resources .row .col-lg-12 {
+  padding-left: 1px;
+}
+body.template-indicators_and_assessments .row.no-portlets .knowledge-resources ul {
+  margin-left: 0 !important;
+  padding-left: 0;
+  list-style-type: none;
+  list-style: none;
+}
+body.template-indicators_and_assessments .row.no-portlets .knowledge-resources ul li {
+  display: block;
+  list-style: none;
+  padding: 0.5em 0 0.5em 0;
+  color: #009345;
+  font-size: 120%;
+}
+body.template-indicators_and_assessments .row.no-portlets .knowledge-resources ul li a {
+  color: #009345;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
