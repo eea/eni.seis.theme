@@ -4637,6 +4637,13 @@ body.template-indicators_and_assessments .container.site-container {
 }
 body.template-indicators_and_assessments .container-fluid.moved-video-section {
   background: #F8F8F8;
+  /* Old browsers */
+  background: -moz-linear-gradient(60deg, #009345 50%, #F8F8F8 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(60deg, #009345 50%, #F8F8F8 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(60deg, #009345 50%, #F8F8F8 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   margin-bottom: 2rem;
 }
 body.template-indicators_and_assessments .container-fluid.moved-video-section .row {
