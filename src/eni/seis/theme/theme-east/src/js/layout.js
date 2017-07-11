@@ -173,6 +173,15 @@ $(document).ready(function() {
     $(".jquery-move-me").appendTo('.site-container.moved-sections .row');
   }
 
+  if($(body).hasClass("template-areas-of-work_data")) {
+    // Areas of work / Data:
+    // Solution to have container-fluid instead of container, bg color gray
+    $(".site-container").after("<div class='container-fluid moved-aow-slider'><div class='container'></div></div>");
+    $(".data-section-aow-slider.jquery-move-me").appendTo('.container-fluid.moved-aow-slider .container');
+    $(".container-fluid.moved-aow-slider").after("<div class='container moved-sections'></div>");
+    $(".row.no-portlets.jquery-move-me").appendTo('.container.moved-sections');
+  }
+
   $(".documentFirstHeading").each(
     function() {
       if($(this).text().length == 0) {

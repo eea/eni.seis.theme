@@ -4285,6 +4285,23 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link:ho
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
   background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_cross-cutting_issues_hover.svg);
 }
+body.template-areas-of-work_data .container.site-container {
+  margin-bottom: -4rem;
+  min-height: 4rem;
+}
+body.template-areas-of-work_data .container-fluid.moved-aow-slider {
+  background: #F8F8F8;
+}
+body.template-areas-of-work_data .container-fluid.moved-aow-slider .row {
+  float: none;
+}
+body.template-areas-of-work_data .row.no-portlets.jquery-move-me {
+  padding-bottom: 2rem;
+  float: none;
+}
+body.template-areas-of-work_data .row.no-portlets.jquery-move-me .row {
+  float: none;
+}
 body.template-areas-of-work_data .page-main {
   width: 100%;
 }
@@ -4295,7 +4312,6 @@ body.template-areas-of-work_data #parent-fieldname-description {
   text-align: left;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 4rem;
 }
 body.template-areas-of-work_data .row.no-portlets h3 {
   text-transform: uppercase;
@@ -4303,9 +4319,6 @@ body.template-areas-of-work_data .row.no-portlets h3 {
   border-bottom: 3px solid #08a8dc;
   display: inline-block;
   padding-right: 1em;
-}
-body.template-areas-of-work_data .row.no-portlets .knowledge-resources {
-  padding-top: 4rem;
 }
 body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul {
   margin-left: 0 !important;
