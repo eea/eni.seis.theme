@@ -4631,6 +4631,28 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
   width: 90%;
   margin-left: 0;
 }
+body.template-indicators_and_assessments .container.site-container {
+  min-height: 0 !important;
+  margin-bottom: -4rem;
+}
+body.template-indicators_and_assessments .container-fluid.moved-video-section {
+  background: #F8F8F8;
+  margin-bottom: 2rem;
+}
+body.template-indicators_and_assessments .container-fluid.moved-video-section .row {
+  float: none;
+}
+body.template-indicators_and_assessments .container-fluid.moved-video-section .video-container {
+  position: relative;
+  top: 70px;
+}
+body.template-indicators_and_assessments .row.no-portlets.jquery-move-me {
+  padding-bottom: 2rem;
+  float: none;
+}
+body.template-indicators_and_assessments .row.no-portlets.jquery-move-me .row {
+  float: none;
+}
 body.template-indicators_and_assessments .page-main {
   width: 100%;
 }

@@ -182,6 +182,15 @@ $(document).ready(function() {
     $(".row.no-portlets.jquery-move-me").appendTo('.container.moved-sections');
   }
 
+  if($(body).hasClass("template-indicators_and_assessments")) {
+    // Areas of work / Indicators and Assessments:
+    // Solution to have container-fluid instead of container, bg green/gray
+    $(".site-container").after("<div class='container-fluid moved-video-section'><div class='container'></div></div>");
+    $(".video-section.jquery-move-me").appendTo('.container-fluid.moved-video-section .container');
+    $(".container-fluid.moved-video-section").after("<div class='container moved-text-section'></div>");
+    $(".text-section.jquery-move-me").appendTo('.container.moved-text-section');
+  }
+
   $(".documentFirstHeading").each(
     function() {
       if($(this).text().length == 0) {
