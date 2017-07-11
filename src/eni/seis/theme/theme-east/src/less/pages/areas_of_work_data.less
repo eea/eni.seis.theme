@@ -24,8 +24,18 @@ body.template-areas-of-work_data {
     width: 100%;
   }
 
-  .data-section-aow-slider.row {
-     background: @color-gray-lighter;
+  .data-section-aow-slider {
+    .row {
+      background: @color-gray-lighter;
+    }
+    .aow-slide .img-circle-cropper {
+      border-color: @color-gray-lighter;
+      box-shadow: 0 0 0 3px @color-gray-lighter;
+    }
+    .aow-slide:hover .img-circle-cropper {
+      border-color: #FFFFFF;
+      box-shadow: 0 0 0 3px @color-accent;
+    }
   }
 
   #parent-fieldname-description {

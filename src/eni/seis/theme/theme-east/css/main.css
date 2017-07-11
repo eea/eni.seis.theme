@@ -4305,8 +4305,16 @@ body.template-areas-of-work_data .row.no-portlets.jquery-move-me .row {
 body.template-areas-of-work_data .page-main {
   width: 100%;
 }
-body.template-areas-of-work_data .data-section-aow-slider.row {
+body.template-areas-of-work_data .data-section-aow-slider .row {
   background: #F8F8F8;
+}
+body.template-areas-of-work_data .data-section-aow-slider .aow-slide .img-circle-cropper {
+  border-color: #F8F8F8;
+  box-shadow: 0 0 0 3px #F8F8F8;
+}
+body.template-areas-of-work_data .data-section-aow-slider .aow-slide:hover .img-circle-cropper {
+  border-color: #FFFFFF;
+  box-shadow: 0 0 0 3px #1f87e8;
 }
 body.template-areas-of-work_data #parent-fieldname-description {
   text-align: left;
