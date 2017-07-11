@@ -4320,14 +4320,28 @@ body.template-areas-of-work_data .row.no-portlets h3 {
   display: inline-block;
   padding-right: 1em;
 }
+body.template-areas-of-work_data .row.no-portlets a.more-items {
+  color: #009345;
+}
+body.template-areas-of-work_data .row.no-portlets a.more-items:hover {
+  color: #1f87e8;
+}
 body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul {
+  display: block;
   margin-left: 0 !important;
   list-style-type: none;
   list-style: none;
 }
 body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li {
+  display: block;
   list-style: none;
   padding: 0.5em 0 0.5em 0;
+}
+body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li a {
+  color: #009345;
+}
+body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li a:hover {
+  color: #1f87e8;
 }
 body.template-communication_and_visibility .jquery-move-me {
   overflow: overlay;

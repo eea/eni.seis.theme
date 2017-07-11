@@ -43,14 +43,29 @@ body.template-areas-of-work_data {
       padding-right: 1em;
     }
 
+    a.more-items {
+      color: @color-brand-east;
+      &:hover {
+        color: @color-accent;
+      }
+    }
+
     .knowledge-resources {
       ul {
+        display: block;
         margin-left: 0 !important;
         list-style-type: none;
         list-style: none;
         li {
+          display: block;
           list-style: none;
           padding: 0.5em 0 0.5em 0;
+          a {
+            color: @color-brand-east;
+            &:hover {
+              color: @color-accent;
+            }
+          }
         }
       }
     }
