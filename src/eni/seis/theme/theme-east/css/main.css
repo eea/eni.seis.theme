@@ -4589,60 +4589,15 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   color: #1f87e8;
   border-bottom: 3px solid #1f87e8;
 }
+body.template-country_view_east .page-main {
+  width: 100%;
+}
 body.template-country_view_east .documentByLine {
   margin-bottom: 0 !important;
 }
 body.template-country_view_east h1.documentFirstHeading {
   padding-left: 0px;
   text-transform: uppercase;
-}
-body.template-country_view_east .country-left-column .portletNews {
-  margin-top: 4rem;
-}
-body.template-country_view_east .country-left-column .box.leading-large.portlet .portletItemDetails {
-  color: #555;
-}
-body.template-country_view_east .country-left-column .box.leading-large.portlet dt {
-  background: #FFFFFF;
-  text-transform: uppercase;
-  color: #1f87e8;
-  border-bottom: 3px solid #1f87e8;
-  font-size: 1.2rem;
-  padding: 0em 1em 0em 0em !important;
-  display: inline-block;
-  margin-top: 20px !important;
-}
-body.template-country_view_east .country-left-column .box.leading-large.portlet dd {
-  margin-top: 10px !important;
-  font-size: 1rem;
-}
-body.template-country_view_east .country-left-column .box.leading-large.portlet dd .row:first-of-type {
-  border-top: none;
-}
-body.template-country_view_east .country-left-column .box.leading-large.portlet dd .row {
-  padding-top: 20px;
-  border-top: 1px solid #ededed;
-}
-body.template-country_view_east .country-left-column .box.leading-large.portlet dd .portletItemDetails {
-  margin-left: 0px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-body.template-country_view_east .country-left-column a {
-  text-decoration: none !important;
-  border-bottom: none;
-}
-body.template-country_view_east .country-left-column table.table-hover th {
-  color: #222222;
-  font-size: 0.9em;
-}
-body.template-country_view_east .country-left-column table.table-hover td {
-  font-size: 0.9em;
-}
-body.template-country_view_east .country-right-column .container {
-  position: relative;
-  overflow-x: hidden !important;
-  top: -34px !important;
 }
 body.template-country_view_east.userrole-anonymous .btn-default.edit-text {
   display: none;
@@ -4651,38 +4606,6 @@ body.template-country_view_east .nav > li {
   margin-right: 10px;
   position: relative;
   top: 1px;
-}
-body.template-country_view_east div.icon {
-  height: 50px;
-  width: 50px;
-  float: left;
-  position: relative;
-  top: -15px;
-  background-size: 50px auto;
-}
-body.template-country_view_east div.icon-air {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_air_normal.svg);
-}
-body.template-country_view_east li:not(.active) a.icon-air:hover div.icon-air {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_air_hover.svg);
-}
-body.template-country_view_east div.icon-water {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_water_normal.svg);
-}
-body.template-country_view_east li:not(.active) a.icon-water:hover div.icon-water {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_water_hover.svg);
-}
-body.template-country_view_east div.icon-land {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_land_normal.svg);
-}
-body.template-country_view_east li:not(.active) a.icon-land:hover div.icon-land {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_land_hover.svg);
-}
-body.template-country_view_east div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_waste_normal.svg);
-}
-body.template-country_view_east li:not(.active) a.icon-waste:hover div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.east/img/countries_waste_hover.svg);
 }
 body.template-country_view_east .nav > li > a:hover,
 body.template-country_view_east .nav > li > a:focus {
