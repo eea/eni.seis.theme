@@ -8,6 +8,10 @@ body.template-country_view_east {
     display: none !important;
   }
 
+  .container-fluid.moved-country-news-section {
+    background: @color-gray-light;
+  }
+
   .country-content {
     .nav.base > li > a:hover,
     .nav.base > li > a:focus {
@@ -228,9 +232,17 @@ body.template-country_view_east {
   }
 
   .row.no-portlets.jquery-move-me.country-news-row {
-    background: @color-gray-lighter;
+    float: none;
+    background: @color-gray-light;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    a {
+      color: @color-brand-east;
+      &:hover {
+        color: @color-accent;
+      }
+    }
 
     h3.section-title {
       color: @color-accent;

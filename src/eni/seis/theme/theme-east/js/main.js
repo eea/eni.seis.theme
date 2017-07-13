@@ -3010,6 +3010,13 @@ $(document).ready(function() {
     $(".text-section.jquery-move-me").appendTo('.container.moved-text-section');
   }
 
+  if($(body).hasClass("template-country_view_east")) {
+    // Country view East / Country news:
+    // Solution to have container-fluid instead of container, bg gray
+    $(".site-container").after("<div class='container-fluid moved-country-news-section'><div class='container'></div></div>");
+    $(".country-news-row.jquery-move-me").appendTo('.container-fluid.moved-country-news-section .container');
+  }
+
   $(".documentFirstHeading").each(
     function() {
       if($(this).text().length == 0) {
