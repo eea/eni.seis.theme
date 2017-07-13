@@ -45,6 +45,69 @@ body.template-country_view_east {
           padding-right: 0px;
         }
 
+        table.table-responsive.table-hover {
+          tr.even:hover, tr.odd:hover {
+            background: @color-accent;
+            color: #FFFFFF;
+            .fa {
+              color: @color-gray-dark;
+            }
+            a {
+              color: #FFFFFF !important;
+            }
+          }
+
+          a {
+            color: @color-accent;
+            &:hover {
+              color: #FFFFFF !important;
+            }
+          }
+
+          th {
+            border-bottom: 0px;
+            border-right: 1px solid @color-gray-light2;
+
+            .reports-number {
+              text-align: center;
+              font-size: 40px;
+              margin-bottom: 0 !important;
+            }
+
+            h3 {
+              color: #FFFFFF;
+              text-align: center;
+              margin-bottom: 0;
+              margin-top: 20px;
+            }
+
+            &:last-of-type {
+              border-right: none;
+            }
+          }
+
+          td {
+            border-right: 1px solid @color-gray-light2;
+            &:last-of-type {
+              border-right: none;
+              color: @color-accent;
+            }
+          }
+
+          td, tr {
+            border-top: none;
+          }
+
+          tr {
+            .odd {
+              background: @color-gray-lighter;
+            }
+            &:last-of-type {
+              border-bottom: 1px solid @color-gray-light2;
+            }
+          }
+        }
+
         table.environ-reports {
           tr > th > h2 {
             margin-top: 1rem;
@@ -56,15 +119,26 @@ body.template-country_view_east {
         .container-table-reports {
           padding-left: 0;
           padding-right: 0;
+
           > .row {
             padding-left: 0;
             padding-right: 0;
+
             .col-table-reports {
               padding-left: 0;
               padding-right: 0;
+
               table.table.reports {
                 padding-left: 0;
                 padding-right: 0;
+
+                thead {
+                  h2 {
+                    position: relative;
+                    top: -20px;
+                    color: #FFFFFF;
+                  }
+                }
               }
             }
           }
