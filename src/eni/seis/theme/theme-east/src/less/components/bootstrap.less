@@ -324,10 +324,12 @@ table th[class*="col-"] {
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  border: 1px solid #dddddd!important;
-  border-bottom-color: transparent!important;
-  cursor: default;
+body:not(.template-country_view_east) {
+  .nav-tabs > li.active > a:focus {
+    border: 1px solid #dddddd!important;
+    border-bottom-color: transparent!important;
+    cursor: default;
+  }
 }
 .nav-tabs.nav-justified {
   width: 100%;
