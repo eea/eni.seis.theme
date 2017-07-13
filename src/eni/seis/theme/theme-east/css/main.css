@@ -4623,6 +4623,25 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content t
   margin-bottom: 1rem;
   color: #FFFFFF;
 }
+body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row {
+  background: #F8F8F8;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row h3.section-title {
+  color: #1f87e8;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 3px solid #1f87e8;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .col-lg-4 {
+  padding-left: 0px;
+}
+body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .news-image {
+  margin-right: 1rem;
+}
 body.template-country_view_east.userrole-anonymous .btn-default.edit-text {
   display: none;
 }
