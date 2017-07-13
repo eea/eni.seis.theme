@@ -4606,6 +4606,18 @@ body.template-country_view_east .row.no-portlets .country-header .country-title 
   text-transform: uppercase;
   color: #ff6b01;
 }
+body.template-country_view_east .row.no-portlets .country-content ul.nav.nav-tabs li.pull-right {
+  margin-right: 0px;
+  border: 1px solid #009345;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content {
+  margin-top: 2px;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr > th > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
 body.template-country_view_east.userrole-anonymous .btn-default.edit-text {
   display: none;
 }
