@@ -4618,10 +4618,30 @@ body.template-country_view_east .row.no-portlets .country-content ul.nav.nav-tab
 body.template-country_view_east .row.no-portlets .country-content .tab-content {
   margin-top: 2px;
 }
+body.template-country_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr > th > h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #FFFFFF;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports table.table.reports {
+  padding-left: 0;
+  padding-right: 0;
 }
 body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row {
   background: #F8F8F8;
