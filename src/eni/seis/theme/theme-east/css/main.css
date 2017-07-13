@@ -4596,6 +4596,11 @@ body.template-country_view_east .documentByLine,
 body.template-country_view_east h1.documentFirstHeading {
   display: none !important;
 }
+@media (max-width: 1359px) {
+  body.template-country_view_east .row.no-portlets .country-header {
+    margin-bottom: 0 !important;
+  }
+}
 body.template-country_view_east .row.no-portlets .country-header {
   margin-bottom: -3rem;
 }
