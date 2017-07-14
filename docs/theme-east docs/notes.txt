@@ -79,3 +79,20 @@ in portal_css we have http://eni-seis.eionet.europa.eu/east/portal_css/Sunburst%
 If you change to the original theme (eni.seis.theme.east Eni East Theme) you
 will disable this css and activate again:
 ++theme++eni.seis.theme.east/css/east.css
+
+east/portal_types/Folder/manage_propertiesForm
+	Add view methods:
+	country_view_east
+	areas-of-work_data
+	communication_and_visibility
+	indicators_and_assessments
+
+Content updates:
+/east/homepage-section-aow-slider
+/east/governance/governance
+Add /east/areas-of-work/data - Folder
+set display areas-of-work_data
+/east/communication/
+set display communication_and_visibility
+/east/areas-of-work/Indicators%20and%20Assessments/video/edit - page with youtube embed video
+Analog for country view and indicatiors (see Contents for folder structure)
