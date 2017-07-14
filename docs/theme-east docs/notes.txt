@@ -58,30 +58,6 @@ NEW:
     /east/portal_skins/manage_propertiesForm
         In Sunburst Theme move eni_seis_east after custom
 
-Country view table example (add it to country/edit body text):
-<table class="table table-hover table-condensed">
-<thead>
-  <tr>
-    <th>NAME</th>
-    <th>ORGANISATION</th>
-    <th>POSITION</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Ms Amina Benzekri</td>
-    <td>Ministere des Ressources en Lorem Ipsum/td>
-    <td>Directrice generale lorem ipsum dolor sit amet</td>
-  </tr>
-  <tr>
-    <td>Mrs Fathia Ghemmaz</td>
-    <td>Office National des Statistics (ONS)</td>
-    <td>Chef d'Etudes a la Direction des Statistiques regionales, Agricoles et de la Cartographie</td>
-  </tr>
-</tbody>
-</table>
-<a href="#" class="more-items pull-right">Read more</a>
-
 /east/@@dropdown-controlpanel
   Depth of dropdown menus: 1
 
@@ -91,47 +67,6 @@ Fix broken map in eea.meeting view:
      ++resource++plone.formwidget.geolocation/libs.css
      ++resource++plone.formwidget.geolocation/maps.css
   then Save
-
-Example of right column content for Data and statistics.
-Add it in (Body Text = long_description):
-      <div class="data row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="" class="data-link">
-            <div class="data-item">
-              <span>Water</span>
-              <div class="data-img icon-water"></div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="" class="data-link">
-            <div class="data-item">
-              <span>Waste</span>
-              <div class="data-img icon-waste"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="data row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="" class="data-link">
-            <div class="data-item">
-              <span>Industrial Emissions</span>
-              <div class="data-img icon-industrial-emissions"></div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a href="" class="data-link">
-            <div class="data-item">
-              <span>Cross-cutting Issues</span>
-              <div class="data-img icon-cross-cutting-issues"></div>
-            </div>
-          </a>
-        </div>
 
 /east/portal_types/Folder/manage_propertiesForm
   Available view methods: add: data_and_statistics
