@@ -3569,6 +3569,7 @@ ul.configlets {
   z-index: 2;
   margin-left: 10%;
   margin-top: 100px;
+  height: auto;
 }
 @media (max-width: 1359px) {
   .template-homepage .site-banner .project-description {
