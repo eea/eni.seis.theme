@@ -3818,7 +3818,7 @@ ul.configlets {
   display: inline;
   margin: 0 auto;
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 .data-section-aow-slider .aow-slide a,
 .homepage-section-aow-slider .aow-slide a {
