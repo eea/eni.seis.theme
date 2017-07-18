@@ -2678,7 +2678,6 @@ span + .error {
   display: none;
 }
 .page-header {
-  background-image: url('../img/folder-background.png');
   min-height: 10em;
   background-position: center;
   border-top: 5px solid #75ad0a;
