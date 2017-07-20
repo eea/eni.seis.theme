@@ -174,7 +174,6 @@ if (typeof jQuery === 'undefined') {
     // .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
 
 }(jQuery);
-
 /*! Hammer.JS - v2.0.8 - 2016-04-23
  * http://hammerjs.github.io/
  *
@@ -2818,7 +2817,6 @@ if (typeof define === 'function' && define.amd) {
 }
 
 })(window, document, 'Hammer');
-
 $(document).ready(function() {
 
   function detectIE() {
