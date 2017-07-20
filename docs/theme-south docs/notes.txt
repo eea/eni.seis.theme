@@ -136,7 +136,7 @@ Add it in (Body Text = long_description):
 In site setup - theming:
 we have a copy with modifications:
 eni.seis.theme.south.latest (active)
-in portal_css we have https://eni-seis.eionet.europa.eu/south/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-south-latest/css/south.css
+in portal_css we have http://eni-seis.eionet.europa.eu/south/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-south-latest/css/south.css
 If you change to the original theme (eni.seis.theme.south Eni South Theme) you
 will disable this css and activate again:
 ++theme++eni.seis.theme.south/css/south.css
