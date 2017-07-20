@@ -3517,7 +3517,7 @@ body.template-homepage {
 .container-fluid.header-top header#site-header-top .login-link {
   color: #222222;
   position: relative;
-  top: 14px;
+  top: 30px;
 }
 .container-fluid.header-top header#site-header-top .login-link:hover {
   color: #009345 !important;
