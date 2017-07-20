@@ -3484,17 +3484,54 @@ body.template-homepage .navbar-body {
 body.template-homepage {
   display: none;
 }
-#site-header .navbar-brand {
+.navbar-credits a {
+  padding-right: 5px;
+}
+.container-fluid.header-top {
+  overflow: overlay;
+  background: #F8F8F8 !important;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+}
+.container-fluid.header-top header#site-header-top div#navbar-top div.navbar-credits div.eu-logo {
+  float: left;
+  margin-right: 10px;
   text-align: center;
+}
+.container-fluid.header-top header#site-header-top div#navbar-top div.navbar-credits div.eu-logo a img {
+  height: 45px;
+  margin-right: 10px;
+}
+.container-fluid.header-top header#site-header-top div#navbar-top div.navbar-credits div.eu-logo p {
+  font-size: 75%;
+  padding-top: 2px;
+  margin-bottom: 0px;
+}
+.container-fluid.header-top header#site-header-top div#navbar-top div.navbar-credits div.eea-logo {
+  float: left;
+}
+.container-fluid.header-top header#site-header-top div#navbar-top div.navbar-credits div.eea-logo a img {
+  height: 40px;
+  margin-right: 10px;
+}
+.container-fluid.header-top header#site-header-top .login-link {
+  color: #222222;
+  position: relative;
+  top: 14px;
+}
+.container-fluid.header-top header#site-header-top .login-link:hover {
+  color: #009345 !important;
+}
+.container-fluid.header-top header#site-header-top .login-link:before {
+  content: "\f007";
+  padding-right: .5rem;
+  color: #222222;
 }
 @media (max-width: 959px) {
   .page-container #navbar-toggle {
     display: block;
     margin-bottom: 0.5rem;
   }
-}
-.navbar-credits a:nth-last-child(1) img {
-  height: 43px;
 }
 .fc-event-inner {
   color: white;
@@ -3510,31 +3547,6 @@ ul.configlets li {
 }
 ul.configlets {
   padding: 0;
-}
-.navbar-credits a {
-  padding-right: 5px;
-}
-.container-fluid.header-top {
-  overflow: overlay;
-  background: #F8F8F8 !important;
-  padding: 0.5rem;
-  margin-bottom: 4rem;
-}
-.container-fluid.header-top #site-header-top img {
-  height: 80px;
-  margin-right: 10px;
-}
-.container-fluid.header-top #site-header-top .login-link {
-  color: #222222;
-  position: relative;
-  top: 14px;
-}
-.container-fluid.header-top #site-header-top .login-link:hover {
-  color: #009345 !important;
-}
-.container-fluid.header-top #site-header-top .login-link:before {
-  content: "\f007";
-  padding-right: .5rem;
 }
 .template-homepage .site-banner {
   position: relative;

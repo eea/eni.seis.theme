@@ -1,10 +1,59 @@
 body.template-homepage {
-  display: none;
+  display: none;  // [TODO] Is it a joke? Seems not useful for me.
 }
 
-#site-header {
-  .navbar-brand {
-    text-align: center;
+.navbar-credits a {
+  padding-right: 5px;
+}
+
+.container-fluid.header-top {
+  overflow: overlay;
+  background: @color-gray-lighter !important;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+  header#site-header-top {
+    div#navbar-top {
+      div.navbar-credits {
+        div.eu-logo {
+          float: left;
+          margin-right: 10px;
+          text-align: center;
+          a {
+            img {
+              height: 45px;
+              margin-right: 10px;
+            }
+          }
+          p {
+            font-size: 75%;
+            padding-top: 2px;
+            margin-bottom: 0px;
+          }
+        }
+        div.eea-logo {
+          float: left;
+          a {
+            img {
+              height: 40px;
+              margin-right: 10px;
+           }
+          }
+        }
+      }
+    }
+    .login-link {
+      color: @color-gray-dark;
+      position: relative;
+      top: 14px;
+      &:hover {
+        color: @color-brand-east !important;
+      }
+      &:before {
+        content: "\f007";
+        padding-right: .5rem;
+        color: @color-gray-dark;
+      }
+    }
   }
 }
 
@@ -13,10 +62,6 @@ body.template-homepage {
     display: block;
     margin-bottom: 0.5rem;
   }
-}
-
-.navbar-credits a:nth-last-child(1) img {
-  height: 43px;
 }
 
 .fc-event-inner {
@@ -36,33 +81,4 @@ ul.configlets li {
 
 ul.configlets {
   padding: 0;
-}
-
-.navbar-credits a {
-  padding-right: 5px;
-}
-
-.container-fluid.header-top {
-  overflow: overlay;
-  background: @color-gray-lighter !important;
-  padding: 0.5rem;
-  margin-bottom: 4rem;
-  #site-header-top {
-    img {
-      height: 80px;
-      margin-right: 10px;
-    }
-    .login-link {
-      color: @color-gray-dark;
-      position: relative;
-      top: 14px;
-      &:hover {
-        color: @color-brand-east !important;
-      }
-      &:before {
-        content: "\f007";
-        padding-right: .5rem;
-      }
-    }
-  }
 }
