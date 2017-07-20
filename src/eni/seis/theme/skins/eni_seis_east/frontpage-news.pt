@@ -16,7 +16,7 @@
   <h4>News</h4>
   <div class="row" tal:define="
       newsletter_title python:'Check out our latest Project Newsletter!';
-      newsletter_url python:'http://eni-seis.eionet.europa.eu/east/communication';
+      newsletter_url python:'https://eni-seis.eionet.europa.eu/east/communication';
     ">
 
     <div class="left col-xs-12 col-sm-6 col-md-5">
