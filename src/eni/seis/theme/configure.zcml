@@ -1,9 +1,9 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns="https://namespaces.zope.org/zope"
+    xmlns:plone="https://namespaces.plone.org/plone"
+    xmlns:genericsetup="https://namespaces.zope.org/genericsetup"
+    xmlns:cmf="https://namespaces.zope.org/cmf"
+    xmlns:i18n="https://namespaces.zope.org/i18n"
     i18n_domain="eni.seis.theme">
 
   <i18n:registerTranslations directory="locales" />

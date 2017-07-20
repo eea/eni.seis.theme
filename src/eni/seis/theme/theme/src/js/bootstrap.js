@@ -1,11 +1,11 @@
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Bootstrap v3.3.7 (https://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=882e76fda2ed683792d94a5f58f15dd7)
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/customize/?id=882e76fda2ed683792d94a5f58f15dd7)
  * Config saved to config.json and https://gist.github.com/882e76fda2ed683792d94a5f58f15dd7
  */
 if (typeof jQuery === 'undefined') {
@@ -21,7 +21,7 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: tab.js v3.3.7
- * http://getbootstrap.com/javascript/#tabs
+ * https://getbootstrap.com/javascript/#tabs
  * ========================================================================
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)

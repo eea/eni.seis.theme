@@ -24,7 +24,7 @@
             </span>
           </div>
         </div>
-        <a href="http://eni-seis.eionet.europa.eu/east/communication/events" class="pull-right more-items">More events</a>
+        <a href="https://eni-seis.eionet.europa.eu/east/communication/events" class="pull-right more-items">More events</a>
       </dd>
     </dl>
   </tal:def>

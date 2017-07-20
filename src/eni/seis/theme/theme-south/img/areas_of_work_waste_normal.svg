@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "https://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="261.17px" height="247px" viewBox="0 0 261.17 247" enable-background="new 0 0 261.17 247" xml:space="preserve">
 <g>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#E6E7E8" d="M147.262,169.295c-28.154,0-56.31,0.005-84.465-0.002
@@ -18,7 +18,7 @@
 	<rect x="161.334" y="117.423" fill-rule="evenodd" clip-rule="evenodd" fill="#4D4D4D" width="43.173" height="11.91"/>
 	<rect x="161.334" y="69.332" fill-rule="evenodd" clip-rule="evenodd" fill="#4D4D4D" width="38.333" height="11.91"/>
 	<g>
-		<polygon fill="#FF6B00" points="120.029,115 95.814,223 67.414,223 41.197,115 20.616,115 51.688,243 111.826,243 140.526,115 		
+		<polygon fill="#FF6B00" points="120.029,115 95.814,223 67.414,223 41.197,115 20.616,115 51.688,243 111.826,243 140.526,115
 			"/>
 	</g>
 	<path fill-rule="evenodd" clip-rule="evenodd" d="M74.312,107.481c3.863-3.97,8.048-8.271,12.153-12.491

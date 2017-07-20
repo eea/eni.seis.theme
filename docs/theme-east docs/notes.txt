@@ -75,7 +75,7 @@ Fix broken map in eea.meeting view:
 In site setup - theming:
 we have a copy with modifications:
 eni.seis.theme.east.latest (active)
-in portal_css we have http://eni-seis.eionet.europa.eu/east/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-east-latest/css/east.css
+in portal_css we have https://eni-seis.eionet.europa.eu/east/portal_css/Sunburst%20Theme/++theme++eni-seis-theme-east-latest/css/east.css
 If you change to the original theme (eni.seis.theme.east Eni East Theme) you
 will disable this css and activate again:
 ++theme++eni.seis.theme.east/css/east.css

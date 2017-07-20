@@ -53,7 +53,7 @@
         <div class="footer-content-wrapper">
           <div class="contact">
             <h4> Contact details </h4>
-            <a href="http://www.eea.europa.eu/" target="_blank">
+            <a href="https://www.eea.europa.eu/" target="_blank">
               European Environment Agency (EEA)
             </a>
             <span>Kongens Nytorv 6</span>
@@ -73,14 +73,14 @@
           </div>
 
           <div class="login-wrapper">
-            <a href="http://www.eea.europa.eu/legal/">Legal notice</a>
+            <a href="https://www.eea.europa.eu/legal/">Legal notice</a>
             <span data-diazo="login-link"></span>
             <div class="navbar-credits">
               <small> This project is funded by the European Union </small>
-              <a href="http://www.europa.eu/" title="European Union">
+              <a href="https://www.europa.eu/" title="European Union">
                 <img src="./img/logo-eu.png" alt="European Union logo" />
               </a>
-              <a href="http://www.eea.europa.eu" title="European Environment Agency">
+              <a href="https://www.eea.europa.eu" title="European Environment Agency">
                 <img src="./img/eea-logo.png" alt="European Environment Agency logo" />
               </a>
             </div>
