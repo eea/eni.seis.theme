@@ -145,3 +145,5 @@ set display areas-of-work_data
 set display communication_and_visibility
 /east/areas-of-work/Indicators%20and%20Assessments/video/edit - page with youtube embed video
 Analog for country view and indicatiors (see Contents for folder structure)
+
+MOVED /east/communication in /east/areas-of-work/communication
