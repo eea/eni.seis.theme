@@ -3650,7 +3650,7 @@ ul.configlets {
 @media (min-width: 1360px) {
   .template-homepage .site-banner .lp-content:before {
     transform-origin: right bottom;
-    transform: skew(30deg);
+    transform: skew(28deg);
     position: absolute;
     background: #009345;
     height: 100%;
@@ -3668,7 +3668,7 @@ ul.configlets {
     height: 100%;
     border-top: 500px solid #009345;
     clear: both;
-    transform: skew(30deg);
+    transform: skew(28deg);
   }
 }
 @media (min-width: 960px) {
