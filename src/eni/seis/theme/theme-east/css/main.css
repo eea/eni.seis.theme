@@ -3581,7 +3581,7 @@ ul.configlets {
   left: 0;
   z-index: 2;
   margin-left: 10%;
-  margin-top: 100px;
+  margin-top: 50px;
   height: auto;
 }
 @media (max-width: 1359px) {
@@ -3639,7 +3639,7 @@ ul.configlets {
   .template-homepage .site-banner .lp-content {
     margin: auto;
     z-index: 1;
-    height: 450px;
+    height: 390px;
     overflow: hidden;
   }
   .template-homepage .site-banner .lp-content .embed-container {
