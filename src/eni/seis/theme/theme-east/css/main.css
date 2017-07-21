@@ -3260,7 +3260,8 @@ body.template-homepage .navbar-body {
   top: 50px;
 }
 #site-footer .navbar-credits {
-  padding-left: 60px;
+  position: relative;
+  left: -20px;
   margin-top: 1rem;
   float: none;
   text-align: center;
@@ -3274,6 +3275,7 @@ body.template-homepage .navbar-body {
   max-height: 50px;
 }
 #site-footer .navbar-credits small {
+  color: #FFFFFF;
   display: block;
   clear: both;
   text-align: center;
