@@ -7,7 +7,7 @@
       <p class="site-description" data-diazo="site-description" tal:content="context/description"></p>
 
       <div class="section" data-diazo="news-homepage" class="news-homepage">
-        <tal:content tal:define="folderContents context/communication/newsletter/getFolderNews">
+        <tal:content tal:define="folderContents context/areas-of-work/communication/newsletter/getFolderNews">
           <tal:news metal:use-macro="here/news_tabular_view/macros/listing"></tal:news>
         </tal:content>
       </div>

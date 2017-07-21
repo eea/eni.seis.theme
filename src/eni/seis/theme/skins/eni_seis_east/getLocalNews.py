@@ -4,7 +4,7 @@ res = context.portal_catalog.searchResults(
         review_state='published',
         sort_on='effective',
         sort_order='descending',
-        path='/east/communication/newsletter'
+        path='/east/areas-of-work/communication/newsletter'
         )
 news = [b.getObject() for b in res]
 
