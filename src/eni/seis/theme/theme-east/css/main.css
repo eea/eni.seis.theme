@@ -4836,19 +4836,31 @@ body.template-countries_view_east .text-center {
 body.template-countries_view_east div.countries-container {
   padding-top: 2em;
 }
+body.template-countries_view_east div.countries-container .col-lg-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 body.template-countries_view_east div.countries-container a.country-item div.country-box {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ededed;
 }
 body.template-countries_view_east div.countries-container a.country-item div.country-box p.country-title {
   text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 0px !important;
 }
 body.template-countries_view_east div.countries-container a.country-item:hover {
   background: #1f87e8;
 }
 body.template-countries_view_east div.countries-container a.country-item:hover div.country-box {
   background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-countries_view_east div.countries-container a.country-item:hover div.country-box p.country-title {
   color: #FFFFFF;
 }
 body.template-login_form .portalMessage,
