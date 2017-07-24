@@ -4,7 +4,35 @@ body.template-countries_view_east {
   }
 
   .documentByLine,
+  .documentDescription,
   h1.documentFirstHeading {
-    //display: none !important;
+    display: none !important;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  div.countries-container {
+    padding-top: 2em;
+
+    a.country-item {
+      div.country-box {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid @color-gray-light;
+        p.country-title {
+          text-transform: uppercase;
+        }
+      }
+
+      &:hover {
+        background: @color-accent;
+        div.country-box {
+          background: @color-accent;
+          color: #FFFFFF;
+        }
+      }
+    }
   }
 }
