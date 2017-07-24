@@ -4822,6 +4822,216 @@ body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row
 body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .news-image {
   margin-right: 1rem;
 }
+body.template-countries_view_east .page-main {
+  width: 100%;
+}
+body.template-countries_view_east .documentByLine,
+body.template-countries_view_east h1.documentFirstHeading {
+  display: none !important;
+}
+body.template-countries_view_east .container-fluid.moved-country-news-section {
+  background: #ededed;
+}
+body.template-countries_view_east .country-content .nav.base > li > a:hover,
+body.template-countries_view_east .country-content .nav.base > li > a:focus {
+  background: #009345 !important;
+  color: white !important;
+}
+body.template-countries_view_east .country-content .nav-tabs.base > li > a {
+  color: #009345 !important;
+  border: 1px solid #ededed !important;
+  border-radius: 0;
+}
+body.template-countries_view_east .country-content .nav-tabs.base {
+  border-bottom: 3px solid #009345;
+}
+body.template-countries_view_east .country-content .nav-tabs.base > li.active > a,
+body.template-countries_view_east .country-content .nav-tabs.base > li.active > a:hover,
+body.template-countries_view_east .country-content .nav-tabs.base > li.active > a:focus {
+  color: #FFFFFF !important;
+  background: #009345 !important;
+}
+body.template-countries_view_east .country-content .nav.base > li.active > a,
+body.template-countries_view_east .country-content .nav.base > li > a:hover {
+  border-color: #009345 !important;
+}
+@media (max-width: 1359px) {
+  body.template-countries_view_east .row.no-portlets .country-header {
+    margin-bottom: 0 !important;
+  }
+}
+body.template-countries_view_east .row.no-portlets .country-header {
+  margin-bottom: -3rem;
+}
+body.template-countries_view_east .row.no-portlets .country-header .flag {
+  margin-right: 20px;
+}
+body.template-countries_view_east .row.no-portlets .country-header .country-title {
+  text-transform: uppercase;
+  color: #ff6b01;
+}
+body.template-countries_view_east .row.no-portlets .country-content ul.nav.nav-tabs li.pull-right {
+  margin-right: 0px;
+  border: 1px solid #009345;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content {
+  margin-top: 2px;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs {
+  background: #F8F8F8;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li {
+  width: 10%;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li a {
+  border: none;
+  text-align: center;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li a .tab-title {
+  background: #A3A3A3;
+  height: 80px;
+  width: 80px;
+  border: 5px solid transparent;
+  box-shadow: 0 0 0 5px transparent;
+  padding-top: 18px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li a .tab-description {
+  text-transform: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #222222;
+  margin-top: 10px;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li.active .tab-title {
+  background: #009345;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 0 5px #009345;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li.active .tab-description {
+  color: #009345;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li:hover .tab-title {
+  background: #1f87e8;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 0 5px #1f87e8;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li:hover .tab-description {
+  color: #1f87e8;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover,
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover {
+  background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover .fa,
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover .fa {
+  color: #222222;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover a,
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover a {
+  color: #FFFFFF !important;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover a {
+  color: #1f87e8;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover a:hover {
+  color: #FFFFFF !important;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th {
+  border-bottom: 0px;
+  border-right: 1px solid #A3A3A3;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th .reports-number {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0 !important;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th h3 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th:last-of-type {
+  border-right: none;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover td {
+  border-right: 1px solid #A3A3A3;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover td:last-of-type {
+  border-right: none;
+  color: #1f87e8;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover td,
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr {
+  border-top: none;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tbody tr .odd {
+  background: #F8F8F8;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tbody tr:last-of-type {
+  border-bottom: 1px solid #A3A3A3;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr > th > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .container-table-reports {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports table.table.reports {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.template-countries_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports table.table.reports thead h2 {
+  position: relative;
+  top: -20px;
+  color: #FFFFFF;
+}
+body.template-countries_view_east .row.no-portlets.jquery-move-me.country-news-row {
+  float: none;
+  background: #ededed;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body.template-countries_view_east .row.no-portlets.jquery-move-me.country-news-row a {
+  color: #009345;
+}
+body.template-countries_view_east .row.no-portlets.jquery-move-me.country-news-row a:hover {
+  color: #1f87e8;
+}
+body.template-countries_view_east .row.no-portlets.jquery-move-me.country-news-row h3.section-title {
+  color: #1f87e8;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 3px solid #1f87e8;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+body.template-countries_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .col-lg-4 {
+  padding-left: 0px;
+}
+body.template-countries_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .news-image {
+  margin-right: 1rem;
+}
 body.template-login_form .portalMessage,
 body.template-login_failed .portalMessage {
   margin-bottom: 3em;

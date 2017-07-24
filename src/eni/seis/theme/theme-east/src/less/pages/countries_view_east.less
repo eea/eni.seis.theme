@@ -1,0 +1,266 @@
+body.template-countries_view_east {
+  .page-main {
+    width: 100%;
+  }
+
+  .documentByLine,
+  h1.documentFirstHeading {
+    display: none !important;
+  }
+
+  .container-fluid.moved-country-news-section {
+    background: @color-gray-light;
+  }
+
+  .country-content {
+    .nav.base > li > a:hover,
+    .nav.base > li > a:focus {
+      background: @color-brand-east !important;
+      color: white !important;
+    }
+    .nav-tabs.base > li > a {
+      color: @color-brand-east !important;
+      border: 1px solid #ededed !important;
+      border-radius: 0;
+    }
+    .nav-tabs.base {
+      border-bottom: 3px solid @color-brand-east;
+    }
+    .nav-tabs.base > li.active > a,
+    .nav-tabs.base > li.active > a:hover,
+    .nav-tabs.base > li.active > a:focus {
+      color: #FFFFFF !important;
+      background: @color-brand-east !important;
+    }
+
+    .nav.base > li.active > a,
+    .nav.base > li > a:hover {
+      border-color: @color-brand-east !important;
+    }
+  }
+
+  @media @screen-md-max {
+    .row.no-portlets {
+      .country-header {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+.row.no-portlets {
+    .country-header {
+      margin-bottom: -3rem;
+
+      .flag {
+        margin-right: 20px;
+      }
+
+      .country-title {
+        text-transform: uppercase;
+        color: @color-orange;
+      }
+    }
+
+    .country-content {
+      ul.nav.nav-tabs {
+        li.pull-right {
+          margin-right: 0px;
+          border: 1px solid @color-brand-east;
+        }
+      }
+
+      .tab-content {
+        margin-top: 2px;
+
+        .col-nav-tabs {
+          padding-left: 0px;
+          padding-right: 0px;
+          ul.nav.nav-tabs {
+            background: @color-gray-lighter;
+            li {
+              width: 10%;
+              a {
+                border: none;
+                text-align: center;
+
+                .tab-title {
+                  background: @color-gray-light2;
+                  height: 80px;
+                  width: 80px;
+                  border: 5px solid transparent;
+                  box-shadow: 0 0 0 5px transparent;
+                  padding-top: 18px;
+                  font-size: 30px;
+                  font-weight: 600;
+                  color: #FFFFFF;
+                  border-radius: 50%;
+                }
+
+                .tab-description {
+                  text-transform: none;
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: @color-gray-dark;
+                  margin-top: 10px;
+                }
+              }
+              &.active {
+                .tab-title {
+                  background: @color-brand-east;
+                  border: 5px solid #FFFFFF;
+                  box-shadow: 0 0 0 5px @color-brand-east;
+                }
+
+                .tab-description {
+                  color: @color-brand-east;
+                }
+              }
+              &:hover {
+                .tab-title {
+                  background: @color-accent;
+                  border: 5px solid #FFFFFF;
+                  box-shadow: 0 0 0 5px @color-accent;
+                }
+
+                .tab-description {
+                  color: @color-accent;
+                }
+              }
+            }
+          }
+        }
+
+        table.table-responsive.table-hover {
+          tr.even:hover, tr.odd:hover {
+            background: @color-accent;
+            color: #FFFFFF;
+            .fa {
+              color: @color-gray-dark;
+            }
+            a {
+              color: #FFFFFF !important;
+            }
+          }
+
+          a {
+            color: @color-accent;
+            &:hover {
+              color: #FFFFFF !important;
+            }
+          }
+
+          th {
+            border-bottom: 0px;
+            border-right: 1px solid @color-gray-light2;
+
+            .reports-number {
+              text-align: center;
+              font-size: 40px;
+              margin-bottom: 0 !important;
+            }
+
+            h3 {
+              color: #FFFFFF;
+              text-align: center;
+              margin-bottom: 0;
+              margin-top: 20px;
+            }
+
+            &:last-of-type {
+              border-right: none;
+            }
+          }
+
+          td {
+            border-right: 1px solid @color-gray-light2;
+            &:last-of-type {
+              border-right: none;
+              color: @color-accent;
+            }
+          }
+
+          td, tr {
+            border-top: none;
+          }
+
+          tbody tr {
+            .odd {
+              background: @color-gray-lighter;
+            }
+            &:last-of-type {
+              border-bottom: 1px solid @color-gray-light2;
+            }
+          }
+        }
+
+        table.environ-reports {
+          tr > th > h2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+          }
+        }
+
+        .container-table-reports {
+          padding-left: 0;
+          padding-right: 0;
+
+          > .row {
+            padding-left: 0;
+            padding-right: 0;
+
+            .col-table-reports {
+              padding-left: 0;
+              padding-right: 0;
+
+              table.table.reports {
+                padding-left: 0;
+                padding-right: 0;
+
+                thead {
+                  h2 {
+                    position: relative;
+                    top: -20px;
+                    color: #FFFFFF;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .row.no-portlets.jquery-move-me.country-news-row {
+    float: none;
+    background: @color-gray-light;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    a {
+      color: @color-brand-east;
+      &:hover {
+        color: @color-accent;
+      }
+    }
+
+    h3.section-title {
+      color: @color-accent;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-bottom: 3px solid @color-accent;
+      margin-bottom: 2rem;
+      padding-right: 1rem;
+    }
+
+    .row.news-row {
+      .col-lg-4 {
+        padding-left: 0px;
+      }
+      .news-image {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+}
