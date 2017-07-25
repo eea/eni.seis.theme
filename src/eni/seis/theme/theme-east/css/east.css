@@ -257,27 +257,27 @@ label,
 #site-header {
   background-position: 100% 10%;
 }
-body:not(.template-country_view):not(.template-country_view_east) .nav > li > a:hover,
-body:not(.template-country_view):not(.template-country_view_east) .nav > li > a:focus {
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav > li > a:hover,
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav > li > a:focus {
   background: #009345 !important;
   color: white !important;
 }
-body:not(.template-country_view):not(.template-country_view_east) .nav-tabs > li > a {
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav-tabs > li > a {
   color: #009345 !important;
   border: 1px solid #ededed !important;
   border-radius: 0;
 }
-body:not(.template-country_view):not(.template-country_view_east) .nav-tabs {
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav-tabs {
   border-bottom: 3px solid #009345;
 }
-body:not(.template-country_view):not(.template-country_view_east) .nav-tabs > li.active > a,
-body:not(.template-country_view):not(.template-country_view_east) .nav-tabs > li.active > a:hover,
-body:not(.template-country_view):not(.template-country_view_east) .nav-tabs > li.active > a:focus {
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav-tabs > li.active > a,
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav-tabs > li.active > a:hover,
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav-tabs > li.active > a:focus {
   color: #FFFFFF !important;
   background: #009345 !important;
 }
-body:not(.template-country_view):not(.template-country_view_east) .nav > li.active > a,
-body:not(.template-country_view):not(.template-country_view_east) .nav > li > a:hover {
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav > li.active > a,
+body:not(.template-country_view):not(.template-country_view_east):not(.template-countries_view_east) .nav > li > a:hover {
   border-color: #009345 !important;
 }
 .nav-pills > li.active > a,
