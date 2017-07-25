@@ -4863,6 +4863,15 @@ body.template-countries_view_east div.countries-container a.country-item:hover d
 body.template-countries_view_east div.countries-container a.country-item:hover div.country-box p.country-title {
   color: #FFFFFF;
 }
+body.template-countries_view_east div.country-visits-container {
+  margin-top: 3em;
+}
+body.template-countries_view_east div.country-visits-container div.country-visits-item {
+  margin-bottom: 2em;
+}
+body.template-countries_view_east div.country-visits-container div.country-visits-item h3 {
+  font-weight: 500;
+}
 body.template-login_form .portalMessage,
 body.template-login_failed .portalMessage {
   margin-bottom: 3em;
