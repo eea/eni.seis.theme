@@ -147,3 +147,5 @@ set display communication_and_visibility
 Analog for country view and indicatiors (see Contents for folder structure)
 
 MOVED /east/communication in /east/areas-of-work/communication
+
+MAKE SURE delete customization of get_event_level script if any
