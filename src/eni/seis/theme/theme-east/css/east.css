@@ -31,6 +31,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover,
 #content-core {
   font-size: 15px;
 }
+.color-green {
+  color: #009245;
+}
 .btn-primary {
   border-color: #009245;
   color: #fff;
