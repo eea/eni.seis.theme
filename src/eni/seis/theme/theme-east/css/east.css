@@ -28,6 +28,9 @@ aside.page-aside .box.leading-large a:nth-last-of-type(1):hover,
 .section a:hover {
   color: #1f87e8;
 }
+#content-core {
+  font-size: 15px;
+}
 .btn-primary {
   border-color: #009245;
   color: #fff;
