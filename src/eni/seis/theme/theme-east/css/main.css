@@ -4833,6 +4833,10 @@ body.template-countries_view_east h1.documentFirstHeading {
 body.template-countries_view_east .text-center {
   text-align: center;
 }
+body.template-countries_view_east .text-center .eni-section-title {
+  padding-left: 1em;
+  font-weight: 500;
+}
 body.template-countries_view_east div.countries-container {
   padding-top: 2em;
 }
