@@ -4612,6 +4612,9 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   color: #1f87e8;
   border-bottom: 3px solid #1f87e8;
 }
+body.template-country_view_east .site-container {
+  display: block;
+}
 body.template-country_view_east .page-main {
   width: 100%;
 }
