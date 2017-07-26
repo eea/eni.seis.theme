@@ -4822,6 +4822,10 @@ body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row
 body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .news-image {
   margin-right: 1rem;
 }
+body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row .row.news-row .news-image img {
+  max-height: 100px;
+  max-width: 150px;
+}
 body.template-countries_view_east .page-main {
   width: 100%;
 }
