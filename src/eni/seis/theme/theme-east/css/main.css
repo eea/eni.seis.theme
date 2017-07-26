@@ -5032,6 +5032,8 @@ body.template-countries_view_east div.container-table-reports > .row .col-table-
   padding-right: 0;
 }
 body.template-countries_view_east div.container-table-reports > .row .col-table-reports table.table.reports {
+  position: relative;
+  top: -20px;
   padding-left: 0;
   padding-right: 0;
 }
