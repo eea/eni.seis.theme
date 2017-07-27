@@ -4942,6 +4942,7 @@ body.template-countries_view_east .col-nav-tabs ul.nav.nav-tabs li a .tab-descri
   font-weight: 500;
   color: #222222;
   margin-top: 10px;
+  max-width: 80px;
 }
 body.template-countries_view_east .col-nav-tabs ul.nav.nav-tabs li.active .tab-title {
   background: #009345;
@@ -4950,7 +4951,6 @@ body.template-countries_view_east .col-nav-tabs ul.nav.nav-tabs li.active .tab-t
 }
 body.template-countries_view_east .col-nav-tabs ul.nav.nav-tabs li.active .tab-description {
   color: #009345;
-  max-width: 80px;
 }
 body.template-countries_view_east .col-nav-tabs ul.nav.nav-tabs li:hover .tab-title {
   background: #1f87e8;
