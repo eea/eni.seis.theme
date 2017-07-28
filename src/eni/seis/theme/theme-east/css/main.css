@@ -4800,6 +4800,12 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
   top: -20px;
   color: #FFFFFF;
 }
+body.template-country_view_east .row.no-portlets.country-publications {
+  margin-top: 2em;
+}
+body.template-country_view_east .row.no-portlets.country-publications h2.eni-section-title {
+  font-weight: 500;
+}
 body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row {
   float: none;
   background: #ededed;
