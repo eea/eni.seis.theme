@@ -4743,7 +4743,7 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content t
   border-bottom: 0px;
   border-right: 1px solid #A3A3A3;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th .reports-number {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th .indicators-number {
   text-align: center;
   font-size: 40px;
   margin-bottom: 0 !important;
@@ -4779,23 +4779,23 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content t
   margin-bottom: 1rem;
   color: #FFFFFF;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports {
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row {
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports {
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports table.table.reports {
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators table.table.indicators {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-reports > .row .col-table-reports table.table.reports thead h2 {
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators table.table.indicators thead h2 {
   position: relative;
   top: -20px;
   color: #FFFFFF;
