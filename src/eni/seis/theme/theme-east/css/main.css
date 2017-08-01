@@ -4926,6 +4926,72 @@ body.template-countries_view_east .text-center .eni-section-title {
   padding-left: 1em;
   font-weight: 500;
 }
+body.template-countries_view_east table.unece-environmental-indicators-table {
+  margin-top: 1em;
+  font-weight: 500;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table thead {
+  border: 1px solid #222222;
+  background: #FFFFFF;
+  color: #222222;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table thead th:first-of-type {
+  font-weight: 400;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table th,
+body.template-countries_view_east table.unece-environmental-indicators-table td {
+  padding: 2px 5px;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table th:first-of-type,
+body.template-countries_view_east table.unece-environmental-indicators-table td:first-of-type {
+  border-left: 1px solid #222222;
+  border-right: 2px solid #222222;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table th:last-of-type,
+body.template-countries_view_east table.unece-environmental-indicators-table td:last-of-type {
+  border-right: 1px solid #222222;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table tr.total {
+  font-weight: 400;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table tr.total td {
+  border-top: 2px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table tr.spacer {
+  height: 1em;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table tr.spacer td {
+  border: none;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table tr.footer td {
+  text-align: center;
+  border-right: none;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table tr.footer td:first-of-type {
+  border: 1px solid #e1eeda;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table td.percentage-0 {
+  background: #FFFFFF;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table td.percentage-25 {
+  background: #e1eeda;
+  border-bottom: 1px solid #e1eeda;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table td.percentage-50 {
+  background: #a9d08f;
+  border-bottom: 1px solid #a9d08f;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table td.percentage-75 {
+  background: #538234;
+  color: #FFFFFF;
+  border-bottom: 1px solid #538234;
+}
+body.template-countries_view_east table.unece-environmental-indicators-table td.percentage-100 {
+  background: #375523;
+  color: #FFFFFF;
+  border-bottom: 1px solid #375523;
+}
 body.template-countries_view_east div.countries-container {
   padding-top: 2em;
 }

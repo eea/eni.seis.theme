@@ -17,6 +17,85 @@ body.template-countries_view_east {
     }
   }
 
+  table.unece-environmental-indicators-table {
+    margin-top: 1em;
+    font-weight: 500;
+
+    thead {
+      border: 1px solid @color-gray-dark;
+      background: #FFFFFF;
+      color: @color-gray-dark;
+      th:first-of-type {
+        font-weight: 400;
+      }
+    }
+
+    th, td {
+      padding: 2px 5px;
+      &:first-of-type {
+        border-left: 1px solid @color-gray-dark;
+        border-right: 2px solid @color-gray-dark;
+      }
+      &:last-of-type {
+        border-right: 1px solid @color-gray-dark;
+      }
+    }
+
+    tr {
+      &.total {
+        font-weight: 400;
+        td {
+          border-top: 2px solid @color-gray-dark;
+          border-bottom: 1px solid @color-gray-dark;
+        }
+      }
+
+      &.spacer {
+        height: 1em;
+        td {
+          border: none;
+        }
+     }
+
+      &.footer {
+        td {
+          text-align: center;
+          border-right: none;
+
+          &:first-of-type {
+            border: 1px solid @color-stats-25;
+          }
+        }
+      }
+    }
+
+    td.percentage-0 {
+      background: @color-stats-0;
+    }
+
+    td.percentage-25 {
+      background: @color-stats-25;
+      border-bottom: 1px solid @color-stats-25;
+    }
+
+    td.percentage-50 {
+      background: @color-stats-50;
+      border-bottom: 1px solid @color-stats-50;
+    }
+
+    td.percentage-75 {
+      background: @color-stats-75;
+      color: #FFFFFF;
+      border-bottom: 1px solid @color-stats-75;
+    }
+
+    td.percentage-100 {
+      background: @color-stats-100;
+      color: #FFFFFF;
+      border-bottom: 1px solid @color-stats-100;
+    }
+  }
+
   div.countries-container {
     padding-top: 2em;
 
