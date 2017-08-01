@@ -237,7 +237,20 @@ body.template-country_view_east {
   }
 
   .row.indicators-row {
-     table.unece-environmental-indicators-table {
+    .col-lg-4 {
+      padding-right: 0;
+    }
+
+    table.unece-environmental-indicators-table {
+      margin-top: 1em;
+      thead {
+        border: 1px solid @color-gray-dark;
+      }
+
+      th, td {
+        padding: 2px 5px;
+      }
+
       td.percentage-0 {
         background: #FFFFFF;
       }

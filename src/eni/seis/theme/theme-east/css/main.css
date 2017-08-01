@@ -4800,6 +4800,19 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
   top: -20px;
   color: #FFFFFF;
 }
+body.template-country_view_east .row.indicators-row .col-lg-4 {
+  padding-right: 0;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table {
+  margin-top: 1em;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table thead {
+  border: 1px solid #222222;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table th,
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td {
+  padding: 2px 5px;
+}
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-0 {
   background: #FFFFFF;
 }
