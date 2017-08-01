@@ -4843,6 +4843,7 @@ body.template-country_view_east .row.indicators-row table.unece-environmental-in
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.footer td {
   text-align: center;
+  border: none;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.footer td:first-of-type {
   border: 2px solid #e1eeda;
@@ -4957,27 +4958,27 @@ body.template-countries_view_east div.country-visits-container div.country-visit
 body.template-countries_view_east div.environmental-indicators-container img {
   max-width: 100%;
 }
-body.template-countries_view_east .row.container-table-reports .nav.base > li > a:hover,
-body.template-countries_view_east .row.container-table-reports .nav.base > li > a:focus {
+body.template-countries_view_east .row.container-table-indicators .nav.base > li > a:hover,
+body.template-countries_view_east .row.container-table-indicators .nav.base > li > a:focus {
   background: #009345 !important;
   color: white !important;
 }
-body.template-countries_view_east .row.container-table-reports .nav-tabs.base > li > a {
+body.template-countries_view_east .row.container-table-indicators .nav-tabs.base > li > a {
   color: #009345 !important;
   border: 1px solid #ededed !important;
   border-radius: 0;
 }
-body.template-countries_view_east .row.container-table-reports .nav-tabs.base {
+body.template-countries_view_east .row.container-table-indicators .nav-tabs.base {
   border-bottom: 3px solid #009345;
 }
-body.template-countries_view_east .row.container-table-reports .nav-tabs.base > li.active > a,
-body.template-countries_view_east .row.container-table-reports .nav-tabs.base > li.active > a:hover,
-body.template-countries_view_east .row.container-table-reports .nav-tabs.base > li.active > a:focus {
+body.template-countries_view_east .row.container-table-indicators .nav-tabs.base > li.active > a,
+body.template-countries_view_east .row.container-table-indicators .nav-tabs.base > li.active > a:hover,
+body.template-countries_view_east .row.container-table-indicators .nav-tabs.base > li.active > a:focus {
   color: #FFFFFF !important;
   background: #009345 !important;
 }
-body.template-countries_view_east .row.container-table-reports .nav.base > li.active > a,
-body.template-countries_view_east .row.container-table-reports .nav.base > li > a:hover {
+body.template-countries_view_east .row.container-table-indicators .nav.base > li.active > a,
+body.template-countries_view_east .row.container-table-indicators .nav.base > li > a:hover {
   border-color: #009345 !important;
 }
 body.template-countries_view_east .col-nav-tabs {
@@ -5053,7 +5054,7 @@ body.template-countries_view_east table.table-responsive.table-hover th {
   border-bottom: 0px;
   border-right: 1px solid #A3A3A3;
 }
-body.template-countries_view_east table.table-responsive.table-hover th .reports-number {
+body.template-countries_view_east table.table-responsive.table-hover th .indicators-number {
   text-align: center;
   font-size: 40px;
   margin-bottom: 0 !important;
@@ -5089,25 +5090,25 @@ body.template-countries_view_east table.environ-reports tr > th > h2 {
   margin-bottom: 1rem;
   color: #FFFFFF;
 }
-body.template-countries_view_east div.container-table-reports {
+body.template-countries_view_east div.container-table-indicators {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-countries_view_east div.container-table-reports > .row {
+body.template-countries_view_east div.container-table-indicators > .row {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-countries_view_east div.container-table-reports > .row .col-table-reports {
+body.template-countries_view_east div.container-table-indicators > .row .col-table-indicators {
   padding-left: 0;
   padding-right: 0;
 }
-body.template-countries_view_east div.container-table-reports > .row .col-table-reports table.table.reports {
+body.template-countries_view_east div.container-table-indicators > .row .col-table-indicators table.table.indicators {
   position: relative;
   top: -20px;
   padding-left: 0;
   padding-right: 0;
 }
-body.template-countries_view_east div.container-table-reports > .row .col-table-reports table.table.reports thead h2 {
+body.template-countries_view_east div.container-table-indicators > .row .col-table-indicators table.table.indicators thead h2 {
   position: relative;
   top: -20px;
   color: #FFFFFF;
