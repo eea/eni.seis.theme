@@ -4808,10 +4808,34 @@ body.template-country_view_east .row.indicators-row table.unece-environmental-in
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table thead {
   border: 1px solid #222222;
+  background: #FFFFFF;
+  color: #222222;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table th,
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td {
   padding: 2px 5px;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table th:first-of-type,
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td:first-of-type {
+  border-left: 1px solid #222222;
+  border-right: 2px solid #222222;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table th:last-of-type,
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td:last-of-type {
+  border-right: 1px solid #222222;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.total td {
+  border-top: 2px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.spacer {
+  height: 1em;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.spacer td {
+  border: none;
+}
+body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.footer td {
+  border: none;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-0 {
   background: #FFFFFF;

@@ -245,10 +245,39 @@ body.template-country_view_east {
       margin-top: 1em;
       thead {
         border: 1px solid @color-gray-dark;
+        background: #FFFFFF;
+        color: @color-gray-dark;
       }
 
       th, td {
         padding: 2px 5px;
+        &:first-of-type {
+          border-left: 1px solid @color-gray-dark;
+          border-right: 2px solid @color-gray-dark;
+        }
+        &:last-of-type {
+          border-right: 1px solid @color-gray-dark;
+        }
+      }
+
+      tr.total {
+        td {
+          border-top: 2px solid @color-gray-dark;
+          border-bottom: 1px solid @color-gray-dark;
+        }
+      }
+
+      tr.spacer {
+        height: 1em;
+        td {
+          border: none;
+        }
+      }
+
+      tr.footer {
+        td {
+          border: none;
+        }
       }
 
       td.percentage-0 {
