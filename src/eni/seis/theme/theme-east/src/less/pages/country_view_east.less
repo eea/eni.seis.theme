@@ -228,6 +228,13 @@ body.template-country_view_east {
                     color: #FFFFFF;
                   }
                 }
+
+                tr.even {
+                  background: @color-gray-lighter;
+                  &:hover {
+                    background: @color-accent;
+                  }
+                }
               }
             }
           }
@@ -279,15 +286,15 @@ body.template-country_view_east {
           td {
             border: none;
           }
-        }
+       }
 
         &.footer {
           td {
             text-align: center;
-            border: none;
+            border-right: none;
 
             &:first-of-type {
-              border: 2px solid #e1eeda;
+              border: 1px solid #e1eeda;
             }
           }
         }
@@ -299,23 +306,28 @@ body.template-country_view_east {
 
       td.percentage-25 {
         background: #e1eeda;
+        border-bottom: 1px solid #e1eeda;
       }
 
       td.percentage-50 {
         background: #a9d08f;
+        border-bottom: 1px solid #a9d08f;
       }
 
       td.percentage-75 {
         background: #538234;
         color: #FFFFFF;
+        border-bottom: 1px solid #538234;
       }
 
       td.percentage-100 {
         background: #375523;
         color: #FFFFFF;
+        border-bottom: 1px solid #375523;
       }
     }
   }
+  // TODO define colors as vars
 
   .row.no-portlets.country-publications {
     margin-top: 2em;

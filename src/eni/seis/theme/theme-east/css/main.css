@@ -4800,6 +4800,12 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
   top: -20px;
   color: #FFFFFF;
 }
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators table.table.indicators tr.even {
+  background: #F8F8F8;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators table.table.indicators tr.even:hover {
+  background: #1f87e8;
+}
 body.template-country_view_east .row.indicators-row .col-lg-4 {
   padding-right: 0;
 }
@@ -4843,27 +4849,31 @@ body.template-country_view_east .row.indicators-row table.unece-environmental-in
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.footer td {
   text-align: center;
-  border: none;
+  border-right: none;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table tr.footer td:first-of-type {
-  border: 2px solid #e1eeda;
+  border: 1px solid #e1eeda;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-0 {
   background: #FFFFFF;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-25 {
   background: #e1eeda;
+  border-bottom: 1px solid #e1eeda;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-50 {
   background: #a9d08f;
+  border-bottom: 1px solid #a9d08f;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-75 {
   background: #538234;
   color: #FFFFFF;
+  border-bottom: 1px solid #538234;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table td.percentage-100 {
   background: #375523;
   color: #FFFFFF;
+  border-bottom: 1px solid #375523;
 }
 body.template-country_view_east .row.no-portlets.country-publications {
   margin-top: 2em;
@@ -5112,6 +5122,12 @@ body.template-countries_view_east div.container-table-indicators > .row .col-tab
   position: relative;
   top: -20px;
   color: #FFFFFF;
+}
+body.template-countries_view_east div.container-table-indicators > .row .col-table-indicators table.table.indicators tr.even {
+  background: #F8F8F8;
+}
+body.template-countries_view_east div.container-table-indicators > .row .col-table-indicators table.table.indicators tr.even:hover {
+  background: #1f87e8;
 }
 body.template-login_form .portalMessage,
 body.template-login_failed .portalMessage {
