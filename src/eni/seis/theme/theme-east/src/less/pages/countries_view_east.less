@@ -17,6 +17,49 @@ body.template-countries_view_east {
     }
   }
 
+  table.environmental-assesment-reports-table {
+    margin-top: 1em;
+    font-weight: 500;
+    margin-bottom: 4em !important;
+
+    thead {
+      border: 1px solid @color-gray-dark;
+      background: #FFFFFF;
+      color: @color-gray-dark;
+      th:first-of-type {
+        font-weight: 400;
+      }
+    }
+
+    th, td {
+      padding: 2px 5px;
+      border-right: 1px solid @color-gray-dark;
+
+      &:first-of-type {
+        border-left: 1px solid @color-gray-dark;
+        border-right: 2px solid @color-gray-dark;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid @color-gray-dark;
+    }
+
+    td.report-no, .td.report-no-data {
+      background: @color-stats-0;
+    }
+
+    td.report-yes {
+      background: @color-stats-50;
+    }
+
+    td.report-yes-annual {
+      background: @color-stats-100;
+      color: #FFFFFF;
+    }
+  }
+
+
   table.unece-environmental-indicators-table {
     margin-top: 1em;
     font-weight: 500;

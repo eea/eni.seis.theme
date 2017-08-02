@@ -4926,6 +4926,43 @@ body.template-countries_view_east .text-center .eni-section-title {
   padding-left: 1em;
   font-weight: 500;
 }
+body.template-countries_view_east table.environmental-assesment-reports-table {
+  margin-top: 1em;
+  font-weight: 500;
+  margin-bottom: 4em !important;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table thead {
+  border: 1px solid #222222;
+  background: #FFFFFF;
+  color: #222222;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table thead th:first-of-type {
+  font-weight: 400;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table th,
+body.template-countries_view_east table.environmental-assesment-reports-table td {
+  padding: 2px 5px;
+  border-right: 1px solid #222222;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table th:first-of-type,
+body.template-countries_view_east table.environmental-assesment-reports-table td:first-of-type {
+  border-left: 1px solid #222222;
+  border-right: 2px solid #222222;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table tr {
+  border-bottom: 1px solid #222222;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table td.report-no,
+body.template-countries_view_east table.environmental-assesment-reports-table .td.report-no-data {
+  background: #FFFFFF;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table td.report-yes {
+  background: #a9d08f;
+}
+body.template-countries_view_east table.environmental-assesment-reports-table td.report-yes-annual {
+  background: #375523;
+  color: #FFFFFF;
+}
 body.template-countries_view_east table.unece-environmental-indicators-table {
   margin-top: 1em;
   font-weight: 500;
