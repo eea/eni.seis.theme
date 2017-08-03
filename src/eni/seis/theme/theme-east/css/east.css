@@ -546,4 +546,7 @@ aside.page-aside .box.portlet.portletEvents img {
   margin-right: 5px;
   height: auto;
 }
+table#listing-table tr.draggable td:nth-child(3) img {
+  display: none;
+}
 /*# sourceMappingURL=./source.css.map */
