@@ -4779,6 +4779,12 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content t
   margin-bottom: 1rem;
   color: #FFFFFF;
 }
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr.even {
+  background: #F8F8F8;
+}
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr.even:hover {
+  background: #1f87e8;
+}
 body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators {
   padding-left: 0;
   padding-right: 0;
