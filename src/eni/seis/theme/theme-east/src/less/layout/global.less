@@ -284,10 +284,15 @@ aside.page-aside .box.leading-large {}
   .contenttype-image,
   .contenttype-link,
   .contenttype-news-item,
-  .contenttype-eea-meeting {
+  .contenttype-eea-meeting,
+  .contenttype-report,
+  .contenttype-indicator {
     background: none!important;
     padding: 0;
     padding-left: 0px!important;
+    img {
+      display: none;
+    }
   }
 }
 
@@ -349,6 +354,19 @@ a.contenttype-eea-meeting:before {
   content: "\f133";
   margin-right: .5rem;
 }
+
+.contenttype-indicator span:before,
+a.contenttype-indicator:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+
+.contenttype-report span:before,
+a.contenttype-report:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+
 
 .meeting-items table img {
    display: none; // Get rid of default icons. Hope you don't want imgs here.

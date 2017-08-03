@@ -2496,10 +2496,25 @@ aside.page-aside {
 .userrole-authenticated .contenttype-image,
 .userrole-authenticated .contenttype-link,
 .userrole-authenticated .contenttype-news-item,
-.userrole-authenticated .contenttype-eea-meeting {
+.userrole-authenticated .contenttype-eea-meeting,
+.userrole-authenticated .contenttype-report,
+.userrole-authenticated .contenttype-indicator {
   background: none!important;
   padding: 0;
   padding-left: 0px!important;
+}
+.userrole-authenticated .contenttype-folder img,
+.userrole-authenticated .contenttype-document img,
+.userrole-authenticated .contenttype-event img,
+.userrole-authenticated .contenttype-collection img,
+.userrole-authenticated .contenttype-file img,
+.userrole-authenticated .contenttype-image img,
+.userrole-authenticated .contenttype-link img,
+.userrole-authenticated .contenttype-news-item img,
+.userrole-authenticated .contenttype-eea-meeting img,
+.userrole-authenticated .contenttype-report img,
+.userrole-authenticated .contenttype-indicator img {
+  display: none;
 }
 .contenttype-eea-meeting {
   padding-left: 20px;
@@ -2548,6 +2563,16 @@ a.contenttype-link:before {
 .contenttype-eea-meeting span:before,
 a.contenttype-eea-meeting:before {
   content: "\f133";
+  margin-right: .5rem;
+}
+.contenttype-indicator span:before,
+a.contenttype-indicator:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-report span:before,
+a.contenttype-report:before {
+  content: "\f016";
   margin-right: .5rem;
 }
 .meeting-items table img {
