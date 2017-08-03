@@ -156,3 +156,4 @@ countries_view_east - analog to other displays, add it to Folder content type,
 set for Countries section.
 
 East countries, for each one: /upgrade_generate_indicators_east
+East countries, for each one: /upgrade_generate_reports_east
