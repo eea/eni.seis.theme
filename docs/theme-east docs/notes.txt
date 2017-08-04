@@ -157,3 +157,6 @@ set for Countries section.
 
 East countries, for each one: /upgrade_generate_indicators_east
 East countries, for each one: /upgrade_generate_reports_east
+
+Fix broken displays:
+/selectViewTemplate?templateId=folder_listing
