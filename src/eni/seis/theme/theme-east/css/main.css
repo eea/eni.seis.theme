@@ -3630,6 +3630,12 @@ ul.configlets {
   padding: 5px 8px 3px 8px;
   font-weight: 500;
 }
+.template-homepage .site-banner .project-description h3 span.reverse {
+  background: #FFFFFF;
+  color: #009345;
+  padding: 5px 8px 3px 8px;
+  font-weight: 500;
+}
 .template-homepage .site-banner .project-description p {
   padding-top: 20px;
   color: #FFFFFF;
