@@ -549,4 +549,7 @@ aside.page-aside .box.portlet.portletEvents img {
 table#listing-table tr.draggable td:nth-child(3) img {
   display: none;
 }
+.knowledge-resources ul li span > img {
+  max-width: 25px !important;
+}
 /*# sourceMappingURL=./source.css.map */

@@ -159,4 +159,5 @@ East countries, for each one: /upgrade_generate_reports_east
 Fix broken displays:
 /selectViewTemplate?templateId=folder_listing
 
-TODO: get rid of https://eni-seis.eionet.europa.eu/east/temp_fixes.css/
+Use for quick fixes: https://eni-seis.eionet.europa.eu/east/temp_fixes.css/
+Don't forget to update less files in theme and clean temp fixes.
