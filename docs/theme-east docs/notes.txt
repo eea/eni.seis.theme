@@ -161,3 +161,7 @@ Fix broken displays:
 
 Use for quick fixes: https://eni-seis.eionet.europa.eu/east/temp_fixes.css/
 Don't forget to update less files in theme and clean temp fixes.
+
+https://eni-seis.eionet.europa.eu/east/governance/project-reports/inception
+Example how to set a h2 to look like a page title.
+div.text-center > h2.documentFirstHeading
