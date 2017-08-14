@@ -3519,7 +3519,7 @@ body.template-homepage {
   padding-right: 5px;
 }
 .container-fluid.header-top {
-  overflow: overlay;
+  overflow: auto;
   background: #F8F8F8 !important;
   padding: 0.5rem;
   margin-bottom: 4rem;
