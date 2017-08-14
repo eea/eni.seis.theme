@@ -165,3 +165,6 @@ Don't forget to update less files in theme and clean temp fixes.
 https://eni-seis.eionet.europa.eu/east/governance/project-reports/inception
 Example how to set a h2 to look like a page title.
 div.text-center > h2.documentFirstHeading
+
+Areas of work: root, use areas-of-work_root as display (add for Folder view
+methods).
