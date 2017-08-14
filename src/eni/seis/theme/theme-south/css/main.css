@@ -2863,6 +2863,10 @@ span + .error {
   color: #ff6b01 !important;
   font-weight: 600;
 }
+.navbar-body #portal-globalnav li .submenu li:after,
+.navbar-body #portal-globalnav li .submenu li:before {
+  display: none;
+}
 @media (min-width: 960px) and (max-width: 1390px) {
   #navbar .navbar-credits {
     float: left;
