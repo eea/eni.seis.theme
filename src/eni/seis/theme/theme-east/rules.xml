@@ -10,6 +10,7 @@
 
   <xi:include href="rules/admin.xml" />
   <xi:include href="rules/homepage.xml" />
+  <xi:include href="rules/areas-of-work.xml" />
 
   <!-- Folder view -->
   <rules css:if-content=".template-folder_listing.portaltype-folder">

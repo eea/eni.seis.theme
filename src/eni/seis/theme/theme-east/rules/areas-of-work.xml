@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Custom Areas of work -->
+  <rules css:if-content="body.template-areas-of-work_root">
+
+    <theme href="page.html" />
+    <!-- TODO: Create aow.html, hbs? to be used instead of page.html -->
+
+  <replace css:theme="[data-diazo='areas-of-work']"
+             href="homepage-section-aow-slider" method="document"
+             css:content="#content-core" />
+
+  </rules>
+
+</rules>
