@@ -4913,7 +4913,14 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
 body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators table.table.indicators tr.even:hover {
   background: #1f87e8;
 }
+body.template-country_view_east .row.indicators-row .col-lg-8 {
+  padding-left: 0px;
+}
+body.template-country_view_east .row.indicators-row .col-lg-8 table {
+  margin-top: 1em;
+}
 body.template-country_view_east .row.indicators-row .col-lg-4 {
+  padding-left: 0px;
   padding-right: 0;
 }
 body.template-country_view_east .row.indicators-row table.unece-environmental-indicators-table {
