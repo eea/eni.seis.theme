@@ -1468,10 +1468,10 @@ ul.tabmenu-tabs {
   font-weight: bolder;
   color: #222;
 }
-.tab-content td span {
+.tab-content table:not(.plain) td span {
   color: inherit!important;
 }
-.tab-content td a {
+.tab-content table:not(.plain) td a {
   color: inherit!important;
 }
 .dropdown {
