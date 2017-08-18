@@ -4404,6 +4404,72 @@ body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li a {
 body.template-areas-of-work_data .row.no-portlets .knowledge-resources ul li a:hover {
   color: #1f87e8;
 }
+body.template-areas-of-work_root .container.site-container {
+  margin-bottom: -4rem;
+  min-height: 4rem;
+}
+body.template-areas-of-work_root .container-fluid.moved-aow-slider {
+  background: #F8F8F8;
+}
+body.template-areas-of-work_root .container-fluid.moved-aow-slider .row {
+  float: none;
+}
+body.template-areas-of-work_root .row.no-portlets.jquery-move-me {
+  padding-bottom: 2rem;
+  float: none;
+}
+body.template-areas-of-work_root .row.no-portlets.jquery-move-me .row {
+  float: none;
+}
+body.template-areas-of-work_root .page-main {
+  width: 100%;
+}
+body.template-areas-of-work_root .data-section-aow-slider .row {
+  background: #F8F8F8;
+}
+body.template-areas-of-work_root .data-section-aow-slider .aow-slide .img-circle-cropper {
+  border-color: #F8F8F8;
+  box-shadow: 0 0 0 3px #F8F8F8;
+}
+body.template-areas-of-work_root .data-section-aow-slider .aow-slide:hover .img-circle-cropper {
+  border-color: #FFFFFF;
+  box-shadow: 0 0 0 3px #1f87e8;
+}
+body.template-areas-of-work_root #parent-fieldname-description {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body.template-areas-of-work_root .row.no-portlets h3 {
+  text-transform: uppercase;
+  color: #1f87e8;
+  border-bottom: 3px solid #08a8dc;
+  display: inline-block;
+  padding-right: 1em;
+}
+body.template-areas-of-work_root .row.no-portlets a.more-items {
+  color: #009345;
+}
+body.template-areas-of-work_root .row.no-portlets a.more-items:hover {
+  color: #1f87e8;
+}
+body.template-areas-of-work_root .row.no-portlets .knowledge-resources ul {
+  display: block;
+  margin-left: 0 !important;
+  list-style-type: none;
+  list-style: none;
+}
+body.template-areas-of-work_root .row.no-portlets .knowledge-resources ul li {
+  display: block;
+  list-style: none;
+  padding: 0.5em 0 0.5em 0;
+}
+body.template-areas-of-work_root .row.no-portlets .knowledge-resources ul li a {
+  color: #009345;
+}
+body.template-areas-of-work_root .row.no-portlets .knowledge-resources ul li a:hover {
+  color: #1f87e8;
+}
 body.template-communication_and_visibility .jquery-move-me {
   overflow: overlay;
   margin-bottom: 1rem;
