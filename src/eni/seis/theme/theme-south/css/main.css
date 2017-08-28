@@ -3557,17 +3557,17 @@ ul.configlets {
 }
 @media (min-width: 1600px) {
   .template-homepage .site-banner .embed-container {
-    top: -210px;
+    top: -190px;
   }
 }
 @media (min-width: 1360px) and (max-width: 1600px) {
   .template-homepage .site-banner .embed-container {
-    top: -150px;
+    top: -130px;
   }
 }
 @media (min-width: 1100px) and (max-width: 1360px) {
   .template-homepage .site-banner .embed-container {
-    top: -100px;
+    top: -80px;
   }
 }
 .template-homepage .site-banner .project-description {
