@@ -4313,40 +4313,40 @@ body.template-country_view div.icon {
   display: inline-block;
 }
 body.template-country_view div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_normal.svg);
+  background-image: url(../../countries_waste_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-waste:hover div.icon-waste {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_waste_hover.svg);
+  background-image: url(../../countries_waste_hover.svg);
 }
 body.template-country_view div.icon-water {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_water_normal.svg);
+  background-image: url(../../countries_water_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-water:hover div.icon-water {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_water_hover.svg);
+  background-image: url(../../countries_water_hover.svg);
 }
 body.template-country_view div.icon-emissions {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_emissions_normal.svg);
+  background-image: url(../../countries_emissions_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-emissions:hover div.icon-emissions {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_emissions_hover.svg);
+  background-image: url(../../countries_emissions_hover.svg);
 }
 body.template-country_view div.icon-nutrients {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_nutrients_normal.svg);
+  background-image: url(../../countries_nutrients_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-nutrients:hover div.icon-nutrients {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_nutrients_hover.svg);
+  background-image: url(../../countries_nutrients_hover.svg);
 }
 body.template-country_view div.icon-hazardous {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_hazardous_normal.svg);
+  background-image: url(../../countries_hazardous_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-hazardous:hover div.icon-hazardous {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_hazardous_hover.svg);
+  background-image: url(../../countries_hazardous_hover.svg);
 }
 body.template-country_view div.icon-litter {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_litter_normal.svg);
+  background-image: url(../../countries_litter_normal.svg);
 }
 body.template-country_view li:not(.active) a.icon-litter:hover div.icon-litter {
-  background-image: url(++theme++eni.seis.theme.south/img/countries_litter_hover.svg);
+  background-image: url(../../countries_litter_hover.svg);
 }
 body.template-country_view .nav.nav-tabs > li {
   height: auto;
