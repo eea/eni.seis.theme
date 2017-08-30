@@ -312,10 +312,10 @@ body:not(.template-country_view) .nav > li > a:hover {
   color: #FFFFFF !important;
 }
 #project-related-events .table-hover tr:hover td a {
-  color: #FFFFFF !important;
+  color: #FFFFFF;
 }
 #project-related-events .table-hover tr td a {
-  color: #ff6b01 !important;
+  color: #ff6b01;
 }
 #project-related-events .table-hover td.event-link {
   min-width: 140px;
