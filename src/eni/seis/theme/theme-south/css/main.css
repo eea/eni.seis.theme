@@ -4242,6 +4242,12 @@ body.template-country_view h1.documentFirstHeading {
 body.template-country_view .country-left-column .portletNews {
   margin-top: 4rem;
 }
+body.template-country_view .country-left-column img.flag {
+  height: 48px;
+  width: auto;
+  position: relative;
+  top: -3px;
+}
 body.template-country_view .country-left-column .box.leading-large.portlet .portletItemDetails {
   color: #555;
 }

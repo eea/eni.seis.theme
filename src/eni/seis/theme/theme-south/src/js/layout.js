@@ -162,6 +162,7 @@ $(document).ready(function() {
   if($(body).hasClass("template-country_view")) {
     $("#plone-document-byline").prependTo(".country-left-column");
     $("h1.documentFirstHeading").prependTo(".country-left-column");
+    $("img.flag").prependTo("h1.documentFirstHeading");
   }
 
   $(".documentFirstHeading").each(
