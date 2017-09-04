@@ -174,8 +174,13 @@
     <after
       css:content="#content script"
       css:theme-children="html body"
-    />
-    <drop css:content="#content script" />
+      />
+
+    <rules css:if-not-content=".subsection-data-and-statistics">
+      <!-- Remove scripts in content.
+           Exception: /south/areas-of-work/data-and-statistics -->
+      <drop css:content="#content script" />
+    </rules>
 
     <!-- LOGO -->
     <copy
