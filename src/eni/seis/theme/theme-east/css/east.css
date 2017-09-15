@@ -372,30 +372,30 @@ body:not(.template-country_view):not(.template-country_view_east):not(.template-
 .event-title {
   color: #009345;
 }
-legend {
+.tab-content legend {
   float: right;
   position: relative;
   top: -55px;
 }
-legend .fa.fa-circle.level-regional,
-legend .fa.fa-circle.level-national,
-legend .fa.fa-circle.other {
+.tab-content legend .fa.fa-circle.level-regional,
+.tab-content legend .fa.fa-circle.level-national,
+.tab-content legend .fa.fa-circle.other {
   font-size: 2em;
 }
-legend span.level-national,
-legend span.level-regional {
+.tab-content legend span.level-national,
+.tab-content legend span.level-regional {
   margin-right: 20px;
 }
-legend span.level-national span,
-legend span.level-regional span,
-legend span.other span {
+.tab-content legend span.level-national span,
+.tab-content legend span.level-regional span,
+.tab-content legend span.other span {
   position: relative;
   top: -4px;
 }
-legend .fa:before {
+.tab-content legend .fa:before {
   margin-right: .5rem;
 }
-legend .level-national {
+.tab-content legend .level-national {
   padding-left: 0;
 }
 #site-footer .contact a {
