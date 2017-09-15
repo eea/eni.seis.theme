@@ -2497,6 +2497,7 @@ aside.page-aside {
 .userrole-authenticated .contenttype-link,
 .userrole-authenticated .contenttype-news-item,
 .userrole-authenticated .contenttype-eea-meeting,
+.userrole-authenticated .contenttype-nfp,
 .userrole-authenticated .contenttype-report,
 .userrole-authenticated .contenttype-indicator {
   background: none!important;
@@ -2512,6 +2513,7 @@ aside.page-aside {
 .userrole-authenticated .contenttype-link img,
 .userrole-authenticated .contenttype-news-item img,
 .userrole-authenticated .contenttype-eea-meeting img,
+.userrole-authenticated .contenttype-nfp img,
 .userrole-authenticated .contenttype-report img,
 .userrole-authenticated .contenttype-indicator img {
   display: none;
@@ -2567,6 +2569,11 @@ a.contenttype-eea-meeting:before {
 }
 .contenttype-indicator span:before,
 a.contenttype-indicator:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-nfp span:before,
+a.contenttype-nfp:before {
   content: "\f016";
   margin-right: .5rem;
 }
