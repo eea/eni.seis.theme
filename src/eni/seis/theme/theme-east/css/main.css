@@ -4843,6 +4843,10 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
 body.template-country_view_east .row.no-portlets .country-content .tab-content .col-nav-tabs ul.nav.nav-tabs li:hover .tab-description {
   color: #1f87e8;
 }
+body.template-country_view_east .row.no-portlets .country-content .tab-content .nfps-container table thead {
+  background: #FFFFFF;
+  color: #222222;
+}
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover,
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover {
   background: #1f87e8;
