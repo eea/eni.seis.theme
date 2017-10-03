@@ -6,8 +6,6 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
 
-  <!-- <notheme css:if-not-content=".userrole-anonymous" /> -->
-
   <xi:include href="rules/admin.xml" />
   <xi:include href="rules/homepage.xml" />
 
@@ -355,5 +353,9 @@
 
   <!-- Google Analytics -->
   <after theme-children="/html/body" content="//*[@id='portal-footer-wrapper']/div/script" />
+
+  <!-- Keep original theme for: -->
+  <!-- @@migrate-to-emaillogin -->
+  <notheme css:if-content="body.template-migrate-to-emaillogin" />
 
 </rules>
