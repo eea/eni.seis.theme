@@ -2582,6 +2582,16 @@ a.contenttype-report:before {
   content: "\f016";
   margin-right: .5rem;
 }
+.contenttype-wildcardaudio span:before,
+a.contenttype-wildcardaudio:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-wildcardvideo span:before,
+a.contenttype-wildcardvideo:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
 .meeting-items table img {
   display: none;
 }
