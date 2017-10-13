@@ -4440,6 +4440,9 @@ body.template-country_view .tab-content .container {
 body.template-country_view .tab-content .container img {
   width: 100%;
 }
+body.template-country_view .tab-content .container table img {
+  width: auto;
+}
 body.template-country_view .tab-content .container .country-subsection-listing div {
   padding-bottom: 50px;
 }
