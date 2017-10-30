@@ -5064,6 +5064,9 @@ body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row
 body.template-nfps_listing_view div.nfps-container table tbody td.country-title {
   background: #FFFFFF;
 }
+body.template-countries_view_east.userrole-authenticated .container.site-container {
+  width: 100%;
+}
 body.template-countries_view_east .page-main {
   width: 100%;
 }
