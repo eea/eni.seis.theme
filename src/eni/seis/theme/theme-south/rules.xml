@@ -357,5 +357,7 @@
   <!-- Keep original theme for: -->
   <!-- @@migrate-to-emaillogin -->
   <notheme css:if-content="body.template-migrate-to-emaillogin" />
+  <!-- @@manage-content-type-portlets?key=Folder etc -->
+  <notheme css:if-content="body.template-manage-content-type-portlets" />
 
 </rules>
