@@ -544,4 +544,7 @@ aside.page-aside .box.portlet.portletEvents img {
 .icons-on .contenttype-folder {
   background: none;
 }
+#content-core table.invisible {
+  visibility: visible;
+}
 /*# sourceMappingURL=./source.css.map */
