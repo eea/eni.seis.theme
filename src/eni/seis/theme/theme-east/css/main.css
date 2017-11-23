@@ -2490,12 +2490,15 @@ aside.page-aside {
 }
 .userrole-authenticated .contenttype-folder,
 .userrole-authenticated .contenttype-document,
+.userrole-authenticated .contenttype-folderish-document,
 .userrole-authenticated .contenttype-event,
+.userrole-authenticated .contenttype-folderish-event,
 .userrole-authenticated .contenttype-collection,
 .userrole-authenticated .contenttype-file,
 .userrole-authenticated .contenttype-image,
 .userrole-authenticated .contenttype-link,
 .userrole-authenticated .contenttype-news-item,
+.userrole-authenticated .contenttype-folderish-news-item,
 .userrole-authenticated .contenttype-eea-meeting,
 .userrole-authenticated .contenttype-nfp,
 .userrole-authenticated .contenttype-report,
@@ -2506,12 +2509,15 @@ aside.page-aside {
 }
 .userrole-authenticated .contenttype-folder img,
 .userrole-authenticated .contenttype-document img,
+.userrole-authenticated .contenttype-folderish-document img,
 .userrole-authenticated .contenttype-event img,
+.userrole-authenticated .contenttype-folderish-event img,
 .userrole-authenticated .contenttype-collection img,
 .userrole-authenticated .contenttype-file img,
 .userrole-authenticated .contenttype-image img,
 .userrole-authenticated .contenttype-link img,
 .userrole-authenticated .contenttype-news-item img,
+.userrole-authenticated .contenttype-folderish-news-item img,
 .userrole-authenticated .contenttype-eea-meeting img,
 .userrole-authenticated .contenttype-nfp img,
 .userrole-authenticated .contenttype-report img,
@@ -2527,11 +2533,15 @@ a.contenttype-folder:before {
   font-family: FontAwesome;
   margin-right: .5rem;
 }
+.contenttype-folderish-document span:before,
+a.contenttype-folderish-document:before,
 .contenttype-document span:before,
 a.contenttype-document:before {
   content: "\f0f6";
   margin-right: .5rem;
 }
+.contenttype-folderish-event span:before,
+a.contenttype-folderish-event:before,
 .contenttype-event span:before,
 a.contenttype-event:before {
   content: "\f073";
@@ -2552,6 +2562,8 @@ a.contenttype-image:before {
   content: "\f03e";
   margin-right: .5rem;
 }
+.contenttype-folderish-news-item span:before,
+a.contenttype-folderish-news-item:before,
 .contenttype-news-item span:before,
 a.contenttype-news-item:before {
   content: "\f1ea";
