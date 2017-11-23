@@ -278,12 +278,15 @@ aside.page-aside .box.leading-large {}
 .userrole-authenticated {
   .contenttype-folder,
   .contenttype-document,
+  .contenttype-folderish-document,
   .contenttype-event,
+  .contenttype-folderish-event,
   .contenttype-collection,
   .contenttype-file,
   .contenttype-image,
   .contenttype-link,
   .contenttype-news-item,
+  .contenttype-folderish-news-item,
   .contenttype-eea-meeting,
   .contenttype-nfp,
   .contenttype-report,
@@ -308,12 +311,16 @@ a.contenttype-folder:before {
   margin-right: .5rem;
 }
 
+.contenttype-folderish-document span:before,
+a.contenttype-folderish-document:before,
 .contenttype-document span:before,
 a.contenttype-document:before {
   content: "\f0f6";
   margin-right: .5rem;
 }
 
+.contenttype-folderish-event span:before,
+a.contenttype-folderish-event:before,
 .contenttype-event span:before,
 a.contenttype-event:before {
   content: "\f073";
@@ -338,6 +345,8 @@ a.contenttype-image:before {
   margin-right: .5rem;
 }
 
+.contenttype-folderish-news-item span:before,
+a.contenttype-folderish-news-item:before,
 .contenttype-news-item span:before,
 a.contenttype-news-item:before {
   content: "\f1ea";
@@ -466,10 +475,13 @@ dt span.summary img {
 
 .page-aside {
   .icons-on .contenttype-document,
+  .icons-on .contenttype-folderish-document,
   .icons-on .contenttype-event,
+  .icons-on .contenttype-folderish-event,
   .icons-on .contenttype-folder,
   .icons-on .contenttype-link,
   .icons-on .contenttype-news-item,
+  .icons-on .contenttype-folderish-news-item,
   .icons-on .contenttype-plone-site,
   .icons-on .contenttype-collection,
   .icons-on .contenttype-topic,
@@ -603,10 +615,13 @@ span + .error {
 }
 
 .icons-on .contenttype-document,
+.icons-on .contenttype-folderish-document,
 .icons-on .contenttype-event,
+.icons-on .contenttype-folderish-event,
 .icons-on .contenttype-folder,
 .icons-on .contenttype-link,
 .icons-on .contenttype-news-item,
+.icons-on .contenttype-folderish-news-item,
 .icons-on .contenttype-plone-site,
 .icons-on .contenttype-collection,
 .icons-on .contenttype-topic,
