@@ -577,7 +577,7 @@ body.template-event_view div#viewlet-below-content-body {
   /* fix Event view */
 }
 div.event-items table.table-responsive.table-hover img,
-div.event-items table.table-responsive.table-hover p {
+div.event-items p {
   display: none;
 }
 /*# sourceMappingURL=./source.css.map */

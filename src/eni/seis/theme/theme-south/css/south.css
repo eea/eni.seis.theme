@@ -550,4 +550,15 @@ aside.page-aside .box.portlet.portletEvents img {
 body.template-event_view div#viewlet-below-content-body {
   display: none;
 }
+.hiddenStructure {
+  display: none;
+}
+.userrole-anonymous #content-core dt {
+  padding-bottom: 0px;
+  /* fix Event view */
+}
+div.event-items table.table-responsive.table-hover img,
+div.event-items p {
+  display: none;
+}
 /*# sourceMappingURL=./source.css.map */
