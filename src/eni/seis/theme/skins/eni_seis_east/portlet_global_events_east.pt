@@ -7,7 +7,7 @@
                 full_objects=True,
                 contentFilter={'sort_on': 'start',
                 'path': {'query':'', 'depth':-1},
-                'portal_type':['Event', 'EEA Meeting']})[:4]">
+                'portal_type':['Event', 'Folderish Event', 'EEA Meeting']})[:4]">
 
   <dt>Events</dt>
   <dd>
