@@ -567,7 +567,8 @@ table#listing-table tr.draggable td:nth-child(3) img {
   visibility: visible;
 }
 body.template-event_view div#viewlet-below-content-body,
-body.template-newsitem_view div#viewlet-below-content-body {
+body.template-newsitem_view div#viewlet-below-content-body,
+body.template-document_view div#viewlet-below-content-body {
   display: none;
 }
 .hiddenStructure {
@@ -579,8 +580,10 @@ body.template-newsitem_view div#viewlet-below-content-body {
 }
 div.event-items table.table-responsive.table-hover img,
 div.newsitem-items table.table-responsive.table-hover img,
+div.document-items table.table-responsive.table-hover img,
 div.event-items p,
-div.newsitem-items p {
+div.newsitem-items p,
+div.document-items p {
   display: none;
 }
 /*# sourceMappingURL=./source.css.map */
