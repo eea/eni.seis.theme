@@ -569,4 +569,11 @@ table#listing-table tr.draggable td:nth-child(3) img {
 body.template-event_view div#viewlet-below-content-body {
   display: none;
 }
+.hiddenStructure {
+  display: none;
+}
+.userrole-anonymous #content-core dt {
+  padding-bottom: 0px;
+  /* fix Event view */
+}
 /*# sourceMappingURL=./source.css.map */
