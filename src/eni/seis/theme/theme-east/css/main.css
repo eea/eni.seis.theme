@@ -4408,6 +4408,9 @@ body.template-areas-of-work_data .page-main {
 body.template-areas-of-work_data .data-section-aow-slider .row {
   background: #F8F8F8;
 }
+body.template-areas-of-work_data .data-section-aow-slider .aow-slide {
+  padding-top: 3em;
+}
 body.template-areas-of-work_data .data-section-aow-slider .aow-slide .img-circle-cropper {
   border-color: #F8F8F8;
   box-shadow: 0 0 0 3px #F8F8F8;
