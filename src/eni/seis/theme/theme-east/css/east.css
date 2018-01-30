@@ -556,13 +556,6 @@ table#listing-table tr.draggable td:nth-child(3) img {
   max-width: 100%;
   height: auto;
 }
-.info-eionet {
-  font-size: 1.3rem;
-  border: 2px solid #1f87e8;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 #content-core table.invisible {
   visibility: visible;
 }
