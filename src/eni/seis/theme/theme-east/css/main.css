@@ -3354,18 +3354,19 @@ body.template-homepage .navbar-body {
   border-bottom: solid #FFFFFF;
   display: inline-block;
 }
-#site-footer .portlet.box a {
-  border: 1px solid #009245;
-  margin-top: 1rem;
-  padding: .5rem 2rem;
-  border-radius: 5rem;
-  color: #a1a2b2;
+#site-footer .portlet.box p a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+#site-footer .portlet.box p a:hover {
+  font-weight: 500;
 }
 #site-footer .portlet.box p {
   font-size: initial;
   color: #FFFFFF;
 }
 #site-footer .portlet.box .btn-subscribe {
+  text-decoration: none;
   background: transparent !important;
   border: 2px solid #FFFFFF !important;
   border-radius: 0 !important;
@@ -3373,6 +3374,7 @@ body.template-homepage .navbar-body {
   color: #FFFFFF !important;
 }
 #site-footer .portlet.box .btn-subscribe:hover {
+  font-weight: initial;
   background: #FFFFFF !important;
   color: #009345 !important;
 }
