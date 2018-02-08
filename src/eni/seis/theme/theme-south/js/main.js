@@ -2933,6 +2933,12 @@ $(document).ready(function() {
 
 
   //jquery
+  $("ul#portal-globalnav li#portaltab-communication").on("click", function(evt) {
+    if(evt.target.text.indexOf("Communication") >= 0) {
+      evt.preventDefault();  // Unclickable Communication option in main menu
+    }
+  });
+
   if (window.matchMedia("(max-width: 960px)").matches) {
     $('#portal-globalnav > li > a').addClass('no-events');
     $('#portal-globalnav > li').on('touchstart', function(e) {
