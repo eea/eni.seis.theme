@@ -3368,6 +3368,7 @@ body.template-homepage .navbar-body {
   color: #FFFFFF !important;
 }
 #site-footer .portlet.box .btn-subscribe:hover {
+  font-weight: initial;
   background: #FFFFFF !important;
   color: #ff6b01 !important;
 }
