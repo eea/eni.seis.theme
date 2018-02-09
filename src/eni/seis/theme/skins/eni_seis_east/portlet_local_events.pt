@@ -1,7 +1,7 @@
 <metal:macro define-macro="portlet">
   <tal:def tal:define="events context/getLocalEvents">
     <dl class="box leading-large portlet portletEvents" tal:condition="events">
-      <dt>Local Events</dt>
+      <dt>National Events</dt>
       <dd>
         <div tal:repeat="event events" class="row">
 
