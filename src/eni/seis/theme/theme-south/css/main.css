@@ -2632,36 +2632,6 @@ dt span.summary img {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-#content .pullquote span {
-  color: #a1a2b2;
-  font-weight: 400;
-  position: relative;
-}
-#content .pullquote > span {
-  width: 70%;
-}
-#content .pullquote > span:after {
-  content: "";
-  border-bottom: solid #a1a2b2;
-  width: 30%;
-  display: block;
-  margin: 1rem auto;
-}
-#content .pullquote > span:before {
-  content: "";
-  border-top: solid #a1a2b2;
-  width: 30%;
-  display: block;
-  margin: 1rem auto;
-}
-#content .pullquote > span > span > span:before {
-  position: absolute;
-  right: 103%;
-  top: 0;
-  content: "\f10e";
-  color: #a1a2b2;
-  font-size: 1.5em;
-}
 .portletItemDetails {
   color: #a1a2b2;
 }
