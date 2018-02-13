@@ -579,13 +579,18 @@ div.newsitem-items p,
 div.document-items p {
   display: none;
 }
-/* Single column design for Folder */
+/* Single column design for Folder, Folderish Document */
 body.template-folder_description_view aside.page-aside,
 body.template-folder_contents aside.page-aside,
 body.portaltype-folder.template-historyview aside.page-aside,
 body.portaltype-folder.template-manage-content-rules aside.page-aside,
 body.portaltype-folder.template-sharing aside.page-aside,
-body.portaltype-folder.template-cache-settings aside.page-aside {
+body.portaltype-folder.template-cache-settings aside.page-aside,
+body.portaltype-folderish-document.template-document_view aside.page-aside,
+body.portaltype-folderish-document.template-historyview aside.page-aside,
+body.portaltype-folderish-document.template-manage-content-rules aside.page-aside,
+body.portaltype-folderish-document.template-sharing aside.page-aside,
+body.portaltype-folderish-document.template-cache-settings aside.page-aside {
   display: none;
 }
 body.template-folder_description_view main.page-main,
@@ -593,7 +598,12 @@ body.template-folder_contents main.page-main,
 body.portaltype-folder.template-historyview main.page-main,
 body.portaltype-folder.template-manage-content-rules main.page-main,
 body.portaltype-folder.template-sharing main.page-main,
-body.portaltype-folder.template-cache-settings main.page-main {
+body.portaltype-folder.template-cache-settings main.page-main,
+body.portaltype-folderish-document.template-document_view main.page-main,
+body.portaltype-folderish-document.template-historyview main.page-main,
+body.portaltype-folderish-document.template-manage-content-rules main.page-main,
+body.portaltype-folderish-document.template-sharing main.page-main,
+body.portaltype-folderish-document.template-cache-settings main.page-main {
   width: 100%;
 }
 /*# sourceMappingURL=./source.css.map */
