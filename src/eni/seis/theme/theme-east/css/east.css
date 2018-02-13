@@ -582,6 +582,8 @@ div.document-items p {
 /* Single column design for Folder, Document, Folderish Document */
 body.template-folder_description_view aside.page-aside,
 body.template-folder_contents aside.page-aside,
+body.portaltype-folder.template-folder_listing aside.page-aside,
+body.portaltype-folder.template-folder_listing_custom aside.page-aside,
 body.portaltype-folder.template-historyview aside.page-aside,
 body.portaltype-folder.template-manage-content-rules aside.page-aside,
 body.portaltype-folder.template-sharing aside.page-aside,
@@ -598,6 +600,8 @@ body.portaltype-folderish-document.template-cache-settings aside.page-aside {
 }
 body.template-folder_description_view main.page-main,
 body.template-folder_contents main.page-main,
+body.portaltype-folder.template-folder_listing main.page-main,
+body.portaltype-folder.template-folder_listing_custom main.page-main,
 body.portaltype-folder.template-historyview main.page-main,
 body.portaltype-folder.template-manage-content-rules main.page-main,
 body.portaltype-folder.template-sharing main.page-main,
