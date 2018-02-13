@@ -114,13 +114,6 @@ $(document).ready(function() {
 
 
   //jquery
-  if($(body).hasClass("portaltype-eea-meeting") && $(body).hasClass("template-view")) {
-    var $lead_image = $("#viewlet-above-content-title div.leadImage img");
-    if($lead_image.length > 0) {
-      $lead_image.insertBefore(".eventDetails.vcard table");
-    }
-  }
-
   if($(body).hasClass("template-newsitem_view")) {
     // Fancy first letter in news item view
     $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
