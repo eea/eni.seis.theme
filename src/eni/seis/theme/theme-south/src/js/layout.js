@@ -114,6 +114,11 @@ $(document).ready(function() {
 
 
   //jquery
+  if($(body).hasClass("template-newsitem_view")) {
+    // Fancy first letter in news item view
+    $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
+  }
+
   $("ul#portal-globalnav li#portaltab-communication").on("click", function(evt) {
     if(evt.target.text.indexOf("Communication") >= 0) {
       evt.preventDefault();  // Unclickable Communication option in main menu
