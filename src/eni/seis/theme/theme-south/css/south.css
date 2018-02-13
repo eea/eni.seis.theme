@@ -560,6 +560,13 @@ div.newsitem-items p,
 div.document-items p {
   display: none;
 }
+body.template-newsitem_view #content #parent-fieldname-text p:first-of-type:first-letter {
+  color: #ff6b01;
+  float: left;
+  font-size: 69px;
+  line-height: 60px;
+  padding-right: 3px;
+}
 /* Single column design for Folder, Document, Folderish Document */
 body.template-folder_description_view aside.page-aside,
 body.template-folder_contents aside.page-aside,
