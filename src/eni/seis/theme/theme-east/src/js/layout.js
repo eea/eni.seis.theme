@@ -114,6 +114,11 @@ $(document).ready(function() {
 
 
   //jquery
+  if($(body).hasClass("template-newsitem_view")) {
+    // Fancy first letter in news item view
+    $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
+  }
+
   if (window.matchMedia("(max-width: 960px)").matches) {
     $('#portal-globalnav > li > a').addClass('no-events');
     $('#portal-globalnav > li').on('touchstart', function(e) {
