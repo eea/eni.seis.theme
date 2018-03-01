@@ -567,6 +567,9 @@ body.template-newsitem_view .fancy-first-letter:first-letter {
   line-height: 60px;
   padding-right: 3px;
 }
+#content-core img {
+  max-width: 100%;
+}
 /* Single column design for Folder, Document, Folderish Document */
 body.template-folder_description_view aside.page-aside,
 body.template-folder_contents aside.page-aside,
