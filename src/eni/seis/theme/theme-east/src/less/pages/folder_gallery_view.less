@@ -1,3 +1,20 @@
 body.template-folder_gallery_view {
-  background: red;
+  div.photo-gallery {
+    div.photo-item {
+      text-align: center;
+      a {
+        &:hover img {
+          border-color: @color-brand-east;
+        }
+
+        img {
+          border: 2px solid @color-gray-light;
+          padding: 10px;
+          margin-bottom: 2em;
+          max-height: 300px;
+          width: auto;
+        }
+      }
+    }
+  }
 }
