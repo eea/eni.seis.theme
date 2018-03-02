@@ -5502,6 +5502,9 @@ body.template-indicators_and_assessments .row.no-portlets .knowledge-resources u
 body.template-indicators_and_assessments .row.no-portlets .knowledge-resources ul li a {
   color: #009345;
 }
+body.template-folder_gallery_view #portal-globalnav {
+  z-index: 9999;
+}
 body.template-folder_gallery_view div.photo-gallery div.photo-item {
   text-align: center;
 }
