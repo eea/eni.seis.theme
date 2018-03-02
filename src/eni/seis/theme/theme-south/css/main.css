@@ -4514,6 +4514,9 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
   width: 90%;
   margin-left: 0;
 }
+body.template-folder_gallery_view {
+  background: red;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
