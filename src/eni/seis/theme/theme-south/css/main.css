@@ -4514,6 +4514,9 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
   width: 90%;
   margin-left: 0;
 }
+body.template-folder_gallery_view #portal-globalnav {
+  z-index: 9999;
+}
 body.template-folder_gallery_view div.photo-gallery div.photo-item {
   text-align: center;
 }
