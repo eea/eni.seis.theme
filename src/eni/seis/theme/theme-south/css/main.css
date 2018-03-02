@@ -4514,8 +4514,18 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
   width: 90%;
   margin-left: 0;
 }
-body.template-folder_gallery_view {
-  background: red;
+body.template-folder_gallery_view div.photo-gallery div.photo-item {
+  text-align: center;
+}
+body.template-folder_gallery_view div.photo-gallery div.photo-item a:hover img {
+  border-color: #ff6b01;
+}
+body.template-folder_gallery_view div.photo-gallery div.photo-item a img {
+  border: 2px solid #ededed;
+  padding: 10px;
+  margin-bottom: 2em;
+  max-height: 300px;
+  width: auto;
 }
 .box {
   margin-left: auto;
