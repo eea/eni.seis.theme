@@ -4517,6 +4517,20 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
 body.template-folder_gallery_view #portal-globalnav {
   z-index: 9999;
 }
+body.template-folder_gallery_view div#lightbox .lb-outerContainer {
+  border-radius: initial;
+}
+body.template-folder_gallery_view div#lightbox .lb-image {
+  border: 10px solid #FFFFFF;
+}
+body.template-folder_gallery_view div#lightbox .lb-caption {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+body.template-folder_gallery_view div#lightbox .lb-number {
+  position: relative;
+  top: 3px;
+}
 body.template-folder_gallery_view div.photo-gallery div.photo-item {
   text-align: center;
 }

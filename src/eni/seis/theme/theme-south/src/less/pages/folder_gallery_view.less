@@ -3,6 +3,26 @@ body.template-folder_gallery_view {
     z-index: 9999; // just under lighbox when fullscreen (10000)
   }
 
+  div#lightbox {
+    .lb-outerContainer {
+      border-radius: initial;
+    }
+
+    .lb-image {
+      border: 10px solid #FFFFFF;
+    }
+
+    .lb-caption {
+      font-weight: 500;  // bold is ugly
+      font-size: 1.3em;
+    }
+
+    .lb-number {
+      position: relative;
+      top: 3px;
+    }
+  }
+
   div.photo-gallery {
     div.photo-item {
       text-align: center;
