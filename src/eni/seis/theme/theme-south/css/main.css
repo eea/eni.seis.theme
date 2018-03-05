@@ -4328,6 +4328,10 @@ body.template-country_view .country-right-column .container {
   overflow-x: hidden !important;
   top: -34px !important;
 }
+body.template-country_view .country-right-column table {
+  display: block;
+  overflow-x: auto;
+}
 body.template-country_view .country-right-column ul.list-group li.list-group-item {
   padding-right: 10px !important;
 }
