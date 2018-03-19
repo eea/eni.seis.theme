@@ -471,11 +471,16 @@ body.template-news_listing_view .table-hover a:hover {
   color: #009345 !important;
 }
 body.template-newsitem_view img.newsImage {
-  max-width: 400px;
+  max-width: 400px !important;
   height: auto;
-  margin: 1em;
+  margin: 0 1em 0.5em 1em;
   max-height: 400px;
   width: auto;
+}
+body.template-newsitem_view div.newsImageContainer p.discreet {
+  top: -3.3em !important;
+  left: 1.2em;
+  font-weight: 500 !important;
 }
 div.managePortletsLink {
   border-radius: 0;
