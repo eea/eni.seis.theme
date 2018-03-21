@@ -110,13 +110,26 @@
       font-weight: 600;
       border-bottom: solid #FFFFFF;
       display: inline-block;
+      a {
+        color: #FFFFFF;
+        padding-right: 2px;
+        padding-top: 3px;
+      }
+      a:hover {
+        color: @color-brand-east;
+        background: #FFFFFF;
+      }
     }
-    p a {
+    p a:not(.btn) {
       color: #FFFFFF;
       text-decoration: underline;
-    }
-    p a:hover {
-      font-weight: 500;
+      padding-right: 1px;
+
+      &:hover {
+        color: @color-brand-east;
+        background: #FFFFFF;
+        text-decoration: none;
+      }
     }
     p {
       font-size: initial;

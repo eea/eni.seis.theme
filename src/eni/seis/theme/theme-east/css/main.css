@@ -3324,12 +3324,24 @@ body.template-homepage .navbar-body {
   border-bottom: solid #FFFFFF;
   display: inline-block;
 }
-#site-footer .portlet.box p a {
+#site-footer .portlet.box h3 a {
+  color: #FFFFFF;
+  padding-right: 2px;
+  padding-top: 3px;
+}
+#site-footer .portlet.box h3 a:hover {
+  color: #009345;
+  background: #FFFFFF;
+}
+#site-footer .portlet.box p a:not(.btn) {
   color: #FFFFFF;
   text-decoration: underline;
+  padding-right: 1px;
 }
-#site-footer .portlet.box p a:hover {
-  font-weight: 500;
+#site-footer .portlet.box p a:not(.btn):hover {
+  color: #009345;
+  background: #FFFFFF;
+  text-decoration: none;
 }
 #site-footer .portlet.box p {
   font-size: initial;
