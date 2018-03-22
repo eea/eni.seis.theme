@@ -4560,6 +4560,15 @@ body.template-folder_gallery_view div.photo-gallery div.photo-item a img {
   max-height: 300px;
   width: auto;
 }
+body.template-newsletters_view aside.page-aside {
+  display: none;
+}
+body.template-newsletters_view main.page-main {
+  width: 100%;
+}
+body.template-newsletters_view div#newsletters-container table.invisible td {
+  padding-left: 0;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
