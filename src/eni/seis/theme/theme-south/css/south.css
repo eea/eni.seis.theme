@@ -585,6 +585,15 @@ body.template-newsitem_view .fancy-first-letter:first-letter {
 #content-core img {
   max-width: 100%;
 }
+.eni-section-title {
+  font-size: 1.4rem;
+  color: #08a8dc;
+  text-transform: uppercase;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  border-bottom: 3px solid #08a8dc;
+  display: inline-block;
+}
 /* Single column design for Folder, Document, Folderish Document */
 body.template-folder_description_view aside.page-aside,
 body.template-folder_contents aside.page-aside,
