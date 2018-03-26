@@ -119,6 +119,17 @@ $(document).ready(function() {
     $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
   }
 
+  if($(body).hasClass("subsection-test-plugin")) {
+    // WIP 92274 FAQ section behavior
+    if($(body).hasClass("template-document_view")) {
+      //debugger
+      $("div.faq-answer").hide();
+      $("a.collapsed").on("click", function() {
+        alert("AAA");
+      });
+    }
+  }
+
   $("ul#portal-globalnav li#portaltab-communication").on("click", function(evt) {
     if(evt.target.text.indexOf("Communication") >= 0) {
       evt.preventDefault();  // Unclickable Communication option in main menu
