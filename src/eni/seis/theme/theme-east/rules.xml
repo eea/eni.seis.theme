@@ -229,7 +229,9 @@
       css:content="#plone-contentmenu-workflow .arrowDownAlternative"
       />
 
-    <after css:theme=".above-content" css:content=".portalMessage" />
+    <rules css:if-not-content="body.template-link_view">
+      <after css:theme=".above-content" css:content=".portalMessage" />
+    </rules>
 
     <!--
       #viewlet-above-content-title
