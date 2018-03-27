@@ -119,6 +119,21 @@ $(document).ready(function() {
     $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
   }
 
+  // #92274 FAQ section behavior. Markup structure:
+  // div.eni-faq-wrapper
+  //   div.eni-faq-item
+  //     div.eni-faq-question
+  //       a
+  //     div.eni-faq-answer
+  //       p etc
+  var faq_behavior = (function eni_faq_sections() {
+    $("div.eni-faq-answer").hide();
+    $("div.eni-faq-question a").on("click", function(evt) {
+      evt.preventDefault();
+      $(this).parent().parent().find(".eni-faq-answer").toggle();
+    });
+  }());
+
   if (window.matchMedia("(max-width: 960px)").matches) {
     $('#portal-globalnav > li > a').addClass('no-events');
     $('#portal-globalnav > li').on('touchstart', function(e) {
