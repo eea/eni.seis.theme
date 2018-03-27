@@ -2938,16 +2938,20 @@ $(document).ready(function() {
     $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
   }
 
-  if($(body).hasClass("subsection-test-plugin")) {
-    // WIP 92274 FAQ section behavior
-    if($(body).hasClass("template-document_view")) {
-      //debugger
-      $("div.faq-answer").hide();
-      $("a.collapsed").on("click", function() {
-        alert("AAA");
-      });
-    }
-  }
+  // #92274 FAQ section behavior. Markup structure:
+  // div.eni-faq-wrapper
+  //   div.eni-faq-item
+  //     div.eni-faq-question
+  //       a
+  //     div.eni-faq-answer
+  //       p etc
+  var faq_behavior = (function eni_faq_sections() {
+    $("div.eni-faq-answer").hide();
+    $("div.eni-faq-question a").on("click", function(evt) {
+      evt.preventDefault();
+      $(this).parent().parent().find(".eni-faq-answer").toggle();
+    });
+  }());
 
   $("ul#portal-globalnav li#portaltab-communication").on("click", function(evt) {
     if(evt.target.text.indexOf("Communication") >= 0) {
