@@ -2946,10 +2946,68 @@ $(document).ready(function() {
   //     div.eni-faq-answer
   //       p etc
   var faq_behavior = (function eni_faq_sections() {
+    // View mode
     $("div.eni-faq-answer").hide();
     $("div.eni-faq-question a").on("click", function(evt) {
       evt.preventDefault();
       $(this).parent().parent().find(".eni-faq-answer").toggle();
+    });
+
+    // Add edit button
+    var $edit_btn = $('<input type="button" value="Edit" name="faq-edit" />');
+    // WIP $edit_btn.insertAfter($(".eni-faq-wrapper"));
+
+    function html_view_to_edit($faq_items) {
+      // Prepare edit mode for existing questions.
+      // Return the html used in edit dialog.
+      var result = "";
+      $faq_items.each(function() {
+        $question = $(this).find(".eni-faq-question");
+        $answer = $(this).find(".eni-faq-answer");
+        $textarea_question = '<textarea class="question" rows="5">' + $question.text() + '</textarea>'
+        $textarea_answer = '<textarea class="answer" rows="5">' + $answer.html() + '</textarea>'
+        result += "<div class='eni-faq-item'>"
+          result += "<h3>FAQ question:</h3>";
+          result += $textarea_question;
+          result += "<h3>FAQ answer:</h3>";
+          result += $textarea_answer;
+        result += "</div>";
+      });
+      result += "<button id='faq-save'>Save</button>";
+      return result;
+    }
+
+    function html_edit_to_view($edit_dialog) {
+      // Prepare the html for view mode based on updated items.
+      // Return the html as used in a faq section.
+      var result = "";
+      $edit_dialog.find(".eni-faq-item").each(function() {
+        $question = $(this).find("textarea.question");
+        $answer = $(this).find("textarea.answer");
+        result += "<div class='eni-faq-question'><a href='#'>" + $question.val() + "</a></div>";
+        result += "<div class='eni-faq-answer'>" + $answer.val() + "</div>";
+      });
+      return result;
+    }
+
+    $edit_btn.on("click", function() {
+      // Edit mode
+      $faq_wrapper = $(".eni-faq-wrapper");
+      $faq_items = $faq_wrapper.find(".eni-faq-item");
+
+      var $edit_dialog = $(document.createElement('div'));
+      $edit_dialog.html(html_view_to_edit($faq_items));
+
+      $edit_dialog.dialog();
+
+      $("#faq-save").on("click", function(evt) {
+        // Save
+        evt.preventDefault();
+        new_html = html_edit_to_view($edit_dialog);
+        $faq_wrapper.html(new_html);
+        $edit_dialog.dialog("close");
+      });
+
     });
   }());
 
