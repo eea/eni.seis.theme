@@ -354,7 +354,7 @@
   <drop css:theme=".page-aside .box.leading-large" />
 
   <!-- Google Analytics -->
-  <after theme-children="/html/body" content="//*[@id='portal-footer-wrapper']/div/script" />
+  <after theme-children="/html/head" content="//*[@id='portal-footer-wrapper']/div/script" />
 
   <!-- Keep original theme for: -->
   <!-- @@migrate-to-emaillogin -->
