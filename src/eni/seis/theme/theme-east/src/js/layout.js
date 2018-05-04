@@ -196,14 +196,14 @@ $(document).ready(function() {
       $edit_dialog.html(html_view_to_edit($faq_items));
       $edit_dialog.dialog();
 
-      $(document.body).on('click', 'button.eni-faq-delete-question' ,function(evt) {
+      $(document.body).on('click', 'button.eni-faq-delete-question', function(evt) {
         var result = confirm("Delete item: Are you sure?");
         if (result) {
           $(this).parent().remove();
         }
       });
 
-      $("button.eni-faq-add-question").on("click", function(evt) {
+      $(document.body).on('click', 'button.eni-faq-add-question', function(evt) {
         $(this).parent().after(faq_item("", "<p></p>"));
       });
 
@@ -213,8 +213,12 @@ $(document).ready(function() {
         evt.preventDefault();
         new_html = html_edit_to_view($edit_dialog);
         $faq_wrapper.html(new_html);
+
+        // Clear
         $edit_dialog.dialog("close");
         $edit_dialog.dialog('destroy').remove();
+        $(document.body).off('click');
+
         // Reinit
         console.log("REINIT");
         eni_faq_sections();
