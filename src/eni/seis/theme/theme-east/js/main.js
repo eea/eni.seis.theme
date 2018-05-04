@@ -2959,6 +2959,22 @@ $(document).ready(function() {
     var $edit_btn = $('<input type="button" value="Edit" name="faq-edit" />');
     $edit_btn.insertAfter($(".eni-faq-wrapper"));
 
+    function faq_item(question_text, answer_html) {
+      // Return a faq item as used in edit mode
+      var result = "";
+      $textarea_question = '<textarea class="question" rows="5">' + question_text + '</textarea>'
+      $textarea_answer = '<textarea class="answer" rows="5">' + answer_html + '</textarea>'
+      result += "<div class='eni-faq-item'>"
+      result += "<h3>FAQ question:</h3>";
+      result += $textarea_question;
+      result += "<h3>FAQ answer:</h3>";
+      result += $textarea_answer;
+      result += "<button class='eni-faq-delete-question'>Delete</button>"
+      result += "<button class='eni-faq-add-question'>Add</button>"
+      result += "</div>";
+      return result;
+    }
+
     function html_view_to_edit($faq_items) {
       console.log("view -> edit");
       // Prepare edit mode for existing questions.
@@ -2967,15 +2983,7 @@ $(document).ready(function() {
       $faq_items.each(function() {
         $question = $(this).find(".eni-faq-question");
         $answer = $(this).find(".eni-faq-answer");
-        $textarea_question = '<textarea class="question" rows="5">' + $question.text() + '</textarea>'
-        $textarea_answer = '<textarea class="answer" rows="5">' + $answer.html() + '</textarea>'
-        result += "<div class='eni-faq-item'>"
-        result += "<h3>FAQ question:</h3>";
-        result += $textarea_question;
-        result += "<h3>FAQ answer:</h3>";
-        result += $textarea_answer;
-        result += "<button class='eni-faq-delete-question'>Delete</button>"
-        result += "</div>";
+        result += faq_item($question.text(), $answer.html());
       });
       result += "<button id='faq-save'>Save</button>";
       return result;
@@ -3012,6 +3020,10 @@ $(document).ready(function() {
         if (result) {
           $(this).parent().remove();
         }
+      });
+
+      $("button.eni-faq-add-question").on("click", function(evt) {
+        $(this).parent().after(faq_item("", "<p></p>"));
       });
 
       $("#faq-save").on("click", function(evt) {
