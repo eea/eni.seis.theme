@@ -2982,6 +2982,9 @@ $(document).ready(function() {
         $answer = $(this).find(".eni-faq-answer");
         result += faq_item($question.text(), $answer.html());
       });
+      if($faq_items.length == 0) {
+        result += faq_item("", "<p></p>");
+      }
       result += "<button id='faq-save'>Save</button>";
       return result;
     }
