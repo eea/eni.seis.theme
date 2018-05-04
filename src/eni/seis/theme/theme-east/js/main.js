@@ -2946,6 +2946,7 @@ $(document).ready(function() {
   //     div.eni-faq-answer
   //       p etc
   var faq_behavior = (function eni_faq_sections() {
+    console.log("START faq_behavior");
     // View mode
     $("div.eni-faq-answer").hide();
     $("div.eni-faq-question a").on("click", function(evt) {
@@ -2954,10 +2955,12 @@ $(document).ready(function() {
     });
 
     // Add edit button
+    console.log("ADD edit btn");
     var $edit_btn = $('<input type="button" value="Edit" name="faq-edit" />');
-    // WIP $edit_btn.insertAfter($(".eni-faq-wrapper"));
+    $edit_btn.insertAfter($(".eni-faq-wrapper"));
 
     function html_view_to_edit($faq_items) {
+      console.log("view -> edit");
       // Prepare edit mode for existing questions.
       // Return the html used in edit dialog.
       var result = "";
@@ -2980,32 +2983,40 @@ $(document).ready(function() {
     function html_edit_to_view($edit_dialog) {
       // Prepare the html for view mode based on updated items.
       // Return the html as used in a faq section.
+      console.log("edit -> view");
       var result = "";
       $edit_dialog.find(".eni-faq-item").each(function() {
         $question = $(this).find("textarea.question");
         $answer = $(this).find("textarea.answer");
+        result += "<div class='eni-faq-item'>";
         result += "<div class='eni-faq-question'><a href='#'>" + $question.val() + "</a></div>";
         result += "<div class='eni-faq-answer'>" + $answer.val() + "</div>";
+        result += "</div>";
       });
       return result;
     }
 
     $edit_btn.on("click", function() {
       // Edit mode
+      $edit_btn.remove();
+      console.log("START edit mode");
       $faq_wrapper = $(".eni-faq-wrapper");
       $faq_items = $faq_wrapper.find(".eni-faq-item");
-
       var $edit_dialog = $(document.createElement('div'));
       $edit_dialog.html(html_view_to_edit($faq_items));
-
       $edit_dialog.dialog();
 
       $("#faq-save").on("click", function(evt) {
+        console.log("SAVE!");
         // Save
         evt.preventDefault();
         new_html = html_edit_to_view($edit_dialog);
         $faq_wrapper.html(new_html);
         $edit_dialog.dialog("close");
+        $edit_dialog.dialog('destroy').remove();
+        // Reinit
+        console.log("REINIT");
+        eni_faq_sections();
       });
 
     });
