@@ -151,10 +151,11 @@ $(document).ready(function() {
         $textarea_question = '<textarea class="question" rows="5">' + $question.text() + '</textarea>'
         $textarea_answer = '<textarea class="answer" rows="5">' + $answer.html() + '</textarea>'
         result += "<div class='eni-faq-item'>"
-          result += "<h3>FAQ question:</h3>";
-          result += $textarea_question;
-          result += "<h3>FAQ answer:</h3>";
-          result += $textarea_answer;
+        result += "<h3>FAQ question:</h3>";
+        result += $textarea_question;
+        result += "<h3>FAQ answer:</h3>";
+        result += $textarea_answer;
+        result += "<button class='eni-faq-delete-question'>Delete</button>"
         result += "</div>";
       });
       result += "<button id='faq-save'>Save</button>";
@@ -186,6 +187,13 @@ $(document).ready(function() {
       var $edit_dialog = $(document.createElement('div'));
       $edit_dialog.html(html_view_to_edit($faq_items));
       $edit_dialog.dialog();
+
+      $("button.eni-faq-delete-question").on("click", function(evt) {
+        var result = confirm("Delete item: Are you sure?");
+        if (result) {
+          $(this).parent().remove();
+        }
+      });
 
       $("#faq-save").on("click", function(evt) {
         console.log("SAVE!");
