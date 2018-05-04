@@ -485,6 +485,9 @@ body.template-newsitem_view div.newsImageContainer p.discreet {
 body.template-newsitem_view div.eni-news-countries {
   margin-bottom: 1em;
 }
+table[summary="Content listing"] img[alt^="Indicator"] {
+  display: none;
+}
 div.managePortletsLink {
   border-radius: 0;
   background: #FFFFFF;
