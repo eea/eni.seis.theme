@@ -3015,7 +3015,7 @@ $(document).ready(function() {
       $edit_dialog.html(html_view_to_edit($faq_items));
       $edit_dialog.dialog();
 
-      $("button.eni-faq-delete-question").on("click", function(evt) {
+      $(document.body).on('click', 'button.eni-faq-delete-question' ,function(evt) {
         var result = confirm("Delete item: Are you sure?");
         if (result) {
           $(this).parent().remove();
