@@ -654,4 +654,24 @@ body.userrole-authenticated .site-container {
   left: 10% !important;
   top: 10px !important;
 }
+.eni-faq-dialog .eni-faq-item {
+  border: 1px solid #ededed;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.eni-faq-dialog .eni-faq-item h3 {
+  color: #222222;
+  margin-bottom: 0.5em;
+}
+.eni-faq-dialog .eni-faq-item textarea.question,
+.eni-faq-dialog .eni-faq-item textarea.answer {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.eni-faq-dialog button.eni-faq-delete-question,
+.eni-faq-dialog button.eni-faq-add-question,
+.eni-faq-dialog button#faq-save {
+  padding: 0.5em;
+  margin-right: 1em;
+}
 /*# sourceMappingURL=./source.css.map */
