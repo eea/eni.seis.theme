@@ -3011,7 +3011,7 @@ $(document).ready(function() {
       $faq_items = $faq_wrapper.find(".eni-faq-item");
       var $edit_dialog = $(document.createElement('div'));
       $edit_dialog.html(html_view_to_edit($faq_items));
-      $edit_dialog.dialog();
+      $edit_dialog.dialog({dialogClass:'eni-faq-dialog'});
 
       $(document.body).on('click', 'button.eni-faq-delete-question', function(evt) {
         var result = confirm("Delete item: Are you sure?");
