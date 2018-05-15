@@ -2468,6 +2468,9 @@ body {
 #content table {
   width: 100%;
 }
+#content #content-core div[id^=parent-fieldname-text] table {
+  width: initial;
+}
 #content-core {
   text-align: left;
 }

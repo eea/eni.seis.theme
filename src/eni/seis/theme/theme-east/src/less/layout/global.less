@@ -235,10 +235,13 @@ body {
 #content {
   font-size: inherit;
   margin: auto;
-  table {
-    width: 100%;
-  }
   text-align: center;
+  table {
+    width: 100%;  // in Countries section, maybe useful in other sections
+  }
+  #content-core div[id^=parent-fieldname-text] table {
+    width: initial;  // preserve these tables as saved with tinymce editor
+  }
 }
 
 #content-core {
