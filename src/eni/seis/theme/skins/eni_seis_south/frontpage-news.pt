@@ -1,12 +1,12 @@
 <div
   tal:define="
-  newsletterpath python:'/south/communication/newsletter';
+  newspath python:'/south/communication/news';
   news python: [b.getObject() for b in context.portal_catalog.searchResults(
   portal_type=['News Item', 'Folderish News Item'],
   review_state='published',
   sort_on='effective',
   sort_order='descending',
-  path=newsletterpath,
+  path=newspath,
   )
   ][:9];
   toLocalizedTime nocall: context/@@plone/toLocalizedTime;
@@ -42,7 +42,7 @@
         </a>
       </div>
       <div class="more">
-        <a href="" tal:attributes="href newsletterpath">More news</a>
+        <a href="" tal:attributes="href newspath">More news</a>
       </div>
     </div>
 
