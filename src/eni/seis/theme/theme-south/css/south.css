@@ -548,6 +548,9 @@ aside.page-aside .box.portlet.portletEvents img {
 table#listing-table tr.draggable td:nth-child(3) img {
   display: none;
 }
+table[summary='Content listing'] img[alt^=File] {
+  display: none;
+}
 .named-image-widget.namedblobimage-field img {
   max-width: 100%;
   height: auto;
