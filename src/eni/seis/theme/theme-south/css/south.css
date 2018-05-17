@@ -454,6 +454,17 @@ body.template-atct_edit #content > div:first-of-type {
 body.template-news_listing_view .table-hover a:hover {
   color: #ff6b01 !important;
 }
+body.template-news_listing_view div.news-preview {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  float: left;
+  text-align: center;
+  min-width: 128px;
+}
+body.template-news_listing_view div.news-preview img {
+  max-width: 128px !important;
+  height: auto;
+}
 body.template-newsitem_view img.newsImage {
   max-width: 400px !important;
   height: auto;
