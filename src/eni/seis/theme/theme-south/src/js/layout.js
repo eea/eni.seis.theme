@@ -134,6 +134,15 @@ $(document).ready(function() {
     });
   }());
 
+  // Specific URLs on local, demo, production (Example: newsletter in footer)
+  var $home_url = $("#portaltab-index_html a").attr("href");
+  $("a.jquery-link-me").each(function() {
+    var $data_href = $(this).attr("data-href");
+    if($data_href !== "undefined") {
+      $(this).attr("href", $home_url + $data_href);
+    }
+  });
+
   $("ul#portal-globalnav li#portaltab-communication").on("click", function(evt) {
     if(evt.target.text.indexOf("Communication") >= 0) {
       evt.preventDefault();  // Unclickable Communication option in main menu
