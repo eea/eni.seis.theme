@@ -135,6 +135,15 @@ $(document).ready(function() {
     });
   }());
 
+  // Specific URLs on local, demo, production (Example: newsletter in footer)
+  var $home_url = $("#portaltab-index_html a").attr("href");
+  $("a.jquery-link-me").each(function() {
+    var $data_href = $(this).attr("data-href");
+    if($data_href !== "undefined") {
+      $(this).attr("href", $home_url + $data_href);
+    }
+  });
+
   if (window.matchMedia("(max-width: 960px)").matches) {
     $('#portal-globalnav > li > a').addClass('no-events');
     $('#portal-globalnav > li').on('touchstart', function(e) {
