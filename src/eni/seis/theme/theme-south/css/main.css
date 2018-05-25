@@ -4303,9 +4303,6 @@ body.template-country_view .country-right-column {
   position: relative;
   top: -8px;
 }
-body.template-country_view .country-right-column .portletNews {
-  margin-top: 4rem;
-}
 body.template-country_view .country-right-column .box.leading-large.portlet {
   max-width: initial;
 }
