@@ -198,6 +198,8 @@ $(document).ready(function() {
     $("#plone-document-byline").prependTo(".country-left-column");
     $("h1.documentFirstHeading").prependTo(".country-left-column");
     $("img.flag").prependTo("h1.documentFirstHeading");
+    $('img.news-image.jquery-move-me').prependTo(".box.portletNews > dt").show();
+    $('img.events-image.jquery-move-me').prependTo(".box.portletEvents > dt").show();
   }
 
   $(".documentFirstHeading").each(

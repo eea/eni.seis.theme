@@ -4299,6 +4299,10 @@ body.template-country_view .country-left-column table.table-hover th {
 body.template-country_view .country-left-column table.table-hover td {
   font-size: 0.9em;
 }
+body.template-country_view .country-right-column {
+  position: relative;
+  top: -8px;
+}
 body.template-country_view .country-right-column .portletNews {
   margin-top: 4rem;
 }
@@ -4325,6 +4329,13 @@ body.template-country_view .country-right-column .box.leading-large.portlet dt {
   display: inline-block;
   margin-top: 20px !important;
 }
+body.template-country_view .country-right-column .box.leading-large.portlet dt img {
+  max-height: 48px;
+  width: auto;
+  margin-right: 0.5em;
+  position: relative;
+  top: -0.5em;
+}
 body.template-country_view .country-right-column .box.leading-large.portlet dd {
   margin-top: 10px !important;
   font-size: 1rem;
@@ -4344,6 +4355,9 @@ body.template-country_view .country-right-column .box.leading-large.portlet dd .
 body.template-country_view .country-right-column a {
   text-decoration: none !important;
   border-bottom: none;
+}
+body.template-country_view .country-bottom-column {
+  margin-top: 3em;
 }
 body.template-country_view .country-bottom-column .container {
   position: relative;
