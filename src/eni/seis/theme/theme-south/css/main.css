@@ -4449,8 +4449,14 @@ body.template-country_view .tab-content .container img {
 body.template-country_view .tab-content .container table img {
   width: auto;
 }
+body.template-country_view .tab-content .container .country-subsection-listing {
+  background: #FFFFFF;
+  border: 1px solid #ededed;
+  padding: 1em;
+  margin-bottom: 3em;
+}
 body.template-country_view .tab-content .container .country-subsection-listing div {
-  padding-bottom: 50px;
+  padding: 3em;
 }
 body.template-country_view .tab-content .container .country-subsection-listing div ul {
   margin-left: 0 !important;
@@ -4484,6 +4490,7 @@ body.template-country_view .tab-content .container .country-subsection-listing h
   text-transform: uppercase;
   color: #08a8dc;
   border-bottom: 3px solid #08a8dc;
+  margin-right: 40%;
 }
 body.template-nfps_listing_view div.nfps-container table tbody td.country-title {
   background: #FFFFFF;
