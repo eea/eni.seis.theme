@@ -8,17 +8,28 @@ body.template-country_view {
     text-transform: uppercase;
   }
 
-  .country-left-column,
-  .country-right-column {
-    .portletNews {
-      margin-top: 4rem;
-    }
-
+  .country-left-column {
     img.flag {
       height: 48px;
       width: auto;
       position: relative;
       top: -3px;
+    }
+
+    table.table-hover {
+      th {
+        color: @color-gray-dark;
+        font-size: 0.9em;
+      }
+      td {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .country-right-column {
+    .portletNews {
+      margin-top: 4rem;
     }
 
     .box.leading-large.portlet {
@@ -61,18 +72,9 @@ body.template-country_view {
       border-bottom: none;
     }
 
-    table.table-hover {
-      th {
-        color: @color-gray-dark;
-        font-size: 0.9em;
-      }
-      td {
-        font-size: 0.9em;
-      }
-    }
   }
 
-  .country-right-column {
+  .country-bottom-column {
     .container {
       position: relative;
       overflow-x: hidden !important;

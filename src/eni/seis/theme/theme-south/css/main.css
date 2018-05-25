@@ -4286,22 +4286,25 @@ body.template-country_view h1.documentFirstHeading {
   padding-left: 0px;
   text-transform: uppercase;
 }
-body.template-country_view .country-left-column .portletNews,
-body.template-country_view .country-right-column .portletNews {
-  margin-top: 4rem;
-}
-body.template-country_view .country-left-column img.flag,
-body.template-country_view .country-right-column img.flag {
+body.template-country_view .country-left-column img.flag {
   height: 48px;
   width: auto;
   position: relative;
   top: -3px;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet .portletItemDetails,
+body.template-country_view .country-left-column table.table-hover th {
+  color: #222222;
+  font-size: 0.9em;
+}
+body.template-country_view .country-left-column table.table-hover td {
+  font-size: 0.9em;
+}
+body.template-country_view .country-right-column .portletNews {
+  margin-top: 4rem;
+}
 body.template-country_view .country-right-column .box.leading-large.portlet .portletItemDetails {
   color: #555;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dt,
 body.template-country_view .country-right-column .box.leading-large.portlet dt {
   background: #FFFFFF;
   text-transform: uppercase;
@@ -4312,50 +4315,36 @@ body.template-country_view .country-right-column .box.leading-large.portlet dt {
   display: inline-block;
   margin-top: 20px !important;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dd,
 body.template-country_view .country-right-column .box.leading-large.portlet dd {
   margin-top: 10px !important;
   font-size: 1rem;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dd .row:first-of-type,
 body.template-country_view .country-right-column .box.leading-large.portlet dd .row:first-of-type {
   border-top: none;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dd .row,
 body.template-country_view .country-right-column .box.leading-large.portlet dd .row {
   padding-top: 20px;
   border-top: 1px solid #ededed;
 }
-body.template-country_view .country-left-column .box.leading-large.portlet dd .portletItemDetails,
 body.template-country_view .country-right-column .box.leading-large.portlet dd .portletItemDetails {
   margin-left: 0px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-body.template-country_view .country-left-column a,
 body.template-country_view .country-right-column a {
   text-decoration: none !important;
   border-bottom: none;
 }
-body.template-country_view .country-left-column table.table-hover th,
-body.template-country_view .country-right-column table.table-hover th {
-  color: #222222;
-  font-size: 0.9em;
-}
-body.template-country_view .country-left-column table.table-hover td,
-body.template-country_view .country-right-column table.table-hover td {
-  font-size: 0.9em;
-}
-body.template-country_view .country-right-column .container {
+body.template-country_view .country-bottom-column .container {
   position: relative;
   overflow-x: hidden !important;
   top: -34px !important;
 }
-body.template-country_view .country-right-column table {
+body.template-country_view .country-bottom-column table {
   display: block;
   overflow-x: auto;
 }
-body.template-country_view .country-right-column ul.list-group li.list-group-item {
+body.template-country_view .country-bottom-column ul.list-group li.list-group-item {
   padding-right: 10px !important;
 }
 body.template-country_view.userrole-anonymous .btn-default.edit-text {
