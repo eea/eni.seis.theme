@@ -4302,6 +4302,16 @@ body.template-country_view .country-left-column table.table-hover td {
 body.template-country_view .country-right-column .portletNews {
   margin-top: 4rem;
 }
+body.template-country_view .country-right-column .box.leading-large.portlet {
+  max-width: initial;
+}
+body.template-country_view .country-right-column .box.leading-large.portlet .col-xs-3 {
+  display: none;
+}
+body.template-country_view .country-right-column .box.leading-large.portlet .col-xs-9 {
+  width: 100%;
+  padding-left: 0px;
+}
 body.template-country_view .country-right-column .box.leading-large.portlet .portletItemDetails {
   color: #555;
 }
