@@ -2,8 +2,8 @@
 
 event = context
 try:
-    img = event.restrictedTraverse('image')
-except AttributeError:
+    img = event.getImage()
+except Exception:
     img = None
 
 if img:
