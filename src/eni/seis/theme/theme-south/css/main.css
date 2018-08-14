@@ -2505,7 +2505,8 @@ aside.page-aside {
 .userrole-authenticated .contenttype-eea-meeting,
 .userrole-authenticated .contenttype-nfp,
 .userrole-authenticated .contenttype-report,
-.userrole-authenticated .contenttype-indicator {
+.userrole-authenticated .contenttype-indicator,
+.userrole-authenticated .contenttype-newsletter {
   background: none!important;
   padding: 0;
   padding-left: 0px!important;
@@ -2524,7 +2525,8 @@ aside.page-aside {
 .userrole-authenticated .contenttype-eea-meeting img,
 .userrole-authenticated .contenttype-nfp img,
 .userrole-authenticated .contenttype-report img,
-.userrole-authenticated .contenttype-indicator img {
+.userrole-authenticated .contenttype-indicator img,
+.userrole-authenticated .contenttype-newsletter img {
   display: none;
 }
 .contenttype-eea-meeting {
@@ -2594,6 +2596,11 @@ a.contenttype-nfp:before {
 }
 .contenttype-report span:before,
 a.contenttype-report:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-newsletter span:before,
+a.contenttype-newsletter:before {
   content: "\f016";
   margin-right: .5rem;
 }
