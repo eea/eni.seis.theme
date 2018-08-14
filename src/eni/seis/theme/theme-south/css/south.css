@@ -593,7 +593,7 @@ div.newsitem-items p,
 div.document-items p {
   display: none;
 }
-body.template-newsitem_view .fancy-first-letter:first-letter {
+.fancy-first-letter:first-letter {
   color: #ff6b01;
   float: left;
   font-size: 69px;
