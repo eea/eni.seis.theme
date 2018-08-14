@@ -3932,18 +3932,23 @@ ul.configlets {
   left: 10px;
   top: -1px;
 }
+.section-newsletters,
 .section-frontpage-events {
   margin: 4em 0;
   text-align: left !important;
 }
+.section-newsletters:before,
 .section-frontpage-events:before,
+.section-newsletters:after,
 .section-frontpage-events:after {
   content: "";
   display: table;
 }
+.section-newsletters:after,
 .section-frontpage-events:after {
   clear: both;
 }
+.section-newsletters h4,
 .section-frontpage-events h4 {
   font-size: 1.4rem;
   color: #08a8dc;
@@ -3953,46 +3958,57 @@ ul.configlets {
   border-bottom: 3px solid #08a8dc;
   display: inline-block;
 }
+.section-newsletters .tile,
 .section-frontpage-events .tile {
   min-height: 365px;
   padding: 1em;
 }
+.section-newsletters .tile:hover,
 .section-frontpage-events .tile:hover {
   background-color: #08a8dc;
   color: white !important;
 }
+.section-newsletters .tile:hover a,
 .section-frontpage-events .tile:hover a,
+.section-newsletters .tile:hover div,
 .section-frontpage-events .tile:hover div {
   color: #FFFFFF;
 }
+.section-newsletters .tile .tile-img,
 .section-frontpage-events .tile .tile-img {
   display: block;
   margin-bottom: 1em;
 }
+.section-newsletters .tile .tile-img img,
 .section-frontpage-events .tile .tile-img img {
   width: 100%;
   height: auto;
 }
+.section-newsletters .tile .tile-title,
 .section-frontpage-events .tile .tile-title {
   color: #ff6b01;
   font-size: 120%;
 }
+.section-newsletters .tile .tile-footer,
 .section-frontpage-events .tile .tile-footer {
   margin-top: 10px;
   font-size: 80%;
   color: #737373;
   text-transform: uppercase;
 }
+.section-newsletters .more,
 .section-frontpage-events .more {
   margin-top: 2em;
   text-align: right;
 }
+.section-newsletters .more a,
 .section-frontpage-events .more a {
   color: #ff6b01;
   padding: 0.8em;
   border-top: 1px solid #08a8dc;
   text-transform: uppercase;
 }
+.section-newsletters .more a:after,
 .section-frontpage-events .more a:after {
   content: "\2192";
   position: relative;
@@ -4621,6 +4637,16 @@ body.template-newsletters_view div#newsletters-container ul.newsletters li span 
 }
 body.template-newsletters_view div#newsletters-container ul.newsletters li span a {
   font-size: 120%;
+}
+body.template-folder_newsletters_view.portaltype-folder .section-newsletters {
+  margin: 0;
+}
+body.template-folder_newsletters_view.portaltype-folder .section-newsletters .tile {
+  position: relative;
+  left: -1rem;
+}
+body.template-folder_newsletters_view.portaltype-folder .section-newsletters .tile:hover > a {
+  color: #FFFFFF !important;
 }
 .box {
   margin-left: auto;
