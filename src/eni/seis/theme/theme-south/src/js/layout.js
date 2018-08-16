@@ -114,7 +114,10 @@ $(document).ready(function() {
 
 
   //jquery
-  if($(body).hasClass("template-newsitem_view")) {
+  if(
+      $(body).hasClass("template-newsitem_view") ||
+      $(body).hasClass("template-newsitem_nolisting_view")
+    ) {
     // Fancy first letter in news item view
     $("#content #parent-fieldname-text p").first().addClass("fancy-first-letter");
   }
