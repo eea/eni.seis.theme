@@ -348,7 +348,8 @@
    <drop css:theme=".page-aside .box.portlet-static-newsletter" />
   <drop css:theme=".page-aside .box.leading-large" />
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics & Matomo -->
+  <after theme-children="/html/head" content="//*[@id='portal-footer-wrapper']/div/noscript" />
   <after theme-children="/html/head" content="//*[@id='portal-footer-wrapper']/div/script" />
 
   <!-- Keep original theme for: -->
