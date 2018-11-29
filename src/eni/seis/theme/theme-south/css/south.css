@@ -659,4 +659,29 @@ body.userrole-authenticated .site-container {
   clear: both;
   padding-top: 1em;
 }
+div#viewlet-cookiepolicy {
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 2%;
+  -webkit-box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+div#viewlet-cookiepolicy h1#tlspu_cookiepolicy_title {
+  color: #08a8dc;
+  margin-bottom: 7px;
+}
+div#viewlet-cookiepolicy p#tlspu_cookiepolicy_message {
+  font-size: 1em;
+}
+div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button {
+  background: #ff6b01;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.4em;
+}
+div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button:hover {
+  background: #08a8dc;
+}
 /*# sourceMappingURL=./source.css.map */
