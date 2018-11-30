@@ -8,11 +8,26 @@ Changelog
 - Add styles for cookies policy message.
   [GhitaB #96598]
 
-  ----------------------
-  TODO Update this part.
-  ----------------------
+  ------------------------------------------
+  TODO Update this part. (until Sep 1, 2017]
+  ------------------------------------------
 
-- Feature: New  design for South website.
+- Fix: Events level in south.
+  [GhitaB #87785]
+
+- Feature: Country Pages structure
+  [GhitaB #87783]
+
+- Feature: changes related to http to https migration.
+  [GhitaB #86911]
+
+- Feature: Implement new design for East website.
+  [GhitaB, tiberiuichim #86208]
+
+- Improve: next future events listing in South homepage.
+  [GhitaB #86299]
+
+- Feature: Implement new design for South website.
   [GhitaB, tiberiuichim #83391, #84441]
 
 - Improve: Links usability.
