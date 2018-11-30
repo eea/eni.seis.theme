@@ -12,6 +12,41 @@ Changelog
   TODO Update this part.
   ----------------------
 
+- Feature: New  design for South website.
+  [GhitaB, tiberiuichim #83391, #84441]
+
+- Improve: Links usability.
+  [GhitaB #82887]
+
+- Fix: image size in news item view.
+  [GhitaB #82886]
+
+- Feature: East - Areas of Work section.
+  [GhitaB #82891]
+
+- Improve: "small layout fixes"
+  [mihai-macaneata]
+
+- Improve: Removing eea.meeting css. portalMessages in theme.
+- eea.meeting images and styles have been ported over to the eea.meeting
+  package.
+- updating rules.xml to also include portalMessages in the output.
+- pinning webcouturier.dropdownmenu to the latest version compatible
+  with Plone 4 (2.3.1).
+  [david-batranu]
+
+- Feature: new layout for events, styles.
+  [mihai-macaneata]
+
+- Improve: diazo rules.
+  [GhitaB]
+
+- Improve: diazo rules.
+  [tiberiuichim]
+
+- Improve: styles.
+  [ppscvalentin]
+
 - Feature: new design, fix layout, styles, mobile version.
   [mihai-macaneata]
 
