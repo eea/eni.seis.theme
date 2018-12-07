@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a1 (unreleased)
+1.0 (2018-12-07)
 ------------------
 - Add Privacy statement link in footer.
 - Add styles for cookies policy message.
