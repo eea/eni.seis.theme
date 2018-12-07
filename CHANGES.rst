@@ -2,8 +2,11 @@ Changelog
 =========
 
 
+1.1.dev0 (unreleased)
+---------------------
+
 1.0 (2018-12-07)
-------------------
+----------------
 - Add Privacy statement link in footer.
 - Add styles for cookies policy message.
   [GhitaB #96598]
