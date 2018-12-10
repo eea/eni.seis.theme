@@ -2,8 +2,10 @@ Changelog
 =========
 
 
-1.1.dev0 (unreleased)
----------------------
+1.1 (2018-12-10)
+----------------
+- Fix: icon for eea.meeting.workspace.
+  [GhitaB #96598]
 
 1.0 (2018-12-07)
 ----------------
