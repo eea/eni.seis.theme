@@ -2506,6 +2506,7 @@ aside.page-aside {
 .userrole-authenticated .contenttype-nfp,
 .userrole-authenticated .contenttype-report,
 .userrole-authenticated .contenttype-indicator,
+.userrole-authenticated .contenttype-eea-meeting-workspace,
 .userrole-authenticated .contenttype-newsletter {
   background: none!important;
   padding: 0;
@@ -2526,12 +2527,15 @@ aside.page-aside {
 .userrole-authenticated .contenttype-nfp img,
 .userrole-authenticated .contenttype-report img,
 .userrole-authenticated .contenttype-indicator img,
+.userrole-authenticated .contenttype-eea-meeting-workspace img,
 .userrole-authenticated .contenttype-newsletter img {
   display: none;
 }
 .contenttype-eea-meeting {
   padding-left: 20px;
 }
+.contenttype-eea-meeting-workspace span:before,
+a.contenttype-eea-meeting-workspace:before,
 .contenttype-folder span:before,
 a.contenttype-folder:before {
   content: "\f114";
