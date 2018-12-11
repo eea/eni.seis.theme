@@ -4,6 +4,8 @@ Changelog
 
 1.2.dev0 (unreleased)
 ---------------------
+- Improve: use our jquery resource instead of google cdn.
+  [GhitaB #100474]
 
 1.1 (2018-12-10)
 ----------------
