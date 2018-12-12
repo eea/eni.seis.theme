@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.2.dev0 (unreleased)
----------------------
+1.1.1 (2018-12-12)
+------------------
 - Improve: get rid of dependency on Google Fonts. Add firasans font in skins.
 - Improve: use our jquery resource instead of google's cdn.
   [GhitaB #100474]
