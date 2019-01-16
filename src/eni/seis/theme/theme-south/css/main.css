@@ -4558,6 +4558,12 @@ body.template-country_view div.icon-litter {
 body.template-country_view li:not(.active) a.icon-litter:hover div.icon-litter {
   background-image: url(../../countries_litter_hover.svg);
 }
+body.template-country_view div.icon-key-docs {
+  background-image: url(../../countries_key_docs_normal.svg);
+}
+body.template-country_view li:not(.active) a.icon-key-docs:hover div.icon-key-docs {
+  background-image: url(../../countries_key_docs_hover.svg);
+}
 body.template-country_view .nav.nav-tabs > li {
   height: auto;
   width: 80px;
