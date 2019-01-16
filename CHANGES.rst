@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.1.3 (unreleased)
+------------------
+
 1.1.2 (2019-01-16)
 ------------------
 - Improve: add icons for Key docs tab in south country pages. Update styles.
