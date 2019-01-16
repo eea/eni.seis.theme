@@ -3,7 +3,7 @@ Changelog
 
 1.1.2.dev0 (unreleased)
 -----------------------
-- Feature: add icons for Key docs tab in south country pages.
+- Improve: add icons for Key docs tab in south country pages. Update styles.
   [GhitaB #101533]
 
 1.1.1 (2018-12-12)
