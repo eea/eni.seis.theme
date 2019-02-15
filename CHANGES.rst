@@ -27,8 +27,29 @@ Changelog
   [GhitaB #96598]
 
   ------------------------------------------
-  TODO Update this part. (until Sep 1, 2017]
+  TODO Update this part. (until Jan 1, 2018]
   ------------------------------------------
+
+- Feature: folderish content types.
+  [GhitaB #82889]
+
+- Fix: table styles.
+  [GhitaB #82899]
+
+- Fix: East countries page responsivity.
+  [GhitaB #89546]
+
+- Fix: Duplicate icon in countries list.
+  [GhitaB #89537]
+
+- Feature: embed video available only to the registered users.
+  [GhitaB #88611]
+
+- Improve: reset password customization.
+  [GhitaB #88608]
+
+- Feature: Synchronized NFPs
+  [GhitaB #87782]
 
 - Fix: Events level in south.
   [GhitaB #87785]
