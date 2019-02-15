@@ -27,8 +27,32 @@ Changelog
   [GhitaB #96598]
 
   ------------------------------------------
-  TODO Update this part. (until Jan 1, 2018]
+  TODO Update this part. (until Feb 13, 2018]
   ------------------------------------------
+
+- Improve: Lead image - visible in event (meeting) view.
+  [GhitaB #92855]
+
+- Improve: Fancy first letter for news items.
+  [GhitaB #92854]
+
+- Improve: Single column layout in "pages".
+  [GhitaB #92251
+
+- Fix: "pull quote" style from TinyMCE Editor
+  [GhitaB #92272]
+
+- Improve: Update country pages.
+  [GhitaB #92258]
+
+- Improve: Remove EIONET related texts in password reset.
+  [GhitaB #88608]
+
+- Improve: Footer updates.
+  [GhitaB #92247]
+
+- Improve: Waste section.
+  [GhitaB #91703]
 
 - Feature: folderish content types.
   [GhitaB #82889]
