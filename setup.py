@@ -41,6 +41,7 @@ setup(
         'plone.api',
         'setuptools',
         'webcouturier.dropdownmenu==2.3.1',
+        'eea.sentry',
     ],
     extras_require={
         'test': [
