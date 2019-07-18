@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.1.3 (unreleased)
+1.1.3 (2019-07-18)
 ------------------
+- Feature: update diazo rules to include sentry configuration.
+  [GhitaB #107647]
 
 1.1.2 (2019-01-16)
 ------------------
