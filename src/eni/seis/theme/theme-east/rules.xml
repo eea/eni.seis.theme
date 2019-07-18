@@ -348,6 +348,9 @@
    <drop css:theme=".page-aside .box.portlet-static-newsletter" />
   <drop css:theme=".page-aside .box.leading-large" />
 
+  <after theme-children="/html/body" content="//*[@id='sentry-config']" method="raw" />
+  <drop content="//*[@id='sentry']" method="raw" />
+
   <!-- Google Analytics & Matomo -->
   <after theme-children="/html/head" content="//*[@id='portal-footer-wrapper']/div/noscript" />
   <after theme-children="/html/head" content="//*[@id='portal-footer-wrapper']/div/script" />
