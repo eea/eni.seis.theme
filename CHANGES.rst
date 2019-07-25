@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.1.4 (unreleased)
+------------------
+
 1.1.3 (2019-07-18)
 ------------------
 - Feature: update diazo rules to include sentry configuration.
