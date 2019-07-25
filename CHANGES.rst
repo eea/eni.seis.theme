@@ -27,13 +27,90 @@ Changelog
 
 1.0 (2018-12-07)
 ----------------
-- Add Privacy statement link in footer.
-- Add styles for cookies policy message.
+- Improve: Add Privacy statement link in footer.
+- Improve: Add styles for cookies policy message.
   [GhitaB #96598]
 
-  ------------------------------------------
-  TODO Update this part. (until Feb 13, 2018]
-  ------------------------------------------
+- Improve: Matomo: Update diazo rules.
+  [GhitaB #99222]
+
+- Fix: fancy letter to work for new template.
+  [GhitaB #96861]
+
+- Feature: Add styles for newsitem_nolisting_view.
+  [GhitaB #96861]
+
+- Fix preview image for eea meeting objects.
+  [GhitaB #97723]
+
+- South: Add styles for folder newsletters view template.
+  [GhitaB #97716]
+
+- Newsletter content type: use custom icon.
+  [GhitaB #97716]
+
+- Fix getLeadImagePath to work for folderish news.
+  [GhitaB #96364]
+
+- Improve: South: country view.
+  [GhitaB #93660]
+
+- South: fix links in frontpage news.
+  [GhitaB #92252]
+
+- South: fix newsletter link in footer, to work on demo.
+  [GhitaB #92252]
+
+- Fix links in frontpage news.
+  [GhitaB #92252]
+
+- South: max 2 local events in country view.
+  [GhitaB #93660]
+
+- South: max 2 local news in country view.
+  [GhitaB #93660]
+
+- Improve: Add styles for news image preview in news listing.
+  [GhitaB #94091]
+
+- Feature: FAQ section.
+  [GhitaB #92274]
+
+- Fix: Remove duplicate icons for reports listing.
+  [GhitaB #92274]
+
+- Improve: move Google Analytics tracking code in head.
+  [GhitaB #95177]
+
+- Newsletters view: improve styles.
+  [GhitaB #92252]
+
+- South: add newsletter icon (svg).
+  [GhitaB #92252]
+
+- South: homepage: update newsletters link.
+  [GhitaB #92252]
+
+- Improve: Add style for news item lead image.
+  [GhitaB #94043]
+
+- Fix: South: horizontal scroll for wider tables in country page.
+  [GhitaB #93547]
+
+- Fix: South: hide duplicate icons in contents table.
+  [GhitaB #93380]
+
+- Fix: make lightbox look nice for us.
+  [GhitaB #93380]
+
+- Fix: fix z-index conflict lightbox - globalnav.
+  [GhitaB #93380]
+
+- Improve: Gallery view styles.
+  [GhitaB #93380]
+
+- Fix: images width in content core.
+  [GhitaB #93380]
 
 - Improve: Lead image - visible in event (meeting) view.
   [GhitaB #92855]
