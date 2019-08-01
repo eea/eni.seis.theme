@@ -4342,6 +4342,7 @@ ul.configlets {
     display: none;
   }
 }
+/* TODO remove this css and template if not used. */
 body.template-data_and_statistics .page-main {
   width: 100%;
 }
@@ -4461,18 +4462,6 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link di
   background-size: auto 150px;
   background-repeat: no-repeat;
 }
-body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_water_normal.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_waste_normal.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_industrial_emissions_normal.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_cross-cutting_issues_normal.svg);
-}
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item {
   background: #1f87e8 !important;
 }
@@ -4482,18 +4471,6 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link:ho
 body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img {
   border-top: 1px solid #FFFFFF;
   background-repeat: no-repeat;
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_water_hover.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_waste_hover.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_industrial_emissions_hover.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.east/img/areas_of_work_cross-cutting_issues_hover.svg);
 }
 body.template-areas-of-work_data .container.site-container {
   margin-bottom: -4rem;
