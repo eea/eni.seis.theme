@@ -4382,18 +4382,6 @@ body.template-data_and_statistics .data-right-column div.data.row a.data-link:ho
   border-top: 1px solid #FFFFFF;
   background-repeat: no-repeat;
 }
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-water {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_water_hover.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-waste {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_waste_hover.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-industrial-emissions {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_industrial_emissions_hover.svg);
-}
-body.template-data_and_statistics .data-right-column div.data.row a.data-link:hover div.data-item div.data-img.icon-cross-cutting-issues {
-  background-image: url(../++theme++eni.seis.theme.south/img/areas_of_work_cross-cutting_issues_hover.svg);
-}
 body.template-country_view .documentByLine {
   margin-bottom: 0 !important;
 }
