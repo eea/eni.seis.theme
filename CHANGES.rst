@@ -3,6 +3,8 @@ Changelog
 
 1.1.4 (unreleased)
 ------------------
+- Fix: broken background images in East, get rid of unused (and missing) items.
+  [GhitaB #108137]
 
 1.1.3 (2019-07-18)
 ------------------
