@@ -3,6 +3,7 @@ Changelog
 
 1.1.4 (unreleased)
 ------------------
+- Fix: get rid of missing font included in css (East and South).
 - Fix: broken background images in East, get rid of unused (and missing) items.
   [GhitaB #108137]
 
