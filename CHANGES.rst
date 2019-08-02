@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.4 (unreleased)
+1.1.4 (2019-08-02)
 ------------------
 - Fix: broken svg links in css (East and South).
 - Fix: get rid of missing font included in css (East and South).
