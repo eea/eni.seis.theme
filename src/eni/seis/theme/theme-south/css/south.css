@@ -633,6 +633,7 @@ body.portaltype-folderish-document.template-document_view aside.page-aside,
 body.portaltype-folderish-document.template-historyview aside.page-aside,
 body.portaltype-folderish-document.template-manage-content-rules aside.page-aside,
 body.portaltype-folderish-document.template-sharing aside.page-aside,
+body.portaltype-plone-site.template-broken-links aside.page-aside,
 body.portaltype-folderish-document.template-cache-settings aside.page-aside {
   display: none;
 }
@@ -652,6 +653,7 @@ body.portaltype-folderish-document.template-document_view main.page-main,
 body.portaltype-folderish-document.template-historyview main.page-main,
 body.portaltype-folderish-document.template-manage-content-rules main.page-main,
 body.portaltype-folderish-document.template-sharing main.page-main,
+body.portaltype-plone-site.template-broken-links main.page-main,
 body.portaltype-folderish-document.template-cache-settings main.page-main {
   width: 100%;
 }
