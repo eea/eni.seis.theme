@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.5 (unreleased)
+1.1.5 (2019-08-07)
 ------------------
 - Feature: Single column layout in Broken links template.
   [GhitaB #108137]
