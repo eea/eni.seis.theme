@@ -173,7 +173,7 @@
       css:content="#content script"
       css:theme-children="html body"
     />
-    <drop css:content="#content script" />
+    <!-- <drop css:content="#content script" /> [TODO] Do we really need it? -->
 
     <!-- LOGO -->
     <copy
