@@ -2590,6 +2590,9 @@ aside.page-aside {
 .page-aside nav.nav.nav-folder {
   width: 100%;
 }
+.userrole-authenticated .contenttype-davizvisualization,
+.userrole-authenticated .contenttype-sparql,
+.userrole-authenticated .contenttype-sparqlbookmarksfolder,
 .userrole-authenticated .contenttype-folder,
 .userrole-authenticated .contenttype-document,
 .userrole-authenticated .contenttype-folderish-document,
@@ -2611,6 +2614,9 @@ aside.page-aside {
   padding: 0;
   padding-left: 0px!important;
 }
+.userrole-authenticated .contenttype-davizvisualization img,
+.userrole-authenticated .contenttype-sparql img,
+.userrole-authenticated .contenttype-sparqlbookmarksfolder img,
 .userrole-authenticated .contenttype-folder img,
 .userrole-authenticated .contenttype-document img,
 .userrole-authenticated .contenttype-folderish-document img,
@@ -2663,6 +2669,21 @@ a.contenttype-collection:before {
 .contenttype-file span:before,
 a.contenttype-file:before {
   content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-sparql span:before,
+a.contenttype-sparql:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-sparqlbookmarksfolder span:before,
+a.contenttype-sparqlbookmarksfolder:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-davizvisualization span:before,
+a.contenttype-davizvisualization:before {
+  content: "\f03e";
   margin-right: .5rem;
 }
 .contenttype-image span:before,
