@@ -9,6 +9,8 @@
   <xi:include href="rules/homepage.xml" />
   <xi:include href="rules/areas-of-work.xml" />
 
+  <drop css:content="#viewlet-below-content-body #eea-versions-portlet" />
+
   <!-- Folder view -->
   <rules css:if-content=".template-folder_listing.portaltype-folder">
     <drop css:theme=".page-aside .box.newsletter-box" />
