@@ -2954,6 +2954,9 @@ span + .error {
 .navbar-body #portal-globalnav li > a {
   padding: 0.8em 1.5em 0.8em 1.5em;
 }
+.navbar-body #portal-globalnav a:hover {
+  text-decoration-line: none;
+}
 .navbar-body #portal-globalnav li:first-of-type:before {
   border: none;
 }
