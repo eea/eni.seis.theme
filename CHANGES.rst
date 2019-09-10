@@ -3,6 +3,7 @@ Changelog
 
 1.1.6 (unreleased)
 ------------------
+- Fix: icons for new content types.
 - Fix: navbar menu styles on hover.
 - Fix: diazo rules to drop eea.versions portlet.
 - Fix: diazo rules to prevent scripts removal in Content section.
