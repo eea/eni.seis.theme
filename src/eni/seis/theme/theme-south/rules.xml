@@ -174,11 +174,11 @@
       css:theme-children="html body"
       />
 
-    <rules css:if-not-content=".subsection-data-and-statistics">
+    <!-- <rules css:if&#45;not&#45;content=".subsection&#45;data&#45;and&#45;statistics"> -->
       <!-- Remove scripts in content.
            Exception: /south/areas-of-work/data-and-statistics -->
-      <drop css:content="#content script" />
-    </rules>
+      <!-- <drop css:content="#content script" /> [TODO] Do we really need this? -->
+    <!-- </rules> -->
 
     <!-- LOGO -->
     <copy
