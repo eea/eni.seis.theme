@@ -3,7 +3,7 @@ Changelog
 
 1.1.6 (unreleased)
 ------------------
-- Fix: (East) diazo rules to prevent scripts removal in Content section.
+- Fix: diazo rules to prevent scripts removal in Content section.
   [GhitaB #108504]
 
 1.1.5 (2019-08-07)
