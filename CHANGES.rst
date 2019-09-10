@@ -4,6 +4,8 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 - Fix: diazo rules to prevent scripts removal in Content section.
+  Manual step: activate EEA Visualization API, EEA Forms, EEA Sparql,
+  EEA Google Charts, EEA Daviz.
   [GhitaB #108504]
 
 1.1.5 (2019-08-07)
