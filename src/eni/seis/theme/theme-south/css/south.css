@@ -563,6 +563,7 @@ table#listing-table tr.draggable td:nth-child(3) img {
   display: none;
 }
 table[summary='Content listing'] img[alt^=File],
+table[summary='Content listing'] img[alt^=Daviz],
 table[summary='Content listing'] img[alt^=newsletter] {
   display: none;
 }
