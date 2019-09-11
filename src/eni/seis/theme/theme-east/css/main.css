@@ -2590,6 +2590,7 @@ aside.page-aside {
 .page-aside nav.nav.nav-folder {
   width: 100%;
 }
+.userrole-authenticated .contenttype-indicatordata,
 .userrole-authenticated .contenttype-davizvisualization,
 .userrole-authenticated .contenttype-sparql,
 .userrole-authenticated .contenttype-sparqlbookmarksfolder,
@@ -2614,6 +2615,7 @@ aside.page-aside {
   padding: 0;
   padding-left: 0px!important;
 }
+.userrole-authenticated .contenttype-indicatordata img,
 .userrole-authenticated .contenttype-davizvisualization img,
 .userrole-authenticated .contenttype-sparql img,
 .userrole-authenticated .contenttype-sparqlbookmarksfolder img,
@@ -2668,6 +2670,11 @@ a.contenttype-collection:before {
 }
 .contenttype-file span:before,
 a.contenttype-file:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-indicatordata span:before,
+a.contenttype-indicatordata:before {
   content: "\f016";
   margin-right: .5rem;
 }

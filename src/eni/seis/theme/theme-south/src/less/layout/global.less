@@ -279,6 +279,7 @@ aside.page-aside .box.leading-large {}
 aside.page-aside .box.leading-large {}
 
 .userrole-authenticated {
+  .contenttype-indicatordata,
   .contenttype-davizvisualization,
   .contenttype-sparql,
   .contenttype-sparqlbookmarksfolder,
@@ -345,6 +346,12 @@ a.contenttype-collection:before {
 
 .contenttype-file span:before,
 a.contenttype-file:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+
+.contenttype-indicatordata span:before,
+a.contenttype-indicatordata:before {
   content: "\f016";
   margin-right: .5rem;
 }
