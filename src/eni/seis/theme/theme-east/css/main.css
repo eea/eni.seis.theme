@@ -5777,13 +5777,13 @@ body.template-view.portaltype-indicatordata div.page-main h4 {
 }
 body.template-view.portaltype-indicatordata div.page-main div.row.metadata-container {
   background: #F8F8F8;
-  border: 1px solid #eaeaea;
+  border: 1px solid #ededed;
   border-top: 1em solid #1f87e8;
   padding: 20px;
   margin-top: 3em;
 }
 body.template-view.portaltype-indicatordata div.page-main div.row.metadata-container h3 {
-  border-bottom: 1px solid #737373;
+  border-bottom: 1px solid #A3A3A3;
 }
 body.template-view.portaltype-indicatordata div.page-main div.eni-figure .nav-item > a {
   margin-left: initial;
