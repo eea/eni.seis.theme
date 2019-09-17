@@ -5719,28 +5719,6 @@ body.template-folder_newsletters_view.portaltype-folder .section-newsletters .ti
 body.template-view.portaltype-indicatordata div.page-main {
   width: 100%;
 }
-body.template-view.portaltype-indicatordata div.page-main div#themes-tags {
-  margin-top: 2em;
-}
-body.template-view.portaltype-indicatordata div.page-main div#themes-tags a.link-category,
-body.template-view.portaltype-indicatordata div.page-main div.metadata-container a.link-category {
-  color: black !important;
-  padding: 2px 6px;
-  margin: 2px 0;
-  word-break: keep-all;
-  display: inline-block;
-  line-height: inherit;
-  background: #eaeaea;
-  font-size: 12px;
-}
-body.template-view.portaltype-indicatordata div.page-main div#themes-tags a.link-category:hover,
-body.template-view.portaltype-indicatordata div.page-main div.metadata-container a.link-category:hover {
-  color: white !important;
-  background: #1f87e8;
-}
-body.template-view.portaltype-indicatordata div.page-main div#themes-tags span.list-head {
-  font-weight: 500;
-}
 body.template-view.portaltype-indicatordata div.page-main div.key-messages {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -5768,6 +5746,26 @@ body.template-view.portaltype-indicatordata div.page-main div.image-container p.
   padding: 20px;
   margin-bottom: 0px !important;
 }
+body.template-view.portaltype-indicatordata div.page-main div#themes-tags {
+  margin-top: 2em;
+}
+body.template-view.portaltype-indicatordata div.page-main div#themes-tags span.list-head {
+  font-weight: 500;
+}
+body.template-view.portaltype-indicatordata div.page-main a.link-category {
+  color: black !important;
+  padding: 2px 6px;
+  margin: 2px 0;
+  word-break: keep-all;
+  display: inline-block;
+  line-height: inherit;
+  background: #eaeaea;
+  font-size: 12px;
+}
+body.template-view.portaltype-indicatordata div.page-main a.link-category:hover {
+  color: white !important;
+  background: #1f87e8;
+}
 body.template-view.portaltype-indicatordata div.page-main ul li {
   list-style: square;
 }
@@ -5784,10 +5782,10 @@ body.template-view.portaltype-indicatordata div.page-main div.row.metadata-conta
   padding: 20px;
   margin-top: 3em;
 }
-body.template-view.portaltype-indicatordata div.page-main div.metadata-container h3 {
+body.template-view.portaltype-indicatordata div.page-main div.row.metadata-container h3 {
   border-bottom: 1px solid #737373;
 }
-body.template-view.portaltype-indicatordata div.eni-figure .nav-item > a {
+body.template-view.portaltype-indicatordata div.page-main div.eni-figure .nav-item > a {
   margin-left: initial;
   margin-right: initial;
 }
