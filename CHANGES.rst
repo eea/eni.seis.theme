@@ -3,6 +3,7 @@ Changelog
 
 1.1.6 (unreleased)
 ------------------
+- Fix: blockquote font size in news items.
 - Feature: styles for indicatordata view.
 - Fix: icons for new content types.
 - Fix: navbar menu styles on hover.
