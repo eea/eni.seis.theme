@@ -686,4 +686,8 @@ div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button {
 div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button:hover {
   background: #1f87e8;
 }
+.portaltype-folderish-news-item blockquote.pullquote {
+  clear: none !important;
+  font-size: 1.2em !important;
+}
 /*# sourceMappingURL=./source.css.map */
