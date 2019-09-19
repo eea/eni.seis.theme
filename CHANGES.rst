@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.1.7 (unreleased)
+------------------
+
 1.1.6 (2019-09-19)
 ------------------
 - Fix: blockquote font size in news items.
