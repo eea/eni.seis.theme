@@ -4768,6 +4768,10 @@ body.template-folder_newsletters_view.portaltype-folder .section-newsletters .ti
 body.template-view.portaltype-indicatordata div.page-main {
   width: 100%;
 }
+body.template-view.portaltype-indicatordata div.page-main h2 {
+  margin-top: 1em;
+  color: #08a8dc;
+}
 body.template-view.portaltype-indicatordata div.page-main div.key-messages {
   margin-top: 2em;
   margin-bottom: 2em;
