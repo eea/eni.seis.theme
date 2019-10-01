@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.7 (unreleased)
+1.1.7 (2019-10-01)
 ------------------
 - Feature: SEEA Progress section. (WIP)
   [GhitaB #107341]
