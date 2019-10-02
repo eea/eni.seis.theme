@@ -3,6 +3,8 @@ Changelog
 
 1.1.8 (unreleased)
 ------------------
+[TODO] Hide div.eea-available-version. (see temp_fixes.css)
+       or do something better.
 
 1.1.7 (2019-10-01)
 ------------------
