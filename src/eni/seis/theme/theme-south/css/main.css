@@ -4851,6 +4851,10 @@ table.eni-indicator-table td tr:first-child td {
   background: #1f87e8;
   color: white;
 }
+body.section-indicators .portalMessage.warningMessage,
+div.eea-available-version {
+  display: none !important;
+}
 .box {
   margin-left: auto;
   margin-right: auto;

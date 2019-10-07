@@ -4,10 +4,8 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 - Improve: Move styles to theme.
+- Hide div.eea-available-version.
   [GhitaB #108504]
-
-[TODO] Hide div.eea-available-version. (see temp_fixes.css)
-       or do something better.
 
 1.1.7 (2019-10-01)
 ------------------
