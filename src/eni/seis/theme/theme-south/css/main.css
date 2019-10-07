@@ -4842,6 +4842,15 @@ body.template-view.portaltype-indicatordata div.page-main div.eni-figure .nav-it
   margin-left: initial;
   margin-right: initial;
 }
+table.eni-indicator-table,
+table.eni-indicator-table td {
+  border: 1px solid #1f87e8;
+}
+table.eni-indicator-table tr:first-child td,
+table.eni-indicator-table td tr:first-child td {
+  background: #1f87e8;
+  color: white;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
