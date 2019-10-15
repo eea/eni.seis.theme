@@ -5,10 +5,10 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Custom SEEA Progress -->
-  <rules css:if-content="body.section-areas-of-work.subsection-seea-progress">
-
-    <theme href="seea-progress.html" />
-
-  </rules>
-
+  <!-- <rules css:if&#45;content="body.section&#45;areas&#45;of&#45;work.subsection&#45;seea&#45;progress"> -->
+  <!--  -->
+  <!--   <theme href="seea&#45;progress.html" /> -->
+  <!--  -->
+  <!-- </rules> -->
+  <!--  -->
 </rules>
