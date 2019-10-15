@@ -5821,11 +5821,11 @@ body.template-seea-progress_root div.seea-progress-section1 {
 body.template-seea-progress_root div.seea-progress-section2 {
   margin: 4em 0;
 }
-body.template-seea-progress_root td.ml-2 {
-  padding-left: 30px !important;
-}
 body.template-seea-progress_root table.seea-table {
   border-bottom: 2px solid green;
+}
+body.template-seea-progress_root table.seea-table td.ml-2 {
+  padding-left: 30px !important;
 }
 body.template-seea-progress_root table.seea-table td.title {
   color: green;
@@ -5839,15 +5839,13 @@ body.template-seea-progress_root table.seea-table td.title2 {
 body.template-seea-progress_root table.seea-table th {
   background: green;
   color: white;
+  text-align: center;
 }
 body.template-seea-progress_root table.seea-table tr.odd td {
   background: gray;
 }
 body.template-seea-progress_root table.seea-table td {
   border-top: none !important;
-  text-align: center;
-}
-body.template-seea-progress_root table.seea-table th {
   text-align: center;
 }
 body.template-seea-progress_root table.seea-table td:first-of-type {

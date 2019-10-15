@@ -18,59 +18,54 @@ body.template-seea-progress_root {
     margin: 4em 0;
   }
 
-  td.ml-2 {
-    padding-left: 30px !important;
-  }
-
   table.seea-table {
     border-bottom: 2px solid green;
-  }
+    td.ml-2 {
+      padding-left: 30px !important;
+    }
 
-  table.seea-table td.title {
-    color: green;
-    font-size: 1.5em;
-  }
+    td.title {
+      color: green;
+      font-size: 1.5em;
+    }
 
-  table.seea-table td.title2 {
-    background: green;
-    color: white;
-    font-size: 1.2em;
-  }
+    td.title2 {
+      background: green;
+      color: white;
+      font-size: 1.2em;
+    }
 
-  table.seea-table th {
-    background: green;
-    color: white;
-  }
+    th {
+      background: green;
+      color: white;
+      text-align: center;
+    }
 
-  table.seea-table tr.odd td {
-    background: gray;
-  }
+    tr.odd td {
+      background: gray;
+    }
 
-  table.seea-table td {
-    border-top: none !important;
-    text-align: center;
-  }
+    td {
+      border-top: none !important;
+      text-align: center;
+    }
 
-  table.seea-table th {
-    text-align: center;
-  }
+    td:first-of-type {
+      text-align: left;
+    }
 
-  table.seea-table td:first-of-type {
-    text-align: left;
-  }
+    th, td {
+      border-right: 1px solid gray;
+    }
 
-  table.seea-table th,
-  table.seea-table td {
-    border-right: 1px solid gray;
-  }
+    th:last-of-type,
+    td:last-of-type {
+      border-right: none;
+    }
 
-  table.seea-table th:last-of-type,
-  table.seea-table td:last-of-type {
-    border-right: none;
-  }
-
-  table.seea-table tr:not(.no-hover):hover td {
-    background: blue;
-    color: white;
+    tr:not(.no-hover):hover td {
+      background: blue;
+      color: white;
+    }
   }
 }
