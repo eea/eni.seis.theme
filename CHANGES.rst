@@ -3,8 +3,10 @@ Changelog
 
 1.1.8 (unreleased)
 ------------------
+- Feature: Add styles for SEEA Progress.
+  [GhitaB #107341]
 - Improve: Move styles to theme.
-- Hide div.eea-available-version.
+- Fix: Hide div.eea-available-version.
   [GhitaB #108504]
 
 1.1.7 (2019-10-01)
