@@ -5822,27 +5822,27 @@ body.template-seea-progress_root div.seea-progress-section2 {
   margin: 4em 0;
 }
 body.template-seea-progress_root table.seea-table {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #009345;
 }
 body.template-seea-progress_root table.seea-table td.ml-2 {
   padding-left: 30px !important;
 }
 body.template-seea-progress_root table.seea-table td.title {
-  color: green;
+  color: #009345;
   font-size: 1.5em;
 }
 body.template-seea-progress_root table.seea-table td.title2 {
-  background: green;
+  background: #009345;
   color: white;
   font-size: 1.2em;
 }
 body.template-seea-progress_root table.seea-table th {
-  background: green;
+  background: #009345;
   color: white;
   text-align: center;
 }
 body.template-seea-progress_root table.seea-table tr.odd td {
-  background: gray;
+  background: #ededed;
 }
 body.template-seea-progress_root table.seea-table td {
   border-top: none !important;
@@ -5853,14 +5853,14 @@ body.template-seea-progress_root table.seea-table td:first-of-type {
 }
 body.template-seea-progress_root table.seea-table th,
 body.template-seea-progress_root table.seea-table td {
-  border-right: 1px solid gray;
+  border-right: 1px solid #A3A3A3;
 }
 body.template-seea-progress_root table.seea-table th:last-of-type,
 body.template-seea-progress_root table.seea-table td:last-of-type {
   border-right: none;
 }
 body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td {
-  background: blue;
+  background: #1f87e8;
   color: white;
 }
 .box {

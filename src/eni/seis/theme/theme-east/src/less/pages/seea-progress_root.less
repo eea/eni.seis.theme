@@ -19,30 +19,30 @@ body.template-seea-progress_root {
   }
 
   table.seea-table {
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid @color-brand-east;
     td.ml-2 {
       padding-left: 30px !important;
     }
 
     td.title {
-      color: green;
+      color: @color-brand-east;
       font-size: 1.5em;
     }
 
     td.title2 {
-      background: green;
+      background: @color-brand-east;
       color: white;
       font-size: 1.2em;
     }
 
     th {
-      background: green;
+      background: @color-brand-east;
       color: white;
       text-align: center;
     }
 
     tr.odd td {
-      background: gray;
+      background: @color-gray-light;
     }
 
     td {
@@ -55,7 +55,7 @@ body.template-seea-progress_root {
     }
 
     th, td {
-      border-right: 1px solid gray;
+      border-right: 1px solid @color-gray-light2;
     }
 
     th:last-of-type,
@@ -64,7 +64,7 @@ body.template-seea-progress_root {
     }
 
     tr:not(.no-hover):hover td {
-      background: blue;
+      background: @color-accent;
       color: white;
     }
   }
