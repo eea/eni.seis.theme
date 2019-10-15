@@ -5806,6 +5806,9 @@ body.section-indicators .portalMessage.warningMessage,
 div.eea-available-version {
   display: none !important;
 }
+body.template-seea-progress_root {
+  background: red !important;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
