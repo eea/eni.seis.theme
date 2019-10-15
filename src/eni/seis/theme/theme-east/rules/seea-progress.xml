@@ -7,8 +7,7 @@
   <!-- Custom SEEA Progress -->
   <rules css:if-content="body.section-areas-of-work.subsection-seea-progress">
 
-    <!-- <theme href="areas&#45;of&#45;work.html" /> -->
-    <drop css:theme="body" />
+    <theme href="seea-progress.html" />
 
   </rules>
 
