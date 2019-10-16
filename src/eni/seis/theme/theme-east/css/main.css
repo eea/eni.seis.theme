@@ -5806,6 +5806,17 @@ body.section-indicators .portalMessage.warningMessage,
 div.eea-available-version {
   display: none !important;
 }
+body.template-seea-progress_root div.site-container {
+  min-height: initial;
+}
+body.template-seea-progress_root div.site-container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  display: flex;
+  -ms-flex: 1 0 auto;
+  flex-direction: column;
+}
 body.template-seea-progress_root img.lead-img {
   max-width: 90%;
   height: auto;
@@ -5823,6 +5834,7 @@ body.template-seea-progress_root div.seea-progress-section1 div.col-left {
 }
 body.template-seea-progress_root div.seea-progress-section2 {
   margin: 4em 0;
+  background: red;
 }
 body.template-seea-progress_root div.seea-table-container h3 {
   color: #1f87e8;
@@ -5847,6 +5859,7 @@ body.template-seea-progress_root div.seea-table-container h5 {
   text-transform: uppercase;
 }
 body.template-seea-progress_root table.seea-table {
+  width: 100%;
   border-bottom: 2px solid #009345;
 }
 body.template-seea-progress_root table.seea-table td.ml-2 {
