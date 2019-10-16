@@ -5852,8 +5852,12 @@ body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resour
   padding-right: 1em;
   font-weight: 500;
 }
-body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources a {
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources a,
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources i.fa {
   color: #009345;
+}
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources a:hover {
+  color: #1f87e8;
 }
 body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources ul {
   padding-left: 0px;
@@ -5883,6 +5887,9 @@ body.template-seea-progress_root div.seea-progress-section4 div.explore-further 
 }
 body.template-seea-progress_root div.seea-progress-section4 div.explore-further a {
   color: #009345;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further a:hover {
+  color: #1f87e8;
 }
 body.template-seea-progress_root div.seea-progress-section4 div.explore-further ul {
   padding-left: 0px;
