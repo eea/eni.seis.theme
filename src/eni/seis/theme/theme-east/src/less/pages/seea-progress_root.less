@@ -10,6 +10,7 @@ body.template-seea-progress_root {
     display: flex;
     -ms-flex: 1 0 auto;
     flex-direction: column;
+    background: @color-gray-lighter;
   }
 
   img.lead-img {
@@ -25,6 +26,7 @@ body.template-seea-progress_root {
 
   div.seea-progress-section1 {
     overflow: auto;
+    margin-bottom: 4em;
 
     div.col-left {
       padding-left: 0px;
@@ -33,10 +35,20 @@ body.template-seea-progress_root {
 
   div.seea-progress-section2 {
     margin: 4em 0;
-    background: red;
+
+    div.knowledge-resources {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 
   div.seea-table-container {
+    margin-top: 4em;
+    margin-bottom: 4em;
+
     h3 {
       color: @color-accent;
       font-weight: 500;
@@ -60,6 +72,7 @@ body.template-seea-progress_root {
     h5 {
       font-weight: 200;
       text-transform: uppercase;
+      margin-bottom: 4em;
     }
   }
 

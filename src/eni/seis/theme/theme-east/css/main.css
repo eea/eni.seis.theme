@@ -5816,6 +5816,7 @@ body.template-seea-progress_root div.site-container-fluid {
   display: flex;
   -ms-flex: 1 0 auto;
   flex-direction: column;
+  background: #F8F8F8;
 }
 body.template-seea-progress_root img.lead-img {
   max-width: 90%;
@@ -5828,13 +5829,24 @@ body.template-seea-progress_root .vertical-align {
 }
 body.template-seea-progress_root div.seea-progress-section1 {
   overflow: auto;
+  margin-bottom: 4em;
 }
 body.template-seea-progress_root div.seea-progress-section1 div.col-left {
   padding-left: 0px;
 }
 body.template-seea-progress_root div.seea-progress-section2 {
   margin: 4em 0;
-  background: red;
+}
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+body.template-seea-progress_root div.seea-table-container {
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 body.template-seea-progress_root div.seea-table-container h3 {
   color: #1f87e8;
@@ -5857,6 +5869,7 @@ body.template-seea-progress_root div.seea-table-container h3:after {
 body.template-seea-progress_root div.seea-table-container h5 {
   font-weight: 200;
   text-transform: uppercase;
+  margin-bottom: 4em;
 }
 body.template-seea-progress_root table.seea-table {
   width: 100%;
