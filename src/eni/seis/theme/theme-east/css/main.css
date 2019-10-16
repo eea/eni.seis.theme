@@ -5811,6 +5811,7 @@ body.template-seea-progress_root div.site-container {
 }
 body.template-seea-progress_root div.title-section {
   padding-top: 0px !important;
+  padding-bottom: 4em;
 }
 body.template-seea-progress_root div.site-container-fluid {
   margin-left: auto;
