@@ -5824,6 +5824,24 @@ body.template-seea-progress_root div.seea-progress-section1 div.col-left {
 body.template-seea-progress_root div.seea-progress-section2 {
   margin: 4em 0;
 }
+body.template-seea-progress_root div.seea-table-container h3 {
+  color: #1f87e8;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+body.template-seea-progress_root div.seea-table-container h3:after {
+  content: "";
+  background: #1f87e8;
+  position: absolute;
+  top: 1.5em;
+  bottom: 0;
+  left: 33%;
+  right: 33%;
+  height: 3px;
+  width: 33%;
+}
 body.template-seea-progress_root table.seea-table {
   border-bottom: 2px solid #009345;
 }
