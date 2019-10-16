@@ -5852,6 +5852,17 @@ body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resour
   padding-right: 1em;
   font-weight: 500;
 }
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources a {
+  color: #009345;
+}
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources ul {
+  padding-left: 0px;
+}
+body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources ul li {
+  display: list-item;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 body.template-seea-progress_root div.seea-progress-section4 {
   margin: 4em 0;
 }
@@ -5869,6 +5880,17 @@ body.template-seea-progress_root div.seea-progress-section4 div.explore-further 
   display: inline-block;
   padding-right: 1em;
   font-weight: 500;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further a {
+  color: #009345;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further ul {
+  padding-left: 0px;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further ul li {
+  display: list-item;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 body.template-seea-progress_root div.seea-table-container {
   margin-top: 4em;
