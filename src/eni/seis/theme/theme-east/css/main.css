@@ -5977,13 +5977,21 @@ body.template-seea-progress_root table.seea-table th:last-of-type,
 body.template-seea-progress_root table.seea-table td:last-of-type {
   border-right: none;
 }
-body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td {
+body.template-seea-progress_root table.seea-table a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+body.template-seea-progress_root table.seea-table a:hover {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td:not(.no-hover) {
   background: #1f87e8;
   color: white;
 }
-body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td a {
+body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td:not(.no-hover) a {
   color: white;
-  font-weight: 500;
 }
 body.template-seea-progress_root table.seea-table a:hover:before {
   content: "\f0c1";
