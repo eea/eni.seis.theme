@@ -5919,16 +5919,18 @@ body.template-seea-progress_root div.seea-table-container h3 {
   position: relative;
   margin-bottom: 1.5em;
 }
-body.template-seea-progress_root div.seea-table-container h3:after {
-  content: "";
-  background: #1f87e8;
-  position: absolute;
-  top: 1.5em;
-  bottom: 0;
-  left: 33%;
-  right: 33%;
-  height: 3px;
-  width: 33%;
+@media screen and (min-width: 750px) {
+  body.template-seea-progress_root div.seea-table-container h3:after {
+    content: "";
+    background: #1f87e8;
+    position: absolute;
+    top: 1.5em;
+    bottom: 0;
+    left: 33%;
+    right: 33%;
+    height: 3px;
+    width: 33%;
+  }
 }
 body.template-seea-progress_root div.seea-table-container h5 {
   font-weight: 200;

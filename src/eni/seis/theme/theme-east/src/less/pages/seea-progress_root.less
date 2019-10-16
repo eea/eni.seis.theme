@@ -135,16 +135,18 @@ body.template-seea-progress_root {
       margin-bottom: 1.5em;
     }
 
-    h3:after {
-      content:"";
-      background: @color-accent;
-      position: absolute;
-      top: 1.5em;
-      bottom: 0;
-      left: 33%;
-      right: 33%;
-      height: 3px;
-      width: 33%;
+    @media screen and (min-width: 750px) {
+      h3:after {
+        content:"";
+        background: @color-accent;
+        position: absolute;
+        top: 1.5em;
+        bottom: 0;
+        left: 33%;
+        right: 33%;
+        height: 3px;
+        width: 33%;
+      }
     }
 
     h5 {
