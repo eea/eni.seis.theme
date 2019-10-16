@@ -5816,7 +5816,7 @@ body.template-seea-progress_root div.site-container-fluid {
   display: flex;
   -ms-flex: 1 0 auto;
   flex-direction: column;
-  background: #F8F8F8;
+  background: #ededed;
 }
 body.template-seea-progress_root img.lead-img {
   max-width: 90%;
@@ -5838,6 +5838,16 @@ body.template-seea-progress_root div.seea-progress-section2 {
   margin: 4em 0;
 }
 body.template-seea-progress_root div.seea-progress-section2 div.knowledge-resources {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+body.template-seea-progress_root div.seea-progress-section4 {
+  margin: 4em 0;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
