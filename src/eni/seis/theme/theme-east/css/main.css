@@ -5850,6 +5850,7 @@ body.template-seea-progress_root table.seea-table tr.odd td {
 body.template-seea-progress_root table.seea-table td {
   border-top: none !important;
   text-align: center;
+  padding: 3px 15px;
 }
 body.template-seea-progress_root table.seea-table td:first-of-type {
   text-align: left;
