@@ -5874,8 +5874,13 @@ body.template-seea-progress_root div.seea-progress-section4 div.explore-further 
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
   padding-right: 1rem;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further div.col-left {
+  padding-left: 0px;
+}
+body.template-seea-progress_root div.seea-progress-section4 div.explore-further div.col-right {
+  padding-left: 0px;
 }
 body.template-seea-progress_root div.seea-progress-section4 div.explore-further h3 {
   text-transform: uppercase;
