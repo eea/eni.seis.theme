@@ -5809,6 +5809,9 @@ div.eea-available-version {
 body.template-seea-progress_root div.site-container {
   min-height: initial;
 }
+body.template-seea-progress_root div.title-section {
+  padding-top: 0px !important;
+}
 body.template-seea-progress_root div.site-container-fluid {
   margin-left: auto;
   margin-right: auto;
