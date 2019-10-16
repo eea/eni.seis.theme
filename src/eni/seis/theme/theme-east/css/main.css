@@ -5842,6 +5842,10 @@ body.template-seea-progress_root div.seea-table-container h3:after {
   height: 3px;
   width: 33%;
 }
+body.template-seea-progress_root div.seea-table-container h5 {
+  font-weight: 200;
+  text-transform: uppercase;
+}
 body.template-seea-progress_root table.seea-table {
   border-bottom: 2px solid #009345;
 }
