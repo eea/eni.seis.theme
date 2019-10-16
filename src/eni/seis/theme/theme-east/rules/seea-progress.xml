@@ -5,7 +5,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Custom SEEA Progress -->
-  <rules css:if-content="body.section-areas-of-work.subsection-seea-progress">
+  <rules css:if-content="body.template-seea-progress_root">
 
     <theme href="seea-progress.html" />
     <replace css:theme="[data-diazo='seea-content']" css:content="[data-diazo='seea-content']" />
