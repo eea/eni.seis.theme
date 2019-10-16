@@ -5978,6 +5978,15 @@ body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td {
   background: #1f87e8;
   color: white;
 }
+body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td a {
+  color: white;
+  font-weight: 500;
+}
+body.template-seea-progress_root table.seea-table a:hover:before {
+  content: "\f0c1";
+  font-family: "FontAwesome";
+  padding-right: 2px;
+}
 .box {
   margin-left: auto;
   margin-right: auto;

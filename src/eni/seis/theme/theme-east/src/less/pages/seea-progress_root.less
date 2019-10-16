@@ -203,6 +203,17 @@ body.template-seea-progress_root {
     tr:not(.no-hover):hover td {
       background: @color-accent;
       color: white;
+
+      a {
+        color: white;
+        font-weight: 500;
+      }
+    }
+
+    a:hover:before {
+      content: "\f0c1";
+      font-family: "FontAwesome";
+      padding-right: 2px;
     }
   }
 }
