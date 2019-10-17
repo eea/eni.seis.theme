@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.8 (unreleased)
+1.1.8 (2019-10-17)
 ------------------
 - Feature: Add styles for SEEA Progress.
   [GhitaB #107341]
