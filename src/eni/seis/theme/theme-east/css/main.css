@@ -5570,6 +5570,9 @@ body.template-indicators_and_assessments .container.site-container {
   min-height: 0 !important;
   margin-bottom: -4rem;
 }
+body.template-indicators_and_assessments table.invisible {
+  visibility: initial;
+}
 @media (max-width: 1359px) {
   body.template-indicators_and_assessments .container-fluid.moved-video-section {
     background: #F8F8F8 !important;
