@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1.9 (unreleased)
+------------------
+- Fix: missing content because of wrong css in Indicators and Assessments.
+  [GhitaB #110431]
+
 1.1.8 (2019-10-17)
 ------------------
 - Feature: Add styles for SEEA Progress.
