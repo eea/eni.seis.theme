@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.9 (unreleased)
+1.1.9 (2019-10-22)
 ------------------
 - Fix: missing content because of wrong css in Indicators and Assessments.
   [GhitaB #110431]
