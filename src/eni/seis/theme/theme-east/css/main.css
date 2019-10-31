@@ -4001,7 +4001,7 @@ ul.configlets {
 }
 .data-section-aow-slider .aow-slide,
 .homepage-section-aow-slider .aow-slide {
-  padding: 1em;
+  padding: 1em 0 1em 0;
 }
 .data-section-aow-slider .aow-slide:hover .img-circle-cropper,
 .homepage-section-aow-slider .aow-slide:hover .img-circle-cropper {
