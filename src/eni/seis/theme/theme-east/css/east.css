@@ -690,4 +690,7 @@ div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button:hover {
   clear: none !important;
   font-size: 1.2em !important;
 }
+div#navbar li#portaltab-indicators ul.submenu {
+  display: none;
+}
 /*# sourceMappingURL=./source.css.map */

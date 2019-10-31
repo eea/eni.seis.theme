@@ -3,10 +3,8 @@ Changelog
 
 1.2.0 (unreleased)
 ------------------
-TODO: add in theme for East
-div#navbar li#portaltab-indicators ul.submenu {
-  display: none;
-}
+- Fix: hide indicators in main menu.
+  [GhitaB #110431]
 
 1.1.9 (2019-10-22)
 ------------------
