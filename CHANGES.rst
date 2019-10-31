@@ -4,6 +4,7 @@ Changelog
 1.2.0 (unreleased)
 ------------------
 - Feature: Remove hidden column, to be replaced by new icon.
+  Add icon for SEEA Progress section.
   [GhitaB #110554]
 - Fix: hide indicators in main menu (East).
   [GhitaB #110431]
