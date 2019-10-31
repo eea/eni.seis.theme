@@ -3,6 +3,8 @@ Changelog
 
 1.2.0 (unreleased)
 ------------------
+- Feature: Remove hidden column, to be replaced by new icon.
+  [GhitaB #110554]
 - Fix: hide indicators in main menu (East).
   [GhitaB #110431]
 
