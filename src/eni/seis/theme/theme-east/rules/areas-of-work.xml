@@ -15,7 +15,6 @@
           <div class="areas-title">
             <h3>Areas of work</h3>
           </div>
-          <div class="col-lg-1 col-md-1 hidden-sm hidden-xs" style="color:transparent;">nbsp</div>
 
           <!-- I found happiness here. [TODO] Simplify this. -->
           <xsl:for-each css:select="[data-diazo='homepage-section-aow-slider'] .aow-slide">

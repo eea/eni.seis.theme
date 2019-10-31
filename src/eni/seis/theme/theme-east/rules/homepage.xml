@@ -29,7 +29,6 @@
           <div class="areas-title">
             <h3>Areas of work</h3>
           </div>
-          <div class="col-lg-1 col-md-1 hidden-sm hidden-xs" style="color:transparent;">nbsp</div>
 
           <xsl:for-each css:select="[data-diazo='homepage-section-aow-slider'] .aow-slide">
             <xsl:variable name="tile" select="."></xsl:variable>
