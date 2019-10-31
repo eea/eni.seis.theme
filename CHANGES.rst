@@ -3,7 +3,7 @@ Changelog
 
 1.2.0 (unreleased)
 ------------------
-- Fix: hide indicators in main menu.
+- Fix: hide indicators in main menu (East).
   [GhitaB #110431]
 
 1.1.9 (2019-10-22)
