@@ -5809,8 +5809,10 @@ body.section-indicators .portalMessage.warningMessage,
 div.eea-available-version {
   display: none !important;
 }
-body.section-indicators.subsection-indicators-search {
-  background: red !important;
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 body.template-seea-progress_root div.site-container {
   min-height: initial;
