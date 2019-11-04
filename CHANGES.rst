@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.2.1 (unreleased)
+------------------
+
 1.2.0 (2019-10-31)
 ------------------
 - Feature: Remove hidden column, to be replaced by new icon.
