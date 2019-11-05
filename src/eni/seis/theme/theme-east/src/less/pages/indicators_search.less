@@ -110,6 +110,14 @@ body.section-indicators.subsection-indicators-search {
 
       ul.tags-cloud {
         width: 100% !important;
+
+        li {
+          color: @color-accent !important;
+
+          &:hover {
+            color: @color-brand-east !important;
+          }
+        }
       }
 
       div.faceted-widget {
@@ -117,6 +125,7 @@ body.section-indicators.subsection-indicators-search {
       }
 
       div.faceted-widget.section-current-search,
+      div.faceted-widget.section-tags,
       div.faceted-widget.section-theme {
         padding-bottom: 30px;
         border-bottom: 1px solid #d4d4d4;

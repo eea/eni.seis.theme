@@ -5901,10 +5901,17 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area ul.tags-cloud {
   width: 100% !important;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area ul.tags-cloud li {
+  color: #1f87e8 !important;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area ul.tags-cloud li:hover {
+  color: #009345 !important;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget {
   padding-top: 20px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-current-search,
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-tags,
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-theme {
   padding-bottom: 30px;
   border-bottom: 1px solid #d4d4d4;
