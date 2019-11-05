@@ -9,17 +9,30 @@ body.section-indicators.subsection-indicators-search {
       }
 
       div.faceted-widget.section-indicators-search {
-        background: green;
+        background: @color-brand-east;
+        padding: 20px 30px 20px 0px;
+
+        &:after {
+          content: '';
+          position: relative;
+          top: 39px;
+          right: ~"calc(-100% + 67px)";
+          border-top: 120px solid transparent;
+          border-right: 100px solid white;
+        }
 
         fieldset {
           margin: 0;
-          padding: 0;
+          padding: 0px 0px 0px 7px;
           border: none;
         }
 
         legend {
           color: white;
           text-transform: uppercase;
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding: 0;
         }
       }
 

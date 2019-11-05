@@ -5817,16 +5817,28 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   margin-right: 0px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search {
-  background: green;
+  background: #009345;
+  padding: 20px 30px 20px 0px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search:after {
+  content: '';
+  position: relative;
+  top: 39px;
+  right: calc(-100% + 67px);
+  border-top: 120px solid transparent;
+  border-right: 100px solid white;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 0px 7px;
   border: none;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search legend {
   color: white;
   text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
   padding: 7px;
