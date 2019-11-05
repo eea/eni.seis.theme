@@ -3,6 +3,8 @@ Changelog
 
 1.2.1 (unreleased)
 ------------------
+- Improve: Indicators search section design.
+  [GhitaB #110829]
 
 1.2.0 (2019-10-31)
 ------------------
