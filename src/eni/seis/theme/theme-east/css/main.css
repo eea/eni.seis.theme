@@ -5840,6 +5840,17 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   font-weight: 500;
   padding: 0;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search input[type="text"] {
+  padding: 5px;
+  border-color: white;
+  margin-right: -3px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search input[type="submit"] {
+  background: #1f87e8 !important;
+  color: white;
+  padding: 6px 40px;
+  border: 1px solid white;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
   padding: 7px;
 }
