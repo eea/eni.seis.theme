@@ -5824,9 +5824,9 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   content: '';
   position: relative;
   top: 33px;
-  right: calc(-100% + 140px);
+  right: calc(-100% + 69px);
   border-top: 143px solid transparent;
-  border-right: 170px solid white;
+  border-right: 100px solid white;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search fieldset {
   margin: 0;
