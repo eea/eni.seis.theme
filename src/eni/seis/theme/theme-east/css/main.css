@@ -5811,6 +5811,7 @@ div.eea-available-version {
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area {
   width: 75%;
+  padding-right: 20px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#center-content-area {
   margin-right: 0px;
@@ -5826,6 +5827,10 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search legend {
   color: white;
   text-transform: uppercase;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem a.tileImage img {
+  width: 100px;
+  height: auto;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
   width: 25%;
