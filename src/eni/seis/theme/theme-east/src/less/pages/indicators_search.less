@@ -12,6 +12,20 @@ body.section-indicators.subsection-indicators-search {
         background: @color-brand-east;
         padding: 30px 30px 15px 0px;
 
+        &:before {
+          // Don't try this at home. :))
+          // TODO - solve this, somehow.
+          content: " ";
+          display: block;
+          background: #c00;
+          height: 100px;
+          width: 20%;
+
+          position: absolute;
+          bottom: -29px;
+          left: 0;
+        }
+
         &:after {
           content: '';
           position: relative;
