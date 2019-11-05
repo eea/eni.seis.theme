@@ -5916,6 +5916,16 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   padding-bottom: 30px;
   border-bottom: 1px solid #d4d4d4;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on div#c5_start {
+  width: 40%;
+  margin-right: 10px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on div#c5_end {
+  width: 40%;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on input {
+  width: 100% !important;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset {
   margin: 10px 0px 0px 0px;
   padding: 0;
