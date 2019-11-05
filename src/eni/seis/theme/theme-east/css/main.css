@@ -5898,14 +5898,17 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   padding-left: 10px;
   width: 25%;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget {
+  padding-top: 20px;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset {
-  margin: 0;
+  margin: 10px 0px 0px 0px;
   padding: 0;
   border: none;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset legend {
   margin-left: 0px;
-  padding-left: 0px;
+  padding: 0px 0px 0px 0px;
   font-size: 1.2em;
   font-weight: 500;
 }
