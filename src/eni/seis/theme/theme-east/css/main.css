@@ -5809,6 +5809,15 @@ body.section-indicators .portalMessage.warningMessage,
 div.eea-available-version {
   display: none !important;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area {
+  width: 75%;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#center-content-area {
+  margin-right: 0px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
+  width: 25%;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset {
   margin: 0;
   padding: 0;
