@@ -5828,9 +5828,18 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   color: white;
   text-transform: uppercase;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
+  padding: 7px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem a.tileImage {
+  float: left;
+  margin-right: 20px;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem a.tileImage img {
-  width: 100px;
-  height: auto;
+  width: 55px;
+  min-width: 55px !important;
+  max-width: 55px !important;
+  height: auto !important;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
   width: 25%;
