@@ -5864,12 +5864,14 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results {
   margin-top: 10px;
+  padding-left: 75px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileContent h2.tileHeadline a {
   color: #222222;
   font-weight: 500;
   position: relative;
   top: 2px;
+  left: -75px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
   padding: 7px;
@@ -5883,6 +5885,8 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   min-width: 55px !important;
   max-width: 55px !important;
   height: auto !important;
+  position: relative;
+  left: -75px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
   width: 25%;
