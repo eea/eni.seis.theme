@@ -65,7 +65,6 @@ body.section-indicators.subsection-indicators-search {
 
       div#faceted-results {
         margin-top: 10px;
-        padding-left: 75px;
 
         div.tileContent {
           h2.tileHeadline a {
@@ -79,6 +78,10 @@ body.section-indicators.subsection-indicators-search {
 
         div.tileItem {
           padding: 7px;
+          border-bottom: 1px solid @color-gray-light2;
+          margin-bottom: 1.5em;
+          padding-bottom: 1.5em;
+          padding-left: 75px;
 
           a.tileImage {
             float: left;
@@ -92,6 +95,10 @@ body.section-indicators.subsection-indicators-search {
               position: relative;
               left: -75px;
             }
+          }
+
+          a.moreLink {
+            font-style: italic;
           }
         }
       }
