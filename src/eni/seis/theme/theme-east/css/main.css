@@ -5904,6 +5904,7 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget {
   padding-top: 20px;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-current-search,
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-theme {
   padding-bottom: 30px;
   border-bottom: 1px solid #d4d4d4;
@@ -5920,7 +5921,7 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   font-weight: 500;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset select {
-  padding: 7px;
+  padding: 7px 10px 7px 10px;
   background: white;
 }
 body.template-seea-progress_root div.site-container {
