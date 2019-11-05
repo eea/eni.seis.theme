@@ -5818,6 +5818,15 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search {
   background: green;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search legend {
+  color: white;
+  text-transform: uppercase;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
   width: 25%;
 }
