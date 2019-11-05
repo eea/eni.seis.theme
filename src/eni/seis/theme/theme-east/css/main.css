@@ -5818,15 +5818,15 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search {
   background: #009345;
-  padding: 20px 30px 20px 0px;
+  padding: 30px 30px 15px 0px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search:after {
   content: '';
   position: relative;
-  top: 39px;
-  right: calc(-100% + 67px);
-  border-top: 120px solid transparent;
-  border-right: 100px solid white;
+  top: 33px;
+  right: calc(-100% + 140px);
+  border-top: 143px solid transparent;
+  border-right: 170px solid white;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search fieldset {
   margin: 0;
@@ -5840,19 +5840,26 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   font-weight: 500;
   padding: 0;
 }
-body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search input[type="text"] {
-  padding: 5px;
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search form {
+  margin-top: 5px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search form input[type="text"] {
+  padding: 7px;
   border-color: white;
   margin-right: -4px;
   width: 60%;
 }
-body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search input[type="submit"] {
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search form input[type="text"]::placeholder {
+  color: #A3A3A3;
+  font-style: italic;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search form input[type="submit"] {
   background: #1f87e8 !important;
   color: white;
-  padding: 6px 40px;
+  padding: 8px 40px;
   border: 1px solid white;
 }
-body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search input[type="submit"]:hover {
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search form input[type="submit"]:hover {
   background: #009345 !important;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {

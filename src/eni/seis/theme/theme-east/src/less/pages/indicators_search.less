@@ -10,15 +10,15 @@ body.section-indicators.subsection-indicators-search {
 
       div.faceted-widget.section-indicators-search {
         background: @color-brand-east;
-        padding: 20px 30px 20px 0px;
+        padding: 30px 30px 15px 0px;
 
         &:after {
           content: '';
           position: relative;
-          top: 39px;
-          right: ~"calc(-100% + 67px)";
-          border-top: 120px solid transparent;
-          border-right: 100px solid white;
+          top: 33px;
+          right: ~"calc(-100% + 140px)";
+          border-top: 143px solid transparent;
+          border-right: 170px solid white;
         }
 
         fieldset {
@@ -35,21 +35,30 @@ body.section-indicators.subsection-indicators-search {
           padding: 0;
         }
 
-        input[type="text"] {
-          padding: 5px;
-          border-color: white;
-          margin-right: -4px;
-          width: 60%;
-        }
+        form {
+          margin-top: 5px;
 
-        input[type="submit"] {
-          background: @color-accent !important;
-          color: white;
-          padding: 6px 40px;
-          border: 1px solid white;
+          input[type="text"] {
+            padding: 7px;
+            border-color: white;
+            margin-right: -4px;
+            width: 60%;
 
-          &:hover {
-            background: @color-brand-east !important;
+            &::placeholder {
+              color: @color-gray-light2;
+              font-style: italic;
+            }
+          }
+
+          input[type="submit"] {
+            background: @color-accent !important;
+            color: white;
+            padding: 8px 40px;
+            border: 1px solid white;
+
+            &:hover {
+              background: @color-brand-east !important;
+            }
           }
         }
       }
