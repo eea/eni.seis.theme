@@ -5895,12 +5895,23 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   font-style: italic;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
+  padding-left: 10px;
   width: 25%;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset {
   margin: 0;
   padding: 0;
   border: none;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset legend {
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset select {
+  padding: 7px;
+  background: white;
 }
 body.template-seea-progress_root div.site-container {
   min-height: initial;
