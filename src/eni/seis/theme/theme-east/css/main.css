@@ -5862,6 +5862,15 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search form input[type="submit"]:hover {
   background: #009345 !important;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results {
+  margin-top: 10px;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileContent h2.tileHeadline a {
+  color: #222222;
+  font-weight: 500;
+  position: relative;
+  top: 2px;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
   padding: 7px;
 }
