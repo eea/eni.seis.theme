@@ -5816,16 +5816,7 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   margin-right: 0px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search {
-  width: 66%;
-  position: absolute;
-  left: 0;
-  right: 20%;
-  padding-left: 15%;
   background: green;
-}
-body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results {
-  position: relative;
-  top: 115px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
   width: 25%;
