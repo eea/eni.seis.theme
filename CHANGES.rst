@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.1 (unreleased)
+1.2.1 (2019-11-06)
 ------------------
 - Improve: Indicators search section design.
   [GhitaB #110829]
