@@ -5819,6 +5819,10 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search {
   background: #009345;
   padding: 30px 30px 15px 0px;
+  width: 150%;
+  padding-left: 50%;
+  position: relative;
+  left: -50%;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search:after {
   content: '';
