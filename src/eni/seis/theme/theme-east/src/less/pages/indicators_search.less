@@ -12,20 +12,6 @@ body.section-indicators.subsection-indicators-search {
         background: @color-brand-east;
         padding: 30px 30px 15px 0px;
 
-        &:before {
-          // Don't try this at home. :))
-          // TODO - solve this, somehow.
-          content: " ";
-          display: block;
-          background: #c00;
-          height: 100px;
-          width: 20%;
-
-          position: absolute;
-          bottom: -29px;
-          left: 0;
-        }
-
         &:after {
           content: '';
           position: relative;
@@ -147,16 +133,20 @@ body.section-indicators.subsection-indicators-search {
 
       div.faceted-widget.section-published-on {
         div#c5_start {
-          width: 40%;
+          width: 43%;
           margin-right: 10px;
+          margin-left: 0px;
+          float: left;
         }
 
         div#c5_end {
-          width: 40%;
+          width: 43%;
+          float: right;
         }
 
         input {
           width: 100% !important;
+          padding: 5px;
         }
       }
 

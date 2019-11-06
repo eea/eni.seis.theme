@@ -5820,16 +5820,6 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   background: #009345;
   padding: 30px 30px 15px 0px;
 }
-body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search:before {
-  content: " ";
-  display: block;
-  background: #c00;
-  height: 100px;
-  width: 20%;
-  position: absolute;
-  bottom: -29px;
-  left: 0;
-}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div.faceted-widget.section-indicators-search:after {
   content: '';
   position: relative;
@@ -5927,14 +5917,18 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   border-bottom: 1px solid #d4d4d4;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on div#c5_start {
-  width: 40%;
+  width: 43%;
   margin-right: 10px;
+  margin-left: 0px;
+  float: left;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on div#c5_end {
-  width: 40%;
+  width: 43%;
+  float: right;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on input {
   width: 100% !important;
+  padding: 5px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area fieldset {
   margin: 10px 0px 0px 0px;
