@@ -5885,8 +5885,8 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
   padding: 7px;
   border-bottom: 1px solid #d4d4d4;
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
+  margin-bottom: 1.7em;
+  padding-bottom: 1.7em;
   padding-left: 75px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem a.tileImage {
@@ -5903,6 +5903,9 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem a.moreLink {
   font-style: italic;
+}
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem p.tileFooter {
+  margin-bottom: 5px;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area {
   padding-left: 10px;
