@@ -5879,6 +5879,9 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#center
   top: 2px;
   left: -75px;
 }
+body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileContent h2.tileHeadline a:hover {
+  color: #009345;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area div#faceted-results div.tileItem {
   padding: 7px;
   border-bottom: 1px solid #d4d4d4;
