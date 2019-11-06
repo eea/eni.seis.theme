@@ -5809,6 +5809,11 @@ body.section-indicators .portalMessage.warningMessage,
 div.eea-available-version {
   display: none !important;
 }
+@media only screen and (max-width: 700px) {
+  body.section-indicators.subsection-indicators-search div.faceted-widget.section-indicators-search:after {
+    display: none;
+  }
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area {
   width: 75%;
   padding-right: 20px;
