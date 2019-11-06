@@ -5921,13 +5921,12 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   border-bottom: 1px solid #d4d4d4;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on div#c5_start {
-  width: 43%;
-  margin-right: 10px;
+  width: 48%;
   margin-left: 0px;
   float: left;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on div#c5_end {
-  width: 43%;
+  width: 48%;
   float: right;
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#right-area div.faceted-widget.section-published-on input {
