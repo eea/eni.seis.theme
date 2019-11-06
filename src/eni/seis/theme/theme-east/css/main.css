@@ -5820,6 +5820,15 @@ div.eea-available-version {
     width: 100% !important;
   }
 }
+body.section-indicators.subsection-indicators-search div.faceted-widget.section-filters {
+  border-bottom: 1px solid #222222;
+}
+body.section-indicators.subsection-indicators-search div.faceted-widget.section-filters form {
+  display: none !important;
+}
+body.section-indicators.subsection-indicators-search div.faceted-widget.section-filters legend {
+  text-transform: uppercase;
+}
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area {
   width: 75%;
   padding-right: 20px;
