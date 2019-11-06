@@ -5813,6 +5813,12 @@ div.eea-available-version {
   body.section-indicators.subsection-indicators-search div.faceted-widget.section-indicators-search:after {
     display: none;
   }
+  body.section-indicators.subsection-indicators-search div#center-and-left-area {
+    width: 100% !important;
+  }
+  body.section-indicators.subsection-indicators-search div#right-area {
+    width: 100% !important;
+  }
 }
 body.section-indicators.subsection-indicators-search div#faceted-form div#center-and-left-area {
   width: 75%;
