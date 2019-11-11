@@ -3,6 +3,8 @@ Changelog
 
 1.2.2 (unreleased)
 ------------------
+- Fix: space for publication date in indicators search.
+  [GhitaB #110829]
 
 1.2.1 (2019-11-06)
 ------------------
