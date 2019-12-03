@@ -11,10 +11,9 @@
 
     <replace css:theme="[data-diazo='seea-content-section1']" css:content="[data-diazo='seea-content-section1']" />
     <replace css:theme="[data-diazo='seea-content-section2']" css:content="[data-diazo='seea-content-section2']" />
-    <replace css:theme="[data-diazo='seea-content-section3']" css:content="[data-diazo='seea-content-section3']" />
-    <!-- <replace css:theme="[data&#45;diazo='seea&#45;progress&#45;table&#45;section']" -->
-    <!--          href="seea&#45;progress&#45;table&#45;section" method="document" -->
-    <!--          css:content="#content&#45;core" /> -->
+    <replace css:theme="[data-diazo='seea-content-section3']"
+             href="seea-progress-table-section" method="document"
+             css:content="#content-core" />
     <replace css:theme="[data-diazo='seea-content-section4']" css:content="[data-diazo='seea-content-section4']" />
 
 
