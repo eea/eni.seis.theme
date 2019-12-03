@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.2 (unreleased)
+1.2.2 (2019-12-03)
 ------------------
 - Improve: Editable page for SEEA Progress Table - diazo rules update.
   Manual step: add seea-progress/seea-progress-table-section page containing
