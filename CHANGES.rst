@@ -4,6 +4,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 - Improve: Editable page for SEEA Progress Table - diazo rules update.
+  Manual step: add seea-progress/seea-progress-table-section page containing
+  the HTML for table section (see example in seea-progress_root.pt -
+  data-diazo='seea-content-section3').
   [GhitaB #111804]
 - Fix: space for publication date in indicators search.
   [GhitaB #110829]
