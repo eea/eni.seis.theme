@@ -9,7 +9,8 @@
 
     <theme href="seea-progress.html" />
     <replace css:theme="[data-diazo='seea-content']" css:content="[data-diazo='seea-content']" />
-
+    <replace css:theme="[data-diazo='seea-progress-table-section']"
+             href="seea-progress-table-section" method="document"
+             css:content="#content-core" />
   </rules>
-
 </rules>
