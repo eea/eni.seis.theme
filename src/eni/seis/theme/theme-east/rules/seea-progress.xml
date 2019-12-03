@@ -16,6 +16,5 @@
              css:content="#content-core" />
     <replace css:theme="[data-diazo='seea-content-section4']" css:content="[data-diazo='seea-content-section4']" />
 
-
   </rules>
 </rules>
