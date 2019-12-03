@@ -3,6 +3,8 @@ Changelog
 
 1.2.2 (unreleased)
 ------------------
+- Improve: Editable page for SEEA Progress Table - diazo rules update.
+  [GhitaB #111804]
 - Fix: space for publication date in indicators search.
   [GhitaB #110829]
 
