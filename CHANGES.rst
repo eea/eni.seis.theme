@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.3 (unreleased)
+------------------
+
+
 1.2.2 (2019-12-03)
 ------------------
 - Improve: Editable page for SEEA Progress Table - diazo rules update.
