@@ -3,7 +3,8 @@ Changelog
 
 1.2.3 (unreleased)
 ------------------
-
+- Feature: styles and resources for Results section (East).
+  [GhitaB #107342]
 
 1.2.2 (2019-12-03)
 ------------------
