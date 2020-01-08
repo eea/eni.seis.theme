@@ -6181,6 +6181,15 @@ body.template-results_root_east h2.eni-section-title {
   margin-bottom: 1em;
   font-weight: 500;
 }
+body.template-results_root_east section.eni-fullwidth {
+  background: #e4e4e4;
+  display: inline-block;
+  width: 200%;
+  position: relative;
+  left: -50%;
+  padding-left: 50%;
+  padding-right: 50%;
+}
 body.template-results_root_east main.page-main {
   width: 100%;
 }
