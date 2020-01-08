@@ -6170,6 +6170,9 @@ body.template-seea-progress_root table.seea-table a:hover:before {
   font-family: "FontAwesome";
   padding-right: 2px;
 }
+body.template-results_root_east {
+  background: red;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
