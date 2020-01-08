@@ -6177,6 +6177,36 @@ body.template-results_root_east div#plone-document-byline {
 body.template-results_root_east main.page-main {
   width: 100%;
 }
+body.template-results_root_east div.countries-container {
+  padding-top: 2em;
+}
+body.template-results_root_east div.countries-container .col-lg-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+body.template-results_root_east div.countries-container a.country-item div.country-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ededed;
+}
+body.template-results_root_east div.countries-container a.country-item div.country-box p.country-title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 0px !important;
+}
+body.template-results_root_east div.countries-container a.country-item:hover {
+  background: #1f87e8;
+}
+body.template-results_root_east div.countries-container a.country-item:hover div.country-box {
+  background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-results_root_east div.countries-container a.country-item:hover div.country-box p.country-title {
+  color: #FFFFFF;
+}
 body.template-results_root_east div.row.cooperation-container {
   margin-top: 2em;
   margin-bottom: 2em;
