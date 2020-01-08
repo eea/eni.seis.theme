@@ -6182,11 +6182,11 @@ body.template-results_root_east div.row.cooperation-container {
   margin-bottom: 2em;
   background: transparent;
 }
-body.template-results_root_east div.row.cooperation-container div.col-left {
+body.template-results_root_east div.col-left {
   background: transparent;
   float: left;
 }
-body.template-results_root_east div.row.cooperation-container div.col-left div.col-content {
+body.template-results_root_east div.col-left div.col-content {
   padding-top: 4em;
   padding-bottom: 4em;
   width: 200%;
@@ -6197,12 +6197,7 @@ body.template-results_root_east div.row.cooperation-container div.col-left div.c
   background: linear-gradient(60deg, #009345 89%, #FFFFFF 11%);
   color: white;
 }
-@media (max-width: 1000px) {
-  body.template-results_root_east div.row.cooperation-container div.col-left div.col-content {
-    background: green;
-  }
-}
-body.template-results_root_east div.row.cooperation-container div.col-left div.col-content h2 {
+body.template-results_root_east div.col-left div.col-content h2 {
   color: white;
   border-bottom: 3px solid white;
   padding-right: 1em;
@@ -6211,18 +6206,23 @@ body.template-results_root_east div.row.cooperation-container div.col-left div.c
   font-weight: 500;
   padding-bottom: 0.5em;
 }
-body.template-results_root_east div.row.cooperation-container div.col-left div.col-content p {
+body.template-results_root_east div.col-left div.col-content p {
   padding-top: 1em;
   margin-bottom: 0px !important;
 }
-body.template-results_root_east div.row.cooperation-container div.col-right {
+@media (max-width: 1000px) {
+  body.template-results_root_east div.row.cooperation-container div.col-left div.col-content {
+    background: green;
+  }
+}
+body.template-results_root_east div.col-right {
   background: transparent;
   float: left;
 }
-body.template-results_root_east div.row.cooperation-container div.col-right p {
+body.template-results_root_east div.col-right p {
   margin-bottom: 0px !important;
 }
-body.template-results_root_east div.row.cooperation-container div.col-right img {
+body.template-results_root_east div.col-right img {
   max-height: 240px;
 }
 body.template-results_root_east div.intro-text-container {

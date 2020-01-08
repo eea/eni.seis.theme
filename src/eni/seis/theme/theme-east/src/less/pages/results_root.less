@@ -14,21 +14,36 @@ body.template-results_root_east {
     background: transparent;
   }
 
-  div.row.cooperation-container div.col-left {
+  div.col-left {
     background: transparent;
     float: left;
-  }
 
-  div.row.cooperation-container div.col-left div.col-content {
-    padding-top: 4em;
-    padding-bottom: 4em;
-    width: 200%;
-    padding-left: 100%;
-    padding-right: 25%;
-    left: -100%;
-    position: relative;
-    background: linear-gradient(60deg, #009345 89%, #FFFFFF 11%);
-    color: white;
+    div.col-content {
+      padding-top: 4em;
+      padding-bottom: 4em;
+      width: 200%;
+      padding-left: 100%;
+      padding-right: 25%;
+      left: -100%;
+      position: relative;
+      background: linear-gradient(60deg, #009345 89%, #FFFFFF 11%);
+      color: white;
+
+      h2 {
+        color: white;
+        border-bottom: 3px solid white;
+        padding-right: 1em;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-bottom: 0.5em;
+      }
+
+      p {
+        padding-top: 1em;
+        margin-bottom: 0px !important;
+      }
+    }
   }
 
   @media (max-width: 1000px) {
@@ -37,32 +52,17 @@ body.template-results_root_east {
     }
   }
 
-  div.row.cooperation-container div.col-left div.col-content h2 {
-    color: white;
-    border-bottom: 3px solid white;
-    padding-right: 1em;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-bottom: 0.5em;
-  }
-
-  div.row.cooperation-container div.col-left div.col-content p {
-    padding-top: 1em;
-    margin-bottom: 0px !important;
-  }
-
-  div.row.cooperation-container div.col-right {
+  div.col-right {
     background: transparent;
     float: left;
-  }
 
-  div.row.cooperation-container div.col-right p {
-    margin-bottom: 0px !important;
-  }
+    p {
+      margin-bottom: 0px !important;
+    }
 
-  div.row.cooperation-container div.col-right img {
-    max-height: 240px;
+    img {
+      max-height: 240px;
+    }
   }
 
   div.intro-text-container {
