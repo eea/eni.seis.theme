@@ -6182,7 +6182,7 @@ body.template-results_root_east h2.eni-section-title {
   font-weight: 500;
 }
 body.template-results_root_east section.eni-fullwidth {
-  background: #e4e4e4;
+  background: #F8F8F8;
   display: inline-block;
   width: 200%;
   position: relative;
@@ -6201,6 +6201,7 @@ body.template-results_root_east div.countries-container .col-lg-2 {
   padding-right: 5px;
 }
 body.template-results_root_east div.countries-container a.country-item div.country-box {
+  background: white;
   text-align: center;
   padding: 20px;
   border: 1px solid #ededed;
