@@ -144,8 +144,30 @@ body.template-results_root_east {
       display: inline-block;
     }
 
+    p.description {
+      padding-top: 7em;
+    }
+
     img.img-left {
       float: left;
+    }
+
+    div.more {
+      margin-top: 2em;
+      text-align: right;
+
+      a {
+        padding: 0.8em;
+        border-top: 1px solid @color-accent;
+        text-transform: uppercase;
+      }
+    }
+
+    div.more a:after {
+      content: "\2192";
+      position: relative;
+      left: 10px;
+      top: -1px;
     }
   }
 }

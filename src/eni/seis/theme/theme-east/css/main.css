@@ -6290,8 +6290,26 @@ body.template-results_root_east div.learn-container h3 {
   border-bottom: 3px solid #1f87e8;
   display: inline-block;
 }
+body.template-results_root_east div.learn-container p.description {
+  padding-top: 7em;
+}
 body.template-results_root_east div.learn-container img.img-left {
   float: left;
+}
+body.template-results_root_east div.learn-container div.more {
+  margin-top: 2em;
+  text-align: right;
+}
+body.template-results_root_east div.learn-container div.more a {
+  padding: 0.8em;
+  border-top: 1px solid #1f87e8;
+  text-transform: uppercase;
+}
+body.template-results_root_east div.learn-container div.more a:after {
+  content: "\2192";
+  position: relative;
+  left: 10px;
+  top: -1px;
 }
 .box {
   margin-left: auto;
