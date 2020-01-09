@@ -6240,6 +6240,9 @@ body.template-results_root_east div.row.homepage-section-aow-slider div.img-circ
 body.template-results_root_east div.row.homepage-section-aow-slider div.aow-item {
   width: 10%;
 }
+body.template-results_root_east div.row.homepage-section-aow-slider .aow-slide .text {
+  width: 110px;
+}
 body.template-results_root_east div.col-left {
   background: transparent;
   float: left;
