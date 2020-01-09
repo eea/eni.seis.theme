@@ -6290,7 +6290,7 @@ body.template-results_root_east div.learn-container h3 {
   border-bottom: 3px solid #1f87e8;
   display: inline-block;
 }
-body.template-results_root_east div.learn-container img {
+body.template-results_root_east div.learn-container img.img-left {
   float: left;
 }
 .box {
