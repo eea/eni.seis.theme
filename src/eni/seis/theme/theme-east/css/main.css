@@ -6296,6 +6296,12 @@ body.template-results_root_east div.intro-text-container {
   padding-left: 4em;
   padding-right: 4em;
 }
+body.template-results_root_east div.learn-container {
+  margin-bottom: 1em;
+}
+body.template-results_root_east div.learn-container h2 {
+  margin-top: 2em;
+}
 body.template-results_root_east div.learn-container h3 {
   font-size: 1.4rem;
   text-transform: uppercase;
