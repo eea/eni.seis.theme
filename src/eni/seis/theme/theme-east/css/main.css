@@ -6181,6 +6181,9 @@ body.template-results_root_east h2.eni-section-title {
   margin-bottom: 1em;
   font-weight: 500;
 }
+body.template-results_root_east div.countries-container h2.eni-section-title {
+  margin-bottom: 1.8em;
+}
 body.template-results_root_east section.eni-fullwidth {
   background: #F8F8F8;
   display: inline-block;
@@ -6195,6 +6198,7 @@ body.template-results_root_east main.page-main {
 }
 body.template-results_root_east div.countries-container {
   padding-top: 2em;
+  margin-bottom: 3em;
 }
 body.template-results_root_east div.countries-container .col-lg-2 {
   padding-left: 5px;
@@ -6259,7 +6263,7 @@ body.template-results_root_east div.col-left div.col-content p {
 }
 @media (max-width: 1000px) {
   body.template-results_root_east div.row.cooperation-container div.col-left div.col-content {
-    background: green;
+    background: #009345;
   }
 }
 body.template-results_root_east div.col-right {

@@ -12,6 +12,10 @@ body.template-results_root_east {
     font-weight: 500;
   }
 
+  div.countries-container h2.eni-section-title {
+    margin-bottom: 1.8em;
+  }
+
   section.eni-fullwidth {
     background: @color-gray-lighter;
     display: inline-block;
@@ -30,6 +34,7 @@ body.template-results_root_east {
 
   div.countries-container {
     padding-top: 2em;
+    margin-bottom: 3em;
 
     .col-lg-2 {
       padding-left: 5px;
@@ -83,7 +88,7 @@ body.template-results_root_east {
       padding-right: 25%;
       left: -100%;
       position: relative;
-      background: linear-gradient(60deg, #009345 89%, #FFFFFF 11%);
+      background: linear-gradient(60deg, @color-brand-east 89%, #FFFFFF 11%);
       color: white;
 
       h2 {
@@ -105,7 +110,7 @@ body.template-results_root_east {
 
   @media (max-width: 1000px) {
     div.row.cooperation-container div.col-left div.col-content {
-      background: green;
+      background: @color-brand-east;
     }
   }
 
