@@ -6233,6 +6233,13 @@ body.template-results_root_east div.row.cooperation-container {
   margin-bottom: 2em;
   background: transparent;
 }
+body.template-results_root_east div.row.homepage-section-aow-slider div.img-circle-cropper {
+  width: 110px;
+  height: 110px;
+}
+body.template-results_root_east div.row.homepage-section-aow-slider div.aow-item {
+  width: 10%;
+}
 body.template-results_root_east div.col-left {
   background: transparent;
   float: left;
