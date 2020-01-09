@@ -6196,6 +6196,15 @@ body.template-results_root_east section.eni-fullwidth {
 body.template-results_root_east main.page-main {
   width: 100%;
 }
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-case-studies {
+  position: relative;
+  top: -250px;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-photos {
+  position: relative;
+  top: -500px;
+  left: -100px;
+}
 body.template-results_root_east div.countries-container {
   padding-top: 2em;
 }
