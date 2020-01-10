@@ -6201,6 +6201,16 @@ body.template-results_root_east div.homepage-section-aow-slider.big-circle {
   position: relative;
   margin-top: 0px;
 }
+body.template-results_root_east div.homepage-section-aow-slider.big-circle span.discover {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle span.discover:after {
+  content: "\2192";
+  position: relative;
+  left: 10px;
+  top: -1px;
+}
 body.template-results_root_east div.countries-container {
   padding-top: 2em;
 }
