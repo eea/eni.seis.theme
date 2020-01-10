@@ -6204,12 +6204,19 @@ body.template-results_root_east div.homepage-section-aow-slider.big-circle {
 body.template-results_root_east div.homepage-section-aow-slider.big-circle span.discover {
   margin-top: 0px;
   padding-top: 0px;
+  text-transform: uppercase;
+  border-top: 1px solid transparent;
+  color: transparent;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle span.discover:after {
   content: "\2192";
   position: relative;
   left: 10px;
   top: -1px;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div.aow-slide:hover span.discover {
+  border-top: 1px solid #1f87e8;
+  color: #009345;
 }
 body.template-results_root_east div.countries-container {
   padding-top: 2em;

@@ -40,6 +40,9 @@ body.template-results_root_east {
     span.discover {
       margin-top: 0px;
       padding-top: 0px;
+      text-transform: uppercase;
+      border-top: 1px solid transparent;
+      color: transparent;
 
       &:after {
         content: "\2192";
@@ -47,6 +50,11 @@ body.template-results_root_east {
         left: 10px;
         top: -1px;
       }
+    }
+
+    div.aow-slide:hover span.discover {
+      border-top: 1px solid @color-accent;
+      color: @color-brand-east;
     }
 
     div#aow-case-studies {
