@@ -6170,9 +6170,6 @@ body.template-seea-progress_root table.seea-table a:hover:before {
   font-family: "FontAwesome";
   padding-right: 2px;
 }
-body.template-results_root_east {
-  /* 12em = half the width of the wrapper */
-}
 body.template-results_root_east h1#parent-fieldname-title,
 body.template-results_root_east div#plone-document-byline {
   display: none;
@@ -6217,61 +6214,6 @@ body.template-results_root_east .circle-container a {
   width: 4em;
   height: 4em;
   margin: -2em;
-}
-body.template-results_root_east .circle-container img {
-  display: block;
-  width: 100%;
-}
-body.template-results_root_east .deg0 {
-  transform: translate(12em);
-}
-body.template-results_root_east .deg45 {
-  transform: rotate(45deg) translate(12em) rotate(-45deg);
-}
-body.template-results_root_east .deg135 {
-  transform: rotate(135deg) translate(12em) rotate(-135deg);
-}
-body.template-results_root_east .deg180 {
-  transform: translate(-12em);
-}
-body.template-results_root_east .deg225 {
-  transform: rotate(225deg) translate(12em) rotate(-225deg);
-}
-body.template-results_root_east .deg315 {
-  transform: rotate(315deg) translate(12em) rotate(-315deg);
-}
-body.template-results_root_east div.circular-menu {
-  position: relative;
-  width: 24em;
-  height: 24em;
-  padding: 2.8em;
-  /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-  border: dashed 1px;
-  border-radius: 50%;
-  margin: 1.75em auto 0;
-  /* 12em = half the width of the wrapper */
-}
-body.template-results_root_east div.circular-menu img {
-  display: block;
-  width: 100%;
-}
-body.template-results_root_east div.circular-menu .deg0 {
-  transform: translate(12em);
-}
-body.template-results_root_east div.circular-menu .deg45 {
-  transform: rotate(45deg) translate(12em) rotate(-45deg);
-}
-body.template-results_root_east div.circular-menu .deg135 {
-  transform: rotate(135deg) translate(12em) rotate(-135deg);
-}
-body.template-results_root_east div.circular-menu .deg180 {
-  transform: translate(-12em);
-}
-body.template-results_root_east div.circular-menu .deg225 {
-  transform: rotate(225deg) translate(12em) rotate(-225deg);
-}
-body.template-results_root_east div.circular-menu .deg315 {
-  transform: rotate(315deg) translate(12em) rotate(-315deg);
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle {
   display: flex;
