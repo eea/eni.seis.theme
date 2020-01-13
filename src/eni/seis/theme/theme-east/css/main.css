@@ -6220,7 +6220,7 @@ body.template-results_root_east .circle-menu {
   background-image: url("../../east-results-big-circle-demo.png");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 500px;
+  min-height: 550px;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle {
   display: flex;
