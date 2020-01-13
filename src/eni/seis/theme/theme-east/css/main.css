@@ -6215,6 +6215,11 @@ body.template-results_root_east .circle-container a {
   height: 4em;
   margin: -2em;
 }
+body.template-results_root_east .circle-menu {
+  width: 100%;
+  background-image: url("../../east-results-big-circle-demo.png");
+  min-height: 500px;
+}
 body.template-results_root_east div.homepage-section-aow-slider.big-circle {
   display: flex;
   position: relative;
