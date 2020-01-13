@@ -6245,6 +6245,13 @@ body.template-results_root_east div.homepage-section-aow-slider.big-circle div.a
   top: 0px;
   left: 40%;
 }
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div.aow-slide div.text {
+  text-align: left;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div.aow-slide div.text span {
+  text-align: left;
+  height: 2.5em;
+}
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div.aow-slide:hover span.discover {
   border-top: 1px solid #1f87e8;
   color: #009345;
@@ -6252,6 +6259,11 @@ body.template-results_root_east div.homepage-section-aow-slider.big-circle div.a
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-case-studies {
   top: 30px;
   left: 33%;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-case-studies div.text {
+  position: relative;
+  top: -78px;
+  left: -120px;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-photos {
   left: 52%;
