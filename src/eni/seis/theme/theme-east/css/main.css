@@ -6233,6 +6233,7 @@ body.template-results_root_east div.homepage-section-aow-slider.big-circle span.
   text-transform: uppercase;
   border-top: 1px solid transparent;
   color: transparent;
+  font-weight: 200;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle span.discover:after {
   content: "\2192";
@@ -6257,29 +6258,49 @@ body.template-results_root_east div.homepage-section-aow-slider.big-circle div.a
   color: #009345;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-case-studies {
-  top: 30px;
+  top: 60px;
   left: 33%;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-case-studies div.text {
   position: relative;
-  top: -78px;
+  top: -83px;
   left: -120px;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-photos {
   left: 52%;
-  top: 20px;
+  top: 40px;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-photos div.text {
+  position: relative;
+  top: -83px;
+  left: -120px;
 }
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-testimonials {
   left: 60%;
   top: 200px;
 }
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-testimonials div.text {
+  position: relative;
+  top: -83px;
+  left: -120px;
+}
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-indicators {
   left: 44%;
   top: 340px;
 }
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-indicators div.text {
+  position: relative;
+  top: -83px;
+  left: -120px;
+}
 body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-countries {
   left: 28%;
   top: 235px;
+}
+body.template-results_root_east div.homepage-section-aow-slider.big-circle div#aow-countries div.text {
+  position: relative;
+  top: -83px;
+  left: -120px;
 }
 body.template-results_root_east div.countries-container {
   padding-top: 2em;
