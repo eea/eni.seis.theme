@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.3 (unreleased)
+1.2.3 (2020-01-14)
 ------------------
 - Feature: styles and resources for Results section (East).
   [GhitaB #107342]
