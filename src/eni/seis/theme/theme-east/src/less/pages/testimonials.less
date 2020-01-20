@@ -1,10 +1,14 @@
 div#testimonials-container {
   div.fullsize-row {
-    background: green;
+    width: 200%;
+    position: relative;
+    left: -50%;
+
+    background: @color-brand-east;
     margin-bottom: 4em;
 
     div.main-quote {
-      width: 60%;
+      width: 30%;
       margin: 0 auto;
       padding-top: 3em;
       padding-bottom: 3em;
@@ -13,6 +17,10 @@ div#testimonials-container {
       hr {
         width: 60px;
         margin: 0 auto 1em auto;
+      }
+
+      p.author {
+        font-style: italic;
       }
     }
   }
@@ -29,6 +37,10 @@ div#testimonials-container {
     div.text {
       text-align: left;
       padding-left: 110px;
+    }
+
+    p.author {
+      font-style: italic;
     }
   }
 

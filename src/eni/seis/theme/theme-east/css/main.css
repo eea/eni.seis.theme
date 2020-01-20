@@ -6442,11 +6442,14 @@ body.template-results_root_east div.learn-container div.more a:after {
   top: -1px;
 }
 div#testimonials-container div.fullsize-row {
-  background: green;
+  width: 200%;
+  position: relative;
+  left: -50%;
+  background: #009345;
   margin-bottom: 4em;
 }
 div#testimonials-container div.fullsize-row div.main-quote {
-  width: 60%;
+  width: 30%;
   margin: 0 auto;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -6455,6 +6458,9 @@ div#testimonials-container div.fullsize-row div.main-quote {
 div#testimonials-container div.fullsize-row div.main-quote hr {
   width: 60px;
   margin: 0 auto 1em auto;
+}
+div#testimonials-container div.fullsize-row div.main-quote p.author {
+  font-style: italic;
 }
 div#testimonials-container div.simple-quote {
   margin-bottom: 4em;
@@ -6467,6 +6473,9 @@ div#testimonials-container div.simple-quote img.author-img {
 div#testimonials-container div.simple-quote div.text {
   text-align: left;
   padding-left: 110px;
+}
+div#testimonials-container div.simple-quote p.author {
+  font-style: italic;
 }
 div#testimonials-container div.row.row-no-img div.text {
   padding-left: 0px;
