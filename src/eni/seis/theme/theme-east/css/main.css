@@ -5726,6 +5726,9 @@ body.template-view.portaltype-indicatordata div.page-main h2 {
   margin-top: 1em;
   color: #1f87e8;
 }
+body.template-view.portaltype-indicatordata div.page-main div.eni-figure div.tab-content {
+  margin-bottom: 2em;
+}
 body.template-view.portaltype-indicatordata div.page-main div.key-messages {
   margin-top: 2em;
   margin-bottom: 2em;

@@ -3,9 +3,8 @@ Changelog
 
 1.2.4 (unreleased)
 ------------------
-body.template-view.portaltype-indicatordata div.eni-figure div.tab-content {
-  margin-bottom: 2em;
-}
+- Improve: add space under figures in indicatordata view.
+  [GhitaB #107342]
 
 1.2.3 (2020-01-14)
 ------------------
