@@ -6460,6 +6460,10 @@ div#testimonials-container div.simple-quote img.author-img {
   height: auto;
   float: left;
 }
+div#testimonials-container div.simple-quote div.text {
+  text-align: left;
+  padding-left: 110px;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
