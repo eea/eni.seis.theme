@@ -6443,6 +6443,7 @@ body.template-results_root_east div.learn-container div.more a:after {
 }
 div#testimonials-container div.fullsize-row {
   background: green;
+  margin-bottom: 4em;
 }
 div#testimonials-container div.fullsize-row div.main-quote {
   width: 60%;
@@ -6455,6 +6456,9 @@ div#testimonials-container div.fullsize-row div.main-quote hr {
   width: 60px;
   margin: 0 auto 1em auto;
 }
+div#testimonials-container div.simple-quote {
+  margin-bottom: 4em;
+}
 div#testimonials-container div.simple-quote img.author-img {
   width: 100px;
   height: auto;
@@ -6463,6 +6467,9 @@ div#testimonials-container div.simple-quote img.author-img {
 div#testimonials-container div.simple-quote div.text {
   text-align: left;
   padding-left: 110px;
+}
+div#testimonials-container div.row.row-no-img div.text {
+  padding-left: 0px;
 }
 .box {
   margin-left: auto;
