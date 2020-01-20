@@ -6451,6 +6451,15 @@ div#testimonials-container div.fullsize-row div.main-quote {
   padding-bottom: 3em;
   color: white;
 }
+div#testimonials-container div.fullsize-row div.main-quote hr {
+  width: 60px;
+  margin: 0 auto 1em auto;
+}
+div#testimonials-container div.simple-quote img.author-img {
+  width: 100px;
+  height: auto;
+  float: left;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
