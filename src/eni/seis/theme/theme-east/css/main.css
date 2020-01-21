@@ -6519,6 +6519,9 @@ div#testimonials-container div.simple-quote div.text {
 }
 div#testimonials-container div.simple-quote p.author {
   font-style: italic;
+  font-weight: 500;
+  color: #A3A3A3;
+  font-size: 1.1em;
 }
 div#testimonials-container div.row-fullwidth-gray {
   background: #ededed;
