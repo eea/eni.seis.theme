@@ -6520,6 +6520,20 @@ div#testimonials-container div.simple-quote div.text {
 div#testimonials-container div.simple-quote div.text p:first-of-type {
   border-top: 1px solid #009345;
   padding-top: 20px;
+  position: relative;
+}
+div#testimonials-container div.simple-quote div.text p:first-of-type::before {
+  display: block;
+  content: "\201C";
+  color: #009345;
+  width: 30px;
+  font-size: 5em;
+  position: absolute;
+  top: -1px;
+  background: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  left: 45%;
 }
 div#testimonials-container div.simple-quote p.author {
   font-style: italic;
@@ -6527,7 +6541,7 @@ div#testimonials-container div.simple-quote p.author {
   color: #737373;
   font-size: 1.1em;
   position: relative;
-  margin-top: 20px;
+  margin-top: 27px;
 }
 div#testimonials-container div.simple-quote p.author::before {
   display: block;
