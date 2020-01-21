@@ -5,6 +5,7 @@ Changelog
 ------------------
 - Fix: South - solve iframe larger than layout issue in Data and statistics.
   [GhitaB #113206]
+- Feature: add styles for Results section and Testimonials.
 - Improve: add space under figures in indicatordata view.
   [GhitaB #107342]
 
