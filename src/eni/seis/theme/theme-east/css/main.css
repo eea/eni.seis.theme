@@ -6452,6 +6452,7 @@ div#testimonials-container div.fullsize-row {
   margin-bottom: 6em;
 }
 div#testimonials-container div.fullsize-row div.main-quote {
+  text-align: center;
   width: 30%;
   margin: 0 auto;
   padding: 50px 50px 20px 50px;
@@ -6534,8 +6535,8 @@ div#testimonials-container div.simple-quote div.text p:first-of-type::before {
   top: -1px;
   background: white;
   padding-left: 5px;
-  padding-right: 5px;
-  left: 45%;
+  padding-right: 10px;
+  left: 42%;
 }
 div#testimonials-container div.simple-quote p.author {
   font-style: italic;
