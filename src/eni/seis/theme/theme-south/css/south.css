@@ -687,4 +687,14 @@ div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button {
 div#viewlet-cookiepolicy button#tlspu_cookiepolicy_button:hover {
   background: #08a8dc;
 }
+body.template-folder_listing_custom.section-areas-of-work.subsection-data-and-statistics div.container.site-container {
+  width: 100%;
+  max-width: initial;
+}
+body.template-folder_listing_custom.section-areas-of-work.subsection-data-and-statistics div.container.site-container div.tableauPlaceholder {
+  margin: auto;
+}
+body.template-folder_listing_custom.section-areas-of-work.subsection-data-and-statistics div.container.site-container h2.text-center {
+  text-align: center;
+}
 /*# sourceMappingURL=./source.css.map */
