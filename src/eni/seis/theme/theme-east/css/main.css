@@ -6568,6 +6568,9 @@ div#testimonials-container div.row-fullwidth-gray div.row.row-no-img {
 div#testimonials-container div.row-fullwidth-gray div.row.row-no-img div.text {
   padding-left: 0px;
 }
+div.row-fullwidth-gray div.text p:first-of-type::before {
+  background: #F8F8F8 !important;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
