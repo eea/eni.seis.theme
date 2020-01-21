@@ -6445,17 +6445,18 @@ div#testimonials-container div.fullsize-row {
   width: 200%;
   position: relative;
   left: -50%;
+  padding-top: 6em;
+  padding-bottom: 6em;
   background: #009345;
   margin-bottom: 4em;
 }
 div#testimonials-container div.fullsize-row div.main-quote {
   width: 30%;
   margin: 0 auto;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 50px 50px 20px 50px;
   color: white;
   font-size: 1.5em;
-  line-height: 1.5 em;
+  line-height: 1.2em;
   position: relative;
 }
 div#testimonials-container div.fullsize-row div.main-quote hr {
@@ -6469,24 +6470,24 @@ div#testimonials-container div.fullsize-row div.main-quote p.author {
 div#testimonials-container div.fullsize-row div.main-quote:before {
   display: block;
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: -5px;
   left: -5px;
-  border-top: 3px solid blue;
-  border-left: 3px solid blue;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
 }
 div#testimonials-container div.fullsize-row div.main-quote:after {
   display: block;
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: -5px;
   right: -5px;
-  border-bottom: 3px solid red;
-  border-right: 3px solid red;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
 }
 div#testimonials-container div.simple-quote {
   margin-bottom: 4em;
