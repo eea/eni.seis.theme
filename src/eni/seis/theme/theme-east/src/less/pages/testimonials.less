@@ -90,6 +90,17 @@ div#testimonials-container {
       font-weight: 500;
       color: @color-gray-light2;
       font-size: 1.1em;
+      position: relative;
+      margin-top: 20px;
+
+      &::before {
+        display: block;
+        content: "";
+        width: 30px;
+        position: absolute;
+        top: -10px;
+        border-top: 1px solid green;
+      }
     }
   }
 
