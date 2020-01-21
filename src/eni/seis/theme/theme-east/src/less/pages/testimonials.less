@@ -15,6 +15,7 @@ div#testimonials-container {
       color: white;
       font-size: 1.5em;
       line-height: 1.5 em;
+      position: relative;
 
       hr {
         width: 60px;
@@ -25,6 +26,30 @@ div#testimonials-container {
         font-style: italic;
       font-size: 0.9em;
       }
+    }
+
+    div.main-quote:before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      border-top: 3px solid blue;
+      border-left: 3px solid blue;
+    }
+
+    div.main-quote:after {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      border-bottom: 3px solid red;
+      border-right: 3px solid red;
     }
   }
 

@@ -6456,6 +6456,7 @@ div#testimonials-container div.fullsize-row div.main-quote {
   color: white;
   font-size: 1.5em;
   line-height: 1.5 em;
+  position: relative;
 }
 div#testimonials-container div.fullsize-row div.main-quote hr {
   width: 60px;
@@ -6464,6 +6465,28 @@ div#testimonials-container div.fullsize-row div.main-quote hr {
 div#testimonials-container div.fullsize-row div.main-quote p.author {
   font-style: italic;
   font-size: 0.9em;
+}
+div#testimonials-container div.fullsize-row div.main-quote:before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border-top: 3px solid blue;
+  border-left: 3px solid blue;
+}
+div#testimonials-container div.fullsize-row div.main-quote:after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
 }
 div#testimonials-container div.simple-quote {
   margin-bottom: 4em;
