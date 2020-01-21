@@ -6520,7 +6520,19 @@ div#testimonials-container div.simple-quote div.text {
 div#testimonials-container div.simple-quote p.author {
   font-style: italic;
 }
-div#testimonials-container div.row.row-no-img div.text {
+div#testimonials-container div.row-fullwidth-gray {
+  background: gray;
+  width: 150%;
+  position: relative;
+  left: -25%;
+  padding-left: 25%;
+  padding-right: 25%;
+  overflow: auto;
+}
+div#testimonials-container div.row-fullwidth-gray div.row.row-no-img {
+  background: transparent;
+}
+div#testimonials-container div.row-fullwidth-gray div.row.row-no-img div.text {
   padding-left: 0px;
 }
 .box {
