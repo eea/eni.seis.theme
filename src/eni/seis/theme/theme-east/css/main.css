@@ -6517,10 +6517,14 @@ div#testimonials-container div.simple-quote div.text {
   text-align: left;
   padding-left: 110px;
 }
+div#testimonials-container div.simple-quote div.text p:first-of-type {
+  border-top: 1px solid #009345;
+  padding-top: 20px;
+}
 div#testimonials-container div.simple-quote p.author {
   font-style: italic;
   font-weight: 500;
-  color: #A3A3A3;
+  color: #737373;
   font-size: 1.1em;
   position: relative;
   margin-top: 20px;
@@ -6534,7 +6538,7 @@ div#testimonials-container div.simple-quote p.author::before {
   border-top: 1px solid green;
 }
 div#testimonials-container div.row-fullwidth-gray {
-  background: #ededed;
+  background: #F8F8F8;
   width: 200%;
   position: relative;
   left: -50%;

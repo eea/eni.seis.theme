@@ -83,12 +83,17 @@ div#testimonials-container {
     div.text {
       text-align: left;
       padding-left: 110px;
+
+      p:first-of-type {
+        border-top: 1px solid @color-brand-east;
+        padding-top: 20px;
+      }
     }
 
     p.author {
       font-style: italic;
       font-weight: 500;
-      color: @color-gray-light2;
+      color: #737373;
       font-size: 1.1em;
       position: relative;
       margin-top: 20px;
@@ -105,7 +110,7 @@ div#testimonials-container {
   }
 
   div.row-fullwidth-gray {
-    background: @color-gray-light;
+    background: @color-gray-lighter;
     width: 200%;
     position: relative;
     left: -50%;
