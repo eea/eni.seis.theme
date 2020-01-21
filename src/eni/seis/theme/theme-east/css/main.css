@@ -6496,10 +6496,10 @@ div#testimonials-container div.simple-quote {
 div#testimonials-container div.simple-quote div.img-circle-cropper {
   float: left;
   border: 5px solid #FFFFFF;
-  box-shadow: 0 0 0 3px #FFFFFF;
+  box-shadow: 0 0 0 3px #88caa8;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   position: relative;
   overflow: hidden;
   -webkit-border-radius: 50%;
@@ -6509,13 +6509,13 @@ div#testimonials-container div.simple-quote div.img-circle-cropper {
   border-radius: 50%;
 }
 div#testimonials-container div.simple-quote img.author-img {
-  width: 100px;
+  width: 130px;
   height: auto;
   float: left;
 }
 div#testimonials-container div.simple-quote div.text {
   text-align: left;
-  padding-left: 110px;
+  padding-left: 150px;
 }
 div#testimonials-container div.simple-quote div.text p:first-of-type {
   border-top: 1px solid #009345;
