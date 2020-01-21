@@ -6492,6 +6492,8 @@ div#testimonials-container div.fullsize-row div.main-quote:after {
 }
 div#testimonials-container div.simple-quote {
   margin-bottom: 6em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 div#testimonials-container div.simple-quote div.img-circle-cropper {
   float: left;
@@ -6570,6 +6572,9 @@ div#testimonials-container div.row-fullwidth-gray div.row.row-no-img div.text {
 }
 div#testimonials-container div.row-fullwidth-gray div.simple-quote {
   margin-top: 2em !important;
+}
+div#testimonials-container div.row.row-bottom {
+  margin-top: 2em;
 }
 div.row-fullwidth-gray div.text p:first-of-type::before {
   background: #F8F8F8 !important;
