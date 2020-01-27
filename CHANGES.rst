@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.2.5 (unreleased)
+------------------
+
 1.2.4 (2020-01-23)
 ------------------
 - Fix: South - solve iframe larger than layout issue in Data and statistics.
