@@ -6586,6 +6586,30 @@ body.template-access_environmental_east div.gp-reports-container {
   padding: 3em;
   margin-top: 3em;
 }
+body.template-access_environmental_east div.featured-meetings-container .table-hover thead {
+  display: none;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover th {
+  color: #222222 !important;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover tr:hover {
+  background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover tr:hover td.event-summary {
+  color: #FFFFFF !important;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover tr:hover td a {
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover tr td a {
+  color: #009345;
+  text-decoration: none;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover td.event-link {
+  min-width: 140px;
+}
 .box {
   margin-left: auto;
   margin-right: auto;

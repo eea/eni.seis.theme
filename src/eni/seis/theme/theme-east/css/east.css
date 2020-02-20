@@ -305,41 +305,34 @@ body:not(.template-country_view):not(.template-country_view_east):not(.template-
   color: #FFFFFF;
 }
 #project-related-events .table-hover thead,
-#project-events .table-hover thead,
-div.featured-meetings-container .table-hover thead {
+#project-events .table-hover thead {
   display: none;
 }
 #project-related-events .table-hover th,
-#project-events .table-hover th,
-div.featured-meetings-container .table-hover th {
+#project-events .table-hover th {
   color: #222222 !important;
 }
 #project-related-events .table-hover tr:hover,
-#project-events .table-hover tr:hover,
-div.featured-meetings-container .table-hover tr:hover {
+#project-events .table-hover tr:hover {
   background: #1f87e8;
   color: #FFFFFF;
 }
 #project-related-events .table-hover tr:hover td.event-summary,
-#project-events .table-hover tr:hover td.event-summary,
-div.featured-meetings-container .table-hover tr:hover td.event-summary {
+#project-events .table-hover tr:hover td.event-summary {
   color: #FFFFFF !important;
 }
 #project-related-events .table-hover tr:hover td a,
-#project-events .table-hover tr:hover td a,
-div.featured-meetings-container .table-hover tr:hover td a {
+#project-events .table-hover tr:hover td a {
   color: #FFFFFF !important;
   text-decoration: none;
 }
 #project-related-events .table-hover tr td a,
-#project-events .table-hover tr td a,
-div.featured-meetings-container .table-hover tr td a {
+#project-events .table-hover tr td a {
   color: #009345;
   text-decoration: none;
 }
 #project-related-events .table-hover td.event-link,
-#project-events .table-hover td.event-link,
-div.featured-meetings-container .table-hover td.event-link {
+#project-events .table-hover td.event-link {
   min-width: 140px;
 }
 .tab-pane th {
