@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.2.5 (unreleased)
+1.2.5 (2020-02-20)
 ------------------
+- Feature: Add styles for meeting table.
+  [GhitaB #114456]
 
 1.2.4 (2020-01-23)
 ------------------
