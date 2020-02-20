@@ -6580,11 +6580,7 @@ div#testimonials-container div.row.row-bottom {
 div.row-fullwidth-gray div.text p:first-of-type::before {
   background: #F8F8F8 !important;
 }
-body.template-access_environmental_east div.national-reports-container {
-  background: #eee;
-  padding: 3em;
-  margin-top: 3em;
-}
+body.template-access_environmental_east div.national-reports-container,
 body.template-access_environmental_east div.gp-reports-container {
   background: #eee;
   padding: 3em;
