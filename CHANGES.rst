@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.2.6 (unreleased)
+------------------
+
 1.2.5 (2020-02-20)
 ------------------
 - Feature: Add styles for Access env section (East).
