@@ -6607,6 +6607,12 @@ body.template-access_environmental_east div.featured-meetings-container .table-h
   color: #009345;
   text-decoration: none;
 }
+body.template-access_environmental_east div.featured-meetings-container .table-hover tr.level-regional td a {
+  color: #1f87e8 !important;
+}
+body.template-access_environmental_east div.featured-meetings-container .table-hover tr.level-regional td a:hover {
+  color: white !important;
+}
 body.template-access_environmental_east div.featured-meetings-container .table-hover td.event-link {
   min-width: 140px;
 }
