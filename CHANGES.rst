@@ -8,6 +8,7 @@ Changelog
 ------------------
 - Feature: Add styles for Access env section (East).
   Manual step: set template, rename item.
+  Manual step: update item in homepage-section-aow-slider.
   [GhitaB #114456]
 
 1.2.4 (2020-01-23)
