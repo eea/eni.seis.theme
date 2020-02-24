@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.6 (unreleased)
+1.2.6 (2020-02-24)
 ------------------
 - Fix: colors for meeting level in Access env section table listing.
   [GhitaB #114456]
