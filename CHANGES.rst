@@ -3,6 +3,8 @@ Changelog
 
 1.2.7 (unreleased)
 ------------------
+- Fix: color hover for regional events issue.
+  [GhitaB #114456]
 
 1.2.6 (2020-02-24)
 ------------------
