@@ -6608,7 +6608,7 @@ body.template-access_environmental_east div.featured-meetings-container .table-h
   text-decoration: none;
 }
 body.template-access_environmental_east div.featured-meetings-container .table-hover tr.level-regional td a {
-  color: #1f87e8 !important;
+  color: inherit !important;
 }
 body.template-access_environmental_east div.featured-meetings-container .table-hover tr.level-regional td a:hover {
   color: white !important;
