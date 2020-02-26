@@ -4,19 +4,24 @@ body.template-countries_view_east {
       thead tr th {
         background: @color-brand-east;
         color: white;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding: 0.7em 0.2em 0.7em 0.2em;
         font-weight: 500;
         font-size: 1.2em;
+        border-right: 1px solid @color-gray-light2;
       }
 
       td.country-name {
         font-weight: 500;
+        padding-right: 3em;
       }
 
       td {
-        border: 1px solid @color-gray-dark;
+        border-right: 1px solid @color-gray-light2;
         padding: 5px;
+      }
+
+      tbody {
+        border-bottom: 1px solid @color-gray-dark;
       }
     }
   }
