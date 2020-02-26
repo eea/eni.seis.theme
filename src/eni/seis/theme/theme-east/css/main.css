@@ -5200,6 +5200,9 @@ body.template-country_view_east .row.no-portlets.jquery-move-me.country-news-row
 body.template-nfps_listing_view div.nfps-container table tbody td.country-title {
   background: #FFFFFF;
 }
+body.template-countries_view_east div.national-reports-container table.national-reports-table td {
+  background: gray !important;
+}
 body.template-countries_view_east div.environmental-assesment-reports-container {
   margin-top: 4em;
 }
