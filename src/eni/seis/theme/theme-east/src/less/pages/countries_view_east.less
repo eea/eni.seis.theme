@@ -20,12 +20,21 @@ body.template-countries_view_east {
         padding: 5px;
       }
 
+      tr td:last-child,
+      tr th:last-child {
+        border-right: none;
+      }
+
       tbody {
         border-bottom: 1px solid @color-gray-dark;
       }
 
       th.dec-separator, td.dec-separator {
         border-left: 2px solid @color-gray-light2 !important;
+      }
+
+      tr.odd td {
+        background: @color-gray-light;
       }
     }
   }
