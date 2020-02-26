@@ -5208,6 +5208,13 @@ body.template-countries_view_east div.national-reports-container table.national-
   font-weight: 500;
   font-size: 1.2em;
 }
+body.template-countries_view_east div.national-reports-container table.national-reports-table td.country-name {
+  font-weight: 500;
+}
+body.template-countries_view_east div.national-reports-container table.national-reports-table td {
+  border: 1px solid #222222;
+  padding: 5px;
+}
 body.template-countries_view_east div.environmental-assesment-reports-container {
   margin-top: 4em;
 }
