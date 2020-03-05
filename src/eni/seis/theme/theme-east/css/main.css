@@ -4901,6 +4901,15 @@ body.template-country_view_east h1.documentFirstHeading {
 body.template-country_view_east .container-fluid.moved-country-news-section {
   background: #ededed;
 }
+body.template-country_view_east .country-content div#report-state-environment {
+  margin-top: 3em;
+}
+body.template-country_view_east .country-content div#report-state-environment h3.national-reports-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #1f87e8;
+  margin-bottom: 3em;
+}
 body.template-country_view_east .country-content .nav.base > li > a:hover,
 body.template-country_view_east .country-content .nav.base > li > a:focus {
   background: #009345 !important;
