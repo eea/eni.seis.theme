@@ -5400,6 +5400,9 @@ body.template-countries_view_east div.country-visits-container div.country-visit
 body.template-countries_view_east div.country-visits-container div.country-visits-item h3 {
   font-weight: 500;
 }
+body.template-countries_view_east div.environmental-indicators-container {
+  margin-top: 3em;
+}
 body.template-countries_view_east div.environmental-indicators-container img {
   max-width: 100%;
 }
