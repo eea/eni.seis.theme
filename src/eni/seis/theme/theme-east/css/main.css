@@ -4930,7 +4930,7 @@ body.template-country_view_east .country-content .nav.base > li > a:hover {
   }
 }
 body.template-country_view_east .row.no-portlets .country-header {
-  margin-bottom: -3rem;
+  margin-bottom: 3rem;
 }
 body.template-country_view_east .row.no-portlets .country-header .flag {
   margin-right: 20px;
