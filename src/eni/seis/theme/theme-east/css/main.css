@@ -4915,6 +4915,18 @@ body.template-country_view_east .country-content div#report-state-environment h3
   padding-left: 1em;
   display: inline-block;
 }
+body.template-country_view_east .country-content table.national-reports tr.odd td {
+  background: #F8F8F8;
+}
+body.template-country_view_east .country-content table.national-reports tr.odd:hover td {
+  background: #1f87e8;
+}
+body.template-country_view_east .country-content table.national-reports tr:hover td:last-of-type {
+  color: white !important;
+}
+body.template-country_view_east .country-content table.national-reports td:last-of-type {
+  color: initial !important;
+}
 body.template-country_view_east .country-content .nav.base > li > a:hover,
 body.template-country_view_east .country-content .nav.base > li > a:focus {
   background: #009345 !important;

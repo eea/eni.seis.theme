@@ -33,6 +33,24 @@ body.template-country_view_east {
       }
     }
 
+    table.national-reports {
+      tr.odd td {
+        background: @color-gray-lighter;
+      }
+
+      tr.odd:hover td {
+        background: @color-accent;
+      }
+
+      tr:hover td:last-of-type {
+        color: white !important;
+      }
+
+      td:last-of-type {
+        color: initial !important;
+      }
+    }
+
     .nav.base > li > a:hover,
     .nav.base > li > a:focus {
       background: @color-brand-east !important;
