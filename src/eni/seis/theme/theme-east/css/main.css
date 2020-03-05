@@ -4927,6 +4927,13 @@ body.template-country_view_east .country-content table.national-reports tr:hover
 body.template-country_view_east .country-content table.national-reports td:last-of-type {
   color: initial !important;
 }
+body.template-country_view_east .country-content table.national-reports td img.flag-img {
+  width: 40px;
+  height: auto;
+}
+body.template-country_view_east .country-content table.national-reports td span {
+  margin-right: 20px;
+}
 body.template-country_view_east .country-content .nav.base > li > a:hover,
 body.template-country_view_east .country-content .nav.base > li > a:focus {
   background: #009345 !important;
