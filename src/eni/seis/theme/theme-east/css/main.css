@@ -6656,6 +6656,12 @@ body.template-access_environmental_east div.featured-meetings-container .table-h
 body.template-access_environmental_east div.featured-meetings-container .table-hover td.event-link {
   min-width: 140px;
 }
+body.template-view.portaltype-nationalreport aside.page-aside {
+  display: none;
+}
+body.template-view.portaltype-nationalreport main.page-main#content {
+  width: 100%;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
