@@ -4909,6 +4909,11 @@ body.template-country_view_east .country-content div#report-state-environment h3
   text-transform: uppercase;
   color: #1f87e8;
   margin-bottom: 3em;
+  font-weight: 500;
+  border-bottom: 3px solid #1f87e8;
+  padding-right: 1em;
+  padding-left: 1em;
+  display: inline-block;
 }
 body.template-country_view_east .country-content .nav.base > li > a:hover,
 body.template-country_view_east .country-content .nav.base > li > a:focus {
