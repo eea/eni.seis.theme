@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.2.8 (unreleased)
+------------------
+
 1.2.7 (2020-03-05)
 ------------------
 - Fix: color hover for regional events issue.
