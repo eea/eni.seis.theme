@@ -3,6 +3,8 @@ Changelog
 
 1.2.8 (unreleased)
 ------------------
+- Feature: Add styles for country events in country view - East.
+  [GhitaB #115573]
 
 1.2.7 (2020-03-05)
 ------------------
