@@ -5125,6 +5125,12 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
 body.template-country_view_east .row.no-portlets .country-content .tab-content .container-table-indicators > .row .col-table-indicators table.table.indicators tr.even:hover {
   background: #1f87e8;
 }
+body.template-country_view_east div.row.country-events-row h3 {
+  text-transform: uppercase;
+  color: #1f87e8;
+  border-bottom: 2px solid #1f87e8;
+  padding-right: 1rem;
+}
 body.template-country_view_east .row.indicators-row .col-lg-8 {
   padding-left: 0px;
 }
