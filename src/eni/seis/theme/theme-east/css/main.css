@@ -5130,6 +5130,23 @@ body.template-country_view_east div.row.country-events-row h3 {
   color: #1f87e8;
   border-bottom: 2px solid #1f87e8;
   padding-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+body.template-country_view_east div.row.country-events-row dl {
+  width: 100%;
+  max-width: initial;
+  font-size: 100%;
+}
+body.template-country_view_east div.row.country-events-row dl span.portletItemDetails {
+  margin-left: 0px;
+  text-transform: uppercase;
+}
+body.template-country_view_east div.row.country-events-row dl dd div {
+  padding: 10px;
+}
+body.template-country_view_east div.row.country-events-row dl dd div:hover {
+  background: #F8F8F8;
 }
 body.template-country_view_east .row.indicators-row .col-lg-8 {
   padding-left: 0px;
