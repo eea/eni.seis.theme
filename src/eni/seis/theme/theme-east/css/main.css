@@ -4583,6 +4583,10 @@ body.template-areas-of-work_root .container.site-container {
   margin-bottom: -4rem;
   min-height: 4rem;
 }
+body.template-areas-of-work_root .col-aow {
+  width: 20%;
+  float: left;
+}
 body.template-areas-of-work_root .container-fluid.moved-aow-slider {
   background: #F8F8F8;
 }
