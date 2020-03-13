@@ -3,6 +3,8 @@ Changelog
 
 1.2.9 (unreleased)
 ------------------
+- Fix: aow slider layout.
+  [GhitaB #114456]
 
 1.2.8 (2020-03-12)
 ------------------
