@@ -3907,6 +3907,10 @@ ul.configlets {
     float: right;
   }
 }
+.template-homepage .col-aow {
+  width: 20%;
+  float: left;
+}
 .template-homepage p {
   color: rgba(34, 34, 34, 0.75);
 }
