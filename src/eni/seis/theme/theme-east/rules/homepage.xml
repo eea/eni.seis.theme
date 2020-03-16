@@ -32,7 +32,7 @@
 
           <xsl:for-each css:select="[data-diazo='homepage-section-aow-slider'] .aow-slide">
             <xsl:variable name="tile" select="."></xsl:variable>
-            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+            <div class="col-aow">
               <div class="aow-slide">
                 <a href="{./a/@href}" >
                   <div class="img-circle-cropper">
