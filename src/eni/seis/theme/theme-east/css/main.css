@@ -6728,6 +6728,14 @@ body.template-access_environmental_east div#eni-accordion h3.ui-accordion-header
   background: #1f87e8;
   color: white;
 }
+body.template-access_environmental_east div#eni-accordion h3.ui-accordion-header.ui-state-default:hover {
+  background: #009345;
+  color: white;
+}
+body.template-access_environmental_east div#eni-accordion h3.ui-accordion-header-active {
+  background: #737373 !important;
+  color: white;
+}
 body.template-view.portaltype-nationalreport aside.page-aside {
   display: none;
 }
