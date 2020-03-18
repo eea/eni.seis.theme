@@ -2600,6 +2600,7 @@ aside.page-aside {
 .userrole-authenticated .contenttype-event,
 .userrole-authenticated .contenttype-folderish-event,
 .userrole-authenticated .contenttype-nationalreport,
+.userrole-authenticated .contenttype-productitem,
 .userrole-authenticated .contenttype-collection,
 .userrole-authenticated .contenttype-file,
 .userrole-authenticated .contenttype-image,
@@ -2626,6 +2627,7 @@ aside.page-aside {
 .userrole-authenticated .contenttype-event img,
 .userrole-authenticated .contenttype-folderish-event img,
 .userrole-authenticated .contenttype-nationalreport img,
+.userrole-authenticated .contenttype-productitem img,
 .userrole-authenticated .contenttype-collection img,
 .userrole-authenticated .contenttype-file img,
 .userrole-authenticated .contenttype-image img,
@@ -2724,6 +2726,11 @@ a.contenttype-indicator:before {
 }
 .contenttype-nfp span:before,
 a.contenttype-nfp:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-productitem span:before,
+a.contenttype-productitem:before {
   content: "\f016";
   margin-right: .5rem;
 }
