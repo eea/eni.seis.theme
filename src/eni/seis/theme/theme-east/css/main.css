@@ -6736,6 +6736,10 @@ body.template-access_environmental_east div#eni-accordion h3.ui-accordion-header
   background: #222222 !important;
   color: white;
 }
+body.template-access_environmental_east div#eni-accordion li.nav-item a {
+  margin-left: initial;
+  margin-right: initial;
+}
 body.template-view.portaltype-nationalreport aside.page-aside {
   display: none;
 }
