@@ -6717,6 +6717,9 @@ body.template-access_environmental_east div.featured-meetings-container .table-h
 body.template-access_environmental_east div.featured-meetings-container .table-hover td.event-link {
   min-width: 140px;
 }
+body.template-access_environmental_east div#eni-accordion div.ui-accordion-content {
+  border: none;
+}
 body.template-view.portaltype-nationalreport aside.page-aside {
   display: none;
 }
