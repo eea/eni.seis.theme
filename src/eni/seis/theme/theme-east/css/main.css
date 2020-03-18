@@ -6740,6 +6740,10 @@ body.template-access_environmental_east div#eni-accordion li.nav-item a {
   margin-left: initial;
   margin-right: initial;
 }
+body.template-access_environmental_east div#eni-accordion td img.flag-img {
+  width: 40px;
+  height: auto;
+}
 body.template-view.portaltype-nationalreport aside.page-aside {
   display: none;
 }
