@@ -3,6 +3,7 @@ Changelog
 
 1.2.9 (unreleased)
 ------------------
+- Improve: styles for Access environmental.
 - Fix: aow slider layout.
   [GhitaB #114456]
 
