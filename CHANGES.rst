@@ -5,6 +5,7 @@ Changelog
 ------------------
 TODO: update icons for new content types - South
 TODO: areas of work - homepage - mobile version, fix circles menu
+TODO: areas of work - fix circles menu reponsivity
 
 1.2.9 (2020-03-18)
 ------------------
