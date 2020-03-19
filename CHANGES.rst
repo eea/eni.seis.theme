@@ -3,6 +3,7 @@ Changelog
 
 1.3.0 (unreleased)
 ------------------
+TODO: update icons for new content types - South
 
 1.2.9 (2020-03-18)
 ------------------
