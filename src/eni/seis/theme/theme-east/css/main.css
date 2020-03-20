@@ -6694,11 +6694,8 @@ div#testimonials-container div.row.row-bottom {
 div.row-fullwidth-gray div.text p:first-of-type::before {
   background: #F8F8F8 !important;
 }
-body.template-access_environmental_east div.featured-meetings-container .table-hover thead {
-  display: none;
-}
 body.template-access_environmental_east div.featured-meetings-container .table-hover th {
-  color: #222222 !important;
+  color: white;
 }
 body.template-access_environmental_east div.featured-meetings-container .table-hover tr:hover {
   background: #1f87e8;
