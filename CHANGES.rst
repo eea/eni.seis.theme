@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.0 (unreleased)
+1.3.0 (2020-03-20)
 ------------------
 - Fix: icons responsivity in Areas of work section and Homepage.
 - Fix: table styles in Events table (Access env).
