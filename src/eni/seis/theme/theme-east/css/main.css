@@ -3918,6 +3918,16 @@ ul.configlets {
   width: 20%;
   float: left;
 }
+@media screen and (max-width: 850px) {
+  .template-homepage .col-aow {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .template-homepage .col-aow {
+    width: 100%;
+  }
+}
 .template-homepage p {
   color: rgba(34, 34, 34, 0.75);
 }
