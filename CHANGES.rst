@@ -3,6 +3,8 @@ Changelog
 
 1.3.0 (unreleased)
 ------------------
+- Fix: table styles in Events table (Access env).
+  [GhitaB #114456]
 
 1.2.9 (2020-03-18)
 ------------------
