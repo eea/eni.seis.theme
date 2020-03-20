@@ -3,7 +3,7 @@ Changelog
 
 1.3.0 (unreleased)
 ------------------
-- Fix: icons responsivity in Areas of work section.
+- Fix: icons responsivity in Areas of work section and Homepage.
 - Fix: table styles in Events table (Access env).
   [GhitaB #114456]
 
