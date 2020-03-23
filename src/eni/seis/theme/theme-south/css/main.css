@@ -2602,6 +2602,8 @@ aside.page-aside {
 .userrole-authenticated .contenttype-collection,
 .userrole-authenticated .contenttype-file,
 .userrole-authenticated .contenttype-image,
+.userrole-authenticated .contenttype-nationalreport,
+.userrole-authenticated .contenttype-productitem,
 .userrole-authenticated .contenttype-link,
 .userrole-authenticated .contenttype-news-item,
 .userrole-authenticated .contenttype-folderish-news-item,
@@ -2627,6 +2629,8 @@ aside.page-aside {
 .userrole-authenticated .contenttype-collection img,
 .userrole-authenticated .contenttype-file img,
 .userrole-authenticated .contenttype-image img,
+.userrole-authenticated .contenttype-nationalreport img,
+.userrole-authenticated .contenttype-productitem img,
 .userrole-authenticated .contenttype-link img,
 .userrole-authenticated .contenttype-news-item img,
 .userrole-authenticated .contenttype-folderish-news-item img,
@@ -2713,6 +2717,16 @@ a.contenttype-link:before {
 .contenttype-eea-meeting span:before,
 a.contenttype-eea-meeting:before {
   content: "\f133";
+  margin-right: .5rem;
+}
+.contenttype-productitem span:before,
+a.contenttype-productitem:before {
+  content: "\f016";
+  margin-right: .5rem;
+}
+.contenttype-nationalreport span:before,
+a.contenttype-nationalreport:before {
+  content: "\f016";
   margin-right: .5rem;
 }
 .contenttype-indicator span:before,

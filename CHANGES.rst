@@ -3,6 +3,8 @@ Changelog
 
 1.3.1 (unreleased)
 ------------------
+- Fix: icons for new content types (South).
+  [GhitaB #116119]
 
 1.3.0 (2020-03-20)
 ------------------
