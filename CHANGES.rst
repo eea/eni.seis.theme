@@ -5,6 +5,8 @@ Changelog
 ------------------
 - Fix: icons for new content types (South).
   [GhitaB #116119]
+- Improve: add photos for Results section (East).
+  [GhitaB #107342]
 
 1.3.0 (2020-03-20)
 ------------------
