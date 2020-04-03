@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.2 (unreleased)
+1.3.2 (2020-04-03)
 ------------------
 - Improve: add link for broken links in personal menu.
   [GhitaB #108137]
