@@ -4,6 +4,7 @@ Changelog
 1.3.3 (unreleased)
 ------------------
 - Fix: Hide thead in news listing in case of Case studies.
+- Fix: large width size for photos in gallery.
   [GhitaB #107342]
 
 1.3.2 (2020-04-03)
