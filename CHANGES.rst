@@ -3,6 +3,8 @@ Changelog
 
 1.3.3 (unreleased)
 ------------------
+- Fix: Hide thead in news listing in case of Case studies.
+  [GhitaB #107342]
 
 1.3.2 (2020-04-03)
 ------------------
