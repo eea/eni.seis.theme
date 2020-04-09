@@ -5814,6 +5814,7 @@ body.template-folder_gallery_view div.photo-gallery div.photo-item a img {
   margin-bottom: 2em;
   max-height: 300px;
   width: auto;
+  max-width: 320px;
 }
 body.template-newsletters_view aside.page-aside {
   display: none;
