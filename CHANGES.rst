@@ -3,6 +3,8 @@ Changelog
 
 1.3.3 (unreleased)
 ------------------
+- Feature: styles for new section - CLC - East.
+  [GhitaB #116290]
 - Fix: Hide thead in news listing in case of Case studies.
 - Fix: large width size for photos in gallery.
   [GhitaB #107342]
