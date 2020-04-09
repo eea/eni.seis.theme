@@ -6779,6 +6779,61 @@ body.template-view.portaltype-nationalreport aside.page-aside {
 body.template-view.portaltype-nationalreport main.page-main#content {
   width: 100%;
 }
+body.template-clc_east div.featured-meetings-container .table-hover th {
+  color: white;
+}
+body.template-clc_east div.featured-meetings-container .table-hover tr:hover {
+  background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-clc_east div.featured-meetings-container .table-hover tr:hover td.event-summary {
+  color: #FFFFFF !important;
+}
+body.template-clc_east div.featured-meetings-container .table-hover tr:hover td a {
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+body.template-clc_east div.featured-meetings-container .table-hover tr td a {
+  color: #009345;
+  text-decoration: none;
+}
+body.template-clc_east div.featured-meetings-container .table-hover tr.level-regional td a {
+  color: inherit !important;
+}
+body.template-clc_east div.featured-meetings-container .table-hover tr.level-regional td a:hover {
+  color: white !important;
+}
+body.template-clc_east div.featured-meetings-container .table-hover td.event-link {
+  min-width: 140px;
+}
+body.template-clc_east div#eni-accordion {
+  margin-bottom: 2em;
+}
+body.template-clc_east div#eni-accordion div.ui-accordion-content {
+  border: none;
+}
+body.template-clc_east div#eni-accordion h3.ui-accordion-header.ui-state-default {
+  border: none;
+  background: #1f87e8;
+  color: white;
+}
+body.template-clc_east div#eni-accordion h3.ui-accordion-header.ui-state-default:hover {
+  background: #009345;
+  color: white;
+}
+body.template-clc_east div#eni-accordion h3.ui-accordion-header-active {
+  background: #222222 !important;
+  color: white;
+}
+body.template-clc_east div#eni-accordion li.nav-item a {
+  margin-left: initial;
+  margin-right: initial;
+}
+body.template-clc_east div#eni-accordion td img.flag-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
