@@ -4605,10 +4605,10 @@ body.template-areas-of-work_root .container.site-container {
   min-height: 4rem;
 }
 body.template-areas-of-work_root .col-aow {
-  width: 20%;
+  width: 16%;
   float: left;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   body.template-areas-of-work_root .col-aow {
     width: 50%;
   }
