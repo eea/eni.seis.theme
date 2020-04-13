@@ -1,9 +1,9 @@
 Changelog
 =========
 
-1.3.3 (unreleased)
+1.3.3 (2020-04-13)
 ------------------
-- Feature: styles for new section - CLC - East.
+- Feature: styles for new section - Land - East.
   [GhitaB #116290]
 - Fix: Hide thead in news listing in case of Case studies.
 - Fix: large width size for photos in gallery.
