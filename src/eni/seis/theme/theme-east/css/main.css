@@ -3915,10 +3915,10 @@ ul.configlets {
   }
 }
 .template-homepage .col-aow {
-  width: 16%;
+  width: 20%;
   float: left;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   .template-homepage .col-aow {
     width: 50%;
   }
