@@ -3,7 +3,7 @@ Changelog
 
 1.3.4 (unreleased)
 ------------------
-- Fix: East homepage -back to 5 items in aow slider.
+- Fix: East homepage and Areas of work - back to 5 items in aow slider.
   [GhitaB #116290]
 
 1.3.3 (2020-04-13)
