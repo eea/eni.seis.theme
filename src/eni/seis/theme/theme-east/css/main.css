@@ -6834,6 +6834,11 @@ body.template-clc_east div#eni-accordion td img.flag-img {
   height: auto;
   margin-right: 10px;
 }
+body.template-clc_east div#eni-accordion .ui-widget-content {
+  font-family: "Fira Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #222222;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
