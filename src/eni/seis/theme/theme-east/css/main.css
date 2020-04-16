@@ -6773,6 +6773,11 @@ body.template-access_environmental_east div#eni-accordion td img.flag-img {
   height: auto;
   margin-right: 10px;
 }
+body.template-access_environmental_east div#eni-accordion .ui-widget-content {
+  font-family: "Fira Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #222222;
+}
 body.template-view.portaltype-nationalreport aside.page-aside {
   display: none;
 }
