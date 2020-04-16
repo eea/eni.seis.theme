@@ -3,6 +3,8 @@ Changelog
 
 1.3.5 (unreleased)
 ------------------
+- Improve: Style for photo gallery.
+  [GhitaB #116711]
 - Fix: font style issue for ui widget.
   [GhitaB #116290]
 
