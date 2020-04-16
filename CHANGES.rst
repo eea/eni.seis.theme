@@ -3,6 +3,8 @@ Changelog
 
 1.3.5 (unreleased)
 ------------------
+- Fix: font style issue for ui widget.
+  [GhitaB #116290]
 
 1.3.4 (2020-04-15)
 ------------------
