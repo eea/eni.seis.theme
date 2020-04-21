@@ -5816,12 +5816,12 @@ body.template-folder_gallery_view div.photo-gallery div.photo-item a img {
   width: auto;
   max-width: 320px;
 }
-body.template-folder_gallery_view div.photo-gallery div.photo-item p.photo-credits {
+body.template-folder_gallery_view div.photo-gallery div.photo-item div.photo-credits {
   position: relative;
-  top: -90px;
+  top: -42px;
   color: white;
 }
-body.template-folder_gallery_view div.photo-gallery div.photo-item p.photo-credits span {
+body.template-folder_gallery_view div.photo-gallery div.photo-item div.photo-credits span {
   background-color: rgba(40, 40, 40, 0.7);
   padding: 5px;
   font-family: "Fira Sans", sans-serif;
