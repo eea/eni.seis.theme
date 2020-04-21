@@ -5827,6 +5827,10 @@ body.template-folder_gallery_view div.photo-gallery div.photo-item div.photo-cre
   font-family: "Fira Sans", sans-serif;
   font-size: 12.75px;
 }
+body.template-folder_gallery_view div.photo-gallery div.photo-item div.image-caption.withcredits {
+  position: relative;
+  top: -20px;
+}
 body.template-newsletters_view aside.page-aside {
   display: none;
 }
