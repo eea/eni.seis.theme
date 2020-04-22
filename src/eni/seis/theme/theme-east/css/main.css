@@ -5804,6 +5804,7 @@ body.template-folder_gallery_view div#lightbox .lb-number {
 }
 body.template-folder_gallery_view div.photo-gallery div.photo-item {
   text-align: center;
+  margin-bottom: 15px;
 }
 body.template-folder_gallery_view div.photo-gallery div.photo-item a:hover img {
   border-color: #009345;

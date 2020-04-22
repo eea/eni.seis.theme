@@ -3,6 +3,8 @@ Changelog
 
 1.3.6 (unreleased)
 ------------------
+- Fix: space between rows of images in folder gallery view.
+  [GhitaB #116711]
 
 1.3.5 (2020-04-22)
 ------------------
