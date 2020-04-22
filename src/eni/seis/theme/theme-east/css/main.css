@@ -6324,6 +6324,9 @@ body.template-seea-progress_root table.seea-table a:hover:before {
   font-family: "FontAwesome";
   padding-right: 2px;
 }
+body.template-results_root_east {
+  overflow-x: hidden;
+}
 body.template-results_root_east h1#parent-fieldname-title,
 body.template-results_root_east div#plone-document-byline {
   display: none;

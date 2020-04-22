@@ -3,6 +3,8 @@ Changelog
 
 1.3.6 (unreleased)
 ------------------
+- Fix: Results section - solve extra large page.
+  [GhitaB #116738]
 - Fix: space between rows of images in folder gallery view.
   [GhitaB #116711]
 
