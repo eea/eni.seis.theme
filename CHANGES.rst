@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.5 (unreleased)
+1.3.5 (2020-04-22)
 ------------------
 - Improve: Style for photo gallery.
   [GhitaB #116711]
