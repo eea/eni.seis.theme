@@ -6510,6 +6510,24 @@ body.template-results_root_east div.row.homepage-section-aow-slider div.img-circ
 body.template-results_root_east div.row.homepage-section-aow-slider .aow-slide .text {
   width: 110px;
 }
+body.template-results_root_east div.row.homepage-section-aow-slider.bullets-container {
+  margin-bottom: 0px;
+}
+body.template-results_root_east div.row.homepage-section-aow-slider.bullets-container div.img-circle-cropper {
+  width: 100px;
+  height: 100px;
+}
+body.template-results_root_east div.row.homepage-section-aow-slider.bullets-container .aow-slide .text {
+  width: 100px;
+  font-size: 90%;
+}
+body.template-results_root_east div.row.homepage-section-aow-slider.bullets-container div.aow-slide {
+  width: 100px;
+}
+body.template-results_root_east div.row.homepage-section-aow-slider.bullets-container div.aow-item {
+  float: left;
+  width: 10%;
+}
 body.template-results_root_east div.col-left {
   background: transparent;
   float: left;
