@@ -234,6 +234,7 @@ body.template-results_root_east {
 
     div.aow-slide {
       width: 100px;
+      margin: 0 auto;
     }
 
     div.aow-item {
@@ -277,6 +278,22 @@ body.template-results_root_east {
   @media (max-width: 1000px) {
     div.row.cooperation-container div.col-left div.col-content {
       background: @color-brand-east;
+    }
+
+    div.homepage-section-aow-slider.bullets-container div.aow-item {
+      width: 20% !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    div.homepage-section-aow-slider.bullets-container div.aow-item {
+      width: 33% !important;
+    }
+  }
+
+  @media (max-width: 400px) {
+    div.homepage-section-aow-slider.bullets-container div.aow-item {
+      width: 100% !important;
     }
   }
 
