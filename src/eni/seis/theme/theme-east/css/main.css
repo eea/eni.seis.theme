@@ -4942,6 +4942,7 @@ body.template-country_view_east .country-content div#report-state-environment {
 body.template-country_view_east .country-content div#report-state-environment h3.national-reports-title {
   text-align: center;
   text-transform: uppercase;
+  margin-right: 10px;
   color: #1f87e8;
   margin-bottom: 3em;
   font-weight: 500;
@@ -4950,21 +4951,10 @@ body.template-country_view_east .country-content div#report-state-environment h3
   padding-left: 1em;
   display: inline-block;
 }
-body.template-country_view_east .country-content table.national-reports tr.odd td {
-  background: #F8F8F8;
-}
-body.template-country_view_east .country-content table.national-reports tr.odd:hover td {
-  background: #1f87e8;
-}
-body.template-country_view_east .country-content table.national-reports tr:hover td:last-of-type {
-  color: white !important;
-}
-body.template-country_view_east .country-content table.national-reports td:last-of-type {
-  color: initial !important;
-}
 body.template-country_view_east .country-content table.national-reports td img.flag-img {
   width: 40px;
   height: auto;
+  margin-right: 10px;
 }
 body.template-country_view_east .country-content table.national-reports td span {
   margin-right: 20px;
@@ -5068,58 +5058,58 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content .
   background: #FFFFFF;
   color: #222222;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover,
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr.even:hover,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr.odd:hover {
   background: #1f87e8;
   color: #FFFFFF;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover .fa,
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover .fa {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr.even:hover .fa,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr.odd:hover .fa {
   color: #222222;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.even:hover a,
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr.odd:hover a {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr.even:hover a,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr.odd:hover a {
   color: #FFFFFF !important;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover a {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) a {
   color: #1f87e8;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover a:hover {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) a:hover {
   color: #FFFFFF !important;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) th {
   border-bottom: 0px;
   border-right: 1px solid #A3A3A3;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th .indicators-number {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) th .indicators-number {
   text-align: center;
   font-size: 40px;
   margin-bottom: 0 !important;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th h3 {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) th h3 {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 0;
   margin-top: 20px;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover th:last-of-type {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) th:last-of-type {
   border-right: none;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover td {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) td {
   border-right: 1px solid #A3A3A3;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover td:last-of-type {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) td:last-of-type {
   border-right: none;
   color: #1f87e8;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover td,
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tr {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) td,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tr {
   border-top: none;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tbody tr .odd {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tbody tr .odd {
   background: #F8F8F8;
 }
-body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover tbody tr:last-of-type {
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.table-responsive.table-hover:not(.national-reports) tbody tr:last-of-type {
   border-bottom: 1px solid #A3A3A3;
 }
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr > th > h2 {

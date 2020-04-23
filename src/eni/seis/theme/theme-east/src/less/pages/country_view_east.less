@@ -23,6 +23,7 @@ body.template-country_view_east {
       h3.national-reports-title {
         text-align: center;
         text-transform: uppercase;
+        margin-right: 10px;
         color: @color-accent;
         margin-bottom: 3em;
         font-weight: 500;
@@ -34,25 +35,26 @@ body.template-country_view_east {
     }
 
     table.national-reports {
-      tr.odd td {
-        background: @color-gray-lighter;
-      }
-
-      tr.odd:hover td {
-        background: @color-accent;
-      }
-
-      tr:hover td:last-of-type {
-        color: white !important;
-      }
-
-      td:last-of-type {
-        color: initial !important;
-      }
+      // tr.odd td {
+      //   background: @color-gray-lighter;
+      // }
+      //
+      // tr.odd:hover td {
+      //   background: @color-accent;
+      // }
+      //
+      // tr:hover td:last-of-type {
+      //   color: white !important;
+      // }
+      //
+      // td:last-of-type {
+      //   color: initial !important;
+      // }
 
       td img.flag-img {
         width: 40px;
         height: auto;
+        margin-right: 10px;
       }
 
       td span {
@@ -185,7 +187,7 @@ body.template-country_view_east {
             }
           }
         }
-        table.table-responsive.table-hover {
+        table.table-responsive.table-hover:not(.national-reports) {
           tr.even:hover, tr.odd:hover {
             background: @color-accent;
             color: #FFFFFF;
