@@ -6863,6 +6863,14 @@ body.template-clc_east div#eni-accordion .ui-widget-content {
   font-size: 15px !important;
   color: #222222;
 }
+body.template-clc_east div.ui-accordion-content img.flag-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: -5px;
+}
 .box {
   margin-left: auto;
   margin-right: auto;
