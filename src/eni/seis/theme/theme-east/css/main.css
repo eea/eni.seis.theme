@@ -6599,6 +6599,7 @@ body.template-results_root_east div.learn-container div.more a:after {
   left: 10px;
   top: -1px;
 }
+body.template-news_listing_view.subsection-results-capacity-building div#content-core table.table-responsive.table-hover thead,
 body.template-news_listing_view.subsection-results-case-studies div#content-core table.table-responsive.table-hover thead {
   display: none;
 }
