@@ -1,10 +1,12 @@
 Changelog
 =========
 
-1.3.6 (2020-04-23)
+1.3.7 (unreleased)
 ------------------
 TODO add temp fixes from East production. Clean file.
 
+1.3.6 (2020-04-23)
+------------------
 - Improve: Update styles for table in second tab, country view
   [GhitaB #107340]
 - Fix: Results section - solve extra large page. Improve styles.
