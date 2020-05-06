@@ -31,14 +31,15 @@ Prerequisites:
 
 Then::
 
-    cd src/eni/seis/theme/theme/
+    cd src/eni/seis/theme/theme-east/
+    cd src/eni/seis/theme/theme-south/
 
     # install dependencies
     npm install
 
     # build files
-    grunt # for development, or
-    grunt production # for production
+    node_modules/.bin/grunt # for development, or
+    node_modules/.bin/grunt production # for production
 
 
 Contribute
