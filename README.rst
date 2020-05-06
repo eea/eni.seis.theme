@@ -38,8 +38,8 @@ Then::
     npm install
 
     # build files
-    grunt # for development, or
-    grunt production # for production
+    node_modules/.bin/grunt # for development, or
+    node_modules/.bin/grunt production # for production
 
 
 Contribute
