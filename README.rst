@@ -31,7 +31,8 @@ Prerequisites:
 
 Then::
 
-    cd src/eni/seis/theme/theme/
+    cd src/eni/seis/theme/theme-east/
+    cd src/eni/seis/theme/theme-south/
 
     # install dependencies
     npm install
