@@ -3,6 +3,10 @@ Changelog
 
 1.3.7 (unreleased)
 ------------------
+div#eni-accordion {
+    margin-top: 1em;
+}
+
 - Improve: Justify intro text in Results page.
   [GhitaB #116738]
 
