@@ -3,7 +3,8 @@ Changelog
 
 1.3.7 (unreleased)
 ------------------
-TODO add temp fixes from East production. Clean file.
+- Improve: Justify intro text in Results page.
+  [GhitaB #116738]
 
 1.3.6 (2020-04-23)
 ------------------
