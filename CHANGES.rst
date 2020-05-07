@@ -7,6 +7,8 @@ div#eni-accordion {
     margin-top: 1em;
 }
 
+- Fix: colors in events listing.
+  [GhitaB #116729]
 - Improve: Justify intro text in Results page.
   [GhitaB #116738]
 
