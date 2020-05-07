@@ -377,6 +377,17 @@ body.template-events_table_view .table-hover td.event-link,
 .event-title {
   color: #009345;
 }
+body.template-meetings_table_view table,
+body.template-events_table_view table {
+  position: relative;
+  top: -2em;
+  border-top: 3px solid #009345;
+}
+body.template-meetings_table_view legend,
+body.template-events_table_view legend {
+  position: relative;
+  top: -30px !important;
+}
 body.template-meetings_table_view legend,
 body.template-events_table_view legend,
 .tab-content legend {
