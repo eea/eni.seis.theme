@@ -1567,9 +1567,18 @@ ul.tabmenu-tabs {
   font-weight: bolder;
   color: #222;
 }
+body.template-meetings_table_view .level-other,
+body.template-events_table_view .level-other,
+.tab-content .level-other {
+  color: #222222;
+}
+body.template-meetings_table_view table:not(.plain) td span,
+body.template-events_table_view table:not(.plain) td span,
 .tab-content table:not(.plain) td span {
   color: inherit!important;
 }
+body.template-meetings_table_view table:not(.plain) td a,
+body.template-events_table_view table:not(.plain) td a,
 .tab-content table:not(.plain) td a {
   color: inherit!important;
 }
