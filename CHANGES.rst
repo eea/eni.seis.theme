@@ -3,10 +3,7 @@ Changelog
 
 1.3.7 (unreleased)
 ------------------
-div#eni-accordion {
-    margin-top: 1em;
-}
-
+- Fix: space before accordion.
 - Fix: colors in events listing.
   [GhitaB #116729]
 - Improve: Justify intro text in Results page.
