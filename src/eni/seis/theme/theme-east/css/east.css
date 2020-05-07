@@ -377,29 +377,51 @@ body.template-events_table_view .table-hover td.event-link,
 .event-title {
   color: #009345;
 }
+body.template-meetings_table_view legend,
+body.template-events_table_view legend,
 .tab-content legend {
   float: right;
   position: relative;
   top: -55px;
 }
+body.template-meetings_table_view legend .fa.fa-circle.level-regional,
+body.template-events_table_view legend .fa.fa-circle.level-regional,
 .tab-content legend .fa.fa-circle.level-regional,
+body.template-meetings_table_view legend .fa.fa-circle.level-national,
+body.template-events_table_view legend .fa.fa-circle.level-national,
 .tab-content legend .fa.fa-circle.level-national,
+body.template-meetings_table_view legend .fa.fa-circle.other,
+body.template-events_table_view legend .fa.fa-circle.other,
 .tab-content legend .fa.fa-circle.other {
   font-size: 2em;
 }
+body.template-meetings_table_view legend span.level-national,
+body.template-events_table_view legend span.level-national,
 .tab-content legend span.level-national,
+body.template-meetings_table_view legend span.level-regional,
+body.template-events_table_view legend span.level-regional,
 .tab-content legend span.level-regional {
   margin-right: 20px;
 }
+body.template-meetings_table_view legend span.level-national span,
+body.template-events_table_view legend span.level-national span,
 .tab-content legend span.level-national span,
+body.template-meetings_table_view legend span.level-regional span,
+body.template-events_table_view legend span.level-regional span,
 .tab-content legend span.level-regional span,
+body.template-meetings_table_view legend span.other span,
+body.template-events_table_view legend span.other span,
 .tab-content legend span.other span {
   position: relative;
   top: -4px;
 }
+body.template-meetings_table_view legend .fa:before,
+body.template-events_table_view legend .fa:before,
 .tab-content legend .fa:before {
   margin-right: .5rem;
 }
+body.template-meetings_table_view legend .level-national,
+body.template-events_table_view legend .level-national,
 .tab-content legend .level-national {
   padding-left: 0;
 }
