@@ -3,6 +3,8 @@ Changelog
 
 1.3.8 (unreleased)
 ------------------
+- Fix: Update text in meta description.
+  [GhitaB #116290]
 
 1.3.7 (2020-05-11)
 ------------------
