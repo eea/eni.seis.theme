@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.8 (unreleased)
+1.3.8 (20200-05-20)
 ------------------
 - Fix: Update text in meta description.
   [GhitaB #116290]
