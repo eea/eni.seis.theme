@@ -4977,6 +4977,8 @@ body.template-country_view_east .country-content .nav-tabs.base > li > a {
   color: #009345 !important;
   border: 1px solid #ededed !important;
   border-radius: 0;
+  font-size: 12px;
+  padding: 3px 7px;
 }
 body.template-country_view_east .country-content .nav-tabs.base {
   border-bottom: 3px solid #009345;
