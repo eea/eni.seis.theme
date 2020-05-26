@@ -3,6 +3,8 @@ Changelog
 
 1.3.9 (unreleased)
 ------------------
+- Improve: styles for tabs in country view, because of new tab added.
+  [GhitaB #107340]
 
 1.3.8 (2020-05-20)
 ------------------
