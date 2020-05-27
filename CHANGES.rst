@@ -3,6 +3,8 @@ Changelog
 
 1.4.0 (unreleased)
 ------------------
+- Fix: meta description in SEEA section.
+  [GhitaB #107340]
 
 1.3.9 (2020-05-26)
 ------------------
