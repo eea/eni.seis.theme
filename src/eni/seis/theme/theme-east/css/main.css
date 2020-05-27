@@ -5329,12 +5329,13 @@ body.template-countries_view_east div.national-reports-container table.national-
 body.template-countries_view_east div.national-reports-container table.national-reports-table tr.odd td {
   background: #ededed;
 }
-body.template-countries_view_east div.environmental-assesment-reports-container {
-  margin-top: 4em;
-}
-body.template-countries_view_east div.environmental-assesment-reports-container div.ear-info {
+body.template-countries_view_east div.ear-info {
+  text-align: left !important;
   width: 50%;
   margin: 0 25%;
+}
+body.template-countries_view_east div.environmental-assesment-reports-container {
+  margin-top: 4em;
 }
 body.template-countries_view_east.userrole-authenticated .container.site-container {
   width: 100%;
