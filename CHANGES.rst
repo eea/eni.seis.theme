@@ -3,6 +3,7 @@ Changelog
 
 1.4.0 (unreleased)
 ------------------
+- Improve: Same design for country view tables.
 - Improve: add style for Countries info intro texts.
 - Fix: meta description in SEEA section.
   [GhitaB #107340]
