@@ -5124,16 +5124,19 @@ body.template-country_view_east .row.no-portlets .country-content .tab-content t
   border-bottom: 1px solid #A3A3A3;
 }
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.national-reports tr > th > h2,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.indicators-eea tr > th > h2,
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr > th > h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #FFFFFF;
 }
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.national-reports tr.even,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.indicators-eea tr.even,
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr.even {
   background: #F8F8F8;
 }
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.national-reports tr.even:hover,
+body.template-country_view_east .row.no-portlets .country-content .tab-content table.indicators-eea tr.even:hover,
 body.template-country_view_east .row.no-portlets .country-content .tab-content table.environ-reports tr.even:hover {
   background: #1f87e8;
 }
