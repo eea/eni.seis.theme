@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4.0 (unreleased)
+1.4.0 (2020-05-28)
 ------------------
 - Improve: Same design for country view tables.
 - Improve: add style for Countries info intro texts.
