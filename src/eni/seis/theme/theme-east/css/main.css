@@ -6855,6 +6855,11 @@ body.template-view.portaltype-nationalreport aside.page-aside {
 body.template-view.portaltype-nationalreport main.page-main#content {
   width: 100%;
 }
+body.template-edit.portaltype-nationalreport select#form-widgets-years-from,
+body.template-edit.portaltype-nationalreport select#form-widgets-years-to {
+  width: 200px;
+  height: 550px;
+}
 body.template-clc_east div.featured-meetings-container .table-hover th {
   color: white;
 }
