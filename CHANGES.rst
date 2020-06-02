@@ -3,6 +3,8 @@ Changelog
 
 1.4.1 (unreleased)
 ------------------
+- Fix: widget for years in national report edit form
+  [GhitaB #107340]
 
 1.4.0 (2020-05-28)
 ------------------
