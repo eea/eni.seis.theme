@@ -1,2 +1,85 @@
 body.template-indicators_and_assessments {
+  div.featured-meetings-container {
+    .table-hover {
+      th {
+        color: white;
+      }
+
+      tr {
+        &:hover {
+          background: @color-accent;
+          color: #FFFFFF;
+          td.event-summary {
+            color: #FFFFFF !important;
+          }
+          td a {
+            color: #FFFFFF !important;
+            text-decoration: none;
+          }
+        }
+
+        td a {
+          color: @color-brand-east;
+          text-decoration: none;
+        }
+
+        &.level-regional {
+          td a {
+            color: inherit !important;
+
+            &:hover {
+              color: white !important;
+            }
+          }
+        }
+      }
+
+      td.event-link {
+        min-width: 140px;
+      }
+    }
+  }
+
+  div#eni-accordion {
+    div.ui-accordion-content {
+      border: none;
+    }
+
+    h3.ui-accordion-header.ui-state-default {
+      border: none;
+      background: @color-accent;
+      color: white;
+
+      &:hover {
+        background: @color-brand-east;
+        color: white;
+      }
+    }
+
+    h3.ui-accordion-header-active {
+      background: @color-gray-dark !important;
+      color: white;
+    }
+
+    li.nav-item {
+      a {
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
+
+    td img.flag-img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .ui-widget-content {
+      font-family: "Fira Sans", sans-serif !important;
+      font-size: 15px !important;
+      color: @color-gray-dark;
+    }
+
+    margin-bottom: 2em;
+  }
 }

@@ -5712,6 +5712,66 @@ body.template-login_failed #login-form .formControls input[type='submit'] {
   width: 90%;
   margin-left: 0;
 }
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover th {
+  color: white;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover tr:hover {
+  background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover tr:hover td.event-summary {
+  color: #FFFFFF !important;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover tr:hover td a {
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover tr td a {
+  color: #009345;
+  text-decoration: none;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover tr.level-regional td a {
+  color: inherit !important;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover tr.level-regional td a:hover {
+  color: white !important;
+}
+body.template-indicators_and_assessments div.featured-meetings-container .table-hover td.event-link {
+  min-width: 140px;
+}
+body.template-indicators_and_assessments div#eni-accordion {
+  margin-bottom: 2em;
+}
+body.template-indicators_and_assessments div#eni-accordion div.ui-accordion-content {
+  border: none;
+}
+body.template-indicators_and_assessments div#eni-accordion h3.ui-accordion-header.ui-state-default {
+  border: none;
+  background: #1f87e8;
+  color: white;
+}
+body.template-indicators_and_assessments div#eni-accordion h3.ui-accordion-header.ui-state-default:hover {
+  background: #009345;
+  color: white;
+}
+body.template-indicators_and_assessments div#eni-accordion h3.ui-accordion-header-active {
+  background: #222222 !important;
+  color: white;
+}
+body.template-indicators_and_assessments div#eni-accordion li.nav-item a {
+  margin-left: initial;
+  margin-right: initial;
+}
+body.template-indicators_and_assessments div#eni-accordion td img.flag-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+body.template-indicators_and_assessments div#eni-accordion .ui-widget-content {
+  font-family: "Fira Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #222222;
+}
 body.template-folder_gallery_view #portal-globalnav {
   z-index: 9999;
 }
