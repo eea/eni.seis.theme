@@ -5742,6 +5742,10 @@ body.template-indicators_and_assessments div.featured-meetings-container .table-
 body.template-indicators_and_assessments div#eni-accordion {
   margin-bottom: 2em;
 }
+body.template-indicators_and_assessments div#eni-accordion div.products-container table.eni-products tr,
+body.template-indicators_and_assessments div#eni-accordion div.products-container table.eni-products td {
+  border: 1px solid #ededed;
+}
 body.template-indicators_and_assessments div#eni-accordion div#ui-accordion-eni-accordion-panel-0 ol {
   margin-left: 0px;
 }
