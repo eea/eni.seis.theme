@@ -5745,6 +5745,7 @@ body.template-indicators_and_assessments div#eni-accordion {
 body.template-indicators_and_assessments div#eni-accordion div.products-container table.eni-products tr,
 body.template-indicators_and_assessments div#eni-accordion div.products-container table.eni-products td {
   border: 1px solid #ededed;
+  padding: 3px;
 }
 body.template-indicators_and_assessments div#eni-accordion div#ui-accordion-eni-accordion-panel-0 ol {
   margin-left: 0px;
