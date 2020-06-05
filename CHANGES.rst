@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4.1 (unreleased)
+1.4.1 (2020-06-05)
 ------------------
 - Feature: Add styles for Indicators and Assessments section.
   [GhitaB #118316]
