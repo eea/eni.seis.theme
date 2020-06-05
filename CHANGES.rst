@@ -3,6 +3,8 @@ Changelog
 
 1.4.1 (unreleased)
 ------------------
+- Feature: Add styles for Indicators and Assessments section.
+  [GhitaB #118316]
 - Fix: widget for years in national report edit form
   [GhitaB #107340]
 
