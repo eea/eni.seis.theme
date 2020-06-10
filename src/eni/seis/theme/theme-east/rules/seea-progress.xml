@@ -15,6 +15,7 @@
              href="seea-progress-table-section" method="document"
              css:content="#content-core" />
     <replace css:theme="[data-diazo='seea-content-section4']" css:content="[data-diazo='seea-content-section4']" />
+    <replace css:theme="[data-diazo='eni-accordion']" css:content="[data-diazo='eni-accordion']" />
 
   </rules>
 </rules>
