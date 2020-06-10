@@ -6127,6 +6127,36 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   padding: 7px 10px 7px 10px;
   background: white;
 }
+body.template-seea-progress_root div.featured-meetings-container table {
+  width: 100%;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover th {
+  color: white;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover tr:hover {
+  background: #1f87e8;
+  color: #FFFFFF;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover tr:hover td.event-summary {
+  color: #FFFFFF !important;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover tr:hover td a {
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover tr td a {
+  color: #009345;
+  text-decoration: none;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover tr.level-regional td a {
+  color: inherit !important;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover tr.level-regional td a:hover {
+  color: white !important;
+}
+body.template-seea-progress_root div.featured-meetings-container .table-hover td.event-link {
+  min-width: 140px;
+}
 body.template-seea-progress_root div.site-container {
   min-height: initial;
 }
