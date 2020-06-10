@@ -6130,6 +6130,39 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
 body.template-seea-progress_root div.site-container {
   min-height: initial;
 }
+body.template-seea-progress_root div#eni-accordion {
+  margin-bottom: 2em;
+}
+body.template-seea-progress_root div#eni-accordion div.ui-accordion-content {
+  border: none;
+}
+body.template-seea-progress_root div#eni-accordion h3.ui-accordion-header.ui-state-default {
+  border: none;
+  background: #1f87e8;
+  color: white;
+}
+body.template-seea-progress_root div#eni-accordion h3.ui-accordion-header.ui-state-default:hover {
+  background: #009345;
+  color: white;
+}
+body.template-seea-progress_root div#eni-accordion h3.ui-accordion-header-active {
+  background: #222222 !important;
+  color: white;
+}
+body.template-seea-progress_root div#eni-accordion li.nav-item a {
+  margin-left: initial;
+  margin-right: initial;
+}
+body.template-seea-progress_root div#eni-accordion td img.flag-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+body.template-seea-progress_root div#eni-accordion .ui-widget-content {
+  font-family: "Fira Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: #222222;
+}
 body.template-seea-progress_root div.title-section {
   padding-top: 0px !important;
   padding-bottom: 4em;

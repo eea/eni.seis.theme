@@ -3,6 +3,49 @@ body.template-seea-progress_root {
     min-height: initial;
   }
 
+  div#eni-accordion {
+    div.ui-accordion-content {
+      border: none;
+    }
+
+    h3.ui-accordion-header.ui-state-default {
+      border: none;
+      background: @color-accent;
+      color: white;
+
+      &:hover {
+        background: @color-brand-east;
+        color: white;
+      }
+    }
+
+    h3.ui-accordion-header-active {
+      background: @color-gray-dark !important;
+      color: white;
+    }
+
+    li.nav-item {
+      a {
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
+
+    td img.flag-img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .ui-widget-content {
+      font-family: "Fira Sans", sans-serif !important;
+      font-size: 15px !important;
+      color: @color-gray-dark;
+    }
+
+    margin-bottom: 2em;
+  }
+
   div.title-section {
     padding-top: 0px !important;
     padding-bottom: 4em;
