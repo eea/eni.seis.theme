@@ -6364,6 +6364,7 @@ body.template-seea-progress_root table.seea-table a {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: 500;
+  color: #1f87e8 !important;
 }
 body.template-seea-progress_root table.seea-table a:hover {
   padding-left: 0px;
