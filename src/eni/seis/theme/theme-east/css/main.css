@@ -6371,10 +6371,10 @@ body.template-seea-progress_root table.seea-table a:hover {
 }
 body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td:not(.no-hover) {
   background: #1f87e8;
-  color: white;
+  color: white !important;
 }
 body.template-seea-progress_root table.seea-table tr:not(.no-hover):hover td:not(.no-hover) a {
-  color: white;
+  color: white !important;
 }
 body.template-seea-progress_root table.seea-table a:hover:before {
   content: "\f0c1";
