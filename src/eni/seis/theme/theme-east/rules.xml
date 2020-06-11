@@ -269,7 +269,6 @@
         css:content-children="#content"
         css:theme-children=".page-main"
       />
-
     </rules>
 
     <!-- Make page-main full width when no right column -->
