@@ -3,6 +3,8 @@ Changelog
 
 1.4.2 (unreleased)
 ------------------
+- Feature: add styles for SEEA section.
+  [GhitaB #118619]
 
 1.4.1 (2020-06-05)
 ------------------
