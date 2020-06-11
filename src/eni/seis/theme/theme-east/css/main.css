@@ -6127,6 +6127,12 @@ body.section-indicators.subsection-indicators-search div#faceted-form div#right-
   padding: 7px 10px 7px 10px;
   background: white;
 }
+body.template-seea-progress_root a {
+  color: #009345;
+}
+body.template-seea-progress_root a:hover {
+  color: #1f87e8;
+}
 body.template-seea-progress_root div.featured-meetings-container table {
   width: 100%;
 }
