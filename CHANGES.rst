@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.4.3 (unreleased)
+1.4.3 (2020-06-11)
 ------------------
+- Fix: Table in SEEA section, layout issue.
+  [GhitaB #118619]
 
 1.4.2 (2020-06-11)
 ------------------
