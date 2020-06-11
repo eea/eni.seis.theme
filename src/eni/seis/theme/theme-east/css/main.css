@@ -6163,6 +6163,10 @@ body.template-seea-progress_root div.site-container {
 body.template-seea-progress_root div#eni-accordion {
   margin-bottom: 2em;
 }
+body.template-seea-progress_root div#eni-accordion ol,
+body.template-seea-progress_root div#eni-accordion ul {
+  margin-left: initial;
+}
 body.template-seea-progress_root div#eni-accordion div.ui-accordion-content {
   border: none;
 }
