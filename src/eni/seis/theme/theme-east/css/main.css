@@ -6133,6 +6133,9 @@ body.template-seea-progress_root a {
 body.template-seea-progress_root a:hover {
   color: #1f87e8;
 }
+body.template-seea-progress_root div.page-main {
+  width: 100%;
+}
 body.template-seea-progress_root div.featured-meetings-container table {
   width: 100%;
 }
