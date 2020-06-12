@@ -3,6 +3,8 @@ Changelog
 
 1.4.4 (unreleased)
 ------------------
+- Fix: layout size in SEEA section.
+  [GhitaB #118619]
 
 1.4.3 (2020-06-11)
 ------------------
