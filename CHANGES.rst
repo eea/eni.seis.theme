@@ -3,6 +3,9 @@ Changelog
 
 1.4.4 (unreleased)
 ------------------
+- Improve: add embed video in Testimonials.
+  Manual step: update content.
+  [GhitaB #118764]
 - Fix: layout size in SEEA section.
   [GhitaB #118619]
 
