@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4.4 (unreleased)
+1.4.4 (2020-06-12)
 ------------------
 - Improve: add embed video in Testimonials and Capacity building.
   Manual step: update content in
