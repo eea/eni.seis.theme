@@ -16,7 +16,7 @@
     "grunt-template-html": "^0.1.4",
     "handlebars": "^4.7.3",
     "load-grunt-tasks": "^3.4.1",
-    "merge": "^1.2.0"
+    "merge": "^2.1.1"
   },
   "author": "Valentin Popescu",
   "license": "ISC"
